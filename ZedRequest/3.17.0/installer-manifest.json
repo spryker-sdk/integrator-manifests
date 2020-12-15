@@ -3,6 +3,18 @@
         {
             "target": "\\SprykerShop\\Yves\\WebProfilerWidget\\WebProfilerWidgetDependencyProvider::getDataCollectorPlugins",
             "source": "\\Spryker\\Yves\\ZedRequest\\Plugin\\WebProfiler\\WebProfilerZedRequestDataCollectorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\ZedRequest\\ZedRequestDependencyProvider::getHeaderExpanderPlugins",
+            "source": "\\Spryker\\Client\\ZedRequest\\Plugin\\AcceptEncodingHeaderExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\ZedRequest\\ZedRequestDependencyProvider::getHeaderExpanderPlugins",
+            "source": "\\Spryker\\Client\\ZedRequest\\Plugin\\AuthTokenHeaderExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\ZedRequest\\ZedRequestDependencyProvider::getHeaderExpanderPlugins",
+            "source": "\\Spryker\\Client\\ZedRequest\\Plugin\\RequestIdHeaderExpanderPlugin"
         }
     ]
 }
