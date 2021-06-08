@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\HealthCheck\\HealthCheckDependencyProvider::getHealthCheckPlugins",
+            "source": "\\Spryker\\Zed\\PublishAndSynchronizeHealthCheck\\Communication\\Plugin\\HealthCheck\\PublishAndSynchronizeWriteHealthCheckPlugin"
+        }
+    ]
+}
