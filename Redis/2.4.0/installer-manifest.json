@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\WebProfilerWidget\\WebProfilerWidgetDependencyProvider::getDataCollectorPlugins",
+            "source": "\\Spryker\\Yves\\Redis\\Plugin\\WebProfiler\\WebProfilerRedisDataCollectorPlugin"
+        }
+    ]
+}
