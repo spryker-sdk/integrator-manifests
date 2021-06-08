@@ -2,7 +2,11 @@
     "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutOrderSavers",
-            "source": "\\Spryker\\Zed\\SalesProductConfiguration\\Communication\\Plugin\\Checkout\\ProductConfigurationOrderSaverPlugin"
+            "source": "\\Spryker\\Zed\\SalesProductConfiguration\\Communication\\Plugin\\Checkout\\ProductConfigurationOrderSaverPlugin",
+            "poistion": {
+                "before": "\\Spryker\\Zed\\CartNote\\Communication\\Plugin\\Checkout\\CartNoteSaverPlugin",
+                "after": "\\Spryker\\Zed\\Sales\\Communication\\Plugin\\Checkout\\OrderItemsSaverPlugin"
+            }
         }
     ]
 }
