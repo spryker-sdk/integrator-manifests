@@ -4,5 +4,11 @@
             "target": "\\Spryker\\Zed\\HealthCheck\\HealthCheckDependencyProvider::getHealthCheckPlugins",
             "source": "\\Spryker\\Zed\\PublishAndSynchronizeHealthCheck\\Communication\\Plugin\\HealthCheck\\PublishAndSynchronizeWriteHealthCheckPlugin"
         }
+    ],
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Client\\RabbitMq\\RabbitMqConfig::getPublishQueueConfiguration",
+            "value": "\\Spryker\\Shared\\PublishAndSynchronizeHealthCheck\\PublishAndSynchronizeHealthCheckConfig::PUBLISH_PUBLISH_AND_SYNCHRONIZE_HEALTH_CHECK"
+        }
     ]
 }
