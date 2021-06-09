@@ -4,7 +4,7 @@
             "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutOrderSavers",
             "source": "\\Spryker\\Zed\\Sales\\Communication\\Plugin\\Checkout\\OrderSaverPlugin",
             "poistion": {
-                "before": "\\Spryker\\Zed\\Sales\\Communication\\Plugin\\Checkout\\OrderTotalsSaverPlugin",
+                "before": "",
                 "after": ""
             }
         },
@@ -20,7 +20,7 @@
             "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutOrderSavers",
             "source": "\\Spryker\\Zed\\Sales\\Communication\\Plugin\\Checkout\\OrderItemsSaverPlugin",
             "poistion": {
-                "before": "\\Spryker\\Zed\\SalesProductConfiguration\\Communication\\Plugin\\Checkout\\ProductConfigurationOrderSaverPlugin",
+                "before": "",
                 "after": "\\Spryker\\Zed\\Shipment\\Communication\\Plugin\\Checkout\\SalesOrderShipmentSavePlugin"
             }
         }
