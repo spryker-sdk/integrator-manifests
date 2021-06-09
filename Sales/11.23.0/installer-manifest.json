@@ -2,11 +2,7 @@
     "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutOrderSavers",
-            "source": "\\Spryker\\Zed\\Sales\\Communication\\Plugin\\Checkout\\OrderSaverPlugin",
-            "poistion": {
-                "before": "",
-                "after": ""
-            }
+            "source": "\\Spryker\\Zed\\Sales\\Communication\\Plugin\\Checkout\\OrderSaverPlugin"
         },
         {
             "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutOrderSavers",
@@ -20,7 +16,6 @@
             "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutOrderSavers",
             "source": "\\Spryker\\Zed\\Sales\\Communication\\Plugin\\Checkout\\OrderItemsSaverPlugin",
             "poistion": {
-                "before": "",
                 "after": "\\Spryker\\Zed\\Shipment\\Communication\\Plugin\\Checkout\\SalesOrderShipmentSavePlugin"
             }
         }

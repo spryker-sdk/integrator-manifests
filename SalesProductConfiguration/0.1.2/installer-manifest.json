@@ -4,7 +4,6 @@
             "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutOrderSavers",
             "source": "\\Spryker\\Zed\\SalesProductConfiguration\\Communication\\Plugin\\Checkout\\ProductConfigurationOrderSaverPlugin",
             "poistion": {
-                "before": "",
                 "after": "\\Spryker\\Zed\\Sales\\Communication\\Plugin\\Checkout\\OrderItemsSaverPlugin"
             }
         }
