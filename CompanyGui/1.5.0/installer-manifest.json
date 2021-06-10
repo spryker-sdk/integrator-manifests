@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CompanyUserGui\\CompanyUserGuiDependencyProvider::getCompanyUserFormExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CompanyGui\\Communication\\Plugin\\CompanyUserGui\\CompanyToCompanyUserFormExpanderPlugin"
+        }
+    ]
+}
