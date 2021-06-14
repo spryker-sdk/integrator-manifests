@@ -1,40 +1,8 @@
 {
     "wire-plugin": [
         {
-            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::getReservationHandlerPlugins",
-            "source": "\\Spryker\\Zed\\Availability\\Communication\\Plugin\\AvailabilityHandlerPlugin"
-        },
-        {
-            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::getReservationPostSaveTerminationAwareStrategyPlugins",
-            "source": "\\Spryker\\Zed\\Availability\\Communication\\Plugin\\Oms\\AvailabilityReservationPostSaveTerminationAwareStrategyPlugin"
-        },
-        {
-            "target": "\\Spryker\\Zed\\ProductPageSearch\\ProductPageSearchDependencyProvider::getProductAbstractAddToCartPlugins",
-            "source": "\\Spryker\\Zed\\Availability\\Communication\\Plugin\\ProductPageSearch\\AvailabilityProductAbstractAddToCartPlugin"
-        },
-        {
             "target": "\\Spryker\\Zed\\Availability\\AvailabilityDependencyProvider::getBatchAvailabilityStrategyPlugins",
             "source": "\\Spryker\\Zed\\Availability\\Communication\\Plugin\\Cart\\ProductConcreteBatchAvailabilityStrategyPlugin"
         },
-        {
-            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditions",
-            "source": "\\Spryker\\Zed\\Availability\\Communication\\Plugin\\ProductsAvailableCheckoutPreConditionPlugin"
-        },
-        {
-            "target": "\\Spryker\\Zed\\ProductAlternative\\ProductAlternativeDependencyProvider::getAlternativeProductApplicablePlugins",
-            "source": "\\Spryker\\Zed\\Availability\\Communication\\Plugin\\ProductAlternative\\AvailabilityCheckAlternativeProductApplicablePlugin"
-        },
-        {
-            "target": "\\Spryker\\Zed\\Stock\\StockDependencyProvider::getStockUpdateHandlerPlugins",
-            "source": "\\Spryker\\Zed\\Availability\\Communication\\Plugin\\AvailabilityHandlerPlugin"
-        },
-        {
-            "target": "\\Spryker\\Zed\\Wishlist\\WishlistDependencyProvider::getWishlistItemExpanderPlugins",
-            "source": "\\Spryker\\Zed\\Availability\\Communication\\Plugin\\Wishlist\\AvailabilityWishlistItemExpanderPlugin"
-        },
-        {
-            "target": "\\Spryker\\Zed\\Wishlist\\WishlistDependencyProvider::getWishlistItemExpanderPlugins",
-            "source": "\\Spryker\\Zed\\Availability\\Communication\\Plugin\\Wishlist\\SellableWishlistItemExpanderPlugin"
-        }
     ]
 }
