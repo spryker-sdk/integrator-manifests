@@ -1,0 +1,20 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Company\\CompanyDependencyProvider::getCompanyPostCreatePlugins",
+            "source": "\\Spryker\\Zed\\CompanyBusinessUnit\\Communication\\Plugin\\Company\\CompanyBusinessUnitCreatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CompanyUser\\CompanyUserDependencyProvider::getCompanyUserHydrationPlugins",
+            "source": "\\Spryker\\Zed\\CompanyBusinessUnit\\Communication\\Plugin\\CompanyUser\\CompanyBusinessUnitHydratePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CompanyUser\\CompanyUserDependencyProvider::getCompanyUserPreSavePlugins",
+            "source": "\\Spryker\\Zed\\CompanyBusinessUnit\\Communication\\Plugin\\CompanyUser\\AssignDefaultBusinessUnitToCompanyUserPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CompanyUser\\CompanyUserDependencyProvider::getCompanyUserSavePreCheckPlugins",
+            "source": "\\Spryker\\Zed\\CompanyBusinessUnit\\Communication\\Plugin\\CompanyUser\\CheckCompanyUserUniquenessCompanyUserSavePreCheckPlugin"
+        }
+    ]
+}
