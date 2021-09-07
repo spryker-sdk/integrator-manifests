@@ -1,0 +1,12 @@
+{
+    "configure-module": [
+        {
+            "target": "\\SprykerShop\\Yves\\CartPage\\CartPageConfig::IS_CART_CART_ITEMS_VIA_AJAX_LOAD_ENABLED",
+            "default": "true"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\CartPage\\CartPageConfig::IS_LOADING_UPSELLING_PRODUCTS_VIA_AJAX_ENABLED",
+            "default": "true"
+        }
+    ],
+}
