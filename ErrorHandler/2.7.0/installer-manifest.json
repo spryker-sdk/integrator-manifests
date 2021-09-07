@@ -1,0 +1,20 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackendApiApplicationPlugins",
+            "source": "\\Spryker\\Zed\\ErrorHandler\\Communication\\Plugin\\Application\\ErrorHandlerApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ErrorHandler\\ErrorHandlerDependencyProvider::getExceptionHandlerStrategyPlugins",
+            "source": "\\Spryker\\Zed\\ErrorHandler\\Communication\\Plugin\\ExceptionHandler\\SubRequestExceptionHandlerStrategyPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\ErrorHandler\\Communication\\Plugin\\EventDispatcher\\ErrorPageEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MerchantPortalApplication\\MerchantPortalApplicationDependencyProvider::getMerchantPortalApplicationPlugins",
+            "source": "\\Spryker\\Zed\\ErrorHandler\\Communication\\Plugin\\Application\\ErrorHandlerApplicationPlugin"
+        }
+    ]
+}
