@@ -1,0 +1,14 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\ProductGroupWidget\\ProductGroupWidgetDependencyProvider::getProductViewBulkExpanderPlugins",
+            "source": "\\SprykerShop\\Yves\\ProductReviewWidget\\Plugin\\ProductGroupWidget\\ProductReviewSummaryProductViewBulkExpanderPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\ProductGroupWidget\\ProductGroupWidgetDependencyProvider::getProductViewExpanderPlugins",
+            "source": "\\SprykerShop\\Yves\\ProductReviewWidget\\Plugin\\ProductGroupWidget\\ProductReviewSummaryProductViewExpanderPlugin"
+        }
+    ]
+}
