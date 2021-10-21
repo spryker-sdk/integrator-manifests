@@ -1,0 +1,20 @@
+{
+    "wire-plugin": [
+        {
+            "target": "Pyz\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferStoreStoragePlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductOfferStorage\\Communication\\Plugin\\Publisher\\ProductOffer\\ProductOfferStoreWritePublisherPlugin"
+        },
+        {
+            "target": "Pyz\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferStoreStoragePlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductOfferStorage\\Communication\\Plugin\\Publisher\\ProductOffer\\ProductOfferStoreDeletePublisherPlugin"
+        },
+        {
+            "target": "Pyz\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferStoreStoragePlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductOfferStorage\\Communication\\Plugin\\Publisher\\ProductConcreteOffers\\ProductConcreteOfferStoresWritePublisherPlugin"
+        },
+        {
+            "target": "Pyz\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferStoreStoragePlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductOfferStorage\\Communication\\Plugin\\Publisher\\ProductConcreteOffers\\ProductConcreteOfferStoresDeletePublisherPlugin"
+        }
+    ]
+}
