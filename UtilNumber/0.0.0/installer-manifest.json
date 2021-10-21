@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "Pyz\\Zed\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Zed\\UtilNumber\\Communication\\Plugin\\Twig\\NumberFormatterTwigPlugin"
+        }
+    ]
+}
