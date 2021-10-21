@@ -1,8 +1,1 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Pyz\\Zed\\Availability\\AvailabilityDependencyProvider::getBatchAvailabilityStrategyPlugins",
-            "source": "\\Spryker\\Zed\\Availability\\Communication\\Plugin\\Cart\\ProductConcreteBatchAvailabilityStrategyPlugin"
-        }
-    ]
-}
+"Array\n"
