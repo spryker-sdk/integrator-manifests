@@ -1,0 +1,48 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getDiscountableItemFilterPlugins",
+            "source": "\\Spryker\\Zed\\DiscountPromotion\\Communication\\Plugin\\Discount\\DiscountPromotionFilterCollectedItemsPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getCollectedDiscountGroupingPlugins",
+            "source": "\\Spryker\\Zed\\DiscountPromotion\\Communication\\Plugin\\Discount\\PromotionCollectedDiscountGroupingStrategyPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getCollectorStrategyPlugins",
+            "source": "\\Spryker\\Zed\\DiscountPromotion\\Communication\\Plugin\\Discount\\DiscountPromotionCollectorStrategyPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getDiscountPostCreatePlugins",
+            "source": "\\Spryker\\Zed\\DiscountPromotion\\Communication\\Plugin\\Discount\\DiscountPromotionPostCreatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getDiscountPostUpdatePlugins",
+            "source": "\\Spryker\\Zed\\DiscountPromotion\\Communication\\Plugin\\Discount\\DiscountPromotionPostUpdatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getDiscountPostUpdatePlugins",
+            "source": "\\Spryker\\Zed\\DiscountPromotion\\Communication\\Plugin\\Discount\\DiscountPromotionCleanerPostUpdatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getDiscountConfigurationExpanderPlugins",
+            "source": "\\Spryker\\Zed\\DiscountPromotion\\Communication\\Plugin\\Discount\\DiscountPromotionConfigurationExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getDiscountFormExpanderPlugins",
+            "source": "\\Spryker\\Zed\\DiscountPromotion\\Communication\\Plugin\\Discount\\DiscountPromotionCalculationFormExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getDiscountFormDataProviderExpanderPlugins",
+            "source": "\\Spryker\\Zed\\DiscountPromotion\\Communication\\Plugin\\Discount\\DiscountPromotionCalculationFormDataExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getDiscountViewTemplateProviderPlugins",
+            "source": "\\Spryker\\Zed\\DiscountPromotion\\Communication\\Plugin\\Discount\\DiscountPromotionViewBlockProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getDiscountApplicableFilterPlugins",
+            "source": "\\Spryker\\Zed\\DiscountPromotion\\Communication\\Plugin\\Discount\\DiscountPromotionFilterApplicableItemsPlugin"
+        }
+    ]
+}
