@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\MerchantUser\\MerchantUserDependencyProvider::getMerchantUserRoleFilterPreConditionPlugins",
+            "source": "\\Spryker\\Zed\\AclMerchantPortal\\Communication\\Plugin\\MerchantUser\\AclMerchantPortalMerchantUserRoleFilterPreConditionPlugin"
+        }
+    ]
+}
