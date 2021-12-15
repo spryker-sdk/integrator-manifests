@@ -1,0 +1,14 @@
+{
+    "wire-glue-relationship": [
+        {
+            "source": {
+                "\\Spryker\\Glue\\CatalogSearchRestApi\\CatalogSearchRestApiConfig::RESOURCE_CATALOG_SEARCH": "\\Spryker\\Glue\\CatalogSearchProductsResourceRelationship\\Plugin\\CatalogSearchAbstractProductsResourceRelationshipPlugin"
+            }
+        },
+        {
+            "source": {
+                "\\Spryker\\Glue\\CatalogSearchRestApi\\CatalogSearchRestApiConfig::RESOURCE_CATALOG_SEARCH_SUGGESTIONS": "\\Spryker\\Glue\\CatalogSearchProductsResourceRelationship\\Plugin\\CatalogSearchSuggestionsAbstractProductsResourceRelationshipPlugin"
+            }
+        }
+    ]
+}

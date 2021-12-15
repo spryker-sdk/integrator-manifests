@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Api\\ApiDependencyProvider::getApiRequestTransferFilterPluginCollection",
+            "source": "\\Spryker\\Zed\\Api\\Communication\\Plugin\\ApiRequestTransferFilterServerDataPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Api\\ApiDependencyProvider::getApiRequestTransferFilterPluginCollection",
+            "source": "\\Spryker\\Zed\\Api\\Communication\\Plugin\\ApiRequestTransferFilterHeaderDataPlugin"
+        }
+    ]
+}

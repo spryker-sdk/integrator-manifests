@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\ProductConfigurationCartWidget\\ProductConfigurationCartWidgetDependencyProvider::getCartProductConfigurationRenderStrategyPlugins",
+            "source": "\\SprykerShop\\Yves\\DateTimeConfiguratorPageExample\\Plugin\\ProductConfigurationCartWidget\\ExampleDateTimeCartProductConfigurationRenderStrategyPlugin"
+        }
+    ]
+}

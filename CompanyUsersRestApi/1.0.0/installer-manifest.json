@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\CompanyUsersRestApi\\Plugin\\GlueApplication\\CompanyUsersResourceRoutePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\OauthCustomerConnector\\OauthCustomerConnectorDependencyProvider::getOauthCustomerIdentifierExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CompanyUsersRestApi\\Communication\\Plugin\\OauthCustomerConnector\\CompanyUserOauthCustomerIdentifierExpanderPlugin"
+        }
+    ]
+}

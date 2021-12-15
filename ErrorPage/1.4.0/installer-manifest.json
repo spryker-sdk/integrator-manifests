@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
+            "source": "\\SprykerShop\\Yves\\ErrorPage\\Plugin\\EventDispatcher\\ErrorPageEventDispatcherPlugin"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartBeforePreCheckNormalizerPlugins",
+            "source": "\\Spryker\\Zed\\ProductQuantity\\Communication\\Plugin\\Cart\\CartChangeTransferQuantityNormalizerPlugin"
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\AssetsPathTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\TabsTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\UrlTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\UrlDecodeTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\Buttons\\ButtonGroupTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\Buttons\\Action\\BackActionButtonTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\Buttons\\Action\\CreateActionButtonTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\Buttons\\Action\\ViewActionButtonTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\Buttons\\Action\\EditActionButtonTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\Buttons\\Action\\RemoveActionButtonTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\Buttons\\Table\\EditTableButtonTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\Buttons\\Table\\BackTableButtonTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\Buttons\\Table\\CreateTableButtonTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\Buttons\\Table\\ViewTableButtonTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\Buttons\\Table\\RemoveTableButtonTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\Buttons\\Form\\SubmitButtonTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\GuiFilterTwigPlugin"
+        }
+    ]
+}

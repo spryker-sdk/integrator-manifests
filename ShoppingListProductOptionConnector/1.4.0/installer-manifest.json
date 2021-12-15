@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ShoppingList\\ShoppingListDependencyProvider::getShoppingListItemBulkPostSavePlugins",
+            "source": "\\Spryker\\Zed\\ShoppingListProductOptionConnector\\Communication\\Plugin\\ShoppingList\\ShoppingListItemProductOptionBulkPostSavePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ShoppingList\\ShoppingListDependencyProvider::getItemCollectionExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ShoppingListProductOptionConnector\\Communication\\Plugin\\ShoppingList\\ShoppingListItemCollectionProductOptionExpanderPlugin"
+        }
+    ]
+}

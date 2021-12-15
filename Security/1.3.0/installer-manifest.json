@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackofficeApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Security\\Communication\\Plugin\\Application\\SecurityApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackendGatewayApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Security\\Communication\\Plugin\\Application\\SecurityApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MerchantPortalApplication\\MerchantPortalApplicationDependencyProvider::getMerchantPortalApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Security\\Communication\\Plugin\\Application\\SecurityApplicationPlugin"
+        }
+    ]
+}

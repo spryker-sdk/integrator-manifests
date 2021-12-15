@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getCategoryStoragePlugins",
+            "source": "\\Spryker\\Zed\\CategoryStorage\\Communication\\Plugin\\Publisher\\CategoryStore\\CategoryStoreWritePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getCategoryStoragePlugins",
+            "source": "\\Spryker\\Zed\\CategoryStorage\\Communication\\Plugin\\Publisher\\CategoryStore\\CategoryStoreWriteForPublishingPublisherPlugin"
+        }
+    ]
+}

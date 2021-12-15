@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\PriceProductStorage\\PriceProductStorageDependencyProvider::getPriceProductPricesExtractorPlugins",
+            "source": "\\Spryker\\Client\\PriceProductVolume\\Plugin\\PriceProductStorageExtension\\PriceProductVolumeExtractorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\PriceProduct\\PriceProductDependencyProvider::getPriceProductPricesExtractorPlugins",
+            "source": "\\Spryker\\Zed\\PriceProductVolume\\Communication\\Plugin\\PriceProductExtension\\PriceProductVolumeExtractorPlugin"
+        }
+    ]
+}

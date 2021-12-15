@@ -1,0 +1,20 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\ShopApplication\\ShopApplicationDependencyProvider::getApplicationPlugins",
+            "source": "\\Spryker\\Yves\\ErrorHandler\\Plugin\\Application\\ErrorHandlerApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackofficeApplicationPlugins",
+            "source": "\\Spryker\\Zed\\ErrorHandler\\Communication\\Plugin\\Application\\ErrorHandlerApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackendApiApplicationPlugins",
+            "source": "\\Spryker\\Zed\\ErrorHandler\\Communication\\Plugin\\Application\\ErrorHandlerApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MerchantPortalApplication\\MerchantPortalApplicationDependencyProvider::getMerchantPortalApplicationPlugins",
+            "source": "\\Spryker\\Zed\\ErrorHandler\\Communication\\Plugin\\Application\\ErrorHandlerApplicationPlugin"
+        }
+    ]
+}

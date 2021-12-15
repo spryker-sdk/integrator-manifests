@@ -1,0 +1,9 @@
+{
+    "wire-glue-relationship": [
+        {
+            "source": {
+                "\\Spryker\\Glue\\CustomersRestApi\\CustomersRestApiConfig::RESOURCE_CUSTOMERS": "\\Spryker\\Glue\\WishlistsRestApi\\Plugin\\WishlistRelationshipByResourceIdPlugin"
+            }
+        }
+    ]
+}

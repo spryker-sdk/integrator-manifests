@@ -1,0 +1,9 @@
+{
+    "wire-glue-relationship": [
+        {
+            "source": {
+                "\\Spryker\\Glue\\DiscountPromotionsRestApi\\DiscountPromotionsRestApiConfig::RESOURCE_PROMOTIONAL_ITEMS": "\\Spryker\\Glue\\ProductsRestApi\\Plugin\\GlueApplication\\ProductAbstractBySkuResourceRelationshipPlugin"
+            }
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Wishlist\\WishlistDependencyProvider::getWishlistPreUpdateItemPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductOfferWishlist\\Communication\\Plugin\\Wishlist\\WishlistProductOfferPreUpdateItemPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Wishlist\\WishlistDependencyProvider::getUpdateItemPreCheckPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductOfferWishlist\\Communication\\Plugin\\Wishlist\\MerchantProductOfferUpdateItemPreCheckPlugin"
+        }
+    ]
+}

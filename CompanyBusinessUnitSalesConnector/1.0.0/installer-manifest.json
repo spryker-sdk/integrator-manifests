@@ -1,0 +1,32 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Permission\\PermissionDependencyProvider::getPermissionPlugins",
+            "source": "\\Spryker\\Client\\CompanyBusinessUnitSalesConnector\\Plugin\\Permission\\SeeBusinessUnitOrdersPermissionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderPostSavePlugins",
+            "source": "\\Spryker\\Zed\\CompanyBusinessUnitSalesConnector\\Communication\\Plugin\\Sales\\SaveCompanyBusinessUnitUuidOrderPostSavePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderSearchQueryExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CompanyBusinessUnitSalesConnector\\Communication\\Plugin\\Sales\\CompanyBusinessUnitFilterOrderSearchQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderSearchQueryExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CompanyBusinessUnitSalesConnector\\Communication\\Plugin\\Sales\\CompanyBusinessUnitCustomerFilterOrderSearchQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderSearchQueryExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CompanyBusinessUnitSalesConnector\\Communication\\Plugin\\Sales\\CompanyBusinessUnitCustomerSortingOrderSearchQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getCustomerOrderAccessCheckPlugins",
+            "source": "\\Spryker\\Zed\\CompanyBusinessUnitSalesConnector\\Communication\\Plugin\\Sales\\CompanyBusinessUnitCustomerOrderAccessCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Permission\\PermissionDependencyProvider::getPermissionPlugins",
+            "source": "\\Spryker\\Zed\\CompanyBusinessUnitSalesConnector\\Communication\\Plugin\\Permission\\SeeBusinessUnitOrdersPermissionPlugin"
+        }
+    ]
+}

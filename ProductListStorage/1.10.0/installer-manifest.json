@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\ProductStorage\\ProductStorageDependencyProvider::getProductAbstractRestrictionFilterPlugins",
+            "source": "\\Spryker\\Client\\ProductListStorage\\Plugin\\ProductStorageExtension\\ProductAbstractListStorageRestrictionFilterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\ProductStorage\\ProductStorageDependencyProvider::getProductConcreteRestrictionFilterPlugins",
+            "source": "\\Spryker\\Client\\ProductListStorage\\Plugin\\ProductStorageExtension\\ProductConcreteListStorageRestrictionFilterPlugin"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CategoryGui\\CategoryGuiDependencyProvider::getStoreRelationFormTypePlugin",
+            "source": "\\Spryker\\Zed\\StoreGui\\Communication\\Plugin\\Form\\StoreRelationDropdownFormTypePlugin"
+        }
+    ]
+}

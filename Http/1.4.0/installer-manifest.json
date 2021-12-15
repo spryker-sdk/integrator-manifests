@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getApplicationPlugins",
+            "source": "\\Spryker\\Glue\\Http\\Plugin\\Application\\HttpApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Form\\FormDependencyProvider::getFormPlugins",
+            "source": "\\Spryker\\Zed\\Http\\Communication\\Plugin\\Form\\HttpFoundationFormPlugin"
+        }
+    ]
+}

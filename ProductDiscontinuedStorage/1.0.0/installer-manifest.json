@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\ProductStorage\\ProductStorageDependencyProvider::getProductViewExpanderPlugins",
+            "source": "\\Spryker\\Client\\ProductDiscontinuedStorage\\Plugin\\ProductStorage\\ProductViewDiscontinuedOptionsExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\ProductStorage\\ProductStorageDependencyProvider::getProductViewExpanderPlugins",
+            "source": "\\Spryker\\Client\\ProductDiscontinuedStorage\\Plugin\\ProductStorage\\ProductDiscontinuedProductAvailabilityExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\ProductAlternativeStorage\\ProductAlternativeStorageDependencyProvider::getAlternativeProductApplicableCheckPlugins",
+            "source": "\\Spryker\\Client\\ProductDiscontinuedStorage\\Plugin\\ProductAlternativeStorage\\DiscontinuedCheckAlternativeProductApplicablePlugin"
+        }
+    ]
+}

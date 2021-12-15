@@ -1,0 +1,20 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\PriceProduct\\PriceProductDependencyProvider::getPriceDimensionConcreteSaverPlugins",
+            "source": "\\Spryker\\Zed\\PriceProductOffer\\Communication\\Plugin\\PriceProduct\\PriceProductOfferPriceDimensionConcreteSaverPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductOffer\\ProductOfferDependencyProvider::getProductOfferPostCreatePlugins",
+            "source": "\\Spryker\\Zed\\PriceProductOffer\\Communication\\Plugin\\ProductOffer\\PriceProductOfferProductOfferPostCreatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductOffer\\ProductOfferDependencyProvider::getProductOfferPostUpdatePlugins",
+            "source": "\\Spryker\\Zed\\PriceProductOffer\\Communication\\Plugin\\ProductOffer\\PriceProductOfferProductOfferPostUpdatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductOffer\\ProductOfferDependencyProvider::getProductOfferExpanderPlugins",
+            "source": "\\Spryker\\Zed\\PriceProductOffer\\Communication\\Plugin\\ProductOffer\\PriceProductOfferProductOfferExpanderPlugin"
+        }
+    ]
+}

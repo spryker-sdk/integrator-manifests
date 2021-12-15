@@ -1,0 +1,48 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\WebProfilerWidget\\WebProfilerWidgetDependencyProvider::getDataCollectorPlugins",
+            "source": "\\SprykerShop\\Yves\\WebProfilerWidget\\Plugin\\WebProfiler\\WebProfilerRequestDataCollectorPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\WebProfilerWidget\\WebProfilerWidgetDependencyProvider::getDataCollectorPlugins",
+            "source": "\\SprykerShop\\Yves\\WebProfilerWidget\\Plugin\\WebProfiler\\WebProfilerRouterDataCollectorPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\WebProfilerWidget\\WebProfilerWidgetDependencyProvider::getDataCollectorPlugins",
+            "source": "\\SprykerShop\\Yves\\WebProfilerWidget\\Plugin\\WebProfiler\\WebProfilerAjaxDataCollectorPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\WebProfilerWidget\\WebProfilerWidgetDependencyProvider::getDataCollectorPlugins",
+            "source": "\\SprykerShop\\Yves\\WebProfilerWidget\\Plugin\\WebProfiler\\WebProfilerConfigDataCollectorPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\WebProfilerWidget\\WebProfilerWidgetDependencyProvider::getDataCollectorPlugins",
+            "source": "\\SprykerShop\\Yves\\WebProfilerWidget\\Plugin\\WebProfiler\\WebProfilerConfigDataCollectorPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\WebProfilerWidget\\WebProfilerWidgetDependencyProvider::getDataCollectorPlugins",
+            "source": "\\SprykerShop\\Yves\\WebProfilerWidget\\Plugin\\WebProfiler\\WebProfilerEventsDataCollectorPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\WebProfilerWidget\\WebProfilerWidgetDependencyProvider::getDataCollectorPlugins",
+            "source": "\\SprykerShop\\Yves\\WebProfilerWidget\\Plugin\\WebProfiler\\WebProfilerExceptionDataCollectorPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\WebProfilerWidget\\WebProfilerWidgetDependencyProvider::getDataCollectorPlugins",
+            "source": "\\SprykerShop\\Yves\\WebProfilerWidget\\Plugin\\WebProfiler\\WebProfilerLoggerDataCollectorPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\WebProfilerWidget\\WebProfilerWidgetDependencyProvider::getDataCollectorPlugins",
+            "source": "\\SprykerShop\\Yves\\WebProfilerWidget\\Plugin\\WebProfiler\\WebProfilerMemoryDataCollectorPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\WebProfilerWidget\\WebProfilerWidgetDependencyProvider::getDataCollectorPlugins",
+            "source": "\\SprykerShop\\Yves\\WebProfilerWidget\\Plugin\\WebProfiler\\WebProfilerTimeDataCollectorPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\WebProfilerWidget\\WebProfilerWidgetDependencyProvider::getDataCollectorPlugins",
+            "source": "\\SprykerShop\\Yves\\WebProfilerWidget\\Plugin\\WebProfiler\\WebProfilerTwigDataCollectorPlugin"
+        }
+    ]
+}

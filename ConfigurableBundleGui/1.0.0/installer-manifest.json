@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductListGui\\ProductListGuiDependencyProvider::getProductListTopButtonsExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ConfigurableBundleGui\\Communication\\Plugin\\ProductListGui\\ConfigurableBundleTemplateListProductListTopButtonsExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductListGui\\ProductListGuiDependencyProvider::getProductListUsedByTableExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ConfigurableBundleGui\\Communication\\Plugin\\ProductListGui\\ConfigurableBundleTemplateProductListUsedByTableExpanderPlugin"
+        }
+    ]
+}

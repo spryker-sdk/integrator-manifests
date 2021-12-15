@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditions",
+            "source": "\\Spryker\\Zed\\MerchantSwitcher\\Communication\\Plugin\\Checkout\\SingleMerchantCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPlugins",
+            "source": "\\Spryker\\Zed\\MerchantSwitcher\\Communication\\Plugin\\Cart\\SingleMerchantCartPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getPreReloadPlugins",
+            "source": "\\Spryker\\Zed\\MerchantSwitcher\\Communication\\Plugin\\Cart\\SingleMerchantPreReloadItemsPlugin"
+        }
+    ]
+}

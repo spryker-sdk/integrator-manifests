@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Scheduler\\SchedulerDependencyProvider::getScheduleReaderPlugins",
+            "source": "\\Spryker\\Zed\\Scheduler\\Communication\\Plugin\\Scheduler\\PhpScheduleReaderPlugin"
+        }
+    ]
+}

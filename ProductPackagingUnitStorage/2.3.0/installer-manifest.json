@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Synchronization\\SynchronizationDependencyProvider::getSynchronizationDataPlugins",
+            "source": "\\Spryker\\Zed\\ProductPackagingUnitStorage\\Communication\\Plugin\\Synchronization\\ProductPackagingUnitSynchronizationDataBulkPlugin"
+        }
+    ]
+}

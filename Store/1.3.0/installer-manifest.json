@@ -1,0 +1,44 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductLabelGui\\ProductLabelGuiDependencyProvider::getStoreRelationFormTypePlugin",
+            "source": "\\Spryker\\Zed\\Store\\Communication\\Plugin\\Form\\StoreRelationToggleFormTypePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementDependencyProvider::getStoreRelationFormTypePlugin",
+            "source": "\\Spryker\\Zed\\Store\\Communication\\Plugin\\Form\\StoreRelationToggleFormTypePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getStoreRelationFormTypePlugin",
+            "source": "\\Spryker\\Zed\\Store\\Communication\\Plugin\\Form\\StoreRelationToggleFormTypePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CmsBlockGui\\CmsBlockGuiDependencyProvider::getStoreRelationFormTypePlugin",
+            "source": "\\Spryker\\Zed\\Store\\Communication\\Plugin\\Form\\StoreRelationToggleFormTypePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CmsGui\\CmsGuiDependencyProvider::getStoreRelationFormTypePlugin",
+            "source": "\\Spryker\\Zed\\Store\\Communication\\Plugin\\Form\\StoreRelationToggleFormTypePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ShipmentGui\\ShipmentGuiDependencyProvider::getStoreRelationFormTypePlugin",
+            "source": "\\Spryker\\Zed\\Store\\Communication\\Plugin\\Form\\StoreRelationToggleFormTypePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductRelationGui\\ProductRelationGuiDependencyProvider::getStoreRelationFormTypePlugin",
+            "source": "\\Spryker\\Zed\\Store\\Communication\\Plugin\\Form\\StoreRelationToggleFormTypePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\PaymentGui\\PaymentGuiDependencyProvider::getStoreRelationFormTypePlugin",
+            "source": "\\Spryker\\Zed\\Store\\Communication\\Plugin\\Form\\StoreRelationToggleFormTypePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MerchantGui\\MerchantGuiDependencyProvider::getStoreRelationFormTypePlugin",
+            "source": "\\Spryker\\Zed\\Store\\Communication\\Plugin\\Form\\StoreRelationToggleFormTypePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\StockGui\\StockGuiDependencyProvider::getStoreRelationFormTypePlugin",
+            "source": "\\Spryker\\Zed\\Store\\Communication\\Plugin\\Form\\StoreRelationToggleFormTypePlugin"
+        }
+    ]
+}

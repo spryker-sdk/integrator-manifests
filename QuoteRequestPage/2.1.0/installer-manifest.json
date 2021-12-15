@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\Router\\RouterDependencyProvider::getRouteProvider",
+            "source": "\\SprykerShop\\Yves\\QuoteRequestPage\\Plugin\\Router\\QuoteRequestPageRouteProviderPlugin"
+        }
+    ]
+}

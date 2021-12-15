@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\MerchantRelationship\\MerchantRelationshipDependencyProvider::getMerchantRelationshipPostCreatePlugins",
+            "source": "\\Spryker\\Zed\\MerchantRelationshipProductList\\Communication\\Plugin\\MerchantRelationship\\ProductListMerchantRelationshipPostCreatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MerchantRelationship\\MerchantRelationshipDependencyProvider::getMerchantRelationshipPostUpdatePlugins",
+            "source": "\\Spryker\\Zed\\MerchantRelationshipProductList\\Communication\\Plugin\\MerchantRelationship\\ProductListMerchantRelationshipPostUpdatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductList\\ProductListDependencyProvider::getProductListDeletePreCheckPlugins",
+            "source": "\\Spryker\\Zed\\MerchantRelationshipProductList\\Communication\\Plugin\\ProductList\\MerchantRelationshipProductListDeletePreCheckPlugin"
+        }
+    ]
+}

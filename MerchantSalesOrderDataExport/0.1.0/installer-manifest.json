@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\DataExport\\DataExportDependencyProvider::getDataEntityExporterPlugins",
+            "source": "\\Spryker\\Zed\\MerchantSalesOrderDataExport\\Communication\\Plugin\\DataExport\\MerchantOrderDataEntityExporterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\DataExport\\DataExportDependencyProvider::getDataEntityExporterPlugins",
+            "source": "\\Spryker\\Zed\\MerchantSalesOrderDataExport\\Communication\\Plugin\\DataExport\\MerchantOrderItemDataEntityExporterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\DataExport\\DataExportDependencyProvider::getDataEntityExporterPlugins",
+            "source": "\\Spryker\\Zed\\MerchantSalesOrderDataExport\\Communication\\Plugin\\DataExport\\MerchantOrderExpenseDataEntityExporterPlugin"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\ShipmentsRestApi\\ShipmentsRestApiDependencyProvider::getAddressSourceCheckerPlugins",
+            "source": "\\Spryker\\Glue\\CustomersRestApi\\Plugin\\ShipmentsRestApi\\CustomerAddressSourceCheckerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ShipmentsRestApi\\ShipmentsRestApiDependencyProvider::getAddressProviderStrategyPlugins",
+            "source": "\\Spryker\\Zed\\CustomersRestApi\\Communication\\Plugin\\ShipmentsRestApi\\CustomerAddressProviderStrategyPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getCheckoutDataValidatorPlugins",
+            "source": "\\Spryker\\Zed\\CustomersRestApi\\Communication\\Plugin\\CheckoutRestApi\\CustomerAddressCheckoutDataValidatorPlugin"
+        }
+    ],
+    "wire-glue-relationship": [
+        {
+            "source": {
+                "\\Spryker\\Glue\\CheckoutRestApi\\CheckoutRestApiConfig::RESOURCE_CHECKOUT_DATA": "\\Spryker\\Glue\\CustomersRestApi\\Plugin\\GlueApplication\\AddressByCheckoutDataResourceRelationshipPlugin"
+            }
+        }
+    ]
+}

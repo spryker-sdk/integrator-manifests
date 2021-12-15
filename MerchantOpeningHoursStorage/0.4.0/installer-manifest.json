@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getMerchantOpeningHoursStoragePlugins",
+            "source": "\\Spryker\\Zed\\MerchantOpeningHoursStorage\\Communication\\Plugin\\Publisher\\MerchantOpeningHours\\MerchantOpeningHoursWritePublisherPlugin"
+        }
+    ]
+}

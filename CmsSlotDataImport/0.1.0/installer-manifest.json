@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
+            "source": "\\Spryker\\Zed\\CmsSlotDataImport\\Communication\\Plugin\\CmsSlotTemplateDataImportPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
+            "source": "\\Spryker\\Zed\\CmsSlotDataImport\\Communication\\Plugin\\CmsSlotDataImportPlugin"
+        }
+    ]
+}

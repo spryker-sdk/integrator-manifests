@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getBackendApiEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Api\\Communication\\Plugin\\EventDispatcher\\ApiControllerEventDispatcherPlugin"
+        }
+    ]
+}

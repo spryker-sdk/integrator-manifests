@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CompanyUnitAddressGui\\CompanyUnitAddressGuiDependencyProvider::getCompanyUnitAddressTableConfigExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CompanyUnitAddressLabelGui\\Communication\\Plugin\\CompanyUnitAddressTableExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CompanyUnitAddressGui\\CompanyUnitAddressGuiDependencyProvider::getCompanyUnitAddressTableHeaderExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CompanyUnitAddressLabelGui\\Communication\\Plugin\\CompanyUnitAddressTableExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CompanyUnitAddressGui\\CompanyUnitAddressGuiDependencyProvider::getCompanyUnitAddressTableDataExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CompanyUnitAddressLabelGui\\Communication\\Plugin\\CompanyUnitAddressTableExpanderPlugin"
+        }
+    ]
+}

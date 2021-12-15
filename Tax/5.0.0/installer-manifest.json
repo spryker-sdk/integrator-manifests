@@ -1,0 +1,20 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Calculation\\CalculationDependencyProvider::getQuoteCalculatorPluginStack",
+            "source": "\\Spryker\\Zed\\Tax\\Communication\\Plugin\\Calculator\\TaxAmountCalculatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Calculation\\CalculationDependencyProvider::getQuoteCalculatorPluginStack",
+            "source": "\\Spryker\\Zed\\Tax\\Communication\\Plugin\\Calculator\\TaxRateAverageAggregatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Calculation\\CalculationDependencyProvider::getOrderCalculatorPluginStack",
+            "source": "\\Spryker\\Zed\\Tax\\Communication\\Plugin\\Calculator\\TaxAmountCalculatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Calculation\\CalculationDependencyProvider::getOrderCalculatorPluginStack",
+            "source": "\\Spryker\\Zed\\Tax\\Communication\\Plugin\\Calculator\\TaxAmountAfterCancellationCalculatorPlugin"
+        }
+    ]
+}

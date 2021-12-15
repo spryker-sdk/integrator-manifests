@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CmsBlockStorage\\CmsBlockStorageDependencyProvider::getContentWidgetDataExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CmsContentWidget\\Communication\\Plugin\\CmsBlockStorage\\CmsBlockStorageStorageParameterMapExpanderPlugin"
+        }
+    ]
+}

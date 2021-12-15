@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Calculation\\CalculationDependencyProvider::getQuoteCalculatorPluginStack",
+            "source": "\\Spryker\\Zed\\DiscountCalculationConnector\\Communication\\Plugin\\Calculation\\DiscountCalculationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Calculation\\CalculationDependencyProvider::getOrderCalculatorPluginStack",
+            "source": "\\Spryker\\Zed\\DiscountCalculationConnector\\Communication\\Plugin\\Calculation\\DiscountCalculationPlugin"
+        }
+    ]
+}

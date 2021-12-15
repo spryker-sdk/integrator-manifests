@@ -1,0 +1,32 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\ShopApplication\\ShopApplicationDependencyProvider::getApplicationPlugins",
+            "source": "\\Spryker\\Yves\\Session\\Plugin\\Application\\SessionApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
+            "source": "\\Spryker\\Yves\\Session\\Plugin\\EventDispatcher\\SessionEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getApplicationPlugins",
+            "source": "\\Spryker\\Glue\\Session\\Plugin\\Application\\SessionApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Session\\Communication\\Plugin\\EventDispatcher\\SessionEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Session\\Communication\\Plugin\\EventDispatcher\\SaveSessionEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackofficeApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Session\\Communication\\Plugin\\Application\\SessionApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MerchantPortalApplication\\MerchantPortalApplicationDependencyProvider::getMerchantPortalApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Session\\Communication\\Plugin\\Application\\SessionApplicationPlugin"
+        }
+    ]
+}

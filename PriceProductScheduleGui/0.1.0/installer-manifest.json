@@ -1,0 +1,20 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementDependencyProvider::getProductConcreteFormEditTabsExpanderPlugins",
+            "source": "\\Spryker\\Zed\\PriceProductScheduleGui\\Communication\\Plugin\\ProductManagement\\ScheduledPriceProductConcreteFormEditTabsExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementDependencyProvider::getProductAbstractFormEditTabsExpanderPlugins",
+            "source": "\\Spryker\\Zed\\PriceProductScheduleGui\\Communication\\Plugin\\ProductManagement\\ScheduledPriceProductAbstractFormEditTabsExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementDependencyProvider::getProductAbstractEditViewExpanderPlugins",
+            "source": "\\Spryker\\Zed\\PriceProductScheduleGui\\Communication\\Plugin\\ProductManagement\\ScheduledPriceProductAbstractEditViewExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementDependencyProvider::getProductConcreteEditViewExpanderPlugins",
+            "source": "\\Spryker\\Zed\\PriceProductScheduleGui\\Communication\\Plugin\\ProductManagement\\ScheduledPriceProductConcreteEditViewExpanderPlugin"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\ProductConfigurationWishlistWidget\\ProductConfigurationWishlistWidgetDependencyProvider::getWishlistItemProductConfigurationRenderStrategyPlugins",
+            "source": "\\SprykerShop\\Yves\\DateTimeConfiguratorPageExample\\Plugin\\ProductConfigurationWishlistWidget\\ExampleDateTimeWishlistItemProductConfigurationRenderStrategyPlugin"
+        }
+    ]
+}

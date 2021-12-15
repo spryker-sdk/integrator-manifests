@@ -1,0 +1,15 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\ProductOfferPricesRestApi\\Plugin\\GlueApplication\\ProductOfferPricesResourceRoutePlugin"
+        }
+    ],
+    "wire-glue-relationship": [
+        {
+            "source": {
+                "\\Spryker\\Glue\\MerchantProductOffersRestApi\\MerchantProductOffersRestApiConfig::RESOURCE_PRODUCT_OFFERS": "\\Spryker\\Glue\\ProductOfferPricesRestApi\\Plugin\\GlueApplication\\ProductOfferPriceByProductOfferReferenceResourceRelationshipPlugin"
+            }
+        }
+    ]
+}

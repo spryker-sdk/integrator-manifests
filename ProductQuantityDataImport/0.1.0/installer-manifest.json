@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
+            "source": "\\Spryker\\Zed\\ProductQuantityDataImport\\Communication\\Plugin\\ProductQuantityDataImportPlugin"
+        }
+    ]
+}

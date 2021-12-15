@@ -1,0 +1,15 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\CompaniesRestApi\\Plugin\\GlueApplication\\CompaniesResourcePlugin"
+        }
+    ],
+    "wire-glue-relationship": [
+        {
+            "source": {
+                "\\Spryker\\Glue\\CompanyUsersRestApi\\CompanyUsersRestApiConfig::RESOURCE_COMPANY_USERS": "\\Spryker\\Glue\\CompaniesRestApi\\Plugin\\GlueApplication\\CompanyByCompanyUserResourceRelationshipPlugin"
+            }
+        }
+    ]
+}

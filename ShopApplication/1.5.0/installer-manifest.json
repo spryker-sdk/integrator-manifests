@@ -1,0 +1,32 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\ShopApplication\\ShopApplicationDependencyProvider::getApplicationPlugins",
+            "source": "\\SprykerShop\\Yves\\ShopApplication\\Plugin\\Application\\ShopApplicationApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
+            "source": "\\SprykerShop\\Yves\\ShopApplication\\Plugin\\EventDispatcher\\ShopApplicationEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\SprykerShop\\Yves\\ShopApplication\\Plugin\\Twig\\ShopApplicationTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\SprykerShop\\Yves\\ShopApplication\\Plugin\\TwigFormRuntimeLoaderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\SprykerShop\\Yves\\ShopApplication\\Plugin\\Twig\\WidgetTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\SprykerShop\\Yves\\ShopApplication\\Plugin\\Twig\\WidgetTagTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigLoaderPlugins",
+            "source": "\\SprykerShop\\Yves\\ShopApplication\\Plugin\\Twig\\ShopApplicationFormTwigLoaderPlugin"
+        }
+    ]
+}

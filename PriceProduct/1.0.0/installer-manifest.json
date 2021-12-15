@@ -1,0 +1,20 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductAbstractAfterUpdatePlugins",
+            "source": "\\Spryker\\Zed\\PriceProduct\\Communication\\Plugin\\ProductAbstract\\PriceProductAbstractAfterUpdatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductConcreteAfterCreatePlugins",
+            "source": "\\Spryker\\Zed\\PriceProduct\\Communication\\Plugin\\ProductConcrete\\PriceProductConcreteAfterCreatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductConcreteAfterUpdatePlugins",
+            "source": "\\Spryker\\Zed\\PriceProduct\\Communication\\Plugin\\ProductConcrete\\PriceProductConcreteAfterUpdatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Installer\\InstallerDependencyProvider::getInstallerPlugins",
+            "source": "\\Spryker\\Zed\\PriceProduct\\Communication\\Plugin\\PriceInstallerPlugin"
+        }
+    ]
+}

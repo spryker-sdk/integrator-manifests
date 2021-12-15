@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getCheckoutRequestExpanderPlugins",
+            "source": "\\Spryker\\Glue\\CompanyUsersRestApi\\Plugin\\CheckoutRestApi\\CompanyUserCheckoutRequestExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CartsRestApi\\CartsRestApiDependencyProvider::getQuoteExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CompanyUsersRestApi\\Communication\\Plugin\\CartsRestApi\\CustomerCompanyUserQuoteExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getQuoteMapperPlugins",
+            "source": "\\Spryker\\Zed\\CompanyUsersRestApi\\Communication\\Plugin\\CheckoutRestApi\\CompanyUserQuoteMapperPlugin"
+        }
+    ]
+}

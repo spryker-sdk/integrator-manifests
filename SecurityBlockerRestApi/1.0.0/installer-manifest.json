@@ -1,0 +1,20 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getRestRequestValidatorPlugins",
+            "source": "\\Spryker\\Glue\\SecurityBlockerRestApi\\Plugin\\GlueApplication\\SecurityBlockerCustomerRestRequestValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getRestRequestValidatorPlugins",
+            "source": "\\Spryker\\Glue\\SecurityBlockerRestApi\\Plugin\\GlueApplication\\SecurityBlockerAgentRestRequestValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getControllerAfterActionPlugins",
+            "source": "\\Spryker\\Glue\\SecurityBlockerRestApi\\Plugin\\GlueApplication\\SecurityBlockerCustomerControllerAfterActionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getControllerAfterActionPlugins",
+            "source": "\\Spryker\\Glue\\SecurityBlockerRestApi\\Plugin\\GlueApplication\\SecurityBlockerAgentControllerAfterActionPlugin"
+        }
+    ]
+}

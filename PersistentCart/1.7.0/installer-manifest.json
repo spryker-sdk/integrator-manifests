@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Calculation\\CalculationDependencyProvider::getQuotePostRecalculatePlugins",
+            "source": "\\Spryker\\Zed\\PersistentCart\\Communication\\Plugin\\Calculation\\QuoteSaveQuotePostRecalculateStrategyPlugin"
+        }
+    ]
+}

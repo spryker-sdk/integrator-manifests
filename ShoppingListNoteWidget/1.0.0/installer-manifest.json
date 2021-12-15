@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\ShoppingListPage\\ShoppingListPageDependencyProvider::getShoppingListItemFormExpanderPlugins",
+            "source": "\\SprykerShop\\Yves\\ShoppingListNoteWidget\\Plugin\\ShoppingListPage\\ShoppingListItemNoteFormExpanderPlugin"
+        }
+    ]
+}

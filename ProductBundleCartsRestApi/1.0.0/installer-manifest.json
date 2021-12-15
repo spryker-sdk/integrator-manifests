@@ -1,0 +1,29 @@
+{
+    "wire-glue-relationship": [
+        {
+            "source": {
+                "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiConfig::RESOURCE_CARTS": "\\Spryker\\Glue\\ProductBundleCartsRestApi\\Plugin\\GlueApplication\\BundleItemByQuoteResourceRelationshipPlugin"
+            }
+        },
+        {
+            "source": {
+                "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiConfig::RESOURCE_GUEST_CARTS": "\\Spryker\\Glue\\ProductBundleCartsRestApi\\Plugin\\GlueApplication\\GuestBundleItemByQuoteResourceRelationshipPlugin"
+            }
+        },
+        {
+            "source": {
+                "\\Spryker\\Glue\\ProductBundleCartsRestApi\\ProductBundleCartsRestApiConfig::RESOURCE_BUNDLE_ITEMS": "\\Spryker\\Glue\\ProductBundleCartsRestApi\\Plugin\\GlueApplication\\BundledItemByQuoteResourceRelationshipPlugin"
+            }
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiDependencyProvider::getCartItemFilterPlugins",
+            "source": "\\Spryker\\Glue\\ProductBundleCartsRestApi\\Plugin\\CartsRestApi\\ProductBundleCartItemFilterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CartsRestApi\\CartsRestApiDependencyProvider::getQuoteItemReadValidatorPlugins",
+            "source": "\\Spryker\\Zed\\ProductBundleCartsRestApi\\Communication\\Plugin\\BundleItemQuoteItemReadValidatorPlugin"
+        }
+    ]
+}

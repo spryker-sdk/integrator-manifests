@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\PersistentCart\\PersistentCartDependencyProvider::getChangeRequestExtendPlugins",
+            "source": "\\Spryker\\Client\\ProductMeasurementUnit\\Plugin\\PersistentCart\\SingleItemQuantitySalesUnitPersistentCartChangeExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Cart\\CartDependencyProvider::getAddItemsRequestExpanderPlugins",
+            "source": "\\Spryker\\Client\\ProductMeasurementUnit\\Plugin\\Cart\\SingleItemQuantitySalesUnitCartChangeRequestExpanderPlugin"
+        }
+    ]
+}

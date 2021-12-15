@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\CmsContentWidget\\CmsContentWidgetDependencyProvider::getCmsContentWidgetPlugins",
+            "source": "\\SprykerShop\\Yves\\CmsContentWidgetProductConnector\\Plugin\\CmsProductContentWidgetPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\CmsContentWidget\\CmsContentWidgetDependencyProvider::getCmsContentWidgetPlugins",
+            "source": "\\SprykerShop\\Yves\\CmsContentWidgetProductConnector\\Plugin\\CmsProductContentWidgetPlugin"
+        }
+    ]
+}

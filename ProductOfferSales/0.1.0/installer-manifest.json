@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderItemExpanderPreSavePlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferSales\\Communication\\Plugin\\Sales\\ProductOfferReferenceOrderItemExpanderPreSavePlugin"
+        }
+    ]
+}

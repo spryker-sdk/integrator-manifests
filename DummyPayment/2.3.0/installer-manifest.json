@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ManualOrderEntryGui\\ManualOrderEntryGuiDependencyProvider::getPaymentSubFormPlugins",
+            "source": "\\Spryker\\Zed\\DummyPayment\\Communication\\Plugin\\ManualOrderEntry\\DummyPaymentInvoicePaymentSubFormPlugin"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
+            "source": "\\Spryker\\Yves\\Router\\Plugin\\EventDispatcher\\RouterLocaleEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Router\\Communication\\Plugin\\EventDispatcher\\RouterLocaleEventDispatcherPlugin"
+        }
+    ]
+}

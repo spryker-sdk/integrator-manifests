@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProfileDataImport\\Communication\\Plugin\\MerchantProfileDataImportPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProfileDataImport\\Communication\\Plugin\\MerchantProfileAddressDataImportPlugin"
+        }
+    ]
+}

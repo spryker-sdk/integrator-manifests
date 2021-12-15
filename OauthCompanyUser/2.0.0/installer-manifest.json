@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Customer\\CustomerDependencyProvider::getAccessTokenAuthenticationHandlerPlugin",
+            "source": "\\Spryker\\Client\\OauthCompanyUser\\Plugin\\Customer\\CompanyUserAccessTokenAuthenticationHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Oauth\\OauthDependencyProvider::getUserProviderPlugins",
+            "source": "\\Spryker\\Zed\\OauthCompanyUser\\Communication\\Plugin\\Oauth\\CompanyUserAccessTokenOauthUserProviderPlugin"
+        }
+    ]
+}

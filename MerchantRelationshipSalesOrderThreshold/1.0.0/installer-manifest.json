@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\SalesOrderThreshold\\SalesOrderThresholdDependencyProvider::getSalesOrderThresholdDataSourceStrategies",
+            "source": "\\Spryker\\Zed\\MerchantRelationshipSalesOrderThreshold\\Communication\\Plugin\\SalesOrderThreshold\\MerchantRelationshipSalesOrderThresholdDataSourceStrategyPlugin"
+        }
+    ]
+}

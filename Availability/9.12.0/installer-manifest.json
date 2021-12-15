@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Stock\\StockDependencyProvider::getStockUpdateHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Availability\\Communication\\Plugin\\Stock\\AvailabilityStockUpdateHandlerPlugin"
+        }
+    ]
+}

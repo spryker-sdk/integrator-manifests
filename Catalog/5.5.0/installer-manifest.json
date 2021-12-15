@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::getProductConcreteCatalogSearchResultFormatterPlugins",
+            "source": "\\Spryker\\Client\\Catalog\\Plugin\\Elasticsearch\\ResultFormatter\\ProductConcreteCatalogSearchResultFormatterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::getProductConcreteCatalogSearchQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\Catalog\\Plugin\\Elasticsearch\\QueryExpander\\PaginatedProductConcreteCatalogSearchQueryExpanderPlugin"
+        }
+    ]
+}

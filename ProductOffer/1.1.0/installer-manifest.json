@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\AvailabilityCartConnector\\AvailabilityCartConnectorDependencyProvider::getCartItemQuantityCounterStrategyPlugins",
+            "source": "\\Spryker\\Zed\\ProductOffer\\Communication\\Plugin\\Cart\\ProductOfferCartItemQuantityCounterStrategyPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Availability\\AvailabilityDependencyProvider::getCartItemQuantityCounterStrategyPlugins",
+            "source": "\\Spryker\\Zed\\ProductOffer\\Communication\\Plugin\\Cart\\ProductOfferCartItemQuantityCounterStrategyPlugin"
+        }
+    ]
+}

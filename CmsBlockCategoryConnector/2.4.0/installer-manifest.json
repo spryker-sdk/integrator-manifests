@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CategoryGui\\CategoryGuiDependencyProvider::getCategoryFormPlugins",
+            "source": "\\Spryker\\Zed\\CmsBlockCategoryConnector\\Communication\\Plugin\\CategoryGui\\CmsBlockSubformCategoryFormPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CategoryGui\\CategoryGuiDependencyProvider::getCategoryRelationReadPlugins",
+            "source": "\\Spryker\\Zed\\CmsBlockCategoryConnector\\Communication\\Plugin\\CategoryGui\\CmsBlockCategoryRelationReadPlugin"
+        }
+    ]
+}

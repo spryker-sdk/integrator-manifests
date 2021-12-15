@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::getFacetConfigTransferBuilderPlugins",
+            "source": "\\Spryker\\Client\\ProductReview\\Plugin\\RatingFacetConfigTransferBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::getSortConfigTransferBuilderPlugins",
+            "source": "\\Spryker\\Client\\ProductReview\\Plugin\\RatingSortConfigTransferBuilderPlugin"
+        }
+    ]
+}

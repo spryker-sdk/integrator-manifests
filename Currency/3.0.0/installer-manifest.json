@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\ZedRequest\\ZedRequestDependencyProvider::getMetaDataProviderPlugins",
+            "source": "\\Spryker\\Client\\Currency\\Plugin\\ZedRequestMetaDataProviderPlugin"
+        }
+    ]
+}

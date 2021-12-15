@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\CustomerPage\\CustomerPageDependencyProvider::getOrderSearchFormExpanderPlugins",
+            "source": "\\SprykerShop\\Yves\\CompanyPage\\Plugin\\CustomerPage\\CompanyBusinessUnitOrderSearchFormExpanderPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\CustomerPage\\CustomerPageDependencyProvider::getOrderSearchFormHandlerPlugins",
+            "source": "\\SprykerShop\\Yves\\CompanyPage\\Plugin\\CustomerPage\\CompanyBusinessUnitOrderSearchFormHandlerPlugin"
+        }
+    ]
+}

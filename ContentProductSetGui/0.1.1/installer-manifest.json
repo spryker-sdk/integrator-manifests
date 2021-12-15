@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ContentGui\\ContentGuiDependencyProvider::getContentEditorPlugins",
+            "source": "\\Spryker\\Zed\\ContentProductSetGui\\Communication\\Plugin\\ContentGui\\ContentProductSetGuiEditorPlugin"
+        }
+    ]
+}

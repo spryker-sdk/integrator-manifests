@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Stock\\StockDependencyProvider::getStockCollectionExpanderPlugins",
+            "source": "\\Spryker\\Zed\\StockAddress\\Communication\\Plugin\\Stock\\StockAddressStockCollectionExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Stock\\StockDependencyProvider::getStockPostCreatePlugins",
+            "source": "\\Spryker\\Zed\\StockAddress\\Communication\\Plugin\\Stock\\StockAddressStockPostCreatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Stock\\StockDependencyProvider::getStockPostUpdatePlugins",
+            "source": "\\Spryker\\Zed\\StockAddress\\Communication\\Plugin\\Stock\\StockAddressStockPostUpdatePlugin"
+        }
+    ]
+}

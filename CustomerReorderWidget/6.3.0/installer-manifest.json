@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\Router\\RouterDependencyProvider::getRouteProvider",
+            "source": "\\SprykerShop\\Yves\\CustomerReorderWidget\\Plugin\\Router\\CustomerReorderWidgetRouteProviderPlugin"
+        }
+    ]
+}

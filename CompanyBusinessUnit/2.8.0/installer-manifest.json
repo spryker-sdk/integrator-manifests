@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CompanyUser\\CompanyUserDependencyProvider::getCompanyUserSavePreCheckPlugins",
+            "source": "\\Spryker\\Zed\\CompanyBusinessUnit\\Communication\\Plugin\\CompanyUser\\CheckCompanyUserUniquenessCompanyUserSavePreCheckPlugin"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductOption\\ProductOptionDependencyProvider::getProductOptionGroupExpanderPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductOption\\Communication\\Plugin\\ProductOption\\MerchantProductOptionGroupExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditions",
+            "source": "\\Spryker\\Zed\\MerchantProductOption\\Communication\\Plugin\\Checkout\\MerchantProductOptionCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductOption\\Communication\\Plugin\\Cart\\MerchantProductOptionCartPreCheckPlugin"
+        }
+    ]
+}

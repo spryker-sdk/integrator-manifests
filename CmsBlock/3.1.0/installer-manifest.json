@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Zed\\CmsBlock\\Communication\\Plugin\\Twig\\CmsBlockTwigExtensionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigLoaderPlugins",
+            "source": "\\Spryker\\Zed\\CmsBlock\\Communication\\Plugin\\Twig\\CmsBlockTemplateTwigLoaderPlugin"
+        }
+    ]
+}

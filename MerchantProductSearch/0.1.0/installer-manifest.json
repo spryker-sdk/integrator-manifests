@@ -1,0 +1,24 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\SearchElasticsearch\\SearchElasticsearchDependencyProvider::getSearchConfigExpanderPlugins",
+            "source": "\\Spryker\\Client\\MerchantProductSearch\\Plugin\\Search\\MerchantProductMerchantNameSearchConfigExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getMerchantProductSearchPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductSearch\\Communication\\Plugin\\Publisher\\Merchant\\MerchantProductSearchWritePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getMerchantProductSearchPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductSearch\\Communication\\Plugin\\Publisher\\MerchantProduct\\MerchantProductSearchWritePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductPageSearch\\ProductPageSearchDependencyProvider::getDataLoaderPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductSearch\\Communication\\Plugin\\ProductPageSearch\\MerchantProductPageDataLoaderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductPageSearch\\ProductPageSearchDependencyProvider::getProductAbstractMapExpanderPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductSearch\\Communication\\Plugin\\ProductPageSearch\\MerchantProductAbstractMapExpanderPlugin"
+        }
+    ]
+}

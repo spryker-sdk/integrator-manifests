@@ -1,0 +1,48 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherTriggerPlugins",
+            "source": "\\Spryker\\Zed\\ProductCategoryStorage\\Communication\\Plugin\\Publisher\\ProductCategoryPublisherTriggerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductCategoryStoragePlugins",
+            "source": "\\Spryker\\Zed\\ProductCategoryStorage\\Communication\\Plugin\\Publisher\\Category\\CategoryWritePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductCategoryStoragePlugins",
+            "source": "\\Spryker\\Zed\\ProductCategoryStorage\\Communication\\Plugin\\Publisher\\Category\\CategoryIsActiveAndCategoryKeyWritePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductCategoryStoragePlugins",
+            "source": "\\Spryker\\Zed\\ProductCategoryStorage\\Communication\\Plugin\\Publisher\\CategoryAttribute\\CategoryAttributeWritePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductCategoryStoragePlugins",
+            "source": "\\Spryker\\Zed\\ProductCategoryStorage\\Communication\\Plugin\\Publisher\\CategoryAttribute\\CategoryAttributeNameWritePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductCategoryStoragePlugins",
+            "source": "\\Spryker\\Zed\\ProductCategoryStorage\\Communication\\Plugin\\Publisher\\CategoryNode\\CategoryNodeWritePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductCategoryStoragePlugins",
+            "source": "\\Spryker\\Zed\\ProductCategoryStorage\\Communication\\Plugin\\Publisher\\CategoryUrl\\CategoryUrlWritePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductCategoryStoragePlugins",
+            "source": "\\Spryker\\Zed\\ProductCategoryStorage\\Communication\\Plugin\\Publisher\\CategoryUrl\\CategoryUrlAndResourceCategorynodeWritePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductCategoryStoragePlugins",
+            "source": "\\Spryker\\Zed\\ProductCategoryStorage\\Communication\\Plugin\\Publisher\\ProductCategory\\ProductCategoryWriteForPublishingPublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductCategoryStoragePlugins",
+            "source": "\\Spryker\\Zed\\ProductCategoryStorage\\Communication\\Plugin\\Publisher\\ProductCategory\\ProductCategoryWritePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Synchronization\\SynchronizationDependencyProvider::getSynchronizationDataPlugins",
+            "source": "\\Spryker\\Zed\\ProductCategoryStorage\\Communication\\Plugin\\Synchronization\\ProductCategorySynchronizationDataBulkRepositoryPlugin"
+        }
+    ]
+}

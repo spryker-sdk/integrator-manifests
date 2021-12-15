@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductOption\\ProductOptionDependencyProvider::getProductOptionValuesPreRemovePlugins",
+            "source": "\\Spryker\\Zed\\ShoppingListProductOptionConnector\\Communication\\Plugin\\ProductOption\\ShoppingListItemsProductOptionValuesPreRemovePlugin"
+        }
+    ]
+}

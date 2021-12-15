@@ -1,0 +1,9 @@
+{
+    "wire-glue-relationship": [
+        {
+            "source": {
+                "\\Spryker\\Glue\\QuoteRequestsRestApi\\QuoteRequestsRestApiConfig::RESOURCE_QUOTE_REQUESTS": "\\Spryker\\Glue\\ProductsRestApi\\Plugin\\GlueApplication\\ConcreteProductByQuoteRequestResourceRelationshipPlugin"
+            }
+        }
+    ]
+}

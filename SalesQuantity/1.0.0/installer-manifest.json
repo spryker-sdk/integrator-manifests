@@ -1,0 +1,20 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getDiscountableItemTransformerStrategyPlugins",
+            "source": "\\Spryker\\Zed\\SalesQuantity\\Communication\\Plugin\\DiscountExtension\\NonSplittableDiscountableItemTransformerStrategyPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderItemExpanderPreSavePlugins",
+            "source": "\\Spryker\\Zed\\SalesQuantity\\Communication\\Plugin\\SalesExtension\\IsQuantitySplittableOrderItemExpanderPreSavePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getItemTransformerStrategyPlugins",
+            "source": "\\Spryker\\Zed\\SalesQuantity\\Communication\\Plugin\\SalesExtension\\NonSplittableItemTransformerStrategyPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPlugins",
+            "source": "\\Spryker\\Zed\\SalesQuantity\\Communication\\Plugin\\Cart\\IsQuantitySplittableItemExpanderPlugin"
+        }
+    ]
+}

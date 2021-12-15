@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\QuickOrderPage\\QuickOrderPageDependencyProvider::getQuickOrderUploadedFileParserPlugins",
+            "source": "\\SprykerShop\\Yves\\QuickOrderPage\\Plugin\\QuickOrderPage\\QuickOrderCsvUploadedFileParserStrategyPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\QuickOrderPage\\QuickOrderPageDependencyProvider::getQuickOrderFileTemplatePlugins",
+            "source": "\\SprykerShop\\Yves\\QuickOrderPage\\Plugin\\QuickOrderPage\\QuickOrderCsvFileTemplateStrategyPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\QuickOrderPage\\QuickOrderPageDependencyProvider::getQuickOrderUploadedFileValidatorPlugins",
+            "source": "\\SprykerShop\\Yves\\QuickOrderPage\\Plugin\\QuickOrderPage\\QuickOrderCsvUploadedFileValidatorStrategyPlugin"
+        }
+    ]
+}

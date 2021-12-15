@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\ShopApplication\\ShopApplicationDependencyProvider::getApplicationPlugins",
+            "source": "\\Spryker\\Yves\\Translator\\Plugin\\Application\\TranslatorApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Yves\\Translator\\Plugin\\Twig\\TranslatorTwigPlugin"
+        }
+    ]
+}

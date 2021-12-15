@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\BusinessOnBehalfGui\\BusinessOnBehalfGuiDependencyProvider::getCustomerBusinessUnitAttachFormExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CompanyRoleGui\\Communication\\Plugin\\BusinessOnBehalfGui\\CompanyRoleCustomerBusinessUnitAttachFormExpanderPlugin"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\QuoteRequest\\QuoteRequestDependencyProvider::getQuoteRequestPreCreateCheckPlugins",
+            "source": "\\Spryker\\Zed\\QuoteApproval\\Communication\\Plugin\\QuoteRequest\\QuoteApprovalQuoteRequestPreCreateCheckPlugin"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Permission\\PermissionDependencyProvider::getPermissionStoragePlugins",
+            "source": "\\Spryker\\Client\\CustomerAccessPermission\\Plugin\\CustomerAccessPermissionStoragePlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Permission\\PermissionDependencyProvider::getPermissionPlugins",
+            "source": "\\Spryker\\Client\\CustomerAccessPermission\\Plugin\\SeePricePermissionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Permission\\PermissionDependencyProvider::getPermissionPlugins",
+            "source": "\\Spryker\\Client\\CustomerAccessPermission\\Plugin\\SeeOrderPlaceSubmitPermissionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Permission\\PermissionDependencyProvider::getPermissionPlugins",
+            "source": "\\Spryker\\Client\\CustomerAccessPermission\\Plugin\\SeeAddToCartPermissionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Permission\\PermissionDependencyProvider::getPermissionPlugins",
+            "source": "\\Spryker\\Client\\CustomerAccessPermission\\Plugin\\SeeWishlistPermissionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Permission\\PermissionDependencyProvider::getPermissionPlugins",
+            "source": "\\Spryker\\Client\\CustomerAccessPermission\\Plugin\\SeeShoppingListPermissionPlugin"
+        }
+    ]
+}

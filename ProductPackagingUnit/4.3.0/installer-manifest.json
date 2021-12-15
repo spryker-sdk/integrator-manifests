@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::getOmsReservationAggregationPlugins",
+            "source": "\\Spryker\\Zed\\ProductPackagingUnit\\Communication\\Plugin\\Oms\\ProductPackagingUnitOmsReservationAggregationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::getReservationPostSaveTerminationAwareStrategyPlugins",
+            "source": "\\Spryker\\Zed\\ProductPackagingUnit\\Communication\\Plugin\\Reservation\\LeadProductReservationPostSaveTerminationAwareStrategyPlugin"
+        }
+    ]
+}

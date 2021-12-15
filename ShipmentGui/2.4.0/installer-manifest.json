@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\MerchantSalesOrderMerchantUserGui\\MerchantSalesOrderMerchantUserGuiDependencyProvider::getShipmentFormTypePlugin",
+            "source": "\\Spryker\\Zed\\ShipmentGui\\Communication\\Plugin\\Form\\ShipmentFormTypePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MerchantSalesOrderMerchantUserGui\\MerchantSalesOrderMerchantUserGuiDependencyProvider::getItemFormTypePlugin",
+            "source": "\\Spryker\\Zed\\ShipmentGui\\Communication\\Plugin\\Form\\ItemFormTypePlugin"
+        }
+    ]
+}

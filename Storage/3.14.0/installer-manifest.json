@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\HealthCheck\\HealthCheckDependencyProvider::getHealthCheckPlugins",
+            "source": "\\Spryker\\Yves\\Storage\\Plugin\\HealthCheck\\KeyValueStoreHealthCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\HealthCheck\\HealthCheckDependencyProvider::getHealthCheckPlugins",
+            "source": "\\Spryker\\Glue\\Storage\\Plugin\\HealthCheck\\KeyValueStoreHealthCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\HealthCheck\\HealthCheckDependencyProvider::getHealthCheckPlugins",
+            "source": "\\Spryker\\Zed\\Storage\\Communication\\Plugin\\HealthCheck\\KeyValueStoreHealthCheckPlugin"
+        }
+    ]
+}

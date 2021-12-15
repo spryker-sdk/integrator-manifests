@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\PersistentCart\\PersistentCartDependencyProvider::getChangeRequestExtendPlugins",
+            "source": "\\Spryker\\Client\\ProductConfigurationPersistentCart\\Plugin\\PersistentCart\\ProductConfigurationPersistentCartRequestExpanderPlugin"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::getOmsReservationAggregationPlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferPackagingUnit\\Communication\\Plugin\\Oms\\ProductOfferPackagingUnitOmsReservationAggregationPlugin"
+        }
+    ]
+}

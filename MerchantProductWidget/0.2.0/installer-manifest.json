@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\WishlistPage\\WishlistPageDependencyProvider::getWishlistItemRequestExpanderPlugins",
+            "source": "\\SprykerShop\\Yves\\MerchantProductWidget\\Plugin\\WishlistPage\\MerchantProductWishlistItemRequestExpanderPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\WishlistPage\\WishlistPageDependencyProvider::getWishlistItemMetaFormExpanderPlugins",
+            "source": "\\SprykerShop\\Yves\\MerchantProductWidget\\Plugin\\WishlistPage\\MerchantProductWishlistItemMetaFormExpanderPlugin"
+        }
+    ]
+}

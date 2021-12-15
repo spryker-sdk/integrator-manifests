@@ -1,0 +1,36 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Log\\LogDependencyProvider::getLogHandlers",
+            "source": "\\Spryker\\Zed\\Log\\Communication\\Plugin\\Handler\\StreamHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Log\\LogDependencyProvider::getLogHandlers",
+            "source": "\\Spryker\\Zed\\Log\\Communication\\Plugin\\Handler\\ExceptionStreamHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Log\\LogDependencyProvider::getLogProcessors",
+            "source": "\\Spryker\\Zed\\Log\\Communication\\Plugin\\Processor\\PsrLogMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Log\\LogDependencyProvider::getLogProcessors",
+            "source": "\\Spryker\\Zed\\Log\\Communication\\Plugin\\Processor\\EnvironmentProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Log\\LogDependencyProvider::getLogProcessors",
+            "source": "\\Spryker\\Zed\\Log\\Communication\\Plugin\\Processor\\ServerProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Log\\LogDependencyProvider::getLogProcessors",
+            "source": "\\Spryker\\Zed\\Log\\Communication\\Plugin\\Processor\\RequestProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Log\\LogDependencyProvider::getLogProcessors",
+            "source": "\\Spryker\\Zed\\Log\\Communication\\Plugin\\Processor\\ResponseProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Log\\LogDependencyProvider::getLogProcessors",
+            "source": "\\Spryker\\Zed\\Log\\Communication\\Plugin\\Processor\\GuzzleBodyProcessorPlugin"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderHydrationPlugins",
+            "source": "\\Spryker\\Zed\\CommentSalesConnector\\Communication\\Plugin\\Sales\\CommentThreadOrderExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderPostSavePlugins",
+            "source": "\\Spryker\\Zed\\CommentSalesConnector\\Communication\\Plugin\\Sales\\CommentThreadAttachedCommentOrderPostSavePlugin"
+        }
+    ]
+}

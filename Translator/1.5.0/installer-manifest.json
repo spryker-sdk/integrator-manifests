@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\Validator\\ValidatorDependencyProvider::getValidatorPlugins",
+            "source": "\\Spryker\\Yves\\Translator\\Plugin\\Validator\\TranslatorValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Validator\\ValidatorDependencyProvider::getValidatorPlugins",
+            "source": "\\Spryker\\Zed\\Translator\\Communication\\Plugin\\Validator\\TranslatorValidatorPlugin"
+        }
+    ]
+}

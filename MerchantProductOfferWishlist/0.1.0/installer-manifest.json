@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Wishlist\\WishlistDependencyProvider::getWishlistPostMoveToCartCollectionExpanderPlugins",
+            "source": "\\Spryker\\Client\\MerchantProductOfferWishlist\\Plugin\\Wishlist\\WishlistProductOfferPostMoveToCartCollectionExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Wishlist\\WishlistDependencyProvider::getWishlistCollectionToRemoveExpanderPlugins",
+            "source": "\\Spryker\\Client\\MerchantProductOfferWishlist\\Plugin\\Wishlist\\WishlistProductOfferCollectionToRemoveExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Wishlist\\WishlistDependencyProvider::getWishlistPreAddItemPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductOfferWishlist\\Communication\\Plugin\\Wishlist\\WishlistProductOfferPreAddItemPlugin"
+        }
+    ]
+}

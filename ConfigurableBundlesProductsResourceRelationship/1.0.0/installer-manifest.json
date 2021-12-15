@@ -1,0 +1,9 @@
+{
+    "wire-glue-relationship": [
+        {
+            "source": {
+                "\\Spryker\\Glue\\ConfigurableBundlesProductsResourceRelationship\\ConfigurableBundlesProductsResourceRelationshipConfig::RESOURCE_CONFIGURABLE_BUNDLE_TEMPLATE_SLOTS": "\\Spryker\\Glue\\ConfigurableBundlesProductsResourceRelationship\\Plugin\\GlueApplication\\ProductConcreteByConfigurableBundleTemplateSlotResourceRelationshipPlugin"
+            }
+        }
+    ]
+}

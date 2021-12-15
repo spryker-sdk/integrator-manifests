@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProduct\\Communication\\Plugin\\Cart\\MerchantProductCartPreCheckPlugin"
+        }
+    ]
+}

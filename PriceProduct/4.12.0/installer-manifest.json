@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductConcreteReadPlugins",
+            "source": "\\Spryker\\Zed\\PriceProduct\\Communication\\Plugin\\ProductConcrete\\ConcreteProductPriceProductConcreteReadPlugin"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\SalesReturn\\SalesReturnDependencyProvider::getReturnCreateRequestValidatorPlugins",
+            "source": "\\Spryker\\Zed\\MerchantSalesReturn\\Communication\\Plugin\\MerchantReturnCreateRequestValidatorPlugin"
+        }
+    ]
+}

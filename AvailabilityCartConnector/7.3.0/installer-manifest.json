@@ -1,10 +1,4 @@
 {
-    "unwire-plugin": [
-        {
-            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPlugins",
-            "source": "\\Spryker\\Zed\\AvailabilityCartConnector\\Communication\\Plugin\\CheckAvailabilityPlugin"
-        }
-    ],
     "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPlugins",

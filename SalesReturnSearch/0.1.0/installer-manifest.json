@@ -1,0 +1,28 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\SalesReturnSearch\\SalesReturnSearchDependencyProvider::getReturnReasonSearchResultFormatterPlugins",
+            "source": "\\Spryker\\Client\\SalesReturnSearch\\Plugin\\Elasticsearch\\ResultFormatter\\ReturnReasonSearchResultFormatterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\SalesReturnSearch\\SalesReturnSearchDependencyProvider::getReturnReasonSearchQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SalesReturnSearch\\Plugin\\Elasticsearch\\Query\\PaginatedReturnReasonSearchQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherTriggerPlugins",
+            "source": "\\Spryker\\Zed\\SalesReturnSearch\\Communication\\Plugin\\Publisher\\ReturnReasonPublisherTriggerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getReturnReasonSearchPlugins",
+            "source": "\\Spryker\\Zed\\SalesReturnSearch\\Communication\\Plugin\\Publisher\\ReturnReason\\ReturnReasonWritePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getReturnReasonSearchPlugins",
+            "source": "\\Spryker\\Zed\\SalesReturnSearch\\Communication\\Plugin\\Publisher\\ReturnReason\\ReturnReasonDeletePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Synchronization\\SynchronizationDependencyProvider::getSynchronizationDataPlugins",
+            "source": "\\Spryker\\Zed\\SalesReturnSearch\\Communication\\Plugin\\Synchronization\\ReturnReasonSynchronizationDataBulkRepositoryPlugin"
+        }
+    ]
+}

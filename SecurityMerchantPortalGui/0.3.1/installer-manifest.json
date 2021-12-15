@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\UserMerchantPortalGui\\UserMerchantPortalGuiDependencyProvider::getMerchantUserPostChangePlugins",
+            "source": "\\Spryker\\Zed\\SecurityMerchantPortalGui\\Communication\\Plugin\\UserMerchantPortalGui\\SecurityTokenUpdateMerchantUserPostChangePlugin"
+        }
+    ]
+}

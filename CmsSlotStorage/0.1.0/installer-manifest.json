@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Synchronization\\SynchronizationDependencyProvider::getSynchronizationDataPlugins",
+            "source": "\\Spryker\\Zed\\CmsSlotStorage\\Communication\\Plugin\\Synchronization\\CmsSlotSynchronizationDataBulkPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Synchronization\\SynchronizationDependencyProvider::getSynchronizationDataPlugins",
+            "source": "\\Spryker\\Zed\\CmsSlotStorage\\Communication\\Plugin\\Synchronization\\CmsSlotSynchronizationDataBulkPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventBehavior\\EventBehaviorDependencyProvider::getEventTriggerResourcePlugins",
+            "source": "\\Spryker\\Zed\\CmsSlotStorage\\Communication\\Plugin\\Event\\CmsSlotEventResourceBulkRepositoryPlugin"
+        }
+    ]
+}

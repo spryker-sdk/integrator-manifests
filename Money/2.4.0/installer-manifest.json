@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementDependencyProvider::createMoneyFormTypePlugin",
+            "source": "\\Spryker\\Zed\\Money\\Communication\\Plugin\\Form\\MoneyFormTypePlugin"
+        }
+    ]
+}

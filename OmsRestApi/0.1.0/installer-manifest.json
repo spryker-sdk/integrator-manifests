@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\OrdersRestApi\\OrdersRestApiDependencyProvider::getRestOrderItemsAttributesMapperPlugins",
+            "source": "\\Spryker\\Glue\\OmsRestApi\\Plugin\\OrdersRestApi\\OmsRestOrderItemsAttributesMapperPlugin"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\CheckoutRestApi\\Plugin\\GlueApplication\\CheckoutDataResourcePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\CheckoutRestApi\\Plugin\\GlueApplication\\CheckoutResourcePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getCheckoutRequestAttributesValidatorPlugins",
+            "source": "\\Spryker\\Glue\\CheckoutRestApi\\Plugin\\SinglePaymentCheckoutRequestAttributesValidatorPlugin"
+        }
+    ]
+}

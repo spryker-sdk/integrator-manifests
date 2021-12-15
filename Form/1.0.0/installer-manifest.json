@@ -1,0 +1,24 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\ShopApplication\\ShopApplicationDependencyProvider::getApplicationPlugins",
+            "source": "\\Spryker\\Yves\\Form\\Plugin\\Application\\FormApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Form\\FormDependencyProvider::getFormPlugins",
+            "source": "\\Spryker\\Yves\\Form\\Plugin\\Form\\CsrfFormPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Form\\FormDependencyProvider::getFormPlugins",
+            "source": "\\Spryker\\Zed\\Form\\Communication\\Plugin\\Form\\CsrfFormPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackofficeApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Form\\Communication\\Plugin\\Application\\FormApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MerchantPortalApplication\\MerchantPortalApplicationDependencyProvider::getMerchantPortalApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Form\\Communication\\Plugin\\Application\\FormApplicationPlugin"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherTriggerPlugins",
+            "source": "\\Spryker\\Zed\\CategoryStorage\\Communication\\Plugin\\Publisher\\CategoryNodePublisherTriggerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherTriggerPlugins",
+            "source": "\\Spryker\\Zed\\CategoryStorage\\Communication\\Plugin\\Publisher\\CategoryTreePublisherTriggerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getCategoryStoragePlugins",
+            "source": "\\Spryker\\Zed\\CategoryStorage\\Communication\\Plugin\\Publisher\\CategoryTree\\CategoryTreeWriteForPublishingPublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getCategoryStoragePlugins",
+            "source": "\\Spryker\\Zed\\CategoryStorage\\Communication\\Plugin\\Publisher\\Category\\CategoryDeletePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getCategoryStoragePlugins",
+            "source": "\\Spryker\\Zed\\CategoryStorage\\Communication\\Plugin\\Publisher\\Category\\CategoryWritePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getCategoryStoragePlugins",
+            "source": "\\Spryker\\Zed\\CategoryStorage\\Communication\\Plugin\\Publisher\\CategoryAttribute\\CategoryAttributeDeletePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getCategoryStoragePlugins",
+            "source": "\\Spryker\\Zed\\CategoryStorage\\Communication\\Plugin\\Publisher\\CategoryAttribute\\CategoryAttributeWritePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getCategoryStoragePlugins",
+            "source": "\\Spryker\\Zed\\CategoryStorage\\Communication\\Plugin\\Publisher\\CategoryNode\\CategoryNodeDeletePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getCategoryStoragePlugins",
+            "source": "\\Spryker\\Zed\\CategoryStorage\\Communication\\Plugin\\Publisher\\CategoryNode\\CategoryNodeWritePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getCategoryStoragePlugins",
+            "source": "\\Spryker\\Zed\\CategoryStorage\\Communication\\Plugin\\Publisher\\CategoryTemplate\\CategoryTemplateDeletePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getCategoryStoragePlugins",
+            "source": "\\Spryker\\Zed\\CategoryStorage\\Communication\\Plugin\\Publisher\\CategoryTemplate\\CategoryTemplateWritePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getCategoryStoragePlugins",
+            "source": "\\Spryker\\Zed\\CategoryStorage\\Communication\\Plugin\\Publisher\\CategoryTree\\CategoryTreeDeletePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getCategoryStoragePlugins",
+            "source": "\\Spryker\\Zed\\CategoryStorage\\Communication\\Plugin\\Publisher\\ParentWritePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Synchronization\\SynchronizationDependencyProvider::getSynchronizationDataPlugins",
+            "source": "\\Spryker\\Zed\\CategoryStorage\\Communication\\Plugin\\Synchronization\\CategoryTreeSynchronizationDataBulkRepositoryPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Synchronization\\SynchronizationDependencyProvider::getSynchronizationDataPlugins",
+            "source": "\\Spryker\\Zed\\CategoryStorage\\Communication\\Plugin\\Synchronization\\CategoryNodeSynchronizationDataBulkRepositoryPlugin"
+        }
+    ]
+}

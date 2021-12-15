@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\CheckoutPage\\CheckoutPageDependencyProvider::getCheckoutStepResolverStrategyPlugins",
+            "source": "\\SprykerShop\\Yves\\QuoteRequestPage\\Plugin\\CheckoutPage\\QuoteRequestCheckoutWorkflowStepResolverStrategyPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\CheckoutPage\\CheckoutPageDependencyProvider::getCheckoutStepResolverStrategyPlugins",
+            "source": "\\SprykerShop\\Yves\\QuoteRequestPage\\Plugin\\CheckoutPage\\QuoteWithCustomShipmentPriceCheckoutWorkflowStepResolverStrategyPlugin"
+        }
+    ]
+}

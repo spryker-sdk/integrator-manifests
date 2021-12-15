@@ -1,0 +1,24 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Search\\SearchDependencyProvider::createSearchConfigBuilderPlugin",
+            "source": "\\Spryker\\Client\\Catalog\\Plugin\\Config\\CatalogSearchConfigBuilder"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::getFacetConfigTransferBuilderPlugins",
+            "source": "\\Spryker\\Client\\Catalog\\Plugin\\ConfigTransferBuilder\\CategoryFacetConfigTransferBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::getSortConfigTransferBuilderPlugins",
+            "source": "\\Spryker\\Client\\Catalog\\Plugin\\ConfigTransferBuilder\\AscendingNameSortConfigTransferBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::getSortConfigTransferBuilderPlugins",
+            "source": "\\Spryker\\Client\\Catalog\\Plugin\\ConfigTransferBuilder\\DescendingNameSortConfigTransferBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createCatalogSearchQueryPlugin",
+            "source": "\\Spryker\\Client\\Catalog\\Plugin\\Elasticsearch\\Query\\ProductCatalogSearchQueryPlugin"
+        }
+    ]
+}

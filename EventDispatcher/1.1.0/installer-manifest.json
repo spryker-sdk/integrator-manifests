@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getApplicationPlugins",
+            "source": "\\Spryker\\Glue\\EventDispatcher\\Plugin\\Application\\EventDispatcherApplicationPlugin"
+        }
+    ]
+}

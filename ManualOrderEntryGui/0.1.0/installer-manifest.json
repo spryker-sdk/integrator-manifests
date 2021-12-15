@@ -1,0 +1,40 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ManualOrderEntryGui\\ManualOrderEntryGuiDependencyProvider::getManualOrderEntryFormPlugins",
+            "source": "\\Spryker\\Zed\\ManualOrderEntryGui\\Communication\\Plugin\\CustomersListManualOrderEntryFormPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ManualOrderEntryGui\\ManualOrderEntryGuiDependencyProvider::getManualOrderEntryFormPlugins",
+            "source": "\\Spryker\\Zed\\ManualOrderEntryGui\\Communication\\Plugin\\StoreManualOrderEntryFormPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ManualOrderEntryGui\\ManualOrderEntryGuiDependencyProvider::getManualOrderEntryFormPlugins",
+            "source": "\\Spryker\\Zed\\ManualOrderEntryGui\\Communication\\Plugin\\ProductManualOrderEntryFormPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ManualOrderEntryGui\\ManualOrderEntryGuiDependencyProvider::getManualOrderEntryFormPlugins",
+            "source": "\\Spryker\\Zed\\ManualOrderEntryGui\\Communication\\Plugin\\ItemManualOrderEntryFormPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ManualOrderEntryGui\\ManualOrderEntryGuiDependencyProvider::getManualOrderEntryFormPlugins",
+            "source": "\\Spryker\\Zed\\ManualOrderEntryGui\\Communication\\Plugin\\VoucherManualOrderEntryFormPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ManualOrderEntryGui\\ManualOrderEntryGuiDependencyProvider::getManualOrderEntryFormPlugins",
+            "source": "\\Spryker\\Zed\\ManualOrderEntryGui\\Communication\\Plugin\\AddressManualOrderEntryFormPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ManualOrderEntryGui\\ManualOrderEntryGuiDependencyProvider::getManualOrderEntryFormPlugins",
+            "source": "\\Spryker\\Zed\\ManualOrderEntryGui\\Communication\\Plugin\\ShipmentManualOrderEntryFormPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ManualOrderEntryGui\\ManualOrderEntryGuiDependencyProvider::getManualOrderEntryFormPlugins",
+            "source": "\\Spryker\\Zed\\ManualOrderEntryGui\\Communication\\Plugin\\PaymentManualOrderEntryFormPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ManualOrderEntryGui\\ManualOrderEntryGuiDependencyProvider::getManualOrderEntryFormPlugins",
+            "source": "\\Spryker\\Zed\\ManualOrderEntryGui\\Communication\\Plugin\\SummaryManualOrderEntryFormPlugin"
+        }
+    ]
+}

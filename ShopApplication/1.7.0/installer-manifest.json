@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
+            "source": "\\SprykerShop\\Yves\\ShopApplication\\Plugin\\EventDispatcher\\ShopApplicationFilterControllerEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
+            "source": "\\SprykerShop\\Yves\\ShopApplication\\Plugin\\EventDispatcher\\ShopApplicationExceptionEventDispatcherPlugin"
+        }
+    ]
+}

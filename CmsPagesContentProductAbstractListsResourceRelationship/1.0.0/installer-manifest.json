@@ -1,0 +1,9 @@
+{
+    "wire-glue-relationship": [
+        {
+            "source": {
+                "\\Spryker\\Glue\\CmsPagesRestApi\\CmsPagesRestApiConfig::RESOURCE_CMS_PAGES": "\\Spryker\\Glue\\CmsPagesContentProductAbstractListsResourceRelationship\\Plugin\\GlueApplication\\ContentProductAbstractListByCmsPageResourceRelationshipPlugin"
+            }
+        }
+    ]
+}

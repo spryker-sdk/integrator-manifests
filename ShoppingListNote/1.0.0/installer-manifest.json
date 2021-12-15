@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\ShoppingList\\ShoppingListDependencyProvider::getShoppingListItemToItemMapperPlugins",
+            "source": "\\Spryker\\Client\\ShoppingListNote\\Plugin\\ShoppingListItemNoteToItemCartNoteMapperPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ShoppingList\\ShoppingListDependencyProvider::getBeforeDeleteShoppingListItemPlugins",
+            "source": "\\Spryker\\Zed\\ShoppingListNote\\Communication\\Plugin\\ShoppingListItemNoteBeforeDeletePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ShoppingList\\ShoppingListDependencyProvider::getItemToShoppingListItemMapperPlugins",
+            "source": "\\Spryker\\Zed\\ShoppingListNote\\Communication\\Plugin\\ItemCartNoteToShoppingListItemNoteMapperPlugin"
+        }
+    ]
+}

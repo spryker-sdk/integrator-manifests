@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Shipment\\ShipmentDependencyProvider::getMethodFilterPlugins",
+            "source": "\\Spryker\\Zed\\GiftCard\\Communication\\Plugin\\Shipment\\GiftCardShipmentGroupMethodFilterPlugin"
+        }
+    ]
+}

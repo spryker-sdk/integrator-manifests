@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Zed\\Scheduler\\Communication\\Plugin\\Twig\\SchedulerTwigPlugin"
+        }
+    ]
+}
