@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getDiscountableItemFilterPlugins",
-            "source": "\\Spryker\\Zed\\GiftCard\\Communication\\Plugin\\GiftCardDiscountableItemFilterPlugin"
-        }
-    ]
-}

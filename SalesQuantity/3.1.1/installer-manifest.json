@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getDiscountableItemTransformerStrategyPlugins",
-            "source": "\\Spryker\\Zed\\SalesQuantity\\Communication\\Plugin\\DiscountExtension\\NonSplittableDiscountableItemTransformerStrategyPlugin"
-        }
-    ]
-}
