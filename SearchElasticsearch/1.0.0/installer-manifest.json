@@ -58,10 +58,6 @@
         },
         {
             "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createCatalogSearchQueryExpanderPlugins",
-            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\SortedCategoryQueryExpanderPlugin"
-        },
-        {
-            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createCatalogSearchQueryExpanderPlugins",
             "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\PaginatedQueryExpanderPlugin"
         },
         {

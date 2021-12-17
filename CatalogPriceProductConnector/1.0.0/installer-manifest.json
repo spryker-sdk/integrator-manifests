@@ -5,24 +5,12 @@
             "source": "\\Spryker\\Client\\CatalogPriceProductConnector\\Plugin\\ProductPriceQueryExpanderPlugin"
         },
         {
-            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createCatalogSearchResultFormatterPlugins",
-            "source": "\\Spryker\\Client\\CatalogPriceProductConnector\\Plugin\\CurrencyAwareCatalogSearchResultFormatterPlugin"
-        },
-        {
-            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createSuggestionResultFormatterPlugins",
-            "source": "\\Spryker\\Client\\CatalogPriceProductConnector\\Plugin\\CurrencyAwareSuggestionByTypeResultFormatter"
-        },
-        {
             "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createCatalogSearchCountQueryExpanderPlugins",
             "source": "\\Spryker\\Client\\CatalogPriceProductConnector\\Plugin\\ProductPriceQueryExpanderPlugin"
         },
         {
             "target": "\\Spryker\\Client\\ProductNew\\ProductNewDependencyProvider::getNewProductsQueryExpanderPlugins",
             "source": "\\Spryker\\Client\\CatalogPriceProductConnector\\Plugin\\ProductPriceQueryExpanderPlugin"
-        },
-        {
-            "target": "\\Spryker\\Client\\ProductNew\\ProductNewDependencyProvider::getNewProductsResultFormatterPlugins",
-            "source": "\\Spryker\\Client\\CatalogPriceProductConnector\\Plugin\\CurrencyAwareCatalogSearchResultFormatterPlugin"
         }
     ]
 }
