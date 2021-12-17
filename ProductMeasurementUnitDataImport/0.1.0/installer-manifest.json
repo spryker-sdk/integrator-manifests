@@ -1,0 +1,20 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
+            "source": "\\Spryker\\Zed\\ProductMeasurementUnitDataImport\\Communication\\Plugin\\ProductMeasurementUnitDataImportPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
+            "source": "\\Spryker\\Zed\\ProductMeasurementUnitDataImport\\Communication\\Plugin\\ProductMeasurementBaseUnitDataImportPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
+            "source": "\\Spryker\\Zed\\ProductMeasurementUnitDataImport\\Communication\\Plugin\\ProductMeasurementSalesUnitDataImportPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
+            "source": "\\Spryker\\Zed\\ProductMeasurementUnitDataImport\\Communication\\Plugin\\ProductMeasurementSalesUnitStoreDataImportPlugin"
+        }
+    ]
+}

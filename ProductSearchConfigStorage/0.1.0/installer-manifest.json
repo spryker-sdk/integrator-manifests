@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\SearchElasticsearch\\SearchElasticsearchDependencyProvider::getSearchConfigExpanderPlugins",
+            "source": "\\Spryker\\Client\\ProductSearchConfigStorage\\Plugin\\Config\\ProductSearchConfigExpanderPlugin"
+        }
+    ]
+}

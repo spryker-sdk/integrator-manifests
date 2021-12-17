@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\Security\\SecurityDependencyProvider::getSecurityPlugins",
+            "source": "\\SprykerShop\\Yves\\AgentPage\\Plugin\\Security\\AgentPageSecurityPlugin"
+        }
+    ]
+}

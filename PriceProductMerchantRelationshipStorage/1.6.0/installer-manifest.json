@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Synchronization\\SynchronizationDependencyProvider::getSynchronizationDataPlugins",
+            "source": "\\Spryker\\Zed\\PriceProductMerchantRelationshipStorage\\Communication\\Plugin\\Synchronization\\PriceProductConcreteMerchantRelationSynchronizationDataBulkPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Synchronization\\SynchronizationDependencyProvider::getSynchronizationDataPlugins",
+            "source": "\\Spryker\\Zed\\PriceProductMerchantRelationshipStorage\\Communication\\Plugin\\Synchronization\\PriceProductAbstractMerchantRelationSynchronizationDataBulkPlugin"
+        }
+    ]
+}

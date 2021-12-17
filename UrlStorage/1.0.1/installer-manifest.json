@@ -1,0 +1,20 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Synchronization\\SynchronizationDependencyProvider::getSynchronizationDataPlugins",
+            "source": "\\Spryker\\Zed\\UrlStorage\\Communication\\Plugin\\Synchronization\\UrlRedirectSynchronizationDataPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Synchronization\\SynchronizationDependencyProvider::getSynchronizationDataPlugins",
+            "source": "\\Spryker\\Zed\\UrlStorage\\Communication\\Plugin\\Synchronization\\UrlSynchronizationDataPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventBehavior\\EventBehaviorDependencyProvider::getEventTriggerResourcePlugins",
+            "source": "\\Spryker\\Zed\\UrlStorage\\Communication\\Plugin\\Event\\UrlEventResourceQueryContainerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventBehavior\\EventBehaviorDependencyProvider::getEventTriggerResourcePlugins",
+            "source": "\\Spryker\\Zed\\UrlStorage\\Communication\\Plugin\\Event\\RedirectEventResourceQueryContainerPlugin"
+        }
+    ]
+}

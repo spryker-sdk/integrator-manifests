@@ -1,0 +1,24 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\ProductImageSetsRestApi\\Plugin\\AbstractProductImageSetsRoutePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\ProductImageSetsRestApi\\Plugin\\ConcreteProductImageSetsRoutePlugin"
+        }
+    ],
+    "wire-glue-relationship": [
+        {
+            "source": {
+                "\\Spryker\\Glue\\ProductsRestApi\\ProductsRestApiConfig::RESOURCE_ABSTRACT_PRODUCTS": "\\Spryker\\Glue\\ProductImageSetsRestApi\\Plugin\\Relationship\\AbstractProductsProductImageSetsResourceRelationshipPlugin"
+            }
+        },
+        {
+            "source": {
+                "\\Spryker\\Glue\\ProductsRestApi\\ProductsRestApiConfig::RESOURCE_CONCRETE_PRODUCTS": "\\Spryker\\Glue\\ProductImageSetsRestApi\\Plugin\\Relationship\\ConcreteProductsProductImageSetsResourceRelationshipPlugin"
+            }
+        }
+    ]
+}

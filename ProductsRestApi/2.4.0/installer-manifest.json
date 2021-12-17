@@ -1,0 +1,39 @@
+{
+    "wire-glue-relationship": [
+        {
+            "source": {
+                "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiConfig::RESOURCE_CART_ITEMS": "\\Spryker\\Glue\\ProductsRestApi\\Plugin\\GlueApplication\\ConcreteProductBySkuResourceRelationshipPlugin"
+            }
+        },
+        {
+            "source": {
+                "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiConfig::RESOURCE_GUEST_CARTS_ITEMS": "\\Spryker\\Glue\\ProductsRestApi\\Plugin\\GlueApplication\\ConcreteProductBySkuResourceRelationshipPlugin"
+            }
+        },
+        {
+            "source": {
+                "\\Spryker\\Glue\\WishlistsRestApi\\WishlistsRestApiConfig::RESOURCE_WISHLIST_ITEMS": "\\Spryker\\Glue\\ProductsRestApi\\Plugin\\GlueApplication\\ConcreteProductBySkuResourceRelationshipPlugin"
+            }
+        },
+        {
+            "source": {
+                "\\Spryker\\Glue\\ShoppingListsRestApi\\ShoppingListsRestApiConfig::RESOURCE_SHOPPING_LIST_ITEMS": "\\Spryker\\Glue\\ProductsRestApi\\Plugin\\GlueApplication\\ConcreteProductBySkuResourceRelationshipPlugin"
+            }
+        },
+        {
+            "source": {
+                "\\Spryker\\Glue\\ProductBundlesRestApi\\ProductBundlesRestApiConfig::RESOURCE_BUNDLED_PRODUCTS": "\\Spryker\\Glue\\ProductsRestApi\\Plugin\\GlueApplication\\ConcreteProductBySkuResourceRelationshipPlugin"
+            }
+        },
+        {
+            "source": {
+                "\\Spryker\\Glue\\ProductBundleCartsRestApi\\ProductBundleCartsRestApiConfig::RESOURCE_BUNDLE_ITEMS": "\\Spryker\\Glue\\ProductsRestApi\\Plugin\\GlueApplication\\ConcreteProductBySkuResourceRelationshipPlugin"
+            }
+        },
+        {
+            "source": {
+                "\\Spryker\\Glue\\ProductBundleCartsRestApi\\ProductBundleCartsRestApiConfig::RESOURCE_BUNDLED_ITEMS": "\\Spryker\\Glue\\ProductsRestApi\\Plugin\\GlueApplication\\ConcreteProductBySkuResourceRelationshipPlugin"
+            }
+        }
+    ]
+}

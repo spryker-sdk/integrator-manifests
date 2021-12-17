@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\ShopApplication\\ShopApplicationDependencyProvider::getApplicationPlugins",
+            "source": "\\Spryker\\Yves\\Security\\Plugin\\Application\\SecurityApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Security\\SecurityDependencyProvider::getSecurityPlugins",
+            "source": "\\Spryker\\Yves\\Security\\Plugin\\Security\\RememberMeSecurityPlugin"
+        }
+    ]
+}

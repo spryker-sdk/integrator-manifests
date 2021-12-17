@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Company\\CompanyDependencyProvider::getCompanyPostSavePlugins",
+            "source": "\\Spryker\\Zed\\CompanyMailConnector\\Communication\\Plugin\\Company\\SendCompanyStatusChangePlugin"
+        }
+    ]
+}

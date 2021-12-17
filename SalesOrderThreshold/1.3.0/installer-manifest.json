@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\SalesOrderThreshold\\SalesOrderThresholdDependencyProvider::getSalesOrderThresholdStrategyPlugins",
+            "source": "\\Spryker\\Zed\\SalesOrderThreshold\\Communication\\Plugin\\Strategy\\HardMaximumThresholdStrategyPlugin"
+        }
+    ]
+}

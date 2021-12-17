@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Acl\\AclDependencyProvider::getAclRolesExpanderPlugins",
+            "source": "\\Spryker\\Zed\\AclEntity\\Communication\\Plugin\\Acl\\AclRulesAclRolesExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Acl\\AclDependencyProvider::getAclRolePostSavePlugins",
+            "source": "\\Spryker\\Zed\\AclEntity\\Communication\\Plugin\\Acl\\AclEntityAclRolePostSavePlugin"
+        }
+    ]
+}

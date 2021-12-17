@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiDependencyProvider::getRestCartItemsAttributesMapperPlugins",
+            "source": "\\Spryker\\Glue\\MerchantProductOffersRestApi\\Plugin\\CartsRestApi\\MerchantProductOfferRestCartItemsAttributesMapperPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiDependencyProvider::getCartItemExpanderPlugins",
+            "source": "\\Spryker\\Glue\\MerchantProductOffersRestApi\\Plugin\\CartsRestApi\\MerchantProductOfferCartItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CartsRestApi\\CartsRestApiDependencyProvider::getCartItemMapperPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductOffersRestApi\\Communication\\Plugin\\CartsRestApi\\MerchantProductOfferCartItemMapperPlugin"
+        }
+    ]
+}

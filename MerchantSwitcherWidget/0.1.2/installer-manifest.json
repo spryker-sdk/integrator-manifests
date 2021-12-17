@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\ShopContext\\ShopContextDependencyProvider::getShopContextExpanderPlugins",
+            "source": "\\SprykerShop\\Yves\\MerchantSwitcherWidget\\Plugin\\ShopApplication\\MerchantShopContextExpanderPlugin"
+        }
+    ]
+}

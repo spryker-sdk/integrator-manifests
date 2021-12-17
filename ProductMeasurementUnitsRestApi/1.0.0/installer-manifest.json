@@ -1,0 +1,55 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\ProductMeasurementUnitsRestApi\\Plugin\\GlueApplication\\ProductMeasurementUnitsResourceRoutePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\ProductMeasurementUnitsRestApi\\Plugin\\GlueApplication\\SalesUnitsResourceRoutePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiDependencyProvider::getRestCartItemsAttributesMapperPlugins",
+            "source": "\\Spryker\\Glue\\ProductMeasurementUnitsRestApi\\Plugin\\CartsRestApi\\SalesUnitsRestCartItemsAttributesMapperPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiDependencyProvider::getCartItemExpanderPlugins",
+            "source": "\\Spryker\\Glue\\ProductMeasurementUnitsRestApi\\Plugin\\CartsRestApi\\SalesUnitCartItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\OrdersRestApi\\OrdersRestApiDependencyProvider::getRestOrderItemsAttributesMapperPlugins",
+            "source": "\\Spryker\\Glue\\ProductMeasurementUnitsRestApi\\Plugin\\OrdersRestApi\\SalesUnitRestOrderItemsAttributesMapperPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CartsRestApi\\CartsRestApiDependencyProvider::getCartItemMapperPlugins",
+            "source": "\\Spryker\\Zed\\ProductMeasurementUnitsRestApi\\Communication\\Plugin\\CartsRestApi\\SalesUnitCartItemMapperPlugin"
+        }
+    ],
+    "wire-glue-relationship": [
+        {
+            "source": {
+                "\\Spryker\\Glue\\ProductsRestApi\\ProductsRestApiConfig::RESOURCE_CONCRETE_PRODUCTS": "\\Spryker\\Glue\\ProductMeasurementUnitsRestApi\\Plugin\\GlueApplication\\ProductMeasurementUnitsByProductConcreteResourceRelationshipPlugin"
+            }
+        },
+        {
+            "source": {
+                "\\Spryker\\Glue\\ProductsRestApi\\ProductsRestApiConfig::RESOURCE_CONCRETE_PRODUCTS": "\\Spryker\\Glue\\ProductMeasurementUnitsRestApi\\Plugin\\GlueApplication\\SalesUnitsByProductConcreteResourceRelationshipPlugin"
+            }
+        },
+        {
+            "source": {
+                "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiConfig::RESOURCE_CART_ITEMS": "\\Spryker\\Glue\\ProductMeasurementUnitsRestApi\\Plugin\\GlueApplication\\SalesUnitsByCartItemResourceRelationshipPlugin"
+            }
+        },
+        {
+            "source": {
+                "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiConfig::RESOURCE_GUEST_CARTS_ITEMS": "\\Spryker\\Glue\\ProductMeasurementUnitsRestApi\\Plugin\\GlueApplication\\SalesUnitsByCartItemResourceRelationshipPlugin"
+            }
+        },
+        {
+            "source": {
+                "\\Spryker\\Glue\\ProductMeasurementUnitsRestApi\\ProductMeasurementUnitsRestApiConfig::RESOURCE_SALES_UNITS": "\\Spryker\\Glue\\ProductMeasurementUnitsRestApi\\Plugin\\GlueApplication\\ProductMeasurementUnitsBySalesUnitResourceRelationshipPlugin"
+            }
+        }
+    ]
+}

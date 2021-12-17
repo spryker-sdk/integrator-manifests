@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::getReservationPostSaveTerminationAwareStrategyPlugins",
+            "source": "\\Spryker\\Zed\\Availability\\Communication\\Plugin\\Oms\\AvailabilityReservationPostSaveTerminationAwareStrategyPlugin"
+        }
+    ]
+}

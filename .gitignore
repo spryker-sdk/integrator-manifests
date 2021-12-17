@@ -1,0 +1,24 @@
+# IDEs
+/.idea
+/.project
+/nbproject
+/.buildpath
+/.settings
+*.sublime-*
+*.AppleDouble
+*.AppleDB
+*.AppleDesktop
+Temporary Items
+.apdisk
+GPATH
+GRTAGS
+GTAGS
+
+# OS
+.DS_Store
+
+# tools
+composer.phar
+c3.php
+.phpstorm.meta.php
+.githook_local

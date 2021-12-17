@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CompanyBusinessUnit\\CompanyBusinessUnitDependencyProvider::getCompanyBusinessUnitExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CompanyUnitAddress\\Communication\\Plugin\\CompanyBusinessUnit\\CompanyBusinessUnitAddressesCompanyBusinessUnitExpanderPlugin"
+        }
+    ]
+}

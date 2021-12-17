@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\ProductStorage\\ProductStorageDependencyProvider::getProductViewExpanderPlugins",
+            "source": "\\Spryker\\Client\\MerchantProductOfferStorage\\Plugin\\ProductStorage\\ProductViewProductOfferExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Synchronization\\SynchronizationDependencyProvider::getSynchronizationDataPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductOfferStorage\\Communication\\Plugin\\Synchronization\\ProductOfferSynchronizationDataBulkRepositoryPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Synchronization\\SynchronizationDependencyProvider::getSynchronizationDataPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductOfferStorage\\Communication\\Plugin\\Synchronization\\ProductConcreteProductOffersSynchronizationDataBulkRepositoryPlugin"
+        }
+    ]
+}

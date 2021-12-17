@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\User\\UserDependencyProvider::getUserFormExpanderPlugins",
+            "source": "\\Spryker\\Zed\\AgentGui\\Communication\\Plugin\\UserAgentFormExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\User\\UserDependencyProvider::getUserTableConfigExpanderPlugins",
+            "source": "\\Spryker\\Zed\\AgentGui\\Communication\\Plugin\\UserAgentTableConfigExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\User\\UserDependencyProvider::getUserTableDataExpanderPlugins",
+            "source": "\\Spryker\\Zed\\AgentGui\\Communication\\Plugin\\UserAgentTableDataExpanderPlugin"
+        }
+    ]
+}

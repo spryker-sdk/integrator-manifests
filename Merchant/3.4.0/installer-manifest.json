@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\PriceProductMerchantRelationshipStorage\\PriceProductMerchantRelationshipStorageDependencyProvider::getPriceProductMerchantRelationshipStorageFilterPlugins",
+            "source": "\\Spryker\\Zed\\Merchant\\Communication\\Plugin\\PriceProductMerchantRelationshipStorage\\MerchantPriceProductMerchantRelationshipStorageFilterPlugin"
+        }
+    ]
+}

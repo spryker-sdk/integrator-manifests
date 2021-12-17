@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductOption\\ProductOptionDependencyProvider::getProductOptionListTableQueryCriteriaExpanderPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductOptionGui\\Communication\\Plugin\\ProductOptionGui\\MerchantProductOptionListTableQueryCriteriaExpanderPlugin"
+        }
+    ]
+}

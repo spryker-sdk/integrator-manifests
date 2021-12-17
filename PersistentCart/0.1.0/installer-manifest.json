@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Customer\\CustomerDependencyProvider::getCustomerSessionSetPlugins",
+            "source": "\\Spryker\\Client\\PersistentCart\\Plugin\\GuestCartUpdateCustomerSessionSetPlugin"
+        }
+    ]
+}

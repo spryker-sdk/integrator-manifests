@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::getProductConcreteCatalogSearchQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\ProductListSearch\\Plugin\\Search\\ProductListQueryExpanderPlugin"
+        }
+    ]
+}

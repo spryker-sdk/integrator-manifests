@@ -1,0 +1,20 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementDependencyProvider::getProductConcreteFormEditTabsExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductDiscontinuedGui\\Communication\\Plugin\\DiscontinueProductConcreteFormEditTabsExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementDependencyProvider::getProductConcreteEditFormExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductDiscontinuedGui\\Communication\\Plugin\\DiscontinuedProductConcreteEditFormExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementDependencyProvider::getProductConcreteFormEditDataProviderExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductDiscontinuedGui\\Communication\\Plugin\\DiscontinueProductConcreteFormEditDataProviderExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementDependencyProvider::getProductFormTransferMapperExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductDiscontinuedGui\\Communication\\Plugin\\DiscontinuedNotesProductFormTransferMapperExpanderPlugin"
+        }
+    ]
+}

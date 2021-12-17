@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditions",
+            "source": "\\Spryker\\Zed\\QuoteApproval\\Communication\\Plugin\\Checkout\\QuoteApprovalCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Quote\\QuoteDependencyProvider::getQuoteFieldsAllowedForSavingProviderPlugins",
+            "source": "\\Spryker\\Zed\\QuoteApproval\\Communication\\Plugin\\Quote\\QuoteApprovalQuoteFieldsAllowedForSavingProviderPlugin"
+        }
+    ]
+}

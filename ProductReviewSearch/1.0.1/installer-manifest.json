@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Synchronization\\SynchronizationDependencyProvider::getSynchronizationDataPlugins",
+            "source": "\\Spryker\\Zed\\ProductReviewSearch\\Communication\\Plugin\\Synchronization\\ProductReviewSynchronizationDataPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventBehavior\\EventBehaviorDependencyProvider::getEventTriggerResourcePlugins",
+            "source": "\\Spryker\\Zed\\ProductReviewSearch\\Communication\\Plugin\\Event\\ProductReviewEventResourceQueryContainerPlugin"
+        }
+    ]
+}

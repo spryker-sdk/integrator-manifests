@@ -1,0 +1,24 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createCatalogSearchQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\CustomerCatalog\\Plugin\\Search\\ProductListQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createSuggestionQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\CustomerCatalog\\Plugin\\Search\\ProductListQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createCatalogSearchCountQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\CustomerCatalog\\Plugin\\Search\\ProductListQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::getProductConcreteCatalogSearchQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\CustomerCatalog\\Plugin\\Search\\ProductListQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\ProductNew\\ProductNewDependencyProvider::getNewProductsQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\CustomerCatalog\\Plugin\\Search\\ProductListQueryExpanderPlugin"
+        }
+    ]
+}

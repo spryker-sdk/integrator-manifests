@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\ConfigurableBundlePageSearch\\ConfigurableBundlePageSearchDependencyProvider::getConfigurableBundleTemplatePageSearchQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\Search\\Plugin\\Elasticsearch\\QueryExpander\\LocalizedQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\ProductSetPageSearch\\ProductSetPageSearchDependencyProvider::getProductSetListQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\Search\\Plugin\\Elasticsearch\\QueryExpander\\LocalizedQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\ProductSetPageSearch\\ProductSetPageSearchDependencyProvider::getProductSetListQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\Search\\Plugin\\Elasticsearch\\QueryExpander\\StoreQueryExpanderPlugin"
+        }
+    ]
+}

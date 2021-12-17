@@ -3,6 +3,6 @@
         {
             "target": "\\Spryker\\Zed\\Availability\\AvailabilityDependencyProvider::getBatchAvailabilityStrategyPlugins",
             "source": "\\Spryker\\Zed\\Availability\\Communication\\Plugin\\Cart\\ProductConcreteBatchAvailabilityStrategyPlugin"
-        },
+        }
     ]
 }

@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderHydrationPlugins",
+            "source": "\\Spryker\\Zed\\ProductBundle\\Communication\\Plugin\\Sales\\ProductBundleOptionOrderExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getUniqueOrderItemsExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductBundle\\Communication\\Plugin\\Sales\\UniqueOrderBundleItemsExpanderPlugin"
+        }
+    ]
+}

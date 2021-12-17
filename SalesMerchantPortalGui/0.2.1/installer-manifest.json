@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\DashboardMerchantPortalGui\\DashboardMerchantPortalGuiDependencyProvider::getDashboardCardPlugins",
+            "source": "\\Spryker\\Zed\\SalesMerchantPortalGui\\Communication\\Plugin\\DashboardMerchantPortalGui\\OrdersMerchantDashboardCardPlugin"
+        }
+    ]
+}

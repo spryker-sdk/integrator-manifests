@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CompanyUser\\CompanyUserDependencyProvider::getCompanyUserPreDeletePlugins",
+            "source": "\\Spryker\\Zed\\ShoppingList\\Communication\\Plugin\\CompanyUserExtension\\ShoppingListCompanyUserPreDeletePlugin"
+        }
+    ]
+}

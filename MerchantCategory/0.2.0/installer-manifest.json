@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getMerchantCategoryPlugins",
+            "source": "\\Spryker\\Zed\\MerchantCategory\\Communication\\Plugin\\Publisher\\Category\\CategoryWritePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Merchant\\MerchantDependencyProvider::getMerchantExpanderPlugins",
+            "source": "\\Spryker\\Zed\\MerchantCategory\\Communication\\Plugin\\Merchant\\MerchantCategoryMerchantExpanderPlugin"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Log\\LogDependencyProvider::getLogProcessors",
+            "source": "\\Spryker\\Zed\\Propel\\Communication\\Plugin\\Log\\EntityProcessorPlugin"
+        }
+    ]
+}

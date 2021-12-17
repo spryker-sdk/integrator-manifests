@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
+            "source": "\\Spryker\\Zed\\CompanyRoleDataImport\\Communication\\Plugin\\DataImport\\CompanyRoleDataImportPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
+            "source": "\\Spryker\\Zed\\CompanyRoleDataImport\\Communication\\Plugin\\DataImport\\CompanyRolePermissionDataImportPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
+            "source": "\\Spryker\\Zed\\CompanyRoleDataImport\\Communication\\Plugin\\DataImport\\CompanyUserRoleDataImportPlugin"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
+            "source": "\\Spryker\\Zed\\AclDataImport\\Communication\\Plugin\\AclGroupDataImportPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
+            "source": "\\Spryker\\Zed\\AclDataImport\\Communication\\Plugin\\AclRoleDataImportPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
+            "source": "\\Spryker\\Zed\\AclDataImport\\Communication\\Plugin\\AclGroupRoleDataImportPlugin"
+        }
+    ]
+}

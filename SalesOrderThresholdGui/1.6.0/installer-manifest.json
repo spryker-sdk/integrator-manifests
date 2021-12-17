@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\SalesOrderThresholdGui\\SalesOrderThresholdGuiDependencyProvider::getSalesOrderThresholdFormExpanderPlugins",
+            "source": "\\Spryker\\Zed\\SalesOrderThresholdGui\\Communication\\Plugin\\FormExpander\\GlobalHardMaximumThresholdFormExpanderPlugin"
+        }
+    ]
+}

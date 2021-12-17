@@ -1,0 +1,19 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\CustomersRestApi\\Plugin\\CustomerPasswordResourceRoutePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\CustomersRestApi\\Plugin\\AddressesResourceRoutePlugin"
+        }
+    ],
+    "wire-glue-relationship": [
+        {
+            "source": {
+                "\\Spryker\\Glue\\CustomersRestApi\\CustomersRestApiConfig::RESOURCE_CUSTOMERS": "\\Spryker\\Glue\\CustomersRestApi\\Plugin\\CustomersToAddressesRelationshipPlugin"
+            }
+        }
+    ]
+}

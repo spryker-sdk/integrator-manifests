@@ -1,0 +1,20 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\UrlStorage\\UrlStorageDependencyProvider::getUrlStorageResourceMapperPlugins",
+            "source": "\\Spryker\\Client\\MerchantStorage\\Plugin\\UrlStorageMerchantMapperPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherTriggerPlugins",
+            "source": "\\Spryker\\Zed\\MerchantStorage\\Communication\\Plugin\\Publisher\\MerchantPublisherTriggerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getMerchantStoragePlugins",
+            "source": "\\Spryker\\Zed\\MerchantStorage\\Communication\\Plugin\\Publisher\\Merchant\\MerchantStoragePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Synchronization\\SynchronizationDependencyProvider::getSynchronizationDataPlugins",
+            "source": "\\Spryker\\Zed\\MerchantStorage\\Communication\\Plugin\\Synchronization\\MerchantSynchronizationDataPlugin"
+        }
+    ]
+}

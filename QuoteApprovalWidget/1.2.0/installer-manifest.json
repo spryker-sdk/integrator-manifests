@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\CheckoutPage\\CheckoutPageDependencyProvider::getCheckoutAddressStepEnterPreCheckPlugins",
+            "source": "\\SprykerShop\\Yves\\QuoteApprovalWidget\\Plugin\\CheckoutPage\\QuoteApprovalCheckerCheckoutAddressStepEnterPreCheckPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\CheckoutPage\\CheckoutPageDependencyProvider::getCheckoutShipmentStepEnterPreCheckPlugins",
+            "source": "\\SprykerShop\\Yves\\QuoteApprovalWidget\\Plugin\\CheckoutPage\\QuoteApprovalCheckerCheckoutShipmentStepEnterPreCheckPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\CheckoutPage\\CheckoutPageDependencyProvider::getCheckoutPaymentStepEnterPreCheckPlugins",
+            "source": "\\SprykerShop\\Yves\\QuoteApprovalWidget\\Plugin\\CheckoutPage\\QuoteApprovalCheckerCheckoutPaymentStepEnterPreCheckPlugin"
+        }
+    ]
+}

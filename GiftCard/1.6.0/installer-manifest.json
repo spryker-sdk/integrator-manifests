@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditions",
+            "source": "\\Spryker\\Zed\\GiftCard\\Communication\\Plugin\\Checkout\\GiftCardCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutOrderSavers",
+            "source": "\\Spryker\\Zed\\GiftCard\\Communication\\Plugin\\Checkout\\GiftCardCheckoutDoSaveOrderPlugin"
+        }
+    ]
+}

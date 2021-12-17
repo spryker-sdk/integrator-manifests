@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getQuoteMapperPlugins",
+            "source": "\\Spryker\\Zed\\ShipmentsRestApi\\Communication\\Plugin\\CheckoutRestApi\\ShipmentQuoteMapperPlugin"
+        }
+    ]
+}

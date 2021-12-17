@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CmsBlockCollector\\CmsBlockCollectorDependencyProvider::getCollectorDataExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CmsContentWidget\\Communication\\Plugin\\CmsBlockCollector\\CmsBlockCollectorParameterMapExpanderPlugin"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Quote\\QuoteDependencyProvider::getQuoteUpdateAfterPlugins",
+            "source": "\\Spryker\\Zed\\SharedCart\\Communication\\Plugin\\MarkAsDefaultQuoteAfterSavePlugin"
+        }
+    ]
+}

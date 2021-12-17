@@ -1,0 +1,15 @@
+{
+    "wire-glue-relationship": [
+        {
+            "source": {
+                "\\Spryker\\Glue\\CheckoutRestApi\\CheckoutRestApiConfig::RESOURCE_CHECKOUT_DATA": "\\Spryker\\Glue\\PaymentsRestApi\\Plugin\\GlueApplication\\PaymentMethodsByCheckoutDataResourceRelationshipPlugin"
+            }
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getCheckoutDataResponseMapperPlugins",
+            "source": "\\Spryker\\Glue\\PaymentsRestApi\\Plugin\\CheckoutRestApi\\SelectedPaymentMethodCheckoutDataResponseMapperPlugin"
+        }
+    ]
+}

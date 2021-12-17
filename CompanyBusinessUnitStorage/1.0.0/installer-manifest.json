@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CompanyUserStorage\\CompanyUserStorageDependencyProvider::getCompanyUserStorageExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CompanyBusinessUnitStorage\\Communication\\Plugin\\CompanyBusinessUnitCompanyUserStorageExpanderPlugin"
+        }
+    ]
+}

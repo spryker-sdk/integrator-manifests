@@ -1,0 +1,9 @@
+{
+    "wire-glue-relationship": [
+        {
+            "source": {
+                "\\Spryker\\Glue\\CheckoutRestApi\\CheckoutRestApiConfig::RESOURCE_CHECKOUT": "\\Spryker\\Glue\\OrdersRestApi\\Plugin\\OrderRelationshipByOrderReferencePlugin"
+            }
+        }
+    ]
+}

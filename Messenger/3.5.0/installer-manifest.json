@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\ShopApplication\\ShopApplicationDependencyProvider::getApplicationPlugins",
+            "source": "\\Spryker\\Yves\\Messenger\\Plugin\\Application\\FlashMessengerApplicationPlugin"
+        }
+    ]
+}

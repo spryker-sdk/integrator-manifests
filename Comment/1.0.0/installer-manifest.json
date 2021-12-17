@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Quote\\QuoteDependencyProvider::getQuoteExpanderPlugins",
+            "source": "\\Spryker\\Zed\\Comment\\Communication\\Plugin\\Quote\\CommentThreadQuoteExpanderPlugin"
+        }
+    ]
+}

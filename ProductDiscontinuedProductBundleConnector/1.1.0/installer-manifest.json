@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductDiscontinued\\ProductDiscontinuedDependencyProvider::getProductDiscontinuedPreDeleteCheckPlugins",
+            "source": "\\Spryker\\Zed\\ProductDiscontinuedProductBundleConnector\\Communication\\Plugin\\ProductDiscontinued\\BundledProductsProductDiscontinuedPreDeleteCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductConcreteAfterCreatePlugins",
+            "source": "\\Spryker\\Zed\\ProductDiscontinuedProductBundleConnector\\Communication\\Plugin\\Product\\DiscontinuedProductConcreteAfterCreatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductConcreteAfterUpdatePlugins",
+            "source": "\\Spryker\\Zed\\ProductDiscontinuedProductBundleConnector\\Communication\\Plugin\\Product\\DiscontinuedProductConcreteAfterUpdatePlugin"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\CheckoutPage\\CheckoutPageDependencyProvider::getCheckoutStepResolverStrategyPlugins",
+            "source": "\\SprykerShop\\Yves\\QuoteRequestAgentPage\\Plugin\\CheckoutPage\\QuoteRequestAgentCheckoutWorkflowStepResolverStrategyPlugin"
+        }
+    ]
+}

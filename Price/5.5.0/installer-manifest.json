@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Quote\\QuoteDependencyProvider::getQuoteValidatorPlugins",
+            "source": "\\Spryker\\Zed\\Price\\Communication\\Plugin\\Quote\\QuotePriceModeValidatorPlugin"
+        }
+    ]
+}

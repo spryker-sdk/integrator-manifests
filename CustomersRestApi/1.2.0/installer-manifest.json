@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\CustomersRestApi\\Plugin\\CustomerForgottenPasswordResourceRoutePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\CustomersRestApi\\Plugin\\CustomerRestorePasswordResourceRoutePlugin"
+        }
+    ]
+}

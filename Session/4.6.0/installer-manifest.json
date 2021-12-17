@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\HealthCheck\\HealthCheckDependencyProvider::getHealthCheckPlugins",
+            "source": "\\Spryker\\Yves\\Session\\Plugin\\HealthCheck\\SessionHealthCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\HealthCheck\\HealthCheckDependencyProvider::getHealthCheckPlugins",
+            "source": "\\Spryker\\Zed\\Session\\Communication\\Plugin\\HealthCheck\\SessionHealthCheckPlugin"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductList\\ProductListDependencyProvider::getProductListPreCreatePlugins",
+            "source": "\\Spryker\\Zed\\ProductBundleProductListConnector\\Communication\\Plugin\\ProductList\\ProductBundleProductListPreCreatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductList\\ProductListDependencyProvider::getProductListPreUpdatePlugins",
+            "source": "\\Spryker\\Zed\\ProductBundleProductListConnector\\Communication\\Plugin\\ProductList\\ProductBundleProductListPreUpdatePlugin"
+        }
+    ]
+}

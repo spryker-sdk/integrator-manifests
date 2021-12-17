@@ -1,0 +1,10 @@
+{
+    "wire-widget": [
+        {
+            "source": "\\SprykerShop\\Yves\\CustomerReorderWidget\\Plugin\\CustomerPage\\CustomerReorderFormWidget"
+        },
+        {
+            "source": "\\SprykerShop\\Yves\\CustomerReorderWidget\\Plugin\\CustomerPage\\CustomerReorderItemsFormWidget"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Synchronization\\SynchronizationDependencyProvider::getSynchronizationDataPlugins",
+            "source": "\\Spryker\\Zed\\TaxStorage\\Communication\\Plugin\\Synchronization\\TaxSynchronizationDataPlugin"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "wire-glue-relationship": [
+        {
+            "source": {
+                "\\Spryker\\Glue\\ProductsRestApi\\ProductsRestApiConfig::RESOURCE_ABSTRACT_PRODUCTS": "\\Spryker\\Glue\\ProductOptionsRestApi\\Plugin\\GlueApplication\\ProductOptionsByProductAbstractSkuResourceRelationshipPlugin"
+            }
+        },
+        {
+            "source": {
+                "\\Spryker\\Glue\\ProductsRestApi\\ProductsRestApiConfig::RESOURCE_CONCRETE_PRODUCTS": "\\Spryker\\Glue\\ProductOptionsRestApi\\Plugin\\GlueApplication\\ProductOptionsByProductConcreteSkuResourceRelationshipPlugin"
+            }
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiDependencyProvider::getRestCartItemsAttributesMapperPlugins",
+            "source": "\\Spryker\\Glue\\ProductOptionsRestApi\\Plugin\\CartsRestApi\\ProductOptionRestCartItemsAttributesMapperPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiDependencyProvider::getCartItemExpanderPlugins",
+            "source": "\\Spryker\\Glue\\ProductOptionsRestApi\\Plugin\\CartsRestApi\\ProductOptionCartItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\OrdersRestApi\\OrdersRestApiDependencyProvider::getRestOrderItemsAttributesMapperPlugins",
+            "source": "\\Spryker\\Glue\\ProductOptionsRestApi\\Plugin\\OrdersRestApi\\ProductOptionRestOrderItemsAttributesMapperPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CartsRestApi\\CartsRestApiDependencyProvider::getCartItemMapperPlugins",
+            "source": "\\Spryker\\Zed\\ProductOptionsRestApi\\Communication\\Plugin\\CartsRestApi\\ProductOptionCartItemMapperPlugin"
+        }
+    ]
+}

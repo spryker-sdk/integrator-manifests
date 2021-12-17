@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\AvailabilityNotificationsRestApi\\Plugin\\GlueApplication\\AvailabilityNotificationsResourceRoutePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\AvailabilityNotificationsRestApi\\Plugin\\GlueApplication\\MyAvailabilityNotificationsResourceRoutePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\AvailabilityNotificationsRestApi\\Plugin\\GlueApplication\\CustomerAvailabilityNotificationsResourceRoutePlugin"
+        }
+    ]
+}

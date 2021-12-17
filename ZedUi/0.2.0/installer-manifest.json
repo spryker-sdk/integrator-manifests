@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Zed\\ZedUi\\Communication\\Plugin\\ZedUiNavigationTwigPlugin"
+        }
+    ]
+}

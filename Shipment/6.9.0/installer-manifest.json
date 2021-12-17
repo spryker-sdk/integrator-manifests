@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Calculation\\CalculationDependencyProvider::getQuoteCalculatorPluginStack",
+            "source": "\\Spryker\\Zed\\Shipment\\Communication\\Plugin\\Calculation\\FilterObsoleteShipmentExpensesCalculatorPlugin"
+        }
+    ]
+}

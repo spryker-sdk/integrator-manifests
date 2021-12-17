@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\ShoppingListPage\\ShoppingListPageDependencyProvider::getShoppingListItemFormExpanderPlugins",
+            "source": "\\SprykerShop\\Yves\\ProductOptionWidget\\Plugin\\ShoppingListPage\\ShoppingListItemProductOptionFormExpanderPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\ShoppingListPage\\ShoppingListPageDependencyProvider::getShoppingListFormDataProviderMapperPlugins",
+            "source": "\\SprykerShop\\Yves\\ProductOptionWidget\\Plugin\\ShoppingListPage\\ShoppingListItemProductOptionFormDataProviderMapperPlugin"
+        }
+    ]
+}

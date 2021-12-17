@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\DocumentationGeneratorRestApi\\DocumentationGeneratorRestApiDependencyProvider::getResourceRoutePluginProviderPlugins",
+            "source": "\\Spryker\\Glue\\GlueApplication\\Plugin\\DocumentationGeneratorRestApi\\ResourceRoutePluginsProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\DocumentationGeneratorRestApi\\DocumentationGeneratorRestApiDependencyProvider::getResourceRelationshipCollectionProviderPlugins",
+            "source": "\\Spryker\\Glue\\GlueApplication\\Plugin\\DocumentationGeneratorRestApi\\ResourceRelationshipCollectionProviderPlugin"
+        }
+    ]
+}

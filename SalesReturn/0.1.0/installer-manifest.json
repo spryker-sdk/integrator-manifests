@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderHydrationPlugins",
+            "source": "\\Spryker\\Zed\\SalesReturn\\Communication\\Plugin\\Sales\\RemunerationTotalOrderExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderItemExpanderPlugins",
+            "source": "\\Spryker\\Zed\\SalesReturn\\Communication\\Plugin\\Sales\\UpdateOrderItemIsReturnableByItemStatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderItemExpanderPlugins",
+            "source": "\\Spryker\\Zed\\SalesReturn\\Communication\\Plugin\\Sales\\UpdateOrderItemIsReturnableByGlobalReturnableNumberOfDaysPlugin"
+        }
+    ]
+}

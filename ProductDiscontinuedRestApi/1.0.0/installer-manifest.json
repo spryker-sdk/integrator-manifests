@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\ProductsRestApi\\ProductsRestApiDependencyProvider::getConcreteProductsResourceExpanderPlugins",
+            "source": "\\Spryker\\Glue\\ProductDiscontinuedRestApi\\Plugin\\ProductDiscontinuedConcreteProductsResourceExpanderPlugin"
+        }
+    ]
+}

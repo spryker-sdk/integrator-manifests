@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\PriceProductOffer\\PriceProductOfferDependencyProvider::getPriceProductOfferExtractorPlugins",
+            "source": "\\Spryker\\Zed\\PriceProductOfferVolume\\Communication\\Plugin\\PriceProductOffer\\PriceProductOfferVolumeExtractorPlugin"
+        }
+    ]
+}

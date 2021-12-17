@@ -1,0 +1,188 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\CmsPageSearch\\CmsPageSearchDependencyProvider::createCmsPageSearchQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\StoreQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\CmsPageSearch\\CmsPageSearchDependencyProvider::createCmsPageSearchQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\LocalizedQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\CmsPageSearch\\CmsPageSearchDependencyProvider::createCmsPageSearchQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\IsActiveQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\CmsPageSearch\\CmsPageSearchDependencyProvider::createCmsPageSearchQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\IsActiveInDateRangeQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\CmsPageSearch\\CmsPageSearchDependencyProvider::createCmsPageSearchCountQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\StoreQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\CmsPageSearch\\CmsPageSearchDependencyProvider::createCmsPageSearchCountQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\LocalizedQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\CmsPageSearch\\CmsPageSearchDependencyProvider::createCmsPageSearchCountQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\IsActiveQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\CmsPageSearch\\CmsPageSearchDependencyProvider::createCmsPageSearchCountQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\IsActiveInDateRangeQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\SalesReturnSearch\\SalesReturnSearchDependencyProvider::getReturnReasonSearchQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\LocalizedQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Search\\SearchDependencyProvider::getClientAdapterPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\ElasticsearchSearchAdapterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Search\\SearchDependencyProvider::getSearchContextExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\ElasticsearchSearchContextExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createCatalogSearchQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\StoreQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createCatalogSearchQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\LocalizedQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createCatalogSearchQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\SortedQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createCatalogSearchQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\PaginatedQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createCatalogSearchQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\SpellingSuggestionQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createCatalogSearchQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\IsActiveQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createCatalogSearchQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\IsActiveInDateRangeQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createCatalogSearchQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\FacetQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createCatalogSearchResultFormatterPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\ResultFormatter\\FacetResultFormatterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createCatalogSearchResultFormatterPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\ResultFormatter\\SortedResultFormatterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createCatalogSearchResultFormatterPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\ResultFormatter\\PaginatedResultFormatterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createCatalogSearchResultFormatterPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\ResultFormatter\\SpellingSuggestionResultFormatterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createSuggestionQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\StoreQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createSuggestionQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\LocalizedQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createSuggestionQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\CompletionQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createSuggestionQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\SuggestionByTypeQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createSuggestionQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\IsActiveQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createSuggestionQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\IsActiveInDateRangeQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createSuggestionResultFormatterPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\ResultFormatter\\CompletionResultFormatterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createCatalogSearchCountQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\StoreQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createCatalogSearchCountQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\LocalizedQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createCatalogSearchCountQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\IsActiveQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createCatalogSearchCountQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\IsActiveInDateRangeQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::getProductConcreteCatalogSearchQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\LocalizedQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\ProductNew\\ProductNewDependencyProvider::getNewProductsQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\StoreQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\ProductNew\\ProductNewDependencyProvider::getNewProductsQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\LocalizedQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\ProductNew\\ProductNewDependencyProvider::getNewProductsQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\SortedQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\ProductNew\\ProductNewDependencyProvider::getNewProductsQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\PaginatedQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\ProductNew\\ProductNewDependencyProvider::getNewProductsQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\FacetQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\ProductNew\\ProductNewDependencyProvider::getNewProductsResultFormatterPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\ResultFormatter\\FacetResultFormatterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\ProductNew\\ProductNewDependencyProvider::getNewProductsResultFormatterPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\ResultFormatter\\SortedResultFormatterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\ProductNew\\ProductNewDependencyProvider::getNewProductsResultFormatterPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\ResultFormatter\\PaginatedResultFormatterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\MerchantSearch\\MerchantSearchDependencyProvider::getMerchantSearchQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\StoreQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Search\\SearchDependencyProvider::getSearchSourceInstallerPlugins",
+            "source": "\\Spryker\\Zed\\SearchElasticsearch\\Communication\\Plugin\\Search\\ElasticsearchIndexInstallerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Search\\SearchDependencyProvider::getSearchMapInstallerPlugins",
+            "source": "\\Spryker\\Zed\\SearchElasticsearch\\Communication\\Plugin\\Search\\ElasticsearchIndexMapInstallerPlugin"
+        }
+    ]
+}

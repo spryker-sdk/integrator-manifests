@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductOffer\\ProductOfferDependencyProvider::getProductOfferPostCreatePlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferValidity\\Communication\\Plugin\\ProductOffer\\ProductOfferValidityProductOfferPostCreatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductOffer\\ProductOfferDependencyProvider::getProductOfferPostUpdatePlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferValidity\\Communication\\Plugin\\ProductOffer\\ProductOfferValidityProductOfferPostUpdatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductOffer\\ProductOfferDependencyProvider::getProductOfferExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferValidity\\Communication\\Plugin\\ProductOffer\\ProductOfferValidityProductOfferExpanderPlugin"
+        }
+    ]
+}

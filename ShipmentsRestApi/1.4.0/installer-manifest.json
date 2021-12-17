@@ -1,0 +1,49 @@
+{
+    "wire-glue-relationship": [
+        {
+            "source": {
+                "\\Spryker\\Glue\\CheckoutRestApi\\CheckoutRestApiConfig::RESOURCE_CHECKOUT_DATA": "\\Spryker\\Glue\\ShipmentsRestApi\\Plugin\\GlueApplication\\ShipmentsByCheckoutDataResourceRelationshipPlugin"
+            }
+        },
+        {
+            "source": {
+                "\\Spryker\\Glue\\ShipmentsRestApi\\ShipmentsRestApiConfig::RESOURCE_SHIPMENTS": "\\Spryker\\Glue\\ShipmentsRestApi\\Plugin\\GlueApplication\\ShipmentMethodsByShipmentResourceRelationshipPlugin"
+            }
+        },
+        {
+            "source": {
+                "\\Spryker\\Glue\\OrdersRestApi\\OrdersRestApiConfig::RESOURCE_ORDERS": "\\Spryker\\Glue\\ShipmentsRestApi\\Plugin\\GlueApplication\\OrderShipmentByOrderResourceRelationshipPlugin"
+            }
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\OrdersRestApi\\OrdersRestApiDependencyProvider::getRestOrderDetailsAttributesMapperPlugins",
+            "source": "\\Spryker\\Glue\\ShipmentsRestApi\\Plugin\\OrdersRestApi\\ShipmentRestOrderDetailsAttributesMapperPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getCheckoutRequestValidatorPlugins",
+            "source": "\\Spryker\\Glue\\ShipmentsRestApi\\Plugin\\CheckoutRestApi\\ShipmentDataCheckoutRequestValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getCheckoutRequestValidatorPlugins",
+            "source": "\\Spryker\\Glue\\ShipmentsRestApi\\Plugin\\CheckoutRestApi\\AddressSourceCheckoutRequestValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getQuoteMapperPlugins",
+            "source": "\\Spryker\\Zed\\ShipmentsRestApi\\Communication\\Plugin\\CheckoutRestApi\\ShipmentsQuoteMapperPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getCheckoutDataValidatorPlugins",
+            "source": "\\Spryker\\Zed\\ShipmentsRestApi\\Communication\\Plugin\\CheckoutRestApi\\ItemsCheckoutDataValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getReadCheckoutDataValidatorPlugins",
+            "source": "\\Spryker\\Zed\\ShipmentsRestApi\\Communication\\Plugin\\CheckoutRestApi\\ItemsReadCheckoutDataValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getCheckoutDataExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ShipmentsRestApi\\Communication\\Plugin\\CheckoutRestApi\\ShipmentCheckoutDataExpanderPlugin"
+        }
+    ]
+}

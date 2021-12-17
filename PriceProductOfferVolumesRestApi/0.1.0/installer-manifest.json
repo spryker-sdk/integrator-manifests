@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\ProductOfferPricesRestApi\\ProductOfferPricesRestApiDependencyProvider::getRestProductOfferPricesAttributesMapperPlugins",
+            "source": "\\Spryker\\Glue\\PriceProductOfferVolumesRestApi\\Plugin\\RestProductOfferPricesAttributesMapperPlugin"
+        }
+    ]
+}

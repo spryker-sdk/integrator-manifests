@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\CustomerPage\\CustomerPageDependencyProvider::getAfterLoginCustomerRedirectPlugins",
+            "source": "\\SprykerShop\\Yves\\CustomerPage\\Plugin\\CustomerPage\\RedirectUriCustomerRedirectStrategyPlugin"
+        }
+    ]
+}

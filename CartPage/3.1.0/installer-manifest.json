@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\CommentWidget\\CommentWidgetDependencyProvider::getCommentThreadAfterOperationStrategyPlugins",
+            "source": "\\SprykerShop\\Yves\\CartPage\\Plugin\\CommentWidget\\CartCommentThreadAfterOperationStrategyPlugin"
+        }
+    ]
+}

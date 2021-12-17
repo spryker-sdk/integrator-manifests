@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\AlternativeProductsRestApi\\Plugin\\GlueApplication\\ConcreteAlternativeProductsResourceRoutePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\AlternativeProductsRestApi\\Plugin\\GlueApplication\\AbstractAlternativeProductsResourceRoutePlugin"
+        }
+    ]
+}

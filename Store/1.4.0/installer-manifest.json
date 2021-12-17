@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Quote\\QuoteDependencyProvider::getQuoteTransferExpanderPlugins",
+            "source": "\\Spryker\\Client\\Store\\Plugin\\StoreQuoteTransferExpanderPlugin"
+        }
+    ]
+}

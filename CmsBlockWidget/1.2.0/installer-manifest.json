@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\CmsBlockWidget\\CmsBlockWidgetDependencyProvider::getTwigExtensionPlugins",
+            "source": "\\SprykerShop\\Yves\\CmsBlockWidget\\Plugin\\Twig\\CmsBlockWidgetTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\SprykerShop\\Yves\\CmsBlockWidget\\Plugin\\Twig\\CmsBlockTwigPlugin"
+        }
+    ]
+}

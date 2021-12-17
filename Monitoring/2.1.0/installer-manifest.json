@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
+            "source": "\\Spryker\\Yves\\Monitoring\\Plugin\\EventDispatcher\\MonitoringRequestTransactionEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Monitoring\\Communication\\Plugin\\EventDispatcher\\MonitoringRequestTransactionEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getBackendApiEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Monitoring\\Communication\\Plugin\\EventDispatcher\\MonitoringRequestTransactionEventDispatcherPlugin"
+        }
+    ]
+}

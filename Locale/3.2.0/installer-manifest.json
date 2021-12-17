@@ -1,0 +1,28 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\ShopApplication\\ShopApplicationDependencyProvider::getApplicationPlugins",
+            "source": "\\Spryker\\Yves\\Locale\\Plugin\\Application\\LocaleApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
+            "source": "\\Spryker\\Yves\\Locale\\Plugin\\EventDispatcher\\LocaleEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Locale\\Communication\\Plugin\\EventDispatcher\\LocaleEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackofficeApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Locale\\Communication\\Plugin\\Application\\LocaleApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackendApiApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Locale\\Communication\\Plugin\\Application\\LocaleApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MerchantPortalApplication\\MerchantPortalApplicationDependencyProvider::getMerchantPortalApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Locale\\Communication\\Plugin\\Application\\LocaleApplicationPlugin"
+        }
+    ]
+}

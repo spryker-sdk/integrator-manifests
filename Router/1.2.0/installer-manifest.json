@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\Console\\ConsoleDependencyProvider::getConsoleCommands",
+            "source": "\\Spryker\\Yves\\Router\\Plugin\\Console\\RouterCacheWarmUpConsole"
+        }
+    ]
+}

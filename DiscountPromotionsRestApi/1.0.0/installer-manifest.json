@@ -1,0 +1,24 @@
+{
+    "wire-glue-relationship": [
+        {
+            "source": {
+                "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiConfig::RESOURCE_CARTS": "\\Spryker\\Glue\\DiscountPromotionsRestApi\\Plugin\\GlueApplication\\PromotionItemByQuoteTransferResourceRelationshipPlugin"
+            }
+        },
+        {
+            "source": {
+                "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiConfig::RESOURCE_GUEST_CARTS": "\\Spryker\\Glue\\DiscountPromotionsRestApi\\Plugin\\GlueApplication\\PromotionItemByQuoteTransferResourceRelationshipPlugin"
+            }
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiDependencyProvider::getCartItemExpanderPlugins",
+            "source": "\\Spryker\\Glue\\DiscountPromotionsRestApi\\Plugin\\CartsRestApi\\DiscountPromotionCartItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CartsRestApi\\CartsRestApiDependencyProvider::getCartItemMapperPlugins",
+            "source": "\\Spryker\\Zed\\DiscountPromotionsRestApi\\Communication\\Plugin\\CartsRestApi\\DiscountPromotionCartItemMapperPlugin"
+        }
+    ]
+}

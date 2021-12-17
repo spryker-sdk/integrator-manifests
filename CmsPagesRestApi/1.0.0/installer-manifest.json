@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\CmsPagesRestApi\\Plugin\\GlueApplication\\CmsPagesResourceRoutePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\UrlsRestApi\\UrlsRestApiDependencyProvider::getRestUrlResolverAttributesTransferProviderPlugins",
+            "source": "\\Spryker\\Glue\\CmsPagesRestApi\\Plugin\\UrlsRestApi\\CmsPageRestUrlResolverAttributesTransferProviderPlugin"
+        }
+    ]
+}

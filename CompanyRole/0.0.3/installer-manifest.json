@@ -1,0 +1,20 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Permission\\PermissionDependencyProvider::getPermissionStoragePlugins",
+            "source": "\\Spryker\\Client\\CompanyRole\\Plugin\\PermissionStoragePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Permission\\PermissionDependencyProvider::getPermissionStoragePlugins",
+            "source": "\\Spryker\\Zed\\CompanyRole\\Communication\\Plugin\\PermissionStoragePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Customer\\CustomerDependencyProvider::getCustomerTransferExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CompanyRole\\Communication\\Plugin\\PermissionCustomerExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Company\\CompanyDependencyProvider::getCompanyPostCreatePlugins",
+            "source": "\\Spryker\\Zed\\CompanyRole\\Communication\\Plugin\\CompanyRoleCreatePlugin"
+        }
+    ]
+}

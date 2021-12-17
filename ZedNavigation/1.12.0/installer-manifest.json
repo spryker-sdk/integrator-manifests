@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ZedNavigation\\ZedNavigationDependencyProvider::getNavigationItemCollectionFilterPlugins",
+            "source": "\\Spryker\\Zed\\ZedNavigation\\Communication\\Plugin\\BackofficeNavigationItemCollectionFilterPlugin"
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\ShopApplication\\ShopApplicationDependencyProvider::getApplicationPlugins",
+            "source": "\\Spryker\\Yves\\Validator\\Plugin\\Application\\ValidatorApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Form\\FormDependencyProvider::getFormPlugins",
+            "source": "\\Spryker\\Yves\\Validator\\Plugin\\Form\\ValidatorExtensionFormPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Validator\\ValidatorDependencyProvider::getValidatorPlugins",
+            "source": "\\Spryker\\Yves\\Validator\\Plugin\\Validator\\MetadataFactoryValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Validator\\ValidatorDependencyProvider::getValidatorPlugins",
+            "source": "\\Spryker\\Yves\\Validator\\Plugin\\Validator\\ConstraintValidatorFactoryValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Form\\FormDependencyProvider::getFormPlugins",
+            "source": "\\Spryker\\Zed\\Validator\\Communication\\Plugin\\Form\\ValidatorFormPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackofficeApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Validator\\Communication\\Plugin\\Application\\ValidatorApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackendApiApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Validator\\Communication\\Plugin\\Application\\ValidatorApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Validator\\ValidatorDependencyProvider::getValidatorPlugins",
+            "source": "\\Spryker\\Zed\\Validator\\Communication\\Plugin\\Validator\\MetadataFactoryValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Validator\\ValidatorDependencyProvider::getValidatorPlugins",
+            "source": "\\Spryker\\Zed\\Validator\\Communication\\Plugin\\Validator\\ConstraintFactoryValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MerchantPortalApplication\\MerchantPortalApplicationDependencyProvider::getMerchantPortalApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Validator\\Communication\\Plugin\\Application\\ValidatorApplicationPlugin"
+        }
+    ]
+}

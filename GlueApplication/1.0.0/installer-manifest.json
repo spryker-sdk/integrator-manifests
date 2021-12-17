@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getControllerBeforeActionPlugins",
+            "source": "\\Spryker\\Glue\\GlueApplication\\Plugin\\Rest\\SetStoreCurrentLocaleBeforeActionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\Router\\RouterDependencyProvider::getRouterPlugins",
+            "source": "\\Spryker\\Glue\\GlueApplication\\Plugin\\Rest\\GlueRouterPlugin"
+        }
+    ]
+}

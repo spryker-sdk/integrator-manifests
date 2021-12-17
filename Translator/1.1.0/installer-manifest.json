@@ -1,0 +1,24 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackofficeApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Translator\\Communication\\Plugin\\Application\\TranslatorApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackendGatewayApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Translator\\Communication\\Plugin\\Application\\TranslatorApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackendApiApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Translator\\Communication\\Plugin\\Application\\TranslatorApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MerchantPortalApplication\\MerchantPortalApplicationDependencyProvider::getMerchantPortalApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Translator\\Communication\\Plugin\\Application\\TranslatorApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Zed\\Translator\\Communication\\Plugin\\Twig\\TranslatorTwigPlugin"
+        }
+    ]
+}

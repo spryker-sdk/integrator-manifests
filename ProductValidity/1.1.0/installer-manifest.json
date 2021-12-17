@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductConcreteAfterCreatePlugins",
+            "source": "\\Spryker\\Zed\\ProductValidity\\Communication\\Plugin\\ProductValidityCreatePlugin"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Permission\\PermissionDependencyProvider::getPermissionPlugins",
+            "source": "\\Spryker\\Client\\CompanySalesConnector\\Plugin\\Permission\\SeeCompanyOrdersPermissionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderPostSavePlugins",
+            "source": "\\Spryker\\Zed\\CompanySalesConnector\\Communication\\Plugin\\Sales\\SaveCompanyUuidOrderPostSavePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderSearchQueryExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CompanySalesConnector\\Communication\\Plugin\\Sales\\CompanyFilterOrderSearchQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderSearchQueryExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CompanySalesConnector\\Communication\\Plugin\\Sales\\CompanyCustomerFilterOrderSearchQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderSearchQueryExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CompanySalesConnector\\Communication\\Plugin\\Sales\\CompanyCustomerSortingOrderSearchQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getCustomerOrderAccessCheckPlugins",
+            "source": "\\Spryker\\Zed\\CompanySalesConnector\\Communication\\Plugin\\Sales\\CompanyCustomerOrderAccessCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Permission\\PermissionDependencyProvider::getPermissionPlugins",
+            "source": "\\Spryker\\Zed\\CompanySalesConnector\\Communication\\Plugin\\Permission\\SeeCompanyOrdersPermissionPlugin"
+        }
+    ]
+}

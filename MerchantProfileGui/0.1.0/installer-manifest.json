@@ -1,0 +1,20 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\MerchantGui\\MerchantGuiDependencyProvider::getMerchantFormExpanderPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProfileGui\\Communication\\Plugin\\MerchantGui\\MerchantProfileFormExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MerchantGui\\MerchantGuiDependencyProvider::getMerchantFormTabsExpanderPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProfileGui\\Communication\\Plugin\\MerchantGui\\Tabs\\MerchantProfileContactPersonFormTabExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MerchantGui\\MerchantGuiDependencyProvider::getMerchantFormTabsExpanderPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProfileGui\\Communication\\Plugin\\MerchantGui\\Tabs\\MerchantProfileFormTabExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MerchantGui\\MerchantGuiDependencyProvider::getMerchantFormTabsExpanderPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProfileGui\\Communication\\Plugin\\MerchantGui\\Tabs\\MerchantProfileLegalInformationFormTabExpanderPlugin"
+        }
+    ]
+}

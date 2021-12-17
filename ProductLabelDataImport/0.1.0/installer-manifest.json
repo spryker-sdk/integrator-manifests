@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
+            "source": "\\Spryker\\Zed\\ProductLabelDataImport\\Communication\\Plugin\\ProductLabelDataImportPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
+            "source": "\\Spryker\\Zed\\ProductLabelDataImport\\Communication\\Plugin\\ProductLabelStoreDataImportPlugin"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CmsBlockGui\\CmsBlockGuiDependencyProvider::getCmsBlockGlossaryAfterFindPlugins",
+            "source": "\\Spryker\\Zed\\ContentGui\\Communication\\Plugin\\CmsBlockGui\\TwigExpressionsToHtmlCmsBlockGlossaryAfterFindPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CmsBlockGui\\CmsBlockGuiDependencyProvider::getCmsBlockGlossaryBeforeSavePlugins",
+            "source": "\\Spryker\\Zed\\ContentGui\\Communication\\Plugin\\CmsBlockGui\\HtmlToTwigExpressionsCmsBlockGlossaryBeforeSavePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CmsGui\\CmsGuiDependencyProvider::getCmsGlossaryAfterFindPlugins",
+            "source": "\\Spryker\\Zed\\ContentGui\\Communication\\Plugin\\CmsGui\\TwigExpressionsToHtmlCmsGlossaryAfterFindPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CmsGui\\CmsGuiDependencyProvider::getCmsGlossaryBeforeSavePlugins",
+            "source": "\\Spryker\\Zed\\ContentGui\\Communication\\Plugin\\CmsGui\\HtmlToTwigExpressionsCmsGlossaryBeforeSavePlugin"
+        }
+    ]
+}

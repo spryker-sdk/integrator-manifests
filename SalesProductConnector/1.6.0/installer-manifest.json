@@ -1,0 +1,20 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::getSortConfigTransferBuilderPlugins",
+            "source": "\\Spryker\\Client\\SalesProductConnector\\Plugin\\PopularitySortConfigTransferBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductPageSearch\\ProductPageSearchDependencyProvider::getDataLoaderPlugins",
+            "source": "\\Spryker\\Zed\\SalesProductConnector\\Communication\\Plugin\\ProductPageSearch\\ProductPopularityPageDataLoaderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductPageSearch\\ProductPageSearchDependencyProvider::getProductPageRefreshPlugins",
+            "source": "\\Spryker\\Zed\\SalesProductConnector\\Communication\\Plugin\\ProductPageSearch\\ProductListWasBoughtByIntervalPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductPageSearch\\ProductPageSearchDependencyProvider::getProductAbstractMapExpanderPlugins",
+            "source": "\\Spryker\\Zed\\SalesProductConnector\\Communication\\Plugin\\ProductPageSearch\\ProductPopularityMapExpanderPlugin"
+        }
+    ]
+}

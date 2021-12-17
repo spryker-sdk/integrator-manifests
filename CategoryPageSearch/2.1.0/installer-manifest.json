@@ -1,0 +1,44 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherTriggerPlugins",
+            "source": "\\Spryker\\Zed\\CategoryPageSearch\\Communication\\Plugin\\Publisher\\CategoryPagePublisherTriggerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getCategoryPageSearchPlugins",
+            "source": "\\Spryker\\Zed\\CategoryPageSearch\\Communication\\Plugin\\Publisher\\Category\\CategoryDeletePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getCategoryPageSearchPlugins",
+            "source": "\\Spryker\\Zed\\CategoryPageSearch\\Communication\\Plugin\\Publisher\\Category\\CategoryWritePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getCategoryPageSearchPlugins",
+            "source": "\\Spryker\\Zed\\CategoryPageSearch\\Communication\\Plugin\\Publisher\\CategoryAttribute\\CategoryAttributeDeletePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getCategoryPageSearchPlugins",
+            "source": "\\Spryker\\Zed\\CategoryPageSearch\\Communication\\Plugin\\Publisher\\CategoryAttribute\\CategoryAttributeWritePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getCategoryPageSearchPlugins",
+            "source": "\\Spryker\\Zed\\CategoryPageSearch\\Communication\\Plugin\\Publisher\\CategoryNode\\CategoryNodeDeletePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getCategoryPageSearchPlugins",
+            "source": "\\Spryker\\Zed\\CategoryPageSearch\\Communication\\Plugin\\Publisher\\CategoryNode\\CategoryNodeWritePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getCategoryPageSearchPlugins",
+            "source": "\\Spryker\\Zed\\CategoryPageSearch\\Communication\\Plugin\\Publisher\\CategoryTemplate\\CategoryTemplateDeletePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getCategoryPageSearchPlugins",
+            "source": "\\Spryker\\Zed\\CategoryPageSearch\\Communication\\Plugin\\Publisher\\CategoryTemplate\\CategoryTemplateWritePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Synchronization\\SynchronizationDependencyProvider::getSynchronizationDataPlugins",
+            "source": "\\Spryker\\Zed\\CategoryPageSearch\\Communication\\Plugin\\Synchronization\\CategoryPageSynchronizationDataBulkRepositoryPlugin"
+        }
+    ]
+}

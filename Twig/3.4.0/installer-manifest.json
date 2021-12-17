@@ -1,0 +1,40 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\ShopApplication\\ShopApplicationDependencyProvider::getApplicationPlugins",
+            "source": "\\Spryker\\Yves\\Twig\\Plugin\\Application\\TwigApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigLoaderPlugins",
+            "source": "\\Spryker\\Yves\\Twig\\Plugin\\FilesystemTwigLoaderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigLoaderPlugins",
+            "source": "\\Spryker\\Yves\\Twig\\Plugin\\FormFilesystemTwigLoaderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Twig\\Communication\\Plugin\\EventDispatcher\\TwigEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackofficeApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Twig\\Communication\\Plugin\\Application\\TwigApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackendGatewayApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Twig\\Communication\\Plugin\\Application\\TwigApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MerchantPortalApplication\\MerchantPortalApplicationDependencyProvider::getMerchantPortalApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Twig\\Communication\\Plugin\\Application\\TwigApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigLoaderPlugins",
+            "source": "\\Spryker\\Zed\\Twig\\Communication\\Plugin\\FilesystemTwigLoaderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigLoaderPlugins",
+            "source": "\\Spryker\\Zed\\Twig\\Communication\\Plugin\\FormFilesystemTwigLoaderPlugin"
+        }
+    ]
+}

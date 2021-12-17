@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\Router\\RouterDependencyProvider::getRouterPlugins",
+            "source": "\\SprykerShop\\Yves\\StorageRouter\\Plugin\\Router\\StorageRouterPlugin"
+        }
+    ]
+}

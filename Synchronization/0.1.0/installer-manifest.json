@@ -1,0 +1,120 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationSearchQueueMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationSearchQueueMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationSearchQueueMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationSearchQueueMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationSearchQueueMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationSearchQueueMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationSearchQueueMessageProcessorPlugin"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Customer\\CustomerDependencyProvider::getCustomerTransferExpanderPlugins",
+            "source": "\\Spryker\\Zed\\BusinessOnBehalf\\Communication\\Plugin\\Customer\\IsOnBehalfCustomerTransferExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Customer\\CustomerDependencyProvider::getCustomerTransferExpanderPlugins",
+            "source": "\\Spryker\\Zed\\BusinessOnBehalf\\Communication\\Plugin\\Customer\\DefaultCompanyUserCustomerTransferExpanderPlugin"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductLabel\\ProductLabelDependencyProvider::getProductLabelRelationUpdaterPlugins",
+            "source": "\\Spryker\\Zed\\ProductNew\\Communication\\Plugin\\ProductNewLabelUpdaterPlugin"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ManualOrderEntryGui\\ManualOrderEntryGuiDependencyProvider::getQuoteExpanderPlugins",
+            "source": "\\Spryker\\Zed\\OfferGui\\Communication\\Plugin\\ManualOrderEntryGui\\OfferQuoteExpanderPlugin"
+        }
+    ]
+}

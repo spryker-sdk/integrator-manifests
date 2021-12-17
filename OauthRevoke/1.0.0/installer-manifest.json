@@ -1,0 +1,28 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Oauth\\OauthDependencyProvider::getOauthRefreshTokenRevokerPlugins",
+            "source": "\\Spryker\\Zed\\OauthRevoke\\Communication\\Plugin\\Oauth\\OauthRefreshTokenRevokerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Oauth\\OauthDependencyProvider::getOauthRefreshTokensRevokerPlugins",
+            "source": "\\Spryker\\Zed\\OauthRevoke\\Communication\\Plugin\\Oauth\\OauthRefreshTokensRevokerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Oauth\\OauthDependencyProvider::getOauthRefreshTokenCheckerPlugins",
+            "source": "\\Spryker\\Zed\\OauthRevoke\\Communication\\Plugin\\Oauth\\OauthRefreshTokenCheckerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Oauth\\OauthDependencyProvider::getOauthExpiredRefreshTokenRemoverPlugins",
+            "source": "\\Spryker\\Zed\\OauthRevoke\\Communication\\Plugin\\Oauth\\OauthExpiredRefreshTokenRemoverPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Oauth\\OauthDependencyProvider::getOauthRefreshTokenReaderPlugins",
+            "source": "\\Spryker\\Zed\\OauthRevoke\\Communication\\Plugin\\Oauth\\OauthRefreshTokenReaderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Oauth\\OauthDependencyProvider::getOauthRefreshTokensReaderPlugins",
+            "source": "\\Spryker\\Zed\\OauthRevoke\\Communication\\Plugin\\Oauth\\OauthRefreshTokensReaderPlugin"
+        }
+    ]
+}

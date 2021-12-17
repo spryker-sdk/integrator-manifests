@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\ProductGroupWidget\\ProductGroupWidgetDependencyProvider::getProductViewBulkExpanderPlugins",
+            "source": "\\SprykerShop\\Yves\\ProductReviewWidget\\Plugin\\ProductGroupWidget\\ProductReviewSummaryProductViewBulkExpanderPlugin"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\Session\\SessionDependencyProvider::getSessionHandlerPlugins",
+            "source": "\\Spryker\\Yves\\SessionRedis\\Plugin\\Session\\SessionHandlerRedisProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Session\\SessionDependencyProvider::getSessionHandlerPlugins",
+            "source": "\\Spryker\\Yves\\SessionRedis\\Plugin\\Session\\SessionHandlerRedisLockingProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Session\\SessionDependencyProvider::getSessionHandlerPlugins",
+            "source": "\\Spryker\\Zed\\SessionRedis\\Communication\\Plugin\\Session\\SessionHandlerRedisProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Session\\SessionDependencyProvider::getSessionHandlerPlugins",
+            "source": "\\Spryker\\Zed\\SessionRedis\\Communication\\Plugin\\Session\\SessionHandlerRedisLockingProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Session\\SessionDependencyProvider::getYvesSessionLockReleaserPlugins",
+            "source": "\\Spryker\\Zed\\SessionRedis\\Communication\\Plugin\\Session\\YvesSessionRedisLockReleaserPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Session\\SessionDependencyProvider::getZedSessionLockReleaserPlugins",
+            "source": "\\Spryker\\Zed\\SessionRedis\\Communication\\Plugin\\Session\\ZedSessionRedisLockReleaserPlugin"
+        }
+    ]
+}

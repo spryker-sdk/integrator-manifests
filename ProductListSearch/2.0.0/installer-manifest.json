@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductPageSearch\\ProductPageSearchDependencyProvider::getConcreteProductMapExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductListSearch\\Communication\\Plugin\\ProductPageSearch\\ProductConcreteProductListPageMapExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductPageSearch\\ProductPageSearchDependencyProvider::getProductConcretePageDataExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductListSearch\\Communication\\Plugin\\ProductPageSearch\\ProductConcreteProductListPageDataExpanderPlugin"
+        }
+    ]
+}

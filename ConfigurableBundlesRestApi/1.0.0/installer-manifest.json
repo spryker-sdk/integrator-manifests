@@ -1,0 +1,24 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\ConfigurableBundlesRestApi\\Plugin\\GlueApplication\\ConfigurableBundleTemplatesResourceRoutePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\OrdersRestApi\\OrdersRestApiDependencyProvider::getRestOrderItemsAttributesMapperPlugins",
+            "source": "\\Spryker\\Glue\\ConfigurableBundlesRestApi\\Plugin\\OrdersRestApi\\SalesConfiguredBundleRestOrderItemsAttributesMapperPlugin"
+        }
+    ],
+    "wire-glue-relationship": [
+        {
+            "source": {
+                "\\Spryker\\Glue\\ConfigurableBundlesRestApi\\ConfigurableBundlesRestApiConfig::RESOURCE_CONFIGURABLE_BUNDLE_TEMPLATES": "\\Spryker\\Glue\\ConfigurableBundlesRestApi\\Plugin\\GlueApplication\\ConfigurableBundleTemplateSlotByConfigurableBundleTemplateResourceRelationshipPlugin"
+            }
+        },
+        {
+            "source": {
+                "\\Spryker\\Glue\\ConfigurableBundlesRestApi\\ConfigurableBundlesRestApiConfig::RESOURCE_CONFIGURABLE_BUNDLE_TEMPLATES": "\\Spryker\\Glue\\ConfigurableBundlesRestApi\\Plugin\\GlueApplication\\ConfigurableBundleTemplateImageSetByConfigurableBundleTemplateResourceRelationshipPlugin"
+            }
+        }
+    ]
+}

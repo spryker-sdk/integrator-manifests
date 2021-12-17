@@ -1,0 +1,28 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ConfigurableBundleGui\\ConfigurableBundleGuiDependencyProvider::getConfigurableBundleTemplateSlotEditTabsExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductListGui\\Communication\\Plugin\\ConfigurableBundleGui\\ProductListManagementConfigurableBundleTemplateSlotEditTabsExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ConfigurableBundleGui\\ConfigurableBundleGuiDependencyProvider::getConfigurableBundleTemplateSlotEditFormExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductListGui\\Communication\\Plugin\\ConfigurableBundleGui\\ProductListManagementConfigurableBundleTemplateSlotEditFormExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ConfigurableBundleGui\\ConfigurableBundleGuiDependencyProvider::getConfigurableBundleTemplateSlotEditFormDataProviderExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductListGui\\Communication\\Plugin\\ConfigurableBundleGui\\ProductListManagementConfigurableBundleTemplateSlotEditFormDataProviderExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ConfigurableBundleGui\\ConfigurableBundleGuiDependencyProvider::getConfigurableBundleTemplateSlotEditFormFileUploadHandlerPlugins",
+            "source": "\\Spryker\\Zed\\ProductListGui\\Communication\\Plugin\\ConfigurableBundleGui\\ProductConcreteRelationCsvConfigurableBundleTemplateSlotEditFormFileUploadHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ConfigurableBundleGui\\ConfigurableBundleGuiDependencyProvider::getConfigurableBundleTemplateSlotEditSubTabsProviderPlugins",
+            "source": "\\Spryker\\Zed\\ProductListGui\\Communication\\Plugin\\ConfigurableBundleGui\\ProductConcreteRelationConfigurableBundleTemplateSlotEditSubTabsProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ConfigurableBundleGui\\ConfigurableBundleGuiDependencyProvider::getConfigurableBundleTemplateSlotEditTablesProviderPlugins",
+            "source": "\\Spryker\\Zed\\ProductListGui\\Communication\\Plugin\\ConfigurableBundleGui\\ProductConcreteRelationConfigurableBundleTemplateSlotEditTablesProviderPlugin"
+        }
+    ]
+}

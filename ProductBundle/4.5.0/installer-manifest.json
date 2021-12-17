@@ -1,0 +1,24 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Cart\\CartDependencyProvider::getQuoteItemFinderPlugin",
+            "source": "\\Spryker\\Client\\ProductBundle\\Plugin\\Cart\\BundleProductQuoteItemFinderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Cart\\CartDependencyProvider::getRemoveItemsRequestExpanderPlugins",
+            "source": "\\Spryker\\Client\\ProductBundle\\Plugin\\Cart\\RemoveBundleChangeRequestExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\PersistentCart\\PersistentCartDependencyProvider::getQuoteItemFinderPlugin",
+            "source": "\\Spryker\\Zed\\ProductBundle\\Communication\\Plugin\\PersistentCart\\BundleProductQuoteItemFinderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\PersistentCart\\PersistentCartDependencyProvider::getRemoveItemsRequestExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductBundle\\Communication\\Plugin\\PersistentCart\\RemoveBundleChangeRequestExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getQuoteChangeObserverPlugins",
+            "source": "\\Spryker\\Zed\\ProductBundle\\Communication\\Plugin\\Cart\\BundleItemPriceQuoteChangeObserverPlugin"
+        }
+    ]
+}

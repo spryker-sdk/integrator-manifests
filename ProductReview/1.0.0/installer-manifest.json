@@ -1,0 +1,20 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\ProductReview\\ProductReviewDependencyProvider::getProductReviewsBulkQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\ProductReview\\Plugin\\Elasticsearch\\QueryExpander\\PaginatedProductReviewsQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\ProductReview\\ProductReviewDependencyProvider::getProductReviewsBulkQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\ProductReview\\Plugin\\Elasticsearch\\QueryExpander\\SortByCreatedAtQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\ProductReview\\ProductReviewDependencyProvider::getProductReviewsBulkSearchResultFormatterPlugins",
+            "source": "\\Spryker\\Client\\ProductReview\\Plugin\\Elasticsearch\\ResultFormatter\\ProductReviewsResultFormatterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\ProductReview\\ProductReviewDependencyProvider::getProductReviewsBulkSearchResultFormatterPlugins",
+            "source": "\\Spryker\\Client\\ProductReview\\Plugin\\Elasticsearch\\ResultFormatter\\PaginatedProductReviewsResultFormatterPlugin"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderItemExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductBundle\\Communication\\Plugin\\Sales\\ProductBundleOrderItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderItemExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductBundle\\Communication\\Plugin\\Sales\\ProductBundleOptionItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\SalesReturnGui\\SalesReturnGuiDependencyProvider::getReturnCreateFormHandlerPlugins",
+            "source": "\\Spryker\\Zed\\ProductBundle\\Communication\\Plugin\\SalesReturnGui\\ProductBundleReturnCreateFormHandlerPlugin"
+        }
+    ]
+}

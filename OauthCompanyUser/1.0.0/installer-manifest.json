@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Installer\\InstallerDependencyProvider::getInstallerPlugins",
+            "source": "\\Spryker\\Zed\\OauthCompanyUser\\Communication\\Plugin\\Installer\\OauthCompanyUserInstallerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Oauth\\OauthDependencyProvider::getUserProviderPlugins",
+            "source": "\\Spryker\\Zed\\OauthCompanyUser\\Communication\\Plugin\\Oauth\\CompanyUserOauthUserProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Oauth\\OauthDependencyProvider::getScopeProviderPlugins",
+            "source": "\\Spryker\\Zed\\OauthCompanyUser\\Communication\\Plugin\\Oauth\\CompanyUserOauthScopeProviderPlugin"
+        }
+    ]
+}

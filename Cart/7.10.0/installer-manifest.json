@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Cart\\CartDependencyProvider::getAddItemsRequestExpanderPlugins",
+            "source": "\\Spryker\\Client\\Cart\\Plugin\\ProductSeparateCartChangeExpanderPlugin"
+        }
+    ]
+}

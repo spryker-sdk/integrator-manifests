@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderExpanderPreSavePlugins",
+            "source": "\\Spryker\\Zed\\OmsMultiThread\\Communication\\Plugin\\Sales\\OmsMultiThreadProcessorIdentifierOrderExpanderPreSavePlugin"
+        }
+    ]
+}

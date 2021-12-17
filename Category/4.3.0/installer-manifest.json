@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Category\\CategoryDependencyProvider::getCategoryUrlPathPlugins",
+            "source": "\\Spryker\\Zed\\Category\\Communication\\Plugin\\CategoryUrlPathPrefixUpdaterPlugin"
+        }
+    ]
+}

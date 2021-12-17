@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CmsContentWidget\\CmsContentWidgetDependencyProvider::getCmsContentWidgetParameterMapperPlugins",
+            "source": "\\Spryker\\Zed\\CmsContentWidgetContentConnector\\Communication\\Plugin\\Cms\\CmsContentItemKeyMapperPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CmsContentWidget\\CmsContentWidgetDependencyProvider::getCmsContentWidgetParameterMapperPlugins",
+            "source": "\\Spryker\\Zed\\CmsContentWidgetContentConnector\\Communication\\Plugin\\Cms\\CmsContentItemKeyMapperPlugin"
+        }
+    ]
+}
