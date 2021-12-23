@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getQuoteChangeObserverPlugins",
+            "source": "\\Spryker\\Zed\\Discount\\Communication\\Plugin\\Cart\\DiscountQuoteChangeObserverPlugin"
+        }
+    ]
+}

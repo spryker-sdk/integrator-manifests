@@ -1,0 +1,20 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductCartConnector\\Communication\\Plugin\\ProductCartPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductCartConnector\\Communication\\Plugin\\ProductUrlItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPlugins",
+            "source": "\\Spryker\\Zed\\ProductCartConnector\\Communication\\Plugin\\ProductExistsCartPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getPreReloadPlugins",
+            "source": "\\Spryker\\Zed\\ProductCartConnector\\Communication\\Plugin\\RemoveInactiveItemsPreReloadPlugin"
+        }
+    ]
+}

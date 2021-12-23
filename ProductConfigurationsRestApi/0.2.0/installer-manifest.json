@@ -2,15 +2,15 @@
     "wire-plugin": [
         {
             "target": "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiDependencyProvider::getRestCartItemsAttributesMapperPlugins",
-            "source": "\\Spryker\\Glue\\ProductOptionsRestApi\\Plugin\\CartsRestApi\\ProductOptionRestCartItemsAttributesMapperPlugin"
+            "source": "\\Spryker\\Glue\\ProductConfigurationsRestApi\\Plugin\\CartsRestApi\\ProductConfigurationRestCartItemsAttributesMapperPlugin"
         },
         {
             "target": "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiDependencyProvider::getCartItemExpanderPlugins",
-            "source": "\\Spryker\\Glue\\ProductOptionsRestApi\\Plugin\\CartsRestApi\\ProductOptionCartItemExpanderPlugin"
+            "source": "\\Spryker\\Glue\\ProductConfigurationsRestApi\\Plugin\\CartsRestApi\\ProductConfigurationCartItemExpanderPlugin"
         },
         {
             "target": "\\Spryker\\Zed\\CartsRestApi\\CartsRestApiDependencyProvider::getCartItemMapperPlugins",
-            "source": "\\Spryker\\Zed\\ProductOptionsRestApi\\Communication\\Plugin\\CartsRestApi\\ProductOptionCartItemMapperPlugin"
+            "source": "\\Spryker\\Zed\\ProductConfigurationsRestApi\\Communication\\Plugin\\CartsRestApi\\ProductConfigurationCartItemMapperPlugin"
         }
     ]
 }

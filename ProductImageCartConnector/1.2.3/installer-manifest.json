@@ -2,7 +2,7 @@
     "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPlugins",
-            "source": "\\Spryker\\Zed\\GiftCard\\Communication\\Plugin\\GiftCardMetadataExpanderPlugin"
+            "source": "\\Spryker\\Zed\\ProductImageCartConnector\\Communication\\Plugin\\ProductImageCartPlugin"
         }
     ]
 }

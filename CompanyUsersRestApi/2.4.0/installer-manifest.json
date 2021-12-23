@@ -1,9 +1,16 @@
 {
-    "wire-glue-relationship": [
+    "wire-plugin": [
         {
-            "source": {
-                "\\Spryker\\Glue\\QuoteRequestsRestApi\\QuoteRequestsRestApiConfig::RESOURCE_QUOTE_REQUESTS": "\\Spryker\\Glue\\CompanyUsersRestApi\\Plugin\\GlueApplication\\CompanyUserByQuoteRequestResourceRelationshipPlugin"
-            }
+            "target": "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiDependencyProvider::getCustomerExpanderPlugins",
+            "source": "\\Spryker\\Glue\\CompanyUsersRestApi\\Plugin\\CartsRestApi\\CompanyUserCustomerExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CartsRestApi\\CartsRestApiDependencyProvider::getQuoteExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CompanyUsersRestApi\\Communication\\Plugin\\CartsRestApi\\CustomerCompanyUserQuoteExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getQuoteMapperPlugins",
+            "source": "\\Spryker\\Zed\\CompanyUsersRestApi\\Communication\\Plugin\\CheckoutRestApi\\CompanyUserQuoteMapperPlugin"
         }
     ]
 }
