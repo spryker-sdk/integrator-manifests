@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiDependencyProvider::getCartItemExpanderPlugins",
+            "source": "\\Spryker\\Glue\\MerchantProductsRestApi\\Plugin\\CartsRestApi\\MerchantProductCartItemExpanderPlugin"
+        }
+    ]
+}

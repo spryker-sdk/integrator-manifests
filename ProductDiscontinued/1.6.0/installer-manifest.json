@@ -1,8 +1,8 @@
 {
     "wire-plugin": [
         {
-            "target": "\\Spryker\\Zed\\Wishlist\\WishlistDependencyProvider::getUpdateItemPreCheckPlugins",
-            "source": "\\Spryker\\Zed\\ProductDiscontinued\\Communication\\Plugin\\Wishlist\\ProductDiscontinuedUpdateItemPreCheckPlugin"
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPlugins",
+            "source": "\\Spryker\\Zed\\ProductDiscontinued\\Communication\\Plugin\\Cart\\ProductDiscontinuedCartPreCheckPlugin"
         }
     ]
 }

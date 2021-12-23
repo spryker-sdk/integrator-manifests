@@ -1,0 +1,44 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductPackagingUnit\\Communication\\Plugin\\Cart\\ProductPackagingUnitItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductPackagingUnit\\Communication\\Plugin\\Cart\\AmountGroupKeyItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductPackagingUnit\\Communication\\Plugin\\Cart\\AmountSalesUnitItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductPackagingUnit\\Communication\\Plugin\\Cart\\CustomAmountPriceItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPlugins",
+            "source": "\\Spryker\\Zed\\ProductPackagingUnit\\Communication\\Plugin\\Cart\\ProductPackagingUnitCartPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPlugins",
+            "source": "\\Spryker\\Zed\\ProductPackagingUnit\\Communication\\Plugin\\Cart\\AmountAvailabilityCartPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPlugins",
+            "source": "\\Spryker\\Zed\\ProductPackagingUnit\\Communication\\Plugin\\Cart\\AmountRestrictionCartPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getPostSavePlugins",
+            "source": "\\Spryker\\Zed\\ProductPackagingUnit\\Communication\\Plugin\\Cart\\AmountSalesUnitValuePostSavePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartAddItemStrategyPlugins",
+            "source": "\\Spryker\\Zed\\ProductPackagingUnit\\Communication\\Plugin\\Cart\\ProductPackagingUnitCartAddItemStrategyPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartRemoveItemStrategyPlugins",
+            "source": "\\Spryker\\Zed\\ProductPackagingUnit\\Communication\\Plugin\\Cart\\ProductPackagingUnitCartRemoveItemStrategyPlugin"
+        }
+    ]
+}

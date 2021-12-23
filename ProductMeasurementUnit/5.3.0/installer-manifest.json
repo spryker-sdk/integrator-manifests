@@ -1,8 +1,24 @@
 {
     "wire-plugin": [
         {
-            "target": "\\Spryker\\Zed\\ProductPageSearch\\ProductPageSearchDependencyProvider::getProductAbstractAddToCartPlugins",
-            "source": "\\Spryker\\Zed\\ProductMeasurementUnit\\Communication\\Plugin\\ProductPageSearch\\ProductMeasurementUnitProductAbstractAddToCartPlugin"
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductMeasurementUnit\\Communication\\Plugin\\Cart\\DefaultQuantitySalesUnitItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductMeasurementUnit\\Communication\\Plugin\\Cart\\QuantitySalesUnitGroupKeyItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductMeasurementUnit\\Communication\\Plugin\\Cart\\QuantitySalesUnitItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPlugins",
+            "source": "\\Spryker\\Zed\\ProductMeasurementUnit\\Communication\\Plugin\\Cart\\ProductMeasurementSalesUnitCartPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getPostSavePlugins",
+            "source": "\\Spryker\\Zed\\ProductMeasurementUnit\\Communication\\Plugin\\Cart\\QuantitySalesUnitValuePostSavePlugin"
         }
     ]
 }

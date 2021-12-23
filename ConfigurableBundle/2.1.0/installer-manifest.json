@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getPreReloadPlugins",
+            "source": "\\Spryker\\Zed\\ConfigurableBundle\\Communication\\Plugin\\Cart\\CartConfigurableBundlePreReloadPlugin"
+        }
+    ]
+}

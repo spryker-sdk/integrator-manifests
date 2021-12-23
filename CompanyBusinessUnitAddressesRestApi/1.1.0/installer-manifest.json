@@ -1,14 +1,6 @@
 {
     "wire-plugin": [
         {
-            "target": "\\Spryker\\Glue\\ShipmentsRestApi\\ShipmentsRestApiDependencyProvider::getAddressSourceCheckerPlugins",
-            "source": "\\Spryker\\Glue\\CompanyBusinessUnitAddressesRestApi\\Plugin\\ShipmentsRestApi\\CompanyBusinessUnitAddressSourceCheckerPlugin"
-        },
-        {
-            "target": "\\Spryker\\Zed\\ShipmentsRestApi\\ShipmentsRestApiDependencyProvider::getAddressProviderStrategyPlugins",
-            "source": "\\Spryker\\Zed\\CompanyBusinessUnitAddressesRestApi\\Communication\\Plugin\\ShipmentsRestApi\\CompanyBusinessUnitAddressProviderStrategyPlugin"
-        },
-        {
             "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getQuoteMapperPlugins",
             "source": "\\Spryker\\Zed\\CompanyBusinessUnitAddressesRestApi\\Communication\\Plugin\\CheckoutRestApi\\CompanyBusinessUnitAddressQuoteMapperPlugin"
         },
@@ -19,13 +11,6 @@
         {
             "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getCheckoutDataExpanderPlugins",
             "source": "\\Spryker\\Zed\\CompanyBusinessUnitAddressesRestApi\\Communication\\Plugin\\CheckoutRestApi\\CompanyBusinessUnitAddressCheckoutDataExpanderPlugin"
-        }
-    ],
-    "wire-glue-relationship": [
-        {
-            "source": {
-                "\\Spryker\\Glue\\CheckoutRestApi\\CheckoutRestApiConfig::RESOURCE_CHECKOUT_DATA": "\\Spryker\\Glue\\CompanyBusinessUnitAddressesRestApi\\Plugin\\GlueApplication\\CompanyBusinessUnitAddressByCheckoutDataResourceRelationshipPlugin"
-            }
         }
     ]
 }

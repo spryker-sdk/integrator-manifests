@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiDependencyProvider::getCartItemExpanderPlugins",
+            "source": "\\Spryker\\Glue\\DiscountPromotionsRestApi\\Plugin\\CartsRestApi\\DiscountPromotionCartItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CartsRestApi\\CartsRestApiDependencyProvider::getCartItemMapperPlugins",
+            "source": "\\Spryker\\Zed\\DiscountPromotionsRestApi\\Communication\\Plugin\\CartsRestApi\\DiscountPromotionCartItemMapperPlugin"
+        }
+    ]
+}
