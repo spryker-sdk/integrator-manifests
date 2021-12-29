@@ -1,0 +1,12 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\DocumentationGeneratorRestApi\\DocumentationGeneratorRestApiConfig::getPathVersionPrefix",
+            "value": "v"
+        },
+        {
+            "target": "\\Spryker\\Zed\\DocumentationGeneratorRestApi\\DocumentationGeneratorRestApiConfig::getPathVersionResolving",
+            "value": true
+        }
+    ]
+}
