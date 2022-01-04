@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\SprykerShop\\Yves\\ChartWidget\\Plugin\\Twig\\ChartTwigPlugin"
+        }
+    ]
+}

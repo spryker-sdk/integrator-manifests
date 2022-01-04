@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\SprykerShop\\Yves\\CatalogPage\\Plugin\\Twig\\CatalogPageTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\SprykerShop\\Yves\\CatalogPage\\Plugin\\Twig\\CategoryFilterTwigPlugin"
+        }
+    ]
+}
