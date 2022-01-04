@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Service\\UtilDateTime\\Plugin\\Twig\\DateTimeFormatterTwigPlugin"
+        }
+    ]
+}

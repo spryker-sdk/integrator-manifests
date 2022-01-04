@@ -1,0 +1,24 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\SprykerShop\\Yves\\ShopApplication\\Plugin\\Twig\\ShopApplicationTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\SprykerShop\\Yves\\ShopApplication\\Plugin\\TwigFormRuntimeLoaderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\SprykerShop\\Yves\\ShopApplication\\Plugin\\Twig\\WidgetTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\SprykerShop\\Yves\\ShopApplication\\Plugin\\Twig\\WidgetTagTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigLoaderPlugins",
+            "source": "\\SprykerShop\\Yves\\ShopApplication\\Plugin\\Twig\\ShopApplicationFormTwigLoaderPlugin"
+        }
+    ]
+}
