@@ -1,0 +1,32 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageAttributeProviderPlugins",
+            "source": "\\Spryker\\Zed\\MessageBroker\\Communication\\Plugin\\MessageBroker\\AppIdentifierMessageAttributeProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageAttributeProviderPlugins",
+            "source": "\\Spryker\\Zed\\MessageBroker\\Communication\\Plugin\\MessageBroker\\CorrelationIdMessageAttributeProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageAttributeProviderPlugins",
+            "source": "\\Spryker\\Zed\\MessageBroker\\Communication\\Plugin\\MessageBroker\\TenantIdentifierMessageAttributeProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageAttributeProviderPlugins",
+            "source": "\\Spryker\\Zed\\MessageBroker\\Communication\\Plugin\\MessageBroker\\TimestampMessageAttributeProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageSenderPlugins",
+            "source": "\\Spryker\\Zed\\MessageBrokerAws\\Communication\\Plugin\\MessageBroker\\Sender\\AwsSqsMessageSenderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageReceiverPlugins",
+            "source": "\\Spryker\\Zed\\MessageBrokerAws\\Communication\\Plugin\\MessageBroker\\Receiver\\AwsSqsMessageReceiverPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Console\\ConsoleDependencyProvider::getConsoleCommands",
+            "source": "\\Spryker\\Zed\\MessageBroker\\Communication\\Plugin\\Console\\MessageBrokerWorkerConsole"
+        }
+    ]
+}
