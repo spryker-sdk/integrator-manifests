@@ -1,0 +1,45 @@
+{
+    "wire-navigation": [
+        {
+            "navigation": {
+                "application-catalog-gui": {
+                    "label": "Apps",
+                    "title": "Apps",
+                    "icon": "fa-archive",
+                    "bundle": "application-catalog-gui",
+                    "controller": "index",
+                    "action": "index",
+                    "pages": {
+                        "bla1": {
+                            "label": "bla1",
+                            "title": "bla1",
+                            "icon": "fa-archive",
+                            "bundle": "bla1",
+                            "controller": "bla",
+                            "action": "one",
+                            "pages": {
+                                "bla1": {
+                                    "label": "bla1",
+                                    "title": "bla1",
+                                    "icon": "fa-archive",
+                                    "bundle": "bla1",
+                                    "controller": "bla",
+                                    "action": "one"
+                                }
+                            }
+                        },
+                        "bla2": {
+                            "label": "bla2",
+                            "title": "bla2",
+                            "icon": "fa-archive",
+                            "bundle": "bla1",
+                            "controller": "bla",
+                            "action": "two"
+                        }
+                    }
+                }
+            },
+            "after": "users"
+        }
+    ]
+}
