@@ -1,7 +1,7 @@
 {
     "wire-navigation": [
         {
-            "navigation": {
+            "navigations": {
                 "application-catalog-gui": {
                     "label": "Apps",
                     "title": "Apps",
