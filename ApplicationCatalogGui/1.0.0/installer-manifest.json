@@ -2,7 +2,7 @@
     "wire-navigation": [
         {
             "navigation": {
-                "sales.application-catalog-gui": {
+                "application-catalog-gui": {
                     "label": "Apps",
                     "title": "Apps",
                     "icon": "fa-archive",
