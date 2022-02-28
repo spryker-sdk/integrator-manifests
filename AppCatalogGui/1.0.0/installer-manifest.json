@@ -2,11 +2,11 @@
     "wire-navigation": [
         {
             "navigations": {
-                "application-catalog-gui": {
+                "app-catalog-gui": {
                     "label": "Apps",
                     "title": "Apps",
                     "icon": "fa-archive",
-                    "bundle": "application-catalog-gui",
+                    "module": "app-catalog-gui",
                     "controller": "index",
                     "action": "index"
                 }
