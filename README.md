@@ -11,7 +11,7 @@ This aims to help automating the process.
 Any vendor based module can have recipes here.
 The structure looks as follows:
 ```
-Spryker/                                      <- Organization namespace
+Spryker/                                      <- Vendor namespace
     Availability/                             <- Module name
         9.10.0/                               <- Module version
             installer-manifest.json           <- Manifest file
@@ -23,3 +23,5 @@ SprykerShop/
 ```
 
 Only released versions can be added. So please make sure you only add/merge recipes after their module release has been done.
+
+Note: If your vendor namespace is a combination (`MyCompany\MyOtherNamespace`) or alike, the backslash needs to be printed as underscore (`MyCompany_MyOtherNamespace`). We do not yet support this in the integrator tooling, but if you have such a use case please reach out and we can talk about fast-tracking this feature for it.
