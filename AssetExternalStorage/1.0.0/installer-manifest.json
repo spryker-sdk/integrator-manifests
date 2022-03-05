@@ -1,8 +1,8 @@
 {
-    "add-array-option": [
+    "add-array-element": [
         {
-            "target": "\\Pyz\\Client\\RabbitMq\\RabbitMqConfig::getSynchronizationQueueConfiguration",
-            "source": "\\Spryker\\Shared\\AssetExternalStorage\\AssetExternalStorageConfig::ASSET_EXTERNAL_SYNC_STORAGE_QUEUE"
+            "target": "\\Spryker\\Client\\RabbitMq\\RabbitMqConfig::getSynchronizationQueueConfiguration",
+            "value": "\\Spryker\\Shared\\AssetExternalStorage\\AssetExternalStorageConfig::ASSET_EXTERNAL_SYNC_STORAGE_QUEUE"
         }
     ]
 }
