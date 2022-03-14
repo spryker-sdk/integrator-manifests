@@ -3,11 +3,11 @@
         "new": {
             "shopping_list.pre.check.product_merchant_inactive": {
                 "en_US": "Merchant is inactive.",
-                "de_DE": "Der H\u00e4ndler ist nicht aktiv."
+                "de_DE": "Der Händler ist nicht aktiv."
             },
             "shopping_list.pre.check.product_merchant_not_approved": {
                 "en_US": "Merchant is not approved.",
-                "de_DE": "Der H\u00e4ndler ist nicht best\u00e4tigt."
+                "de_DE": "Der Händler ist nicht bestätigt."
             },
             "shopping_list.pre.check.product_offer.store_invalid": {
                 "en_US": "Product Offer is not equal to the current Store.",
