@@ -1,14 +1,16 @@
 {
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductConcreteExpanderPlugins",
-            "source": "\\Spryker\\Zed\\ProductBundle\\Communication\\Plugin\\Product\\ProductBundleProductConcreteExpanderPlugin"
-        }
-    ],
-    "unwire-plugin": [
-        {
-            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductConcreteReadPlugins",
-            "source": "\\Spryker\\Zed\\ProductBundle\\Communication\\Plugin\\Product\\ProductBundleProductConcreteReadPlugin"
-        }
-    ]
+    "7.11.0": {
+        "wire-plugin": [
+            {
+                "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductConcreteExpanderPlugins",
+                "source": "\\Spryker\\Zed\\ProductBundle\\Communication\\Plugin\\Product\\ProductBundleProductConcreteExpanderPlugin"
+            }
+        ],
+        "unwire-plugin": [
+            {
+                "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductConcreteReadPlugins",
+                "source": "\\Spryker\\Zed\\ProductBundle\\Communication\\Plugin\\Product\\ProductBundleProductConcreteReadPlugin"
+            }
+        ]
+    }
 }
