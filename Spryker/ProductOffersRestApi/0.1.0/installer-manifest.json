@@ -1,0 +1,9 @@
+{
+    "wire-glue-relationship": [
+        {
+            "source": {
+                "\\Spryker\\Glue\\ShoppingListsRestApi\\ShoppingListsRestApiConfig::RESOURCE_SHOPPING_LIST_ITEMS": "\\Spryker\\Glue\\ProductOffersRestApi\\Plugin\\GlueApplication\\ProductOffersByProductOfferReferenceResourceRelationshipPlugin"
+            }
+        }
+    ]
+}

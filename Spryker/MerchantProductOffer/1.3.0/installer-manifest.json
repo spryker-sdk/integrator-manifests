@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ShoppingList\\ShoppingListDependencyProvider::getAddItemPreCheckPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductOffer\\Communication\\Plugin\\ShoppingList\\MerchantProductOfferAddItemPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ShoppingList\\ShoppingListDependencyProvider::getShoppingListItemBulkPostSavePlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductOffer\\Communication\\Plugin\\ShoppingList\\MerchantProductOfferShoppingListItemBulkPostSavePlugin"
+        }
+    ]
+}
