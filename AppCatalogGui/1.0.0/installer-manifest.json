@@ -1,0 +1,17 @@
+{
+    "wire-navigation": [
+        {
+            "navigations": {
+                "app-catalog-gui": {
+                    "label": "Apps",
+                    "title": "Apps",
+                    "icon": "fa-archive",
+                    "module": "app-catalog-gui",
+                    "controller": "index",
+                    "action": "index"
+                }
+            },
+            "after": "users"
+        }
+    ]
+}
