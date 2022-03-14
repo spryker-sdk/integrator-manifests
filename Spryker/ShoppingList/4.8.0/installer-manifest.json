@@ -1,0 +1,28 @@
+{
+    "glossary-key": {
+        "new": {
+            "shopping_list.pre.check.product_merchant_inactive": {
+                "en_US": "Merchant is inactive.",
+                "de_DE": "Der H\u00e4ndler ist nicht aktiv."
+            },
+            "shopping_list.pre.check.product_merchant_not_approved": {
+                "en_US": "Merchant is not approved.",
+                "de_DE": "Der H\u00e4ndler ist nicht best\u00e4tigt."
+            },
+            "shopping_list.pre.check.product_offer.store_invalid": {
+                "en_US": "Product Offer is not equal to the current Store.",
+                "de_DE": "Das Angebot gleicht nicht dem aktuellen Shop."
+            },
+            "shopping_list.pre.check.product.store_invalid": {
+                "en_US": "Product is not equal to the current Store.",
+                "de_DE": "Das Produkt gleicht nicht dem aktuellen Shop."
+            }
+        }
+    },
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ShoppingList\\ShoppingListDependencyProvider::getAddItemPreCheckPlugins",
+            "source": "\\Spryker\\Zed\\ShoppingList\\Communication\\Plugin\\ShoppingList\\ShoppingListItemProductConcreteHasValidStoreAddItemPreCheckPlugin"
+        }
+    ]
+}
