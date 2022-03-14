@@ -1,0 +1,14 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductConcreteExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductValidity\\Communication\\Plugin\\ProductValidityProductConcreteExpanderPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductConcreteReadPlugins",
+            "source": "\\Spryker\\Zed\\ProductValidity\\Communication\\Plugin\\ProductValidityReadPlugin"
+        }
+    ]
+}
