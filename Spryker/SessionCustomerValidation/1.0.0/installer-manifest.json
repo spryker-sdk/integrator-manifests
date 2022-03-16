@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\Security\\SecurityDependencyProvider::getSecurityPlugins",
+            "source": "\\Spryker\\Yves\\SessionCustomerValidation\\Plugin\\Security\\ValidateSessionCustomerSecurityPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Security\\SecurityDependencyProvider::getSecurityPlugins",
+            "source": "\\Spryker\\Yves\\SessionCustomerValidation\\Plugin\\Security\\SaveSessionCustomerSecurityPlugin"
+        }
+    ]
+}

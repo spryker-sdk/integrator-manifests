@@ -1,0 +1,20 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\SessionCustomerValidation\\SessionCustomerValidationDependencyProvider::getSessionCustomerSaverPlugin",
+            "source": "\\Spryker\\Yves\\SessionRedis\\Plugin\\SessionCustomerValidation\\SessionRedisSessionCustomerSaverPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\SessionCustomerValidation\\SessionCustomerValidationDependencyProvider::getSessionCustomerValidatorPlugin",
+            "source": "\\Spryker\\Yves\\SessionRedis\\Plugin\\SessionCustomerValidation\\SessionRedisSessionCustomerValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\SessionUserValidation\\SessionUserValidationDependencyProvider::getSessionUserSaverPlugin",
+            "source": "\\Spryker\\Zed\\SessionRedis\\Communication\\Plugin\\SessionUserValidation\\SessionRedisSessionUserSaverPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\SessionUserValidation\\SessionUserValidationDependencyProvider::getSessionUserValidatorPlugin",
+            "source": "\\Spryker\\Zed\\SessionRedis\\Communication\\Plugin\\SessionUserValidation\\SessionRedisSessionUserValidatorPlugin"
+        }
+    ]
+}
