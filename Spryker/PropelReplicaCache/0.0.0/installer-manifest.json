@@ -1,0 +1,18 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\PropelReplicaCache\\PropelReplicaCacheConstants::CACHE_TTL",
+            "value": 2
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\PropelOrm\\PropelOrmDependencyProvider::getDoSelectExtensionPlugins",
+            "source": "\\Spryker\\Zed\\PropelReplicaCache\\Communication\\Plugin\\PropelOrm\\DoSelectExtensionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\PropelOrm\\PropelOrmDependencyProvider::getPostSaveExtensionPlugins",
+            "source": "\\Spryker\\Zed\\PropelReplicaCache\\Communication\\Plugin\\PropelOrm\\PostSaveExtensionPlugin"
+        }
+    ]
+}
