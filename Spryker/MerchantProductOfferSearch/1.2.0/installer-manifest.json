@@ -1,0 +1,20 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::getProductConcreteCatalogSearchQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\MerchantProductOfferSearch\\Plugin\\Search\\MerchantReferenceQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductPageSearch\\ProductPageSearchDependencyProvider::getConcreteProductMapExpanderPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductOfferSearch\\Communication\\Plugin\\ProductPageSearch\\MerchantProductOfferProductConcretePageMapExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getMerchantProductOfferSearchPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductOfferSearch\\Communication\\Plugin\\Publisher\\ProductOffer\\ProductConcreteWritePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getMerchantProductOfferSearchPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductOfferSearch\\Communication\\Plugin\\Publisher\\ProductOfferStore\\ProductConcreteWritePublisherPlugin"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\MerchantProductOfferWidget\\MerchantProductOfferWidgetDependencyProvider::getMerchantProductOfferCollectionExpanderPlugins",
+            "source": "\\SprykerShop\\Yves\\MerchantProductWidget\\Plugin\\MerchantProductOfferWidget\\MerchantProductMerchantProductOfferCollectionExpanderPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\QuickOrderPage\\QuickOrderPageDependencyProvider::getQuickOrderItemTransferExpanderPlugins",
+            "source": "\\SprykerShop\\Yves\\MerchantProductWidget\\Plugin\\QuickOrderPage\\MerchantProductQuickOrderItemExpanderPlugin"
+        }
+    ]
+}

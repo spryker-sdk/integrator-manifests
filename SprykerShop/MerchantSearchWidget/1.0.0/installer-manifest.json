@@ -1,0 +1,7 @@
+{
+    "wire-widget": [
+        {
+            "source": "\\SprykerShop\\Yves\\MerchantSearchWidget\\Widget\\MerchantSearchWidget"
+        }
+    ]
+}
