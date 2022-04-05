@@ -1,0 +1,37 @@
+{
+    "glossary-key": {
+        "new": {
+            "merchant_product_offer_widget.merchant_name": {
+                "en_US": "Merchant",
+                "de_DE": "Händler"
+            }
+        }
+    },
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\ProductSearchWidget\\ProductSearchWidgetDependencyProvider::getProductQuickAddFormExpanderPlugins",
+            "source": "\\SprykerShop\\Yves\\MerchantProductOfferWidget\\Plugin\\ProductSearchWidget\\MerchantProductOfferProductQuickAddFormExpanderPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\QuickOrderPage\\QuickOrderPageDependencyProvider::getQuickOrderItemTransferExpanderPlugins",
+            "source": "\\SprykerShop\\Yves\\MerchantProductOfferWidget\\Plugin\\QuickOrderPage\\MerchantProductOfferQuickOrderItemExpanderPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\QuickOrderPage\\QuickOrderPageDependencyProvider::getQuickOrderFormColumnPlugins",
+            "source": "\\SprykerShop\\Yves\\MerchantProductOfferWidget\\Plugin\\QuickOrderPage\\MerchantProductOfferQuickOrderFormColumnPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\QuickOrderPage\\QuickOrderPageDependencyProvider::getQuickOrderFormExpanderPlugins",
+            "source": "\\SprykerShop\\Yves\\MerchantProductOfferWidget\\Plugin\\QuickOrderPage\\MerchantProductOfferQuickOrderFormExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Router\\RouterDependencyProvider::getRouteProvider",
+            "source": "\\SprykerShop\\Yves\\MerchantProductOfferWidget\\Plugin\\Router\\MerchantProductOfferWidgetRouteProviderPlugin"
+        }
+    ],
+    "wire-widget": [
+        {
+            "source": "\\SprykerShop\\Yves\\MerchantProductOfferWidget\\Widget\\MerchantProductOffersSelectWidget"
+        }
+    ]
+}
