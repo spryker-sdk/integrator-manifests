@@ -1,0 +1,9 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\ShopCmsSlot\\ShopCmsSlotDependencyProvider::getCmsSlotContentPlugins",
+            "source": "\\SprykerShop\\Yves\\AssetExternalWidget\\Plugin\\ShopCmsSlot\\AssetExternalWidgetCmsSlotContentPlugin",
+            "index": "\\Spryker\\Shared\\AssetExternal\\AssetExternalConfig::CMS_SLOT_CONTENT_PROVIDER_TYPE"
+        }
+    ]
+}
