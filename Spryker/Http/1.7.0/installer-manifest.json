@@ -1,0 +1,21 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Yves\\Http\\Plugin\\Twig\\HttpKernelTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Yves\\Http\\Plugin\\Twig\\RuntimeLoaderTwigPlugin"
+        }
+    ],
+    "configure-env": [
+      {
+            "target": "\\Spryker\\Shared\\Http\\HttpConstants::URI_SIGNER_SECRET_KEY",
+            "value": {
+                "is_literal": true,
+                "value": "getenv('SPRYKER_ZED_REQUEST_TOKEN') ?: null"
+            }
+      }
+    ]
+}
