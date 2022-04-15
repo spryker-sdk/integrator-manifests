@@ -1,0 +1,11 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\AppCatalogGui\\AppCatalogGuiConstants::APP_CATALOG_SCRIPT_URL",
+            "value": {
+                "value": "(string)getenv('APP_CATALOG_SCRIPT_URL')",
+                "is_literal": true
+            }
+        }
+    ]
+}
