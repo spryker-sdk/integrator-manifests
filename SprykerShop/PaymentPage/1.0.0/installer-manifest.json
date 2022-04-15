@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\CheckoutPage\\CheckoutPageDependencyProvider::getPaymentCollectionExtenderPlugins",
+            "source": "\\SprykerShop\\Yves\\PaymentPage\\Plugin\\PaymentPage\\PaymentForeignPaymentCollectionExtenderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Router\\RouterDependencyProvider::getRouteProvider",
+            "source": "\\SprykerShop\\Yves\\PaymentPage\\Plugin\\Router\\PaymentPageRouteProviderPlugin"
+        }
+    ]
+}

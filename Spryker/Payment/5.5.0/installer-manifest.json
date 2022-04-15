@@ -1,0 +1,88 @@
+{
+    "glossary-key": {
+        "new": {
+            "payment.cancellation.title": {
+                "de_DE": "Bezahlvorgang abgebrochen",
+                "en_US": "Payment cancellation"
+            },
+            "payment.cancellation.message": {
+                "de_DE": "Du hast den Bezahlvorgang abgebrochen.",
+                "en_US": "You have cancelled your payment."
+            },
+            "payment_foreign.thank_you": {
+                "de_DE": "Danke",
+                "en_US": "Thank you"
+            },
+            "payment_foreign.go_to_my_account": {
+                "de_DE": "Gehe zum \"Benutzerkonto\"",
+                "en_US": "Go to \"My Account\""
+            },
+            "payment_foreign.success.order.placement.message": {
+                "de_DE": "Deine Bestellung ist erfolgreich bei uns eingegangen. Die Bestellbestätigung wurde soeben per E-Mail versendet. In deinem Benutzerkonto kannst deine Bestellung überprüfen und nachverfolgen.",
+                "en_US": "Your order has been paid successfully. You will receive your order confirmation email in a few minutes. You can check and track your order in your account."
+            },
+            "oms.state.reservation-cancelled": {
+                "en_US": "Reservation Cancelled",
+                "de_DE": "Reservation Cancelled"
+            },
+            "oms.state.reservation-cancellation-pending": {
+                "en_US": "Reservation Cancellation Pending",
+                "de_DE": "Reservation Cancellation Pending"
+            }
+        }
+    },
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\Oms\\OmsConstants::PROCESS_LOCATION",
+            "value": [
+                "APPLICATION_ROOT_DIR . /vendor/spryker/payment/config/Zed/Oms"
+            ]
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPostHooks",
+            "source": "\\Spryker\\Zed\\Payment\\Communication\\Plugin\\Checkout\\PaymentAuthorizationCheckoutPostSavePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Payment\\Communication\\Plugin\\MessageBroker\\PaymentCancelReservationFailedMessageHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Payment\\Communication\\Plugin\\MessageBroker\\PaymentConfirmationFailedMessageHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Payment\\Communication\\Plugin\\MessageBroker\\PaymentConfirmedMessageHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Payment\\Communication\\Plugin\\MessageBroker\\PaymentPreauthorizationFailedMessageHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Payment\\Communication\\Plugin\\MessageBroker\\PaymentPreauthorizedMessageHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Payment\\Communication\\Plugin\\MessageBroker\\PaymentReservationCanceledMessageHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Payment\\Communication\\Plugin\\MessageBroker\\PaymentRefundedMessageHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Payment\\Communication\\Plugin\\MessageBroker\\PaymentRefundFailedMessageHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Payment\\Communication\\Plugin\\MessageBroker\\PaymentMethodAddedMessageHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Payment\\Communication\\Plugin\\MessageBroker\\PaymentMethodDeletedMessageHandlerPlugin"
+        }
+    ]
+}

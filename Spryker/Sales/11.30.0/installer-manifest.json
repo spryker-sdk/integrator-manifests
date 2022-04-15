@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesConfig::isOldDeterminationForOrderItemProcessEnabled",
+            "value": false
+        }
+    ]
+}
