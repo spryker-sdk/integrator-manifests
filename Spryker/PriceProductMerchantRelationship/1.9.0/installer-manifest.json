@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Service\\PriceProduct\\PriceProductDependencyProvider::getPreBuildPriceProductGroupKeyPlugins",
+            "source": "\\Spryker\\Service\\PriceProductMerchantRelationship\\Plugin\\PriceProduct\\MerchantRelationshipPreBuildPriceProductGroupKeyPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\PriceProduct\\PriceProductDependencyProvider::getPriceProductCollectionDeletePlugins",
+            "source": "\\Spryker\\Zed\\PriceProductMerchantRelationship\\Communication\\Plugin\\PriceProduct\\MerchantRelationshipPriceProductCollectionDeletePlugin"
+        }
+    ]
+}
