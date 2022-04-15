@@ -1,0 +1,24 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\PriceProduct\\PriceProductDependencyProvider::getPriceProductValidatorPlugins",
+            "source": "\\Spryker\\Zed\\PriceProductMerchantRelationshipMerchantPortalGui\\Communication\\Plugin\\PriceProduct\\MerchantRelationshipVolumePriceProductValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductMerchantPortalGui\\ProductMerchantPortalGuiDependencyProvider::getPriceProductTableFilterPlugins",
+            "source": "\\Spryker\\Zed\\PriceProductMerchantRelationshipMerchantPortalGui\\Communication\\Plugin\\ProductMerchantPortalGui\\MerchantRelationshipPriceProductTableFilterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductMerchantPortalGui\\ProductMerchantPortalGuiDependencyProvider::getPriceProductAbstractTableConfigurationExpanderPlugins",
+            "source": "\\Spryker\\Zed\\PriceProductMerchantRelationshipMerchantPortalGui\\Communication\\Plugin\\ProductMerchantPortalGui\\MerchantRelationshipPriceProductAbstractTableConfigurationExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductMerchantPortalGui\\ProductMerchantPortalGuiDependencyProvider::getPriceProductConcreteTableConfigurationExpanderPlugins",
+            "source": "\\Spryker\\Zed\\PriceProductMerchantRelationshipMerchantPortalGui\\Communication\\Plugin\\ProductMerchantPortalGui\\MerchantRelationshipPriceProductConcreteTableConfigurationExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductMerchantPortalGui\\ProductMerchantPortalGuiDependencyProvider::getPriceProductMapperPlugins",
+            "source": "\\Spryker\\Zed\\PriceProductMerchantRelationshipMerchantPortalGui\\Communication\\Plugin\\ProductMerchantPortalGui\\MerchantRelationshipPriceProductMapperPlugin"
+        }
+    ]
+}
