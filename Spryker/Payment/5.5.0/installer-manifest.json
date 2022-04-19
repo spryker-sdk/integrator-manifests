@@ -34,9 +34,10 @@
     "configure-env": [
         {
             "target": "\\Spryker\\Shared\\Oms\\OmsConstants::PROCESS_LOCATION",
-            "value": [
-                "APPLICATION_ROOT_DIR . /vendor/spryker/payment/config/Zed/Oms"
-            ]
+            "value": {
+                "value": "APPLICATION_ROOT_DIR . '/vendor/spryker/payment/config/Zed/Oms'",
+                "is_literal": true
+            }
         }
     ],
     "wire-plugin": [

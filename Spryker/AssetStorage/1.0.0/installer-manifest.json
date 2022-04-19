@@ -1,16 +1,5 @@
 {
-    "add-config-array-element": [
-        {
-            "target": "\\Spryker\\Client\\RabbitMq\\RabbitMqConfig::getSynchronizationQueueConfiguration",
-            "value": "\\Spryker\\Shared\\AssetStorage\\AssetStorageConfig::ASSET_SYNC_STORAGE_QUEUE"
-        }
-    ],
     "wire-plugin": [
-        {
-            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
-            "index": "\\Spryker\\Shared\\AssetStorage\\AssetStorageConfig::ASSET_SYNC_STORAGE_QUEUE",
-            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin"
-        },
         {
             "target": "\\Spryker\\Zed\\Synchronization\\SynchronizationDependencyProvider::getSynchronizationDataPlugins",
             "source": "\\Spryker\\Zed\\AssetStorage\\Communication\\Plugin\\Synchronization\\AssetStorageSynchronizationDataPlugin"
