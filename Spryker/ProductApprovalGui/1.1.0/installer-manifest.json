@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\ProductApprovalGui\\ProductApprovalGuiConfig::isApprovalStatusTreeCustomizationEnabled",
+            "value": true
+        }
+    ]
+}
