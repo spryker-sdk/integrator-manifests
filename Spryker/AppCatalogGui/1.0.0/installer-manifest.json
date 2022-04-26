@@ -1,0 +1,16 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\AppCatalogGui\\AppCatalogGuiConstants::OAUTH_PROVIDER_NAME",
+            "value": "\\Spryker\\Zed\\OauthAuth0\\OauthAuth0Config::PROVIDER_NAME"
+        },
+        {
+            "target": "\\Spryker\\Shared\\AppCatalogGui\\AppCatalogGuiConstants::OAUTH_GRANT_TYPE",
+            "value": "\\Spryker\\Zed\\OauthAuth0\\OauthAuth0Config::GRANT_TYPE_CLIENT_CREDENTIALS"
+        },
+        {
+            "target": "\\Spryker\\Shared\\AppCatalogGui\\AppCatalogGuiConstants::OAUTH_OPTION_AUDIENCE",
+            "value": "aop-atrs"
+        }
+    ]
+}

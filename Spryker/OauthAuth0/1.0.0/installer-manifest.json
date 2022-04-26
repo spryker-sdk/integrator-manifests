@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\OauthClient\\OauthClientDependencyProvider::getOauthAccessTokenProviderPlugins",
+            "source": "\\Spryker\\Zed\\OauthAuth0\\Communication\\Plugin\\OauthClient\\Auth0OauthAccessTokenProviderPlugin"
+        }
+    ]
+}
