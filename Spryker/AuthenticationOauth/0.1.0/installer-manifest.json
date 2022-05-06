@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Authentication\\AuthenticationDependencyProvider::getAuthenticationServerPlugin",
+            "source": "\\Spryker\\Client\\AuthenticationOauth\\Plugin\\AuthenticationServerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Authentication\\AuthenticationDependencyProvider::getAuthenticationServerPlugin",
+            "source": "\\Spryker\\Zed\\AuthenticationOauth\\Communication\\Plugin\\AuthenticationServerPlugin"
+        }
+    ]
+}
