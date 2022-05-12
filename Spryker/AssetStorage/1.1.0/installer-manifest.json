@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+            "source": "\\Spryker\\Zed\\AssetStorage\\Communication\\Plugin\\Publisher\\Asset\\AssetWritePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+            "source": "\\Spryker\\Zed\\AssetStorage\\Communication\\Plugin\\Publisher\\Asset\\AssetDeletePublisherPlugin"
+        }
+    ]
+}
