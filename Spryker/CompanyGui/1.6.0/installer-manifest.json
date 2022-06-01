@@ -1,0 +1,30 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CompanyBusinessUnitGui\\CompanyBusinessUnitGuiDependencyProvider::getCompanyBusinessUnitFormExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CompanyGui\\Communication\\Plugin\\CompanyBusinessUnitGui\\CompanyToCompanyBusinessUnitFormExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CompanyRoleGui\\CompanyRoleGuiDependencyProvider::getCompanyRoleCreateFormExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CompanyGui\\Communication\\Plugin\\CompanyRoleGui\\CompanyToCompanyRoleCreateFormExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CompanyUnitAddressGui\\CompanyUnitAddressGuiDependencyProvider::getCompanyUnitAddressFormPlugins",
+            "source": "\\Spryker\\Zed\\CompanyGui\\Communication\\Plugin\\CompanyUnitAddressGui\\CompanyToCompanyUnitAddressEditFormExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CompanyUserGui\\CompanyUserGuiDependencyProvider::getCompanyUserFormExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CompanyGui\\Communication\\Plugin\\CompanyUserGui\\CompanyFieldToCompanyUserFormExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CompanyUserGui\\CompanyUserGuiDependencyProvider::getCompanyUserAttachCustomerFormExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CompanyGui\\Communication\\Plugin\\CompanyUserGui\\CompanyToCompanyUserAttachCustomerFormExpanderPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CompanyUserGui\\CompanyUserGuiDependencyProvider::getCompanyUserFormExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CompanyGui\\Communication\\Plugin\\CompanyUserGui\\CompanyToCompanyUserFormExpanderPlugin"
+        }
+    ]
+}
