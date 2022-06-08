@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getSchemaFormatterPlugins",
+            "source": "\\Spryker\\Glue\\DocumentationGeneratorOpenApi\\Plugin\\DocumentationGeneratorApi\\DocumentationGeneratorOpenApiSchemaFormatterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getContentGeneratorPlugins",
+            "source": "\\Spryker\\Glue\\DocumentationGeneratorOpenApi\\Plugin\\DocumentationGeneratorApi\\DocumentationGeneratorOpenApiContentGeneratorPlugin"
+        }
+    ]
+}
