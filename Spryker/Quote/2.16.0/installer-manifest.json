@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Comment\\CommentDependencyProvider::getCommentValidatorPlugins",
+            "source": "\\Spryker\\Zed\\Quote\\Communication\\Plugins\\Comment\\QuoteCommentValidatorPlugin"
+        }
+    ]
+}
