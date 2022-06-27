@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getRequestAfterRoutingValidatorPlugins",
+            "source": "\\Spryker\\Glue\\GlueBackendApiApplication\\Plugin\\GlueBackendApiApplication\\ScopeRequestAfterRoutingValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Oauth\\OauthDependencyProvider::getScopeCollectorPlugins",
+            "source": "\\Spryker\\Glue\\GlueBackendApiApplication\\Plugin\\Oauth\\BackendScopeCollectorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Oauth\\OauthDependencyProvider::getScopeFinderPlugins",
+            "source": "\\Spryker\\Glue\\GlueBackendApiApplication\\Plugin\\Oauth\\BackendScopeFinderPlugin"
+        }
+    ]
+}
