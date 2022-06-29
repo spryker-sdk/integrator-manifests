@@ -1,0 +1,28 @@
+{
+    "glossary-key": {
+        "new": {
+            "customer.salutation.invalid": {
+                "en_US": "Salutation is invalid",
+                "de_DE": "Anrede ist ungültig"
+            },
+            "customer.billing_address.salutation.invalid": {
+                "en_US": "Salutation is invalid",
+                "de_DE": "Anrede ist ungültig"
+            },
+            "customer.shipping_address.salutation.invalid": {
+                "en_US": "Salutation is invalid",
+                "de_DE": "Anrede ist ungültig"
+            }
+        }
+    },
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditions",
+            "source": "\\Spryker\\Zed\\Customer\\Communication\\Plugin\\Checkout\\CustomerSalutationCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditions",
+            "source": "\\Spryker\\Zed\\Customer\\Communication\\Plugin\\Checkout\\CustomerAddressSalutationCheckoutPreConditionPlugin"
+        }
+    ]
+}
