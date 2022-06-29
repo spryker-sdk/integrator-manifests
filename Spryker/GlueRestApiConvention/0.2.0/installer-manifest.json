@@ -1,0 +1,22 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getSchemaFormatterPlugins",
+            "source": "\\Spryker\\Glue\\GlueRestApiConvention\\Plugin\\DocumentationGeneratorApi\\RestApiSchemaFormatterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getConventionPlugins",
+            "source": "\\Spryker\\Glue\\GlueRestApiConvention\\Plugin\\GlueApplication\\RestConventionPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getSchemaFormatterPlugins",
+            "source": "\\Spryker\\Glue\\GlueRestApiConvention\\Plugin\\GlueRestApiConvention\\RestApiSchemaFormatterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getApiConventionPlugins",
+            "source": "\\Spryker\\Glue\\GlueRestApiConvention\\Plugin\\GlueApplication\\RestApiConventionPlugin"
+        }
+    ]
+}

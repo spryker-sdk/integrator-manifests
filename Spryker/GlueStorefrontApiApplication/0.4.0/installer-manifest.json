@@ -1,0 +1,50 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\Console\\ConsoleDependencyProvider::getConsoleCommands",
+            "source": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\Plugin\\Console\\RouterCacheWarmUpConsole"
+        },
+        {
+            "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getApiApplicationProviderPlugins",
+            "source": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\Plugin\\GlueStorefrontApiApplication\\StorefrontApiApplicationProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getGlueApplicationBootstrapPlugins",
+            "source": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\Plugin\\StorefrontApiGlueApplicationBootstrapPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getControllerCacheCollectorPlugins",
+            "source": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\Plugin\\GlueStorefrontApiApplication\\Cache\\ControllerCacheCollectorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\GlueStorefrontApiApplicationDependencyProvider::getRouterPlugins",
+            "source": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\Plugin\\GlueStorefrontApiApplication\\CustomRouteRouterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\GlueStorefrontApiApplicationDependencyProvider::getRouteMatcherPlugins",
+            "source": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\Plugin\\GlueStorefrontApiApplication\\CustomRouteRouteMatcherPlugin"
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getApiApplicationProviderPlugins",
+            "source": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\Plugin\\DocumentationGeneratorApi\\StorefrontApiApplicationProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getGlueApplicationBootstrapPlugins",
+            "source": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\Plugin\\GlueApplication\\StorefrontApiGlueApplicationBootstrapPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getControllerCacheCollectorPlugins",
+            "source": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\Plugin\\GlueApplication\\ControllerCacheCollectorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getRouterParameterProviderPlugins",
+            "source": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\Plugin\\GlueApplication\\CustomRouteRouterParameterProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\GlueStorefrontApiApplicationDependencyProvider::getRequestBuilderPlugins",
+            "source": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\Plugin\\GlueStorefrontApiApplication\\ApplicationIdentifierRequestBuilderPlugin"
+        }
+    ]
+}
