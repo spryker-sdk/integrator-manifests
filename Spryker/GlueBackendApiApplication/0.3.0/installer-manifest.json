@@ -1,0 +1,26 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\Console\\ConsoleDependencyProvider::getConsoleCommands",
+            "source": "\\Spryker\\Glue\\GlueBackendApiApplication\\Plugin\\Console\\RouterCacheWarmUpConsole"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getRouterPlugins",
+            "source": "\\Spryker\\Glue\\GlueBackendApiApplication\\Plugin\\GlueBackendApiApplication\\CustomRouteRouterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getRouteMatcherPlugins",
+            "source": "\\Spryker\\Glue\\GlueBackendApiApplication\\Plugin\\GlueBackendApiApplication\\CustomRouteRouteMatcherPlugin"
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getRouterParameterProviderPlugins",
+            "source": "\\Spryker\\Glue\\GlueBackendApiApplication\\Plugin\\GlueApplication\\CustomRouteRouterParameterProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getRequestBuilderPlugins",
+            "source": "\\Spryker\\Glue\\GlueBackendApiApplication\\Plugin\\GlueBackendApiApplication\\ApplicationIdentifierRequestBuilderPlugin"
+        }
+    ]
+}
