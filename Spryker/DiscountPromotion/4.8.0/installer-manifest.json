@@ -1,0 +1,14 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getDiscountPostUpdatePlugins",
+            "source": "\\Spryker\\Zed\\DiscountPromotion\\Communication\\Plugin\\Discount\\DiscountPromotionDiscountPostUpdatePlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getDiscountPostUpdatePlugins",
+            "source": "\\Spryker\\Zed\\DiscountPromotion\\Communication\\Plugin\\Discount\\DiscountPromotionPostUpdatePlugin"
+        }
+    ]
+}
