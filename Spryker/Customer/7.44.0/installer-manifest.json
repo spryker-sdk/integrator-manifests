@@ -1,0 +1,14 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Customer\\CustomerDependencyProvider::getDefaultAddressChangePlugins",
+            "source": "\\Spryker\\Client\\Customer\\Plugin\\Customer\\CustomerAddressDefaultAddressChangePlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Customer\\CustomerDependencyProvider::getDefaultAddressChangePlugins",
+            "source": "\\Spryker\\Client\\Customer\\Plugin\\CustomerAddressSessionUpdatePlugin"
+        }
+    ]
+}
