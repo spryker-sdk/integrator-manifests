@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductMerchantPortalGui\\ProductMerchantPortalGuiDependencyProvider::getPriceProductTableFilterPlugins",
+            "source": "\\Spryker\\Zed\\PriceProductOfferGui\\Communication\\Plugin\\ProductMerchantPortalGui\\PriceProductOfferPriceProductTableFilterPlugin"
+        }
+    ]
+}
