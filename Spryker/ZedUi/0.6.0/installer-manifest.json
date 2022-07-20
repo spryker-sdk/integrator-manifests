@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\MerchantPortalApplication\\MerchantPortalApplicationDependencyProvider::getMerchantPortalApplicationPlugins",
             "source": "\\Spryker\\Zed\\ZedUi\\Communication\\Plugin\\Application\\ZedUiApplicationPlugin"

@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\SprykerShop\\Yves\\CartPage\\CartPageDependencyProvider::getAddToCartFormWidgetParameterExpanderPlugins",
             "source": "\\SprykerShop\\Yves\\DiscountPromotionWidget\\Plugin\\CartPage\\DiscountPromotionAddToCartFormWidgetParameterExpanderPlugin"

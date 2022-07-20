@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Client\\Wishlist\\WishlistDependencyProvider::getWishlistPostMoveToCartCollectionExpanderPlugins",
             "source": "\\Spryker\\Client\\MerchantProductOfferWishlist\\Plugin\\Wishlist\\WishlistProductOfferPostMoveToCartCollectionExpanderPlugin"

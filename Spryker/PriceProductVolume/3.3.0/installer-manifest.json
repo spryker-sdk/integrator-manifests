@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\PriceProduct\\PriceProductDependencyProvider::getPriceProductValidatorPlugins",
             "source": "\\Spryker\\Zed\\PriceProductVolume\\Communication\\Plugin\\PriceProduct\\PriceProductVolumeValidatorPlugin"

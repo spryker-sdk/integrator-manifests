@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigPlugins",
             "source": "\\SprykerShop\\Yves\\CatalogPage\\Plugin\\Twig\\CategoryFilterTwigPlugin"

@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Glue\\AuthRestApi\\AuthRestApiDependencyProvider::getRestUserExpanderPlugins",
             "source": "\\Spryker\\Glue\\CompanyUserAuthRestApi\\Plugin\\AuthRestApi\\CompanyUserRestUserMapperPlugin"

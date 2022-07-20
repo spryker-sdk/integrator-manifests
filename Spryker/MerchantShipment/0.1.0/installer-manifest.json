@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\SprykerShop\\Yves\\CheckoutPage\\CheckoutPageDependencyProvider::getCheckoutPageStepEnginePreRenderPlugins",
             "source": "\\Spryker\\Yves\\MerchantShipment\\Plugin\\CheckoutPage\\MerchantShipmentCheckoutPageStepEnginePreRenderPlugin"

@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Client\\Customer\\CustomerDependencyProvider::getCustomerSessionSetPlugins",
             "source": "\\Spryker\\Client\\Cart\\Plugin\\CustomerChangeCartUpdatePlugin"

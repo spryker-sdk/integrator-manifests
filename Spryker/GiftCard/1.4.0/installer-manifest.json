@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\CartCode\\CartCodeDependencyProvider::getCartCodePlugins",
             "source": "\\Spryker\\Zed\\GiftCard\\Communication\\Plugin\\CartCode\\GiftCardCartCodePlugin"

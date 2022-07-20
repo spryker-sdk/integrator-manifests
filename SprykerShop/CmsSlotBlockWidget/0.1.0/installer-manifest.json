@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\SprykerShop\\Yves\\ShopCmsSlot\\ShopCmsSlotDependencyProvider::getCmsSlotContentPlugins",
             "source": "\\SprykerShop\\Yves\\CmsSlotBlockWidget\\Plugin\\ShopCmsSlot\\CmsSlotBlockWidgetCmsSlotContentPlugin"

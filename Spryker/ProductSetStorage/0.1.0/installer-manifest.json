@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Client\\UrlStorage\\UrlStorageDependencyProvider::getUrlStorageResourceMapperPlugins",
             "source": "\\Spryker\\Client\\ProductSetStorage\\Plugin\\UrlStorageProductSetMapperPlugin"

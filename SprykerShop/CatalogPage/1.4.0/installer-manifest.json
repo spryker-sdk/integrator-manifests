@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\SprykerShop\\Yves\\TabsWidget\\TabsWidgetDependencyProvider::createFullTextSearchPlugins",
             "source": "\\SprykerShop\\Yves\\CatalogPage\\Plugin\\FullTextSearchProductsTabPlugin"

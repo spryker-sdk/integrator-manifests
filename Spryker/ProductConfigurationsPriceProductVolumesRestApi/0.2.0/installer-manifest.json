@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Glue\\ProductConfigurationsRestApi\\ProductConfigurationsRestApiDependencyProvider::getProductConfigurationPriceMapperPlugins",
             "source": "\\Spryker\\Glue\\ProductConfigurationsPriceProductVolumesRestApi\\Plugin\\ProductConfigurationsRestApi\\ProductConfigurationVolumePriceProductConfigurationPriceMapperPlugin"

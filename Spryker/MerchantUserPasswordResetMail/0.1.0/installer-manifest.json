@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\UserPasswordReset\\UserPasswordResetDependencyProvider::getUserPasswordResetRequestStrategyPlugins",
             "source": "\\Spryker\\Zed\\MerchantUserPasswordResetMail\\Communication\\Plugin\\UserPasswordReset\\MailMerchantUserPasswordResetRequestStrategyPlugin"

@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\SprykerShop\\Yves\\WebProfilerWidget\\WebProfilerWidgetDependencyProvider::getDataCollectorPlugins",
             "source": "\\SprykerShop\\Yves\\WebProfilerWidget\\Plugin\\WebProfiler\\WebProfilerRequestDataCollectorPlugin"

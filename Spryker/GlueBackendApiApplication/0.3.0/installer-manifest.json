@@ -13,7 +13,7 @@
             "source": "\\Spryker\\Glue\\GlueBackendApiApplication\\Plugin\\GlueBackendApiApplication\\CustomRouteRouteMatcherPlugin"
         }
     ],
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getRouterParameterProviderPlugins",
             "source": "\\Spryker\\Glue\\GlueBackendApiApplication\\Plugin\\GlueApplication\\CustomRouteRouterParameterProviderPlugin"

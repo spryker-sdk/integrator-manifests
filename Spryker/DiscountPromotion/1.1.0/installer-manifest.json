@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Client\\Cart\\CartDependencyProvider::getAddItemsRequestExpanderPlugins",
             "source": "\\Spryker\\Client\\DiscountPromotion\\Plugin\\AddDiscountPromotionCartRequestExpandPlugin"

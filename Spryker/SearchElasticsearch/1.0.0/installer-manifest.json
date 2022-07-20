@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Client\\CmsPageSearch\\CmsPageSearchDependencyProvider::createCmsPageSearchQueryExpanderPlugins",
             "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\StoreQueryExpanderPlugin"

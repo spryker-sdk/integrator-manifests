@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\SessionRedis\\SessionRedisDependencyProvider::getSessionRedisLifeTimeCalculatorPlugins",
             "source": "\\Spryker\\Zed\\SecuritySystemUser\\Communication\\Plugin\\SessionRedis\\SystemUserSessionRedisLifeTimeCalculatorPlugin"

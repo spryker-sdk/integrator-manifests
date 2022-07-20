@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getPostReloadItemsPlugins",
             "source": "\\Spryker\\Zed\\SalesOrderThreshold\\Communication\\Plugin\\Cart\\AddThresholdMessagesCartPostReloadItemsPlugin"

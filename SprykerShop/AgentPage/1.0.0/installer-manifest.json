@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\SprykerShop\\Yves\\CustomerPage\\CustomerPageDependencyProvider::getAfterCustomerAuthenticationSuccessPlugins",
             "source": "\\SprykerShop\\Yves\\AgentPage\\Plugin\\FixAgentTokenAfterCustomerAuthenticationSuccessPlugin"

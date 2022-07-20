@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getRestRequestValidatorPlugins",
             "source": "\\Spryker\\Glue\\EntityTagsRestApi\\Plugin\\GlueApplication\\EntityTagRestRequestValidatorPlugin"

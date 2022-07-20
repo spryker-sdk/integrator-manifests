@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Scheduler\\SchedulerDependencyProvider::getSchedulerAdapterPlugins",
             "source": "\\Spryker\\Zed\\SchedulerJenkins\\Communication\\Plugin\\Adapter\\SchedulerJenkinsAdapterPlugin"

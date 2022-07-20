@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Client\\MerchantProductOfferStorage\\MerchantProductOfferStorageDependencyProvider::getProductOfferStorageExpanderPlugins",
             "source": "\\Spryker\\Client\\PriceProductOfferStorage\\Plugin\\MerchantProductOfferStorage\\PriceProductOfferStorageExpanderPlugin"

@@ -25,7 +25,7 @@
             "source": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\Plugin\\GlueStorefrontApiApplication\\CustomRouteRouteMatcherPlugin"
         }
     ],
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getApiApplicationProviderPlugins",
             "source": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\Plugin\\DocumentationGeneratorApi\\StorefrontApiApplicationProviderPlugin"

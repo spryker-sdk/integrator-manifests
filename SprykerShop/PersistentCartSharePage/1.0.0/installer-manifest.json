@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\SprykerShop\\Yves\\ResourceSharePage\\ResourceSharePageDependencyProvider::getResourceShareRouterStrategyPlugins",
             "source": "\\SprykerShop\\Yves\\PersistentCartSharePage\\Plugin\\ResourceSharePage\\CartPreviewRouterStrategyPlugin"

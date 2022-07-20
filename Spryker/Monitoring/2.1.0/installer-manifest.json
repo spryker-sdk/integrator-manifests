@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Yves\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
             "source": "\\Spryker\\Yves\\Monitoring\\Plugin\\EventDispatcher\\MonitoringRequestTransactionEventDispatcherPlugin"

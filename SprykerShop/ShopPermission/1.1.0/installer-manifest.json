@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\SprykerShop\\Yves\\ShopPermission\\ShopPermissionDependencyProvider::getPermissionTwigExtensionPlugins",
             "source": "\\SprykerShop\\Yves\\ShopPermission\\Plugin\\Twig\\PermissionTwigExtensionPlugin"

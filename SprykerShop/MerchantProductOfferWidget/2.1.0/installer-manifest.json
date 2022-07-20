@@ -7,7 +7,7 @@
             }
         }
     },
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\SprykerShop\\Yves\\ProductSearchWidget\\ProductSearchWidgetDependencyProvider::getProductQuickAddFormExpanderPlugins",
             "source": "\\SprykerShop\\Yves\\MerchantProductOfferWidget\\Plugin\\ProductSearchWidget\\MerchantProductOfferProductQuickAddFormExpanderPlugin"

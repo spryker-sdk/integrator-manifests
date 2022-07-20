@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Glue\\QuoteRequestsRestApi\\QuoteRequestsRestApiDependencyProvider::getRestQuoteRequestAttributesExpanderPlugins",
             "source": "\\Spryker\\Glue\\ConfigurableBundlesRestApi\\Plugin\\QuoteRequestsRestApi\\ConfiguredBundleRestQuoteRequestAttributesExpanderPlugin"

@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\ProductAlternative\\ProductAlternativeDependencyProvider::getPostProductAlternativeCreatePlugins",
             "source": "\\Spryker\\Zed\\ProductAlternativeProductLabelConnector\\Communication\\Plugin\\PostProductAlternativeCreatePlugin"

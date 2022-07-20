@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\SprykerShop\\Yves\\QuoteRequestAgentPage\\QuoteRequestAgentPageDependencyProvider::getQuoteRequestAgentFormMetadataFieldPlugins",
             "source": "\\SprykerShop\\Yves\\QuoteRequestAgentPage\\Plugin\\QuoteRequestAgentPage\\PurchaseOrderNumberMetadataFieldPlugin"

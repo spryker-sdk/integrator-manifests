@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Glue\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
             "source": "\\Spryker\\Glue\\Storage\\Plugin\\EventDispatcher\\StorageKeyCacheEventDispatcherPlugin"

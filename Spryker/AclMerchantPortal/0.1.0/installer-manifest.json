@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\AclEntity\\AclEntityDependencyProvider::getAclEntityMetadataCollectionExpanderPlugins",
             "source": "\\Spryker\\Zed\\AclMerchantPortal\\Communication\\Plugin\\AclEntity\\MerchantPortalAclEntityMetadataConfigExpanderPlugin"

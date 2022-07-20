@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\SprykerShop\\Yves\\ShopApplication\\ShopApplicationDependencyProvider::getApplicationPlugins",
             "source": "\\Spryker\\Yves\\Validator\\Plugin\\Application\\ValidatorApplicationPlugin"

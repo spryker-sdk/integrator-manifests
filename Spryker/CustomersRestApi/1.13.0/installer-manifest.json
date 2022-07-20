@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Glue\\ShipmentsRestApi\\ShipmentsRestApiDependencyProvider::getAddressSourceCheckerPlugins",
             "source": "\\Spryker\\Glue\\CustomersRestApi\\Plugin\\ShipmentsRestApi\\CustomerAddressSourceCheckerPlugin"

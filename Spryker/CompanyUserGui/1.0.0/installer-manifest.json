@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Customer\\CustomerDependencyProvider::getCustomerTableActionExpanderPlugins",
             "source": "\\Spryker\\Zed\\CompanyUserGui\\Communication\\Plugin\\Customer\\CompanyUserCustomerTableActionExpanderPlugin"

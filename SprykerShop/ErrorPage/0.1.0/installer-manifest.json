@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\SprykerShop\\Yves\\ErrorPage\\ErrorPageDependencyProvider::getExceptionHandlerPlugins",
             "source": "\\SprykerShop\\Yves\\ErrorPage\\Plugin\\ExceptionHandler\\SubRequestExceptionHandlerPlugin"

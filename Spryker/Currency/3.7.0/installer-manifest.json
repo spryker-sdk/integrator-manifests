@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Quote\\QuoteDependencyProvider::getQuoteValidatorPlugins",
             "source": "\\Spryker\\Zed\\Currency\\Communication\\Plugin\\Quote\\QuoteCurrencyValidatorPlugin"

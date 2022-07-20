@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getGlueApplicationRouterProviderPlugins",
             "source": "\\Spryker\\Glue\\GlueBackendApiApplication\\Plugin\\GlueApplication\\BackendRouterProviderPlugin"

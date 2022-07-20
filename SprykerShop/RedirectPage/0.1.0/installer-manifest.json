@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\SprykerShop\\Yves\\ShopRouter\\ShopRouterDependencyProvider::getResourceCreatorPlugins",
             "source": "\\SprykerShop\\Yves\\RedirectPage\\Plugin\\RedirectResourceCreatorPlugin"

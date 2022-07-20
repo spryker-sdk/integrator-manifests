@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\MerchantRelationship\\MerchantRelationshipDependencyProvider::getMerchantRelationshipCreateValidatorPlugins",
             "source": "\\Spryker\\Zed\\MerchantRelationshipProductList\\Communication\\Plugin\\MerchantRelationship\\ProductListMerchantRelationshipCreateValidatorPlugin"

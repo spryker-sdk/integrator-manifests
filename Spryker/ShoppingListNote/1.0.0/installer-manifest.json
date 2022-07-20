@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Client\\ShoppingList\\ShoppingListDependencyProvider::getShoppingListItemToItemMapperPlugins",
             "source": "\\Spryker\\Client\\ShoppingListNote\\Plugin\\ShoppingListItemNoteToItemCartNoteMapperPlugin"

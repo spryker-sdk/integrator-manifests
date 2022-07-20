@@ -19,7 +19,7 @@
             }
         }
     },
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\ShoppingList\\ShoppingListDependencyProvider::getAddItemPreCheckPlugins",
             "source": "\\Spryker\\Zed\\ShoppingList\\Communication\\Plugin\\ShoppingList\\ShoppingListItemProductConcreteHasValidStoreAddItemPreCheckPlugin"

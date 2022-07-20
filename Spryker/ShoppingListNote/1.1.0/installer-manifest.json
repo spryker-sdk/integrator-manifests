@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\ShoppingList\\ShoppingListDependencyProvider::getShoppingListItemBulkPostSavePlugins",
             "source": "\\Spryker\\Zed\\ShoppingListNote\\Communication\\Plugin\\ShoppingListItemNoteBulkPostSavePlugin"

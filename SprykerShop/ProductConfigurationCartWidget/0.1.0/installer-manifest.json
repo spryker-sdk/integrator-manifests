@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\SprykerShop\\Yves\\ProductConfiguratorGatewayPage\\ProductConfiguratorGatewayPageDependencyProvider::getProductConfiguratorRequestPlugins",
             "source": "\\SprykerShop\\Yves\\ProductConfigurationCartWidget\\Plugin\\ProductConfiguratorGatewayPage\\CartPageProductConfiguratorRequestStartegyPlugin"

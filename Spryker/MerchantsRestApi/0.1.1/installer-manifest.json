@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Glue\\UrlsRestApi\\UrlsRestApiDependencyProvider::getRestUrlResolverAttributesTransferProviderPlugins",
             "source": "\\Spryker\\Glue\\MerchantsRestApi\\Plugin\\UrlsRestApi\\MerchantRestUrlResolverAttributesTransferProviderPlugin"

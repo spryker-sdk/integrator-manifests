@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\ProductPageSearch\\ProductPageSearchDependencyProvider::getProductAbstractMapExpanderPlugins",
             "source": "\\Spryker\\Zed\\ProductLabelSearch\\Communication\\Plugin\\ProductPageSearch\\Elasticsearch\\ProductLabelMapExpanderPlugin"

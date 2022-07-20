@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Synchronization\\SynchronizationDependencyProvider::getSynchronizationDataPlugins",
             "source": "\\Spryker\\Zed\\ProductSetPageSearch\\Communication\\Plugin\\Synchronization\\ProductSetSynchronizationDataPlugin"

@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\User\\UserDependencyProvider::getUserFormExpanderPlugins",
             "source": "\\Spryker\\Zed\\AgentGui\\Communication\\Plugin\\UserAgentFormExpanderPlugin"

@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Client\\MerchantSearch\\MerchantSearchDependencyProvider::getMerchantSearchQueryExpanderPlugins",
             "source": "\\Spryker\\Client\\MerchantCategorySearch\\Plugin\\Elasticsearch\\Query\\MerchantCategoryMerchantSearchQueryExpanderPlugin"

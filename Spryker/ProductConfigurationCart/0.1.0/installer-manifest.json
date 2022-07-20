@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Client\\QuoteRequest\\QuoteRequestDependencyProvider::getQuoteRequestQuoteCheckPlugins",
             "source": "\\Spryker\\Client\\ProductConfigurationCart\\Plugin\\QuoteRequest\\ProductConfigurationQuoteRequestQuoteCheckPlugin"

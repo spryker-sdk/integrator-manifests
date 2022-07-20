@@ -39,7 +39,7 @@
             ]
         }
     ],
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPostHooks",
             "source": "\\Spryker\\Zed\\Payment\\Communication\\Plugin\\Checkout\\PaymentAuthorizationCheckoutPostSavePlugin"

@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Yves\\Router\\RouterDependencyProvider::getRouteProvider",
             "source": "\\SprykerShop\\Yves\\PriceWidget\\Plugin\\Router\\PriceWidgetRouteProviderPlugin"

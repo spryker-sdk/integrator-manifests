@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Client\\Customer\\CustomerDependencyProvider::getAccessTokenAuthenticationHandlerPlugin",
             "source": "\\Spryker\\Client\\OauthCompanyUser\\Plugin\\Customer\\CompanyUserAccessTokenAuthenticationHandlerPlugin"

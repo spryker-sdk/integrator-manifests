@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Client\\SearchElasticsearch\\SearchElasticsearchDependencyProvider::getSearchConfigBuilderPlugins",
             "source": "\\Spryker\\Client\\Catalog\\Plugin\\SearchElasticsearch\\ElasticsearchCatalogSearchConfigBuilderPlugin"

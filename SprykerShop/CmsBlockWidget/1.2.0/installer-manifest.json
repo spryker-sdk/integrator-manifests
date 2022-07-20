@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\SprykerShop\\Yves\\CmsBlockWidget\\CmsBlockWidgetDependencyProvider::getTwigExtensionPlugins",
             "source": "\\SprykerShop\\Yves\\CmsBlockWidget\\Plugin\\Twig\\CmsBlockWidgetTwigPlugin"

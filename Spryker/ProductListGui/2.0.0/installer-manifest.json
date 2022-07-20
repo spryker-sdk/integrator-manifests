@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\ConfigurableBundleGui\\ConfigurableBundleGuiDependencyProvider::getConfigurableBundleTemplateSlotEditTabsExpanderPlugins",
             "source": "\\Spryker\\Zed\\ProductListGui\\Communication\\Plugin\\ConfigurableBundleGui\\ProductListManagementConfigurableBundleTemplateSlotEditTabsExpanderPlugin"

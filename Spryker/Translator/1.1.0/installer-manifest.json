@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackofficeApplicationPlugins",
             "source": "\\Spryker\\Zed\\Translator\\Communication\\Plugin\\Application\\TranslatorApplicationPlugin"

@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Client\\QuickOrder\\QuickOrderDependencyProvider::getProductConcreteExpanderPlugins",
             "source": "\\Spryker\\Client\\ProductMeasurementUnitStorage\\Plugin\\QuickOrder\\ProductConcreteTransferBaseMeasurementUnitExpanderPlugin"

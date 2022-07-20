@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getQuoteLockPreResetPlugins",
             "source": "\\Spryker\\Zed\\QuoteRequest\\Communication\\Plugin\\Cart\\SanitizeQuoteRequestQuoteLockPreResetPlugin"

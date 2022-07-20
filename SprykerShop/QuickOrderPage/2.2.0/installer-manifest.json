@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\SprykerShop\\Yves\\QuickOrderPage\\QuickOrderPageDependencyProvider::getQuickOrderUploadedFileParserPlugins",
             "source": "\\SprykerShop\\Yves\\QuickOrderPage\\Plugin\\QuickOrderPage\\QuickOrderCsvUploadedFileParserStrategyPlugin"

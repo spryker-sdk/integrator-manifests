@@ -16,7 +16,7 @@
             }
         }
     ],
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Glue\\OrdersRestApi\\OrdersRestApiDependencyProvider::getRestOrderDetailsAttributesMapperPlugins",
             "source": "\\Spryker\\Glue\\ShipmentsRestApi\\Plugin\\OrdersRestApi\\ShipmentRestOrderDetailsAttributesMapperPlugin"

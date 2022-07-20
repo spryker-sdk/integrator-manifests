@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiDependencyProvider::getCartItemFilterPlugins",
             "source": "\\Spryker\\Glue\\ProductBundleCartsRestApi\\Plugin\\CartsRestApi\\ProductBundleCartItemFilterPlugin"

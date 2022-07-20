@@ -1,5 +1,5 @@
 {
-    "2wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\SprykerShop\\Yves\\StorageRouter\\StorageRouterDependencyProvider::getResourceCreatorPlugins",
             "source": "\\SprykerShop\\Yves\\MerchantPage\\Plugin\\MerchantPageResourceCreatorPlugin"
