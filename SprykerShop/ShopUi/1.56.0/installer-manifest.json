@@ -1,12 +1,8 @@
 {
-    "del-wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigPlugins",
             "source": "\\SprykerShop\\Yves\\ShopUi\\Plugin\\Twig\\ShopUiTwigPlugin"
-        },
-        {
-            "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigPlugins",
-            "source": "\\SprykerShop\\Yves\\ShopUi\\Plugin\\Twig\\FunctionTwigPlugin"
         }
     ]
 }

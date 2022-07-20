@@ -1,8 +1,0 @@
-{
-    "del-wire-plugin": [
-        {
-            "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigPlugins",
-            "source": "\\Spryker\\Yves\\CmsContentWidget\\Plugin\\Twig\\CmsContentWidgetTwigPlugin"
-        }
-    ]
-}

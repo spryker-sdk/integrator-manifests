@@ -1,8 +1,0 @@
-{
-    "del-wire-plugin": [
-        {
-            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPlugins",
-            "source": "\\Spryker\\Zed\\SalesQuantity\\Communication\\Plugin\\Cart\\IsQuantitySplittableItemExpanderPlugin"
-        }
-    ]
-}

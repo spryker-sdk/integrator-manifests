@@ -1,8 +1,0 @@
-{
-    "del-wire-plugin": [
-        {
-            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getPostSavePlugins",
-            "source": "\\Spryker\\Zed\\PaymentCartConnector\\Communication\\Plugin\\Cart\\RemovePaymentCartPostSavePlugin"
-        }
-    ]
-}
