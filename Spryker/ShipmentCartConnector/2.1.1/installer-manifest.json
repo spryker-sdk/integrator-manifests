@@ -1,16 +1,8 @@
 {
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPlugins",
-            "source": "\\Spryker\\Zed\\ShipmentCartConnector\\Communication\\Plugin\\Cart\\SanitizeCartShipmentItemExpanderPlugin"
-        },
+    "del--wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPlugins",
             "source": "\\Spryker\\Zed\\ShipmentCartConnector\\Communication\\Plugin\\Cart\\CartShipmentPreCheckPlugin"
-        },
-        {
-            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getPostSavePlugins",
-            "source": "\\Spryker\\Zed\\ShipmentCartConnector\\Communication\\Plugin\\Cart\\CartShipmentCartOperationPostSavePlugin"
         }
     ]
 }

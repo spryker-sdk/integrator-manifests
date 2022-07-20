@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\SalesMerchantPortalGui\\SalesMerchantPortalGuiDependencyProvider::getMerchantOrderItemTableExpanderPlugins",
             "source": "\\Spryker\\Zed\\CartNoteMerchantPortalGui\\Communication\\Plugin\\SalesMerchantPortalGui\\CartNoteMerchantOrderItemTableExpanderPlugin"

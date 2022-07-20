@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Client\\QuoteApproval\\QuoteApprovalDependencyProvider::getQuoteApplicableForApprovalCheckPlugins",
             "source": "\\Spryker\\Client\\QuoteApprovalShipmentConnector\\Plugin\\QuoteApproval\\ShipmentApplicableForQuoteApprovalCheckPlugin"

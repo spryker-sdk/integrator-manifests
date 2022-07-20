@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\CartsRestApi\\CartsRestApiDependencyProvider::getQuoteExpanderPlugins",
             "source": "\\Spryker\\Zed\\SharedCartsRestApi\\Communication\\Plugin\\CartsRestApi\\QuotePermissionGroupQuoteExpanderPlugin"

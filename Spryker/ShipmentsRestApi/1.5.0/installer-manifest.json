@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "del--wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getQuoteMapperPlugins",
             "source": "\\Spryker\\Zed\\ShipmentsRestApi\\Communication\\Plugin\\CheckoutRestApi\\ShipmentQuoteMapperPlugin"
@@ -11,18 +11,6 @@
         {
             "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getCheckoutDataValidatorPlugins",
             "source": "\\Spryker\\Zed\\ShipmentsRestApi\\Communication\\Plugin\\CheckoutRestApi\\ShipmentMethodCheckoutDataValidatorPlugin"
-        },
-        {
-            "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getCheckoutDataValidatorPlugins",
-            "source": "\\Spryker\\Zed\\ShipmentsRestApi\\Communication\\Plugin\\CheckoutRestApi\\ItemsCheckoutDataValidatorPlugin"
-        },
-        {
-            "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getReadCheckoutDataValidatorPlugins",
-            "source": "\\Spryker\\Zed\\ShipmentsRestApi\\Communication\\Plugin\\CheckoutRestApi\\ItemsReadCheckoutDataValidatorPlugin"
-        },
-        {
-            "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getCheckoutDataExpanderPlugins",
-            "source": "\\Spryker\\Zed\\ShipmentsRestApi\\Communication\\Plugin\\CheckoutRestApi\\ShipmentCheckoutDataExpanderPlugin"
         }
     ]
 }

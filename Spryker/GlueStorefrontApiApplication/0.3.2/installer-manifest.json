@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getControllerCacheCollectorPlugins",
             "source": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\Plugin\\GlueStorefrontApiApplication\\Cache\\ControllerCacheCollectorPlugin"

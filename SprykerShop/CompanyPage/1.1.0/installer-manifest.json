@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\SprykerShop\\Yves\\CustomerPage\\CustomerPageDependencyProvider::getAfterLoginCustomerRedirectPlugins",
             "source": "\\SprykerShop\\Yves\\CompanyPage\\Plugin\\CustomerPage\\BusinessOnBehalfCompanyUserRedirectAfterLoginStrategyPlugin"

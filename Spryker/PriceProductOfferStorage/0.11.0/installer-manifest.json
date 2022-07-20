@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPriceProductOfferStoragePlugins",
             "source": "\\Spryker\\Zed\\PriceProductOfferStorage\\Communication\\Plugin\\Publisher\\PriceProductOffer\\PriceProductStoreWritePublisherPlugin"

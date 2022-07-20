@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Quote\\QuoteDependencyProvider::getQuoteFieldsAllowedForSavingProviderPlugins",
             "source": "\\Spryker\\Zed\\OrderCustomReference\\Communication\\Plugin\\Quote\\OrderCustomReferenceQuoteFieldsAllowedForSavingProviderPlugin"

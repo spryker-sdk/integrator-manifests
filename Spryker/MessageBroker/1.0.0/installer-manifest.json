@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Console\\ConsoleDependencyProvider::getConsoleCommands",
             "source": "\\Spryker\\Zed\\MessageBroker\\Communication\\Plugin\\Console\\MessageBrokerWorkerConsole"

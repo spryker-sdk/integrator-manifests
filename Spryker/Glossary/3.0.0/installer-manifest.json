@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Messenger\\MessengerDependencyProvider::getTranslationPlugins",
             "source": "\\Spryker\\Zed\\Glossary\\Communication\\Plugin\\TranslationPlugin"

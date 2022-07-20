@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Oauth\\OauthDependencyProvider::getOauthUserIdentifierFilterPlugins",
             "source": "\\Spryker\\Zed\\OauthPermission\\Communication\\Plugin\\Filter\\OauthUserIdentifierFilterPermissionPlugin"

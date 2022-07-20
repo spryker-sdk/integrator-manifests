@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Yves\\HealthCheck\\HealthCheckDependencyProvider::getHealthCheckPlugins",
             "source": "\\Spryker\\Yves\\ZedRequest\\Plugin\\HealthCheck\\ZedRequestHealthCheckPlugin"

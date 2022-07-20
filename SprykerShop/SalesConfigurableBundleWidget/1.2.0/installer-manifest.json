@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\SprykerShop\\Yves\\CustomerReorderWidget\\CustomerReorderWidgetDependencyProvider::getPostReorderPlugins",
             "source": "\\SprykerShop\\Yves\\SalesConfigurableBundleWidget\\Plugin\\CustomerReorder\\ConfiguredBundlePostReorderPlugin"

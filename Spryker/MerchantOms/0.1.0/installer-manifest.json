@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\MerchantSalesOrder\\MerchantSalesOrderDependencyProvider::getMerchantOrderPostCreatePlugins",
             "source": "\\Spryker\\Zed\\MerchantOms\\Communication\\Plugin\\MerchantSalesOrder\\EventTriggerMerchantOrderPostCreatePlugin"

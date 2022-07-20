@@ -1,5 +1,5 @@
 {
-    "wire-widget": [
+    "2wire-widget": [
         {
             "source": "\\SprykerShop\\Yves\\CustomerReorderWidget\\Plugin\\CustomerPage\\CustomerReorderItemCheckboxWidget"
         }

@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\CmsBlockGui\\CmsBlockGuiDependencyProvider::getCmsBlockGlossaryAfterFindPlugins",
             "source": "\\Spryker\\Zed\\ContentGui\\Communication\\Plugin\\CmsBlockGui\\TwigExpressionsToHtmlCmsBlockGlossaryAfterFindPlugin"

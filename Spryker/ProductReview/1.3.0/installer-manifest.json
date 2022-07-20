@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Client\\ProductReview\\ProductReviewDependencyProvider::getProductReviewsBulkQueryExpanderPlugins",
             "source": "\\Spryker\\Client\\ProductReview\\Plugin\\Elasticsearch\\QueryExpander\\ProductRatingAggregationBulkQueryExpanderPlugin"

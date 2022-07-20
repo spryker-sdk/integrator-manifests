@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Client\\Customer\\CustomerDependencyProvider::getDefaultAddressChangePlugins",
             "source": "\\Spryker\\Client\\Customer\\Plugin\\Customer\\CustomerAddressDefaultAddressChangePlugin"

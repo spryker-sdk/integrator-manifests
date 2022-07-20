@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditions",
             "source": "\\Spryker\\Zed\\SalesOrderThreshold\\Communication\\Plugin\\Checkout\\SalesOrderThresholdCheckoutPreConditionPlugin"

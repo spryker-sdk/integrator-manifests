@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherTriggerPlugins",
             "source": "\\Spryker\\Zed\\ProductCategoryStorage\\Communication\\Plugin\\Publisher\\ProductCategoryPublisherTriggerPlugin"

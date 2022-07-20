@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductConcreteAfterCreatePlugins",
             "source": "\\Spryker\\Zed\\ProductSearch\\Communication\\Plugin\\ProductConcrete\\ProductSearchProductConcreteAfterCreatePlugin"

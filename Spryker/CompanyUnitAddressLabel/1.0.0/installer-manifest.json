@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\CompanyUnitAddress\\CompanyUnitAddressDependencyProvider::getCompanyUnitAddressPostSavePlugins",
             "source": "\\Spryker\\Zed\\CompanyUnitAddressLabel\\Communication\\Plugin\\CompanyUnitAddressPostSavePlugin"

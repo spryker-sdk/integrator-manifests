@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutOrderSavers",
             "source": "\\Spryker\\Zed\\SalesPayment\\Communication\\Plugin\\Checkout\\SalesPaymentCheckoutDoSaveOrderPlugin"

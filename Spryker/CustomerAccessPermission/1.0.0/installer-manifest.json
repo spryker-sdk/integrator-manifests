@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Client\\Permission\\PermissionDependencyProvider::getPermissionStoragePlugins",
             "source": "\\Spryker\\Client\\CustomerAccessPermission\\Plugin\\CustomerAccessPermissionStoragePlugin"

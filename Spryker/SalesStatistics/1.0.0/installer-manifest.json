@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\ChartGui\\ChartGuiDependencyProvider::getChartPlugins",
             "source": "\\Spryker\\Zed\\SalesStatistics\\Communication\\Plugin\\CountOrderChartPlugin"

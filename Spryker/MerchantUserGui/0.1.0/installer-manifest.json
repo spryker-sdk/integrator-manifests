@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\MerchantGui\\MerchantGuiDependencyProvider::getMerchantFormTabsExpanderPlugins",
             "source": "\\Spryker\\Zed\\MerchantUserGui\\Communication\\Plugin\\MerchantGui\\MerchantUserTabMerchantFormTabExpanderPlugin"

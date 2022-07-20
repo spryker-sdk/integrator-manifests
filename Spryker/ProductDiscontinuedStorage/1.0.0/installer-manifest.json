@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Client\\ProductStorage\\ProductStorageDependencyProvider::getProductViewExpanderPlugins",
             "source": "\\Spryker\\Client\\ProductDiscontinuedStorage\\Plugin\\ProductStorage\\ProductViewDiscontinuedOptionsExpanderPlugin"

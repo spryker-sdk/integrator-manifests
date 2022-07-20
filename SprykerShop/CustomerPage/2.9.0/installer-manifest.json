@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\SprykerShop\\Yves\\CheckoutPage\\CheckoutPageDependencyProvider::getCheckoutAddressFormDataProviderPlugin",
             "source": "\\SprykerShop\\Yves\\CustomerPage\\Plugin\\CheckoutPage\\CheckoutAddressFormDataProviderPlugin"

@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Client\\Search\\SearchDependencyProvider::createSearchConfigBuilderPlugin",
             "source": "\\Spryker\\Client\\Catalog\\Plugin\\Config\\CatalogSearchConfigBuilder"

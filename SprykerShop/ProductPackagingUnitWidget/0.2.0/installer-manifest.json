@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\SprykerShop\\Yves\\QuickOrderPage\\QuickOrderPageDependencyProvider::getQuickOrderItemTransferExpanderPlugins",
             "source": "\\SprykerShop\\Yves\\ProductPackagingUnitWidget\\Plugin\\QuickOrder\\QuickOrderItemDefaultPackagingUnitExpanderPlugin"

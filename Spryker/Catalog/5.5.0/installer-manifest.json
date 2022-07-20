@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::getProductConcreteCatalogSearchResultFormatterPlugins",
             "source": "\\Spryker\\Client\\Catalog\\Plugin\\Elasticsearch\\ResultFormatter\\ProductConcreteCatalogSearchResultFormatterPlugin"

@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\CmsSlotBlockGui\\CmsSlotBlockGuiDependencyProvider::getCmsSlotBlockFormPlugins",
             "source": "\\Spryker\\Zed\\CmsSlotBlockCmsGui\\Communication\\Plugin\\CmsPageSlotBlockConditionFormPlugin"

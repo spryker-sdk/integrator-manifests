@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Client\\ProductStorage\\ProductStorageDependencyProvider::getProductAbstractRestrictionPlugins",
             "source": "\\Spryker\\Client\\ProductListStorage\\Plugin\\ProductStorageExtension\\ProductAbstractRestrictionPlugin"

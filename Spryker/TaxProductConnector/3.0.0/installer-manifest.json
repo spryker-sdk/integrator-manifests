@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductAbstractAfterUpdatePlugins",
             "source": "\\Spryker\\Zed\\TaxProductConnector\\Communication\\Plugin\\TaxSetProductAbstractAfterUpdatePlugin"

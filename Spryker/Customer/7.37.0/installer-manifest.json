@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Client\\Authorization\\AuthorizationDependencyProvider::getAuthorizationStrategyPlugins",
             "source": "\\Spryker\\Client\\Customer\\Plugin\\Authorization\\CustomerReferenceMatchingEntityIdAuthorizationStrategyPlugin"

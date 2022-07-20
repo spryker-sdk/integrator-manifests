@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Service\\PriceProduct\\PriceProductDependencyProvider::getPreBuildPriceProductGroupKeyPlugins",
             "source": "\\Spryker\\Service\\PriceProductMerchantRelationship\\Plugin\\PriceProduct\\MerchantRelationshipPreBuildPriceProductGroupKeyPlugin"

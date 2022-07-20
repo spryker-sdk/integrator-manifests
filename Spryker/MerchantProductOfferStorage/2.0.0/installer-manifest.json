@@ -13,7 +13,7 @@
             "source": "\\Spryker\\Zed\\MerchantProductOfferStorage\\Communication\\Plugin\\Synchronization\\ProductConcreteProductOffersSynchronizationDataBulkRepositoryPlugin"
         }
     ],
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\ProductOfferStorage\\ProductOfferStorageDependencyProvider::getProductOfferStorageMapperPlugins",
             "source": "\\Spryker\\Zed\\MerchantProductOfferStorage\\Communication\\Plugin\\ProductOfferStorage\\MerchantProductOfferStorageMapperPlugin"

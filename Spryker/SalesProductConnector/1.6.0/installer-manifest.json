@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::getSortConfigTransferBuilderPlugins",
             "source": "\\Spryker\\Client\\SalesProductConnector\\Plugin\\PopularitySortConfigTransferBuilderPlugin"

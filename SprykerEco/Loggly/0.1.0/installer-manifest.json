@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
             "source": "\\SprykerEco\\Zed\\Loggly\\Communication\\Plugin\\LogglyLoggerQueueMessageProcessorPlugin"

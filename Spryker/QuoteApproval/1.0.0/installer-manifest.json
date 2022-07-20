@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Quote\\QuoteDependencyProvider::getQuoteExpanderPlugins",
             "source": "\\Spryker\\Zed\\QuoteApproval\\Communication\\Plugin\\Quote\\QuoteApprovalExpanderPlugin"

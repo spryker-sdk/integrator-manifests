@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Quote\\QuoteDependencyProvider::getQuoteDeleteAfterPlugins",
             "source": "\\Spryker\\Zed\\MultiCart\\Communication\\Plugin\\InitDefaultQuoteCustomerQuoteDeleteAfterPlugin"

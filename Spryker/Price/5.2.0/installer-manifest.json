@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Client\\Quote\\QuoteDependencyProvider::getQuoteTransferExpanderPlugins",
             "source": "\\Spryker\\Client\\Price\\Plugin\\PriceModeQuoteTransferExpanderPlugin"

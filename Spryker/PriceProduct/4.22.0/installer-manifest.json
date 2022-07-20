@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Wishlist\\WishlistDependencyProvider::getWishlistItemExpanderPlugins",
             "source": "\\Spryker\\Zed\\PriceProduct\\Communication\\Plugin\\Wishlist\\PriceProductWishlistItemExpanderPlugin"

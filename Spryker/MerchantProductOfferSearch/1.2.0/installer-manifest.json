@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::getProductConcreteCatalogSearchQueryExpanderPlugins",
             "source": "\\Spryker\\Client\\MerchantProductOfferSearch\\Plugin\\Search\\MerchantReferenceQueryExpanderPlugin"

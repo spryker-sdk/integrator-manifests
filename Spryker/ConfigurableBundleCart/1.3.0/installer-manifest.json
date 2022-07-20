@@ -1,17 +1,5 @@
 {
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPlugins",
-            "source": "\\Spryker\\Zed\\ConfigurableBundleCart\\Communication\\Plugin\\Cart\\ConfiguredBundleQuantityPerSlotItemExpanderPlugin"
-        },
-        {
-            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPlugins",
-            "source": "\\Spryker\\Zed\\ConfigurableBundleCart\\Communication\\Plugin\\Cart\\ConfiguredBundleGroupKeyItemExpanderPlugin"
-        },
-        {
-            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPlugins",
-            "source": "\\Spryker\\Zed\\ConfigurableBundleCart\\Communication\\Plugin\\Cart\\ConfiguredBundleTemplateSlotCombinationPreCheckPlugin"
-        },
+    "del--wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getPostSavePlugins",
             "source": "\\Spryker\\Zed\\ConfigurableBundleCart\\Communication\\Plugin\\Cart\\ConfiguredBundleQuantityPostSavePlugin"

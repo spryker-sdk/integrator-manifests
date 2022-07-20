@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Glue\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getCheckoutRequestExpanderPlugins",
             "source": "\\Spryker\\Glue\\CompanyUsersRestApi\\Plugin\\CheckoutRestApi\\CompanyUserCheckoutRequestExpanderPlugin"

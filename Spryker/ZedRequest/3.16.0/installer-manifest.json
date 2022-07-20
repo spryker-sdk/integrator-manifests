@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Client\\ZedRequest\\ZedRequestDependencyProvider::getHeaderExpanderPlugins",
             "source": "\\Spryker\\Client\\ZedRequest\\Plugin\\AcceptEncodingHeaderExpanderPlugin"

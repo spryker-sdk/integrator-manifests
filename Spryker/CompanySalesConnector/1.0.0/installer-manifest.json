@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Client\\Permission\\PermissionDependencyProvider::getPermissionPlugins",
             "source": "\\Spryker\\Client\\CompanySalesConnector\\Plugin\\Permission\\SeeCompanyOrdersPermissionPlugin"

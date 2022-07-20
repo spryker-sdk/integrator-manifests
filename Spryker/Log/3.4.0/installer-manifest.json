@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Log\\LogDependencyProvider::getLogHandlers",
             "source": "\\Spryker\\Zed\\Log\\Communication\\Plugin\\Handler\\StreamHandlerPlugin"

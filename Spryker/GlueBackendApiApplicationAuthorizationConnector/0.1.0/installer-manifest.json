@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getRequestAfterRoutingValidatorPlugins",
             "source": "\\Spryker\\Glue\\GlueBackendApiApplicationAuthorizationConnector\\Plugin\\GlueBackendApiApplication\\AuthorizationRequestAfterRoutingValidatorPlugin"

@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\SprykerShop\\Yves\\CheckoutPage\\CheckoutPageDependencyProvider::getPaymentCollectionExtenderPlugins",
             "source": "\\SprykerShop\\Yves\\PaymentPage\\Plugin\\PaymentPage\\PaymentForeignPaymentCollectionExtenderPlugin"

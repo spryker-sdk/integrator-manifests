@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Client\\PersistentCart\\PersistentCartDependencyProvider::getQuoteUpdatePlugins",
             "source": "\\Spryker\\Client\\MultiCart\\Plugin\\SaveCustomerQuotesQuoteUpdatePlugin"

@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getRequestBuilderPlugins",
             "source": "\\Spryker\\Glue\\OauthBackendRestApi\\Plugin\\UserRequestBuilderPlugin"

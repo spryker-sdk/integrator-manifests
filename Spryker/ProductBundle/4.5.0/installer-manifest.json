@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Client\\Cart\\CartDependencyProvider::getQuoteItemFinderPlugin",
             "source": "\\Spryker\\Client\\ProductBundle\\Plugin\\Cart\\BundleProductQuoteItemFinderPlugin"

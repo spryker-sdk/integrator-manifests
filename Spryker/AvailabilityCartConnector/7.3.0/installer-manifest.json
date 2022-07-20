@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPlugins",
             "source": "\\Spryker\\Zed\\AvailabilityCartConnector\\Communication\\Plugin\\Cart\\CheckAvailabilityPlugin"

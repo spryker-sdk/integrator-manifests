@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Client\\Customer\\CustomerDependencyProvider::getCustomerSecuredPatternRulePlugins",
             "source": "\\Spryker\\Client\\CustomerAccessPermission\\Plugin\\Customer\\CustomerAccessSecuredPatternRulePlugin"

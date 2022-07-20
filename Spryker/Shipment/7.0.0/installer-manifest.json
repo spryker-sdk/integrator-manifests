@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::getOmsOrderMailExpanderPlugins",
             "source": "\\Spryker\\Zed\\Shipment\\Dependency\\Plugin\\Oms\\ShipmentOrderMailExpanderPlugin"

@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementDependencyProvider::getProductAbstractFormExpanderPlugins",
             "source": "\\Spryker\\Zed\\PriceProductMerchantRelationshipGui\\Communication\\Plugin\\ProductManagement\\MerchantRelationshipProductAbstractFormExpanderPlugin"

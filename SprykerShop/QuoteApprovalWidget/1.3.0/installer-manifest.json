@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\SprykerShop\\Yves\\ShopApplication\\ShopApplicationDependencyProvider::getWidgetCacheKeyGeneratorStrategyPlugins",
             "source": "\\SprykerShop\\Yves\\QuoteApprovalWidget\\Plugin\\ShopApplication\\QuoteApprovalStatusWidgetCacheKeyGeneratorStrategyPlugin"

@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Client\\QuickOrder\\QuickOrderDependencyProvider::getQuickOrderBuildItemValidatorPlugins",
             "source": "\\Spryker\\Client\\ProductDiscontinuedStorage\\Plugin\\QuickOrder\\ProductDiscontinuedItemValidatorPlugin"

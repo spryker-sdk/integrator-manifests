@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\SprykerShop\\Yves\\QuickOrderPage\\QuickOrderPageDependencyProvider::getQuickOrderFormHandlerStrategyPlugins",
             "source": "\\SprykerShop\\Yves\\ShoppingListWidget\\Plugin\\QuickOrderPage\\ShoppingListQuickOrderFormHandlerStrategyPlugin"

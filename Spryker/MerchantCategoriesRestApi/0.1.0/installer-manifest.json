@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Glue\\MerchantsRestApi\\MerchantsRestApiDependencyProvider::getMerchantRestAttributesMapperPlugins",
             "source": "\\Spryker\\Glue\\MerchantCategoriesRestApi\\Plugin\\MerchantsRestApi\\MerchantCategoryMerchantRestAttributesMapperPlugin"

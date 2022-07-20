@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\PriceProduct\\PriceProductDependencyProvider::getPriceDimensionConcreteSaverPlugins",
             "source": "\\Spryker\\Zed\\PriceProductOffer\\Communication\\Plugin\\PriceProduct\\PriceProductOfferPriceDimensionConcreteSaverPlugin"

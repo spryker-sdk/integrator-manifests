@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\SprykerShop\\Yves\\ShopApplication\\ShopApplicationDependencyProvider::getFilterControllerEventSubscriberPlugins",
             "source": "\\SprykerShop\\Yves\\CompanyPage\\Plugin\\ShopApplication\\CompanyBusinessUnitControllerRestrictionPlugin"

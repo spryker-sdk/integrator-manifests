@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Client\\ProductConfiguration\\ProductConfigurationDependencyProvider::getProductConfigurationRequestExpanderPlugins",
             "source": "\\SprykerShop\\Client\\DateTimeConfiguratorPageExample\\Plugin\\ProductConfiguration\\ExampleDateTimeProductConfiguratorRequestExpanderPlugin"

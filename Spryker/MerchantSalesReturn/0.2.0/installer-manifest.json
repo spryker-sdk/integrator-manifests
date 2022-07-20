@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\SalesReturn\\SalesReturnDependencyProvider::getReturnPreCreatePlugins",
             "source": "\\Spryker\\Zed\\MerchantSalesReturn\\Communication\\Plugin\\SalesReturn\\MerchantReturnPreCreatePlugin"

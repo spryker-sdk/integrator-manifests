@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\AvailabilityGui\\AvailabilityGuiDependencyProvider::getAvailabilityViewActionViewDataExpanderPlugins",
             "source": "\\Spryker\\Zed\\MerchantProductGui\\Communication\\Plugin\\AvailabilityGui\\MerchantProductAvailabilityViewActionViewDataExpanderPlugin"

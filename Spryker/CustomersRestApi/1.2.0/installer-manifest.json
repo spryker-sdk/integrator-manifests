@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
             "source": "\\Spryker\\Glue\\CustomersRestApi\\Plugin\\CustomerForgottenPasswordResourceRoutePlugin"

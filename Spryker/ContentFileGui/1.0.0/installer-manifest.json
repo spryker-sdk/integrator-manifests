@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\ContentGui\\ContentGuiDependencyProvider::getContentPlugins",
             "source": "\\Spryker\\Zed\\ContentFileGui\\Communication\\Plugin\\ContentGui\\ContentFileListFormPlugin"

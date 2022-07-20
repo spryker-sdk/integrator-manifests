@@ -11,7 +11,7 @@
             }
         }
     ],
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiDependencyProvider::getRestCartItemsAttributesMapperPlugins",
             "source": "\\Spryker\\Glue\\ProductOptionsRestApi\\Plugin\\CartsRestApi\\ProductOptionRestCartItemsAttributesMapperPlugin"

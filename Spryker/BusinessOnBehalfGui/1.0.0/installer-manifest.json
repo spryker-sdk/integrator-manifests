@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\CompanyUserGui\\CompanyUserGuiDependencyProvider::getCompanyUserTableActionExpanderPlugins",
             "source": "\\Spryker\\Zed\\BusinessOnBehalfGui\\Communication\\Plugin\\CompanyUserGui\\CompanyUserTableAttachToBusinessUnitActionLinksExpanderPlugin"

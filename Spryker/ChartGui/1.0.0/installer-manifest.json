@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\ChartGui\\ChartGuiDependencyProvider::getTwigChartFunctionPlugins",
             "source": "\\Spryker\\Zed\\ChartGui\\Communication\\Plugin\\Twig\\Chart\\ChartTwigPlugin"

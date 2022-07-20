@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\SprykerShop\\Yves\\QuickOrderPage\\QuickOrderPageDependencyProvider::getQuickOrderFormColumnPlugins",
             "source": "\\SprykerShop\\Yves\\QuickOrderPage\\Plugin\\QuickOrder\\QuickOrderFormMeasurementUnitColumnPlugin"

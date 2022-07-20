@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackendGatewayApplicationPlugins",
             "source": "\\Spryker\\Zed\\Session\\Communication\\Plugin\\Application\\MockArraySessionApplicationPlugin"

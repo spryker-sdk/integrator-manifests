@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImportBeforeImportHookPlugins",
             "source": "\\Spryker\\Zed\\DataImport\\Communication\\Plugin\\DataImportEventBehaviorPlugin"

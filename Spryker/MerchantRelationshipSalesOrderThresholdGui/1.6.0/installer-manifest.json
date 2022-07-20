@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\MerchantRelationshipSalesOrderThresholdGui\\MerchantRelationshipSalesOrderThresholdGuiDependencyProvider::getSalesOrderThresholdFormExpanderPlugins",
             "source": "\\Spryker\\Zed\\MerchantRelationshipSalesOrderThresholdGui\\Communication\\Plugin\\FormExpander\\MerchantRelationshipHardMaximumThresholdFormExpanderPlugin"

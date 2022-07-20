@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "del-wire-plugin": [
         {
             "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigPlugins",
             "source": "\\SprykerShop\\Yves\\ContentBannerWidget\\Plugin\\Twig\\ContentBannerTwigPlugin"

@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Customer\\CustomerDependencyProvider::getCustomerAnonymizerPlugins",
             "source": "\\Spryker\\Zed\\Newsletter\\Communication\\Plugin\\CustomerAnonymizer\\CustomerUnsubscribePlugin"

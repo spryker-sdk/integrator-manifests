@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Locale\\LocaleDependencyProvider::getLocalePlugin",
             "source": "\\Spryker\\Zed\\UserLocale\\Communication\\Plugin\\Locale\\UserLocaleLocalePlugin"

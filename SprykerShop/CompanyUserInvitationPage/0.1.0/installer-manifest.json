@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\SprykerShop\\Yves\\CustomerPage\\CustomerPageDependencyProvider::getPreRegistrationCustomerTransferExpanderPlugins",
             "source": "\\SprykerShop\\Yves\\CompanyUserInvitationPage\\Plugin\\CompanyUserInvitationPreRegistrationCustomerTransferExpanderPlugin"

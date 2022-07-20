@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\ProductOfferGui\\ProductOfferGuiDependencyProvider::getProductOfferViewSectionPlugins",
             "source": "\\Spryker\\Zed\\ProductOfferStockGui\\Communication\\Plugin\\ProductOffer\\ProductOfferStockProductOfferViewSectionPlugin"

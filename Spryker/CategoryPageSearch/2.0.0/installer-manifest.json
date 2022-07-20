@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getCategoryPageSearchPlugins",
             "source": "\\Spryker\\Zed\\CategoryPageSearch\\Communication\\Plugin\\Publisher\\CategoryStore\\CategoryStoreWritePublisherPlugin"

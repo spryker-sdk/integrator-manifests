@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageSenderPlugins",
             "source": "\\Spryker\\Zed\\MessageBrokerAws\\Communication\\Plugin\\MessageBroker\\Sender\\AwsSnsMessageSenderPlugin"

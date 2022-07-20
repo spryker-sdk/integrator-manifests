@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Client\\ProductRelationStorage\\ProductRelationStorageDependencyProvider::getRelatedProductExpanderPlugins",
             "source": "\\Spryker\\Client\\PriceProductStorage\\Plugin\\ProductViewPriceExpanderPlugin"

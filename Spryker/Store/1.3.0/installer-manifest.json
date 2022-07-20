@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\ProductLabelGui\\ProductLabelGuiDependencyProvider::getStoreRelationFormTypePlugin",
             "source": "\\Spryker\\Zed\\Store\\Communication\\Plugin\\Form\\StoreRelationToggleFormTypePlugin"

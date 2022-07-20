@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Cms\\CmsDependencyProvider::getPostSavePlugins",
             "source": "\\Spryker\\Zed\\CmsUserConnector\\Communication\\Plugin\\UserCmsVersionPostSavePlugin"

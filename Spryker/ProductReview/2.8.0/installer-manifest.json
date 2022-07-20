@@ -1,12 +1,8 @@
 {
-    "wire-plugin": [
+    "del--wire-plugin": [
         {
             "target": "\\Spryker\\Client\\ProductReview\\ProductReviewDependencyProvider::getProductReviewsBulkQueryExpanderPlugins",
             "source": "\\Spryker\\Client\\ProductReview\\Plugin\\Elasticsearch\\QueryExpander\\PaginatedProductReviewsQueryExpanderPlugin"
-        },
-        {
-            "target": "\\Spryker\\Client\\ProductReview\\ProductReviewDependencyProvider::getProductReviewsBulkQueryExpanderPlugins",
-            "source": "\\Spryker\\Client\\ProductReview\\Plugin\\Elasticsearch\\QueryExpander\\ProductRatingAggregationBulkQueryExpanderPlugin"
         },
         {
             "target": "\\Spryker\\Client\\ProductReview\\ProductReviewDependencyProvider::getProductReviewsBulkQueryExpanderPlugins",
@@ -19,10 +15,6 @@
         {
             "target": "\\Spryker\\Client\\ProductReview\\ProductReviewDependencyProvider::getProductReviewsBulkSearchResultFormatterPlugins",
             "source": "\\Spryker\\Client\\ProductReview\\Plugin\\Elasticsearch\\ResultFormatter\\PaginatedProductReviewsResultFormatterPlugin"
-        },
-        {
-            "target": "\\Spryker\\Client\\ProductReview\\ProductReviewDependencyProvider::getProductReviewsBulkSearchResultFormatterPlugins",
-            "source": "\\Spryker\\Client\\ProductReview\\Plugin\\Elasticsearch\\ResultFormatter\\ProductRatingAggregationBulkResultFormatterPlugin"
         }
-    ],
+    ]
 }

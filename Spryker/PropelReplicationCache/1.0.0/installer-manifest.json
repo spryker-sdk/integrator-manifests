@@ -5,7 +5,7 @@
             "value": 2
         }
     ],
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\PropelOrm\\PropelOrmDependencyProvider::getFindExtensionPlugins",
             "source": "\\Spryker\\Zed\\PropelReplicationCache\\Communication\\Plugin\\PropelOrm\\FindExtensionPlugin"

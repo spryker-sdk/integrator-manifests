@@ -1,5 +1,5 @@
 {
-    "wire-plugin": [
+    "2wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\CartsRestApi\\CartsRestApiDependencyProvider::getQuoteCreatorPlugin",
             "source": "\\Spryker\\Zed\\PersistentCart\\Communication\\Plugin\\CartsRestApi\\QuoteCreatorPlugin"
