@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\PropelOrm\\PropelOrmDependencyProvider::getPostUpdateExtensionPlugins",
+            "source": "\\Spryker\\Zed\\PropelReplicationCache\\Communication\\Plugin\\PropelOrm\\PostUpdateExtensionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\PropelOrm\\PropelOrmDependencyProvider::getPostDeleteExtensionPlugins",
+            "source": "\\Spryker\\Zed\\PropelReplicationCache\\Communication\\Plugin\\PropelOrm\\PostDeleteExtensionPlugin"
+        }
+    ]
+}
