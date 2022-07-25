@@ -11,6 +11,10 @@
         {
             "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getPreReloadPlugins",
             "source": "\\Spryker\\Zed\\PriceCartConnector\\Communication\\Plugin\\FilterItemsWithoutPricePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getQuoteLockPreResetPlugins",
+            "source": "\\Spryker\\Zed\\PriceCartConnector\\Communication\\Plugin\\Cart\\SanitizeSourcePricesQuoteLockPreResetPlugin"
         }
     ]
 }

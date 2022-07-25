@@ -3,6 +3,14 @@
         {
             "target": "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiDependencyProvider::getCustomerExpanderPlugins",
             "source": "\\Spryker\\Glue\\CompanyUsersRestApi\\Plugin\\CartsRestApi\\CompanyUserCustomerExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CartsRestApi\\CartsRestApiDependencyProvider::getQuoteExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CompanyUsersRestApi\\Communication\\Plugin\\CartsRestApi\\CustomerCompanyUserQuoteExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getQuoteMapperPlugins",
+            "source": "\\Spryker\\Zed\\CompanyUsersRestApi\\Communication\\Plugin\\CheckoutRestApi\\CompanyUserQuoteMapperPlugin"
         }
     ]
 }

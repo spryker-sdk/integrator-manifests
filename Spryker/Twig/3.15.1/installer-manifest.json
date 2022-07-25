@@ -1,5 +1,5 @@
 {
-    "dell--wire-plugin": [
+    "wire-plugin": [
         {
             "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigPlugins",
             "source": "\\Spryker\\Shared\\Twig\\Plugin\\DebugTwigPlugin"
@@ -15,6 +15,14 @@
         {
             "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigPlugins",
             "source": "\\Spryker\\Shared\\Twig\\Plugin\\SecurityTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigLoaderPlugins",
+            "source": "\\Spryker\\Yves\\Twig\\Plugin\\FilesystemTwigLoaderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigLoaderPlugins",
+            "source": "\\Spryker\\Yves\\Twig\\Plugin\\FormFilesystemTwigLoaderPlugin"
         }
     ]
 }

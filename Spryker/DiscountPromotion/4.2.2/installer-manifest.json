@@ -3,6 +3,10 @@
         {
             "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPlugins",
             "source": "\\Spryker\\Zed\\DiscountPromotion\\Communication\\Plugin\\Cart\\CartGroupPromotionItems"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPlugins",
+            "source": "\\Spryker\\Zed\\DiscountPromotion\\Communication\\Plugin\\Cart\\DiscountPromotionCartPreCheckPlugin"
         }
     ]
 }
