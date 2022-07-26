@@ -16,7 +16,7 @@
     "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageAttributeProviderPlugins",
-            "source": "\\Spryker\\Zed\\OauthClient\\Communication\\Plugin\\AccessTokenMessageAttributeProviderPlugin"
+            "source": "\\Spryker\\Zed\\OauthClient\\Communication\\Plugin\\MessageBroker\\AccessTokenMessageAttributeProviderPlugin"
         }
     ]
 }
