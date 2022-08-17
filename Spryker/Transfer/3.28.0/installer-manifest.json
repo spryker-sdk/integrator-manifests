@@ -1,8 +1,9 @@
 {
     "configure-module": [
         {
-            "target": "\\Spryker\\Zed\\Transfer\\TransferConfig::isTransferXmlValidationEnabled",
-            "default": "true"
+            "value": null,
+            "defaultValue": "true",
+            "target": "\\Spryker\\Zed\\Transfer\\TransferConfig::isTransferXmlValidationEnabled"
         }
     ]
 }
