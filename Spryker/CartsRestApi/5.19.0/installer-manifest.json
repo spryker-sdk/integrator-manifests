@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\CartsRestApi\\CartsRestApiConfig::IS_QUOTE_CREATION_WHILE_QUOTE_MERGING_ENABLED",
+            "value": true
+        }
+    ]
+}
