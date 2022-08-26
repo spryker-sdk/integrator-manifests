@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\Application\\ApplicationDependencyProvider::getSecurityHeaderExpanderPlugins",
+            "source": "\\SprykerShop\\Yves\\DateTimeConfiguratorPageExample\\Plugin\\Application\\ConfiguratorSecurityHeaderExpanderPlugin"
+        }
+    ]
+}
