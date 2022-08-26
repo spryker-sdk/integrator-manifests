@@ -1,0 +1,33 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Authorization\\AuthorizationDependencyProvider::getAuthorizationStrategyPlugins",
+            "source": "\\Spryker\\Client\\GlueStorefrontApiApplicationAuthorizationConnector\\Plugin\\Authorization\\ProtectedPathAuthorizationStrategyPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getContextExpanderPlugins",
+            "source": "\\Spryker\\Glue\\GlueStorefrontApiApplicationAuthorizationConnector\\Plugin\\DocumentationGeneratorOpenApi\\AuthorizationContextExpanderPlugin",
+            "arguments": {
+                "append-arguments": [
+                    {
+                        "value": [
+                            "static::GLUE_STOREFRONT_API_APPLICATION_NAME"
+                        ],
+                        "is_literal": false
+                    }
+                ]
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getTableColumnExpanderPlugins",
+            "source": "\\Spryker\\Glue\\GlueStorefrontApiApplicationAuthorizationConnector\\Plugin\\GlueApplication\\IsProtectedTableColumnExpanderPlugin"
+        }
+    ],
+    "configure-module": [
+        {
+            "previousValue": [],
+            "target": "\\Spryker\\Shared\\GlueStorefrontApiApplicationAuthorizationConnector\\GlueStorefrontApiApplicationAuthorizationConnectorConfig::getProtectedPaths",
+            "value": []
+        }
+    ]
+}
