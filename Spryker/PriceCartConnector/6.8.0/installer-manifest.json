@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\PriceCartConnector\\PriceCartConnectorConfig::IS_ZERO_PRICE_ENABLED",
+            "value": false
+        }
+    ]
+}
