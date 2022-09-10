@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\ShoppingListsRestApi\\ShoppingListsRestApiDependencyProvider::getRestShoppingListItemsAttributesMapperPlugins",
+            "source": "\\Spryker\\Glue\\ProductConfigurationShoppingListsRestApi\\Plugin\\ShoppingListsRestApi\\ProductConfigurationRestShoppingListItemsAttributesMapperPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\ShoppingListsRestApi\\ShoppingListsRestApiDependencyProvider::getShoppingListItemRequestMapperPlugins",
+            "source": "\\Spryker\\Glue\\ProductConfigurationShoppingListsRestApi\\Plugin\\ShoppingListsRestApi\\ProductConfigurationShoppingListItemRequestMapperPlugin"
+        }
+    ]
+}

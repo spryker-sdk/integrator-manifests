@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\ProductConfigurationShoppingListsRestApi\\ProductConfigurationShoppingListsRestApiDependencyProvider::getProductConfigurationPriceMapperPlugins",
+            "source": "\\Spryker\\Glue\\ProductConfigurationsPriceProductVolumesRestApi\\Plugin\\ProductConfigurationShoppingListsRestApi\\ProductConfigurationVolumePriceProductConfigurationPriceMapperPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\ProductConfigurationShoppingListsRestApi\\ProductConfigurationShoppingListsRestApiDependencyProvider::getRestProductConfigurationPriceMapperPlugins",
+            "source": "\\Spryker\\Glue\\ProductConfigurationsPriceProductVolumesRestApi\\Plugin\\ProductConfigurationShoppingListsRestApi\\ProductConfigurationVolumePriceRestProductConfigurationPriceMapperPlugin"
+        }
+    ]
+}
