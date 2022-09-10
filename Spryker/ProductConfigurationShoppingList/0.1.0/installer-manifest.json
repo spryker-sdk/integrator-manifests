@@ -1,0 +1,44 @@
+{
+    "glossary-key": {
+        "new": {
+            "product_configuration_shopping_list.error.configuration_not_found": {
+                "en_US": "Product configuration was not found for shopping list item '%uuid%'.",
+                "de_DE": "Für den Einkaufslistenartikel '%uuid%' wurde keine Produktkonfiguration gefunden."
+            },
+            "product_configuration_shopping_list.error.item_not_found": {
+                "en_US": "Shopping list item not found.",
+                "de_DE": "Artikel auf der Einkaufsliste nicht gefunden."
+            }
+        }
+    },
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\ShoppingList\\ShoppingListDependencyProvider::getAddItemShoppingListItemMapperPlugins",
+            "source": "\\Spryker\\Client\\ProductConfigurationShoppingList\\Plugin\\ShoppingList\\ProductConfigurationShoppingListItemMapperPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\ShoppingList\\ShoppingListDependencyProvider::getShoppingListItemToItemMapperPlugins",
+            "source": "\\Spryker\\Client\\ProductConfigurationShoppingList\\Plugin\\ShoppingList\\ProductConfigurationShoppingListItemToItemMapperPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\ShoppingList\\ShoppingListDependencyProvider::getShoppingListExpanderPlugins",
+            "source": "\\Spryker\\Client\\ProductConfigurationShoppingList\\Plugin\\ShoppingList\\ProductConfigurationShoppingListExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ShoppingList\\ShoppingListDependencyProvider::getAddItemPreCheckPlugins",
+            "source": "\\Spryker\\Zed\\ProductConfigurationShoppingList\\Communication\\Plugin\\ShoppingList\\ProductConfigurationShoppingListAddItemPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ShoppingList\\ShoppingListDependencyProvider::getShoppingListItemBulkPostSavePlugins",
+            "source": "\\Spryker\\Zed\\ProductConfigurationShoppingList\\Communication\\Plugin\\ShoppingList\\ProductConfigurationShoppingListItemBulkPostSavePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ShoppingList\\ShoppingListDependencyProvider::getItemCollectionExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductConfigurationShoppingList\\Communication\\Plugin\\ShoppingList\\ProductConfigurationShoppingListItemCollectionExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ShoppingList\\ShoppingListDependencyProvider::getItemToShoppingListItemMapperPlugins",
+            "source": "\\Spryker\\Zed\\ProductConfigurationShoppingList\\Communication\\Plugin\\ShoppingList\\ItemProductConfigurationItemToShoppingListItemMapperPlugin"
+        }
+    ]
+}
