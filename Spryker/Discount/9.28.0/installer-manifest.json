@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountConfig::IS_MONEY_COLLECTION_FORM_TYPE_PLUGIN_ENABLED",
+            "value": true
+        }
+    ]
+}
