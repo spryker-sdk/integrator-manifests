@@ -1,0 +1,20 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getMoneyCollectionFormTypePlugin",
+            "source": "\\Spryker\\Zed\\MoneyGui\\Communication\\Plugin\\Form\\MoneyCollectionFormTypePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementDependencyProvider::createMoneyFormTypePlugin",
+            "source": "\\Spryker\\Zed\\MoneyGui\\Communication\\Plugin\\Form\\MoneyFormTypePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductOption\\ProductOptionDependencyProvider::createMoneyCollectionFormTypePlugin",
+            "source": "\\Spryker\\Zed\\MoneyGui\\Communication\\Plugin\\Form\\MoneyCollectionFormTypePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ShipmentGui\\ShipmentGuiDependencyProvider::getMoneyCollectionFormTypePlugin",
+            "source": "\\Spryker\\Zed\\MoneyGui\\Communication\\Plugin\\Form\\MoneyCollectionFormTypePlugin"
+        }
+    ]
+}
