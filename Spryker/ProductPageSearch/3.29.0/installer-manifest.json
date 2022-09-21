@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherTriggerPlugins",
+            "source": "\\Spryker\\Zed\\ProductPageSearch\\Communication\\Plugin\\Publisher\\ProductConcretePublisherTriggerPlugin "
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductPageSearchPlugins",
+            "source": "\\Spryker\\Zed\\ProductPageSearch\\Communication\\Plugin\\Publisher\\Product\\ProductConcretePageSearchWritePublisherPlugin"
+        }
+    ]
+}
