@@ -1,0 +1,18 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getContextExpanderPlugins",
+            "source": "\\Spryker\\Glue\\GlueStorefrontApiApplicationGlueJsonApiConventionConnector\\Plugin\\GlueStorefrontApiApplication\\RelationshipPluginsContextExpanderPlugin",
+            "arguments": {
+                "append-arguments": [
+                    {
+                        "value": [
+                            "static::GLUE_STOREFRONT_API_APPLICATION_NAME"
+                        ],
+                        "is_literal": false
+                    }
+                ]
+            }
+        }
+    ]
+}

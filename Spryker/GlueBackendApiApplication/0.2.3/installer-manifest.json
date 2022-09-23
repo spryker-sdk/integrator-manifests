@@ -3,6 +3,48 @@
         {
             "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getApiApplicationProviderPlugins",
             "source": "\\Spryker\\Glue\\GlueBackendApiApplication\\Plugin\\GlueBackendApiApplication\\BackendApiApplicationProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getContextExpanderPlugins",
+            "source": "\\Spryker\\Glue\\GlueBackendApiApplication\\Plugin\\GlueBackendApiApplication\\BackendResourcesContextExpanderPlugin",
+            "arguments": {
+                "append-arguments": [
+                    {
+                        "value": [
+                            "static::GLUE_BACKEND_API_APPLICATION_NAME"
+                        ],
+                        "is_literal": false
+                    }
+                ]
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getContextExpanderPlugins",
+            "source": "\\Spryker\\Glue\\GlueBackendApiApplication\\Plugin\\GlueBackendApiApplication\\BackendCustomRoutesContextExpanderPlugin",
+            "arguments": {
+                "append-arguments": [
+                    {
+                        "value": [
+                            "static::GLUE_BACKEND_API_APPLICATION_NAME"
+                        ],
+                        "is_literal": false
+                    }
+                ]
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getContextExpanderPlugins",
+            "source": "\\Spryker\\Glue\\GlueBackendApiApplication\\Plugin\\GlueBackendApiApplication\\BackendHostContextExpanderPlugin",
+            "arguments": {
+                "append-arguments": [
+                    {
+                        "value": [
+                            "static::GLUE_BACKEND_API_APPLICATION_NAME"
+                        ],
+                        "is_literal": false
+                    }
+                ]
+            }
         }
     ]
 }

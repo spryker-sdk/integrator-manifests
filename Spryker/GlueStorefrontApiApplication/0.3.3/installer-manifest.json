@@ -3,6 +3,48 @@
         {
             "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getApiApplicationProviderPlugins",
             "source": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\Plugin\\GlueStorefrontApiApplication\\StorefrontApiApplicationProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getContextExpanderPlugins",
+            "source": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\Plugin\\GlueStorefrontApiApplication\\StorefrontResourcesContextExpanderPlugin",
+            "arguments": {
+                "append-arguments": [
+                    {
+                        "value": [
+                            "static::GLUE_STOREFRONT_API_APPLICATION_NAME"
+                        ],
+                        "is_literal": false
+                    }
+                ]
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getContextExpanderPlugins",
+            "source": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\Plugin\\GlueStorefrontApiApplication\\StorefrontCustomRoutesContextExpanderPlugin",
+            "arguments": {
+                "append-arguments": [
+                    {
+                        "value": [
+                            "static::GLUE_STOREFRONT_API_APPLICATION_NAME"
+                        ],
+                        "is_literal": false
+                    }
+                ]
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getContextExpanderPlugins",
+            "source": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\Plugin\\GlueStorefrontApiApplication\\StorefrontHostContextExpanderPlugin",
+            "arguments": {
+                "append-arguments": [
+                    {
+                        "value": [
+                            "static::GLUE_STOREFRONT_API_APPLICATION_NAME"
+                        ],
+                        "is_literal": false
+                    }
+                ]
+            }
         }
     ]
 }

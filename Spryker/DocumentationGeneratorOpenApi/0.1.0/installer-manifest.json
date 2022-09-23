@@ -5,8 +5,30 @@
             "source": "\\Spryker\\Glue\\DocumentationGeneratorOpenApi\\Plugin\\DocumentationGeneratorApi\\DocumentationGeneratorOpenApiSchemaFormatterPlugin"
         },
         {
-            "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getContentGeneratorPlugins",
-            "source": "\\Spryker\\Glue\\DocumentationGeneratorOpenApi\\Plugin\\DocumentationGeneratorApi\\DocumentationGeneratorOpenApiContentGeneratorPlugin"
+            "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getContextExpanderPlugins",
+            "source": "\\Spryker\\Glue\\DocumentationGeneratorOpenApi\\Plugin\\DocumentationGeneratorApi\\ControllerAnnotationsContextExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getContextExpanderPlugins",
+            "source": "\\Spryker\\Glue\\DocumentationGeneratorOpenApi\\Plugin\\DocumentationGeneratorApi\\CustomRouteControllerAnnotationsContextExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getContextExpanderPlugins",
+            "source": "\\Spryker\\Glue\\DocumentationGeneratorOpenApi\\Plugin\\DocumentationGeneratorApi\\RelationshipPluginAnnotationsContextExpanderPlugin",
+            "arguments": {
+                "append-arguments": [
+                    {
+                        "value": [
+                            "static::GLUE_STOREFRONT_API_APPLICATION_NAME"
+                        ],
+                        "is_literal": false
+                    }
+                ]
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getContentGeneratorStrategyPlugin",
+            "source": "\\Spryker\\Glue\\DocumentationGeneratorOpenApi\\Plugin\\DocumentationGeneratorApi\\DocumentationGeneratorOpenApiContentGeneratorStrategyPlugin"
         }
     ]
 }
