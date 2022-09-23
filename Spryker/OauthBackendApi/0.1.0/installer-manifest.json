@@ -2,19 +2,15 @@
     "wire-plugin": [
         {
             "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getRequestBuilderPlugins",
-            "source": "\\Spryker\\Glue\\OauthBackendRestApi\\Plugin\\UserRequestBuilderPlugin"
+            "source": "\\Spryker\\Glue\\OauthBackendApi\\Plugin\\UserRequestBuilderPlugin"
         },
         {
             "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getRequestValidatorPlugins",
-            "source": "\\Spryker\\Glue\\OauthBackendRestApi\\Plugin\\AccessTokenValidatorPlugin"
+            "source": "\\Spryker\\Glue\\OauthBackendApi\\Plugin\\AccessTokenValidatorPlugin"
         },
         {
             "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getResourcePlugins",
-            "source": "\\Spryker\\Glue\\OauthBackendRestApi\\Plugin\\TokenResource"
-        },
-        {
-            "target": "\\Spryker\\Glue\\OauthBackendRestApi\\OauthBackendRestApiDependencyProvider::getUserFinderPlugins",
-            "source": "\\Spryker\\Glue\\OauthBackendRestApi\\Plugin\\AccessTokenUserFinderPlugin"
+            "source": "\\Spryker\\Glue\\OauthBackendApi\\Plugin\\TokenResource"
         }
     ]
 }
