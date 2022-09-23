@@ -7,6 +7,42 @@
         {
             "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getConventionPlugins",
             "source": "\\Spryker\\Glue\\GlueJsonApiConvention\\Plugin\\GlueApplication\\JsonApiConventionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueJsonApiConvention\\GlueJsonApiConventionDependencyProvider::getRequestBuilderPlugins",
+            "source": "\\Spryker\\Glue\\GlueJsonApiConvention\\Plugin\\GlueApplication\\ConventionIdentifierRequestBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueJsonApiConvention\\GlueJsonApiConventionDependencyProvider::getRequestBuilderPlugins",
+            "source": "\\Spryker\\Glue\\GlueJsonApiConvention\\Plugin\\GlueApplication\\SparseFieldRequestBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueJsonApiConvention\\GlueJsonApiConventionDependencyProvider::getRequestBuilderPlugins",
+            "source": "\\Spryker\\Glue\\GlueJsonApiConvention\\Plugin\\GlueApplication\\AttributesRequestBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueJsonApiConvention\\GlueJsonApiConventionDependencyProvider::getRequestBuilderPlugins",
+            "source": "\\Spryker\\Glue\\GlueJsonApiConvention\\Plugin\\GlueApplication\\RelationshipRequestBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueJsonApiConvention\\GlueJsonApiConventionDependencyProvider::getRequestBuilderPlugins",
+            "source": "\\Spryker\\Glue\\GlueJsonApiConvention\\Plugin\\GlueApplication\\PaginationRequestBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueJsonApiConvention\\GlueJsonApiConventionDependencyProvider::getRequestBuilderPlugins",
+            "source": "\\Spryker\\Glue\\GlueJsonApiConvention\\Plugin\\GlueApplication\\SortRequestBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueJsonApiConvention\\GlueJsonApiConventionDependencyProvider::getRequestBuilderPlugins",
+            "source": "\\Spryker\\Glue\\GlueJsonApiConvention\\Plugin\\GlueApplication\\FilterFieldRequestBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueJsonApiConvention\\GlueJsonApiConventionDependencyProvider::getResponseFormatterPlugins",
+            "source": "\\Spryker\\Glue\\GlueJsonApiConvention\\Plugin\\GlueApplication\\RelationshipResponseFormatterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueJsonApiConvention\\GlueJsonApiConventionDependencyProvider::getResponseFormatterPlugins",
+            "source": "\\Spryker\\Glue\\GlueJsonApiConvention\\Plugin\\GlueApplication\\JsonApiResponseFormatterPlugin"
         }
     ],
     "unwire-plugin": [
@@ -17,6 +53,38 @@
         {
             "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getApiConventionPlugins",
             "source": "\\Spryker\\Glue\\GlueJsonApiConvention\\Plugin\\GlueApplication\\JsonApiApiConventionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueJsonApiConvention\\GlueJsonApiConventionDependencyProvider::getRequestBuilderPlugins",
+            "source": "\\Spryker\\Glue\\GlueJsonApiConvention\\Plugin\\GlueJsonApiConvention\\SparseFieldRequestBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueJsonApiConvention\\GlueJsonApiConventionDependencyProvider::getRequestBuilderPlugins",
+            "source": "\\Spryker\\Glue\\GlueJsonApiConvention\\Plugin\\GlueJsonApiConvention\\AttributesRequestBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueJsonApiConvention\\GlueJsonApiConventionDependencyProvider::getRequestBuilderPlugins",
+            "source": "\\Spryker\\Glue\\GlueJsonApiConvention\\Plugin\\GlueJsonApiConvention\\RelationshipRequestBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueJsonApiConvention\\GlueJsonApiConventionDependencyProvider::getRequestBuilderPlugins",
+            "source": "\\Spryker\\Glue\\GlueJsonApiConvention\\Plugin\\GlueJsonApiConvention\\PaginationRequestBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueJsonApiConvention\\GlueJsonApiConventionDependencyProvider::getRequestBuilderPlugins",
+            "source": "\\Spryker\\Glue\\GlueJsonApiConvention\\Plugin\\GlueJsonApiConvention\\SortRequestBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueJsonApiConvention\\GlueJsonApiConventionDependencyProvider::getRequestBuilderPlugins",
+            "source": "\\Spryker\\Glue\\GlueJsonApiConvention\\Plugin\\GlueJsonApiConvention\\FilterFieldRequestBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueJsonApiConvention\\GlueJsonApiConventionDependencyProvider::getResponseFormatterPlugins",
+            "source": "\\Spryker\\Glue\\GlueJsonApiConvention\\Plugin\\GlueJsonApiConvention\\RelationshipResponseFormatterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueJsonApiConvention\\GlueJsonApiConventionDependencyProvider::getResponseFormatterPlugins",
+            "source": "\\Spryker\\Glue\\GlueJsonApiConvention\\Plugin\\GlueJsonApiConvention\\JsonApiResponseFormatterPlugin"
         }
     ]
 }
