@@ -1,0 +1,34 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\GlueStorefrontApiApplicationDependencyProvider::getResourcePlugins",
+            "source": "\\Spryker\\Glue\\OauthApi\\Plugin\\GlueApplication\\OauthTokenResource"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getResourcePlugins",
+            "source": "\\Spryker\\Glue\\OauthBackendApi\\Plugin\\GlueApplication\\OauthBackendTokenResource"
+        },
+        {
+            "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getSchemaFormatterPlugins",
+            "source": "\\Spryker\\Glue\\GlueApplication\\Plugin\\DocumentationGeneratorApi\\RestApiSchemaFormatterPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\GlueStorefrontApiApplicationDependencyProvider::getResourcePlugins",
+            "source": "\\Spryker\\Glue\\OauthApi\\Plugin\\TokenResource"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getResourcePlugins",
+            "source": "\\Spryker\\Glue\\OauthBackendApi\\Plugin\\TokenResource"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getConventionPlugins",
+            "source": "\\Spryker\\Glue\\GlueRestApiConvention\\Plugin\\GlueApplication\\RestConventionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getSchemaFormatterPlugins",
+            "source": "\\Spryker\\Glue\\GlueRestApiConvention\\Plugin\\DocumentationGeneratorApi\\RestApiSchemaFormatterPlugin"
+        }
+    ]
+}
