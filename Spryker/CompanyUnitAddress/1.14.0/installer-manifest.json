@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\TaxProductConnector\\TaxProductConnectorDependencyProvider::getShippingAddressValidatorPlugins",
+            "source": "\\Spryker\\Zed\\CompanyUnitAddress\\Communication\\Plugin\\TaxProductConnector\\CompanyUnitAddressShippingAddressValidatorPlugin"
+        }
+    ]
+}
