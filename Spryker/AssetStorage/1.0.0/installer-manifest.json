@@ -1,7 +1,7 @@
 {
     "add-config-array-element": [
         {
-            "target": "\\Spryker\\Client\\RabbitMq\\RabbitMqConfig::getSynchronizationQueueConfiguration",
+            "target": "\\Spryker\\Client\\RabbitMq\\RabbitMqConfig::getQueueConfiguration",
             "value": "\\Spryker\\Shared\\AssetStorage\\AssetStorageConfig::ASSET_SYNC_STORAGE_QUEUE"
         }
     ],
