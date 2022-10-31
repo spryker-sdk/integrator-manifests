@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getFormattedControllerBeforeActionTerminatePlugins",
+            "source": "\\Spryker\\Glue\\CartsRestApi\\Plugin\\GlueApplication\\ExpandRequestWithCustomerReferenceFormattedControllerBeforeActionPlugin"
+        }
+    ]
+}
