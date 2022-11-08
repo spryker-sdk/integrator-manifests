@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\SessionAgentValidation\\SessionAgentValidationDependencyProvider::getSessionAgentSaverPlugin",
+            "source": "\\Spryker\\Yves\\SessionRedis\\Plugin\\SessionAgentValidation\\SessionRedisSessionAgentSaverPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\SessionAgentValidation\\SessionAgentValidationDependencyProvider::getSessionAgentValidatorPlugin",
+            "source": "\\Spryker\\Yves\\SessionRedis\\Plugin\\SessionAgentValidation\\SessionRedisSessionAgentValidatorPlugin"
+        }
+    ]
+}
