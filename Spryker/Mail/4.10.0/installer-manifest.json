@@ -1,0 +1,8 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Mail\\MailDependencyProvider::provideBusinessLayerDependencies",
+            "source": "\\Spryker\\Zed\\Mail\\Communication\\Plugin\\MailProviderPlugin"
+        }
+    ]
+}

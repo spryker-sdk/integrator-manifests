@@ -1,0 +1,30 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Mail\\MailDependencyProvider::getMailTypeBuilderPlugins",
+            "source": "\\Spryker\\Zed\\AvailabilityNotification\\Communication\\Plugin\\Mail\\AvailabilityNotificationUnsubscribedMailTypeBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Mail\\MailDependencyProvider::getMailTypeBuilderPlugins",
+            "source": "\\Spryker\\Zed\\AvailabilityNotification\\Communication\\Plugin\\Mail\\AvailabilityNotificationSubscriptionMailTypeBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Mail\\MailDependencyProvider::getMailTypeBuilderPlugins",
+            "source": "\\Spryker\\Zed\\AvailabilityNotification\\Communication\\Plugin\\Mail\\AvailabilityNotificationMailTypeBuilderPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Mail\\MailDependencyProvider::provideBusinessLayerDependencies",
+            "source": "\\Spryker\\Zed\\AvailabilityNotification\\Communication\\Plugin\\Mail\\AvailabilityNotificationUnsubscribedMailTypePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Mail\\MailDependencyProvider::provideBusinessLayerDependencies",
+            "source": "\\Spryker\\Zed\\AvailabilityNotification\\Communication\\Plugin\\Mail\\AvailabilityNotificationSubscriptionMailTypePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Mail\\MailDependencyProvider::provideBusinessLayerDependencies",
+            "source": "\\Spryker\\Zed\\AvailabilityNotification\\Communication\\Plugin\\Mail\\AvailabilityNotificationMailTypePlugin"
+        }
+    ]
+}

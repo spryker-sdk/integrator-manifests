@@ -1,0 +1,14 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Mail\\MailDependencyProvider::getMailTypeBuilderPlugins",
+            "source": "\\Spryker\\Zed\\UserPasswordResetMail\\Communication\\Plugin\\Mail\\UserPasswordResetMailTypeBuilderPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Mail\\MailDependencyProvider::provideBusinessLayerDependencies",
+            "source": "\\Spryker\\Zed\\UserPasswordResetMail\\Communication\\Plugin\\Mail\\UserPasswordResetMailTypePlugin"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\SymfonyMailer\\SymfonyMailerConstants::SMTP_PORT",
+            "value": 1025
+        },
+        {
+            "target": "\\Spryker\\Shared\\SymfonyMailer\\SymfonyMailerConstants::SMTP_HOST",
+            "value": {
+                "value": "getenv('SPRYKER_SMTP_HOST') ?: null",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\SymfonyMailer\\SymfonyMailerConstants::SMTP_PORT",
+            "value": {
+                "value": "getenv('SPRYKER_SMTP_PORT') ?: null",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\SymfonyMailer\\SymfonyMailerConstants::SMTP_ENCRYPTION",
+            "value": {
+                "value": "getenv('SPRYKER_SMTP_ENCRYPTION') ?: null",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\SymfonyMailer\\SymfonyMailerConstants::SMTP_AUTH_MODE",
+            "value": {
+                "value": "getenv('SPRYKER_SMTP_AUTH_MODE') ?: null",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\SymfonyMailer\\SymfonyMailerConstants::SMTP_USERNAME",
+            "value": {
+                "value": "getenv('SPRYKER_SMTP_USERNAME') ?: null",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\SymfonyMailer\\SymfonyMailerConstants::SMTP_PASSWORD",
+            "value": {
+                "value": "getenv('SPRYKER_SMTP_PASSWORD') ?: null",
+                "is_literal": true
+            }
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Mail\\MailDependencyProvider::extendMailProviderCollection",
+            "source": "\\Spryker\\Zed\\SymfonyMailer\\Communication\\Plugin\\Mail\\SymfonyMailerProviderPlugin",
+            "arguments": {
+                "append-arguments": [
+                    {
+                        "value": [
+                            "\\Spryker\\Zed\\Mail\\MailConfig::MAIL_TYPE_ALL"
+                        ],
+                        "is_literal": false
+                    }
+                ]
+            }
+        }
+    ]
+}
