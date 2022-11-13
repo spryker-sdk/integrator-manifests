@@ -1,0 +1,14 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Mail\\MailDependencyProvider::getMailTypeBuilderPlugins",
+            "source": "\\Spryker\\Zed\\SalesInvoice\\Communication\\Plugin\\Mail\\OrderInvoiceMailTypeBuilderPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Mail\\MailDependencyProvider::provideBusinessLayerDependencies",
+            "source": "\\Spryker\\Zed\\SalesInvoice\\Communication\\Plugin\\Mail\\OrderInvoiceMailTypePlugin"
+        }
+    ]
+}
