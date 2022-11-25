@@ -1,0 +1,14 @@
+{
+    "wire-glue-relationship": [
+        {
+            "source": {
+                "\\Spryker\\Glue\\CheckoutRestApi\\CheckoutRestApiConfig::RESOURCE_CHECKOUT_DATA": "\\Spryker\\Glue\\CartsRestApi\\Plugin\\GlueApplication\\CartByRestCheckoutDataResourceRelationshipPlugin"
+            }
+        },
+        {
+            "source": {
+                "\\Spryker\\Glue\\CheckoutRestApi\\CheckoutRestApiConfig::RESOURCE_CHECKOUT_DATA": "\\Spryker\\Glue\\CartsRestApi\\Plugin\\GlueApplication\\GuestCartByRestCheckoutDataResourceRelationshipPlugin"
+            }
+        }
+    ]
+}
