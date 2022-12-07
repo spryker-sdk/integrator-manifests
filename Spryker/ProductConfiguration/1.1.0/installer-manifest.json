@@ -1,0 +1,11 @@
+{
+    "configure-module": [
+        {
+            "previousValue": [],
+            "target": "\\Spryker\\Service\\ProductConfiguration\\ProductConfigurationConfig::getConfigurationFieldsNotAllowedForEncoding",
+            "value": [
+                "\\Generated\\Shared\\Transfer\\ProductConfigurationInstanceTransfer::QUANTITY"
+            ]
+        }
+    ]
+}
