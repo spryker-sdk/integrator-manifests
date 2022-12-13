@@ -1,4 +1,18 @@
 {
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Event\\EventDependencyProvider::getEventSubscriberCollection",
+            "source": "\\Spryker\\Zed\\CategoryPageSearch\\Communication\\Plugin\\Event\\Subscriber\\CategoryPageSearchEventSubscriber"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventBehavior\\EventBehaviorDependencyProvider::getEventTriggerResourcePlugins",
+            "source": "\\Spryker\\Zed\\CategoryPageSearch\\Communication\\Plugin\\Event\\CategoryPageEventResourceQueryContainerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Synchronization\\SynchronizationDependencyProvider::getSynchronizationDataPlugins",
+            "source": "\\Spryker\\Zed\\CategoryPageSearch\\Communication\\Plugin\\Synchronization\\CategoryPageSynchronizationDataPlugin"
+        }
+    ],
     "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherTriggerPlugins",

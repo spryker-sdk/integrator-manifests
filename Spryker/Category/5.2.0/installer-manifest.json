@@ -1,0 +1,12 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\Category\\CategoryConstants::CATEGORY_READ_CHUNK",
+            "value": 10000
+        },
+        {
+            "target": "\\Spryker\\Shared\\Category\\CategoryConstants::CATEGORY_IS_CLOSURE_TABLE_EVENTS_ENABLED",
+            "value": false
+        }
+    ]
+}
