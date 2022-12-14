@@ -1,0 +1,8 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\CmsBlockWidget\\CmsBlockWidgetDependencyProvider::getTwigExtensionPlugins",
+            "source": "\\Spryker\\Yves\\CmsBlock\\Plugin\\Twig\\CmsBlockPlaceholderTwigPlugin"
+        }
+    ]
+}
