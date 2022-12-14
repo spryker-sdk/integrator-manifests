@@ -1,0 +1,242 @@
+{
+    "glossary-key": {
+        "new": {
+            "mail.company.status.pending": {
+                "en_US": "Waiting for Approval",
+                "de_DE": "Warten auf die Bestätigung"
+            },
+            "mail.trans.availability_notification.subtitle": {
+                "en_US": "The wait is over! Add this product to your cart now.",
+                "de_DE": "Das Warten hat ein Ende! Du kannst diesen Artikel jetzt in deinen Warenkorb legen."
+            },
+            "mail.trans.availability_notification.title.part2": {
+                "en_US": "is available again!",
+                "de_DE": "wieder verfügbar!"
+            },
+            "mail.trans.availability_notification_subscription.subtitle": {
+                "en_US": "You will receive an email when the product is available again.",
+                "de_DE": "Du erhälst eine E-Mail, sobald der Artikel wieder verfügbar ist."
+            },
+            "mail.trans.availability_notification_subscription.title": {
+                "en_US": "We just informed our purchase team about your subscription!",
+                "de_DE": "Unser Einkaufsteam wurde über deine Anfrage informiert."
+            },
+            "mail.trans.availability_notification_unsubscribed.subtitle": {
+                "en_US": "You will not be notified when the product is available again.",
+                "de_DE": "Du wirst keine Benachrichtigung erhalten, wenn der Artikel wieder verfügbar ist."
+            },
+            "mail.trans.availability_notification_unsubscribed.title.part1": {
+                "en_US": "Your subscription to",
+                "de_DE": "Deine Anfrage zu"
+            },
+            "mail.trans.availability_notification_unsubscribed.title.part2": {
+                "en_US": "was canceled",
+                "de_DE": "wurde gelöscht."
+            },
+            "mail.trans.common.go_to_shop": {
+                "en_US": "Go to shop",
+                "de_DE": "Zum Shop"
+            },
+            "mail.trans.common.hello_for_first_name": {
+                "en_US": "Hello",
+                "de_DE": "Hallo"
+            },
+            "mail.trans.common.my_account": {
+                "en_US": "My Account",
+                "de_DE": "Mein Konto"
+            },
+            "mail.trans.customer_registration.change_info": {
+                "en_US": "You can change your info (delivery address, email address, password etc.) in My Account",
+                "de_DE": "Du kannst deine Angaben (Lieferadresse, E-Mail, Passwort usw.) hier ändern: Mein Konto"
+            },
+            "mail.trans.customer_registration.registration_success": {
+                "en_US": "Your registration to the Spryker Shop was successful!",
+                "de_DE": "Die Registrierung im Spryker Shop war erfolgreich!"
+            },
+            "mail.trans.customer_registration.title": {
+                "en_US": "Thank you for signing up with Spryker Shop!",
+                "de_DE": "Vielen Dank für deine Registrierung im Spryker Shop"
+            },
+            "mail.trans.customer_restored_password_confirmation.title": {
+                "en_US": "Your password was changed successfully",
+                "de_DE": "Dein Passwort wurde erfolgreich geändert"
+            },
+            "mail.trans.customer_restore_password.change_password": {
+                "en_US": "Change password",
+                "de_DE": "Passwort ändern"
+            },
+            "mail.trans.customer_restore_password.subtitle": {
+                "en_US": "Somebody has requested a new password for your Spryker Shop account. If this was not you, please ignore this email. If it was you, please follow the instructions in the button below.",
+                "de_DE": "Es wurde ein neues Passwort für dein Spryker Shop-Konto angefordert. Wenn du es nicht warst, kannst du diese E-Mail ignorieren. Wenn du es warst, klicke bitte den Knopf unten an:"
+            },
+            "mail.trans.customer_restore_password.title": {
+                "en_US": "New password for your Spryker Shop account",
+                "de_DE": "Neues Passwort für dein Spryker Shop-Konto"
+            },
+            "mail.trans.footer.contact_email_address": {
+                "en_US": "info@spryker.com",
+                "de_DE": "info@spryker.com"
+            },
+            "mail.trans.footer.if_you_have_further_questions": {
+                "en_US": "If you have any further questions, please contact our customer service at",
+                "de_DE": "Wenn du weitere Fragen hast, wende dich bitte an unseren Kundenservice unter"
+            },
+            "mail.trans.footer.shop_address": {
+                "en_US": "Julie-Wolfthorn-Strasse 1",
+                "de_DE": "Julie-Wolfthorn-Straße 2"
+            },
+            "mail.trans.footer.shop_city": {
+                "en_US": "Berlin",
+                "de_DE": "Berlin"
+            },
+            "mail.trans.footer.shop_name": {
+                "en_US": "Spryker Systems GmbH",
+                "de_DE": "Spryker Systems GmbH"
+            },
+            "mail.trans.footer.shop_phone": {
+                "en_US": "+49 (0) 30 208 498 350",
+                "de_DE": "+49 (0) 30 208 498 351"
+            },
+            "mail.trans.footer.shopping_experience": {
+                "en_US": "Enjoy your shopping experience.",
+                "de_DE": "Genieße das Shopping mit uns."
+            },
+            "mail.trans.footer.shop_zip_code": {
+                "en_US": "10115",
+                "de_DE": "10115"
+            },
+            "mail.trans.footer.your_team": {
+                "en_US": "Your Spryker team!",
+                "de_DE": "Dein Spryker Team!"
+            },
+            "mail.trans.gift_card_delivery.subtitle": {
+                "en_US": "Your gift card code is",
+                "de_DE": "Dein Geschenkgutschein-Code lautet"
+            },
+            "mail.trans.gift_card_delivery.title": {
+                "en_US": "Dear customer, thank you for purchasing a gift card in our shop.",
+                "de_DE": "Hallo! Vielen Dank für den Kauf eines Geschenkgutscheins in unserem Shop."
+            },
+            "mail.trans.gift_card_usage.subtitle": {
+                "en_US": "Your gift card code is",
+                "de_DE": "Dein Geschenkgutschein-Code lautet"
+            },
+            "mail.trans.gift_card_usage.title": {
+                "en_US": "You just used a gift card!",
+                "de_DE": "Geschenkgutschein wurde gerade benutzt!"
+            },
+            "mail.trans.header.shop_name": {
+                "en_US": "Spryker Shop",
+                "de_DE": "Spryker Shop"
+            },
+            "mail.trans.newsletter_subscribed.subtitle": {
+                "en_US": "We will do our best to deliver the most relevant and exciting news and updates.",
+                "de_DE": "Wir werden unser Bestes tun, um dir die relevantesten und aufregendsten Nachrichten und Updates zu liefern."
+            },
+            "mail.trans.newsletter_subscribed.title": {
+                "en_US": "We are thrilled you have signed up for our newsletter.",
+                "de_DE": "Wir freuen uns, dass du dich für unseren Newsletter angemeldet hast."
+            },
+            "mail.trans.newsletter_unsubscribed.subtitle": {
+                "en_US": "Your email address has been unsubscribed from Spryker Shop newsletter. You can always manage your subscription in your customer profile.",
+                "de_DE": "Deine E-Mail-Adresse wurde vom Spryker Shop Newsletter abgemeldet, aber du kannst dein Abo jederzeit in deinem Konto verwalten."
+            },
+            "mail.trans.newsletter_unsubscribed.title": {
+                "en_US": "Sorry to see you go...",
+                "de_DE": "Es ist schade, dass du gehst..."
+            },
+            "mail.trans.order.billing_address": {
+                "en_US": "Billing address",
+                "de_DE": "Rechnungsadresse"
+            },
+            "mail.trans.order.delivery_address": {
+                "en_US": "Delivery address",
+                "de_DE": "Lieferadresse"
+            },
+            "mail.trans.order.delivery_method": {
+                "en_US": "Shipment method",
+                "de_DE": "Versandart"
+            },
+            "mail.trans.order.discounts_total": {
+                "en_US": "Discounts",
+                "de_DE": "Rabatt"
+            },
+            "mail.trans.order.grand_total": {
+                "en_US": "Grand Total",
+                "de_DE": "Gesamtsumme"
+            },
+            "mail.trans.order.order_date": {
+                "en_US": "Order date",
+                "de_DE": "Bestelldatum"
+            },
+            "mail.trans.order.order_details": {
+                "en_US": "Order details",
+                "de_DE": "Bestellung"
+            },
+            "mail.trans.order.order_reference": {
+                "en_US": "Order reference",
+                "de_DE": "Bestellnummer"
+            },
+            "mail.trans.order.quantity": {
+                "en_US": "Qty",
+                "de_DE": "Anzahl"
+            },
+            "mail.trans.order.requested_delivery_date": {
+                "en_US": "Requested delivery date",
+                "de_DE": "Gewünschtes Lieferdatum"
+            },
+            "mail.trans.order.shipment_costs_total": {
+                "en_US": "Shipment costs (total)",
+                "de_DE": "Lieferkosten (gesamt)"
+            },
+            "mail.trans.order.shipment_for_number.part1": {
+                "en_US": "Shipment",
+                "de_DE": "Lieferung"
+            },
+            "mail.trans.order.shipment_for_number.part2": {
+                "en_US": "of",
+                "de_DE": "von"
+            },
+            "mail.trans.order.subtotal": {
+                "en_US": "Subtotal",
+                "de_DE": "Zwischensumme"
+            },
+            "mail.trans.order.taxes": {
+                "en_US": "Taxes",
+                "de_DE": "Steuern"
+            },
+            "mail.trans.order_confirmation.subtitle": {
+                "en_US": "We are writing to let you know that we recieved your order. You can expect a shipping confirmation by e-mail as soon as the order has been sent. We hope you like your order, but if you change your mind, please return it within 14 days.",
+                "de_DE": "Wir haben deine Bestellung erhalten. Du erhälst von uns eine Versandbestätigung per E-Mail, sobald die Bestellung verschickt wurde. Wir hoffen, dass dir deine Bestellung gefällt. Falls du deine Meinung änderst, kannst du deine Artikel innerhalb von 14 Tagen zurückschicken."
+            },
+            "mail.trans.order_confirmation.title": {
+                "en_US": "Thank you for shopping at Spryker Shop!",
+                "de_DE": "Vielen Dank für deinen Einkauf im Spryker Shop!"
+            },
+            "mail.trans.restore_password.change_password": {
+                "en_US": "Change password",
+                "de_DE": "Passwort ändern"
+            },
+            "mail.trans.restore_password.subtitle": {
+                "en_US": "Somebody has requested a new password for your Spryker Back Office account. If it was not you, please ignore this email. If it was you, please follow the instructions in  the button bellow",
+                "de_DE": "Es wurde ein neues Passwort für dein Spryker Shop-Konto angefordert. Wenn du es nicht warst, kannst du diese E-Mail ignorieren. Wenn du es warst, klicke bitte den Knopf unten an:"
+            },
+            "mail.trans.restore_password.title": {
+                "en_US": "New password for your Spryker Back Office account",
+                "de_DE": "Neues Passwort für dein Spryker Back Office-Konto"
+            },
+            "mail.trans.order_shipped.title": {
+                "en_US": "Your order is on its way!",
+                "de_DE": "Deine Bestellung ist unterwegs!"
+            },
+            "mail.trans.company_status.title": {
+                "en_US": "The status of your company has been changed to",
+                "de_DE": "Der Status deines Unternehmens wurde geändert auf"
+            },
+            "mail.trans.customer_registration.confirmation_link": {
+                "en_US": "Validate your email address",
+                "de_DE": "Bestätigen Sie Ihre E-Mail-Adresse"
+            }
+        }
+    }
+}

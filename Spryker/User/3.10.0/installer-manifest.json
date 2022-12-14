@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\AuthMailConnector\\AuthMailConnectorDependencyProvider::getAuthMailExpanderPlugins",
+            "source": "\\Spryker\\Zed\\User\\Communication\\Plugin\\AuthMailConnector\\UserAuthMailExpanderPlugin"
+        }
+    ]
+}
