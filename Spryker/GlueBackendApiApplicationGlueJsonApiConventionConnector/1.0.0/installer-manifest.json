@@ -1,0 +1,22 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getContextExpanderPlugins",
+            "source": "\\Spryker\\Glue\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\Plugin\\DocumentationGeneratorApi\\RelationshipPluginsContextExpanderPlugin",
+            "arguments": {
+                "append-arguments": [
+                    {
+                        "value": [
+                            "static::GLUE_BACKEND_API_APPLICATION_NAME"
+                        ],
+                        "is_literal": false
+                    }
+                ]
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueJsonApiConvention\\GlueJsonApiConventionDependencyProvider::getRelationshipProviderPlugins",
+            "source": "\\Spryker\\Glue\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\Plugin\\GlueJsonApiConvention\\BackendApiRelationshipProviderPlugin"
+        }
+    ]
+}
