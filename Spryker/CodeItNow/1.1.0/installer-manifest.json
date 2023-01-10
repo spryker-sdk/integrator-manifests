@@ -1,8 +1,0 @@
-{
-    "unwire-plugin": [
-        {
-            "target": "\\Spryker\\Service\\Barcode\\BarcodeDependencyProvider::getBarcodeGeneratorPlugins",
-            "source": "\\Spryker\\Service\\CodeItNow\\Plugin\\Code128BarcodeGeneratorPlugin"
-        }
-    ]
-}

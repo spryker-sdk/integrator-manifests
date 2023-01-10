@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Client\\ProductSetPageSearch\\ProductSetPageSearchDependencyProvider::getProductSetListResultFormatterPlugins",
-            "source": "\\Spryker\\Client\\ProductSetPageSearch\\Plugin\\Elasticsearch\\ResultFormatter\\ProductSetPageSearchListResultFormatterPlugin"
-        }
-    ]
-}

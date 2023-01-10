@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getGlueContextExpanderPlugins",
-            "source": "\\Spryker\\Glue\\GlueHttp\\Plugin\\GlueContext\\HttpGlueContextExpanderPlugin"
-        }
-    ]
-}
