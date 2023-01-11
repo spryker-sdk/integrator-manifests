@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Zed\\Payment\\PaymentDependencyProvider::getPaymentMethodFilterPlugins",
-            "source": "\\Spryker\\Zed\\Nopayment\\Communication\\Plugin\\Payment\\PriceToPayPaymentMethodFilterPlugin"
-        }
-    ]
-}

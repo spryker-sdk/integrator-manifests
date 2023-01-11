@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getSchemaFormatterPlugins",
-            "source": "\\Spryker\\Glue\\GlueRestApiConvention\\Plugin\\GlueRestApiConvention\\RestApiSchemaFormatterPlugin"
-        }
-    ]
-}

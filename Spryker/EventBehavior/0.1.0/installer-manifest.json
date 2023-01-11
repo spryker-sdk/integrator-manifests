@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Zed\\Console\\ConsoleDependencyProvider::getConsolePostRunHookPlugins",
-            "source": "\\Spryker\\Zed\\EventBehavior\\Communication\\Plugin\\Console\\EventBehaviorPostHookPlugin"
-        }
-    ]
-}
