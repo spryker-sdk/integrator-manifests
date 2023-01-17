@@ -1,0 +1,15 @@
+{
+    "configure-module": [
+        {
+            "previousValue": "",
+            "target": "\\Spryker\\Zed\\ProductListStorage\\ProductListStorageConfig::getProductListEventQueueName",
+            "value": "\\Spryker\\Shared\\Publisher\\PublisherConfig::PUBLISH_QUEUE"
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherTriggerPlugins",
+            "source": "\\Spryker\\Zed\\ProductListStorage\\Communication\\Plugin\\Publisher\\ProductListPublisherTriggerPlugin"
+        }
+    ]
+}
