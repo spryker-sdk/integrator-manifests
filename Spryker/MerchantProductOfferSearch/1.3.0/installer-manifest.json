@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherTriggerPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductOfferSearch\\Communication\\Plugin\\Publisher\\MerchantProductOfferSearchPublisherTriggerPlugin"
+        }
+    ]
+}

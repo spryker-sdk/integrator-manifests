@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherTriggerPlugins",
+            "source": "\\Spryker\\Zed\\CategoryImageStorage\\Communication\\Plugin\\Publisher\\CategoryImagePublisherTriggerPlugin"
+        }
+    ]
+}
