@@ -1,0 +1,7 @@
+{
+    "wire-widget": [
+        {
+            "source": "\\SprykerShop\\Yves\\MerchantWidget\\Widget\\MerchantMetaSchemaWidget"
+        }
+    ]
+}
