@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\ShopApplication\\ShopApplicationDependencyProvider::getFilterControllerEventSubscriberPlugins",
+            "source": "\\SprykerShop\\Yves\\CustomerValidationPage\\Plugin\\ShopApplication\\LogoutInvalidatedCustomerFilterControllerEventHandlerPlugin"
+        }
+    ]
+}
