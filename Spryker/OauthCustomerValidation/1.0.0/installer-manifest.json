@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Oauth\\OauthDependencyProvider::getAccessTokenValidatorPlugins",
+            "source": "\\Spryker\\Client\\OauthCustomerValidation\\Plugin\\Oauth\\ValidateInvalidatedCustomerAccessTokenValidatorPlugin"
+        }
+    ]
+}
