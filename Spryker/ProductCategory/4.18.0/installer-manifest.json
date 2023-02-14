@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Category\\CategoryDependencyProvider::getRelationUpdatePluginStack",
+            "source": "\\Spryker\\Zed\\ProductCategory\\Communication\\Plugin\\Category\\ProductUpdateEventTriggerCategoryRelationUpdatePlugin"
+        }
+    ]
+}
