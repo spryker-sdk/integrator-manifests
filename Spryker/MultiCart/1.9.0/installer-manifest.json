@@ -1,0 +1,12 @@
+{
+    "configure-module": [
+        {
+            "previousValue": "",
+            "target": "\\Spryker\\Client\\MultiCart\\MultiCartConfig::getQuoteFieldsAllowedForCustomerQuoteCollectionInSession",
+            "value": {
+                "value": "return array_merge(parent::getQuoteFieldsAllowedForCustomerQuoteCollectionInSession(), [\\Generated\\Shared\\Transfer\\QuoteTransfer::ID_QUOTE, \\Generated\\Shared\\Transfer\\QuoteTransfer::ITEMS, \\Generated\\Shared\\Transfer\\QuoteTransfer::BUNDLE_ITEMS, \\Generated\\Shared\\Transfer\\QuoteTransfer::TOTALS, \\Generated\\Shared\\Transfer\\QuoteTransfer::CURRENCY, \\Generated\\Shared\\Transfer\\QuoteTransfer::PRICE_MODE, \\Generated\\Shared\\Transfer\\QuoteTransfer::NAME, \\Generated\\Shared\\Transfer\\QuoteTransfer::IS_DEFAULT, \\Generated\\Shared\\Transfer\\QuoteTransfer::CUSTOMER_REFERENCE, \\Generated\\Shared\\Transfer\\QuoteTransfer::IS_LOCKED])",
+                "is_literal": true
+            }
+        }
+    ]
+}
