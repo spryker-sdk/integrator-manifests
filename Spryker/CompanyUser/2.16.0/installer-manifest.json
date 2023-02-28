@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Permission\\PermissionDependencyProvider::getPermissionPlugins",
+            "source": "\\Spryker\\Client\\CompanyUser\\Plugin\\Permission\\SeeCompanyUsersPermissionPlugin"
+        }
+    ],
+    "glossary-key": {
+        "new": {
+            "permission.name.SeeCompanyUsersPermissionPlugin": {
+                "en_US": "View company users",
+                "de_DE": "Firmenbenutzer anzeigen"
+            }
+        }
+    }
+}
