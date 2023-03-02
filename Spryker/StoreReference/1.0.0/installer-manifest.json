@@ -1,0 +1,21 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\StoreReference\\StoreReferenceConstants::STORE_NAME_REFERENCE_MAP",
+            "value": {
+                "value": "json_decode(html_entity_decode(getenv('STORE_NAME_REFERENCE_MAP') ?: ''), true)",
+                "is_literal": true
+            }
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageAttributeProviderPlugins",
+            "source": "\\Spryker\\Zed\\StoreReference\\Communication\\Plugin\\MessageBroker\\StoreReferenceMessageAttributeProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getExternalValidatorPlugins",
+            "source": "\\Spryker\\Zed\\StoreReference\\Communication\\Plugin\\MessageBroker\\StoreReferenceMessageValidatorPlugin"
+        }
+    ]
+}

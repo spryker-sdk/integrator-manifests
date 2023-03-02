@@ -1,0 +1,90 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getSchemaFormatterPlugins",
+            "source": "\\Spryker\\Glue\\GlueRestApiConvention\\Plugin\\DocumentationGeneratorApi\\RestApiSchemaFormatterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getConventionPlugins",
+            "source": "\\Spryker\\Glue\\GlueRestApiConvention\\Plugin\\GlueApplication\\RestConventionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueRestApiConvention\\GlueRestApiConventionDependencyProvider::getRequestBuilderPlugins",
+            "source": "\\Spryker\\Glue\\GlueRestApiConvention\\Plugin\\GlueApplication\\ConventionIdentifierRequestBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueRestApiConvention\\GlueRestApiConventionDependencyProvider::getRequestBuilderPlugins",
+            "source": "\\Spryker\\Glue\\GlueRestApiConvention\\Plugin\\GlueApplication\\FormatRequestBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueRestApiConvention\\GlueRestApiConventionDependencyProvider::getRequestBuilderPlugins",
+            "source": "\\Spryker\\Glue\\GlueRestApiConvention\\Plugin\\GlueApplication\\PaginationRequestBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueRestApiConvention\\GlueRestApiConventionDependencyProvider::getRequestBuilderPlugins",
+            "source": "\\Spryker\\Glue\\GlueRestApiConvention\\Plugin\\GlueApplication\\SortRequestBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueRestApiConvention\\GlueRestApiConventionDependencyProvider::getRequestBuilderPlugins",
+            "source": "\\Spryker\\Glue\\GlueRestApiConvention\\Plugin\\GlueApplication\\FilterFieldRequestBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueRestApiConvention\\GlueRestApiConventionDependencyProvider::getRequestBuilderPlugins",
+            "source": "\\Spryker\\Glue\\GlueRestApiConvention\\Plugin\\GlueApplication\\SparseFieldRequestBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueRestApiConvention\\GlueRestApiConventionDependencyProvider::getRequestBuilderPlugins",
+            "source": "\\Spryker\\Glue\\GlueRestApiConvention\\Plugin\\GlueApplication\\AttributesRequestBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueRestApiConvention\\GlueRestApiConventionDependencyProvider::getRequestValidatorPlugins",
+            "source": "\\Spryker\\Glue\\GlueRestApiConvention\\Plugin\\GlueApplication\\AcceptFormatRequestValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueRestApiConvention\\GlueRestApiConventionDependencyProvider::getResponseFormatterPlugins",
+            "source": "\\Spryker\\Glue\\GlueRestApiConvention\\Plugin\\GlueApplication\\RestApiResponseFormatterPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getSchemaFormatterPlugins",
+            "source": "\\Spryker\\Glue\\GlueRestApiConvention\\Plugin\\GlueRestApiConvention\\RestApiSchemaFormatterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getApiConventionPlugins",
+            "source": "\\Spryker\\Glue\\GlueRestApiConvention\\Plugin\\GlueApplication\\RestApiConventionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueRestApiConvention\\GlueRestApiConventionDependencyProvider::getRequestBuilderPlugins",
+            "source": "\\Spryker\\Glue\\GlueRestApiConvention\\Plugin\\GlueRestApiConvention\\FormatRequestBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueRestApiConvention\\GlueRestApiConventionDependencyProvider::getRequestBuilderPlugins",
+            "source": "\\Spryker\\Glue\\GlueRestApiConvention\\Plugin\\GlueRestApiConvention\\PaginationRequestBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueRestApiConvention\\GlueRestApiConventionDependencyProvider::getRequestBuilderPlugins",
+            "source": "\\Spryker\\Glue\\GlueRestApiConvention\\Plugin\\GlueRestApiConvention\\SortRequestBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueRestApiConvention\\GlueRestApiConventionDependencyProvider::getRequestBuilderPlugins",
+            "source": "\\Spryker\\Glue\\GlueRestApiConvention\\Plugin\\GlueRestApiConvention\\FilterFieldRequestBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueRestApiConvention\\GlueRestApiConventionDependencyProvider::getRequestBuilderPlugins",
+            "source": "\\Spryker\\Glue\\GlueRestApiConvention\\Plugin\\GlueRestApiConvention\\SparseFieldRequestBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueRestApiConvention\\GlueRestApiConventionDependencyProvider::getRequestBuilderPlugins",
+            "source": "\\Spryker\\Glue\\GlueRestApiConvention\\Plugin\\GlueRestApiConvention\\AttributesRequestBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueRestApiConvention\\GlueRestApiConventionDependencyProvider::getRequestValidatorPlugins",
+            "source": "\\Spryker\\Glue\\GlueRestApiConvention\\Plugin\\GlueRestApiConvention\\AcceptFormatRequestValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueRestApiConvention\\GlueRestApiConventionDependencyProvider::getResponseFormatterPlugins",
+            "source": "\\Spryker\\Glue\\GlueRestApiConvention\\Plugin\\GlueRestApiConvention\\RestApiResponseFormatterPlugin"
+        }
+    ]
+}
