@@ -1,8 +1,24 @@
 {
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\GlueBackendApiApplication\\GlueBackendApiApplicationConstants::GLUE_BACKEND_API_HOST",
+            "value": "$glueBackendHost"
+        },
+        {
+            "target": "\\Spryker\\Shared\\GlueBackendApiApplication\\GlueBackendApiApplicationConstants::PROJECT_NAMESPACES",
+            "value": [
+                "Pyz"
+            ]
+        }
+    ],
     "wire-plugin": [
         {
             "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getApiApplicationProviderPlugins",
-            "source": "\\Spryker\\Glue\\GlueBackendApiApplication\\Plugin\\GlueBackendApiApplication\\BackendApiApplicationProviderPlugin"
+            "source": "\\Spryker\\Glue\\GlueBackendApiApplication\\Plugin\\GlueBackendApiApplication\\BackendApiApplicationProviderPlugin",
+            "call": {
+                "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getContextExpanderPlugins",
+                "before": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getName"
+            }
         },
         {
             "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getContextExpanderPlugins",
