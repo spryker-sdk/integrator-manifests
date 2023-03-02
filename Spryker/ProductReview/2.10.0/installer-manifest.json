@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageHandlerPlugins",
+            "source": "\\Spryker\\Zed\\ProductReview\\Communication\\Plugin\\MessageBroker\\ProductReviewAddReviewsMessageHandlerPlugin"
+        }
+    ]
+}

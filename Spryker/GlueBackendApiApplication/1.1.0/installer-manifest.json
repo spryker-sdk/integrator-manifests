@@ -1,0 +1,11 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\GlueBackendApiApplication\\GlueBackendApiApplicationConstants::GLUE_BACKEND_CORS_ALLOW_ORIGIN",
+            "value": {
+                "value": "getenv('SPRYKER_GLUE_APPLICATION_CORS_ALLOW_ORIGIN') ?: '*'",
+                "is_literal": true
+            }
+        }
+    ]
+}
