@@ -29,6 +29,10 @@
         {
             "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageAttributeProviderPlugins",
             "source": "\\Spryker\\Zed\\OauthClient\\Communication\\Plugin\\MessageBroker\\AccessTokenMessageAttributeProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Payment\\PaymentDependencyProvider::getPaymentAuthorizeRequestExpanderPlugins",
+            "source": "\\Spryker\\Zed\\OauthClient\\Communication\\Plugin\\Payment\\AccessTokenPaymentAuthorizeRequestExpanderPlugin"
         }
     ]
 }
