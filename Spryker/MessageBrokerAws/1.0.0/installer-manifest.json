@@ -1,6 +1,21 @@
 {
     "wire-plugin": [
         {
+            "target": "\\Spryker\\Zed\\Console\\ConsoleDependencyProvider::getConsoleCommands",
+            "source": "\\Spryker\\Zed\\MessageBrokerAws\\Communication\\Console\\MessageBrokerAwsSqsQueuesCreatorConsole",
+            "condition": "$this->getConfig()->isDevelopmentConsoleCommandsEnabled()"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Console\\ConsoleDependencyProvider::getConsoleCommands",
+            "source": "\\Spryker\\Zed\\MessageBrokerAws\\Communication\\Console\\MessageBrokerAwsSnsTopicsCreatorConsole",
+            "condition": "$this->getConfig()->isDevelopmentConsoleCommandsEnabled()"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Console\\ConsoleDependencyProvider::getConsoleCommands",
+            "source": "\\Spryker\\Zed\\MessageBrokerAws\\Communication\\Console\\MessageBrokerSqsToSnsSubscriberConsole",
+            "condition": "$this->getConfig()->isDevelopmentConsoleCommandsEnabled()"
+        },
+        {
             "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageSenderPlugins",
             "source": "\\Spryker\\Zed\\MessageBrokerAws\\Communication\\Plugin\\MessageBroker\\Sender\\AwsSnsMessageSenderPlugin"
         },

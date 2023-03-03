@@ -83,6 +83,42 @@
         {
             "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageHandlerPlugins",
             "source": "\\Spryker\\Zed\\Payment\\Communication\\Plugin\\MessageBroker\\PaymentMethodDeletedMessageHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::extendCommandPlugins",
+            "source": "\\Spryker\\Zed\\Payment\\Communication\\Plugin\\Command\\SendEventPaymentConfirmationPendingPlugin",
+            "arguments": {
+                "append-arguments": [
+                    {
+                        "value": "Payment/SendEventPaymentConfirmationPending",
+                        "is_literal": false
+                    }
+                ]
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::extendCommandPlugins",
+            "source": "\\Spryker\\Zed\\Payment\\Communication\\Plugin\\Command\\SendEventPaymentRefundPendingPlugin",
+            "arguments": {
+                "append-arguments": [
+                    {
+                        "value": "Payment/SendEventPaymentRefundPending",
+                        "is_literal": false
+                    }
+                ]
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::extendCommandPlugins",
+            "source": "\\Spryker\\Zed\\Payment\\Communication\\Plugin\\Command\\SendEventPaymentCancelReservationPendingPlugin",
+            "arguments": {
+                "append-arguments": [
+                    {
+                        "value": "Payment/SendEventPaymentCancelReservationPending",
+                        "is_literal": false
+                    }
+                ]
+            }
         }
     ]
 }
