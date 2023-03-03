@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getRequestValidatorPlugins",
+            "source": "\\Spryker\\Glue\\OauthBackendApi\\Plugin\\UserRequestValidatorPlugin"
+        }
+    ]
+}

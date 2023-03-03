@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherTriggerPlugins",
+            "source": "\\Spryker\\Zed\\PublishAndSynchronizeHealthCheckSearch\\Communication\\Plugin\\Publisher\\PublishAndSynchronizeHealthCheckSearchPublisherTriggerPlugin"
+        }
+    ]
+}

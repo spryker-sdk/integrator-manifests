@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductConcreteMergerPlugins",
+            "source": "\\Spryker\\Zed\\ProductImage\\Communication\\Plugin\\Product\\ImageSetProductConcreteMergerPlugin"
+        }
+    ]
+}

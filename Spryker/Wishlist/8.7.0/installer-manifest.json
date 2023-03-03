@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Wishlist\\WishlistDependencyProvider::getAddItemPreCheckPlugins",
+            "source": "\\Spryker\\Zed\\Wishlist\\Communication\\Plugin\\Wishlist\\WishlistItemAddItemPreCheckPlugin"
+        }
+    ]
+}

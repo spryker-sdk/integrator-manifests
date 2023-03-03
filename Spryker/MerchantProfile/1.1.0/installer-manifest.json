@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderHydrationPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProfile\\Communication\\Plugin\\Sales\\MerchantDataOrderHydratePlugin"
+        }
+    ]
+}

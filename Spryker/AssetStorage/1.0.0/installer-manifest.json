@@ -1,6 +1,15 @@
 {
     "wire-plugin": [
         {
+            "target": "\\Spryker\\Zed\\Event\\EventDependencyProvider::getEventSubscriberCollection",
+            "source": "\\Spryker\\Zed\\AssetStorage\\Communication\\Plugin\\Event\\Subscriber\\AssetStorageEventSubscriber"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin",
+            "index": "\\Spryker\\Shared\\AssetStorage\\AssetStorageConfig::ASSET_SYNC_STORAGE_QUEUE"
+        },
+        {
             "target": "\\Spryker\\Zed\\Synchronization\\SynchronizationDependencyProvider::getSynchronizationDataPlugins",
             "source": "\\Spryker\\Zed\\AssetStorage\\Communication\\Plugin\\Synchronization\\AssetStorageSynchronizationDataPlugin"
         }

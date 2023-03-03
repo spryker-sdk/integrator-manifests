@@ -1,0 +1,22 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Wishlist\\WishlistDependencyProvider::getAddItemPreCheckPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductOfferWishlist\\Communication\\Plugin\\Wishlist\\ValidMerchantProductOfferAddItemPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Wishlist\\WishlistDependencyProvider::getUpdateItemPreCheckPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductOfferWishlist\\Communication\\Plugin\\Wishlist\\ValidMerchantProductOfferUpdateItemPreCheckPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Wishlist\\WishlistDependencyProvider::getAddItemPreCheckPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductOfferWishlist\\Communication\\Plugin\\Wishlist\\MerchantProductOfferAddItemPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Wishlist\\WishlistDependencyProvider::getUpdateItemPreCheckPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductOfferWishlist\\Communication\\Plugin\\Wishlist\\MerchantProductOfferUpdateItemPreCheckPlugin"
+        }
+    ]
+}

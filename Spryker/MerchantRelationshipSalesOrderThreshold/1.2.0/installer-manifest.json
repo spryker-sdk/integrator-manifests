@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\MerchantRelationship\\MerchantRelationshipDependencyProvider::getMerchantRelationshipPreDeletePlugins",
+            "source": "\\Spryker\\Zed\\MerchantRelationshipSalesOrderThreshold\\Communication\\Plugin\\MerchantRelationship\\MerchantRelationshipSalesOrderThresholdMerchantRelationshipPreDeletePlugin"
+        }
+    ]
+}

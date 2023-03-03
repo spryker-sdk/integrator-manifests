@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\WarehouseAllocation\\WarehouseAllocationDependencyProvider::getSalesOrderWarehouseAllocationPlugins",
+            "source": "\\Spryker\\Zed\\ProductWarehouseAllocationExample\\Communication\\Plugin\\WarehouseAllocation\\ProductSalesOrderWarehouseAllocationPlugin"
+        }
+    ]
+}

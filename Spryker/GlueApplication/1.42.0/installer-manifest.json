@@ -1,0 +1,30 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\Console\\ConsoleDependencyProvider::getConsoleCommands",
+            "source": "\\Spryker\\Glue\\GlueApplication\\Plugin\\Console\\RouterCacheWarmUpConsole"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceFilterPlugins",
+            "source": "\\Spryker\\Glue\\GlueApplication\\Plugin\\GlueApplication\\ConventionResourceFilterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getRouteMatcherPlugins",
+            "source": "\\Spryker\\Glue\\GlueApplication\\Plugin\\GlueApplication\\ResourceRouteMatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getRequestResourceFilterPlugin",
+            "source": "\\Spryker\\Glue\\GlueApplication\\Plugin\\GlueApplication\\RequestResourceFilterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\GlueStorefrontApiApplicationDependencyProvider::getRouteMatcherPlugins",
+            "source": "\\Spryker\\Glue\\GlueApplication\\Plugin\\GlueApplication\\ResourceRouteMatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\GlueStorefrontApiApplicationDependencyProvider::getRequestResourceFilterPlugin",
+            "source": "\\Spryker\\Glue\\GlueApplication\\Plugin\\GlueApplication\\RequestResourceFilterPlugin"
+        }
+    ]
+}

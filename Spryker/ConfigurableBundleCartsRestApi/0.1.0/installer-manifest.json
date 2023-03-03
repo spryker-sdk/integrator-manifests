@@ -1,16 +1,16 @@
 {
     "wire-plugin": [
         {
-            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
-            "source": "\\Spryker\\Glue\\ConfigurableBundleCartsRestApi\\Plugin\\GlueApplication\\ConfiguredBundlesResourceRoutePlugin"
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getPostSavePlugins",
+            "source": "\\Spryker\\Zed\\ConfigurableBundleCart\\Communication\\Plugin\\Cart\\ConfiguredBundleQuantityPostSavePlugin"
         },
         {
-            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
-            "source": "\\Spryker\\Glue\\ConfigurableBundleCartsRestApi\\Plugin\\GlueApplication\\GuestConfiguredBundlesResourceRoutePlugin"
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getPreReloadPlugins",
+            "source": "\\Spryker\\Zed\\ConfigurableBundleCart\\Communication\\Plugin\\Cart\\ConfiguredBundleQuantityPerSlotPreReloadItemsPlugin"
         },
         {
-            "target": "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiDependencyProvider::getRestCartItemsAttributesMapperPlugins",
-            "source": "\\Spryker\\Glue\\ConfigurableBundleCartsRestApi\\Plugin\\CartsRestApi\\ConfiguredBundleItemsAttributesMapperPlugin"
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getTerminationPlugins",
+            "source": "\\Spryker\\Zed\\ConfigurableBundleCart\\Communication\\Plugin\\Cart\\ConfiguredBundleQuantityCartTerminationPlugin"
         }
     ]
 }

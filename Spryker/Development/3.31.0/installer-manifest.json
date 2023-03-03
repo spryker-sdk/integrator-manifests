@@ -1,0 +1,14 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Console\\ConsoleDependencyProvider::getConsoleCommands",
+            "source": "\\Spryker\\Zed\\Development\\Communication\\Console\\GenerateGlueBackendIdeAutoCompletionConsole",
+            "condition": "$this->getConfig()->isDevelopmentConsoleCommandsEnabled()"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Console\\ConsoleDependencyProvider::getConsoleCommands",
+            "source": "\\Spryker\\Zed\\Development\\Communication\\Console\\RemoveGlueBackendIdeAutoCompletionConsole",
+            "condition": "$this->getConfig()->isDevelopmentConsoleCommandsEnabled()"
+        }
+    ]
+}

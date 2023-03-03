@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Oauth\\OauthDependencyProvider::getOauthRequestGrantTypeConfigurationProviderPlugins",
+            "source": "\\Spryker\\Zed\\OauthCodeFlow\\Communication\\Plugin\\Oauth\\UserAuthCodeOauthRequestGrantTypeConfigurationProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Oauth\\OauthDependencyProvider::getOauthRequestGrantTypeConfigurationProviderPlugins",
+            "source": "\\Spryker\\Zed\\OauthCodeFlow\\Communication\\Plugin\\Oauth\\CustomerAuthCodeOauthRequestGrantTypeConfigurationProviderPlugin"
+        }
+    ]
+}

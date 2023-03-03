@@ -1,0 +1,26 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Event\\EventDependencyProvider::getEventSubscriberCollection",
+            "source": "\\Spryker\\Zed\\AssetStorage\\Communication\\Plugin\\Event\\Subscriber\\AssetStorageEventSubscriber"
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getAssetStoragePlugins",
+            "source": "\\Spryker\\Zed\\AssetStorage\\Communication\\Plugin\\Publisher\\Asset\\AssetWritePublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getMerchantProductOfferSearchPlugins"
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getAssetStoragePlugins",
+            "source": "\\Spryker\\Zed\\AssetStorage\\Communication\\Plugin\\Publisher\\Asset\\AssetDeletePublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getMerchantProductOfferSearchPlugins"
+            }
+        }
+    ]
+}

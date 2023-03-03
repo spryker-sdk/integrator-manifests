@@ -1,0 +1,16 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementDependencyProvider::createMoneyFormTypePlugin",
+            "source": "\\Spryker\\Zed\\Money\\Communication\\Plugin\\Form\\MoneyFormTypePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductOption\\ProductOptionDependencyProvider::createMoneyCollectionFormTypePlugin",
+            "source": "\\Spryker\\Zed\\Money\\Communication\\Plugin\\Form\\MoneyCollectionFormTypePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ShipmentGui\\ShipmentGuiDependencyProvider::getMoneyCollectionFormTypePlugin",
+            "source": "\\Spryker\\Zed\\Money\\Communication\\Plugin\\Form\\MoneyCollectionFormTypePlugin"
+        }
+    ]
+}

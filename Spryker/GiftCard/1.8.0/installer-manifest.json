@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\SalesPayment\\SalesPaymentDependencyProvider::getPaymentMapKeyBuilderStrategyPlugins",
+            "source": "\\Spryker\\Zed\\GiftCard\\Communication\\Plugin\\SalesPayment\\GiftCardPaymentMapKeyBuilderStrategyPlugin"
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Mail\\MailDependencyProvider::getMailTypeBuilderPlugins",
+            "source": "\\Spryker\\Zed\\Customer\\Communication\\Plugin\\Mail\\CustomerRegistrationMailTypeBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Mail\\MailDependencyProvider::getMailTypeBuilderPlugins",
+            "source": "\\Spryker\\Zed\\Customer\\Communication\\Plugin\\Mail\\CustomerRegistrationConfirmationMailTypeBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Mail\\MailDependencyProvider::getMailTypeBuilderPlugins",
+            "source": "\\Spryker\\Zed\\Customer\\Communication\\Plugin\\Mail\\CustomerRestorePasswordMailTypeBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Mail\\MailDependencyProvider::getMailTypeBuilderPlugins",
+            "source": "\\Spryker\\Zed\\Customer\\Communication\\Plugin\\Mail\\CustomerRestoredPasswordConfirmationMailTypeBuilderPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Mail\\MailDependencyProvider::provideBusinessLayerDependencies",
+            "source": "\\Spryker\\Zed\\Customer\\Communication\\Plugin\\Mail\\CustomerRegistrationMailTypePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Mail\\MailDependencyProvider::provideBusinessLayerDependencies",
+            "source": "\\Spryker\\Zed\\Customer\\Communication\\Plugin\\Mail\\CustomerRegistrationConfirmationMailTypePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Mail\\MailDependencyProvider::provideBusinessLayerDependencies",
+            "source": "\\Spryker\\Zed\\Customer\\Communication\\Plugin\\Mail\\CustomerRestorePasswordMailTypePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Mail\\MailDependencyProvider::provideBusinessLayerDependencies",
+            "source": "\\Spryker\\Zed\\Customer\\Communication\\Plugin\\Mail\\CustomerRestoredPasswordConfirmationMailTypePlugin"
+        }
+    ]
+}

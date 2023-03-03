@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\SprykerShop\\Yves\\ShopRouter\\ShopRouterDependencyProvider::getResourceCreatorPlugins",
-            "source": "\\SprykerShop\\Yves\\ProductSetDetailPage\\Plugin\\ProductSetDetailPageResourceCreatorPlugin"
-        }
-    ]
-}

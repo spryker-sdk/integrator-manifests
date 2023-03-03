@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductDiscountConnector\\ProductDiscountConnectorDependencyProvider::getProductAttributeCollectorExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductBundleDiscountConnector\\Communication\\Plugin\\ProductDiscountConnector\\ProductBundleProductAttributeCollectorExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductDiscountConnector\\ProductDiscountConnectorDependencyProvider::getProductAttributeDecisionRuleExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductBundleDiscountConnector\\Communication\\Plugin\\ProductDiscountConnector\\ProductBundleProductAttributeDecisionRuleExpanderPlugin"
+        }
+    ]
+}

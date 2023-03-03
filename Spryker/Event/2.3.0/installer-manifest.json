@@ -2,11 +2,8 @@
     "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
-            "source": "\\Spryker\\Zed\\Event\\Communication\\Plugin\\Queue\\EventRetryQueueMessageProcessorPlugin"
-        },
-        {
-            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
-            "source": "\\Spryker\\Zed\\Event\\Communication\\Plugin\\Queue\\EventRetryQueueMessageProcessorPlugin"
+            "source": "\\Spryker\\Zed\\Event\\Communication\\Plugin\\Queue\\EventRetryQueueMessageProcessorPlugin",
+            "index": "\\Spryker\\Shared\\Event\\EventConstants\\EventConstants::EVENT_QUEUE_RETRY"
         }
     ]
 }

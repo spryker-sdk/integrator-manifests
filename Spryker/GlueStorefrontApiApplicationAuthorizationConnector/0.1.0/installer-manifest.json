@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\GlueStorefrontApiApplicationDependencyProvider::getRequestAfterRoutingValidatorPlugins",
+            "source": "\\Spryker\\Glue\\GlueStorefrontApiApplicationAuthorizationConnector\\Plugin\\GlueStorefrontApiApplicationAuthorizationConnector\\AuthorizationRequestAfterRoutingValidatorPlugin"
+        }
+    ]
+}

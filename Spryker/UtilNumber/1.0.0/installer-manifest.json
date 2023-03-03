@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackofficeApplicationPlugins",
+            "source": "\\Spryker\\Zed\\UtilNumber\\Communication\\Plugin\\Application\\NumberFormatterApplicationPlugin"
+        }
+    ]
+}

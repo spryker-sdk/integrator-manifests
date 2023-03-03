@@ -1,0 +1,24 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\ProductConfiguratorGatewayPage\\ProductConfiguratorGatewayPageDependencyProvider::getProductConfiguratorRequestPlugins",
+            "source": "\\SprykerShop\\Yves\\ProductConfigurationShoppingListWidget\\Plugin\\ProductConfiguratorGatewayPage\\ShoppingListPageProductConfiguratorRequestStrategyPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\ProductConfiguratorGatewayPage\\ProductConfiguratorGatewayPageDependencyProvider::getProductConfiguratorResponsePlugins",
+            "source": "\\SprykerShop\\Yves\\ProductConfigurationShoppingListWidget\\Plugin\\ProductConfiguratorGatewayPage\\ShoppingListPageProductConfiguratorResponseStrategyPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\ProductConfiguratorGatewayPage\\ProductConfiguratorGatewayPageDependencyProvider::getProductConfiguratorRequestDataFormExpanderStrategyPlugins",
+            "source": "\\SprykerShop\\Yves\\ProductConfigurationShoppingListWidget\\Plugin\\ProductConfiguratorGatewayPage\\ShoppingListPageProductConfiguratorRequestDataFormExpanderStrategyPlugin"
+        }
+    ],
+    "wire-widget": [
+        {
+            "source": "\\SprykerShop\\Yves\\ProductConfigurationShoppingListWidget\\Widget\\ProductConfigurationShoppingListItemDisplayWidget"
+        },
+        {
+            "source": "\\SprykerShop\\Yves\\ProductConfigurationShoppingListWidget\\Widget\\ProductConfigurationShoppingListPageButtonWidget"
+        }
+    ]
+}

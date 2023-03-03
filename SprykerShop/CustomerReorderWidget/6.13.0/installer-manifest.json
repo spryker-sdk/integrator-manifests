@@ -1,0 +1,15 @@
+{
+    "wire-widget": [
+        {
+            "source": "\\SprykerShop\\Yves\\CustomerReorderWidget\\Widget\\CustomerReorderItemCheckboxWidget"
+        },
+        {
+            "source": "\\SprykerShop\\Yves\\CustomerReorderWidget\\Widget\\CustomerReorderBundleItemCheckboxWidget"
+        }
+    ],
+    "unwire-widget": [
+        {
+            "source": "\\SprykerShop\\Yves\\CustomerReorderWidget\\Plugin\\CustomerPage\\CustomerReorderItemCheckboxWidget"
+        }
+    ]
+}

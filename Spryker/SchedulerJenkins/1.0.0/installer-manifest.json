@@ -2,7 +2,8 @@
     "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Scheduler\\SchedulerDependencyProvider::getSchedulerAdapterPlugins",
-            "source": "\\Spryker\\Zed\\SchedulerJenkins\\Communication\\Plugin\\Adapter\\SchedulerJenkinsAdapterPlugin"
+            "source": "\\Spryker\\Zed\\SchedulerJenkins\\Communication\\Plugin\\Adapter\\SchedulerJenkinsAdapterPlugin",
+            "index": "\\Pyz\\Shared\\Scheduler\\SchedulerConfig::SCHEDULER_JENKINS"
         }
     ]
 }

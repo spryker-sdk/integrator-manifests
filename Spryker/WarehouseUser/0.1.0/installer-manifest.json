@@ -1,0 +1,32 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\SecurityGui\\SecurityGuiDependencyProvider::getUserLoginRestrictionPlugins",
+            "source": "\\Spryker\\Zed\\WarehouseUser\\Communication\\Plugin\\SecurityGui\\WarehouseUserLoginRestrictionPlugin"
+        }
+    ],
+    "glossary-key": {
+        "new": {
+            "warehouse_user_assignment.validation.user_not_found": {
+                "en_US": "User not found.",
+                "de_DE": "Benutzer nicht gefunden."
+            },
+            "warehouse_user_assignment.validation.warehouse_not_found": {
+                "en_US": "Warehouse not found.",
+                "de_DE": "Lager nicht gefunden."
+            },
+            "warehouse_user_assignment.validation.warehouse_user_assignment_not_found": {
+                "en_US": "Warehouse user assignment not found.",
+                "de_DE": "Lagerbenutzerzuweisung nicht gefunden."
+            },
+            "warehouse_user_assignment.validation.too_many_active_warehouse_assignments": {
+                "en_US": "User has too many active warehouse assignments.",
+                "de_DE": "Dem Benutzer sind zu viele aktive Läger zugewiesen."
+            },
+            "warehouse_user_assignment.validation.warehouse_user_assignment_already_exists": {
+                "en_US": "Warehouse user assignment already exists.",
+                "de_DE": "Lagerbenutzerzuweisung existiert bereits."
+            }
+        }
+    }
+}

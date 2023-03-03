@@ -1,0 +1,28 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Product\\Communication\\Plugin\\MessageBroker\\InitializeProductExportMessageHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductExportPlugins",
+            "source": "\\Spryker\\Zed\\Product\\Communication\\Plugin\\Publisher\\ProductConcreteExportedMessageBrokerPublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductExportPlugins",
+            "source": "\\Spryker\\Zed\\Product\\Communication\\Plugin\\Publisher\\ProductConcreteCreatedMessageBrokerPublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductExportPlugins",
+            "source": "\\Spryker\\Zed\\Product\\Communication\\Plugin\\Publisher\\ProductConcreteUpdatedMessageBrokerPublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductExportPlugins",
+            "source": "\\Spryker\\Zed\\Product\\Communication\\Plugin\\Publisher\\ProductConcreteDeletedMessageBrokerPublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductExportPlugins",
+            "source": "\\Spryker\\Zed\\Product\\Communication\\Plugin\\Publisher\\ProductAbstractUpdatedMessageBrokerPublisherPlugin"
+        }
+    ]
+}

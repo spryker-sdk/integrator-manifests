@@ -1,0 +1,10 @@
+{
+    "glossary-key": {
+        "new": {
+            "product_configurator_gateway_page.shopping_list_item_uuid_required": {
+                "en_US": "Shopping List item ID is required parameter.",
+                "de_DE": "Die Artikel-ID der Einkaufsliste ist ein erforderlicher Parameter."
+            }
+        }
+    }
+}

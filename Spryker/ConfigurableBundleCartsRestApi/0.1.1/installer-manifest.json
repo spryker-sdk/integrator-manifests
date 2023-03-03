@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiDependencyProvider::getRestCartItemsAttributesMapperPlugins",
-            "source": "\\Spryker\\Glue\\ConfigurableBundleCartsRestApi\\Plugin\\CartsRestApi\\ConfiguredBundleItemsAttributesMapperPlugin"
-        }
-    ]
-}
