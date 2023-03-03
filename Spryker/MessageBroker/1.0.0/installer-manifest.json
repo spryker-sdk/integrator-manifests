@@ -5,6 +5,11 @@
             "source": "\\Spryker\\Zed\\MessageBroker\\Communication\\Plugin\\Console\\MessageBrokerWorkerConsole"
         },
         {
+            "target": "\\Spryker\\Zed\\Console\\ConsoleDependencyProvider::getConsoleCommands",
+            "source": "\\Spryker\\Zed\\MessageBroker\\Communication\\Plugin\\Console\\MessageBrokerDebugConsole",
+            "condition": "$this->getConfig()->isDevelopmentConsoleCommandsEnabled()"
+        },
+        {
             "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageAttributeProviderPlugins",
             "source": "\\Spryker\\Zed\\MessageBroker\\Communication\\Plugin\\MessageBroker\\CorrelationIdMessageAttributeProviderPlugin"
         },

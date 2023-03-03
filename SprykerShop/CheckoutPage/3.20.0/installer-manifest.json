@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\CheckoutPage\\CheckoutPageDependencyProvider::extendPaymentMethodHandler",
+            "source": "\\SprykerShop\\Yves\\CheckoutPage\\Plugin\\StepEngine\\PaymentForeignHandlerPlugin",
+            "arguments": {
+                "append-arguments": [
+                    {
+                        "value": "\\Generated\\Shared\\Transfer\\PaymentTransfer::FOREIGN_PAYMENTS",
+                        "is_literal": false
+                    }
+                ]
+            }
+        }
+    ]
+}

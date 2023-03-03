@@ -1,8 +1,18 @@
 {
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\Sales\\SalesConstants::PAYMENT_METHOD_STATEMACHINE_MAPPING",
+            "value": {
+                "\\SprykerEco\\Zed\\Payone\\PayoneConfig::PAYMENT_METHOD_CREDIT_CARD": "PayoneCreditCardPartialOperations",
+                "\\SprykerEco\\Zed\\Payone\\PayoneConfig::PAYMENT_METHOD_INSTANT_ONLINE_TRANSFER": "PayoneOnlineTransferPartialOperations",
+                "\\Spryker\\Zed\\Payment\\PaymentConfig::PAYMENT_FOREIGN_PROVIDER": "B2CStateMachine01"
+            }
+        }
+    ],
     "configure-module": [
         {
-            "target": "\\Spryker\\Zed\\Sales\\SalesConfig::isOldDeterminationForOrderItemProcessEnabled",
-            "value": false
+            "value": false,
+            "target": "\\Spryker\\Zed\\Sales\\SalesConfig::isOldDeterminationForOrderItemProcessEnabled"
         }
     ]
 }
