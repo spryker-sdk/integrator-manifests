@@ -2,7 +2,10 @@
     "configure-env": [
         {
             "target": "\\Spryker\\Shared\\AvailabilityNotification\\AvailabilityNotificationConstants::BASE_URL_YVES_PORT",
-            "value": "$yvesPort"
+            "value": {
+                "value": "$yvesPort",
+                "is_literal": true
+            }
         },
         {
             "target": "\\Spryker\\Shared\\AvailabilityNotification\\AvailabilityNotificationConstants::STORE_TO_YVES_HOST_MAPPING",
