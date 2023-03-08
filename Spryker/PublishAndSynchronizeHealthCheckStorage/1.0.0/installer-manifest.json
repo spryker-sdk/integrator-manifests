@@ -1,14 +1,19 @@
 {
+    "add-config-array-element": [
+        {
+            "target": "\\Spryker\\Client\\RabbitMq\\RabbitMqConfig::getSynchronizationQueueConfiguration",
+            "value": "\\Spryker\\Shared\\PublishAndSynchronizeHealthCheckStorage\\PublishAndSynchronizeHealthCheckStorageConfig::SYNC_STORAGE_PUBLISH_AND_SYNCHRONIZE_HEALTH_CHECK"
+        }
+    ],
     "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\HealthCheck\\HealthCheckDependencyProvider::getHealthCheckPlugins",
             "source": "\\Spryker\\Zed\\PublishAndSynchronizeHealthCheckStorage\\Communication\\Plugin\\HealthCheck\\PublishAndSynchronizeHealthCheckStoragePlugin"
-        }
-    ],
-    "configure-module": [
+        },
         {
-            "target": "\\Spryker\\Client\\RabbitMq\\RabbitMqConfig::getSynchronizationQueueConfiguration",
-            "value": "\\Spryker\\Shared\\PublishAndSynchronizeHealthCheckStorage\\PublishAndSynchronizeHealthCheckStorageConfig::SYNC_STORAGE_PUBLISH_AND_SYNCHRONIZE_HEALTH_CHECK"
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin",
+            "index": "\\Spryker\\Shared\\PublishAndSynchronizeHealthCheckStorage\\PublishAndSynchronizeHealthCheckStorageConfig::SYNC_STORAGE_PUBLISH_AND_SYNCHRONIZE_HEALTH_CHECK"
         }
     ]
 }
