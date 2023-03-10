@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\AclMerchantPortal\\AclMerchantPortalDependencyProvider::getMerchantAclEntityRuleExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductImage\\Communication\\Plugin\\AclMerchantPortal\\ProductImageMerchantAclEntityRuleExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\AclMerchantPortal\\AclMerchantPortalDependencyProvider::getAclEntityConfigurationExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductImage\\Communication\\Plugin\\AclMerchantPortal\\ProductImageAclEntityConfigurationExpanderPlugin"
+        }
+    ]
+}

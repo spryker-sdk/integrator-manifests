@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\AclMerchantPortal\\AclMerchantPortalDependencyProvider::getMerchantAclEntityRuleExpanderPlugins",
+            "source": "\\Spryker\\Zed\\OmsProductOfferReservation\\Communication\\Plugin\\AclMerchantPortal\\OmsProductOfferReservationMerchantAclEntityRuleExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\AclMerchantPortal\\AclMerchantPortalDependencyProvider::getAclEntityConfigurationExpanderPlugins",
+            "source": "\\Spryker\\Zed\\OmsProductOfferReservation\\Communication\\Plugin\\AclMerchantPortal\\OmsProductOfferReservationAclEntityConfigurationExpanderPlugin"
+        }
+    ]
+}
