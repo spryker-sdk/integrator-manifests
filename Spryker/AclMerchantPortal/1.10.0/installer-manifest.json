@@ -1,0 +1,30 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\AclEntity\\AclEntityDependencyProvider::getAclEntityMetadataCollectionExpanderPlugins",
+            "source": "\\Spryker\\Zed\\AclMerchantPortal\\Communication\\Plugin\\AclEntity\\MerchantPortalConfigurationAclEntityMetadataConfigExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Merchant\\MerchantDependencyProvider::getMerchantPostCreatePlugins",
+            "source": "\\Spryker\\Zed\\AclMerchantPortal\\Communication\\Plugin\\Merchant\\MerchantAclEntitiesMerchantPostCreatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MerchantUser\\MerchantUserDependencyProvider::getMerchantUserPostCreatePlugins",
+            "source": "\\Spryker\\Zed\\AclMerchantPortal\\Communication\\Plugin\\MerchantUser\\MerchantUserAclEntitiesMerchantUserPostCreatePlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\AclEntity\\AclEntityDependencyProvider::getAclEntityMetadataCollectionExpanderPlugins",
+            "source": "\\Spryker\\Zed\\AclMerchantPortal\\Communication\\Plugin\\AclEntity\\MerchantPortalAclEntityMetadataConfigExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Merchant\\MerchantDependencyProvider::getMerchantPostCreatePlugins",
+            "source": "\\Spryker\\Zed\\AclMerchantPortal\\Communication\\Plugin\\Merchant\\MerchantAclMerchantPostCreatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MerchantUser\\MerchantUserDependencyProvider::getMerchantUserPostCreatePlugins",
+            "source": "\\Spryker\\Zed\\AclMerchantPortal\\Communication\\Plugin\\MerchantUser\\MerchantAclMerchantUserPostCreatePlugin"
+        }
+    ]
+}
