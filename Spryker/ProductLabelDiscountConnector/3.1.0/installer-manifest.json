@@ -1,0 +1,22 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getDecisionRulePlugins",
+            "source": "\\Spryker\\Zed\\ProductLabelDiscountConnector\\Communication\\Plugin\\Discount\\ProductLabelListDecisionRulePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getCollectorPlugins",
+            "source": "\\Spryker\\Zed\\ProductLabelDiscountConnector\\Communication\\Plugin\\Discount\\ProductLabelDiscountableItemCollectorPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getDecisionRulePlugins",
+            "source": "\\Spryker\\Zed\\ProductLabelDiscountConnector\\Communication\\Plugin\\DecisionRule\\ProductLabelDecisionRulePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getCollectorPlugins",
+            "source": "\\Spryker\\Zed\\ProductLabelDiscountConnector\\Communication\\Plugin\\Collector\\ProductLabelCollectorPlugin"
+        }
+    ]
+}
