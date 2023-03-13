@@ -1,0 +1,9 @@
+{
+    "configure-module": [
+        {
+            "previousValue": "",
+            "target": "\\Spryker\\Zed\\GuiTable\\GuiTableConfig::getDefaultTimezone",
+            "value": "UTC"
+        }
+    ]
+}
