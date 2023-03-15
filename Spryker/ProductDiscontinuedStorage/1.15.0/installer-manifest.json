@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "value": true,
+            "target": "\\Spryker\\Client\\ProductDiscontinuedStorage\\ProductDiscontinuedStorageConfig::isOnlyDiscontinuedVariantAttributesPostfixEnabled"
+        }
+    ]
+}
