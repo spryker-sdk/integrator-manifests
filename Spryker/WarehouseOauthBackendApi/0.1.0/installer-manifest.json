@@ -1,0 +1,24 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getRequestBuilderPlugins",
+            "source": "\\Spryker\\Glue\\WarehouseOauthBackendApi\\Plugin\\GlueBackendApiApplication\\WarehouseRequestBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getRequestValidatorPlugins",
+            "source": "\\Spryker\\Glue\\WarehouseOauthBackendApi\\Plugin\\GlueBackendApiApplication\\WarehouseRequestValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getResourcePlugins",
+            "source": "\\Spryker\\Glue\\WarehouseOauthBackendApi\\Plugin\\GlueBackendApiApplication\\WarehouseTokensBackendResourcePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplicationAuthorizationConnector\\GlueBackendApiApplicationAuthorizationConnectorDependencyProvider::getAuthorizationRequestExpanderPlugins",
+            "source": "\\Spryker\\Glue\\WarehouseOauthBackendApi\\Plugin\\GlueBackendApiApplicationAuthorizationConnector\\WarehouseAuthorizationRequestExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\OauthBackendApi\\OauthBackendApiDependencyProvider::getUserRequestValidationPreCheckerPlugins",
+            "source": "\\Spryker\\Glue\\WarehouseOauthBackendApi\\Plugin\\OauthBackendApi\\WarehouseUserRequestValidationPreCheckerPlugin"
+        }
+    ]
+}
