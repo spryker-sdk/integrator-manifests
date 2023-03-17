@@ -1,0 +1,24 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Authorization\\AuthorizationDependencyProvider::getAuthorizationStrategyPlugins",
+            "source": "\\Spryker\\Zed\\OauthWarehouse\\Communication\\Plugin\\Authorization\\WarehouseTokenAuthorizationStrategyPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Installer\\InstallerDependencyProvider::getInstallerPlugins",
+            "source": "\\Spryker\\Zed\\OauthWarehouse\\Communication\\Plugin\\Installer\\OauthWarehouseInstallerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Oauth\\OauthDependencyProvider::getUserProviderPlugins",
+            "source": "\\Spryker\\Zed\\OauthWarehouse\\Communication\\Plugin\\Oauth\\WarehouseOauthUserProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Oauth\\OauthDependencyProvider::getScopeProviderPlugins",
+            "source": "\\Spryker\\Zed\\OauthWarehouse\\Communication\\Plugin\\Oauth\\WarehouseOauthScopeProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Oauth\\OauthDependencyProvider::getOauthRequestGrantTypeConfigurationProviderPlugins",
+            "source": "\\Spryker\\Zed\\OauthWarehouse\\Communication\\Plugin\\Oauth\\WarehouseOauthRequestGrantTypeConfigurationProviderPlugin"
+        }
+    ]
+}
