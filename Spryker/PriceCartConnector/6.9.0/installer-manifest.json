@@ -1,0 +1,12 @@
+{
+    "configure-module": [
+        {
+            "previousValue": "",
+            "target": "\\Spryker\\Zed\\PriceCartConnector\\PriceCartConnectorConfig::getItemFieldsForIdentifier",
+            "value": {
+                "value": "return array_merge(parent::getItemFieldsForIdentifier(), [\\Generated\\Shared\\Transfer\\ItemTransfer::SKU, \\Generated\\Shared\\Transfer\\ItemTransfer::QUANTITY, \\Generated\\Shared\\Transfer\\ItemTransfer::MERCHANT_REFERENCE, \\Generated\\Shared\\Transfer\\ItemTransfer::PRODUCT_OFFER_REFERENCE])",
+                "is_literal": true
+            }
+        }
+    ]
+}
