@@ -1,0 +1,22 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\SecurityBlockerBackoffice\\SecurityBlockerBackofficeConstants::BACKOFFICE_USER_BLOCKING_TTL",
+            "value": 900
+        },
+        {
+            "target": "\\Spryker\\Shared\\SecurityBlockerBackoffice\\SecurityBlockerBackofficeConstants::BACKOFFICE_USER_BLOCK_FOR_SECONDS",
+            "value": 360
+        },
+        {
+            "target": "\\Spryker\\Shared\\SecurityBlockerBackoffice\\SecurityBlockerBackofficeConstants::BACKOFFICE_USER_BLOCKING_NUMBER_OF_ATTEMPTS",
+            "value": 9
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\SecurityBlocker\\SecurityBlockerDependencyProvider::getSecurityBlockerConfigurationSettingsExpanderPlugins",
+            "source": "\\Spryker\\Client\\SecurityBlockerBackoffice\\Plugin\\SecurityBlocker\\BackofficeUserSecurityBlockerConfigurationSettingsExpanderPlugin"
+        }
+    ]
+}
