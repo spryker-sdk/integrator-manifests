@@ -1,0 +1,12 @@
+{
+    "configure-module": [
+        {
+            "previousValue": "",
+            "target": "\\Spryker\\Zed\\ErrorHandler\\ErrorHandlerConfig::getValidSubRequestExceptionStatusCodes",
+            "value": {
+                "value": "return array_merge(parent::getValidSubRequestExceptionStatusCodes(), [\\Symfony\\Component\\HttpFoundation\\Response::HTTP_TOO_MANY_REQUESTS])",
+                "is_literal": true
+            }
+        }
+    ]
+}

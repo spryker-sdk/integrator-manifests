@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\SecurityBlockerMerchantPortalGui\\Communication\\Plugin\\EventDispatcher\\SecurityBlockerMerchantPortalUserEventDispatcherPlugin"
+        }
+    ],
+    "glossary-key": {
+        "new": {
+            "security_blocker_merchant_portal_gui.error.account_blocked": {
+                "en_US": "Too many log in attempts from your address. Please wait %minutes% minutes before trying again.",
+                "de_DE": "Warten Sie bitte %minutes% Minuten, bevor Sie es erneut versuchen."
+            }
+        }
+    }
+}

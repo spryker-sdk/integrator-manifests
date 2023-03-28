@@ -1,0 +1,22 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\SecurityBlockerStorefrontAgent\\SecurityBlockerStorefrontAgentConstants::AGENT_BLOCK_FOR_SECONDS",
+            "value": 360
+        },
+        {
+            "target": "\\Spryker\\Shared\\SecurityBlockerStorefrontAgent\\SecurityBlockerStorefrontAgentConstants::AGENT_BLOCKING_TTL",
+            "value": 900
+        },
+        {
+            "target": "\\Spryker\\Shared\\SecurityBlockerStorefrontAgent\\SecurityBlockerStorefrontAgentConstants::AGENT_BLOCKING_NUMBER_OF_ATTEMPTS",
+            "value": 9
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\SecurityBlocker\\SecurityBlockerDependencyProvider::getSecurityBlockerConfigurationSettingsExpanderPlugins",
+            "source": "\\Spryker\\Client\\SecurityBlockerStorefrontAgent\\Plugin\\SecurityBlocker\\AgentSecurityBlockerConfigurationSettingsExpanderPlugin"
+        }
+    ]
+}

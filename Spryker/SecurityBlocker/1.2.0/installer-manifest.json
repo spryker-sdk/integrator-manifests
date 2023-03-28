@@ -1,0 +1,8 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\SecurityBlocker\\SecurityBlockerConstants::SECURITY_BLOCKER_AGENT_BLOCKING_TTL",
+            "value": 900
+        }
+    ]
+}
