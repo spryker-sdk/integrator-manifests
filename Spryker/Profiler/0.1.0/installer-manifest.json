@@ -1,0 +1,20 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
+            "source": "\\Spryker\\Yves\\Profiler\\Plugin\\EventDispatcher\\ProfilerRequestEventDispatcherPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\WebProfilerWidget\\WebProfilerWidgetDependencyProvider::getDataCollectorPlugins",
+            "source": "\\Spryker\\Yves\\Profiler\\Plugin\\WebProfiler\\WebProfilerProfilerDataCollectorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Profiler\\Communication\\Plugin\\EventDispatcher\\ProfilerRequestEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\WebProfiler\\WebProfilerDependencyProvider::getDataCollectorPlugins",
+            "source": "\\Spryker\\Zed\\Profiler\\Communication\\Plugin\\WebProfiler\\WebProfilerProfilerDataCollectorPlugin"
+        }
+    ]
+}
