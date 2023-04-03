@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
+            "source": "\\Spryker\\Zed\\LocaleDataImport\\Communication\\Plugin\\DataImport\\LocaleStoreDataImportPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
+            "source": "\\Spryker\\Zed\\LocaleDataImport\\Communication\\Plugin\\DataImport\\DefaultLocaleStoreDataImportPlugin"
+        }
+    ]
+}

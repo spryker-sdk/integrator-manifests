@@ -1,0 +1,23 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\ZedRequest\\ZedRequestDependencyProvider::getMetaDataProviderPlugins",
+            "source": "\\Spryker\\Client\\Store\\Plugin\\ZedRequest\\StoreMetaDataProviderPlugin",
+            "index": "store"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackofficeApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Store\\Communication\\Plugin\\Application\\BackofficeStoreApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackendGatewayApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Store\\Communication\\Plugin\\Application\\StoreBackendGatewayApplicationPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\ShopApplication\\ShopApplicationDependencyProvider::getApplicationPlugins",
+            "source": "\\Spryker\\Yves\\Store\\Plugin\\Application\\StoreApplicationPlugin"
+        }
+    ]
+}

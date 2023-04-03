@@ -1,0 +1,8 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getControllerBeforeActionPlugins",
+            "source": "\\Spryker\\Glue\\GlueApplication\\Plugin\\Rest\\SetStoreCurrentLocaleBeforeActionPlugin"
+        }
+    ]
+}

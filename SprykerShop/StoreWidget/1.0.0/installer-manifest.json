@@ -1,0 +1,20 @@
+{
+    "glossary-key": {
+        "new": {
+            "store_widget.switcher.store": {
+                "en_US": "Store:",
+                "de_DE": "Shop:"
+            }
+        }
+    },
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\ShopApplication\\ShopApplicationDependencyProvider::getApplicationPlugins",
+            "source": "\\SprykerShop\\Yves\\StoreWidget\\Plugin\\ShopApplication\\StoreApplicationPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\ShopApplication\\ShopApplicationDependencyProvider::getGlobalWidgets",
+            "source": "\\SprykerShop\\Yves\\StoreWidget\\Widget\\StoreSwitcherWidget"
+        }
+    ]
+}

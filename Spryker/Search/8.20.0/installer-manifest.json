@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Store\\StoreDependencyProvider::getStorePostCreatePlugins",
+            "source": "\\Spryker\\Zed\\Search\\Communication\\Plugin\\Store\\SearchSetupSourcesStorePostCreatePlugin"
+        }
+    ]
+}

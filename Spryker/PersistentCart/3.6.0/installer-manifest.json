@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Quote\\QuoteDependencyProvider::getDatabaseStrategyReaderPlugins",
+            "source": "\\Spryker\\Client\\PersistentCart\\Plugin\\Quote\\QuoteSyncDatabaseStrategyReaderPlugin"
+        }
+    ]
+}

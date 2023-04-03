@@ -1,0 +1,70 @@
+{
+    "add-config-array-element": [
+        {
+            "target": "\\Spryker\\Client\\RabbitMq\\RabbitMqConfig::getSynchronizationQueueConfiguration",
+            "value": "\\Spryker\\Shared\\StoreStorage\\StoreStorageConfig::STORE_SYNC_STORAGE_QUEUE"
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Store\\StoreDependencyProvider::getStoreExpanderPlugins",
+            "source": "\\Spryker\\Client\\StoreStorage\\Plugin\\Store\\StoreStorageStoreExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherTriggerPlugins",
+            "source": "\\Spryker\\Zed\\StoreStorage\\Communication\\Plugin\\Publisher\\StorePublisherTriggerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getStoreStoragePlugins",
+            "source": "\\Spryker\\Zed\\StoreStorage\\Communication\\Plugin\\Publisher\\Store\\StoreWritePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getStoreStoragePlugins",
+            "source": "\\Spryker\\Zed\\StoreStorage\\Communication\\Plugin\\Publisher\\Store\\StoreSynchronizationTriggeringPublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getStoreStoragePlugins",
+            "source": "\\Spryker\\Zed\\StoreStorage\\Communication\\Plugin\\Publisher\\CurrencyStore\\CurrencyStoreWritePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getStoreStoragePlugins",
+            "source": "\\Spryker\\Zed\\StoreStorage\\Communication\\Plugin\\Publisher\\CountryStore\\CountryStoreWritePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getStoreStoragePlugins",
+            "source": "\\Spryker\\Zed\\StoreStorage\\Communication\\Plugin\\Publisher\\LocaleStore\\LocaleStoreWritePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin",
+            "index": "\\Spryker\\Shared\\StoreStorage\\StoreStorageConfig::STORE_SYNC_STORAGE_QUEUE"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Synchronization\\SynchronizationDependencyProvider::getSynchronizationDataPlugins",
+            "source": "\\Spryker\\Zed\\StoreStorage\\Communication\\Plugin\\Synchronization\\StoreSynchronizationDataPlugin"
+        }
+    ],
+    "configure-module": [
+        {
+            "previousValue": "",
+            "target": "\\Spryker\\Zed\\StoreStorage\\StoreStorageConfig::getStoreSynchronizationPoolName",
+            "value": "\\Pyz\\Zed\\Synchronization\\SynchronizationConfig::DEFAULT_SYNCHRONIZATION_POOL_NAME"
+        },
+        {
+            "previousValue": [],
+            "target": "\\Spryker\\Zed\\StoreStorage\\StoreStorageConfig::getStoreCreationResourcesToReSync",
+            "value": [
+                "\\Spryker\\Shared\\GlossaryStorage\\GlossaryStorageConfig::TRANSLATION_RESOURCE_NAME",
+                "\\Spryker\\Shared\\ProductReviewSearch\\ProductReviewSearchConfig::PRODUCT_REVIEW_RESOURCE_NAME",
+                "\\Spryker\\Shared\\NavigationStorage\\NavigationStorageConstants::RESOURCE_NAME",
+                "\\Spryker\\Shared\\ProductMeasurementUnitStorage\\ProductMeasurementUnitStorageConfig::PRODUCT_MEASUREMENT_UNIT_RESOURCE_NAME",
+                "\\Spryker\\Shared\\ProductPackagingUnitStorage\\ProductPackagingUnitStorageConfig::PRODUCT_PACKAGING_UNIT_RESOURCE_NAME",
+                "\\Spryker\\Shared\\CustomerAccessStorage\\CustomerAccessStorageConstants::CUSTOMER_ACCESS_RESOURCE_NAME",
+                "\\Spryker\\Shared\\CompanyUserStorage\\CompanyUserStorageConfig::COMPANY_USER_RESOURCE_NAME",
+                "\\Spryker\\Shared\\MerchantStorage\\MerchantStorageConfig::MERCHANT_RESOURCE_NAME",
+                "\\Spryker\\Shared\\SalesReturnSearch\\SalesReturnSearchConfig::RETURN_REASON_RESOURCE_NAME",
+                "\\Spryker\\Shared\\MerchantSearch\\MerchantSearchConfig::MERCHANT_RESOURCE_NAME"
+            ]
+        }
+    ]
+}

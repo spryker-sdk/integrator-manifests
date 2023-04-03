@@ -1,0 +1,24 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\StoreGui\\StoreGuiDependencyProvider::getStoreFormExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CurrencyGui\\Communication\\Plugin\\StoreGui\\CurrencyStoreFormExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\StoreGui\\StoreGuiDependencyProvider::getStoreFormViewExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CurrencyGui\\Communication\\Plugin\\StoreGui\\CurrencyStoreFormViewExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\StoreGui\\StoreGuiDependencyProvider::getStoreFormTabsExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CurrencyGui\\Communication\\Plugin\\StoreGui\\CurrencyStoreFormTabExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\StoreGui\\StoreGuiDependencyProvider::getStoreViewExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CurrencyGui\\Communication\\Plugin\\StoreGui\\AssignedCurrenciesStoreViewExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\StoreGui\\StoreGuiDependencyProvider::getStoreTableExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CurrencyGui\\Communication\\Plugin\\StoreGui\\CurrencyStoreTableExpanderPlugin"
+        }
+    ]
+}

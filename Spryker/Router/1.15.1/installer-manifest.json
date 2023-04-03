@@ -1,0 +1,12 @@
+{
+    "configure-module": [
+        {
+            "previousValue": "",
+            "target": "\\Spryker\\Yves\\Router\\RouterConfig::getAllowedLanguages",
+            "value": {
+                "value": "return (new Container())->getLocator()->locale()->client()->getAllowedLanguages()",
+                "is_literal": true
+            }
+        }
+    ]
+}

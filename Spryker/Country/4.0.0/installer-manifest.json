@@ -1,0 +1,20 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\AclMerchantPortal\\AclMerchantPortalDependencyProvider::getAclEntityConfigurationExpanderPlugins",
+            "source": "\\Spryker\\Zed\\Country\\Communication\\Plugin\\AclMerchantPortal\\CountryStoreAclEntityConfigurationExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Store\\StoreDependencyProvider::getStorePostCreatePlugins",
+            "source": "\\Spryker\\Zed\\Country\\Communication\\Plugin\\Store\\CountryStorePostCreatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Store\\StoreDependencyProvider::getStorePostUpdatePlugins",
+            "source": "\\Spryker\\Zed\\Country\\Communication\\Plugin\\Store\\CountryStorePostUpdatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Store\\StoreDependencyProvider::getStoreCollectionExpanderPlugins",
+            "source": "\\Spryker\\Zed\\Country\\Communication\\Plugin\\Store\\CountryStoreCollectionExpanderPlugin"
+        }
+    ]
+}

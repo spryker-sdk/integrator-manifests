@@ -1,0 +1,9 @@
+{
+    "configure-module": [
+        {
+            "previousValue": "",
+            "target": "\\Spryker\\Zed\\Customer\\CustomerConfig::getCustomerSequenceNumberPrefix",
+            "value": "customer"
+        }
+    ]
+}
