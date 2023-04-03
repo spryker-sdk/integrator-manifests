@@ -1,0 +1,32 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\AclMerchantPortal\\AclMerchantPortalDependencyProvider::getAclEntityConfigurationExpanderPlugins",
+            "source": "\\Spryker\\Zed\\Currency\\Communication\\Plugin\\AclMerchantPortal\\CurrencyStoreAclEntityConfigurationExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackendGatewayApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Currency\\Communication\\Plugin\\Application\\CurrencyBackendGatewayApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Store\\StoreDependencyProvider::getStorePreCreateValidationPlugins",
+            "source": "\\Spryker\\Zed\\Currency\\Communication\\Plugin\\Store\\DefaultCurrencyStorePreCreateValidationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Store\\StoreDependencyProvider::getStorePreUpdateValidationPlugins",
+            "source": "\\Spryker\\Zed\\Currency\\Communication\\Plugin\\Store\\DefaultCurrencyStorePreUpdateValidationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Store\\StoreDependencyProvider::getStorePostCreatePlugins",
+            "source": "\\Spryker\\Zed\\Currency\\Communication\\Plugin\\Store\\CurrencyStorePostCreatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Store\\StoreDependencyProvider::getStorePostUpdatePlugins",
+            "source": "\\Spryker\\Zed\\Currency\\Communication\\Plugin\\Store\\CurrencyStorePostUpdatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Store\\StoreDependencyProvider::getStoreCollectionExpanderPlugins",
+            "source": "\\Spryker\\Zed\\Currency\\Communication\\Plugin\\Store\\CurrencyStoreCollectionExpanderPlugin"
+        }
+    ]
+}

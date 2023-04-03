@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductCategoryFilterGui\\ProductCategoryFilterGuiDependencyProvider::getProductCategoryListActionViewDataExpanderPlugins",
+            "source": "\\Spryker\\Zed\\StoreGui\\Communication\\Plugin\\ProductCategoryFilterGui\\StoreProductCategoryListActionViewDataExpanderPlugin"
+        }
+    ]
+}

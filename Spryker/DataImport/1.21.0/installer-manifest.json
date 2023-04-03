@@ -1,0 +1,74 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Console\\ConsoleDependencyProvider::getConsoleCommands",
+            "source": "\\Spryker\\Zed\\DataImport\\Communication\\Console\\DataImportConsole",
+            "arguments": {
+                "constructor-arguments": [
+                    {
+                        "value": "\\Spryker\\Zed\\DataImport\\Communication\\Console\\DataImportConsole::DEFAULT_NAME . static::COMMAND_SEPARATOR . \\Spryker\\Zed\\CountryDataImport\\CountryDataImportConfig::IMPORT_TYPE_COUNTRY_STORE",
+                        "is_literal": true
+                    }
+                ]
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Console\\ConsoleDependencyProvider::getConsoleCommands",
+            "source": "\\Spryker\\Zed\\DataImport\\Communication\\Console\\DataImportConsole",
+            "arguments": {
+                "constructor-arguments": [
+                    {
+                        "value": "\\Spryker\\Zed\\DataImport\\Communication\\Console\\DataImportConsole::DEFAULT_NAME . static::COMMAND_SEPARATOR . \\Spryker\\Zed\\CurrencyDataImport\\CurrencyDataImportConfig::IMPORT_TYPE_CURRENCY_STORE",
+                        "is_literal": true
+                    }
+                ]
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Console\\ConsoleDependencyProvider::getConsoleCommands",
+            "source": "\\Spryker\\Zed\\DataImport\\Communication\\Console\\DataImportConsole",
+            "arguments": {
+                "constructor-arguments": [
+                    {
+                        "value": "\\Spryker\\Zed\\DataImport\\Communication\\Console\\DataImportConsole::DEFAULT_NAME . static::COMMAND_SEPARATOR . \\Spryker\\Zed\\LocaleDataImport\\LocaleDataImportConfig::IMPORT_TYPE_LOCALE_STORE",
+                        "is_literal": true
+                    }
+                ]
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Console\\ConsoleDependencyProvider::getConsoleCommands",
+            "source": "\\Spryker\\Zed\\DataImport\\Communication\\Console\\DataImportConsole",
+            "arguments": {
+                "constructor-arguments": [
+                    {
+                        "value": "\\Spryker\\Zed\\DataImport\\Communication\\Console\\DataImportConsole::DEFAULT_NAME . static::COMMAND_SEPARATOR . \\Spryker\\Zed\\LocaleDataImport\\LocaleDataImportConfig::IMPORT_TYPE_DEFAULT_LOCALE_STORE",
+                        "is_literal": true
+                    }
+                ]
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Console\\ConsoleDependencyProvider::getConsoleCommands",
+            "source": "\\Spryker\\Zed\\DataImport\\Communication\\Console\\DataImportConsole",
+            "arguments": {
+                "constructor-arguments": [
+                    {
+                        "value": "\\Spryker\\Zed\\DataImport\\Communication\\Console\\DataImportConsole::DEFAULT_NAME . static::COMMAND_SEPARATOR . \\Spryker\\Zed\\StoreDataImport\\StoreDataImportConfig::IMPORT_TYPE_STORE",
+                        "is_literal": true
+                    }
+                ]
+            }
+        }
+    ],
+    "configure-module": [
+        {
+            "previousValue": "return APPLICATION_ROOT_DIR . DIRECTORY_SEPARATOR . 'data/import/local/full_EU.yml'",
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportConfig::getDefaultYamlConfigPath",
+            "value": {
+                "value": "$regionDir = defined('APPLICATION_REGION') ? APPLICATION_REGION : 'EU'; return APPLICATION_ROOT_DIR . DIRECTORY_SEPARATOR . 'data/import/local/full_' . $regionDir . '.yml'",
+                "is_literal": true
+            }
+        }
+    ]
+}

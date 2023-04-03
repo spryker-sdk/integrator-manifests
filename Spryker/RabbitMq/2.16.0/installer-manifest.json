@@ -1,0 +1,9 @@
+{
+    "configure-module": [
+        {
+            "previousValue": "",
+            "target": "\\Spryker\\Client\\RabbitMq\\RabbitMqConfig::getDefaultLocaleCode",
+            "value": "en_US"
+        }
+    ]
+}

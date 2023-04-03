@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\GlueStorefrontApiApplicationDependencyProvider::getApplicationPlugins",
+            "source": "\\Spryker\\Glue\\Http\\Plugin\\Application\\HttpApplicationPlugin"
+        }
+    ]
+}

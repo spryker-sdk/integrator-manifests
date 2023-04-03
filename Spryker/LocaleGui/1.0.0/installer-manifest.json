@@ -1,0 +1,28 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\StoreGui\\StoreGuiDependencyProvider::getStoreFormExpanderPlugins",
+            "source": "\\Spryker\\Zed\\LocaleGui\\Communication\\Plugin\\StoreGui\\LocaleStoreFormExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\StoreGui\\StoreGuiDependencyProvider::getStoreFormViewExpanderPlugins",
+            "source": "\\Spryker\\Zed\\LocaleGui\\Communication\\Plugin\\StoreGui\\LocaleStoreFormViewExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\StoreGui\\StoreGuiDependencyProvider::getStoreFormTabsExpanderPlugins",
+            "source": "\\Spryker\\Zed\\LocaleGui\\Communication\\Plugin\\StoreGui\\LocaleStoreFormTabExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\StoreGui\\StoreGuiDependencyProvider::getStoreViewExpanderPlugins",
+            "source": "\\Spryker\\Zed\\LocaleGui\\Communication\\Plugin\\StoreGui\\DefaultLocaleStoreViewExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\StoreGui\\StoreGuiDependencyProvider::getStoreViewExpanderPlugins",
+            "source": "\\Spryker\\Zed\\LocaleGui\\Communication\\Plugin\\StoreGui\\AssignedLocalesStoreViewExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\StoreGui\\StoreGuiDependencyProvider::getStoreTableExpanderPlugins",
+            "source": "\\Spryker\\Zed\\LocaleGui\\Communication\\Plugin\\StoreGui\\LocaleStoreTableExpanderPlugin"
+        }
+    ]
+}

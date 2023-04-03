@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getApplicationPlugins",
+            "source": "\\Spryker\\Glue\\StoresRestApi\\Plugin\\Application\\StoreHttpHeaderApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getApplicationPlugins",
+            "source": "\\Spryker\\Glue\\StoresRestApi\\Plugin\\Application\\StoreHttpHeaderApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\GlueStorefrontApiApplicationDependencyProvider::getApplicationPlugins",
+            "source": "\\Spryker\\Glue\\StoresRestApi\\Plugin\\Application\\StoreHttpHeaderApplicationPlugin"
+        }
+    ]
+}

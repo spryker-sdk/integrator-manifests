@@ -1,0 +1,24 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\StoreGui\\StoreGuiDependencyProvider::getStoreFormExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CountryGui\\Communication\\Plugin\\StoreGui\\CountryStoreFormExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\StoreGui\\StoreGuiDependencyProvider::getStoreFormViewExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CountryGui\\Communication\\Plugin\\StoreGui\\CountryStoreFormViewExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\StoreGui\\StoreGuiDependencyProvider::getStoreFormTabsExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CountryGui\\Communication\\Plugin\\StoreGui\\CountryStoreFormTabExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\StoreGui\\StoreGuiDependencyProvider::getStoreViewExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CountryGui\\Communication\\Plugin\\StoreGui\\AssignedCountriesStoreViewExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\StoreGui\\StoreGuiDependencyProvider::getStoreTableExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CountryGui\\Communication\\Plugin\\StoreGui\\CountryStoreTableExpanderPlugin"
+        }
+    ]
+}

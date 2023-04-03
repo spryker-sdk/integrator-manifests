@@ -1,0 +1,11 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\AvailabilityNotification\\AvailabilityNotificationConstants::REGION_TO_YVES_HOST_MAPPING",
+            "value": {
+                "EU": "getenv('SPRYKER_YVES_HOST_EU')",
+                "US": "getenv('SPRYKER_YVES_HOST_US')"
+            }
+        }
+    ]
+}

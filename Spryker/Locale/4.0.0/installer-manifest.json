@@ -1,0 +1,57 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\ZedRequest\\ZedRequestDependencyProvider::getMetaDataProviderPlugins",
+            "source": "\\Spryker\\Client\\Locale\\Plugin\\ZedRequest\\LocaleMetaDataProviderPlugin",
+            "index": "locale"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getApplicationPlugins",
+            "source": "\\Spryker\\Glue\\Locale\\Plugin\\Application\\LocaleApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\GlueStorefrontApiApplicationDependencyProvider::getApplicationPlugins",
+            "source": "\\Spryker\\Glue\\Locale\\Plugin\\Application\\LocaleApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\AclMerchantPortal\\AclMerchantPortalDependencyProvider::getAclEntityConfigurationExpanderPlugins",
+            "source": "\\Spryker\\Zed\\Locale\\Communication\\Plugin\\AclMerchantPortal\\LocaleStoreAclEntityConfigurationExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackendGatewayApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Locale\\Communication\\Plugin\\Application\\LocaleBackendGatewayApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Console\\ConsoleDependencyProvider::getApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Locale\\Communication\\Plugin\\Application\\ConsoleLocaleApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Store\\StoreDependencyProvider::getStorePreCreateValidationPlugins",
+            "source": "\\Spryker\\Zed\\Locale\\Communication\\Plugin\\Store\\DefaultLocaleStorePreCreateValidationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Store\\StoreDependencyProvider::getStorePreUpdateValidationPlugins",
+            "source": "\\Spryker\\Zed\\Locale\\Communication\\Plugin\\Store\\DefaultLocaleStorePreUpdateValidationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Store\\StoreDependencyProvider::getStorePostCreatePlugins",
+            "source": "\\Spryker\\Zed\\Locale\\Communication\\Plugin\\Store\\DefaultLocaleStorePostCreatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Store\\StoreDependencyProvider::getStorePostCreatePlugins",
+            "source": "\\Spryker\\Zed\\Locale\\Communication\\Plugin\\Store\\LocaleStorePostCreatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Store\\StoreDependencyProvider::getStorePostUpdatePlugins",
+            "source": "\\Spryker\\Zed\\Locale\\Communication\\Plugin\\Store\\DefaultLocaleStorePostUpdatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Store\\StoreDependencyProvider::getStorePostUpdatePlugins",
+            "source": "\\Spryker\\Zed\\Locale\\Communication\\Plugin\\Store\\LocaleStorePostUpdatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Store\\StoreDependencyProvider::getStoreCollectionExpanderPlugins",
+            "source": "\\Spryker\\Zed\\Locale\\Communication\\Plugin\\Store\\LocaleStoreCollectionExpanderPlugin"
+        }
+    ]
+}
