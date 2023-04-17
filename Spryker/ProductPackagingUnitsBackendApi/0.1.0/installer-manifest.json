@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\PickingListsBackendApi\\PickingListsBackendApiDependencyProvider::getApiPickingListItemsAttributesMapperPlugins",
+            "source": "\\Spryker\\Glue\\ProductPackagingUnitsBackendApi\\Plugin\\PickingListsBackendApi\\ProductPackagingUnitApiPickingListItemsAttributesMapperPlugin"
+        }
+    ]
+}

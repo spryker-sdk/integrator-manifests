@@ -1,0 +1,27 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\PickingList\\PickingListDependencyProvider::getPickingListPostCreatePlugins",
+            "source": "\\Spryker\\Zed\\PickingListPushNotification\\Communication\\Plugin\\PickingList\\PushNotificationPickingListPostCreatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\PickingList\\PickingListDependencyProvider::getPickingListPostUpdatePlugins",
+            "source": "\\Spryker\\Zed\\PickingListPushNotification\\Communication\\Plugin\\PickingList\\PushNotificationPickingListPostUpdatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\PushNotification\\PushNotificationDependencyProvider::getPushNotificationSubscriptionValidatorPlugins",
+            "source": "\\Spryker\\Zed\\PickingListPushNotification\\Communication\\Plugin\\PushNotification\\WarehouseUserPushNotificationSubscriptionValidatorPlugin"
+        }
+    ],
+    "configure-module": [
+        {
+            "previousValue": "",
+            "target": "\\Spryker\\Zed\\PickingListPushNotification\\PickingListPushNotificationConfig::getPushNotificationProviderName",
+            "value": "static::PUSH_NOTIFICATION_PROVIDER_NAME"
+        },
+        {
+            "target": "\\Spryker\\Zed\\PickingListPushNotification\\PickingListPushNotificationConfig::PUSH_NOTIFICATION_PROVIDER_NAME",
+            "value": "web-push-php"
+        }
+    ]
+}

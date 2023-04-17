@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\User\\UserDependencyProvider::getPostSavePlugins",
+            "source": "\\Spryker\\Zed\\PickingList\\Communication\\Plugin\\User\\UnassignPickingListUserPostSavePlugin"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\PickingList\\PickingListDependencyProvider::getPickingListCollectionExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductPackagingUnit\\Communication\\Plugin\\PickingList\\ProductPackagingUnitPickingListCollectionExpanderPlugin"
+        }
+    ]
+}
