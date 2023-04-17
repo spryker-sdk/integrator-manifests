@@ -1,0 +1,10 @@
+{
+    "wire-glue-relationship": [
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\GlueBackendApiApplicationGlueJsonApiConventionConnectorDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\PickingListsBackendApi\\PickingListsBackendApiConfig::RESOURCE_PICKING_LISTS": "\\Spryker\\Glue\\PickingListsWarehousesBackendResourceRelationship\\Plugin\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\WarehousesByPickingListsBackendResourceRelationshipPlugin"
+            }
+        }
+    ]
+}
