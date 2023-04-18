@@ -1,0 +1,34 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
+            "source": "\\Spryker\\Glue\\Http\\Plugin\\EventDispatcher\\CacheControlHeaderEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
+            "source": "\\Spryker\\Yves\\Http\\Plugin\\EventDispatcher\\CacheControlHeaderEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
+            "source": "\\Spryker\\Yves\\Http\\Plugin\\EventDispatcher\\EnvironmentInfoHeaderEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Http\\Communication\\Plugin\\EventDispatcher\\CacheControlHeaderEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Http\\Communication\\Plugin\\EventDispatcher\\EnvironmentInfoHeaderEventDispatcherPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
+            "source": "\\Spryker\\Yves\\Http\\Plugin\\EventDispatcher\\HeaderEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Http\\Communication\\Plugin\\EventDispatcher\\HeaderEventDispatcherPlugin"
+        }
+    ]
+}

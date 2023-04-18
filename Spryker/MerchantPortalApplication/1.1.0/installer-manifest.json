@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getMerchantPortalEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\MerchantPortalApplication\\Communication\\Plugin\\EventDispatcher\\HeadersSecurityEventDispatcherPlugin"
+        }
+    ]
+}
