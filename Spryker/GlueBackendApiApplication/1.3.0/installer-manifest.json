@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getResponseFormatterPlugins",
+            "source": "\\Spryker\\Glue\\GlueBackendApiApplication\\Plugin\\GlueApplication\\StrictTransportSecurityHeaderResponseFormatterPlugin"
+        }
+    ]
+}
