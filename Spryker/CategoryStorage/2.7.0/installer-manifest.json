@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\ProductCategoryStorage\\ProductCategoryStorageDependencyProvider::getProductAbstractCategoryStorageCollectionExpanderPlugins",
+            "source": "\\Spryker\\Client\\CategoryStorage\\Plugin\\ProductCategoryStorage\\ParentCategoryIdsProductAbstractCategoryStorageCollectionExpanderPlugin"
+        }
+    ]
+}
