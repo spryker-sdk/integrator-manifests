@@ -1,0 +1,10 @@
+{
+    "glossary-key": {
+        "new": {
+            "service_point.validation.wrong_request_body": {
+                "en_US": "Wrong request body.",
+                "de_DE": "Falscher Anforderungstext."
+            }
+        }
+    }
+}
