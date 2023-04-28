@@ -1,0 +1,10 @@
+{
+    "glossary-key": {
+        "new": {
+            "company_page.validation.error.company_user.unauthorized_request": {
+                "en_US": "Unauthorized request.",
+                "de_DE": "Unerlaubte Anfrage."
+            }
+        }
+    }
+}
