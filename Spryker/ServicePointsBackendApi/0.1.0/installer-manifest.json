@@ -1,0 +1,62 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getResourcePlugins",
+            "source": "\\Spryker\\Glue\\ServicePointsBackendApi\\Plugin\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\ServicePointsBackendResourcePlugin"
+        }
+    ],
+    "configure-module": [
+        {
+            "previousValue": {
+                "/categories": {
+                    "isRegularExpression": false
+                },
+                "#^/categories/.*#": {
+                    "isRegularExpression": true
+                },
+                "/\\/product-attributes.*/": {
+                    "isRegularExpression": true,
+                    "methods": [
+                        "get",
+                        "getCollection",
+                        "post",
+                        "patch"
+                    ]
+                },
+                "/\\/product-abstract.*/": {
+                    "isRegularExpression": true,
+                    "methods": [
+                        "get",
+                        "getCollection",
+                        "post",
+                        "patch"
+                    ]
+                },
+                "/\\/warehouse-user-assignments(?:\\/[^\\/]+)?\\/?$/": {
+                    "isRegularExpression": true
+                },
+                "/push-notification-subscriptions/": {
+                    "isRegularExpression": false
+                },
+                "/warehouse-tokens": {
+                    "isRegularExpression": false,
+                    "methods": [
+                        "post"
+                    ]
+                },
+                "/\\/picking-lists.*/": {
+                    "isRegularExpression": true,
+                    "methods": [
+                        "patch"
+                    ]
+                }
+            },
+            "target": "\\Spryker\\Shared\\GlueBackendApiApplicationAuthorizationConnector\\GlueBackendApiApplicationAuthorizationConnectorConfig::getProtectedPaths",
+            "value": {
+                "/\\/service-points(?:\\/[^\\/]+)?\\/?$/": {
+                    "isRegularExpression": true
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "glossary-key": {
+        "new": {
+            "service_point.validation.service_point_key_exists": {
+                "en_US": "A service point with the same key already exists.",
+                "de_DE": "Es existiert bereits eine Servicestelle mit dem gleichen Schlüssel."
+            },
+            "service_point.validation.service_point_key_is_not_unique": {
+                "en_US": "A service point with the same key already exists in request.",
+                "de_DE": "Es existiert bereits eine Servicestelle mit dem gleichen Schlüssel in einer Abfrage."
+            },
+            "service_point.validation.service_point_key_wrong_length": {
+                "en_US": "A service point key must have length from %min% to %max% characters.",
+                "de_DE": "Ein Servicestellen-Schlüssel muss eine Länge von %min% bis %max% Zeichen haben."
+            },
+            "service_point.validation.service_point_name_wrong_length": {
+                "en_US": "A service point name must have length from %min% to %max% characters.",
+                "de_DE": "Ein Servicestellen-Name muss eine Länge von %min% bis %max% Zeichen haben."
+            },
+            "service_point.validation.store_does_not_exist": {
+                "en_US": "Store with name '%name%' does not exist.",
+                "de_DE": "Store mit dem Namen '%name%' existiert nicht."
+            },
+            "service_point.validation.service_point_entity_not_found": {
+                "en_US": "Service point entity was not found.",
+                "de_DE": "Servicestelle wurde nicht gefunden."
+            }
+        }
+    }
+}
