@@ -1,0 +1,46 @@
+{
+    "glossary-key": {
+        "new": {
+            "service_point.validation.country_entity_not_found": {
+                "en_US": "Country with iso2 code '%iso2Code%' does not exist.",
+                "de_DE": "Das Land mit dem iso2-Code '%iso2Code%' existiert nicht."
+            },
+            "service_point.validation.region_entity_not_found": {
+                "en_US": "Region with uuid '%uuid%' does not exist for country with iso2 code '%countryIso2Code%'.",
+                "de_DE": "Region mit uuid '%uuid%' existiert nicht für Land mit iso2-Code '%countryIso2Code%'"
+            },
+            "service_point.validation.service_point_address_address1_wrong_length": {
+                "en_US": "Service Point Address Input address1 must have a length of %min% to %max% characters.",
+                "de_DE": "Service Point Adresse Input address1 muss eine Länge von %min% bis %max% Zeichen haben."
+            },
+            "service_point.validation.service_point_address_address2_wrong_length": {
+                "en_US": "Service Point Address Input address2 must have a length of %min% to %max% characters.",
+                "de_DE": "Service Point Adresse Input address2 muss eine Länge von %min% bis %max% Zeichen haben."
+            },
+            "service_point.validation.service_point_address_address3_wrong_length": {
+                "en_US": "Service Point Address Input address3 must have a length of %min% to %max% characters.",
+                "de_DE": "Service Point Adresse Input address3 muss eine Länge von %min% bis %max% Zeichen haben."
+            },
+            "service_point.validation.service_point_address_city_wrong_length": {
+                "en_US": "A service point address city must have length from %min% to %max% characters.",
+                "de_DE": "Eine Service Point Adresse Stadt muss eine Länge von %min% bis %max% Zeichen haben."
+            },
+            "service_point.validation.service_point_address_entity_not_found": {
+                "en_US": "Service point address entity was not found.",
+                "de_DE": "Die Entität Service Point Adresse wurde nicht gefunden."
+            },
+            "service_point.validation.service_point_address_zip_code_wrong_length": {
+                "en_US": "A service point address zip code must have length from %min% to %max% characters.",
+                "de_DE": "Die Postleitzahl einer Service Point Adresse muss eine Länge von %min% bis %max% Zeichen haben."
+            },
+            "service_point.validation.service_point_address_already_exists": {
+                "en_US": "A service point address for the service point already exists.",
+                "de_DE": "Es existiert bereits eine Service Point Adresse für den Service Point."
+            },
+            "service_point.validation.service_point_uuid_is_not_unique": {
+                "en_US": "A service point with the same uuid already exists in request.",
+                "de_DE": "Ein Service Point mit der gleichen uuid existiert bereits in der Anfrage."
+            }
+        }
+    }
+}
