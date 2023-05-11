@@ -1,0 +1,59 @@
+{
+    "add-config-array-element": [
+        {
+            "target": "\\Spryker\\Client\\RabbitMq\\RabbitMqConfig::getSynchronizationQueueConfiguration",
+            "value": "\\Spryker\\Shared\\ServicePointStorage\\ServicePointStorageConfig::QUEUE_NAME_SYNC_STORAGE_SERVICE_POINT"
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherTriggerPlugins",
+            "source": "\\Spryker\\Zed\\ServicePointStorage\\Communication\\Plugin\\Publisher\\ServicePointPublisherTriggerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getServicePointStoragePlugins",
+            "source": "\\Spryker\\Zed\\ServicePointStorage\\Communication\\Plugin\\Publisher\\ServicePoint\\ServicePointWritePublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getServicePointSearchPlugins"
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getServicePointStoragePlugins",
+            "source": "\\Spryker\\Zed\\ServicePointStorage\\Communication\\Plugin\\Publisher\\ServicePointAddress\\ServicePointAddressWritePublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getServicePointSearchPlugins"
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getServicePointStoragePlugins",
+            "source": "\\Spryker\\Zed\\ServicePointStorage\\Communication\\Plugin\\Publisher\\ServicePointStore\\ServicePointStoreWritePublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getServicePointSearchPlugins"
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin",
+            "index": "\\Spryker\\Shared\\ServicePointStorage\\ServicePointStorageConfig::QUEUE_NAME_SYNC_STORAGE_SERVICE_POINT"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Synchronization\\SynchronizationDependencyProvider::getSynchronizationDataPlugins",
+            "source": "\\Spryker\\Zed\\ServicePointStorage\\Communication\\Plugin\\Synchronization\\ServicePointSynchronizationDataBulkRepositoryPlugin"
+        }
+    ],
+    "configure-module": [
+        {
+            "previousValue": "",
+            "target": "\\Spryker\\Zed\\ServicePointStorage\\ServicePointStorageConfig::getServicePointStorageSynchronizationPoolName",
+            "value": "\\Pyz\\Zed\\Synchronization\\SynchronizationConfig::DEFAULT_SYNCHRONIZATION_POOL_NAME"
+        },
+        {
+            "previousValue": "",
+            "target": "\\Spryker\\Zed\\ServicePointStorage\\ServicePointStorageConfig::getEventQueueName",
+            "value": "\\Spryker\\Shared\\Publisher\\PublisherConfig::PUBLISH_QUEUE"
+        }
+    ]
+}
