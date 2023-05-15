@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferAvailabilityStoragePlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferAvailabilityStorage\\Communication\\Plugin\\Publisher\\ProductOfferAvailability\\ProductOfferAvailabilityProductOfferStoreStoragePublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getServicePointStoragePlugins"
+            }
+        }
+    ]
+}
