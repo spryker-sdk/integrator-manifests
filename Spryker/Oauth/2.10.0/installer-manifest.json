@@ -1,0 +1,11 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\Oauth\\OauthConstants::OAUTH_CLIENT_CONFIGURATION",
+            "value": {
+                "value": "json_decode(getenv('SPRYKER_OAUTH_CLIENT_CONFIGURATION'), true) ?: []",
+                "is_literal": true
+            }
+        }
+    ]
+}
