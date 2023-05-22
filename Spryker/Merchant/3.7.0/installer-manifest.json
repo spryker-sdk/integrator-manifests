@@ -1,0 +1,32 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Merchant\\Communication\\Plugin\\MessageBroker\\MerchantExportMerchantsMessageHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getMerchantExportPlugins",
+            "source": "\\Spryker\\Zed\\Merchant\\Communication\\Plugin\\Publisher\\MerchantExportedMessageBrokerPublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferAvailabilityStoragePlugins"
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getMerchantExportPlugins",
+            "source": "\\Spryker\\Zed\\Merchant\\Communication\\Plugin\\Publisher\\MerchantCreatedMessageBrokerPublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferAvailabilityStoragePlugins"
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getMerchantExportPlugins",
+            "source": "\\Spryker\\Zed\\Merchant\\Communication\\Plugin\\Publisher\\MerchantUpdatedMessageBrokerPublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferAvailabilityStoragePlugins"
+            }
+        }
+    ]
+}
