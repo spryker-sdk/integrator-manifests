@@ -1,0 +1,18 @@
+{
+    "wire-glue-relationship": [
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\GlueBackendApiApplicationGlueJsonApiConventionConnectorDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\PickingListsBackendApi\\PickingListsBackendApiConfig::RESOURCE_PICKING_LISTS": "\\Spryker\\Glue\\PickingListsBackendApi\\Plugin\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\PickingListItemsByPickingListsBackendResourceRelationshipPlugin"
+            }
+        }
+    ],
+    "unwire-glue-relationship": [
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\GlueBackendApiApplicationGlueJsonApiConventionConnectorDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\PickingListsBackendApi\\PickingListsBackendApiConfig::RESOURCE_PICKING_LISTS": "\\Spryker\\Glue\\PickingListsBackendApi\\Plugin\\GlueJsonApiConvention\\PickingListItemsByPickingListsBackendResourceRelationshipPlugin"
+            }
+        }
+    ]
+}
