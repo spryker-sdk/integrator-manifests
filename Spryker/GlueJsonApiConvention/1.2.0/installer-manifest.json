@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueJsonApiConvention\\GlueJsonApiConventionDependencyProvider::getRequestValidatorPlugins",
+            "source": "\\Spryker\\Glue\\GlueJsonApiConvention\\Plugin\\GlueApplication\\FilterRequestValidatorPlugin"
+        }
+    ]
+}
