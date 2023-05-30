@@ -1,0 +1,32 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getResourcePlugins",
+            "source": "\\Spryker\\Glue\\ServicePointsBackendApi\\Plugin\\GlueBackendApiApplication\\ServiceTypesBackendResourcePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getResourcePlugins",
+            "source": "\\Spryker\\Glue\\ServicePointsBackendApi\\Plugin\\GlueBackendApiApplication\\ServicesBackendResourcePlugin"
+        }
+    ],
+    "wire-glue-relationship": [
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\GlueBackendApiApplicationGlueJsonApiConventionConnectorDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\ServicePointsBackendApi\\ServicePointsBackendApiConfig::RESOURCE_SERVICE_POINTS": "\\Spryker\\Glue\\ServicePointsBackendApi\\Plugin\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\ServicesByServicePointsBackendResourceRelationshipPlugin"
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\GlueBackendApiApplicationGlueJsonApiConventionConnectorDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\ServicePointsBackendApi\\ServicePointsBackendApiConfig::RESOURCE_SERVICES": "\\Spryker\\Glue\\ServicePointsBackendApi\\Plugin\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\ServicePointsByServicesBackendResourceRelationshipPlugin"
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\GlueBackendApiApplicationGlueJsonApiConventionConnectorDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\ServicePointsBackendApi\\ServicePointsBackendApiConfig::RESOURCE_SERVICES": "\\Spryker\\Glue\\ServicePointsBackendApi\\Plugin\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\ServiceTypesByServicesBackendResourceRelationshipPlugin"
+            }
+        }
+    ]
+}

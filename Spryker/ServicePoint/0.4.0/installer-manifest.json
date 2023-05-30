@@ -1,0 +1,34 @@
+{
+    "glossary-key": {
+        "new": {
+            "service_point.validation.service_key_wrong_length": {
+                "en_US": "A service key must have length from %min% to %max% characters.",
+                "de_DE": "Ein Service-Schlüssel muss eine Länge von %min% bis %max% Zeichen haben."
+            },
+            "service_point.validation.service_key_is_not_unique": {
+                "en_US": "A service with the same key already exists in request.",
+                "de_DE": "Ein Service mit demselben Schlüssel existiert bereits in der Anfrage."
+            },
+            "service_point.validation.service_type_relation_already_exists": {
+                "en_US": "A service with defined relation of service point and service type already exists.",
+                "de_DE": "Ein Service mit einer definierten Beziehung von Servicepunkt und Service-Typ existiert bereits."
+            },
+            "service_point.validation.service_type_relation_is_not_unique": {
+                "en_US": "A service with defined relation of service pint and service type already exists in request.",
+                "de_DE": "Ein Service mit definierter Beziehung von Servicepunkt und Service-Typ existiert bereits in der Anfrage."
+            },
+            "service_point.validation.service_entity_not_found": {
+                "en_US": "The service entity was not found.",
+                "de_DE": "Die Service-Entität wurde nicht gefunden."
+            },
+            "service_point.validation.service_key_immutability": {
+                "en_US": "The service key is immutable.",
+                "de_DE": "Der Service-Schlüssel ist unveränderlich."
+            },
+            "service_point.validation.service_key_exists": {
+                "en_US": "A service with the same key already exists.",
+                "de_DE": "Ein Service mit demselben Schlüssel existiert bereits."
+            }
+        }
+    }
+}
