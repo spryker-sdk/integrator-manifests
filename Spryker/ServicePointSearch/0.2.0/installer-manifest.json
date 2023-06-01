@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\ServicePointSearch\\ServicePointSearchDependencyProvider::getServicePointSearchQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\ServicePointSearch\\Plugin\\Elasticsearch\\Query\\ServiceTypesServicePointSearchQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getServicePointSearchPlugins",
+            "source": "\\Spryker\\Zed\\ServicePointSearch\\Communication\\Plugin\\Publisher\\Service\\ServiceWritePublisherPlugin"
+        }
+    ]
+}
