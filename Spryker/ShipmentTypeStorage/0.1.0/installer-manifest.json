@@ -1,0 +1,46 @@
+{
+    "add-config-array-element": [
+        {
+            "target": "\\Spryker\\Client\\RabbitMq\\RabbitMqConfig::getSynchronizationQueueConfiguration",
+            "value": "\\Spryker\\Shared\\ShipmentTypeStorage\\ShipmentTypeStorageConfig::QUEUE_NAME_SYNC_STORAGE_SHIPMENT_TYPE"
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherTriggerPlugins",
+            "source": "\\Spryker\\Zed\\ShipmentTypeStorage\\Communication\\Plugin\\Publisher\\ShipmentTypePublisherTriggerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getShipmentTypeStoragePlugins",
+            "source": "\\Spryker\\Zed\\ShipmentTypeStorage\\Communication\\Plugin\\Publisher\\ShipmentType\\ShipmentTypeWriterPublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getMerchantExportPlugins"
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getShipmentTypeStoragePlugins",
+            "source": "\\Spryker\\Zed\\ShipmentTypeStorage\\Communication\\Plugin\\Publisher\\ShipmentTypeStore\\ShipmentTypeStoreWriterPublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getMerchantExportPlugins"
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin",
+            "index": "\\Spryker\\Shared\\ShipmentTypeStorage\\ShipmentTypeStorageConfig::QUEUE_NAME_SYNC_STORAGE_SHIPMENT_TYPE"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Synchronization\\SynchronizationDependencyProvider::getSynchronizationDataPlugins",
+            "source": "\\Spryker\\Zed\\ShipmentTypeStorage\\Communication\\Plugin\\Synchronization\\ShipmentTypeSynchronizationDataBulkRepositoryPlugin"
+        }
+    ],
+    "configure-module": [
+        {
+            "previousValue": "",
+            "target": "\\Spryker\\Zed\\ShipmentTypeStorage\\ShipmentTypeStorageConfig::getShipmentTypeStorageSynchronizationPoolName",
+            "value": "\\Pyz\\Zed\\Synchronization\\SynchronizationConfig::DEFAULT_SYNCHRONIZATION_POOL_NAME"
+        }
+    ]
+}
