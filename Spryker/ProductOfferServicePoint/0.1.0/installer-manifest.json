@@ -1,0 +1,38 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductOffer\\ProductOfferDependencyProvider::getProductOfferPostCreatePlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferServicePoint\\Communication\\Plugin\\ProductOffer\\ServiceProductOfferPostCreatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductOffer\\ProductOfferDependencyProvider::getProductOfferPostUpdatePlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferServicePoint\\Communication\\Plugin\\ProductOffer\\ServiceProductOfferPostUpdatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductOffer\\ProductOfferDependencyProvider::getProductOfferExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferServicePoint\\Communication\\Plugin\\ProductOffer\\ServiceProductOfferExpanderPlugin"
+        }
+    ],
+    "glossary-key": {
+        "new": {
+            "product_offer_service_point.validation.product_offer_reference_not_found": {
+                "en_US": "Product offer '%product_offer_reference%' not found.",
+                "de_DE": "Product offer '%product_offer_reference%' nicht gefunden."
+            },
+            "product_offer_service_point.validation.product_offer_has_multiple_service_points": {
+                "en_US": "Product offer '%product_offer_reference%' can have only one service point.",
+                "de_DE": "Das Product Offer '%product_offer_reference%' kann nur einen Service Point haben."
+            },
+            "product_offer_service_point.validation.service_uuid_not_found": {
+                "en_US": "Services with uuids '%service_uuids%' not found.",
+                "de_DE": "Services mit den uuids '%service_uuids%' wurde nicht gefunden."
+            },
+            "product_offer_service_point.validation.service_not_unique": {
+                "de_DE": "Ein Service für Product Offer '%product_offer_reference%' mit derselben UUID ist bereits in der Anfrage vorhanden."
+            },
+            "product_offer_service_point.validation.product_offer_not_unique": {
+                "de_DE": "Ein Product Offer mit der gleichen Referenz liegt bereits in der Anfrage vor."
+            }
+        }
+    }
+}
