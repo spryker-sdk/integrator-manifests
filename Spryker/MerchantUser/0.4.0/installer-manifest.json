@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Zed\\Merchant\\MerchantDependencyProvider::getMerchantPostUpdatePlugins",
-            "source": "\\Spryker\\Zed\\MerchantUser\\Communication\\Plugin\\Merchant\\SyncMerchantUsersStatusMerchantPostUpdatePlugin"
-        }
-    ]
-}

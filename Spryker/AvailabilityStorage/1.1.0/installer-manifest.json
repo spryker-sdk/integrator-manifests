@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Client\\ProductAlternativeStorage\\ProductAlternativeStorageDependencyProvider::getAlternativeProductApplicableCheckPlugins",
-            "source": "\\Spryker\\Client\\AvailabilityStorage\\Plugin\\ProductAlternativeStorage\\AvailabilityCheckAlternativeProductApplicablePlugin"
-        }
-    ]
-}

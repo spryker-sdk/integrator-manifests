@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createSuggestionQueryExpanderPlugins",
-            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\FuzzyQueryExpanderPlugin"
-        }
-    ]
-}

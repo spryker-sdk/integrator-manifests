@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Zed\\Category\\CategoryDependencyProvider::getCategoryStoreAssignerPlugin",
-            "source": "\\Spryker\\Zed\\Category\\Communication\\Plugin\\Category\\MainChildrenPropagationCategoryStoreAssignerPlugin"
-        }
-    ]
-}

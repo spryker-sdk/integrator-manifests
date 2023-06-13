@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Client\\PriceProductStorage\\PriceProductStorageDependencyProvider::getPriceProductFilterExpanderPlugins",
-            "source": "\\Spryker\\Client\\PriceProductOfferStorage\\Plugin\\PriceProductStorage\\PriceProductOfferStorageFilterExpanderPlugin"
-        }
-    ]
-}

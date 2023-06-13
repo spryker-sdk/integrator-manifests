@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Client\\CmsSlotBlock\\CmsSlotBlockDependencyProvider::getCmsSlotBlockVisibilityResolverPlugins",
-            "source": "\\Spryker\\Client\\CmsSlotBlockCmsConnector\\Plugin\\CmsSlotBlock\\CmsPageCmsSlotBlockConditionResolverPlugin"
-        }
-    ]
-}

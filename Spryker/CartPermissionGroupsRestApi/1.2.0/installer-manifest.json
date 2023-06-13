@@ -1,9 +1,0 @@
-{
-    "wire-glue-relationship": [
-        {
-            "source": {
-                "\\Spryker\\Glue\\SharedCartsRestApi\\SharedCartsRestApiConfig::RESOURCE_SHARED_CARTS": "\\Spryker\\Glue\\CartPermissionGroupsRestApi\\Plugin\\GlueApplication\\CartPermissionGroupByShareDetailResourceRelationshipPlugin"
-            }
-        }
-    ]
-}

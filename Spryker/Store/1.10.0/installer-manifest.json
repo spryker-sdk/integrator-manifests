@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\SprykerShop\\Yves\\ShopApplication\\ShopApplicationDependencyProvider::getApplicationPlugins",
-            "source": "\\Spryker\\Yves\\Store\\Plugin\\Application\\StoreApplicationPlugin"
-        }
-    ]
-}

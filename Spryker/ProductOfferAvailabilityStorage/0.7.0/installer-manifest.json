@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Client\\AvailabilityStorage\\AvailabilityStorageDependencyProvider::getAvailabilityStorageStrategyPlugins",
-            "source": "\\Spryker\\Client\\ProductOfferAvailabilityStorage\\Plugin\\AvailabilityStorage\\ProductOfferAvailabilityStorageStrategyPlugin"
-        }
-    ]
-}

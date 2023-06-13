@@ -1,9 +1,0 @@
-{
-    "wire-glue-relationship": [
-        {
-            "source": {
-                "\\Spryker\\Glue\\CmsPagesRestApi\\CmsPagesRestApiConfig::RESOURCE_CMS_PAGES": "\\Spryker\\Glue\\CmsPagesContentBannersResourceRelationship\\Plugin\\GlueApplication\\ContentBannerByCmsPageResourceRelationshipPlugin"
-            }
-        }
-    ]
-}

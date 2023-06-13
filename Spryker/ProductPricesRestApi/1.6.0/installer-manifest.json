@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Glue\\WishlistsRestApi\\WishlistsRestApiDependencyProvider::getRestWishlistItemsAttributesMapperPlugins",
-            "source": "\\Spryker\\Glue\\ProductPricesRestApi\\Plugin\\Wishlist\\ProductPriceRestWishlistItemsAttributesMapperPlugin"
-        }
-    ]
-}

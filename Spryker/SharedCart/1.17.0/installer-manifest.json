@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Zed\\Quote\\QuoteDependencyProvider::getQuoteUpdateBeforePlugins",
-            "source": "\\Spryker\\Zed\\SharedCart\\Communication\\Plugin\\Quote\\AddDefaultSharedQuoteChangedMessageQuoteUpdateBeforePlugin"
-        }
-    ]
-}

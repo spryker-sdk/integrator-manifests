@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Zed\\ProductAlternative\\ProductAlternativeDependencyProvider::getAlternativeProductApplicablePlugins",
-            "source": "\\Spryker\\Zed\\Availability\\Communication\\Plugin\\ProductAlternative\\AvailabilityCheckAlternativeProductApplicablePlugin"
-        }
-    ]
-}

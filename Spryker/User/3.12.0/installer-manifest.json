@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Zed\\Security\\SecurityDependencyProvider::getSecurityPlugins",
-            "source": "\\Spryker\\Zed\\User\\Communication\\Plugin\\Security\\UserSessionHandlerSecurityPlugin"
-        }
-    ]
-}

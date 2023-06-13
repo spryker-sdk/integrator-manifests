@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Zed\\ProductOption\\ProductOptionDependencyProvider::getProductOptionListActionViewDataExpanderPlugins",
-            "source": "\\Spryker\\Zed\\MerchantGui\\Communication\\Plugin\\ProductOptionGui\\MerchantProductOptionListActionViewDataExpanderPlugin"
-        }
-    ]
-}

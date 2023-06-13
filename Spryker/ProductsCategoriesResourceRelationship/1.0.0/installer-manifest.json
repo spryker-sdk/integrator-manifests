@@ -1,9 +1,0 @@
-{
-    "wire-glue-relationship": [
-        {
-            "source": {
-                "\\Spryker\\Glue\\ProductsRestApi\\ProductsRestApiConfig::RESOURCE_ABSTRACT_PRODUCTS": "\\Spryker\\Glue\\ProductsCategoriesResourceRelationship\\Plugin\\AbstractProductsCategoriesResourceRelationshipPlugin"
-            }
-        }
-    ]
-}
