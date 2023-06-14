@@ -1,9 +1,0 @@
-{
-    "wire-glue-relationship": [
-        {
-            "source": {
-                "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiConfig::RESOURCE_CARTS": "\\Spryker\\Glue\\CartsRestApi\\Plugin\\GlueApplication\\CartItemsByQuoteResourceRelationshipPlugin"
-            }
-        }
-    ]
-}

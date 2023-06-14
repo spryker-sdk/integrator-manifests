@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Yves\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
-            "source": "\\SprykerShop\\Yves\\ShopApplication\\Plugin\\EventDispatcher\\LastVisitCookieEventDispatcherPlugin"
-        }
-    ]
-}

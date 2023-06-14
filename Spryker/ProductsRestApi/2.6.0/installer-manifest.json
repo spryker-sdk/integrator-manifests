@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Glue\\UrlsRestApi\\UrlsRestApiDependencyProvider::getRestUrlResolverAttributesTransferProviderPlugins",
-            "source": "\\Spryker\\Glue\\ProductsRestApi\\Plugin\\UrlsRestApi\\ProductAbstractRestUrlResolverAttributesTransferProviderPlugin"
-        }
-    ]
-}

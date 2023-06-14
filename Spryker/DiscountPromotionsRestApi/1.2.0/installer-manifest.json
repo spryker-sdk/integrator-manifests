@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Glue\\CartCodesRestApi\\CartCodesRestApiDependencyProvider::getDiscountMapperPlugins",
-            "source": "\\Spryker\\Glue\\DiscountPromotionsRestApi\\Plugin\\CartCodesRestApi\\DiscountPromotionDiscountMapperPlugin"
-        }
-    ]
-}

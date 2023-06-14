@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\SprykerShop\\Yves\\CartPage\\CartPageDependencyProvider::getPreAddToCartPlugins",
-            "source": "\\SprykerShop\\Yves\\MerchantProductWidget\\Plugin\\CartPage\\MerchantProductPreAddToCartPlugin"
-        }
-    ]
-}

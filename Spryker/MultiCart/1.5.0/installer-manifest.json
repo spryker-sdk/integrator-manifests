@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Client\\PersistentCart\\PersistentCartDependencyProvider::getQuotePersistPlugin",
-            "source": "\\Spryker\\Client\\MultiCart\\Plugin\\PersistentCart\\MultiCartQuotePersistPlugin"
-        }
-    ]
-}

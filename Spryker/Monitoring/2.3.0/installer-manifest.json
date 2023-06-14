@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getBackendGatewayEventDispatcherPlugins",
-            "source": "\\Spryker\\Zed\\Monitoring\\Communication\\Plugin\\EventDispatcher\\GatewayMonitoringRequestTransactionEventDispatcherPlugin"
-        }
-    ]
-}
