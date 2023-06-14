@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\SprykerShop\\Yves\\WebProfilerWidget\\WebProfilerWidgetDependencyProvider::getDataCollectorPlugins",
-            "source": "\\Spryker\\Yves\\ZedRequest\\Plugin\\WebProfiler\\WebProfilerZedRequestDataCollectorPlugin"
-        }
-    ]
-}

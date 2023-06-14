@@ -1,9 +1,0 @@
-{
-    "wire-glue-relationship": [
-        {
-            "source": {
-                "\\Spryker\\Glue\\SalesReturnsRestApi\\SalesReturnsRestApiConfig::RESOURCE_RETURN_ITEMS": "\\Spryker\\Glue\\OrdersRestApi\\Plugin\\OrderItemByResourceIdResourceRelationshipPlugin"
-            }
-        }
-    ]
-}

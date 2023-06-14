@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Zed\\CompanyUser\\CompanyUserDependencyProvider::getCompanyUserHydrationPlugins",
-            "source": "\\Spryker\\Zed\\MerchantRelationship\\Communication\\Plugin\\CompanyUser\\MerchantRelationshipHydratePlugin"
-        }
-    ]
-}

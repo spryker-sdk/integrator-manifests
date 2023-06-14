@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Client\\CartCode\\CartCodeDependencyProvider::getCartCodePluginCollection",
-            "source": "\\Spryker\\Client\\Discount\\Plugin\\CartCode\\VoucherCartCodePlugin"
-        }
-    ]
-}

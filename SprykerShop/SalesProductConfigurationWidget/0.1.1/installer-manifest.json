@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\SprykerShop\\Yves\\CustomerReorderWidget\\CustomerReorderWidgetDependencyProvider::getReorderItemExpanderPlugins",
-            "source": "\\SprykerShop\\Yves\\SalesProductConfigurationWidget\\Plugin\\CustomerReorderWidget\\ProductConfigurationReorderItemExpanderPlugin"
-        }
-    ]
-}

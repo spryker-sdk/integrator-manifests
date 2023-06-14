@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Glue\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getCheckoutDataResponseMapperPlugins",
-            "source": "\\Spryker\\Glue\\ShipmentsRestApi\\Plugin\\CheckoutRestApi\\SelectedShipmentMethodCheckoutDataResponseMapperPlugin"
-        }
-    ]
-}

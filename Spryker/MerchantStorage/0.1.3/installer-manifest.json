@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getMerchantStoragePlugins",
-            "source": "\\Spryker\\Zed\\MerchantStorage\\Communication\\Plugin\\Publisher\\Merchant\\MerchantCategoryStoragePublisherPlugin"
-        }
-    ]
-}

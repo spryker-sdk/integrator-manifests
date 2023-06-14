@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Client\\CmsBlockStorage\\CmsBlockStorageDependencyProvider::getCmsBlockStorageReaderPlugins",
-            "source": "\\Spryker\\Client\\CmsBlockCategoryStorage\\Plugin\\CmsBlockStorage\\CmsBlockCategoryCmsBlockStorageReaderPlugin"
-        }
-    ]
-}

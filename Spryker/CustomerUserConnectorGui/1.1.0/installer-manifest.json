@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Zed\\User\\UserDependencyProvider::getUserTableActionExpanderPlugins",
-            "source": "\\Spryker\\Zed\\CustomerUserConnectorGui\\Communication\\Plugin\\UserTableActionExpanderPlugin"
-        }
-    ]
-}

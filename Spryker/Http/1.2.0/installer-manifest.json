@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Yves\\Form\\FormDependencyProvider::getFormPlugins",
-            "source": "\\Spryker\\Yves\\Http\\Plugin\\Form\\HttpFoundationTypeExtensionFormPlugin"
-        }
-    ]
-}

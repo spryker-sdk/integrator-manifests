@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Client\\PriceProductStorage\\PriceProductStorageDependencyProvider::getPriceDimensionStorageReaderPlugins",
-            "source": "\\Spryker\\Client\\PriceProductMerchantRelationshipStorage\\Plugin\\PriceProductStorageExtension\\PriceProductMerchantRelationshipStorageDimensionPlugin"
-        }
-    ]
-}

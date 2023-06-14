@@ -1,9 +1,0 @@
-{
-    "wire-glue-relationship": [
-        {
-            "source": {
-                "\\Spryker\\Glue\\NavigationsRestApi\\NavigationsRestApiConfig::RESOURCE_NAVIGATIONS": "\\Spryker\\Glue\\NavigationsCategoryNodesResourceRelationship\\Plugin\\GlueApplication\\CategoryNodeByResourceIdResourceRelationshipPlugin"
-            }
-        }
-    ]
-}

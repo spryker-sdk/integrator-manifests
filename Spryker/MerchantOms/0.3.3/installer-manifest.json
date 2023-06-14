@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Zed\\MerchantSalesOrder\\MerchantSalesOrderDependencyProvider::getMerchantOrderExpanderPlugins",
-            "source": "\\Spryker\\Zed\\MerchantOms\\Communication\\Plugin\\MerchantSalesOrder\\MerchantOmsMerchantOrderExpanderPlugin"
-        }
-    ]
-}

@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Zed\\CompanyUser\\CompanyUserDependencyProvider::getCompanyUserPreDeletePlugins",
-            "source": "\\Spryker\\Zed\\QuoteRequest\\Communication\\Plugin\\CompanyUserExtension\\QuoteRequestCompanyUserPreDeletePlugin"
-        }
-    ]
-}

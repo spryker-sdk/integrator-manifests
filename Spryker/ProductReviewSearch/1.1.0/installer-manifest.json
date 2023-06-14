@@ -1,8 +1,0 @@
-{
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Zed\\ProductPageSearch\\ProductPageSearchDependencyProvider::getDataLoaderPlugins",
-            "source": "\\Spryker\\Zed\\ProductReviewSearch\\Communication\\Plugin\\PageDataLoader\\ProductReviewPageDataLoaderPlugin"
-        }
-    ]
-}
