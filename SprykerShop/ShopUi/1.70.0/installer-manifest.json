@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\Form\\FormDependencyProvider::getFormPlugins",
+            "source": "\\SprykerShop\\Yves\\ShopUi\\Plugin\\Form\\SanitizeXssTypeExtensionFormPlugin"
+        }
+    ]
+}
