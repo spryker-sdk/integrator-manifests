@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CartCode\\CartCodeDependencyProvider::getCartCodePostAddPlugins",
+            "source": "\\Spryker\\Zed\\Nopayment\\Communication\\Plugin\\CartCode\\NopaymentCartCodePostAddPlugin"
+        }
+    ]
+}
