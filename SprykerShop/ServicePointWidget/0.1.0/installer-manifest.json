@@ -1,0 +1,29 @@
+{
+    "glossary-key": {
+        "new": {
+            "service_point_widget.search": {
+                "en_US": "Search for Store, zip code or city...",
+                "de_DE": "Suche nach Store, PLZ oder Stadt..."
+            },
+            "service_point_widget.select_store_action": {
+                "en_US": "Select store",
+                "de_DE": "Store auswählen"
+            },
+            "service_point_widget.no_results": {
+                "en_US": "Nothing found...",
+                "de_DE": "Nichts gefunden..."
+            }
+        }
+    },
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\Router\\RouterDependencyProvider::getRouteProvider",
+            "source": "\\SprykerShop\\Yves\\ServicePointWidget\\Plugin\\Router\\ServicePointWidgetRouteProviderPlugin"
+        }
+    ],
+    "wire-widget": [
+        {
+            "source": "\\SprykerShop\\Yves\\ServicePointWidget\\Widget\\ServicePointSearchWidget"
+        }
+    ]
+}
