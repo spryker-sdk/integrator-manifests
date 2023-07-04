@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getServicePointStoragePlugins",
+            "source": "\\Spryker\\Zed\\ServicePointStorage\\Communication\\Plugin\\Publisher\\Service\\ServiceWritePublisherPlugin"
+        }
+    ]
+}
