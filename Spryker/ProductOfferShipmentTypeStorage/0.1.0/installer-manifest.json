@@ -1,0 +1,74 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\ProductOfferStorage\\ProductOfferStorageDependencyProvider::getProductOfferStorageExpanderPlugins",
+            "source": "\\Spryker\\Client\\ProductOfferShipmentTypeStorage\\Plugin\\ProductOfferStorage\\ShipmentTypeProductOfferStorageExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherTriggerPlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferShipmentTypeStorage\\Communication\\Plugin\\Publisher\\ProductOfferShipmentTypePublisherTriggerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferShipmentTypeStoragePlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferShipmentTypeStorage\\Communication\\Plugin\\Publisher\\ProductOfferShipmentType\\ProductOfferShipmentTypeWritePublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferServicePointStoragePlugins"
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferShipmentTypeStoragePlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferShipmentTypeStorage\\Communication\\Plugin\\Publisher\\ProductOffer\\ProductOfferProductOfferShipmentTypeWritePublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferServicePointStoragePlugins"
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferShipmentTypeStoragePlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferShipmentTypeStorage\\Communication\\Plugin\\Publisher\\ProductOfferStore\\ProductOfferStoreProductOfferShipmentTypeWritePublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferServicePointStoragePlugins"
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferShipmentTypeStoragePlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferShipmentTypeStorage\\Communication\\Plugin\\Publisher\\ShipmentType\\ShipmentTypeProductOfferShipmentTypeWritePublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferServicePointStoragePlugins"
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferShipmentTypeStoragePlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferShipmentTypeStorage\\Communication\\Plugin\\Publisher\\ShipmentTypeStore\\ShipmentTypeStoreProductOfferShipmentTypeWritePublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferServicePointStoragePlugins"
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin",
+            "index": "\\Spryker\\Shared\\ProductOfferShipmentTypeStorage\\ProductOfferShipmentTypeStorageConfig::PRODUCT_OFFER_SHIPMENT_TYPE_SYNC_STORAGE_QUEUE"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Synchronization\\SynchronizationDependencyProvider::getSynchronizationDataPlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferShipmentTypeStorage\\Communication\\Plugin\\Synchronization\\ProductOfferShipmentTypeSynchronizationDataBulkRepositoryPlugin"
+        }
+    ],
+    "add-config-array-element": [
+        {
+            "target": "\\Spryker\\Client\\RabbitMq\\RabbitMqConfig::getSynchronizationQueueConfiguration",
+            "value": "\\Spryker\\Shared\\ProductOfferShipmentTypeStorage\\ProductOfferShipmentTypeStorageConfig::PRODUCT_OFFER_SHIPMENT_TYPE_SYNC_STORAGE_QUEUE"
+        }
+    ],
+    "configure-module": [
+        {
+            "previousValue": "",
+            "target": "\\Spryker\\Zed\\ProductOfferShipmentTypeStorage\\ProductOfferShipmentTypeStorageConfig::getProductOfferShipmentTypeSynchronizationPoolName",
+            "value": "\\Pyz\\Zed\\Synchronization\\SynchronizationConfig::DEFAULT_SYNCHRONIZATION_POOL_NAME"
+        }
+    ]
+}
