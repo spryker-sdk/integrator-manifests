@@ -1,0 +1,95 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\ProductOfferStorage\\ProductOfferStorageDependencyProvider::getProductOfferStorageExpanderPlugins",
+            "source": "\\Spryker\\Client\\ProductOfferServicePointStorage\\Plugin\\ProductOfferStorage\\ServiceProductOfferStorageExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherTriggerPlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferServicePointStorage\\Communication\\Plugin\\Publisher\\ProductOfferServicePublisherTriggerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferServicePointStoragePlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferServicePointStorage\\Communication\\Plugin\\Publisher\\ProductOfferService\\ProductOfferServiceWritePublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getShipmentTypeStoragePlugins"
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferServicePointStoragePlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferServicePointStorage\\Communication\\Plugin\\Publisher\\ProductOfferService\\ProductOfferServiceWriteByPublishPublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getShipmentTypeStoragePlugins"
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferServicePointStoragePlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferServicePointStorage\\Communication\\Plugin\\Publisher\\ProductOffer\\ProductOfferWritePublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getShipmentTypeStoragePlugins"
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferServicePointStoragePlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferServicePointStorage\\Communication\\Plugin\\Publisher\\ProductOfferStore\\ProductOfferStoreWritePublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getShipmentTypeStoragePlugins"
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferServicePointStoragePlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferServicePointStorage\\Communication\\Plugin\\Publisher\\Service\\ServiceWritePublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getShipmentTypeStoragePlugins"
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferServicePointStoragePlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferServicePointStorage\\Communication\\Plugin\\Publisher\\ServicePoint\\ServicePointWritePublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getShipmentTypeStoragePlugins"
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferServicePointStoragePlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferServicePointStorage\\Communication\\Plugin\\Publisher\\ServicePointStore\\ServicePointStoreWritePublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getShipmentTypeStoragePlugins"
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin",
+            "index": "\\Spryker\\Shared\\ProductOfferServicePointStorage\\ProductOfferServicePointStorageConfig::QUEUE_NAME_SYNC_STORAGE_PRODUCT_OFFER_SERVICE"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Synchronization\\SynchronizationDependencyProvider::getSynchronizationDataPlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferServicePointStorage\\Communication\\Plugin\\Synchronization\\ProductOfferServiceSynchronizationDataBulkRepositoryPlugin"
+        }
+    ],
+    "add-config-array-element": [
+        {
+            "target": "\\Spryker\\Client\\RabbitMq\\RabbitMqConfig::getSynchronizationQueueConfiguration",
+            "value": "\\Spryker\\Shared\\ProductOfferServicePointStorage\\ProductOfferServicePointStorageConfig::QUEUE_NAME_SYNC_STORAGE_PRODUCT_OFFER_SERVICE"
+        }
+    ],
+    "configure-module": [
+        {
+            "previousValue": "",
+            "target": "\\Spryker\\Zed\\ProductOfferServicePointStorage\\ProductOfferServicePointStorageConfig::getProductOfferServiceSynchronizationPoolName",
+            "value": "\\Pyz\\Zed\\Synchronization\\SynchronizationConfig::DEFAULT_SYNCHRONIZATION_POOL_NAME"
+        },
+        {
+            "previousValue": "",
+            "target": "\\Spryker\\Zed\\ProductOfferServicePointStorage\\ProductOfferServicePointStorageConfig::getEventQueueName",
+            "value": "\\Spryker\\Shared\\Publisher\\PublisherConfig::PUBLISH_QUEUE"
+        }
+    ]
+}
