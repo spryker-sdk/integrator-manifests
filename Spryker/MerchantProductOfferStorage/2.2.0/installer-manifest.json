@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductOfferShipmentTypeStorage\\ProductOfferShipmentTypeStorageDependencyProvider::getProductOfferShipmentTypeStorageFilterPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductOfferStorage\\Communication\\Plugin\\ProductOfferShipmentTypeStorage\\MerchantProductOfferShipmentTypeStorageFilterPlugin"
+        }
+    ]
+}
