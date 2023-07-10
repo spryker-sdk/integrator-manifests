@@ -1,0 +1,25 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\PropelReplicationCache\\PropelReplicationCacheConstants::IS_REPLICATION_ENABLED",
+            "value": {
+                "value": "(bool)$config[\\Spryker\\Shared\\Propel\\PropelConstants::ZED_DB_REPLICAS]",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\PropelReplicationCache\\PropelReplicationCacheConstants::CACHE_TTL",
+            "value": 2
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\PropelOrm\\PropelOrmDependencyProvider::getFindExtensionPlugins",
+            "source": "\\Spryker\\Zed\\PropelReplicationCache\\Communication\\Plugin\\PropelOrm\\FindExtensionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\PropelOrm\\PropelOrmDependencyProvider::getPostSaveExtensionPlugins",
+            "source": "\\Spryker\\Zed\\PropelReplicationCache\\Communication\\Plugin\\PropelOrm\\PostSaveExtensionPlugin"
+        }
+    ]
+}
