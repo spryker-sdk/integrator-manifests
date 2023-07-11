@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\ProductReview\\ProductReviewDependencyProvider::getProductReviewsQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\ProductReviewSearch\\Plugin\\Search\\FilterByIdProductReviewQueryExpanderPlugin"
+        }
+    ]
+}
