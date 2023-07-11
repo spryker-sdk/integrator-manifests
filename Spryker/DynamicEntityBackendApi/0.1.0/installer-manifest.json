@@ -1,0 +1,29 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\DocumentationGeneratorApi\\DocumentationGeneratorApiDependencyProvider::getContextExpanderPlugins",
+            "source": "\\Spryker\\Glue\\DynamicEntityBackendApi\\Plugin\\DocumentationGeneratorApi\\DynamicEntityApiSchemaContextExpanderPlugin",
+            "arguments": {
+                "append-arguments": [
+                    {
+                        "value": [
+                            "static::GLUE_BACKEND_API_APPLICATION_NAME"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\DocumentationGeneratorOpenApi\\DocumentationGeneratorOpenApiDependencyProvider::getOpenApiSchemaFormatterPlugins",
+            "source": "\\Spryker\\Glue\\DynamicEntityBackendApi\\Plugin\\DocumentationGeneratorOpenApi\\DynamicEntityOpenApiSchemaFormatterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getRouteProviderPlugins",
+            "source": "\\Spryker\\Glue\\DynamicEntityBackendApi\\Plugin\\GlueApplication\\DynamicEntityRouteProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\GlueBackendApiApplicationAuthorizationConnector\\GlueBackendApiApplicationAuthorizationConnectorDependencyProvider::getProtectedPathCollectionExpanderPlugins",
+            "source": "\\Spryker\\Glue\\DynamicEntityBackendApi\\Plugin\\GlueBackendApiApplicationAuthorizationConnector\\DynamicEntityProtectedPathCollectionExpanderPlugin"
+        }
+    ]
+}
