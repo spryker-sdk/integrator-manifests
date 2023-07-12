@@ -1,0 +1,8 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getConventionPlugins",
+            "source": "\\Spryker\\Glue\\GlueRestApiConvention\\Plugin\\GlueApplication\\RestConventionPlugin"
+        }
+    ]
+}

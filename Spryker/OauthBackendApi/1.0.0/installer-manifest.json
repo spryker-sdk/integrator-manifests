@@ -1,0 +1,14 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getResourcePlugins",
+            "source": "\\Spryker\\Glue\\OauthBackendApi\\Plugin\\GlueApplication\\OauthBackendTokenResource"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getResourcePlugins",
+            "source": "\\Spryker\\Glue\\OauthBackendApi\\Plugin\\TokenResource"
+        }
+    ]
+}
