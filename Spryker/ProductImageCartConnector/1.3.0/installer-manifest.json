@@ -1,0 +1,14 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductImageCartConnector\\Communication\\Plugin\\Cart\\ProductImageItemExpanderPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductImageCartConnector\\Communication\\Plugin\\ProductImageCartPlugin"
+        }
+    ]
+}
