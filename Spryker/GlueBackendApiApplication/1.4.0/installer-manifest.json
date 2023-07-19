@@ -1,0 +1,14 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getControllerConfigurationCacheCollectorPlugins",
+            "source": "\\Spryker\\Glue\\GlueBackendApiApplication\\Plugin\\GlueApplication\\ControllerConfigurationCacheCollectorPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getControllerCacheCollectorPlugins",
+            "source": "\\Spryker\\Glue\\GlueBackendApiApplication\\Plugin\\GlueApplication\\ControllerCacheCollectorPlugin"
+        }
+    ]
+}
