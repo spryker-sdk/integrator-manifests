@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\SprykerShop\\Yves\\SecurityBlockerPage\\SecurityBlockerPageConfig::USE_EMAIL_CONTEXT_FOR_LOGIN_SECURITY_BLOCKER",
+            "value": false
+        }
+    ]
+}
