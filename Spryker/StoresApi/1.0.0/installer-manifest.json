@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\GlueStorefrontApiApplicationDependencyProvider::getRequestValidatorPlugins",
+            "source": "\\Spryker\\Glue\\StoresApi\\Plugin\\GlueApplication\\StoreValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\GlueStorefrontApiApplicationDependencyProvider::getResourcePlugins",
+            "source": "\\Spryker\\Glue\\StoresApi\\Plugin\\GlueStorefrontApiApplication\\StoresResource"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\GlueStorefrontApiApplicationDependencyProvider::getApplicationPlugins",
+            "source": "\\Spryker\\Glue\\StoresApi\\Plugin\\GlueStorefrontApiApplication\\StoreApplicationPlugin"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "glossary-key": {
+        "new": {
+            "store.validation.store_not_found": {
+                "en_US": "Store not found",
+                "de_DE": "Store nicht gefunden"
+            }
+        }
+    }
+}
