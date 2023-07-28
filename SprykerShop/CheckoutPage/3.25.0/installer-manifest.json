@@ -1,0 +1,14 @@
+{
+    "glossary-key": {
+        "new": {
+            "page.checkout.address.single_address": {
+                "en_US": "Single address",
+                "de_DE": "Eine Adresse"
+            },
+            "page.checkout.address.multiple_addresses": {
+                "en_US": "Multiple addresses",
+                "de_DE": "Mehrere Adressen"
+            }
+        }
+    }
+}

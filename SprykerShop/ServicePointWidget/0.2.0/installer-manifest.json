@@ -1,0 +1,56 @@
+{
+    "glossary-key": {
+        "new": {
+            "service_point_widget.validation.error.service_point_not_selected": {
+                "en_US": "Please select service point.",
+                "de_DE": "Bitte Servicestelle auswählen."
+            },
+            "service_point_widget.validation.error.billing_address_not_provided": {
+                "en_US": "Please add billing address manually.",
+                "de_DE": "Bitte fügen Sie die Rechnungsadresse manuell hinzu."
+            },
+            "service_point_widget.select_location_action": {
+                "en_US": "Select a location",
+                "de_DE": "Wählen Sie einen Standort"
+            },
+            "service_point_widget.change_action": {
+                "en_US": "Change",
+                "de_DE": "Ändern"
+            },
+            "service_point_widget.location_label": {
+                "en_US": "Location:",
+                "de_DE": "Standort:"
+            },
+            "service_point_widget.select_your_store_title": {
+                "en_US": "Select your store",
+                "de_DE": "Wählen Sie Ihren Store"
+            }
+        }
+    },
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\CustomerPage\\CustomerPageDependencyProvider::getCheckoutAddressCollectionFormExpanderPlugins",
+            "source": "\\SprykerShop\\Yves\\ServicePointWidget\\Plugin\\CustomerPage\\ServicePointCheckoutAddressCollectionFormExpanderPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\CustomerPage\\CustomerPageDependencyProvider::getCheckoutAddressCollectionFormExpanderPlugins",
+            "source": "\\SprykerShop\\Yves\\ServicePointWidget\\Plugin\\CustomerPage\\ServicePointAddressCheckoutAddressCollectionFormExpanderPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\CustomerPage\\CustomerPageDependencyProvider::getCheckoutAddressCollectionFormExpanderPlugins",
+            "source": "\\SprykerShop\\Yves\\ServicePointWidget\\Plugin\\CustomerPage\\ClickCollectServiceTypeCheckoutAddressCollectionFormExpanderPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\CustomerPage\\CustomerPageDependencyProvider::getCheckoutMultiShippingAddressesFormExpanderPlugins",
+            "source": "\\SprykerShop\\Yves\\ServicePointWidget\\Plugin\\CustomerPage\\ServicePointCheckoutMultiShippingAddressesFormExpanderPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\CustomerPage\\CustomerPageDependencyProvider::getCheckoutMultiShippingAddressesFormExpanderPlugins",
+            "source": "\\SprykerShop\\Yves\\ServicePointWidget\\Plugin\\CustomerPage\\ClickCollectServiceTypeCheckoutMultiShippingAddressesFormExpanderPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\ShopApplication\\ShopApplicationDependencyProvider::getWidgetCacheKeyGeneratorStrategyPlugins",
+            "source": "\\SprykerShop\\Yves\\ServicePointWidget\\Plugin\\ShopApplication\\ClickCollectServicePointAddressFormWidgetCacheKeyGeneratorStrategyPlugin"
+        }
+    ]
+}
