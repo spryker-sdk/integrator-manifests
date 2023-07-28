@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\CustomerPage\\CustomerPageDependencyProvider::getCheckoutAddressCollectionFormExpanderPlugins",
+            "source": "\\SprykerShop\\Yves\\ShipmentTypeWidget\\Plugin\\CustomerPage\\ShipmentTypeCheckoutAddressCollectionFormExpanderPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\CustomerPage\\CustomerPageDependencyProvider::getCheckoutMultiShippingAddressesFormExpanderPlugins",
+            "source": "\\SprykerShop\\Yves\\ShipmentTypeWidget\\Plugin\\CustomerPage\\ShipmentTypeCheckoutMultiShippingAddressesFormExpanderPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\ShopApplication\\ShopApplicationDependencyProvider::getWidgetCacheKeyGeneratorStrategyPlugins",
+            "source": "\\SprykerShop\\Yves\\ShipmentTypeWidget\\Plugin\\ShopApplication\\ShipmentTypeAddressFormWidgetCacheKeyGeneratorStrategyPlugin"
+        }
+    ]
+}

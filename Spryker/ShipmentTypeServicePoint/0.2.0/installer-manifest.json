@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ShipmentTypeStorage\\ShipmentTypeStorageDependencyProvider::getShipmentTypeStorageExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ShipmentTypeServicePoint\\Communication\\Plugin\\ShipmentTypeStorage\\ServiceTypeShipmentTypeStorageExpanderPlugin"
+        }
+    ]
+}
