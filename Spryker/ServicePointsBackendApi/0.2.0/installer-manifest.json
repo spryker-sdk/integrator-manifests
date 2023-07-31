@@ -1,28 +1,4 @@
 {
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getResourcePlugins",
-            "source": "\\Spryker\\Glue\\ServicePointsBackendApi\\Plugin\\GlueBackendApiApplication\\ServicePointsBackendResourcePlugin"
-        },
-        {
-            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getResourcePlugins",
-            "source": "\\Spryker\\Glue\\ServicePointsBackendApi\\Plugin\\GlueBackendApiApplication\\ServicePointAddressesBackendResourcePlugin"
-        }
-    ],
-    "unwire-plugin": [
-        {
-            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getResourcePlugins",
-            "source": "\\Spryker\\Glue\\ServicePointsBackendApi\\Plugin\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\ServicePointsBackendResourcePlugin"
-        }
-    ],
-    "wire-glue-relationship": [
-        {
-            "target": "\\Spryker\\Glue\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\GlueBackendApiApplicationGlueJsonApiConventionConnectorDependencyProvider",
-            "source": {
-                "\\Spryker\\Glue\\ServicePointsBackendApi\\ServicePointsBackendApiConfig::RESOURCE_SERVICE_POINTS": "\\Spryker\\Glue\\ServicePointsBackendApi\\Plugin\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\ServicePointAddressesByServicePointsBackendResourceRelationshipPlugin"
-            }
-        }
-    ],
     "configure-module": [
         {
             "previousValue": {
@@ -77,6 +53,30 @@
                 "/\\/service-points.*/": {
                     "isRegularExpression": true
                 }
+            }
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getResourcePlugins",
+            "source": "\\Spryker\\Glue\\ServicePointsBackendApi\\Plugin\\GlueBackendApiApplication\\ServicePointsBackendResourcePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getResourcePlugins",
+            "source": "\\Spryker\\Glue\\ServicePointsBackendApi\\Plugin\\GlueBackendApiApplication\\ServicePointAddressesBackendResourcePlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getResourcePlugins",
+            "source": "\\Spryker\\Glue\\ServicePointsBackendApi\\Plugin\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\ServicePointsBackendResourcePlugin"
+        }
+    ],
+    "wire-glue-relationship": [
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\GlueBackendApiApplicationGlueJsonApiConventionConnectorDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\ServicePointsBackendApi\\ServicePointsBackendApiConfig::RESOURCE_SERVICE_POINTS": "\\Spryker\\Glue\\ServicePointsBackendApi\\Plugin\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\ServicePointAddressesByServicePointsBackendResourceRelationshipPlugin"
             }
         }
     ]
