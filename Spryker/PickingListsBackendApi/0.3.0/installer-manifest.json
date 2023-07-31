@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getResourcePlugins",
+            "source": "\\Spryker\\Glue\\PickingListsBackendApi\\Plugin\\GlueBackendApiApplication\\PickingListStartPickingBackendResourcePlugin"
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "glossary-key": {
+        "new": {
+            "push_notification.validation.push_notification_provider_name_exists": {
+                "en_US": "A push notification provider with the same name already exists.",
+                "de_DE": "Ein Push-Benachrichtigungsanbieter mit demselben Namen ist bereits vorhanden."
+            },
+            "push_notification.validation.push_notification_provider_name_wrong_length": {
+                "en_US": "A push notification provider name must have length from %min% to %max% characters.",
+                "de_DE": "Ein Push-Benachrichtigungsanbietername muss eine Länge von %min% bis %max% Zeichen haben."
+            },
+            "push_notification.validation.push_notification_provider_name_is_not_unique": {
+                "en_US": "A push notification provider with the same name already exists in request.",
+                "de_DE": "Ein Push-Benachrichtigungsanbieter mit demselben Namen ist bereits in der Anfrage vorhanden."
+            },
+            "push_notification.validation.push_notification_exists": {
+                "en_US": "Unable to delete push notification provider while push notification exists.",
+                "de_DE": "Der Push-Benachrichtigungsanbieter kann nicht gelöscht werden solange Push-Benachrichtigungen vorhanden sind."
+            },
+            "push_notification.validation.push_notification_subscription_exists": {
+                "en_US": "Unable to delete push notification provider while push notification subscription exists.",
+                "de_DE": "Der Push-Benachrichtigungsanbieter kann nicht gelöscht werden solange Push-Benachrichtigungsabonnements vorhanden sind."
+            },
+            "push_notification.validation.wrong_request_body": {
+                "en_US": "Wrong request body.",
+                "de_DE": "Falscher Anforderungstext."
+            }
+        }
+    }
+}
