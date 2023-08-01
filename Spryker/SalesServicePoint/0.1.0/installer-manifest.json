@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderItemExpanderPlugins",
+            "source": "\\Spryker\\Zed\\SalesServicePoint\\Communication\\Plugin\\Sales\\ServicePointOrderItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderItemsPostSavePlugins",
+            "source": "\\Spryker\\Zed\\SalesServicePoint\\Communication\\Plugin\\Sales\\ServicePointOrderItemsPostSavePlugin"
+        }
+    ]
+}
