@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\CheckoutPage\\CheckoutPageDependencyProvider::getCheckoutPageStepEnginePreRenderPlugins",
+            "source": "\\SprykerShop\\Yves\\ShipmentTypeWidget\\Plugin\\CheckoutPage\\ShipmentTypeCheckoutPageStepEnginePreRenderPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\CustomerPage\\CustomerPageDependencyProvider::getCheckoutAddressStepPreGroupItemsByShipmentPlugins",
+            "source": "\\SprykerShop\\Yves\\ShipmentTypeWidget\\Plugin\\CustomerPage\\ShipmentTypeCheckoutAddressStepPreGroupItemsByShipmentPlugin"
+        }
+    ]
+}

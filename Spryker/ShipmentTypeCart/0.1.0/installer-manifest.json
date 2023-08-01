@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ShipmentTypeCart\\Communication\\Plugin\\Cart\\ShipmentTypeItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Quote\\QuoteDependencyProvider::getQuoteExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ShipmentTypeCart\\Communication\\Plugin\\Quote\\ShipmentTypeQuoteExpanderPlugin"
+        }
+    ]
+}
