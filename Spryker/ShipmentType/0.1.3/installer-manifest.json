@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Shipment\\ShipmentDependencyProvider::getMethodFilterPlugins",
+            "source": "\\Spryker\\Zed\\ShipmentType\\Communication\\Plugin\\Shipment\\ShipmentTypeShipmentMethodFilterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Shipment\\ShipmentDependencyProvider::getShipmentMethodCollectionExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ShipmentType\\Communication\\Plugin\\Shipment\\ShipmentTypeShipmentMethodCollectionExpanderPlugin"
+        }
+    ]
+}

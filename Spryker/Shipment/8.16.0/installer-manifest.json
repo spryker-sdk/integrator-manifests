@@ -1,0 +1,13 @@
+{
+    "configure-module": [
+        {
+            "previousValue": [
+                "\\Generated\\Shared\\Transfer\\ShipmentTransfer::MERCHANT_REFERENCE"
+            ],
+            "target": "\\Spryker\\Service\\Shipment\\ShipmentConfig::getShipmentHashFields",
+            "value": [
+                "\\Generated\\Shared\\Transfer\\ShipmentTransfer::SHIPMENT_TYPE_UUID"
+            ]
+        }
+    ]
+}
