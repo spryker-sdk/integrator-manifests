@@ -12,5 +12,11 @@
             "target": "\\Spryker\\Glue\\GlueStorefrontApiApplication\\GlueStorefrontApiApplicationDependencyProvider::getApplicationPlugins",
             "source": "\\Spryker\\Glue\\StoresRestApi\\Plugin\\Application\\StoreHttpHeaderApplicationPlugin"
         }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\StoresRestApi\\Plugin\\StoresResourceRoutePlugin"
+        }
     ]
 }
