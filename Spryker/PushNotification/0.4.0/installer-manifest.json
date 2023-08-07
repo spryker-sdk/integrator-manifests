@@ -1,0 +1,10 @@
+{
+    "glossary-key": {
+        "new": {
+            "push_notification.validation.error.locale_not_found": {
+                "en_US": "Provided locale not found.",
+                "de_DE": "Bereitgestellte Sprache nicht gefunden."
+            }
+        }
+    }
+}
