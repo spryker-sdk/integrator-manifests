@@ -1,0 +1,19 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\ServicePointsRestApi\\Plugin\\GlueApplication\\ServicePointsResourceRoutePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\ServicePointsRestApi\\Plugin\\GlueApplication\\ServicePointAddressesResourceRoutePlugin"
+        }
+    ],
+    "wire-glue-relationship": [
+        {
+            "source": {
+                "\\Spryker\\Glue\\ServicePointsRestApi\\ServicePointsRestApiConfig::RESOURCE_SERVICE_POINTS": "\\Spryker\\Glue\\ServicePointsRestApi\\Plugin\\GlueApplication\\ServicePointAddressesByServicePointUuidResourceRelationshipPlugin"
+            }
+        }
+    ]
+}

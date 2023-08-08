@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\ServicePointSearch\\ServicePointSearchDependencyProvider::getServicePointSearchQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\ServicePointSearch\\Plugin\\Elasticsearch\\Query\\ServicePointAddressRelationExcludeServicePointQueryExpanderPlugin"
+        }
+    ]
+}
