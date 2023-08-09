@@ -1,0 +1,52 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
+            "source": "\\Spryker\\Zed\\ShipmentTypeDataImport\\Communication\\Plugin\\DataImport\\ShipmentTypeDataImportPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
+            "source": "\\Spryker\\Zed\\ShipmentTypeDataImport\\Communication\\Plugin\\DataImport\\ShipmentTypeStoreDataImportPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
+            "source": "\\Spryker\\Zed\\ShipmentTypeDataImport\\Communication\\Plugin\\DataImport\\ShipmentMethodShipmentTypeDataImportPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Console\\ConsoleDependencyProvider::getConsoleCommands",
+            "source": "\\Spryker\\Zed\\DataImport\\Communication\\Console\\DataImportConsole",
+            "arguments": {
+                "constructor-arguments": [
+                    {
+                        "value": "\\Spryker\\Zed\\DataImport\\Communication\\Console\\DataImportConsole::DEFAULT_NAME . static::COMMAND_SEPARATOR . \\Spryker\\Zed\\ShipmentTypeDataImport\\ShipmentTypeDataImportConfig::IMPORT_TYPE_SHIPMENT_TYPE",
+                        "is_literal": true
+                    }
+                ]
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Console\\ConsoleDependencyProvider::getConsoleCommands",
+            "source": "\\Spryker\\Zed\\DataImport\\Communication\\Console\\DataImportConsole",
+            "arguments": {
+                "constructor-arguments": [
+                    {
+                        "value": "\\Spryker\\Zed\\DataImport\\Communication\\Console\\DataImportConsole::DEFAULT_NAME . static::COMMAND_SEPARATOR . \\Spryker\\Zed\\ShipmentTypeDataImport\\ShipmentTypeDataImportConfig::IMPORT_TYPE_SHIPMENT_TYPE_STORE",
+                        "is_literal": true
+                    }
+                ]
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Console\\ConsoleDependencyProvider::getConsoleCommands",
+            "source": "\\Spryker\\Zed\\DataImport\\Communication\\Console\\DataImportConsole",
+            "arguments": {
+                "constructor-arguments": [
+                    {
+                        "value": "\\Spryker\\Zed\\DataImport\\Communication\\Console\\DataImportConsole::DEFAULT_NAME . static::COMMAND_SEPARATOR . \\Spryker\\Zed\\ShipmentTypeDataImport\\ShipmentTypeDataImportConfig::IMPORT_TYPE_SHIPMENT_METHOD_SHIPMENT_TYPE",
+                        "is_literal": true
+                    }
+                ]
+            }
+        }
+    ]
+}
