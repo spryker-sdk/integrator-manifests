@@ -1,0 +1,38 @@
+{
+    "glossary-key": {
+        "new": {
+            "shipment_type.name.shipment_type_delivery": {
+                "en_US": "Delivery",
+                "de_DE": "Lieferung"
+            },
+            "shipment_type.name.shipment_type_pickup": {
+                "en_US": "Pickup",
+                "de_DE": "Abholung"
+            },
+            "shipment_type.validation.shipment_type_entity_not_found": {
+                "en_US": "A delivery type entity was not found.",
+                "de_DE": "Lieferart wurde nicht gefunden."
+            },
+            "shipment_type.validation.shipment_type_key_exists": {
+                "en_US": "A delivery type with the same key already exists.",
+                "de_DE": "Es existiert bereits eine Lieferart mit dem gleichen Schlüssel."
+            },
+            "shipment_type.validation.shipment_type_key_is_not_unique": {
+                "en_US": "At least two delivery types in this request have the same key.",
+                "de_DE": "Mindestens zwei Lieferarten in dieser Anfrage haben den gleichen Schlüssel."
+            },
+            "shipment_type.validation.shipment_type_key_invalid_length": {
+                "en_US": "A delivery type key must have a length from %min% to %max% characters.",
+                "de_DE": "Der Lieferart-Schlüssel muss eine Länge von %min% bis %max% Zeichen haben."
+            },
+            "shipment_type.validation.shipment_type_name_invalid_length": {
+                "en_US": "A delivery type name must have a length from %min% to %max% characters.",
+                "de_DE": "Der Lieferart-Name muss eine Länge von %min% bis %max% Zeichen haben."
+            },
+            "shipment_type.validation.store_does_not_exist": {
+                "en_US": "A store with the name ‘%name%’ does not exist.",
+                "de_DE": "Store mit dem Namen ‘%name%’ existiert nicht."
+            }
+        }
+    }
+}
