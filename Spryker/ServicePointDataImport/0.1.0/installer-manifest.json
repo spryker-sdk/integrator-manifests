@@ -7,6 +7,30 @@
         {
             "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
             "source": "\\Spryker\\Zed\\ServicePointDataImport\\Communication\\Plugin\\DataImport\\ServicePointStoreDataImportPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Console\\ConsoleDependencyProvider::getConsoleCommands",
+            "source": "\\Spryker\\Zed\\DataImport\\Communication\\Console\\DataImportConsole",
+            "arguments": {
+                "constructor-arguments": [
+                    {
+                        "value": "\\Spryker\\Zed\\DataImport\\Communication\\Console\\DataImportConsole::DEFAULT_NAME . static::COMMAND_SEPARATOR . \\Spryker\\Zed\\ServicePointDataImport\\ServicePointDataImportConfig::IMPORT_TYPE_SERVICE_POINT",
+                        "is_literal": true
+                    }
+                ]
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Console\\ConsoleDependencyProvider::getConsoleCommands",
+            "source": "\\Spryker\\Zed\\DataImport\\Communication\\Console\\DataImportConsole",
+            "arguments": {
+                "constructor-arguments": [
+                    {
+                        "value": "\\Spryker\\Zed\\DataImport\\Communication\\Console\\DataImportConsole::DEFAULT_NAME . static::COMMAND_SEPARATOR . \\Spryker\\Zed\\ServicePointDataImport\\ServicePointDataImportConfig::IMPORT_TYPE_SERVICE_POINT_STORE",
+                        "is_literal": true
+                    }
+                ]
+            }
         }
     ]
 }
