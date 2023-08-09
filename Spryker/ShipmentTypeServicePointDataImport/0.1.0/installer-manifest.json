@@ -1,0 +1,20 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
+            "source": "\\Spryker\\Zed\\ShipmentTypeServicePointDataImport\\Communication\\Plugin\\DataImport\\ShipmentTypeServiceTypeDataImportPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Console\\ConsoleDependencyProvider::getConsoleCommands",
+            "source": "\\Spryker\\Zed\\DataImport\\Communication\\Console\\DataImportConsole",
+            "arguments": {
+                "constructor-arguments": [
+                    {
+                        "value": "\\Spryker\\Zed\\DataImport\\Communication\\Console\\DataImportConsole::DEFAULT_NAME . static::COMMAND_SEPARATOR . \\Spryker\\Zed\\ShipmentTypeServicePointDataImport\\ShipmentTypeServicePointDataImportConfig::IMPORT_TYPE_SHIPMENT_TYPE_SERVICE_TYPE",
+                        "is_literal": true
+                    }
+                ]
+            }
+        }
+    ]
+}
