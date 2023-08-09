@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\CheckoutPage\\CheckoutPageDependencyProvider::getCheckoutAddressStepPostExecutePlugins",
+            "source": "\\SprykerShop\\Yves\\ServicePointCartPage\\Plugin\\CartPage\\ServicePointCheckoutAddressStepPostExecutePlugin"
+        }
+    ]
+}
