@@ -1,0 +1,70 @@
+{
+    "glossary-key": {
+        "new": {
+            "service_point.validation.service_type_key_exists": {
+                "en_US": "A service type with the same key already exists.",
+                "de_DE": "Ein Service-Typ mit demselben Schlüssel existiert bereits."
+            },
+            "service_point.validation.service_type_key_wrong_length": {
+                "en_US": "A service type key must have length from %min% to %max% characters.",
+                "de_DE": "Ein Service-Typ-Schlüssel muss eine Länge von %min% bis %max% Zeichen haben."
+            },
+            "service_point.validation.service_type_key_is_not_unique": {
+                "en_US": "A service type with the same key already exists in request.",
+                "de_DE": "Ein Service-Typ mit demselben Schlüssel existiert bereits in der Anfrage."
+            },
+            "service_point.validation.service_type_name_exists": {
+                "en_US": "A service type with the same name already exists.",
+                "de_DE": "Ein Service-Typ mit demselben Namen existiert bereits."
+            },
+            "service_point.validation.service_type_name_wrong_length": {
+                "en_US": "A service type name must have length from %min% to %max% characters.",
+                "de_DE": "Ein Service-Typ-Name muss eine Länge von %min% bis %max% Zeichen haben."
+            },
+            "service_point.validation.service_type_name_is_not_unique": {
+                "en_US": "A service type with the same name already exists in request.",
+                "de_DE": "Ein Service-Typ mit demselben Namen existiert bereits in der Anfrage."
+            },
+            "service_point.validation.service_type_entity_not_found": {
+                "en_US": "The service type entity was not found.",
+                "de_DE": "Die Service-Typ-Entität wurde nicht gefunden."
+            },
+            "service_point.validation.service_poinst_service_key_exists": {
+                "en_US": "A service point service with the same key already exists.",
+                "de_DE": "Ein Servicepunkt-Service mit demselben Schlüssel existiert bereits."
+            },
+            "service_point.validation.service_point_service_key_wrong_length": {
+                "en_US": "A service point service key must have length from %min% to %max% characters.",
+                "de_DE": "Ein Servicepunkt-Service-Schlüssel muss eine Länge von %min% bis %max% Zeichen haben."
+            },
+            "service_point.validation.service_point_service_key_is_not_unique": {
+                "en_US": "A service point service with the same key already exists in request.",
+                "de_DE": "Ein Servicepunkt-Service mit demselben Schlüssel existiert bereits in der Anfrage."
+            },
+            "service_point.validation.service_point_service_type_relation_already_exists": {
+                "en_US": "A service point service with defined relation of service point and service type already exists.",
+                "de_DE": "Ein Servicepunkt-Service mit einer definierten Beziehung von Servicepunkt und Service-Typ existiert bereits."
+            },
+            "service_point.validation.service_point_service_type_relation_is_not_unique": {
+                "en_US": "A service point service with defined relation of service pint and service type already exists in request.",
+                "de_DE": "Ein Servicepunkt-Service mit definierter Beziehung von Servicepunkt und Service-Typ existiert bereits in der Anfrage."
+            },
+            "service_point.validation.service_point_service_entity_not_found": {
+                "en_US": "The service point service entity was not found.",
+                "de_DE": "Die Servicepunkt-Service-Entität wurde nicht gefunden."
+            },
+            "service_point.validation.service_point_service_key_immutability": {
+                "en_US": "The service point service key is immutable.",
+                "de_DE": "Der Servicepunkt-Service-Schlüssel ist unveränderlich."
+            },
+            "service_point.validation.service_type_key_immutability": {
+                "en_US": "The service type key is immutable.",
+                "de_DE": "Der Service-Typ-Schlüssel ist unveränderlich."
+            },
+            "service_point.validation.service_point_service_key_exists": {
+                "en_US": "A service point service with the same key already exists.",
+                "de_DE": "Ein Servicepunkt-Service mit demselben Schlüssel existiert bereits."
+            }
+        }
+    }
+}

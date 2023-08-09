@@ -1,0 +1,36 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
+            "source": "\\Spryker\\Zed\\ServicePointDataImport\\Communication\\Plugin\\DataImport\\ServiceTypeDataImportPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
+            "source": "\\Spryker\\Zed\\ServicePointDataImport\\Communication\\Plugin\\DataImport\\ServicePointServiceDataImportPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Console\\ConsoleDependencyProvider::getConsoleCommands",
+            "source": "\\Spryker\\Zed\\DataImport\\Communication\\Console\\DataImportConsole",
+            "arguments": {
+                "constructor-arguments": [
+                    {
+                        "value": "\\Spryker\\Zed\\DataImport\\Communication\\Console\\DataImportConsole::DEFAULT_NAME . static::COMMAND_SEPARATOR . \\Spryker\\Zed\\ServicePointDataImport\\ServicePointDataImportConfig::IMPORT_TYPE_SERVICE_TYPE",
+                        "is_literal": true
+                    }
+                ]
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Console\\ConsoleDependencyProvider::getConsoleCommands",
+            "source": "\\Spryker\\Zed\\DataImport\\Communication\\Console\\DataImportConsole",
+            "arguments": {
+                "constructor-arguments": [
+                    {
+                        "value": "\\Spryker\\Zed\\DataImport\\Communication\\Console\\DataImportConsole::DEFAULT_NAME . static::COMMAND_SEPARATOR . \\Spryker\\Zed\\ServicePointDataImport\\ServicePointDataImportConfig::IMPORT_TYPE_SERVICE_POINT_SERVICE",
+                        "is_literal": true
+                    }
+                ]
+            }
+        }
+    ]
+}
