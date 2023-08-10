@@ -1,0 +1,16 @@
+{
+    "glossary-key": {
+        "new": {
+            "shipment_type_cart.checkout.validation.error": {
+                "en_US": "Selected delivery type \"%name%\" is not available",
+                "de_DE": "Die ausgewählte Lieferart \"%name%\" ist nicht verfügbar"
+            }
+        }
+    },
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditions",
+            "source": "\\Spryker\\Zed\\ShipmentTypeCart\\Communication\\Plugin\\Checkout\\ShipmentTypeCheckoutPreConditionPlugin"
+        }
+    ]
+}
