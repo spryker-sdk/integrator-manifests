@@ -1,0 +1,23 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\Product\\ProductConstants::TENANT_IDENTIFIER",
+            "value": {
+                "value": "getenv('SPRYKER_TENANT_IDENTIFIER') ?: ''",
+                "is_literal": true
+            }
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Product\\Communication\\Plugin\\MessageBroker\\ProductExportMessageHandlerPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Product\\Communication\\Plugin\\MessageBroker\\InitializeProductExportMessageHandlerPlugin"
+        }
+    ]
+}
