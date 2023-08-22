@@ -1,0 +1,20 @@
+{
+    "wire-navigation": [
+        {
+            "navigations": {
+                "administration": {
+                    "pages": {
+                        "api-key": {
+                            "label": "API Keys",
+                            "title": "API Keys",
+                            "bundle": "api-key-gui",
+                            "controller": "list",
+                            "action": "index"
+                        }
+                    }
+                }
+            },
+            "after": "app-catalog-gui"
+        }
+    ]
+}
