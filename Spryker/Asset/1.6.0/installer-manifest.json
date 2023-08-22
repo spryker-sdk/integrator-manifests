@@ -1,0 +1,22 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Asset\\Communication\\Plugin\\MessageBroker\\AssetMessageHandlerPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Asset\\Communication\\Plugin\\MessageBroker\\AssetAddedMessageHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Asset\\Communication\\Plugin\\MessageBroker\\AssetUpdatedMessageHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Asset\\Communication\\Plugin\\MessageBroker\\AssetDeletedMessageHandlerPlugin"
+        }
+    ]
+}

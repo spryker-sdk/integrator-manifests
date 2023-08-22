@@ -1,0 +1,11 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\AppCatalogGui\\AppCatalogGuiConstants::TENANT_IDENTIFIER",
+            "value": {
+                "value": "getenv('SPRYKER_TENANT_IDENTIFIER') ?: ''",
+                "is_literal": true
+            }
+        }
+    ]
+}
