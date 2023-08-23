@@ -1,0 +1,14 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\SalesOrdersBackendApi\\SalesOrdersBackendApiDependencyProvider::getOrdersBackendApiAttributesMapperPlugins",
+            "source": "\\Spryker\\Glue\\CartNotesBackendApi\\Plugin\\SalesOrdersBackendApi\\CartNoteOrdersBackendApiAttributesMapperPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\SalesOrdersBackendApi\\SalesOrdersBackendApiDependencyProvider::getApiOrdersAttributesMapperPlugins",
+            "source": "\\Spryker\\Glue\\CartNotesBackendApi\\Plugin\\SalesOrdersBackendApi\\CartNoteApiOrdersAttributesMapperPlugin"
+        }
+    ]
+}
