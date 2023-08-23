@@ -1,0 +1,14 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\PickingListsBackendApi\\PickingListsBackendApiDependencyProvider::getPickingListItemsBackendApiAttributesMapperPlugins",
+            "source": "\\Spryker\\Glue\\ProductPackagingUnitsBackendApi\\Plugin\\PickingListsBackendApi\\ProductPackagingUnitPickingListItemsBackendApiAttributesMapperPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\PickingListsBackendApi\\PickingListsBackendApiDependencyProvider::getApiPickingListItemsAttributesMapperPlugins",
+            "source": "\\Spryker\\Glue\\ProductPackagingUnitsBackendApi\\Plugin\\PickingListsBackendApi\\ProductPackagingUnitApiPickingListItemsAttributesMapperPlugin"
+        }
+    ]
+}
