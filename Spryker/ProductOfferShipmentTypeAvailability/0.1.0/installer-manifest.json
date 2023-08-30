@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\ProductOfferServicePointAvailability\\ProductOfferServicePointAvailabilityDependencyProvider::getProductOfferServicePointAvailabilityFilterPlugins",
+            "source": "\\Spryker\\Client\\ProductOfferShipmentTypeAvailability\\Plugin\\ProductOfferServicePointAvailability\\ShipmentTypeProductOfferServicePointAvailabilityFilterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Availability\\AvailabilityDependencyProvider::getBatchAvailabilityStrategyPlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferShipmentTypeAvailability\\Communication\\Plugin\\Availability\\ProductOfferShipmentTypeBatchAvailabilityStrategyPlugin"
+        }
+    ]
+}
