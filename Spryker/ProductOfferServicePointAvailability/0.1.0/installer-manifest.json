@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Availability\\AvailabilityDependencyProvider::getBatchAvailabilityStrategyPlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferServicePointAvailability\\Communication\\Plugin\\Availability\\ProductOfferServicePointBatchAvailabilityStrategyPlugin"
+        }
+    ]
+}
