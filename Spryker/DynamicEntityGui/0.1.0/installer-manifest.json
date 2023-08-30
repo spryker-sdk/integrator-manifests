@@ -1,0 +1,51 @@
+{
+    "wire-navigation": [
+        {
+            "navigations": {
+                "dynamic-entities-gui": {
+                    "pages": {
+                        "dynamic-entity-create": {
+                            "label": "Create new configuration",
+                            "title": "Create new configuration",
+                            "bundle": "dynamic-entity-gui",
+                            "controller": "configuration-create",
+                            "action": "index",
+                            "visible": "0"
+                        }
+                    }
+                }
+            },
+            "after": "app-catalog-gui"
+        },
+        {
+            "navigations": {
+                "dynamic-entities-gui": {
+                    "pages": {
+                        "dynamic-entity-edit": {
+                            "label": "Edit configuration",
+                            "title": "Edit configuration",
+                            "bundle": "dynamic-entity-gui",
+                            "controller": "configuration-edit",
+                            "action": "index",
+                            "visible": "0"
+                        }
+                    }
+                }
+            },
+            "after": "app-catalog-gui"
+        },
+        {
+            "navigations": {
+                "dynamic-entities-gui": {
+                    "label": "Data Exchange API Configuration",
+                    "title": "Data Exchange API Configuration",
+                    "icon": "fa-exchange-alt",
+                    "bundle": "dynamic-entity-gui",
+                    "controller": "configuration-list",
+                    "action": "index"
+                }
+            },
+            "after": "app-catalog-gui"
+        }
+    ]
+}
