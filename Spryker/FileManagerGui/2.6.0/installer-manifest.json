@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\FileManagerGui\\FileManagerGuiConfig::IS_EMPTY_TYPES_VALIDATION_ENABLED",
+            "value": true
+        }
+    ]
+}
