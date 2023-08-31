@@ -23,6 +23,16 @@
             }
         },
         {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Event\\Communication\\Plugin\\Queue\\EventQueueMessageProcessorPlugin",
+            "index": "\\Spryker\\Shared\\CustomerStorage\\CustomerStorageConfig::PUBLISH_CUSTOMER_INVALIDATED"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Synchronization\\Communication\\Plugin\\Queue\\SynchronizationStorageQueueMessageProcessorPlugin",
+            "index": "\\Spryker\\Shared\\CustomerStorage\\CustomerStorageConfig::CUSTOMER_INVALIDATED_SYNC_STORAGE_QUEUE"
+        },
+        {
             "target": "\\Spryker\\Zed\\Synchronization\\SynchronizationDependencyProvider::getSynchronizationDataPlugins",
             "source": "\\Spryker\\Zed\\CustomerStorage\\Communication\\Plugin\\Synchronization\\CustomerInvalidatedStorageSynchronizationDataPlugin"
         }
