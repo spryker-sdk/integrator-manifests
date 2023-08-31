@@ -1,0 +1,16 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageAttributeProviderPlugins",
+            "source": "\\Spryker\\Zed\\Store\\Communication\\Plugin\\MessageBroker\\CurrentStoreReferenceMessageAttributeProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getExternalValidatorPlugins",
+            "source": "\\Spryker\\Zed\\Store\\Communication\\Plugin\\MessageBroker\\StoreReferenceMessageValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\OauthClient\\OauthClientDependencyProvider::getAccessTokenRequestExpanderPlugins",
+            "source": "\\Spryker\\Zed\\Store\\Communication\\Plugin\\OauthClient\\CurrentStoreReferenceAccessTokenRequestExpanderPlugin"
+        }
+    ]
+}
