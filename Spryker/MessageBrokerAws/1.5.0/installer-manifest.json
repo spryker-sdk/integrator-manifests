@@ -1,0 +1,57 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\MessageBrokerAws\\MessageBrokerAwsConstants::CONSUMER_ID",
+            "value": {
+                "value": "getenv('SPRYKER_TENANT_IDENTIFIER') ?: ''",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\MessageBrokerAws\\MessageBrokerAwsConstants::HTTP_CHANNEL_SENDER_BASE_URL",
+            "value": {
+                "value": "getenv('SPRYKER_MESSAGE_BROKER_HTTP_CHANNEL_SENDER_BASE_URL') ?: ''",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\MessageBrokerAws\\MessageBrokerAwsConstants::HTTP_CHANNEL_RECEIVER_BASE_URL",
+            "value": {
+                "value": "getenv('SPRYKER_MESSAGE_BROKER_HTTP_CHANNEL_RECEIVER_BASE_URL') ?: ''",
+                "is_literal": true
+            }
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageSenderPlugins",
+            "source": "\\Spryker\\Zed\\MessageBrokerAws\\Communication\\Plugin\\MessageBroker\\Sender\\HttpChannelMessageSenderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageReceiverPlugins",
+            "source": "\\Spryker\\Zed\\MessageBrokerAws\\Communication\\Plugin\\MessageBroker\\Receiver\\HttpChannelMessageReceiverPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBrokerAws\\MessageBrokerAwsDependencyProvider::getHttpChannelMessageReceiverRequestExpanderPlugins",
+            "source": "\\Spryker\\Zed\\MessageBrokerAws\\Communication\\Plugin\\MessageBrokerAws\\Expander\\ConsumerIdHttpChannelMessageReceiverRequestExpanderPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageSenderPlugins",
+            "source": "\\Spryker\\Zed\\MessageBrokerAws\\Communication\\Plugin\\MessageBroker\\Sender\\AwsSnsMessageSenderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageSenderPlugins",
+            "source": "\\Spryker\\Zed\\MessageBrokerAws\\Communication\\Plugin\\MessageBroker\\Sender\\AwsSqsMessageSenderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageSenderPlugins",
+            "source": "\\Spryker\\Zed\\MessageBrokerAws\\Communication\\Plugin\\MessageBroker\\Sender\\HttpMessageSenderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageReceiverPlugins",
+            "source": "\\Spryker\\Zed\\MessageBrokerAws\\Communication\\Plugin\\MessageBroker\\Receiver\\AwsSqsMessageReceiverPlugin"
+        }
+    ]
+}

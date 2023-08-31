@@ -1,0 +1,17 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\MessageBroker\\MessageBrokerConstants::TENANT_IDENTIFIER",
+            "value": {
+                "value": "getenv('SPRYKER_TENANT_IDENTIFIER') ?: ''",
+                "is_literal": true
+            }
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageAttributeProviderPlugins",
+            "source": "\\Spryker\\Zed\\MessageBroker\\Communication\\Plugin\\MessageBroker\\TenantActorMessageAttributeProviderPlugin"
+        }
+    ]
+}

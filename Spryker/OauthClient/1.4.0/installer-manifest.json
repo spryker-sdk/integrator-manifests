@@ -1,0 +1,21 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\OauthClient\\OauthClientConstants::TENANT_IDENTIFIER",
+            "value": {
+                "value": "getenv('SPRYKER_TENANT_IDENTIFIER') ?: ''",
+                "is_literal": true
+            }
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\MessageBrokerAws\\MessageBrokerAwsDependencyProvider::getHttpChannelMessageReceiverRequestExpanderPlugins",
+            "source": "\\Spryker\\Zed\\OauthClient\\Communication\\Plugin\\MessageBrokerAws\\AccessTokenHttpChannelMessageReceiverRequestExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\OauthClient\\OauthClientDependencyProvider::getAccessTokenRequestExpanderPlugins",
+            "source": "\\Spryker\\Zed\\OauthClient\\Communication\\Plugin\\OauthClient\\TenantIdentifierAccessTokenRequestExpanderPlugin"
+        }
+    ]
+}
