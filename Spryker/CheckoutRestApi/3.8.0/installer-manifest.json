@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "value": false,
+            "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiConfig::shouldExecuteQuotePostRecalculationPlugins"
+        }
+    ]
+}
