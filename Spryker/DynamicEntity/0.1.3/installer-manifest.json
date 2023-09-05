@@ -1,0 +1,22 @@
+{
+    "configure-module": [
+        {
+            "previousValue": "",
+            "target": "\\Spryker\\Zed\\DynamicEntity\\DynamicEntityConfig::getInstallerConfigurationDataFilePath",
+            "value": {
+                "value": "return sprintf(static::CONFIGURATION_FILE_PATH, APPLICATION_ROOT_DIR)",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\DynamicEntity\\DynamicEntityConfig::CONFIGURATION_FILE_PATH",
+            "value": "%s/src/Pyz/Zed/DynamicEntity/data/installer/configuration.json"
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Installer\\InstallerDependencyProvider::getInstallerPlugins",
+            "source": "\\Spryker\\Zed\\DynamicEntity\\Communication\\Plugin\\Installer\\DynamicEntityInstallerPlugin"
+        }
+    ]
+}
