@@ -1,0 +1,23 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherTriggerPlugins",
+            "source": "\\Spryker\\Zed\\ServicePointStorage\\Communication\\Plugin\\Publisher\\ServiceTypePublisherTriggerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getServicePointStoragePlugins",
+            "source": "\\Spryker\\Zed\\ServicePointStorage\\Communication\\Plugin\\Publisher\\ServiceType\\ServiceTypeWritePublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Synchronization\\SynchronizationDependencyProvider::getSynchronizationDataPlugins",
+            "source": "\\Spryker\\Zed\\ServicePointStorage\\Communication\\Plugin\\Synchronization\\ServiceTypeSynchronizationDataBulkRepositoryPlugin"
+        }
+    ],
+    "configure-module": [
+        {
+            "previousValue": "",
+            "target": "\\Spryker\\Zed\\ServicePointStorage\\ServicePointStorageConfig::getServiceTypeStorageSynchronizationPoolName",
+            "value": "\\Pyz\\Zed\\Synchronization\\SynchronizationConfig::DEFAULT_SYNCHRONIZATION_POOL_NAME"
+        }
+    ]
+}

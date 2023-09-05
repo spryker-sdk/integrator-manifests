@@ -1,0 +1,40 @@
+{
+    "wire-schema": [
+        {
+            "target": "Zed/ServicePoint/Persistence/Propel/Schema/spy_service_point.schema.xml",
+            "data": {
+                "name": "database",
+                "attributes": {
+                    "name": "zed",
+                    "namespace": "Orm\\Zed\\ServicePoint\\Persistence",
+                    "package": "src.Orm.Zed.ServicePoint.Persistence"
+                },
+                "sub-nodes": [
+                    {
+                        "name": "table",
+                        "attributes": {
+                            "name": "spy_service_type"
+                        },
+                        "sub-nodes": [
+                            {
+                                "name": "behavior",
+                                "attributes": {
+                                    "name": "event"
+                                },
+                                "sub-nodes": [
+                                    {
+                                        "name": "parameter",
+                                        "attributes": {
+                                            "name": "spy_service_type_all",
+                                            "column": "*"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
