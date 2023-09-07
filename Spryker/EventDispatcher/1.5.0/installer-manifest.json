@@ -1,0 +1,103 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getApplicationPlugins",
+            "source": "\\Spryker\\Zed\\EventDispatcher\\Communication\\Plugin\\Application\\EventDispatcherApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackofficeApplicationPlugins",
+            "source": "\\Spryker\\Zed\\EventDispatcher\\Communication\\Plugin\\Application\\BackofficeEventDispatcherApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\ZedRequest\\Communication\\Plugin\\EventDispatcher\\GatewayControllerEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Api\\Communication\\Plugin\\EventDispatcher\\ApiControllerEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getBackofficeEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Acl\\Communication\\Plugin\\EventDispatcher\\AccessControlEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getBackofficeEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\EventBehavior\\Communication\\Plugin\\EventDispatcher\\EventBehaviorEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getBackofficeEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Locale\\Communication\\Plugin\\EventDispatcher\\LocaleEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getBackofficeEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Monitoring\\Communication\\Plugin\\EventDispatcher\\MonitoringRequestTransactionEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getBackofficeEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Http\\Communication\\Plugin\\EventDispatcher\\CookieEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getBackofficeEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Http\\Communication\\Plugin\\EventDispatcher\\FragmentEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getBackofficeEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Http\\Communication\\Plugin\\EventDispatcher\\HstsHeaderEventDispatcher"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getBackofficeEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Http\\Communication\\Plugin\\EventDispatcher\\CacheControlHeaderEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getBackofficeEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Twig\\Communication\\Plugin\\EventDispatcher\\TwigEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getBackofficeEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Session\\Communication\\Plugin\\EventDispatcher\\SessionEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getBackofficeEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Session\\Communication\\Plugin\\EventDispatcher\\SaveSessionEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getBackofficeEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Kernel\\Communication\\Plugin\\AutoloaderCacheEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getBackofficeEventDispatcherPlugins",
+            "source": "\\Spryker\\Shared\\Http\\Plugin\\EventDispatcher\\ResponseListenerEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getBackofficeEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\ErrorHandler\\Communication\\Plugin\\EventDispatcher\\ErrorPageEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getBackofficeEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Kernel\\Communication\\Plugin\\EventDispatcher\\RedirectUrlValidationEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getBackofficeEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Http\\Communication\\Plugin\\EventDispatcher\\EnvironmentInfoHeaderEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getBackofficeEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\SecurityBlockerBackofficeGui\\Communication\\Plugin\\EventDispatcher\\SecurityBlockerBackofficeUserEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getBackofficeEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\SecurityBlockerMerchantPortalGui\\Communication\\Plugin\\EventDispatcher\\SecurityBlockerMerchantPortalUserEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getBackofficeEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Profiler\\Communication\\Plugin\\EventDispatcher\\ProfilerRequestEventDispatcherPlugin",
+            "condition": "class_exists(\\Spryker\\Zed\\Profiler\\Communication\\Plugin\\EventDispatcher\\ProfilerRequestEventDispatcherPlugin::class)"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackofficeApplicationPlugins",
+            "source": "\\Spryker\\Zed\\EventDispatcher\\Communication\\Plugin\\Application\\EventDispatcherApplicationPlugin"
+        }
+    ]
+}

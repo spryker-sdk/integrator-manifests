@@ -1,0 +1,36 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Router\\Communication\\Plugin\\Application\\RouterApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Console\\ConsoleDependencyProvider::getConsoleCommands",
+            "source": "\\Spryker\\Zed\\Router\\Communication\\Plugin\\Console\\RouterCacheWarmUpConsole"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getBackofficeEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Router\\Communication\\Plugin\\EventDispatcher\\RouterLocaleEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getBackofficeEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Router\\Communication\\Plugin\\EventDispatcher\\RouterListenerEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getBackofficeEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Router\\Communication\\Plugin\\EventDispatcher\\RouterSslRedirectEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getBackofficeEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\Router\\Communication\\Plugin\\EventDispatcher\\RequestAttributesEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Router\\RouterDependencyProvider::getRouterPlugins",
+            "source": "\\Spryker\\Zed\\Router\\Communication\\Plugin\\Router\\ZedRouterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Router\\RouterDependencyProvider::getRouterPlugins",
+            "source": "\\Spryker\\Zed\\Router\\Communication\\Plugin\\Router\\ZedDevelopmentRouterPlugin"
+        }
+    ]
+}
