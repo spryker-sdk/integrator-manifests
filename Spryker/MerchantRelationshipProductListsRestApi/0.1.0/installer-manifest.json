@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\CustomersRestApi\\CustomersRestApiDependencyProvider::getCustomerExpanderPlugins",
+            "source": "\\Spryker\\Glue\\MerchantRelationshipProductListsRestApi\\Plugin\\CustomersRestApi\\CustomerProductListCustomerExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\OauthCustomerConnector\\OauthCustomerConnectorDependencyProvider::getOauthCustomerIdentifierExpanderPlugins",
+            "source": "\\Spryker\\Zed\\MerchantRelationshipProductListsRestApi\\Communication\\Plugin\\OauthCustomerConnector\\CustomerProductListOauthCustomerIdentifierExpanderPlugin"
+        }
+    ]
+}
