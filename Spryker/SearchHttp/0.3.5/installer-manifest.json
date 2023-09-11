@@ -1,0 +1,20 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createCatalogSearchQueryPluginVariants",
+            "source": "\\Spryker\\Client\\SearchHttp\\Plugin\\Catalog\\Query\\SearchHttpQueryPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createSuggestionQueryPluginVariants",
+            "source": "\\Spryker\\Client\\SearchHttp\\Plugin\\Catalog\\Query\\SuggestionSearchHttpQueryPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createProductConcreteCatalogSearchQueryPluginVariants",
+            "source": "\\Spryker\\Client\\SearchHttp\\Plugin\\Catalog\\Query\\ProductConcreteSearchHttpQueryPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::getSearchResultCountPlugins",
+            "source": "\\Spryker\\Client\\SearchHttp\\Plugin\\Search\\SearchHttpSearchResultCountPlugin"
+        }
+    ]
+}
