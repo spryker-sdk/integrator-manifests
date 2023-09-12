@@ -1,0 +1,26 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\AclMerchantPortal\\AclMerchantPortalDependencyProvider::getMerchantAclRuleExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferServicePointMerchantPortalGui\\Communication\\Plugin\\AclMerchantPortal\\ProductOfferServicePointMerchantPortalGuiMerchantAclRuleExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductOfferMerchantPortalGui\\ProductOfferMerchantPortalGuiDependencyProvider::getProductOfferFormExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferServicePointMerchantPortalGui\\Communication\\Plugin\\ProductOfferMerchantPortalGui\\ServiceProductOfferFormExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductOfferMerchantPortalGui\\ProductOfferMerchantPortalGuiDependencyProvider::getProductOfferFormViewExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferServicePointMerchantPortalGui\\Communication\\Plugin\\ProductOfferMerchantPortalGui\\ServiceProductOfferFormViewExpanderPlugin"
+        }
+    ],
+    "configure-module": [
+        {
+            "previousValue": "$bundleNames = [dashboard-merchant-portal-gui, merchant-profile-merchant-portal-gui, product-merchant-portal-gui, product-offer-merchant-portal-gui, security-merchant-portal-gui, sales-merchant-portal-gui, user-merchant-portal-gui, dummy-merchant-portal-gui]; $bundleNames return $installerRules",
+            "target": "\\Spryker\\Zed\\Acl\\AclConfig::addMerchantPortalInstallerRules",
+            "value": {
+                "value": "$bundleNames = [dashboard-merchant-portal-gui, merchant-profile-merchant-portal-gui, product-merchant-portal-gui, product-offer-merchant-portal-gui, security-merchant-portal-gui, sales-merchant-portal-gui, user-merchant-portal-gui, dummy-merchant-portal-gui, product-offer-service-point-merchant-portal-gui]; $bundleNames return $installerRules",
+                "is_literal": true
+            }
+        }
+    ]
+}

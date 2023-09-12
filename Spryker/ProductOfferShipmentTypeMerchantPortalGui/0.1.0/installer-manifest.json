@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductOfferMerchantPortalGui\\ProductOfferMerchantPortalGuiDependencyProvider::getProductOfferFormExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferShipmentTypeMerchantPortalGui\\Communication\\Plugin\\ProductOfferMerchantPortalGui\\ShipmentTypeProductOfferFormExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductOfferMerchantPortalGui\\ProductOfferMerchantPortalGuiDependencyProvider::getProductOfferFormViewExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferShipmentTypeMerchantPortalGui\\Communication\\Plugin\\ProductOfferMerchantPortalGui\\ShipmentTypeProductOfferFormViewExpanderPlugin"
+        }
+    ]
+}
