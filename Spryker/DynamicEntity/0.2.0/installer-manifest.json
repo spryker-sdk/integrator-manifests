@@ -1,0 +1,10 @@
+{
+    "glossary-key": {
+        "new": {
+            "dynamic_entity.validation.provided_field_is_invalid": {
+                "en_US": "The provided `%fieldName%` is incorrect or invalid.",
+                "de_DE": "Der angegebene `%fieldName%` ist falsch oder ungültig."
+            }
+        }
+    }
+}
