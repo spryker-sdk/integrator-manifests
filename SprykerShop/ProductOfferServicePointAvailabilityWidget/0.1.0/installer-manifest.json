@@ -1,0 +1,26 @@
+{
+    "glossary-key": {
+        "new": {
+            "product_offer_service_point_availability_widget.all_items_available": {
+                "en_US": "All items are available.",
+                "de_DE": "Alle Produkte sind verfügbar."
+            },
+            "product_offer_service_point_availability_widget.some_items_not_available": {
+                "en_US": "Some items are not available.",
+                "de_DE": "Einige der Produkte sind nicht verfügbar."
+            },
+            "product_offer_service_point_availability_widget.all_items_not_available": {
+                "en_US": "Not available.",
+                "de_DE": "Keine der Produkte sind verfügbar."
+            }
+        }
+    },
+    "wire-widget": [
+        {
+            "source": "\\SprykerShop\\Yves\\ProductOfferServicePointAvailabilityWidget\\Widget\\ProductOfferServicePointAvailabilityWidget"
+        },
+        {
+            "source": "\\SprykerShop\\Yves\\ProductOfferServicePointAvailabilityWidget\\Widget\\ProductOfferServicePointAvailabilityDisplayWidget"
+        }
+    ]
+}
