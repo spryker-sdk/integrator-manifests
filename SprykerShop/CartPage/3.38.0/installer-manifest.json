@@ -1,0 +1,15 @@
+{
+    "wire-widget": [
+        {
+            "source": "\\SprykerShop\\Yves\\CartPage\\Widget\\CartSummaryHideTaxAmountWidget"
+        }
+    ],
+    "glossary-key": {
+        "new": {
+            "cart.total.tax_total.calculated_at_checkout": {
+                "de_DE": "an der Kasse berechnet",
+                "en_US": "calculated at checkout"
+            }
+        }
+    }
+}

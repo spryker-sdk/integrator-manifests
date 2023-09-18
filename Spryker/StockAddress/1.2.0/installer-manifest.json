@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductOfferStock\\ProductOfferStockDependencyProvider::getStockTransferExpanderPluginCollection",
+            "source": "\\Spryker\\Zed\\StockAddress\\Communication\\Plugin\\Stock\\StockAddressStockTransferProductOfferStockExpanderPlugin"
+        }
+    ]
+}

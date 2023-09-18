@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\TaxApp\\TaxAppDependencyProvider::getCalculableObjectTaxAppExpanderPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProfile\\Communication\\Plugin\\TaxApp\\MerchantProfileAddressCalculableObjectTaxAppExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\TaxApp\\TaxAppDependencyProvider::getOrderTaxAppExpanderPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProfile\\Communication\\Plugin\\TaxApp\\MerchantProfileAddressOrderTaxAppExpanderPlugin"
+        }
+    ]
+}

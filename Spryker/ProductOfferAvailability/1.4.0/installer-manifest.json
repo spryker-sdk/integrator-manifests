@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\TaxApp\\TaxAppDependencyProvider::getCalculableObjectTaxAppExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferAvailability\\Communication\\Plugin\\TaxApp\\ProductOfferAvailabilityCalculableObjectTaxAppExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\TaxApp\\TaxAppDependencyProvider::getOrderTaxAppExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferAvailability\\Communication\\Plugin\\TaxApp\\ProductOfferAvailabilityOrderTaxAppExpanderPlugin"
+        }
+    ]
+}
