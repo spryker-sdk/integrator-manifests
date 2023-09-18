@@ -1,0 +1,41 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\TaxApp\\TaxAppConstants::OAUTH_PROVIDER_NAME",
+            "value": "\\Spryker\\Zed\\OauthAuth0\\OauthAuth0Config::PROVIDER_NAME"
+        },
+        {
+            "target": "\\Spryker\\Shared\\TaxApp\\TaxAppConstants::OAUTH_GRANT_TYPE",
+            "value": "\\Spryker\\Zed\\OauthAuth0\\OauthAuth0Config::GRANT_TYPE_CLIENT_CREDENTIALS"
+        },
+        {
+            "target": "\\Spryker\\Shared\\TaxApp\\TaxAppConstants::OAUTH_OPTION_AUDIENCE",
+            "value": "aop-app"
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Calculation\\CalculationDependencyProvider::getQuoteCalculatorPluginStack",
+            "source": "\\Spryker\\Zed\\TaxApp\\Communication\\Plugin\\Calculation\\TaxAppCalculationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Calculation\\CalculationDependencyProvider::getOrderCalculatorPluginStack",
+            "source": "\\Spryker\\Zed\\TaxApp\\Communication\\Plugin\\Calculation\\TaxAppCalculationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageHandlerPlugins",
+            "source": "\\Spryker\\Zed\\TaxApp\\Communication\\Plugin\\MessageBroker\\TaxAppMessageHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::extendCommandPlugins",
+            "source": "\\Spryker\\Zed\\TaxApp\\Communication\\Plugin\\Oms\\Command\\SubmitPaymentTaxInvoicePlugin",
+            "arguments": {
+                "append-arguments": [
+                    {
+                        "value": "TaxApp/SubmitPaymentTaxInvoice"
+                    }
+                ]
+            }
+        }
+    ]
+}
