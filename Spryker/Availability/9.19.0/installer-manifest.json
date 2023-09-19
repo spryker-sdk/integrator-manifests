@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\DynamicEntity\\DynamicEntityDependencyProvider::getDynamicEntityPostUpdatePlugins",
+            "source": "\\Spryker\\Zed\\Availability\\Communication\\Plugin\\DynamicEntity\\AvailabilityDynamicEntityPostUpdatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\DynamicEntity\\DynamicEntityDependencyProvider::getDynamicEntityPostCreatePlugins",
+            "source": "\\Spryker\\Zed\\Availability\\Communication\\Plugin\\DynamicEntity\\AvailabilityDynamicEntityPostCreatePlugin"
+        }
+    ]
+}
