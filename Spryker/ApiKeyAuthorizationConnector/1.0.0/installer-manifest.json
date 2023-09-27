@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplicationAuthorizationConnector\\GlueBackendApiApplicationAuthorizationConnectorDependencyProvider::getAuthorizationRequestExpanderPlugins",
+            "source": "\\Spryker\\Glue\\ApiKeyAuthorizationConnector\\Plugin\\GlueBackendApiApplicationAuthorizationConnector\\ApiKeyAuthorizationRequestExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Authorization\\AuthorizationDependencyProvider::getAuthorizationStrategyPlugins",
+            "source": "\\Spryker\\Zed\\ApiKeyAuthorizationConnector\\Communication\\Plugin\\Authorization\\ApiKeyAuthorizationStrategyPlugin"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "value": true,
+            "target": "\\Spryker\\Zed\\Authorization\\AuthorizationConfig::isMultistrategyAuthorizationAllowed"
+        }
+    ]
+}
