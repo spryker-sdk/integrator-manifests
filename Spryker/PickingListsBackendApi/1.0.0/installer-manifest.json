@@ -1,0 +1,34 @@
+{
+    "unwire-glue-relationship": [
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\GlueBackendApiApplicationGlueJsonApiConventionConnectorDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\PickingListsBackendApi\\PickingListsBackendApiConfig::RESOURCE_PICKING_LISTS": "\\Spryker\\Glue\\PickingListsUsersBackendResourceRelationship\\Plugin\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\UsersByPickingListsBackendResourceRelationshipPlugin"
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\GlueBackendApiApplicationGlueJsonApiConventionConnectorDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\PickingListsBackendApi\\PickingListsBackendApiConfig::RESOURCE_PICKING_LISTS": "\\Spryker\\Glue\\PickingListsWarehousesBackendResourceRelationship\\Plugin\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\WarehousesByPickingListsBackendResourceRelationshipPlugin"
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\GlueBackendApiApplicationGlueJsonApiConventionConnectorDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\PickingListsBackendApi\\PickingListsBackendApiConfig::RESOURCE_PICKING_LIST_ITEMS": "\\Spryker\\Glue\\PickingListsProductsBackendResourceRelationship\\Plugin\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\ConcreteProductsByPickingListItemsBackendResourceRelationshipPlugin"
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\GlueBackendApiApplicationGlueJsonApiConventionConnectorDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\PickingListsBackendApi\\PickingListsBackendApiConfig::RESOURCE_PICKING_LIST_ITEMS": "\\Spryker\\Glue\\PickingListsSalesOrdersBackendResourceRelationship\\Plugin\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\SalesOrdersByPickingListItemsBackendResourceRelationshipPlugin"
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\GlueBackendApiApplicationGlueJsonApiConventionConnectorDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\PickingListsBackendApi\\PickingListsBackendApiConfig::RESOURCE_PICKING_LIST_ITEMS": "\\Spryker\\Glue\\PickingListsShipmentsBackendResourceRelationship\\Plugin\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\SalesShipmentsByPickingListsBackendResourceRelationshipPlugin"
+            }
+        }
+    ]
+}
