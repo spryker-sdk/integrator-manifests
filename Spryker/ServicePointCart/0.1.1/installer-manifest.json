@@ -1,0 +1,16 @@
+{
+    "glossary-key": {
+        "new": {
+            "service_point_cart.checkout.validation.error": {
+                "en_US": "Selected service point \"%uuid%\" is not available for the store \"%store_name%\"",
+                "de_DE": "Der ausgewählte Servicepunkt \"%uuid%\" ist für den Shop \"%store_name%\" nicht verfügbar"
+            }
+        }
+    },
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditions",
+            "source": "\\Spryker\\Zed\\ServicePointCart\\Communication\\Plugin\\Checkout\\ServicePointCheckoutPreConditionPlugin"
+        }
+    ]
+}
