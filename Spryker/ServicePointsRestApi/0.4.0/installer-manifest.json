@@ -1,0 +1,20 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getCheckoutRequestAttributesValidatorPlugins",
+            "source": "\\Spryker\\Glue\\ServicePointsRestApi\\Plugin\\CheckoutRestApi\\ServicePointCheckoutRequestAttributesValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getCheckoutDataResponseMapperPlugins",
+            "source": "\\Spryker\\Glue\\ServicePointsRestApi\\Plugin\\CheckoutRestApi\\ServicePointCheckoutDataResponseMapperPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getQuoteMapperPlugins",
+            "source": "\\Spryker\\Zed\\ServicePointsRestApi\\Communication\\Plugin\\CheckoutRestApi\\ServicePointQuoteMapperPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getCheckoutDataExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ServicePointsRestApi\\Communication\\Plugin\\CheckoutRestApi\\ServicePointCheckoutDataExpanderPlugin"
+        }
+    ]
+}
