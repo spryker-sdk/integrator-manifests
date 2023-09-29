@@ -1,0 +1,28 @@
+{
+    "glossary-key": {
+        "new": {
+            "shipment_types_rest_api.error.shipment_type_not_available": {
+                "en_US": "Selected delivery type \"%name%\" is not available.",
+                "de_DE": "Die ausgewählte Lieferart \"%name%\" ist nicht verfügbar."
+            }
+        }
+    },
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getCheckoutDataResponseMapperPlugins",
+            "source": "\\Spryker\\Glue\\ShipmentTypesRestApi\\Plugin\\CheckoutRestApi\\SelectedShipmentTypesCheckoutDataResponseMapperPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getQuoteMapperPlugins",
+            "source": "\\Spryker\\Zed\\ShipmentTypesRestApi\\Communication\\Plugin\\CheckoutRestApi\\ItemShipmentTypeQuoteMapperPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getCheckoutDataValidatorPlugins",
+            "source": "\\Spryker\\Zed\\ShipmentTypesRestApi\\Communication\\Plugin\\CheckoutRestApi\\ShipmentTypeCheckoutDataValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getReadCheckoutDataValidatorPlugins",
+            "source": "\\Spryker\\Zed\\ShipmentTypesRestApi\\Communication\\Plugin\\CheckoutRestApi\\ShipmentTypeReadCheckoutDataValidatorPlugin"
+        }
+    ]
+}
