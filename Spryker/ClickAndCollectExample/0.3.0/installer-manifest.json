@@ -1,0 +1,20 @@
+{
+    "glossary-key": {
+        "new": {
+            "click_and_collect_example.error.item_replacement_not_found": {
+                "en_US": "Item \"%item%\" is unavailable for delivery with the selected delivery type. Please choose an alternative way to deliver the item or remove it from the cart.",
+                "de_DE": "Artikel \"\"%item%\" kann nicht mit der ausgewählten Versandart geliefert werden. Bitte wählen Sie eine alternative Versandart oder entfernen Sie den Artikel aus dem Warenkorb."
+            }
+        }
+    },
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ServicePointCart\\ServicePointCartDependencyProvider::getServicePointQuoteItemReplaceStrategyPlugins",
+            "source": "\\Spryker\\Zed\\ClickAndCollectExample\\Communication\\Plugin\\ServicePointCart\\ClickAndCollectExampleDeliveryServicePointQuoteItemReplaceStrategyPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ServicePointCart\\ServicePointCartDependencyProvider::getServicePointQuoteItemReplaceStrategyPlugins",
+            "source": "\\Spryker\\Zed\\ClickAndCollectExample\\Communication\\Plugin\\ServicePointCart\\ClickAndCollectExamplePickupServicePointQuoteItemReplaceStrategyPlugin"
+        }
+    ]
+}
