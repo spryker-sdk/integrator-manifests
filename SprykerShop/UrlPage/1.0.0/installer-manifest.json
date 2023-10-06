@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\CartPage\\CartPageDependencyProvider::getCartItemTransformerPlugins",
+            "source": "\\SprykerShop\\Yves\\UrlPage\\Plugin\\CartPage\\UrlCartItemTransformerPlugin"
+        }
+    ]
+}
