@@ -1,0 +1,17 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\CustomerPage\\CustomerPageDependencyProvider::getCheckoutAddressCollectionFormExpanderPlugins",
+            "source": "\\SprykerShop\\Yves\\ClickAndCollectPageExample\\Plugin\\CustomerPage\\ClickAndCollectServiceTypeCheckoutAddressCollectionFormExpanderPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\CustomerPage\\CustomerPageDependencyProvider::getCheckoutMultiShippingAddressesFormExpanderPlugins",
+            "source": "\\SprykerShop\\Yves\\ClickAndCollectPageExample\\Plugin\\CustomerPage\\ClickAndCollectServiceTypeCheckoutMultiShippingAddressesFormExpanderPlugin"
+        }
+    ],
+    "wire-widget": [
+        {
+            "source": "\\SprykerShop\\Yves\\ClickAndCollectPageExample\\Widget\\ClickAndCollectServicePointAddressFormWidget"
+        }
+    ]
+}
