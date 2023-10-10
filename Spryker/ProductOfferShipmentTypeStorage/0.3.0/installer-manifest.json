@@ -1,0 +1,8 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\ShipmentTypeStorage\\ShipmentTypeStorageDependencyProvider::getAvailableShipmentTypeFilterPlugins",
+            "source": "\\Spryker\\Client\\ProductOfferShipmentTypeStorage\\Plugin\\ShipmentTypeStorage\\ShipmentTypeProductOfferAvailableShipmentTypeFilterPlugin"
+        }
+    ]
+}
