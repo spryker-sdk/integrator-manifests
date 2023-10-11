@@ -1,0 +1,12 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\ShipmentTypeStorage\\ShipmentTypeStorageDependencyProvider::getShipmentTypeStorageExpanderPlugins",
+            "source": "\\Spryker\\Client\\ShipmentTypeServicePoint\\Plugin\\ShipmentTypeStorage\\ServiceTypeShipmentTypeStorageExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ShipmentTypeStorage\\ShipmentTypeStorageDependencyProvider::getShipmentTypeStorageExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ShipmentTypeServicePoint\\Communication\\Plugin\\ShipmentTypeStorage\\ServiceTypeShipmentTypeStorageExpanderPlugin"
+        }
+    ]
+}
