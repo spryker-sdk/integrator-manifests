@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductAbstractPageSearchPlugins",
+            "source": "\\Spryker\\Zed\\ProductPageSearch\\Communication\\Plugin\\Publisher\\CategoryStore\\CategoryStoreProductAbstractPageSearchWritePublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductPageSearchPlugins"
+            }
+        }
+    ]
+}
