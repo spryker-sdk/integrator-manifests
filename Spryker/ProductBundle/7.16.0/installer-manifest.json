@@ -1,0 +1,11 @@
+{
+    "configure-module": [
+        {
+            "previousValue": [],
+            "target": "\\Spryker\\Zed\\ProductBundle\\ProductBundleConfig::getAllowedBundleItemFieldsToCopy",
+            "value": [
+                "\\Generated\\Shared\\Transfer\\ItemTransfer::SHIPMENT"
+            ]
+        }
+    ]
+}
