@@ -1,0 +1,12 @@
+{
+    "configure-module": [
+        {
+            "previousValue": [],
+            "target": "\\SprykerShop\\Yves\\ServicePointWidget\\ServicePointWidgetConfig::getNotApplicableServicePointAddressStepFormItemPropertiesForHydration",
+            "value": [
+                "\\Generated\\Shared\\Transfer\\ItemTransfer::BUNDLE_ITEM_IDENTIFIER",
+                "\\Generated\\Shared\\Transfer\\ItemTransfer::RELATED_BUNDLE_ITEM_IDENTIFIER"
+            ]
+        }
+    ]
+}
