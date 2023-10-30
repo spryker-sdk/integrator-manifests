@@ -1,0 +1,20 @@
+{
+    "glossary-key": {
+        "new": {
+            "product_offer_shipment_type.validation.product_offer_reference_not_found": {
+                "en_US": "Product offer '%product_offer_reference%' not found.",
+                "de_DE": "Product offer '%product_offer_reference%' nicht gefunden."
+            },
+            "product_offer_shipment_type.validation.shipment_type_uuid_not_found": {
+                "en_US": "Delivery types with uuids '%shipment_type_uuids%' not found.",
+                "de_DE": "Lieferarten mit den uuids '%shipment_type_uuids%' wurde nicht gefunden."
+            },
+            "product_offer_shipment_type.validation.product_offer_not_unique": {
+                "de_DE": "Ein Product Offer mit der gleichen Referenz liegt bereits in der Anfrage vor."
+            },
+            "product_offer_shipment_type.validation.shipment_type_not_unique": {
+                "de_DE": "Ein Lieferart für Product Offer '%product_offer_reference%' mit derselben UUID ist bereits in der Anfrage vorhanden."
+            }
+        }
+    }
+}

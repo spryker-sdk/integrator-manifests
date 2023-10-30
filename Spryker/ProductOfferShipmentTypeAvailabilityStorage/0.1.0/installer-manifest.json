@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\ProductOfferServicePointAvailabilityStorage\\ProductOfferServicePointAvailabilityStorageDependencyProvider::getProductOfferServicePointAvailabilityFilterPlugins",
+            "source": "\\Spryker\\Client\\ProductOfferShipmentTypeAvailabilityStorage\\Plugin\\ProductOfferServicePointAvailabilityStorage\\ShipmentTypeProductOfferServicePointAvailabilityFilterPlugin"
+        }
+    ]
+}
