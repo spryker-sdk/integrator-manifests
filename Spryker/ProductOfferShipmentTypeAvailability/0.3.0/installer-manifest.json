@@ -1,0 +1,8 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\ProductOfferServicePointAvailability\\ProductOfferServicePointAvailabilityDependencyProvider::getProductOfferServicePointAvailabilityFilterPlugins",
+            "source": "\\Spryker\\Client\\ProductOfferShipmentTypeAvailability\\Plugin\\ProductOfferServicePointAvailability\\ShipmentTypeProductOfferServicePointAvailabilityFilterPlugin"
+        }
+    ]
+}
