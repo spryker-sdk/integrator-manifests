@@ -1,0 +1,14 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getQuoteMapperPlugins",
+            "source": "\\Spryker\\Zed\\ShipmentTypesRestApi\\Communication\\Plugin\\CheckoutRestApi\\ItemShipmentTypeQuoteMapperPlugin"
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ShipmentsRestApi\\ShipmentsRestApiDependencyProvider::getQuoteItemExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ShipmentTypesRestApi\\Communication\\Plugin\\ShipmentsRestApi\\ShipmentTypeQuoteItemExpanderPlugin"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ShipmentsRestApi\\ShipmentsRestApiDependencyProvider::getQuoteItemExpanderPlugins",
+            "source": "\\Spryker\\Glue\\ProductBundleCartsRestApi\\Plugin\\ShipmentsRestApi\\CopyShipmentToProductBundleQuoteItemExpanderPlugin"
+        }
+    ]
+}
