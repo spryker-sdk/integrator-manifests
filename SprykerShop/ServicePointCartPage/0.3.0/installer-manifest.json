@@ -1,0 +1,12 @@
+{
+    "configure-module": [
+        {
+            "target": "\\SprykerShop\\Yves\\ServicePointCartPage\\ServicePointCartPageConfig::QUOTE_ITEM_FIELDS_ALLOWED_FOR_RESET",
+            "value": [
+                "\\Generated\\Shared\\Transfer\\ItemTransfer::SERVICE_POINT",
+                "\\Generated\\Shared\\Transfer\\ItemTransfer::SHIPMENT",
+                "\\Generated\\Shared\\Transfer\\ItemTransfer::SHIPMENT_TYPE"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getCheckoutDataValidatorPlugins",
+            "source": "\\Spryker\\Zed\\ClickAndCollectExample\\Communication\\Plugin\\CheckoutRestApi\\ClickAndCollectExampleReplaceCheckoutDataValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getReadCheckoutDataValidatorPlugins",
+            "source": "\\Spryker\\Zed\\ClickAndCollectExample\\Communication\\Plugin\\CheckoutRestApi\\ClickAndCollectExampleReplaceReadCheckoutDataValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ServicePointCart\\ServicePointCartDependencyProvider::getServicePointQuoteItemReplaceStrategyPlugins",
+            "source": "\\Spryker\\Zed\\ClickAndCollectExample\\Communication\\Plugin\\ServicePointCart\\ClickAndCollectExampleServicePointQuoteItemReplaceStrategyPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ServicePointCart\\ServicePointCartDependencyProvider::getServicePointQuoteItemReplaceStrategyPlugins",
+            "source": "\\Spryker\\Zed\\ClickAndCollectExample\\Communication\\Plugin\\ServicePointCart\\ClickAndCollectExampleDeliveryServicePointQuoteItemReplaceStrategyPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ServicePointCart\\ServicePointCartDependencyProvider::getServicePointQuoteItemReplaceStrategyPlugins",
+            "source": "\\Spryker\\Zed\\ClickAndCollectExample\\Communication\\Plugin\\ServicePointCart\\ClickAndCollectExamplePickupServicePointQuoteItemReplaceStrategyPlugin"
+        }
+    ]
+}
