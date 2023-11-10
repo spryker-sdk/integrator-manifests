@@ -1,0 +1,14 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Comment\\CommentDependencyProvider::getCommentValidatorPlugins",
+            "source": "\\Spryker\\Zed\\SharedCart\\Communication\\Plugin\\Comment\\SharedCartAccessCommentValidatorPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Comment\\CommentDependencyProvider::getCommentValidatorPlugins",
+            "source": "\\Spryker\\Zed\\SharedCart\\Communication\\Plugin\\Comment\\SharedCartCommentValidatorPlugin"
+        }
+    ]
+}
