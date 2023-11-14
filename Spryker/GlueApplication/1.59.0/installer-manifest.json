@@ -1,0 +1,11 @@
+{
+    "configure-module": [
+        {
+            "previousValue": [],
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationConfig::getRoutePatternsAllowedForCacheWarmUp",
+            "value": [
+                "/^\\/dynamic-entity\\/.+/"
+            ]
+        }
+    ]
+}
