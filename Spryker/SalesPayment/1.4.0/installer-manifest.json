@@ -1,0 +1,16 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\Sales\\SalesConstants::PAYMENT_METHOD_STATEMACHINE_MAPPING",
+            "value": {
+                "\\Spryker\\Zed\\Payment\\PaymentConfig::PAYMENT_FOREIGN_PROVIDER": "ForeignPaymentStateMachine01"
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\Oms\\OmsConstants::ACTIVE_PROCESSES",
+            "value": [
+                "ForeignPaymentStateMachine01"
+            ]
+        }
+    ]
+}
