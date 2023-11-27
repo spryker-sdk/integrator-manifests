@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\Customer\\CustomerConfig::PASSWORD_RESET_EXPIRATION_IS_ENABLED",
+            "value": true
+        }
+    ]
+}

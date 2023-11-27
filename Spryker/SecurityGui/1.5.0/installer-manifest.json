@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\SecurityGui\\SecurityGuiConfig::IS_BACKOFFICE_USER_SECURITY_BLOCKER_ENABLED",
+            "value": true
+        }
+    ]
+}
