@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\SprykerShop\\Yves\\CustomerPage\\CustomerPageConfig::CUSTOMER_SECURITY_BLOCKER_ENABLED",
+            "value": true
+        }
+    ]
+}

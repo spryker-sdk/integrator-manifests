@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\SecurityMerchantPortalGui\\SecurityMerchantPortalGuiConfig::MERCHANT_PORTAL_SECURITY_BLOCKER_ENABLED",
+            "value": true
+        }
+    ]
+}
