@@ -1,4 +1,13 @@
 {
+    "configure-module": [
+        {
+            "previousValue": [],
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerConfig::getProtectedMessageAttributes",
+            "value": [
+                "\\Generated\\Shared\\Transfer\\MessageAttributesTransfer::AUTHORIZATION"
+            ]
+        }
+    ],
     "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageAttributeProviderPlugins",
