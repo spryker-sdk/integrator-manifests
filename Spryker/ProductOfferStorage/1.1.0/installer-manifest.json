@@ -1,19 +1,19 @@
 {
     "wire-plugin": [
         {
-            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferStoreStoragePlugins",
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferStoragePlugins",
             "source": "\\Spryker\\Zed\\ProductOfferStorage\\Communication\\Plugin\\Publisher\\ProductOffer\\ProductOfferStoreWritePublisherPlugin"
         },
         {
-            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferStoreStoragePlugins",
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferStoragePlugins",
             "source": "\\Spryker\\Zed\\ProductOfferStorage\\Communication\\Plugin\\Publisher\\ProductOffer\\ProductOfferStoreDeletePublisherPlugin"
         },
         {
-            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferStoreStoragePlugins",
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferStoragePlugins",
             "source": "\\Spryker\\Zed\\ProductOfferStorage\\Communication\\Plugin\\Publisher\\ProductConcreteOffers\\ProductConcreteProductOffersStoreWritePublisherPlugin"
         },
         {
-            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferStoreStoragePlugins",
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferStoragePlugins",
             "source": "\\Spryker\\Zed\\ProductOfferStorage\\Communication\\Plugin\\Publisher\\ProductConcreteOffers\\ProductConcreteProductOffersStoreDeletePublisherPlugin"
         }
     ]
