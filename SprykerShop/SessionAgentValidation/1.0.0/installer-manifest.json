@@ -9,11 +9,11 @@
             "source": "\\SprykerShop\\Yves\\SessionAgentValidation\\Plugin\\Security\\ValidateAgentSessionSecurityPlugin"
         },
         {
-            "target": "\\SprykerShop\\Yves\\Security\\SecurityDependencyProvider::getSecurityPlugins",
+            "target": "\\Spryker\\Yves\\Security\\SecurityDependencyProvider::getSecurityPlugins",
             "source": "\\SprykerShop\\Yves\\SessionAgentValidation\\Plugin\\Security\\SaveAgentSessionSecurityPlugin"
         },
         {
-            "target": "\\SprykerShop\\Yves\\Security\\SecurityDependencyProvider::getSecurityAuthenticationListenerFactoryTypeExpanderPlugins",
+            "target": "\\Spryker\\Yves\\Security\\SecurityDependencyProvider::getSecurityAuthenticationListenerFactoryTypeExpanderPlugins",
             "source": "\\SprykerShop\\Yves\\SessionAgentValidation\\Plugin\\Security\\SessionAgentValidationSecurityAuthenticationListenerFactoryTypeExpanderPlugin"
         }
     ]
