@@ -16,5 +16,19 @@
             "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::getSearchResultCountPlugins",
             "source": "\\Spryker\\Client\\SearchHttp\\Plugin\\Search\\SearchHttpSearchResultCountPlugin"
         }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::createCatalogSearchQueryPluginVariants",
+            "source": "\\Spryker\\Client\\SearchHttp\\Plugin\\Catalog\\Query\\SearchHttpQueryPlugin",
+            "arguments": {
+                "constructor-arguments": [
+                    {
+                        "value": "$searchContextTransfer",
+                        "is_literal": true
+                    }
+                ]
+            }
+        }
     ]
 }
