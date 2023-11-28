@@ -1,0 +1,18 @@
+{
+    "glossary-key": {
+        "new": {
+            "comment.validation.error.customer_not_set": {
+                "en_US": "The comment cannot be created without a valid customer",
+                "de_DE": "Der Kommentar kann ohne gültigen Kunden nicht erstellt werden"
+            },
+            "comment.validation.error.company_user_not_set": {
+                "en_US": "The comment cannot be created without a valid company user",
+                "de_DE": "Der Kommentar kann ohne gültigen Benutzer nicht erstellt werden"
+            },
+            "comment.validation.error.owner_not_set": {
+                "en_US": "The comment cannot be created on an unknown %owner%",
+                "de_DE": "Der Kommentar kann nicht für eine(n) unbekannte(n) %owner% erstellt werden"
+            }
+        }
+    }
+}
