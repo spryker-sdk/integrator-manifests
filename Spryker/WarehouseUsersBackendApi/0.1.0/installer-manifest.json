@@ -4,5 +4,41 @@
             "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getResourcePlugins",
             "source": "\\Spryker\\Glue\\WarehouseUsersBackendApi\\Plugin\\GlueApplication\\WarehouseUserAssignmentsBackendResourcePlugin"
         }
+    ],
+    "configure-module": [
+        {
+            "previousValue": {
+                "/categories": {
+                    "isRegularExpression": false
+                },
+                "#^/categories/.*#": {
+                    "isRegularExpression": true
+                },
+                "/\\/product-attributes.*/": {
+                    "isRegularExpression": true,
+                    "methods": [
+                        "get",
+                        "getCollection",
+                        "post",
+                        "patch"
+                    ]
+                },
+                "/\\/product-abstract.*/": {
+                    "isRegularExpression": true,
+                    "methods": [
+                        "get",
+                        "getCollection",
+                        "post",
+                        "patch"
+                    ]
+                }
+            },
+            "target": "\\Spryker\\Shared\\GlueBackendApiApplicationAuthorizationConnector\\GlueBackendApiApplicationAuthorizationConnectorConfig::getProtectedPaths",
+            "value": {
+                "/\\/warehouse-user-assignments(?:\\/[^\\/]+)?\\/?$/": {
+                    "isRegularExpression": true
+                }
+            }
+        }
     ]
 }

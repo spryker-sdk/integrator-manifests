@@ -1,10 +1,4 @@
 {
-    "wire-plugin": [
-        {
-            "target": "\\Spryker\\Zed\\SecurityGui\\SecurityGuiDependencyProvider::getUserLoginRestrictionPlugins",
-            "source": "\\Spryker\\Zed\\WarehouseUser\\Communication\\Plugin\\SecurityGui\\WarehouseUserLoginRestrictionPlugin"
-        }
-    ],
     "glossary-key": {
         "new": {
             "warehouse_user_assignment.validation.user_not_found": {
@@ -28,5 +22,11 @@
                 "de_DE": "Lagerbenutzerzuweisung existiert bereits."
             }
         }
-    }
+    },
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\SecurityGui\\SecurityGuiDependencyProvider::getUserLoginRestrictionPlugins",
+            "source": "\\Spryker\\Zed\\WarehouseUser\\Communication\\Plugin\\SecurityGui\\WarehouseUserLoginRestrictionPlugin"
+        }
+    ]
 }

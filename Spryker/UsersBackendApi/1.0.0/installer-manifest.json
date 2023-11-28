@@ -1,0 +1,10 @@
+{
+    "wire-glue-relationship": [
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplicationGlueJsonApiConventionConnector\\GlueBackendApiApplicationGlueJsonApiConventionConnectorDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\WarehouseUsersBackendApi\\WarehouseUsersBackendApiConfig::RESOURCE_TYPE_WAREHOUSE_USER_ASSIGNMENTS": "\\Spryker\\Glue\\UsersBackendApi\\Plugin\\GlueJsonApiConvention\\UserByWarehouseUserAssignmentBackendResourceRelationshipPlugin"
+            }
+        }
+    ]
+}
