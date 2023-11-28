@@ -1,4 +1,12 @@
 {
+    "glossary-key": {
+        "new": {
+            "product_bundle_product_detail_page_items_list_widget.title.bundle_includes": {
+                "en_US": "Bundle includes",
+                "de_DE": "Bündel beinhaltet"
+            }
+        }
+    },
     "wire-widget": [
         {
             "source": "\\SprykerShop\\Yves\\ProductBundleWidget\\Widget\\ProductBundleProductDetailPageItemsListWidget"
