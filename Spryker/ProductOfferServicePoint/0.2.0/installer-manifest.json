@@ -1,0 +1,40 @@
+{
+    "wire-schema": [
+        {
+            "target": "Zed/ProductOfferServicePoint/Persistence/Propel/Schema/spy_product_offer_service.schema.xml",
+            "data": {
+                "name": "database",
+                "attributes": {
+                    "name": "zed",
+                    "namespace": "Orm\\Zed\\ProductOfferServicePoint\\Persistence",
+                    "package": "src.Orm.Zed.ProductOfferServicePoint.Persistence"
+                },
+                "sub-nodes": [
+                    {
+                        "name": "table",
+                        "attributes": {
+                            "name": "spy_product_offer_service"
+                        },
+                        "sub-nodes": [
+                            {
+                                "name": "behavior",
+                                "attributes": {
+                                    "name": "event"
+                                },
+                                "sub-nodes": [
+                                    {
+                                        "name": "parameter",
+                                        "attributes": {
+                                            "name": "spy_product_offer_service_all",
+                                            "column": "*"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
