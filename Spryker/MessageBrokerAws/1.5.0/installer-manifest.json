@@ -8,6 +8,40 @@
             }
         },
         {
+            "target": "\\Spryker\\Shared\\MessageBrokerAws\\MessageBrokerAwsConstants::MESSAGE_TO_CHANNEL_MAP",
+            "value": {
+                "\\Generated\\Shared\\Transfer\\PaymentMethodAddedTransfer::class": "payment-method-commands",
+                "\\Generated\\Shared\\Transfer\\PaymentMethodDeletedTransfer::class": "payment-method-commands",
+                "\\Generated\\Shared\\Transfer\\PaymentCancelReservationRequestedTransfer::class": "payment-commands",
+                "\\Generated\\Shared\\Transfer\\PaymentConfirmationRequestedTransfer::class": "payment-commands",
+                "\\Generated\\Shared\\Transfer\\PaymentRefundRequestedTransfer::class": "payment-commands",
+                "\\Generated\\Shared\\Transfer\\PaymentPreauthorizedTransfer::class": "payment-events",
+                "\\Generated\\Shared\\Transfer\\PaymentPreauthorizationFailedTransfer::class": "payment-events",
+                "\\Generated\\Shared\\Transfer\\PaymentConfirmedTransfer::class": "payment-events",
+                "\\Generated\\Shared\\Transfer\\PaymentConfirmationFailedTransfer::class": "payment-events",
+                "\\Generated\\Shared\\Transfer\\PaymentRefundedTransfer::class": "payment-events",
+                "\\Generated\\Shared\\Transfer\\PaymentRefundFailedTransfer::class": "payment-events",
+                "\\Generated\\Shared\\Transfer\\PaymentReservationCanceledTransfer::class": "payment-events",
+                "\\Generated\\Shared\\Transfer\\PaymentCancelReservationFailedTransfer::class": "payment-events",
+                "\\Generated\\Shared\\Transfer\\AssetAddedTransfer::class": "asset-commands",
+                "\\Generated\\Shared\\Transfer\\AssetUpdatedTransfer::class": "asset-commands",
+                "\\Generated\\Shared\\Transfer\\AssetDeletedTransfer::class": "asset-commands",
+                "\\Generated\\Shared\\Transfer\\ProductExportedTransfer::class": "product-events",
+                "\\Generated\\Shared\\Transfer\\ProductCreatedTransfer::class": "product-events",
+                "\\Generated\\Shared\\Transfer\\ProductUpdatedTransfer::class": "product-events",
+                "\\Generated\\Shared\\Transfer\\ProductDeletedTransfer::class": "product-events",
+                "\\Generated\\Shared\\Transfer\\InitializeProductExportTransfer::class": "product-commands",
+                "\\Generated\\Shared\\Transfer\\SearchEndpointAvailableTransfer::class": "search-commands",
+                "\\Generated\\Shared\\Transfer\\SearchEndpointRemovedTransfer::class": "search-commands",
+                "\\Generated\\Shared\\Transfer\\AddReviewsTransfer::class": "product-review-commands",
+                "\\Generated\\Shared\\Transfer\\OrderStatusChangedTransfer::class": "order-events",
+                "\\Generated\\Shared\\Transfer\\ExportMerchantsTransfer::class": "merchant-commands",
+                "\\Generated\\Shared\\Transfer\\MerchantExportedTransfer::class": "merchant-events",
+                "\\Generated\\Shared\\Transfer\\MerchantCreatedTransfer::class": "merchant-events",
+                "\\Generated\\Shared\\Transfer\\MerchantUpdatedTransfer::class": "merchant-events"
+            }
+        },
+        {
             "target": "\\Spryker\\Shared\\MessageBrokerAws\\MessageBrokerAwsConstants::HTTP_CHANNEL_SENDER_BASE_URL",
             "value": {
                 "value": "getenv('SPRYKER_MESSAGE_BROKER_HTTP_CHANNEL_SENDER_BASE_URL') ?: ''",
