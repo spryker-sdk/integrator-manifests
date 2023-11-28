@@ -1,0 +1,47 @@
+{
+    "wire-schema": [
+        {
+            "target": "Zed/Customer/Persistence/Propel/Schema/spy_customer.schema.xml",
+            "data": {
+                "name": "database",
+                "attributes": {
+                    "name": "zed",
+                    "namespace": "Orm\\Zed\\Customer\\Persistence",
+                    "package": "src.Orm.Zed.Customer.Persistence"
+                },
+                "sub-nodes": [
+                    {
+                        "name": "table",
+                        "attributes": {
+                            "name": "spy_customer"
+                        },
+                        "sub-nodes": [
+                            {
+                                "name": "behavior",
+                                "attributes": {
+                                    "name": "event"
+                                },
+                                "sub-nodes": [
+                                    {
+                                        "name": "parameter",
+                                        "attributes": {
+                                            "name": "spy_customer_anonymized_at",
+                                            "column": "anonymized_at"
+                                        }
+                                    },
+                                    {
+                                        "name": "parameter",
+                                        "attributes": {
+                                            "name": "spy_customer_password",
+                                            "column": "password"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
