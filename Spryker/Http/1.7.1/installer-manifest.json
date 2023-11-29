@@ -1,8 +1,0 @@
-{
-    "configure-env": [
-        {
-            "target": "\\Spryker\\Shared\\Http\\HttpConstants::URI_SIGNER_SECRET_KEY",
-            "value": "JDJ5JDEwJFE0cXBwYnVVTTV6YVZXSnVmM2l1UWVhRE94WkQ4UjBUeHBEWTNHZlFRTEd4U2F6QVBqejQ2"
-        }
-    ]
-}
