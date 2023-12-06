@@ -1,0 +1,10 @@
+{
+    "glossary-key": {
+        "new": {
+            "category.validation.category_node_entity_not_found": {
+                "en_US": "The category node ID '%category_node_id%' cannot be relocated because this category node no longer exists.",
+                "de_DE": "Die Kategorieknoten-ID '%category_node_id%' kann nicht verschoben werden, da dieser Kategorieknoten nicht mehr existiert."
+            }
+        }
+    }
+}
