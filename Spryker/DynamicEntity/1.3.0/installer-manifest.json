@@ -1,0 +1,14 @@
+{
+    "glossary-key": {
+        "new": {
+            "dynamic_entity.validation.relation_not_found": {
+                "en_US": "Relation `%relationName%` not found. Please check the requested relation name and try again.",
+                "de_DE": "Beziehung ``%relationName%` nicht gefunden. Bitte überprüfen Sie den angeforderten Beziehungsnamen und versuchen Sie es erneut."
+            },
+            "dynamic_entity.validation.configuration_not_found": {
+                "en_US": "Dynamic entity configuration for table alias `%aliasName%` not found.",
+                "de_DE": "Dynamische Entitätskonfiguration für Tabellenalias `%aliasName%` nicht gefunden."
+            }
+        }
+    }
+}
