@@ -1,0 +1,62 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\ShopApplication\\ShopApplicationDependencyProvider::getApplicationPlugins",
+            "source": "\\Spryker\\Yves\\Security\\Plugin\\Application\\YvesSecurityApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Validator\\ValidatorDependencyProvider::getConstraintPlugins",
+            "source": "\\Spryker\\Yves\\Security\\Plugin\\Validator\\YvesUserPasswordValidatorConstraintPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Security\\Communication\\Plugin\\Application\\ZedSecurityApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackofficeApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Security\\Communication\\Plugin\\Application\\ZedSecurityApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackendGatewayApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Security\\Communication\\Plugin\\Application\\ZedSecurityApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MerchantPortalApplication\\MerchantPortalApplicationDependencyProvider::getMerchantPortalApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Security\\Communication\\Plugin\\Application\\ZedSecurityApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Validator\\ValidatorDependencyProvider::getConstraintPlugins",
+            "source": "\\Spryker\\Zed\\Security\\Communication\\Plugin\\Validator\\ZedUserPasswordValidatorConstraintPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\ShopApplication\\ShopApplicationDependencyProvider::getApplicationPlugins",
+            "source": "\\Spryker\\Yves\\Security\\Plugin\\Application\\SecurityApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Validator\\ValidatorDependencyProvider::getConstraintPlugins",
+            "source": "\\Spryker\\Yves\\Security\\Plugin\\Validator\\UserPasswordValidatorConstraintPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Security\\Communication\\Plugin\\Application\\SecurityApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackofficeApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Security\\Communication\\Plugin\\Application\\SecurityApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackendGatewayApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Security\\Communication\\Plugin\\Application\\SecurityApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MerchantPortalApplication\\MerchantPortalApplicationDependencyProvider::getMerchantPortalApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Security\\Communication\\Plugin\\Application\\SecurityApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Validator\\ValidatorDependencyProvider::getConstraintPlugins",
+            "source": "\\Spryker\\Zed\\Security\\Communication\\Plugin\\Validator\\UserPasswordValidatorConstraintPlugin"
+        }
+    ]
+}
