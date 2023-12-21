@@ -1,0 +1,22 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\CustomerPage\\CustomerPageDependencyProvider::getAfterCustomerAuthenticationSuccessPlugins",
+            "source": "\\SprykerShop\\Yves\\AgentPage\\Plugin\\Security\\UpdateAgentTokenAfterCustomerAuthenticationSuccessPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Security\\SecurityDependencyProvider::getSecurityPlugins",
+            "source": "\\SprykerShop\\Yves\\AgentPage\\Plugin\\Security\\YvesAgentPageSecurityPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\CustomerPage\\CustomerPageDependencyProvider::getAfterCustomerAuthenticationSuccessPlugins",
+            "source": "\\SprykerShop\\Yves\\AgentPage\\Plugin\\FixAgentTokenAfterCustomerAuthenticationSuccessPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Security\\SecurityDependencyProvider::getSecurityPlugins",
+            "source": "\\SprykerShop\\Yves\\AgentPage\\Plugin\\Security\\AgentPageSecurityPlugin"
+        }
+    ]
+}
