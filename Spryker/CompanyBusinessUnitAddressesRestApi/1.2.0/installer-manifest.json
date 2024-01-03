@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\ShipmentsRestApi\\ShipmentsRestApiDependencyProvider::getRestAddressResponseMapperPlugins",
+            "source": "\\Spryker\\Glue\\CompanyBusinessUnitAddressesRestApi\\Plugin\\ShipmentsRestApi\\CompanyBusinessUnitUuidRestAddressResponseMapperPlugin"
+        }
+    ]
+}
