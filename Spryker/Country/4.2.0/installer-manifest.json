@@ -1,0 +1,14 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getCheckoutDataValidatorPlugins",
+            "source": "\\Spryker\\Zed\\Country\\Communication\\Plugin\\CheckoutRestApi\\CountriesCheckoutDataValidatorPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getCheckoutDataValidatorPlugins",
+            "source": "\\Spryker\\Zed\\Country\\Communication\\Plugin\\CheckoutRestApi\\CountryCheckoutDataValidatorPlugin"
+        }
+    ]
+}

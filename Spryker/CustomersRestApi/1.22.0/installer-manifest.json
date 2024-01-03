@@ -1,0 +1,17 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getCheckoutRequestAttributesValidatorPlugins",
+            "source": "\\Spryker\\Glue\\CustomersRestApi\\Plugin\\CheckoutRestApi\\BillingAddressCheckoutRequestAttributesValidatorPlugin"
+        }
+    ],
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Glue\\CustomersRestApi\\CustomersRestApiConfig::getBillingAddressFieldsToSkipValidation",
+            "value": {
+                "value": "return array_merge(parent::getBillingAddressFieldsToSkipValidation(), [\\Generated\\Shared\\Transfer\\RestAddressTransfer::ID_COMPANY_BUSINESS_UNIT_ADDRESS])",
+                "is_literal": true
+            }
+        }
+    ]
+}
