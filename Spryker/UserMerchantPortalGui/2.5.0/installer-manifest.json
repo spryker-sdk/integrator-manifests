@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\UserMerchantPortalGui\\UserMerchantPortalGuiConfig::IS_EMAIL_UPDATE_PASSWORD_VERIFICATION_ENABLED",
+            "value": true
+        }
+    ]
+}
