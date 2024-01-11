@@ -1,0 +1,8 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getControllerBeforeActionPlugins",
+            "source": "\\Spryker\\Glue\\ProductPricesRestApi\\Plugin\\GlueApplication\\SetCurrencyBeforeActionPlugin"
+        }
+    ]
+}
