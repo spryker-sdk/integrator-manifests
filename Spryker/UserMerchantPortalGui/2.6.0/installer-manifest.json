@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\UserMerchantPortalGui\\UserMerchantPortalGuiConfig::IS_SECURITY_BLOCKER_FOR_MERCHANT_USER_EMAIL_CHANGING_ENABLED",
+            "value": true
+        }
+    ]
+}
