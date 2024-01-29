@@ -1,0 +1,10 @@
+{
+    "glossary-key": {
+        "new": {
+            "dynamic_entity.validation.relation_is_not_editable": {
+                "en_US": "The relationship `%relationName%` is not editable by configuration.",
+                "de_DE": "Die Beziehung `%relationName%` kann nicht per Konfiguration bearbeitet werden."
+            }
+        }
+    }
+}
