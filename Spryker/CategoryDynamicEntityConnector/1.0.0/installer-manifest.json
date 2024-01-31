@@ -1,0 +1,28 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\DynamicEntity\\DynamicEntityDependencyProvider::getDynamicEntityPostUpdatePlugins",
+            "source": "\\Spryker\\Zed\\CategoryDynamicEntityConnector\\Communication\\Plugin\\DynamicEntity\\CategoryClosureTableDynamicEntityPostUpdatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\DynamicEntity\\DynamicEntityDependencyProvider::getDynamicEntityPostUpdatePlugins",
+            "source": "\\Spryker\\Zed\\CategoryDynamicEntityConnector\\Communication\\Plugin\\DynamicEntity\\CategoryUrlDynamicEntityPostUpdatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\DynamicEntity\\DynamicEntityDependencyProvider::getDynamicEntityPostUpdatePlugins",
+            "source": "\\Spryker\\Zed\\CategoryDynamicEntityConnector\\Communication\\Plugin\\DynamicEntity\\CategoryTreeDynamicEntityPostUpdatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\DynamicEntity\\DynamicEntityDependencyProvider::getDynamicEntityPostCreatePlugins",
+            "source": "\\Spryker\\Zed\\CategoryDynamicEntityConnector\\Communication\\Plugin\\DynamicEntity\\CategoryClosureTableDynamicEntityPostCreatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\DynamicEntity\\DynamicEntityDependencyProvider::getDynamicEntityPostCreatePlugins",
+            "source": "\\Spryker\\Zed\\CategoryDynamicEntityConnector\\Communication\\Plugin\\DynamicEntity\\CategoryUrlDynamicEntityPostCreatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\DynamicEntity\\DynamicEntityDependencyProvider::getDynamicEntityPostCreatePlugins",
+            "source": "\\Spryker\\Zed\\CategoryDynamicEntityConnector\\Communication\\Plugin\\DynamicEntity\\CategoryTreeDynamicEntityPostCreatePlugin"
+        }
+    ]
+}
