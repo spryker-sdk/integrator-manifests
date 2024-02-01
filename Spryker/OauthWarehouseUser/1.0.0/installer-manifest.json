@@ -1,0 +1,43 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\OauthUserConnector\\OauthUserConnectorDependencyProvider::getUserTypeOauthScopeProviderPlugins",
+            "source": "\\Spryker\\Zed\\OauthWarehouseUser\\Communication\\Plugin\\OauthUserConnector\\WarehouseUserTypeOauthScopeProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\OauthUserConnector\\OauthUserConnectorDependencyProvider::getUserTypeOauthScopeAuthorizationCheckerPlugins",
+            "source": "\\Spryker\\Zed\\OauthWarehouseUser\\Communication\\Plugin\\OauthUserConnector\\WarehouseUserTypeOauthScopeAuthorizationCheckerPlugin"
+        }
+    ],
+    "configure-module": [
+        {
+            "previousValue": [],
+            "target": "\\Spryker\\Zed\\OauthWarehouseUser\\OauthWarehouseUserConfig::getAllowedForWarehouseUserPaths",
+            "value": {
+                "/\\/warehouse-user-assignments(?:\\/[^\\/]+)?\\/?$/": {
+                    "isRegularExpression": true,
+                    "methods": [
+                        "get",
+                        "getCollection",
+                        "patch"
+                    ]
+                },
+                "/\\/picking-lists.*/": {
+                    "isRegularExpression": true,
+                    "methods": [
+                        "patch"
+                    ]
+                },
+                "/push-notification-subscriptions": {
+                    "isRegularExpression": false
+                },
+                "/warehouse-tokens": {
+                    "isRegularExpression": false,
+                    "methods": [
+                        "post"
+                    ]
+                }
+            }
+        }
+    ]
+}

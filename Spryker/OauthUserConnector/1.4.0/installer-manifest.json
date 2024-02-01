@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplicationAuthorizationConnector\\GlueBackendApiApplicationAuthorizationConnectorDependencyProvider::getProtectedRouteAuthorizationConfigProviderPlugins",
+            "source": "\\Spryker\\Glue\\OauthUserConnector\\Plugin\\GlueBackendApiApplicationAuthorizationConnector\\OauthUserScopeProtectedRouteAuthorizationConfigProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Authorization\\AuthorizationDependencyProvider::getAuthorizationStrategyPlugins",
+            "source": "\\Spryker\\Zed\\OauthUserConnector\\Communication\\Plugin\\Authorization\\OauthUserScopeAuthorizationStrategyPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\OauthUserConnector\\OauthUserConnectorDependencyProvider::getUserTypeOauthScopeAuthorizationCheckerPlugins",
+            "source": "\\Spryker\\Zed\\OauthUserConnector\\Communication\\Plugin\\OauthUserConnector\\BackofficeUserOauthScopeAuthorizationCheckerPlugin"
+        }
+    ]
+}

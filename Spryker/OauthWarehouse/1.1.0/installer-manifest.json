@@ -1,0 +1,30 @@
+{
+    "configure-module": [
+        {
+            "previousValue": [],
+            "target": "\\Spryker\\Zed\\OauthWarehouse\\OauthWarehouseConfig::getAllowedUserScopes",
+            "value": [
+                "static::SCOPE_BACK_OFFICE_USER",
+                "static::SCOPE_WAREHOUSE_USER"
+            ]
+        },
+        {
+            "target": "\\Spryker\\Zed\\OauthWarehouse\\OauthWarehouseConfig::SCOPE_BACK_OFFICE_USER",
+            "value": "back-office-user"
+        },
+        {
+            "target": "\\Spryker\\Zed\\OauthWarehouse\\OauthWarehouseConfig::SCOPE_WAREHOUSE_USER",
+            "value": "warehouse-user"
+        }
+    ],
+    "add-config-array-element": [
+        {
+            "target": "\\Spryker\\Zed\\OauthWarehouse\\OauthWarehouseConfig::getAllowedUserScopes",
+            "value": "\\static::SCOPE_BACK_OFFICE_USER"
+        },
+        {
+            "target": "\\Spryker\\Zed\\OauthWarehouse\\OauthWarehouseConfig::getAllowedUserScopes",
+            "value": "\\static::SCOPE_WAREHOUSE_USER"
+        }
+    ]
+}
