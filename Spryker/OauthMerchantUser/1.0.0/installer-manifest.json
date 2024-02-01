@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\OauthUserConnector\\OauthUserConnectorDependencyProvider::getUserTypeOauthScopeProviderPlugins",
+            "source": "\\Spryker\\Zed\\OauthMerchantUser\\Communication\\Plugin\\OauthUserConnector\\MerchantUserTypeOauthScopeProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\OauthUserConnector\\OauthUserConnectorDependencyProvider::getUserTypeOauthScopeAuthorizationCheckerPlugins",
+            "source": "\\Spryker\\Zed\\OauthMerchantUser\\Communication\\Plugin\\OauthUserConnector\\MerchantUserTypeOauthScopeAuthorizationCheckerPlugin"
+        }
+    ]
+}
