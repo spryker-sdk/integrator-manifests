@@ -1,0 +1,89 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\MessageBroker\\MessageBrokerConstants::MESSAGE_TO_CHANNEL_MAP",
+            "value": {
+                "\\Generated\\Shared\\Transfer\\CancelPaymentTransfer::class": "payment-commands"
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\MessageBroker\\MessageBrokerConstants::MESSAGE_TO_CHANNEL_MAP",
+            "value": {
+                "\\Generated\\Shared\\Transfer\\CapturePaymentTransfer::class": "payment-commands"
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\MessageBroker\\MessageBrokerConstants::MESSAGE_TO_CHANNEL_MAP",
+            "value": {
+                "\\Generated\\Shared\\Transfer\\RefundPaymentTransfer::class": "payment-commands"
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\MessageBrokerAws\\MessageBrokerAwsConstants::MESSAGE_TO_CHANNEL_MAP",
+            "value": {
+                "\\Generated\\Shared\\Transfer\\CancelPaymentTransfer::class": "payment-commands"
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\MessageBrokerAws\\MessageBrokerAwsConstants::MESSAGE_TO_CHANNEL_MAP",
+            "value": {
+                "\\Generated\\Shared\\Transfer\\CapturePaymentTransfer::class": "payment-commands"
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\MessageBrokerAws\\MessageBrokerAwsConstants::MESSAGE_TO_CHANNEL_MAP",
+            "value": {
+                "\\Generated\\Shared\\Transfer\\RefundPaymentTransfer::class": "payment-commands"
+            }
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::extendCommandPlugins",
+            "source": "\\Spryker\\Zed\\SalesPayment\\Communication\\Plugin\\Oms\\SendCapturePaymentMessageCommandPlugin",
+            "arguments": {
+                "append-arguments": [
+                    {
+                        "value": "Payment/Capture"
+                    }
+                ]
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::extendCommandPlugins",
+            "source": "\\Spryker\\Zed\\SalesPayment\\Communication\\Plugin\\Oms\\SendRefundPaymentMessageCommandPlugin",
+            "arguments": {
+                "append-arguments": [
+                    {
+                        "value": "Payment/Refund"
+                    }
+                ]
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::extendCommandPlugins",
+            "source": "\\Spryker\\Zed\\SalesPayment\\Communication\\Plugin\\Oms\\SendCancelPaymentMessageCommandPlugin",
+            "arguments": {
+                "append-arguments": [
+                    {
+                        "value": "Payment/Cancel"
+                    }
+                ]
+            }
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::extendCommandPlugins",
+            "source": "\\Spryker\\Zed\\SalesPayment\\Communication\\Plugin\\Oms\\SendEventPaymentConfirmationPendingPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::extendCommandPlugins",
+            "source": "\\Spryker\\Zed\\SalesPayment\\Communication\\Plugin\\Oms\\SendEventPaymentRefundPendingPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::extendCommandPlugins",
+            "source": "\\Spryker\\Zed\\SalesPayment\\Communication\\Plugin\\Oms\\SendEventPaymentCancelReservationPendingPlugin"
+        }
+    ]
+}
