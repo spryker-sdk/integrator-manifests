@@ -1,0 +1,140 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\MessageBroker\\MessageBrokerConstants::MESSAGE_TO_CHANNEL_MAP",
+            "value": {
+                "\\Generated\\Shared\\Transfer\\AddPaymentMethodTransfer::class": "payment-method-commands"
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\MessageBroker\\MessageBrokerConstants::MESSAGE_TO_CHANNEL_MAP",
+            "value": {
+                "\\Generated\\Shared\\Transfer\\DeletePaymentMethodTransfer::class": "payment-method-commands"
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\MessageBroker\\MessageBrokerConstants::MESSAGE_TO_CHANNEL_MAP",
+            "value": {
+                "\\Generated\\Shared\\Transfer\\PaymentAuthorizedTransfer::class": "payment-events"
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\MessageBroker\\MessageBrokerConstants::MESSAGE_TO_CHANNEL_MAP",
+            "value": {
+                "\\Generated\\Shared\\Transfer\\PaymentAuthorizationFailedTransfer::class": "payment-events"
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\MessageBroker\\MessageBrokerConstants::MESSAGE_TO_CHANNEL_MAP",
+            "value": {
+                "\\Generated\\Shared\\Transfer\\PaymentCapturedTransfer::class": "payment-events"
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\MessageBroker\\MessageBrokerConstants::MESSAGE_TO_CHANNEL_MAP",
+            "value": {
+                "\\Generated\\Shared\\Transfer\\PaymentCaptureFailedTransfer::class": "payment-events"
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\MessageBroker\\MessageBrokerConstants::MESSAGE_TO_CHANNEL_MAP",
+            "value": {
+                "\\Generated\\Shared\\Transfer\\PaymentCanceledTransfer::class": "payment-events"
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\MessageBroker\\MessageBrokerConstants::MESSAGE_TO_CHANNEL_MAP",
+            "value": {
+                "\\Generated\\Shared\\Transfer\\PaymentCancellationFailedTransfer::class": "payment-events"
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\MessageBrokerAws\\MessageBrokerAwsConstants::MESSAGE_TO_CHANNEL_MAP",
+            "value": {
+                "\\Generated\\Shared\\Transfer\\AddPaymentMethodTransfer::class": "payment-method-commands"
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\MessageBrokerAws\\MessageBrokerAwsConstants::MESSAGE_TO_CHANNEL_MAP",
+            "value": {
+                "\\Generated\\Shared\\Transfer\\DeletePaymentMethodTransfer::class": "payment-method-commands"
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\MessageBrokerAws\\MessageBrokerAwsConstants::MESSAGE_TO_CHANNEL_MAP",
+            "value": {
+                "\\Generated\\Shared\\Transfer\\PaymentAuthorizedTransfer::class": "payment-events"
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\MessageBrokerAws\\MessageBrokerAwsConstants::MESSAGE_TO_CHANNEL_MAP",
+            "value": {
+                "\\Generated\\Shared\\Transfer\\PaymentAuthorizationFailedTransfer::class": "payment-events"
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\MessageBrokerAws\\MessageBrokerAwsConstants::MESSAGE_TO_CHANNEL_MAP",
+            "value": {
+                "\\Generated\\Shared\\Transfer\\PaymentCapturedTransfer::class": "payment-events"
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\MessageBrokerAws\\MessageBrokerAwsConstants::MESSAGE_TO_CHANNEL_MAP",
+            "value": {
+                "\\Generated\\Shared\\Transfer\\PaymentCaptureFailedTransfer::class": "payment-events"
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\MessageBrokerAws\\MessageBrokerAwsConstants::MESSAGE_TO_CHANNEL_MAP",
+            "value": {
+                "\\Generated\\Shared\\Transfer\\PaymentCanceledTransfer::class": "payment-events"
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\MessageBrokerAws\\MessageBrokerAwsConstants::MESSAGE_TO_CHANNEL_MAP",
+            "value": {
+                "\\Generated\\Shared\\Transfer\\PaymentCancellationFailedTransfer::class": "payment-events"
+            }
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Payment\\Communication\\Plugin\\MessageBroker\\PaymentOperationsMessageHandlerPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Payment\\Communication\\Plugin\\MessageBroker\\PaymentCancelReservationFailedMessageHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Payment\\Communication\\Plugin\\MessageBroker\\PaymentConfirmationFailedMessageHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Payment\\Communication\\Plugin\\MessageBroker\\PaymentConfirmedMessageHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Payment\\Communication\\Plugin\\MessageBroker\\PaymentPreauthorizationFailedMessageHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Payment\\Communication\\Plugin\\MessageBroker\\PaymentPreauthorizedMessageHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Payment\\Communication\\Plugin\\MessageBroker\\PaymentReservationCanceledMessageHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Payment\\Communication\\Plugin\\MessageBroker\\PaymentRefundedMessageHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getMessageHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Payment\\Communication\\Plugin\\MessageBroker\\PaymentRefundFailedMessageHandlerPlugin"
+        }
+    ]
+}
