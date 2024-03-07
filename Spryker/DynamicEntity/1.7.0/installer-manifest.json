@@ -1,0 +1,10 @@
+{
+    "glossary-key": {
+        "new": {
+            "dynamic_entity.validation.filter_field_not_found": {
+                "en_US": "Filter field `%filterField%` for table alias `%aliasName%` not found.",
+                "de_DE": "Filterfeld `%filterField%` für Tabellen alias `%aliasName%` nicht gefunden."
+            }
+        }
+    }
+}
