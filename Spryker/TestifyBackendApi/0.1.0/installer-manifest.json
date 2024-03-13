@@ -1,0 +1,22 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getResourcePlugins",
+            "source": "\\Spryker\\Glue\\TestifyBackendApi\\Plugin\\GlueBackendApiApplication\\DynamicFixturesBackendResourcePlugin",
+            "condition": "class_exists(\\Spryker\\Glue\\TestifyBackendApi\\Plugin\\GlueBackendApiApplication\\DynamicFixturesBackendResourcePlugin::class)"
+        }
+    ],
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Glue\\TestifyBackendApi\\TestifyBackendApiConfig::getCodeceptionConfiguration",
+            "value": {
+                "value": "return APPLICATION_ROOT_DIR . DIRECTORY_SEPARATOR . 'tests/PyzTest/Zed/TestifyBackendApi/codeception.dynamic.fixtures.yml'",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\TestifyBackendApi\\TestifyBackendApiConfig::getCodeceptionSuiteName",
+            "value": "DynamicFixture"
+        }
+    ]
+}
