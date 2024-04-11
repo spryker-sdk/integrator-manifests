@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductMessageBrokerPlugins",
+            "source": "\\Spryker\\Zed\\ProductLabel\\Communication\\Plugin\\Publisher\\ProductLabelProductUpdatedEventTriggerPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getCustomerStoragePlugins"
+            }
+        }
+    ]
+}
