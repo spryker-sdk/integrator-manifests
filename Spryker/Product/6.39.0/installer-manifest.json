@@ -1,0 +1,116 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\Product\\ProductConstants::PUBLISHING_TO_MESSAGE_BROKER_ENABLED",
+            "value": {
+                "value": "$config[\\Spryker\\Shared\\MessageBroker\\MessageBrokerConstants::IS_ENABLED]",
+                "is_literal": true
+            }
+        }
+    ],
+    "configure-module": [
+        {
+            "previousValue": [],
+            "target": "\\Spryker\\Zed\\Product\\ProductConfig::getProductAbstractUpdateMessageBrokerPublisherSubscribedEvents",
+            "value": [
+                "\\Spryker\\Zed\\ProductCategory\\Dependency\\ProductCategoryEvents::PRODUCT_CATEGORY_PUBLISH",
+                "\\Spryker\\Zed\\ProductCategory\\Dependency\\ProductCategoryEvents::ENTITY_SPY_PRODUCT_CATEGORY_CREATE",
+                "\\Spryker\\Zed\\ProductCategory\\Dependency\\ProductCategoryEvents::ENTITY_SPY_PRODUCT_CATEGORY_DELETE",
+                "\\Spryker\\Zed\\ProductLabel\\Dependency\\ProductLabelEvents::ENTITY_SPY_PRODUCT_LABEL_PRODUCT_ABSTRACT_CREATE",
+                "\\Spryker\\Zed\\ProductLabel\\Dependency\\ProductLabelEvents::ENTITY_SPY_PRODUCT_LABEL_PRODUCT_ABSTRACT_DELETE",
+                "\\Spryker\\Zed\\PriceProduct\\Dependency\\PriceProductEvents::PRICE_ABSTRACT_PUBLISH",
+                "\\Spryker\\Zed\\PriceProduct\\Dependency\\PriceProductEvents::ENTITY_SPY_PRICE_PRODUCT_CREATE",
+                "\\Spryker\\Zed\\PriceProduct\\Dependency\\PriceProductEvents::ENTITY_SPY_PRICE_PRODUCT_UPDATE",
+                "\\Spryker\\Zed\\ProductReview\\Dependency\\ProductReviewEvents::PRODUCT_ABSTRACT_REVIEW_PUBLISH",
+                "\\Spryker\\Zed\\ProductReview\\Dependency\\ProductReviewEvents::ENTITY_SPY_PRODUCT_REVIEW_CREATE",
+                "\\Spryker\\Zed\\ProductReview\\Dependency\\ProductReviewEvents::ENTITY_SPY_PRODUCT_REVIEW_UPDATE",
+                "\\Spryker\\Zed\\ProductImage\\Dependency\\ProductImageEvents::PRODUCT_IMAGE_PRODUCT_ABSTRACT_PUBLISH",
+                "\\Spryker\\Zed\\ProductImage\\Dependency\\ProductImageEvents::ENTITY_SPY_PRODUCT_IMAGE_SET_CREATE",
+                "\\Spryker\\Zed\\ProductImage\\Dependency\\ProductImageEvents::ENTITY_SPY_PRODUCT_IMAGE_SET_UPDATE"
+            ]
+        },
+        {
+            "previousValue": [],
+            "target": "\\Spryker\\Zed\\Product\\ProductConfig::getProductUpdateMessageBrokerPublisherSubscribedEvents",
+            "value": [
+                "\\Spryker\\Shared\\ProductBundleStorage\\ProductBundleStorageConfig::PRODUCT_BUNDLE_PUBLISH",
+                "\\Spryker\\Shared\\ProductBundleStorage\\ProductBundleStorageConfig::ENTITY_SPY_PRODUCT_BUNDLE_CREATE",
+                "\\Spryker\\Shared\\ProductBundleStorage\\ProductBundleStorageConfig::ENTITY_SPY_PRODUCT_BUNDLE_UPDATE",
+                "\\Spryker\\Zed\\ProductImage\\Dependency\\ProductImageEvents::PRODUCT_IMAGE_PRODUCT_CONCRETE_PUBLISH",
+                "\\Spryker\\Zed\\ProductImage\\Dependency\\ProductImageEvents::ENTITY_SPY_PRODUCT_IMAGE_SET_CREATE",
+                "\\Spryker\\Zed\\ProductImage\\Dependency\\ProductImageEvents::ENTITY_SPY_PRODUCT_IMAGE_SET_UPDATE",
+                "\\Spryker\\Zed\\ProductImage\\Dependency\\ProductImageEvents::ENTITY_SPY_PRODUCT_IMAGE_SET_TO_PRODUCT_IMAGE_CREATE",
+                "\\Spryker\\Zed\\ProductImage\\Dependency\\ProductImageEvents::ENTITY_SPY_PRODUCT_IMAGE_SET_TO_PRODUCT_IMAGE_UPDATE",
+                "\\Spryker\\Zed\\PriceProduct\\Dependency\\PriceProductEvents::PRICE_CONCRETE_PUBLISH",
+                "\\Spryker\\Zed\\PriceProduct\\Dependency\\PriceProductEvents::ENTITY_SPY_PRICE_PRODUCT_CREATE",
+                "\\Spryker\\Zed\\PriceProduct\\Dependency\\PriceProductEvents::ENTITY_SPY_PRICE_PRODUCT_UPDATE",
+                "\\Spryker\\Zed\\ProductSearch\\Dependency\\ProductSearchEvents::ENTITY_SPY_PRODUCT_SEARCH_CREATE",
+                "\\Spryker\\Zed\\ProductSearch\\Dependency\\ProductSearchEvents::ENTITY_SPY_PRODUCT_SEARCH_UPDATE"
+            ]
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductMessageBrokerPlugins",
+            "source": "\\Spryker\\Zed\\Product\\Communication\\Plugin\\Publisher\\ProductConcreteExportedMessageBrokerPublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getCustomerStoragePlugins"
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductMessageBrokerPlugins",
+            "source": "\\Spryker\\Zed\\Product\\Communication\\Plugin\\Publisher\\ProductConcreteCreatedMessageBrokerPublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getCustomerStoragePlugins"
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductMessageBrokerPlugins",
+            "source": "\\Spryker\\Zed\\Product\\Communication\\Plugin\\Publisher\\ProductConcreteUpdatedMessageBrokerPublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getCustomerStoragePlugins"
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductMessageBrokerPlugins",
+            "source": "\\Spryker\\Zed\\Product\\Communication\\Plugin\\Publisher\\ProductConcreteDeletedMessageBrokerPublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getCustomerStoragePlugins"
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductMessageBrokerPlugins",
+            "source": "\\Spryker\\Zed\\Product\\Communication\\Plugin\\Publisher\\ProductAbstractUpdatedMessageBrokerPublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getCustomerStoragePlugins"
+            }
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductExportPlugins",
+            "source": "\\Spryker\\Zed\\Product\\Communication\\Plugin\\Publisher\\ProductConcreteExportedMessageBrokerPublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductExportPlugins",
+            "source": "\\Spryker\\Zed\\Product\\Communication\\Plugin\\Publisher\\ProductConcreteCreatedMessageBrokerPublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductExportPlugins",
+            "source": "\\Spryker\\Zed\\Product\\Communication\\Plugin\\Publisher\\ProductConcreteUpdatedMessageBrokerPublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductExportPlugins",
+            "source": "\\Spryker\\Zed\\Product\\Communication\\Plugin\\Publisher\\ProductConcreteDeletedMessageBrokerPublisherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductExportPlugins",
+            "source": "\\Spryker\\Zed\\Product\\Communication\\Plugin\\Publisher\\ProductAbstractUpdatedMessageBrokerPublisherPlugin"
+        }
+    ]
+}
