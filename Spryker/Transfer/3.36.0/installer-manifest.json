@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\Transfer\\TransferConfig::getPropertyDescriptionMergeStrategy",
+            "value": "\\Spryker\\Shared\\Transfer\\TransferConstants::PROPERTY_DESCRIPTION_MERGE_STRATEGY_GET_FIRST"
+        }
+    ]
+}
