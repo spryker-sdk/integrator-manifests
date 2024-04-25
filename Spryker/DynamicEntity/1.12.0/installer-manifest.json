@@ -1,0 +1,10 @@
+{
+    "glossary-key": {
+        "new": {
+            "dynamic_entity.validation.invalid_url": {
+                "en_US": "The URL is invalid. `%errorPath%` field '%fieldName%' must have a URL data format.",
+                "de_DE": "Die URL ist ungültig. `%errorPath%` Feld '%fieldName%' muss ein URL-Datenformat haben."
+            }
+        }
+    }
+}
