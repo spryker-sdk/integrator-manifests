@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\DynamicEntity\\DynamicEntityDependencyProvider::getDynamicEntityPostUpdatePlugins",
+            "source": "\\Spryker\\Zed\\ProductDynamicEntityConnector\\Communication\\Plugin\\DynamicEntity\\ProductAbstractLocalizedAttributesDynamicEntityPostUpdatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\DynamicEntity\\DynamicEntityDependencyProvider::getDynamicEntityPostCreatePlugins",
+            "source": "\\Spryker\\Zed\\ProductDynamicEntityConnector\\Communication\\Plugin\\DynamicEntity\\ProductAbstractLocalizedAttributesDynamicEntityPostCreatePlugin"
+        }
+    ]
+}
