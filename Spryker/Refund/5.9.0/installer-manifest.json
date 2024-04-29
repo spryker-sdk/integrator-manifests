@@ -1,0 +1,15 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::extendCommandPlugins",
+            "source": "\\Spryker\\Zed\\Refund\\Communication\\Plugin\\Oms\\RefundCommandPlugin",
+            "arguments": {
+                "append-arguments": [
+                    {
+                        "value": "Payment/Refund/Confirm"
+                    }
+                ]
+            }
+        }
+    ]
+}
