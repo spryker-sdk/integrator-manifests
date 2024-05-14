@@ -1,0 +1,10 @@
+{
+    "glossary-key": {
+        "new": {
+            "dynamic_entity.validation.persistence_failed_not_nullable_field": {
+                "en_US": "Failed to persist the data for `%errorPath%`. Please verify the provided data and try again. Field must not be null.",
+                "de_DE": "Das Speichern der Daten ist fehlgeschlagen für `%errorPath%`. Bitte überprüfen Sie die bereitgestellten Daten und versuchen Sie es erneut. Das Feld darf nicht null sein."
+            }
+        }
+    }
+}
