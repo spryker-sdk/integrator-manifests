@@ -2,7 +2,10 @@
     "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Security\\SecurityDependencyProvider::getSecurityPlugins",
-            "source": "\\Spryker\\Zed\\User\\Communication\\Plugin\\Security\\ZedUserSessionHandlerSecurityPlugin"
+            "source": "\\Spryker\\Zed\\User\\Communication\\Plugin\\Security\\ZedUserSessionHandlerSecurityPlugin",
+            "position": {
+                "before": "\\Spryker\\Zed\\SecuritySystemUser\\Communication\\Plugin\\Security\\ZedSystemUserSecurityPlugin"
+            }
         }
     ],
     "unwire-plugin": [

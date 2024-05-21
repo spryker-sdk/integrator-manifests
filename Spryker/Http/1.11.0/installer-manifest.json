@@ -2,7 +2,10 @@
     "wire-plugin": [
         {
             "target": "\\SprykerShop\\Yves\\ShopApplication\\ShopApplicationDependencyProvider::getApplicationPlugins",
-            "source": "\\Spryker\\Yves\\Http\\Plugin\\Application\\YvesHttpApplicationPlugin"
+            "source": "\\Spryker\\Yves\\Http\\Plugin\\Application\\YvesHttpApplicationPlugin",
+            "position": {
+                "before": "\\Spryker\\Yves\\Twig\\Plugin\\Application\\TwigApplicationPlugin"
+            }
         }
     ],
     "unwire-plugin": [

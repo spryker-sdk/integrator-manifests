@@ -2,7 +2,10 @@
     "wire-plugin": [
         {
             "target": "\\SprykerShop\\Yves\\ShopApplication\\ShopApplicationDependencyProvider::getApplicationPlugins",
-            "source": "\\Spryker\\Yves\\Security\\Plugin\\Application\\YvesSecurityApplicationPlugin"
+            "source": "\\Spryker\\Yves\\Security\\Plugin\\Application\\YvesSecurityApplicationPlugin",
+            "position": {
+                "before": "\\Spryker\\Yves\\ShopContext\\Communication\\Plugin\\ShopApplication\\ShopContextApplicationPlugin"
+            }
         },
         {
             "target": "\\Spryker\\Yves\\Validator\\ValidatorDependencyProvider::getConstraintPlugins",
@@ -10,19 +13,31 @@
         },
         {
             "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getApplicationPlugins",
-            "source": "\\Spryker\\Zed\\Security\\Communication\\Plugin\\Application\\ZedSecurityApplicationPlugin"
+            "source": "\\Spryker\\Zed\\Security\\Communication\\Plugin\\Application\\ZedSecurityApplicationPlugin",
+            "position": {
+                "before": "\\Spryker\\Zed\\UtilNumber\\Communication\\Plugin\\Application\\NumberFormatterApplicationPlugin"
+            }
         },
         {
             "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackofficeApplicationPlugins",
-            "source": "\\Spryker\\Zed\\Security\\Communication\\Plugin\\Application\\ZedSecurityApplicationPlugin"
+            "source": "\\Spryker\\Zed\\Security\\Communication\\Plugin\\Application\\ZedSecurityApplicationPlugin",
+            "position": {
+                "before": "\\Spryker\\Zed\\UtilNumber\\Communication\\Plugin\\Application\\NumberFormatterApplicationPlugin"
+            }
         },
         {
             "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackendGatewayApplicationPlugins",
-            "source": "\\Spryker\\Zed\\Security\\Communication\\Plugin\\Application\\ZedSecurityApplicationPlugin"
+            "source": "\\Spryker\\Zed\\Security\\Communication\\Plugin\\Application\\ZedSecurityApplicationPlugin",
+            "position": {
+                "before": "\\Spryker\\Zed\\EventDispatcher\\Communication\\Plugin\\Application\\BackendGatewayEventDispatcherApplicationPlugin"
+            }
         },
         {
             "target": "\\Spryker\\Zed\\MerchantPortalApplication\\MerchantPortalApplicationDependencyProvider::getMerchantPortalApplicationPlugins",
-            "source": "\\Spryker\\Zed\\Security\\Communication\\Plugin\\Application\\ZedSecurityApplicationPlugin"
+            "source": "\\Spryker\\Zed\\Security\\Communication\\Plugin\\Application\\ZedSecurityApplicationPlugin",
+            "position": {
+                "before": "\\Spryker\\Zed\\ZedUi\\Communication\\Plugin\\Application\\ZedUiApplicationPlugin"
+            }
         },
         {
             "target": "\\Spryker\\Zed\\Validator\\ValidatorDependencyProvider::getConstraintPlugins",

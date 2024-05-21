@@ -2,11 +2,18 @@
     "wire-plugin": [
         {
             "target": "\\SprykerShop\\Yves\\CustomerPage\\CustomerPageDependencyProvider::getAfterCustomerAuthenticationSuccessPlugins",
-            "source": "\\SprykerShop\\Yves\\AgentPage\\Plugin\\Security\\UpdateAgentTokenAfterCustomerAuthenticationSuccessPlugin"
+            "source": "\\SprykerShop\\Yves\\AgentPage\\Plugin\\Security\\UpdateAgentTokenAfterCustomerAuthenticationSuccessPlugin",
+            "position": {
+                "before": "\\SprykerShop\\Yves\\MerchantSwitcherWidget\\Plugin\\CustomerPage\\MerchantSwitchCartAfterCustomerAuthenticationSuccessPlugin"
+            }
         },
         {
             "target": "\\Spryker\\Yves\\Security\\SecurityDependencyProvider::getSecurityPlugins",
-            "source": "\\SprykerShop\\Yves\\AgentPage\\Plugin\\Security\\YvesAgentPageSecurityPlugin"
+            "source": "\\SprykerShop\\Yves\\AgentPage\\Plugin\\Security\\YvesAgentPageSecurityPlugin",
+            "position": {
+                "after": "\\SprykerShop\\Yves\\CustomerPage\\Plugin\\Security\\CustomerRememberMeSecurityPlugin",
+                "before": "\\SprykerShop\\Yves\\CustomerPage\\Plugin\\Security\\YvesCustomerPageSecurityPlugin"
+            }
         }
     ],
     "unwire-plugin": [
