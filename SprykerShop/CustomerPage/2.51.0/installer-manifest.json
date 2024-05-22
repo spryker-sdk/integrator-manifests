@@ -2,11 +2,19 @@
     "wire-plugin": [
         {
             "target": "\\Spryker\\Yves\\Security\\SecurityDependencyProvider::getSecurityPlugins",
-            "source": "\\SprykerShop\\Yves\\CustomerPage\\Plugin\\Security\\CustomerRememberMeSecurityPlugin"
+            "source": "\\SprykerShop\\Yves\\CustomerPage\\Plugin\\Security\\CustomerRememberMeSecurityPlugin",
+            "position": {
+                "before": "\\SprykerShop\\Yves\\AgentPage\\Plugin\\Security\\YvesAgentPageSecurityPlugin",
+                "after": "\\Spryker\\Yves\\Security\\Plugin\\Security\\RememberMeSecurityPlugin"
+            }
         },
         {
             "target": "\\Spryker\\Yves\\Security\\SecurityDependencyProvider::getSecurityPlugins",
-            "source": "\\SprykerShop\\Yves\\CustomerPage\\Plugin\\Security\\YvesCustomerPageSecurityPlugin"
+            "source": "\\SprykerShop\\Yves\\CustomerPage\\Plugin\\Security\\YvesCustomerPageSecurityPlugin",
+            "position": {
+                "before": "\\SprykerShop\\Yves\\SessionCustomerValidationPage\\Plugin\\Security\\ValidateCustomerSessionSecurityPlugin",
+                "after": "\\SprykerShop\\Yves\\AgentPage\\Plugin\\Security\\YvesAgentPageSecurityPlugin"
+            }
         }
     ],
     "unwire-plugin": [

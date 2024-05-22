@@ -2,7 +2,10 @@
     "wire-plugin": [
         {
             "target": "\\Spryker\\Zed\\Security\\SecurityDependencyProvider::getSecurityPlugins",
-            "source": "\\Spryker\\Zed\\SecuritySystemUser\\Communication\\Plugin\\Security\\ZedSystemUserSecurityPlugin"
+            "source": "\\Spryker\\Zed\\SecuritySystemUser\\Communication\\Plugin\\Security\\ZedSystemUserSecurityPlugin",
+            "position": {
+                "before": "\\Spryker\\Zed\\SecurityMerchantPortalGui\\Communication\\Plugin\\Security\\MerchantUserSecurityPlugin"
+            }
         }
     ],
     "unwire-plugin": [
