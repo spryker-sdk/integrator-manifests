@@ -1,0 +1,14 @@
+{
+    "configure-module": [
+        {
+            "target": "\\SprykerShop\\Yves\\CartPage\\CartPageConfig::IS_CART_ACTIONS_ASYNC_MODE_ENABLED",
+            "value": true
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\Router\\RouterDependencyProvider::getRouteProvider",
+            "source": "\\SprykerShop\\Yves\\CartPage\\Plugin\\Router\\CartPageAsyncRouteProviderPlugin"
+        }
+    ]
+}
