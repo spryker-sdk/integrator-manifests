@@ -1,0 +1,14 @@
+{
+    "glossary-key": {
+        "new": {
+            "dynamic_entity.validation.delete_foreign_key_constraint_fails": {
+                "en_US": "Failed to delete the data for `%errorPath%`. The entity has a child entity and can not be deleted. Child entity: `%childEntity%`.",
+                "de_DE": "Die Daten für `%errorPath%` konnten nicht gelöscht werden. Die Entität hat eine untergeordnete Entität und kann nicht gelöscht werden. Untergeordnete Entität: `%childEntity%`."
+            },
+            "dynamic_entity.validation.method_not_allowed": {
+                "en_US": "Method not allowed for the entity `%aliasName%`.",
+                "de_DE": "Die Methode ist für die Entität nicht zulässig `%aliasName%`."
+            }
+        }
+    }
+}
