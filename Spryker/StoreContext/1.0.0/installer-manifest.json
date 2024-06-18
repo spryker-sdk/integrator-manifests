@@ -1,0 +1,63 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Store\\StoreDependencyProvider::getStorePreCreateValidationPlugins",
+            "source": "\\Spryker\\Zed\\StoreContext\\Communication\\Plugin\\Store\\ContextStorePreCreateValidationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Store\\StoreDependencyProvider::getStorePreUpdateValidationPlugins",
+            "source": "\\Spryker\\Zed\\StoreContext\\Communication\\Plugin\\Store\\ContextStorePreUpdateValidationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Store\\StoreDependencyProvider::getStorePostCreatePlugins",
+            "source": "\\Spryker\\Zed\\StoreContext\\Communication\\Plugin\\Store\\ContextStorePostCreatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Store\\StoreDependencyProvider::getStorePostUpdatePlugins",
+            "source": "\\Spryker\\Zed\\StoreContext\\Communication\\Plugin\\Store\\ContextStorePostUpdatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Store\\StoreDependencyProvider::getStoreCollectionExpanderPlugins",
+            "source": "\\Spryker\\Zed\\StoreContext\\Communication\\Plugin\\Store\\ContextStoreCollectionExpanderPlugin"
+        }
+    ],
+    "wire-schema": [
+        {
+            "target": "Zed/StoreContext/Persistence/Propel/Schema/spy_store_context.schema.xml",
+            "data": {
+                "name": "database",
+                "attributes": {
+                    "name": "zed",
+                    "namespace": "Orm\\Zed\\StoreContext\\Persistence",
+                    "package": "src.Orm.Zed.StoreContext.Persistence"
+                },
+                "sub-nodes": [
+                    {
+                        "name": "table",
+                        "attributes": {
+                            "name": "spy_store_context",
+                            "idMethod": "native"
+                        },
+                        "sub-nodes": [
+                            {
+                                "name": "behavior",
+                                "attributes": {
+                                    "name": "event"
+                                },
+                                "sub-nodes": [
+                                    {
+                                        "name": "parameter",
+                                        "attributes": {
+                                            "name": "spy_store_context_all",
+                                            "column": "*"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
