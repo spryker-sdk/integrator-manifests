@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\MerchantCommission\\MerchantCommissionDependencyProvider::getRuleEngineCollectorRulePlugins",
+            "source": "\\Spryker\\Zed\\CategoryMerchantCommissionConnector\\Communication\\Plugin\\MerchantCommission\\CategoryMerchantCommissionItemCollectorRulePlugin"
+        }
+    ]
+}
