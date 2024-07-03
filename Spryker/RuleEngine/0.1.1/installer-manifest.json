@@ -1,0 +1,14 @@
+{
+    "glossary-key": {
+        "new": {
+            "rule_engine.validation.invalid_query_string": {
+                "en_US": "The provided query string has an invalid format.",
+                "de_DE": "Die angegebene Abfragezeichenfolge hat ein ungültiges Format."
+            },
+            "rule_engine.validation.invalid_compare_operator_value": {
+                "en_US": "The provided compare operator is invalid.",
+                "de_DE": "Der angegebene Vergleichsoperator ist ungültig."
+            }
+        }
+    }
+}
