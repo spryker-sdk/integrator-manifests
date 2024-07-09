@@ -1,0 +1,182 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\Log\\LogConstants::AUDIT_LOG_SANITIZE_FIELDS",
+            "value": [
+                "password"
+            ]
+        },
+        {
+            "target": "\\Spryker\\Shared\\Log\\LogConstants::AUDIT_LOGGER_CONFIG_PLUGINS_YVES",
+            "value": [
+                "\\Spryker\\Yves\\Log\\Plugin\\Log\\YvesSecurityAuditLoggerConfigPlugin::class"
+            ]
+        },
+        {
+            "target": "\\Spryker\\Shared\\Log\\LogConstants::AUDIT_LOGGER_CONFIG_PLUGINS_ZED",
+            "value": [
+                "\\Spryker\\Zed\\Log\\Communication\\Plugin\\Log\\ZedSecurityAuditLoggerConfigPlugin::class"
+            ]
+        },
+        {
+            "target": "\\Spryker\\Shared\\Log\\LogConstants::AUDIT_LOGGER_CONFIG_PLUGINS_GLUE",
+            "value": [
+                "\\Spryker\\Glue\\Log\\Plugin\\Log\\GlueSecurityAuditLoggerConfigPlugin::class"
+            ]
+        },
+        {
+            "target": "\\Spryker\\Shared\\Log\\LogConstants::AUDIT_LOGGER_CONFIG_PLUGINS_GLUE_BACKEND",
+            "value": [
+                "\\Spryker\\Glue\\Log\\Plugin\\Log\\GlueBackendSecurityAuditLoggerConfigPlugin::class"
+            ]
+        },
+        {
+            "target": "\\Spryker\\Shared\\Log\\LogConstants::AUDIT_LOGGER_CONFIG_PLUGINS_MERCHANT_PORTAL",
+            "value": [
+                "\\Spryker\\Zed\\Log\\Communication\\Plugin\\Log\\MerchantPortalSecurityAuditLoggerConfigPlugin::class"
+            ]
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\Log\\LogDependencyProvider::getGlueSecurityAuditLogHandlerPlugins",
+            "source": "\\Spryker\\Glue\\Log\\Plugin\\Log\\AuditLogTagFilterBufferedStreamHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\Log\\LogDependencyProvider::getGlueBackendSecurityAuditLogHandlerPlugins",
+            "source": "\\Spryker\\Glue\\Log\\Plugin\\Log\\AuditLogTagFilterBufferedStreamHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\Log\\LogDependencyProvider::getGlueSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Glue\\Log\\Plugin\\Processor\\PsrLogMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\Log\\LogDependencyProvider::getGlueSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Glue\\Log\\Plugin\\Processor\\EnvironmentProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\Log\\LogDependencyProvider::getGlueSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Glue\\Log\\Plugin\\Processor\\ServerProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\Log\\LogDependencyProvider::getGlueSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Glue\\Log\\Plugin\\Log\\AuditLogRequestProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\Log\\LogDependencyProvider::getGlueSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Glue\\Log\\Plugin\\Processor\\ResponseProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\Log\\LogDependencyProvider::getGlueSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Glue\\Log\\Plugin\\Log\\AuditLogMetaDataProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\Log\\LogDependencyProvider::getGlueBackendSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Glue\\Log\\Plugin\\Processor\\PsrLogMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\Log\\LogDependencyProvider::getGlueBackendSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Glue\\Log\\Plugin\\Processor\\EnvironmentProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\Log\\LogDependencyProvider::getGlueBackendSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Glue\\Log\\Plugin\\Processor\\ServerProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\Log\\LogDependencyProvider::getGlueBackendSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Glue\\Log\\Plugin\\Log\\AuditLogRequestProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\Log\\LogDependencyProvider::getGlueBackendSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Glue\\Log\\Plugin\\Processor\\ResponseProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\Log\\LogDependencyProvider::getGlueBackendSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Glue\\Log\\Plugin\\Log\\AuditLogMetaDataProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Log\\LogDependencyProvider::getYvesSecurityAuditLogHandlerPlugins",
+            "source": "\\Spryker\\Yves\\Log\\Plugin\\Log\\AuditLogTagFilterBufferedStreamHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Log\\LogDependencyProvider::getYvesSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Yves\\Log\\Plugin\\Processor\\PsrLogMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Log\\LogDependencyProvider::getYvesSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Yves\\Log\\Plugin\\Processor\\EnvironmentProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Log\\LogDependencyProvider::getYvesSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Yves\\Log\\Plugin\\Processor\\ServerProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Log\\LogDependencyProvider::getYvesSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Yves\\Log\\Plugin\\Log\\AuditLogRequestProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Log\\LogDependencyProvider::getYvesSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Yves\\Log\\Plugin\\Processor\\ResponseProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Log\\LogDependencyProvider::getYvesSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Yves\\Log\\Plugin\\Log\\AuditLogMetaDataProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Log\\LogDependencyProvider::getZedSecurityAuditLogHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Log\\Communication\\Plugin\\Log\\AuditLogTagFilterBufferedStreamHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Log\\LogDependencyProvider::getMerchantPortalSecurityAuditLogHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Log\\Communication\\Plugin\\Log\\AuditLogTagFilterBufferedStreamHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Log\\LogDependencyProvider::getZedSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Zed\\Log\\Communication\\Plugin\\Processor\\PsrLogMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Log\\LogDependencyProvider::getZedSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Zed\\Log\\Communication\\Plugin\\Processor\\EnvironmentProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Log\\LogDependencyProvider::getZedSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Zed\\Log\\Communication\\Plugin\\Processor\\ServerProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Log\\LogDependencyProvider::getZedSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Zed\\Log\\Communication\\Plugin\\Log\\AuditLogRequestProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Log\\LogDependencyProvider::getZedSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Zed\\Log\\Communication\\Plugin\\Processor\\ResponseProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Log\\LogDependencyProvider::getZedSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Zed\\Log\\Communication\\Plugin\\Log\\AuditLogMetaDataProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Log\\LogDependencyProvider::getMerchantPortalSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Zed\\Log\\Communication\\Plugin\\Processor\\PsrLogMessageProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Log\\LogDependencyProvider::getMerchantPortalSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Zed\\Log\\Communication\\Plugin\\Processor\\EnvironmentProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Log\\LogDependencyProvider::getMerchantPortalSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Zed\\Log\\Communication\\Plugin\\Processor\\ServerProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Log\\LogDependencyProvider::getMerchantPortalSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Zed\\Log\\Communication\\Plugin\\Log\\AuditLogRequestProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Log\\LogDependencyProvider::getMerchantPortalSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Zed\\Log\\Communication\\Plugin\\Processor\\ResponseProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Log\\LogDependencyProvider::getMerchantPortalSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Zed\\Log\\Communication\\Plugin\\Log\\AuditLogMetaDataProcessorPlugin"
+        }
+    ]
+}
