@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\Log\\LogDependencyProvider::getYvesSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Yves\\Customer\\Plugin\\Log\\CurrentCustomerDataRequestProcessorPlugin"
+        }
+    ]
+}

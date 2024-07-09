@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Log\\LogDependencyProvider::getZedSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Zed\\User\\Communication\\Plugin\\Log\\CurrentUserDataRequestProcessorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Log\\LogDependencyProvider::getMerchantPortalSecurityAuditLogProcessorPlugins",
+            "source": "\\Spryker\\Zed\\User\\Communication\\Plugin\\Log\\CurrentUserDataRequestProcessorPlugin"
+        }
+    ]
+}
