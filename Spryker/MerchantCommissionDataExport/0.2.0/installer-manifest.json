@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\MerchantCommissionGui\\MerchantCommissionGuiDependencyProvider::getMerchantCommissionExportPlugin",
+            "source": "\\Spryker\\Zed\\MerchantCommissionDataExport\\Communication\\Plugin\\MerchantCommissionGui\\DataExportMerchantCommissionExportPlugin"
+        }
+    ]
+}

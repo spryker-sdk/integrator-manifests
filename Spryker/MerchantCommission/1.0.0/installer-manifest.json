@@ -1,0 +1,22 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\MerchantCommission\\MerchantCommissionDependencyProvider::getRuleEngineCollectorRulePlugins",
+            "source": "\\Spryker\\Zed\\MerchantCommission\\Communication\\Plugin\\MerchantCommission\\ItemSkuMerchantCommissionItemCollectorRulePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MerchantCommission\\MerchantCommissionDependencyProvider::getRuleEngineDecisionRulePlugins",
+            "source": "\\Spryker\\Zed\\MerchantCommission\\Communication\\Plugin\\MerchantCommission\\PriceModeMerchantCommissionOrderDecisionRulePlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\MerchantCommission\\MerchantCommissionDependencyProvider::getRuleEngineCollectorRulePlugins",
+            "source": "\\Spryker\\Zed\\MerchantCommission\\Communication\\Plugin\\RuleEngine\\ItemSkuCollectorRulePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MerchantCommission\\MerchantCommissionDependencyProvider::getRuleEngineDecisionRulePlugins",
+            "source": "\\Spryker\\Zed\\MerchantCommission\\Communication\\Plugin\\RuleEngine\\PriceModeDecisionRulePlugin"
+        }
+    ]
+}
