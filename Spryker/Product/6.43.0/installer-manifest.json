@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductConfig::isFullLocaleNamesInUrlEnabled",
+            "value": true
+        }
+    ]
+}
