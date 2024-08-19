@@ -1,0 +1,12 @@
+{
+    "configure-module": [
+        {
+            "target": "\\SprykerShop\\Yves\\CheckoutPage\\CheckoutPageConfig::getSuccessStepEscapeRoute",
+            "value": "static::SUCCESS_STEP_ESCAPE_ROUTE"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\CheckoutPage\\CheckoutPageConfig::SUCCESS_STEP_ESCAPE_ROUTE",
+            "value": "checkout-error"
+        }
+    ]
+}
