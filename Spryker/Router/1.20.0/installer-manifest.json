@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\Router\\RouterConfig::isRoutingCacheEnabled",
+            "value": true
+        }
+    ]
+}
