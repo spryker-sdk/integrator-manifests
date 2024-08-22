@@ -1,0 +1,20 @@
+{
+    "glossary-key": {
+        "new": {
+            "checkout.order.checkout.error.duplicate-order-processing": {
+                "en_US": "Cart with given uid %quote-uid% has already been processing",
+                "de_DE": "Warenkorb mit der angegebenen UID %quote-uid% wird bereits verarbeitet"
+            }
+        }
+    },
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditions",
+            "source": "\\Spryker\\Zed\\QuoteCheckoutConnector\\Communication\\Plugin\\Checkout\\DisallowedQuoteCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreSaveHooks",
+            "source": "\\Spryker\\Zed\\QuoteCheckoutConnector\\Communication\\Plugin\\Checkout\\DisallowQuoteCheckoutPreSavePlugin"
+        }
+    ]
+}
