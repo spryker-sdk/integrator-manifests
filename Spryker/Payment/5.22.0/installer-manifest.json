@@ -1,0 +1,11 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\Payment\\PaymentConfig::getQuoteFieldsForForeignPayment",
+            "value": {
+                "value": "return array_merge_recursive(parent::getQuoteFieldsForForeignPayment(), [\\Generated\\Shared\\Transfer\\QuoteTransfer::TOTALS => [\\Generated\\Shared\\Transfer\\TotalsTransfer::DISCOUNT_TOTAL => 'discountTotal', \\Generated\\Shared\\Transfer\\TotalsTransfer::TAX_TOTAL => [\\Generated\\Shared\\Transfer\\TaxTotalTransfer::AMOUNT => 'taxTotal']], \\Generated\\Shared\\Transfer\\QuoteTransfer::ITEMS => [\\Generated\\Shared\\Transfer\\ItemTransfer::TAX_RATE => 'taxRate'], \\Generated\\Shared\\Transfer\\QuoteTransfer::EXPENSES => [\\Generated\\Shared\\Transfer\\ExpenseTransfer::TAX_RATE => 'taxRate']])",
+                "is_literal": true
+            }
+        }
+    ]
+}
