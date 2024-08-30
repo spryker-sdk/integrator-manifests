@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\MerchantPortalApplication\\MerchantPortalApplicationConfig::getHomePageUrl",
+            "value": "/dashboard-merchant-portal-gui/dashboard"
+        }
+    ]
+}
