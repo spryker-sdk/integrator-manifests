@@ -1,0 +1,17 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\ProductAttribute\\ProductAttributeConfig::getAttributeAvailableTypes",
+            "value": {
+                "value": "return array_merge(parent::getAttributeAvailableTypes(), [\\Spryker\\Shared\\ProductAttribute\\ProductAttributeConfig::INPUT_TYPE_MULTISELECT => \\Spryker\\Shared\\ProductAttribute\\ProductAttributeConfig::INPUT_TYPE_MULTISELECT])",
+                "is_literal": true
+            }
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductAttribute\\ProductAttributeDependencyProvider::getProductAttributeDataFormatterPlugins",
+            "source": "\\Spryker\\Zed\\ProductAttribute\\Communication\\Plugin\\ProductAttribute\\MultiSelectProductAttributeDataFormatterPlugin"
+        }
+    ]
+}

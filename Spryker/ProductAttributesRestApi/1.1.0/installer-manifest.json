@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\ProductsRestApi\\ProductsRestApiDependencyProvider::getConcreteProductsResourceExpanderPlugins",
+            "source": "\\Spryker\\Glue\\ProductAttributesRestApi\\Plugin\\ProductsRestApi\\MultiSelectAttributeConcreteProductsResourceExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\ProductsRestApi\\ProductsRestApiDependencyProvider::getAbstractProductsResourceExpanderPlugins",
+            "source": "\\Spryker\\Glue\\ProductAttributesRestApi\\Plugin\\ProductsRestApi\\MultiSelectAttributeAbstractProductsResourceExpanderPlugin"
+        }
+    ]
+}
