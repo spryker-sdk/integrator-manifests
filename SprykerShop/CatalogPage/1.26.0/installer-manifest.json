@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\SprykerShop\\Yves\\CatalogPage\\CatalogPageConfig::IS_MINI_CART_ASYNC_MODE_ENABLED",
+            "value": true
+        }
+    ]
+}

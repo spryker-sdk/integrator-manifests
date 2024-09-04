@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\CartPage\\CartPageDependencyProvider::getMiniCartViewExpanderPlugins",
+            "source": "\\SprykerShop\\Yves\\CartPage\\Plugin\\CartPage\\CartBlockMiniCartViewExpanderPlugin"
+        }
+    ]
+}
