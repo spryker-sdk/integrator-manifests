@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getQueueMessageCheckerPlugins",
+            "source": "\\Spryker\\Zed\\RabbitMq\\Communication\\Plugin\\Queue\\RabbitMqQueueMessageCheckerPlugin"
+        }
+    ]
+}
