@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\Event\\EventConfig::DEFAULT_EVENT_LOGGER_MIN_LEVEL",
+            "value": "\\Monolog\\Logger::WARNING"
+        }
+    ]
+}
