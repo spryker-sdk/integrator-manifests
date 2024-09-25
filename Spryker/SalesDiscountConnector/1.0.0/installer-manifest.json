@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getDecisionRulePlugins",
+            "source": "\\Spryker\\Zed\\SalesDiscountConnector\\Communication\\Plugin\\Discount\\CustomerOrderCountDecisionRulePlugin"
+        }
+    ]
+}
