@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\MerchantCommission\\MerchantCommissionConfig::isMerchantCommissionPriceModeForStoreCalculationEnabled",
+            "value": false
+        }
+    ]
+}
