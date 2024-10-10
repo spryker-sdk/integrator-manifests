@@ -1,0 +1,48 @@
+{
+    "glossary-key": {
+        "new": {
+            "product_comparison_page.page_title": {
+                "de_DE": "Artikel vergleichen",
+                "en_US": "Compare products"
+            },
+            "product_comparison_page.empty_comparison": {
+                "de_DE": "Vergleichsliste ist leer.",
+                "en_US": "Comparison list is empty."
+            },
+            "product_comparison_page.clear-compare-list": {
+                "de_DE": "Vergleichsliste leeren",
+                "en_US": "Clear the comparison list"
+            },
+            "product_comparison_page.add_to_comparison-list": {
+                "de_DE": "Vergleichen",
+                "en_US": "Compare"
+            },
+            "product_comparison_page.remove_from_comparison-list": {
+                "de_DE": "Aus Vergleich entfernen",
+                "en_US": "Remove from Compare"
+            },
+            "product_comparison_page.list_link": {
+                "de_DE": "Artikelvergleich",
+                "en_US": "Product comparison"
+            },
+            "product_comparison_page.add_to_comparison.success": {
+                "de_DE": "Zum Vergleich hinzugefügt",
+                "en_US": "Added to comparison"
+            },
+            "product_comparison_page.add_to_comparison.error.max": {
+                "de_DE": "Das Limit ist bereits erreicht",
+                "en_US": "The limit has already been reached"
+            },
+            "product_comparison_page.removed_from_the_list": {
+                "de_DE": "Artikel wurde aus der Vergleichsliste entfernt.",
+                "en_US": "Product was removed from the comparison list."
+            }
+        }
+    },
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\Router\\RouterDependencyProvider::getRouteProvider",
+            "source": "\\SprykerShop\\Yves\\ProductComparisonPage\\Plugin\\Router\\ProductComparisonPageRouteProviderPlugin"
+        }
+    ]
+}

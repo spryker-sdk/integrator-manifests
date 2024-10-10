@@ -1,0 +1,10 @@
+{
+    "wire-widget": [
+        {
+            "source": "\\SprykerShop\\Yves\\ProductComparisonWidget\\Widget\\ComparisonProductTogglerComparisonListWidget"
+        },
+        {
+            "source": "\\SprykerShop\\Yves\\ProductComparisonWidget\\Widget\\LinkToProductComparisonListWidget"
+        }
+    ]
+}
