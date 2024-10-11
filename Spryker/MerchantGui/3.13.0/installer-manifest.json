@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\MerchantGui\\MerchantGuiDependencyProvider::getMerchantViewFormViewExpanderPlugins",
+            "source": "\\Spryker\\Zed\\MerchantUserGui\\Communication\\Plugin\\MerchantGui\\MerchantUserViewMerchantUpdateFormViewExpanderPlugin"
+        }
+    ]
+}
