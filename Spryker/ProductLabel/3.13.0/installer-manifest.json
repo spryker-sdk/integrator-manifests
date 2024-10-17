@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductLabelStoragePlugins",
+            "source": "\\Spryker\\Zed\\ProductLabel\\Communication\\Plugin\\Publisher\\ProductLabelLocalizedAttributesWritePublisherPlugin"
+        }
+    ]
+}
