@@ -1,0 +1,8 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\ProductSetPageSearch\\ProductSetPageSearchDependencyProvider::getProductSetListQueryExpanderPlugins",
+            "source": "\\Spryker\\Client\\SearchElasticsearch\\Plugin\\QueryExpander\\StoreQueryExpanderPlugin"
+        }
+    ]
+}
