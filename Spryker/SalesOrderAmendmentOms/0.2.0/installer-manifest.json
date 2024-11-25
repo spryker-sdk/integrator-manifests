@@ -1,0 +1,10 @@
+{
+    "glossary-key": {
+        "new": {
+            "sales_order_amendment_oms.validation.order_does_not_exist": {
+                "en_US": "Order with reference %order_reference% could not be found.",
+                "de_DE": "Bestellnummer %order_reference% konnte nicht gefunden werden."
+            }
+        }
+    }
+}
