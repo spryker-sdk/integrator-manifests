@@ -1,0 +1,11 @@
+{
+    "configure-module": [
+        {
+            "previousValue": [],
+            "target": "\\SprykerShop\\Yves\\CheckoutPage\\CheckoutPageConfig::getExcludedPaymentMethodKeys",
+            "value": [
+                "payone-paypal-express"
+            ]
+        }
+    ]
+}

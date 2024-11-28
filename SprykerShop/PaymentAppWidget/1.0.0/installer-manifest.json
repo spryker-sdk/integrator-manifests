@@ -1,0 +1,54 @@
+{
+    "glossary-key": {
+        "new": {
+            "payment_app_widget.validation.quote_is_empty": {
+                "en_US": " Quote is empty.",
+                "de_DE": " Angebot ist leer."
+            },
+            "payment_app_widget.error.payment_failed": {
+                "en_US": "Payment failed",
+                "de_DE": "Zahlung fehlgeschlagen"
+            },
+            "payment_app_widget.error.incorrect_quote": {
+                "en_US": "Quote not found, session may have expired",
+                "de_DE": "Angebot nicht gefunden, Sitzung ist möglicherweise abgelaufen"
+            }
+        }
+    },
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\CheckoutPage\\CheckoutPageDependencyProvider::getCheckoutStepResolverStrategyPlugins",
+            "source": "\\SprykerShop\\Yves\\PaymentAppWidget\\Plugin\\CheckoutPage\\PaymentAppExpressCheckoutWorkflowCheckoutStepResolverStrategyPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\Router\\RouterDependencyProvider::getRouteProvider",
+            "source": "\\SprykerShop\\Yves\\PaymentAppWidget\\Plugin\\Router\\PaymentAppWidgetRouteProviderPlugin"
+        }
+    ],
+    "configure-module": [
+        {
+            "target": "\\SprykerShop\\Yves\\PaymentAppWidget\\PaymentAppWidgetConfig::CHECKOUT_STEPS_TO_SKIP_IN_EXPRESS_CHECKOUT_WORKFLOW",
+            "value": [
+                "address",
+                "shipment",
+                "payment"
+            ]
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\PaymentAppWidget\\PaymentAppWidgetConfig::QUOTE_FIELDS_TO_CLEAN_IN_EXPRESS_CHECKOUT_WORKFLOW",
+            "value": [
+                "\\Generated\\Shared\\Transfer\\QuoteTransfer::PAYMENT",
+                "\\Generated\\Shared\\Transfer\\QuoteTransfer::PAYMENTS",
+                "\\Generated\\Shared\\Transfer\\QuoteTransfer::SHIPMENT",
+                "\\Generated\\Shared\\Transfer\\QuoteTransfer::BILLING_ADDRESS",
+                "\\Generated\\Shared\\Transfer\\QuoteTransfer::SHIPPING_ADDRESS",
+                "\\Generated\\Shared\\Transfer\\QuoteTransfer::PRE_ORDER_PAYMENT_DATA"
+            ]
+        }
+    ],
+    "wire-widget": [
+        {
+            "source": "\\SprykerShop\\Yves\\PaymentAppWidget\\Widget\\ExpressCheckoutPaymentWidget"
+        }
+    ]
+}
