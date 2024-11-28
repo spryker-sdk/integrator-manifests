@@ -1,0 +1,11 @@
+{
+    "configure-env": [
+        {
+            "target": "\\SprykerShop\\Shared\\StoreWidget\\StoreWidgetConstants::IS_STORE_ROUTING_ENABLED",
+            "value": {
+                "value": "(bool)getenv('SPRYKER_DYNAMIC_STORE_MODE')",
+                "is_literal": true
+            }
+        }
+    ]
+}
