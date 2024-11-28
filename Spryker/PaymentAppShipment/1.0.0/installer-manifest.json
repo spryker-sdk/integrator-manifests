@@ -1,0 +1,22 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\PaymentApp\\PaymentAppDependencyProvider::getExpressCheckoutPaymentRequestProcessorPlugins",
+            "source": "\\Spryker\\Zed\\PaymentAppShipment\\Communication\\Plugin\\PaymentApp\\ShipmentExpressCheckoutPaymentRequestProcessorPlugin"
+        }
+    ],
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\PaymentAppShipment\\PaymentAppShipmentConfig::EXPRESS_CHECKOUT_SHIPMENT_METHODS_INDEXED_BY_PAYMENT_METHOD",
+            "value": {
+                "payone-paypal-express": "spryker_dummy_shipment-standard"
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\PaymentAppShipment\\PaymentAppShipmentConfig::SHIPMENT_ITEM_COLLECTION_FIELD_NAMES",
+            "value": [
+                "\\Generated\\Shared\\Transfer\\QuoteTransfer::BUNDLE_ITEMS"
+            ]
+        }
+    ]
+}

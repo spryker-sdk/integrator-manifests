@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPlugins",
+            "source": "\\Spryker\\Zed\\PaymentCartConnector\\Communication\\Plugin\\Cart\\RemoveQuotePaymentCartItemExpanderPlugin"
+        }
+    ],
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\PaymentCartConnector\\PaymentCartConnectorConfig::EXCLUDED_PAYMENT_METHODS",
+            "value": [
+                "PayPal Express"
+            ]
+        }
+    ]
+}
