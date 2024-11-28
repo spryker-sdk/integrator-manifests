@@ -1,0 +1,20 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\Router\\RouterConstants::IS_STORE_ROUTING_ENABLED",
+            "value": {
+                "value": "(bool)getenv('SPRYKER_DYNAMIC_STORE_MODE')",
+                "is_literal": true
+            }
+        }
+    ],
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Yves\\Router\\RouterConfig::getAllowedStores",
+            "value": {
+                "value": "return (new \\Spryker\\Client\\Kernel\\Container())->getLocator()->storeStorage()->client()->getStoreNames()",
+                "is_literal": true
+            }
+        }
+    ]
+}

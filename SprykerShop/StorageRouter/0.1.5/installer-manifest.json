@@ -1,0 +1,26 @@
+{
+    "configure-env": [
+        {
+            "target": "\\SprykerShop\\Shared\\StorageRouter\\StorageRouterConstants::IS_STORE_ROUTING_ENABLED",
+            "value": {
+                "value": "(bool)getenv('SPRYKER_DYNAMIC_STORE_MODE')",
+                "is_literal": true
+            }
+        }
+    ],
+    "configure-module": [
+        {
+            "target": "\\SprykerShop\\Yves\\StorageRouter\\StorageRouterConfig::getAllowedStores",
+            "value": {
+                "value": "return (new \\Spryker\\Client\\Kernel\\Container())->getLocator()->storeStorage()->client()->getStoreNames()",
+                "is_literal": true
+            }
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\StorageRouter\\StorageRouterDependencyProvider::getStorageRouterEnhancerPlugins",
+            "source": "\\SprykerShop\\Yves\\StorageRouter\\Plugin\\RouterEnhancer\\StorePrefixStorageRouterEnhancerPlugin"
+        }
+    ]
+}
