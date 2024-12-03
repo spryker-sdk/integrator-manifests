@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\Customer\\CustomerConfig::IS_CUSTOMER_EMAIL_VALIDATION_CASE_SENSITIVE",
+            "value": false
+        }
+    ]
+}
