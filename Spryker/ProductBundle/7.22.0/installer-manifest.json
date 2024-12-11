@@ -1,0 +1,14 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CartReorder\\CartReorderDependencyProvider::getCartReorderOrderItemFilterPlugins",
+            "source": "\\Spryker\\Zed\\ProductBundle\\Communication\\Plugin\\CartReorder\\ProductBundleCartReorderOrderItemFilterPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CartReorder\\CartReorderDependencyProvider::getCartReorderItemFilterPlugins",
+            "source": "\\Spryker\\Zed\\ProductBundle\\Communication\\Plugin\\CartReorder\\ProductBundleCartReorderItemFilterPlugin"
+        }
+    ]
+}
