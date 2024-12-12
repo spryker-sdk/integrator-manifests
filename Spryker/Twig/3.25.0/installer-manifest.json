@@ -1,0 +1,22 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Shared\\Twig\\Plugin\\VarDumperTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Shared\\Twig\\Plugin\\VarDumperTwigPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Shared\\Twig\\Plugin\\DebugTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Shared\\Twig\\Plugin\\DebugTwigPlugin"
+        }
+    ]
+}
