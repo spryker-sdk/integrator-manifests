@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getDecisionRulePlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferDiscountConnector\\Communication\\Plugin\\Discount\\ProductOfferReferenceDecisionRulePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getCollectorPlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferDiscountConnector\\Communication\\Plugin\\Discount\\ProductOfferReferenceDiscountableItemCollectorPlugin"
+        }
+    ]
+}
