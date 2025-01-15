@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Service\\Synchronization\\SynchronizationConfig::isSingleKeyFormatNormalized",
+            "value": true
+        }
+    ]
+}
