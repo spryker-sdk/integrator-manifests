@@ -1,0 +1,14 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CartReorder\\CartReorderDependencyProvider::getCartPreReorderPlugins",
+            "source": "\\Spryker\\Zed\\SalesOrderAmendment\\Communication\\Plugin\\CartReorder\\OrderAmendmentQuoteProcessFlowExpanderCartPreReorderPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CartReorder\\CartReorderDependencyProvider::getCartReorderValidatorPlugins",
+            "source": "\\Spryker\\Zed\\SalesOrderAmendment\\Communication\\Plugin\\CartReorder\\OrderAmendmentCartReorderValidatorPlugin"
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "glossary-key": {
+        "new": {
+            "sales_order_amendment_oms.validation.order_not_being_amended": {
+                "en_US": "This order cannot be edited because the time limit for changes has expired.",
+                "de_DE": "Eine Bearbeitung dieser Bestellung ist nicht möglich, da die Änderungsfrist abgelaufen ist."
+            }
+        }
+    },
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CartReorder\\CartReorderDependencyProvider::getCartReorderValidatorPlugins",
+            "source": "\\Spryker\\Zed\\SalesOrderAmendmentOms\\Communication\\Plugin\\CartReorder\\IsAmendableOrderCartReorderValidatorRulePlugin"
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditions",
+            "source": "\\Spryker\\Zed\\SalesOrderAmendmentOms\\Communication\\Plugin\\Checkout\\OrderAmendmentCheckoutPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderHydrationPlugins",
+            "source": "\\Spryker\\Zed\\SalesOrderAmendmentOms\\Communication\\Plugin\\Sales\\IsAmendableOrderExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getSearchOrderExpanderPlugins",
+            "source": "\\Spryker\\Zed\\SalesOrderAmendmentOms\\Communication\\Plugin\\Sales\\IsAmendableOrderSearchOrderExpanderPlugin"
+        }
+    ]
+}
