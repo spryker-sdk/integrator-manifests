@@ -1,0 +1,10 @@
+{
+    "wire-glue-relationship": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\OrdersRestApi\\OrdersRestApiConfig::RESOURCE_ORDERS": "\\Spryker\\Glue\\OrderAmendmentsRestApi\\Plugin\\GlueApplication\\OrderAmendmentsByOrderResourceRelationshipPlugin"
+            }
+        }
+    ]
+}
