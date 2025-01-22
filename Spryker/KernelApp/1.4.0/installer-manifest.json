@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerDependencyProvider::getFilterMessageChannelPlugins",
+            "source": "\\Spryker\\Zed\\KernelApp\\Communication\\Plugin\\MessageBroker\\ActiveAppFilterMessageChannelPlugin"
+        }
+    ]
+}

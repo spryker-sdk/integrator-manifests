@@ -1,0 +1,11 @@
+{
+    "configure-module": [
+        {
+            "previousValue": [],
+            "target": "\\Spryker\\Zed\\MessageBroker\\MessageBrokerConfig::getSystemWorkerChannels",
+            "value": [
+                "app-events"
+            ]
+        }
+    ]
+}
