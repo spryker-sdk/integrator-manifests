@@ -1,0 +1,10 @@
+{
+    "glossary-key": {
+        "new": {
+            "mail.customer.customer_email_change_verification.text.second_part ": {
+                "en_US": "Make sure you are logged into the system before clicking the link.",
+                "de_DE": "Stellen Sie sicher, dass Sie im System angemeldet sind, bevor Sie auf den Link klicken."
+            }
+        }
+    }
+}
