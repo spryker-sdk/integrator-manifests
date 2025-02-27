@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getSalesOrderItemCollectionPreDeletePlugins",
+            "source": "\\Spryker\\Zed\\Oms\\Communication\\Plugin\\Sales\\OmsItemHistorySalesOrderItemCollectionPreDeletePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderItemInitialStateProviderPlugins",
+            "source": "\\Spryker\\Zed\\Oms\\Communication\\Plugin\\Sales\\DefaultOrderItemInitialStateProviderPlugin"
+        }
+    ]
+}

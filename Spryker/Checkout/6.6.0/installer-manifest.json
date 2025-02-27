@@ -1,0 +1,120 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\QuoteCheckoutConnector\\Communication\\Plugin\\Checkout\\DisallowedQuoteCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\Customer\\Communication\\Plugin\\CustomerPreConditionCheckerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\Customer\\Communication\\Plugin\\Checkout\\CustomerSalutationCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\Customer\\Communication\\Plugin\\Checkout\\CustomerAddressSalutationCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\Availability\\Communication\\Plugin\\ProductsAvailableCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\DummyPayment\\Communication\\Plugin\\Checkout\\DummyPaymentCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ShipmentCheckoutConnector\\Communication\\Plugin\\Checkout\\ShipmentCheckoutPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductDiscontinued\\Communication\\Plugin\\Checkout\\ProductDiscontinuedCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductPackagingUnit\\Communication\\Plugin\\Checkout\\AmountAvailabilityCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\QuoteRequest\\Communication\\Plugin\\Checkout\\QuoteRequestPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\QuoteApproval\\Communication\\Plugin\\Checkout\\QuoteApprovalCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\Merchant\\Communication\\Plugin\\Checkout\\MerchantCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\MerchantSwitcher\\Communication\\Plugin\\Checkout\\SingleMerchantCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\Payment\\Communication\\Plugin\\Checkout\\PaymentMethodValidityCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductConfigurationCart\\Communication\\Plugin\\Checkout\\ProductConfigurationCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\MerchantProductOption\\Communication\\Plugin\\Checkout\\MerchantProductOptionCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductCartConnector\\Communication\\Plugin\\Checkout\\ProductExistsCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductApproval\\Communication\\Plugin\\Checkout\\ProductApprovalCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ShipmentTypeCart\\Communication\\Plugin\\Checkout\\ShipmentTypeCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ServicePointCart\\Communication\\Plugin\\Checkout\\ServicePointCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductQuantity\\Communication\\Plugin\\Checkout\\ProductQuantityRestrictionCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutOrderSaversForOrderAmendment",
+            "source": "\\Spryker\\Zed\\Customer\\Communication\\Plugin\\Checkout\\CustomerOrderSavePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutOrderSaversForOrderAmendment",
+            "source": "\\Spryker\\Zed\\SalesShipmentType\\Communication\\Plugin\\Checkout\\ShipmentTypeCheckoutDoSaveOrderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPostHooksForOrderAmendment",
+            "source": "\\Spryker\\Zed\\DummyPayment\\Communication\\Plugin\\Checkout\\DummyPaymentCheckoutPostSavePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPostHooksForOrderAmendment",
+            "source": "\\Spryker\\Zed\\QuoteRequest\\Communication\\Plugin\\Checkout\\CloseQuoteRequestCheckoutPostSaveHookPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPostHooksForOrderAmendment",
+            "source": "\\Spryker\\Zed\\GiftCardMailConnector\\Communication\\Plugin\\Checkout\\SendEmailToGiftCardUser"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPostHooksForOrderAmendment",
+            "source": "\\Spryker\\Zed\\Payment\\Communication\\Plugin\\Checkout\\PaymentAuthorizationCheckoutPostSavePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPostHooksForOrderAmendment",
+            "source": "\\Spryker\\Zed\\Payment\\Communication\\Plugin\\Checkout\\PaymentConfirmPreOrderPaymentCheckoutPostSavePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreSaveHooksForOrderAmendment",
+            "source": "\\Spryker\\Zed\\QuoteCheckoutConnector\\Communication\\Plugin\\Checkout\\DisallowQuoteCheckoutPreSavePlugin"
+        }
+    ]
+}

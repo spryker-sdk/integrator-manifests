@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getSalesOrderItemCollectionPreDeletePlugins",
+            "source": "\\Spryker\\Zed\\SalesConfigurableBundle\\Communication\\Plugin\\Sales\\SalesConfigurableBundleSalesOrderItemCollectionPreDeletePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderItemCollectionPostUpdatePlugins",
+            "source": "\\Spryker\\Zed\\SalesConfigurableBundle\\Communication\\Plugin\\Sales\\SalesConfiguredBundlesSalesOrderItemCollectionPostUpdatePlugin"
+        }
+    ]
+}

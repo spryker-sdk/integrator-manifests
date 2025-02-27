@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\SalesPayment\\SalesPaymentDependencyProvider::getSalesPaymentPreDeletePlugins",
+            "source": "\\Spryker\\Zed\\GiftCardBalance\\Communication\\Plugin\\SalesPayment\\GiftCardBalanceLogSalesPaymentPreDeletePlugin"
+        }
+    ]
+}

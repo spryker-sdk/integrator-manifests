@@ -1,0 +1,10 @@
+{
+    "glossary-key": {
+        "new": {
+            "cart_reorder.pre_add_to_cart.inactive_product_option_item_removed": {
+                "en_US": "Inactive item %sku% was removed from your shopping cart.",
+                "de_DE": "Der inaktive Artikel %sku% wurde aus Ihrem Warenkorb entfernt."
+            }
+        }
+    }
+}

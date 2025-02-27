@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CartReorder\\CartReorderDependencyProvider::getCartReorderPreAddToCartPlugins",
+            "source": "\\Spryker\\Zed\\ProductOffer\\Communication\\Plugin\\CartReorder\\RemoveInactiveProductOffersCartReorderPreAddToCartPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductOffer\\Communication\\Plugin\\Checkout\\ProductOfferCheckoutPreConditionPlugin"
+        }
+    ]
+}

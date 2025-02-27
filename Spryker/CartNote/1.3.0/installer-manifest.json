@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutOrderSaversForOrderAmendment",
+            "source": "\\Spryker\\Zed\\CartNote\\Communication\\Plugin\\Checkout\\UpdateCartNoteCheckoutDoSaveOrderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\SalesOrderAmendment\\SalesOrderAmendmentDependencyProvider::getSalesOrderItemCollectorPlugins",
+            "source": "\\Spryker\\Zed\\CartNote\\Communication\\Plugin\\SalesOrderAmendment\\CartNoteSalesOrderItemCollectorPlugin"
+        }
+    ]
+}

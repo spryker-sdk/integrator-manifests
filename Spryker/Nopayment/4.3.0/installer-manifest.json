@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\Nopayment\\Communication\\Plugin\\Checkout\\NopaymentCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getSalesOrderItemCollectionPreDeletePlugins",
+            "source": "\\Spryker\\Zed\\Nopayment\\Communication\\Plugin\\Sales\\NopaymentSalesOrderItemCollectionPreDeletePlugin"
+        }
+    ]
+}

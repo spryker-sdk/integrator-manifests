@@ -1,0 +1,48 @@
+{
+    "glossary-key": {
+        "new": {
+            "sales.validation.sales_order_entity_not_found": {
+                "en_US": "The sales order entity was not found.",
+                "de_DE": "Die Verkaufsbestellung wurde nicht gefunden."
+            },
+            "sales.validation.sales_order_item_entity_not_found": {
+                "en_US": "The sales order item entity was not found.",
+                "de_DE": "Der Verkaufsbestellungsartikel wurde nicht gefunden."
+            },
+            "sales.validation.sales_order_item_entity_duplicated": {
+                "en_US": "The sales order item entity was duplicated.",
+                "de_DE": "Der Verkaufsbestellungsartikel wurde dupliziert."
+            },
+            "sales.validation.items_not_from_same_order": {
+                "en_US": "Items are not from the same order.",
+                "de_DE": "Die Artikel stammen nicht aus derselben Bestellung."
+            }
+        }
+    },
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\Sales\\Communication\\Plugin\\Checkout\\DuplicateOrderCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutOrderSaversForOrderAmendment",
+            "source": "\\Spryker\\Zed\\Sales\\Communication\\Plugin\\Checkout\\UpdateOrderByQuoteCheckoutDoSaveOrderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutOrderSaversForOrderAmendment",
+            "source": "\\Spryker\\Zed\\Sales\\Communication\\Plugin\\Checkout\\OrderTotalsSaverPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreSaveHooksForOrderAmendment",
+            "source": "\\Spryker\\Zed\\Sales\\Communication\\Plugin\\SalesOrderExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderPostSavePluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\CompanyBusinessUnitSalesConnector\\Communication\\Plugin\\Sales\\SaveCompanyBusinessUnitUuidOrderPostSavePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderPostSavePluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\CompanySalesConnector\\Communication\\Plugin\\Sales\\SaveCompanyUuidOrderPostSavePlugin"
+        }
+    ]
+}
