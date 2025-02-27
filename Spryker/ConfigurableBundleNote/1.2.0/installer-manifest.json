@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\SalesOrderAmendment\\SalesOrderAmendmentDependencyProvider::getSalesOrderItemCollectorPlugins",
+            "source": "\\Spryker\\Zed\\ConfigurableBundleNote\\Communication\\Plugin\\SalesOrderAmendment\\ConfigurableBundleNoteSalesOrderItemCollectorPlugin"
+        }
+    ]
+}

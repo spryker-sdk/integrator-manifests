@@ -1,0 +1,22 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutOrderSavers",
+            "source": "\\Spryker\\Zed\\ProductOption\\Communication\\Plugin\\Checkout\\ProductOptionOrderSaverPlugin"
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderItemsPostSavePlugins",
+            "source": "\\Spryker\\Zed\\ProductOption\\Communication\\Plugin\\Sales\\ProductOptionOrderItemsPostSavePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getSalesOrderItemCollectionPreDeletePlugins",
+            "source": "\\Spryker\\Zed\\ProductOption\\Communication\\Plugin\\Sales\\ProductOptionSalesOrderItemCollectionPreDeletePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderItemCollectionPostUpdatePlugins",
+            "source": "\\Spryker\\Zed\\ProductOption\\Communication\\Plugin\\Sales\\ProductOptionSalesOrderItemCollectionPostUpdatePlugin"
+        }
+    ]
+}

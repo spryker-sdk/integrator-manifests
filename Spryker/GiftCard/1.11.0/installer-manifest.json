@@ -1,0 +1,34 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\GiftCard\\Communication\\Plugin\\Checkout\\GiftCardCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutOrderSavers",
+            "source": "\\Spryker\\Zed\\GiftCard\\Communication\\Plugin\\Checkout\\GiftCardPaymentCheckoutDoSaveOrderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutOrderSaversForOrderAmendment",
+            "source": "\\Spryker\\Zed\\GiftCard\\Communication\\Plugin\\Checkout\\GiftCardPaymentCheckoutDoSaveOrderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderItemsPostSavePlugins",
+            "source": "\\Spryker\\Zed\\GiftCard\\Communication\\Plugin\\Sales\\GiftCardOrderItemsPostSavePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getSalesOrderItemCollectionPreDeletePlugins",
+            "source": "\\Spryker\\Zed\\GiftCard\\Communication\\Plugin\\Sales\\GiftCardSalesOrderItemCollectionPreDeletePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\SalesPayment\\SalesPaymentDependencyProvider::getSalesPaymentPreDeletePlugins",
+            "source": "\\Spryker\\Zed\\GiftCard\\Communication\\Plugin\\SalesPayment\\PaymentGiftCardSalesPaymentPreDeletePlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutOrderSavers",
+            "source": "\\Spryker\\Zed\\GiftCard\\Communication\\Plugin\\Checkout\\GiftCardCheckoutDoSaveOrderPlugin"
+        }
+    ]
+}

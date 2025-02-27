@@ -1,0 +1,24 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\Discount\\Communication\\Plugin\\Checkout\\VoucherDiscountMaxUsageCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutOrderSaversForOrderAmendment",
+            "source": "\\Spryker\\Zed\\Discount\\Communication\\Plugin\\Checkout\\ReleaseUsedCodesCheckoutDoSaveOrderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutOrderSaversForOrderAmendment",
+            "source": "\\Spryker\\Zed\\Discount\\Communication\\Plugin\\Checkout\\ReplaceSalesOrderDiscountsCheckoutDoSaveOrderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getSalesExpensePreDeletePlugins",
+            "source": "\\Spryker\\Zed\\Discount\\Communication\\Plugin\\Sales\\SalesDiscountSalesExpensePreDeletePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getSalesOrderItemCollectionPreDeletePlugins",
+            "source": "\\Spryker\\Zed\\Discount\\Communication\\Plugin\\Sales\\DiscountSalesOrderItemCollectionPreDeletePlugin"
+        }
+    ]
+}

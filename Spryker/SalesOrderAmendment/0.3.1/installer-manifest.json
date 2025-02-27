@@ -1,0 +1,39 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CartReorder\\CartReorderDependencyProvider::getCartReorderValidatorPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\SalesOrderAmendment\\Communication\\Plugin\\CartReorder\\OrderAmendmentCartReorderValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CartReorder\\CartReorderDependencyProvider::getCartReorderItemHydratorPlugins",
+            "source": "\\Spryker\\Zed\\SalesOrderAmendment\\Communication\\Plugin\\CartReorder\\OriginalSalesOrderItemGroupKeyCartReorderItemHydratorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutOrderSaversForOrderAmendment",
+            "source": "\\Spryker\\Zed\\SalesOrderAmendment\\Communication\\Plugin\\Checkout\\SalesOrderAmendmentItemsCheckoutDoSaveOrderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreSaveHooksForOrderAmendment",
+            "source": "\\Spryker\\Zed\\SalesOrderAmendment\\Communication\\Plugin\\Checkout\\OriginalOrderQuoteExpanderCheckoutPreSavePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderPostSavePluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\SalesOrderAmendment\\Communication\\Plugin\\Sales\\CreateSalesOrderAmendmentOrderPostSavePlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderPostSavePlugins",
+            "source": "\\Spryker\\Zed\\SalesOrderAmendment\\Communication\\Plugin\\Sales\\CreateSalesOrderAmendmentOrderPostSavePlugin"
+        }
+    ],
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\SalesOrderAmendment\\SalesOrderAmendmentConfig::getQuoteFieldsAllowedForSaving",
+            "value": {
+                "value": "return array_merge(parent::getQuoteFieldsAllowedForSaving(), [\\Generated\\Shared\\Transfer\\QuoteTransfer::BUNDLE_ITEMS, \\Generated\\Shared\\Transfer\\QuoteTransfer::CART_NOTE, \\Generated\\Shared\\Transfer\\QuoteTransfer::EXPENSES, \\Generated\\Shared\\Transfer\\QuoteTransfer::VOUCHER_DISCOUNTS, \\Generated\\Shared\\Transfer\\QuoteTransfer::GIFT_CARDS, \\Generated\\Shared\\Transfer\\QuoteTransfer::CART_RULE_DISCOUNTS, \\Generated\\Shared\\Transfer\\QuoteTransfer::PROMOTION_ITEMS, \\Generated\\Shared\\Transfer\\QuoteTransfer::IS_LOCKED, \\Generated\\Shared\\Transfer\\QuoteTransfer::QUOTE_REQUEST_VERSION_REFERENCE, \\Generated\\Shared\\Transfer\\QuoteTransfer::QUOTE_REQUEST_REFERENCE, \\Generated\\Shared\\Transfer\\QuoteTransfer::MERCHANT_REFERENCE, \\Generated\\Shared\\Transfer\\QuoteTransfer::IS_ORDER_PLACED_SUCCESSFULLY])",
+                "is_literal": true
+            }
+        }
+    ]
+}

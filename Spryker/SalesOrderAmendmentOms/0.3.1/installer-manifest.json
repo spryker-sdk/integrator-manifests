@@ -1,0 +1,22 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CartReorder\\CartReorderDependencyProvider::getCartReorderValidatorPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\SalesOrderAmendmentOms\\Communication\\Plugin\\CartReorder\\IsAmendableOrderCartReorderValidatorRulePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\SalesOrderAmendmentOms\\Communication\\Plugin\\Checkout\\OrderAmendmentCheckoutPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderItemInitialStateProviderPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\SalesOrderAmendmentOms\\Communication\\Plugin\\Sales\\OrderAmendmentDefaultOrderItemInitialStateProviderPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditions",
+            "source": "\\Spryker\\Zed\\SalesOrderAmendmentOms\\Communication\\Plugin\\Checkout\\OrderAmendmentCheckoutPreCheckPlugin"
+        }
+    ]
+}

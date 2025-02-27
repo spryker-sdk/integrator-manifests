@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getSalesOrderItemCollectionPreDeletePlugins",
+            "source": "\\Spryker\\Zed\\SalesReclamation\\Communication\\Plugin\\Sales\\SalesReclamationSalesOrderItemCollectionPreDeletePlugin"
+        }
+    ]
+}

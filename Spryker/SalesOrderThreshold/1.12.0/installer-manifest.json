@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\SalesOrderThreshold\\Communication\\Plugin\\Checkout\\SalesOrderThresholdCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutOrderSaversForOrderAmendment",
+            "source": "\\Spryker\\Zed\\SalesOrderThreshold\\Communication\\Plugin\\Checkout\\ReplaceSalesOrderThresholdExpensesCheckoutDoSaveOrderPlugin"
+        }
+    ]
+}

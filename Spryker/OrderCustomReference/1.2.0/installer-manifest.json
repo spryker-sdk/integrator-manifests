@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderPostSavePluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\OrderCustomReference\\Communication\\Plugin\\Sales\\UpdateOrderCustomReferenceOrderPostSavePlugin"
+        }
+    ]
+}

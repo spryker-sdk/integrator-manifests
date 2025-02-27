@@ -1,0 +1,32 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getCheckoutDataValidatorPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\Country\\Communication\\Plugin\\CheckoutRestApi\\CountriesCheckoutDataValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getCheckoutDataValidatorPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ShipmentsRestApi\\Communication\\Plugin\\CheckoutRestApi\\ShipmentMethodCheckoutDataValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getCheckoutDataValidatorPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ShipmentsRestApi\\Communication\\Plugin\\CheckoutRestApi\\ItemsCheckoutDataValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getCheckoutDataValidatorPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\CustomersRestApi\\Communication\\Plugin\\CheckoutRestApi\\CustomerAddressCheckoutDataValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getCheckoutDataValidatorPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\CompanyBusinessUnitAddressesRestApi\\Communication\\Plugin\\CheckoutRestApi\\CompanyBusinessUnitAddressCheckoutDataValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getCheckoutDataValidatorPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ShipmentTypesRestApi\\Communication\\Plugin\\CheckoutRestApi\\ShipmentTypeCheckoutDataValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CheckoutRestApi\\CheckoutRestApiDependencyProvider::getCheckoutDataValidatorPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ClickAndCollectExample\\Communication\\Plugin\\CheckoutRestApi\\ClickAndCollectExampleReplaceCheckoutDataValidatorPlugin"
+        }
+    ]
+}
