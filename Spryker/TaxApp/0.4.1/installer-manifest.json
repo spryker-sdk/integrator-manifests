@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getTaxAppPlugins",
+            "source": "\\Spryker\\Zed\\TaxApp\\Communication\\Plugin\\Publisher\\Store\\RefreshTaxAppStoreRelationPublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductOfferShipmentTypeStoragePlugins"
+            }
+        }
+    ]
+}
