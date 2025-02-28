@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getAssetPlugins",
+            "source": "\\Spryker\\Zed\\Asset\\Communication\\Plugin\\Publisher\\Store\\RefreshAssetStoreRelationPublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getMerchantProductOfferSearchPlugins"
+            }
+        }
+    ]
+}
