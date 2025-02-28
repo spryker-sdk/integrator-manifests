@@ -1,0 +1,174 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackendGatewayApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Twig\\Communication\\Plugin\\Application\\TwigGatewayApplicationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Shared\\Twig\\Plugin\\VarDumperTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Shared\\Twig\\Plugin\\FormTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\Http\\Communication\\Plugin\\Twig\\HttpKernelTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Shared\\Twig\\Plugin\\RoutingTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Shared\\Twig\\Plugin\\SecurityTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\Http\\Communication\\Plugin\\Twig\\RuntimeLoaderTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\FormRuntimeLoaderTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\Application\\Communication\\Plugin\\Twig\\ApplicationTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\ChartGui\\Communication\\Plugin\\Twig\\Chart\\ChartGuiTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\User\\Communication\\Plugin\\Twig\\UserTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\Money\\Communication\\Plugin\\Twig\\MoneyTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\Currency\\Communication\\Plugin\\Twig\\CurrencyTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\Translator\\Communication\\Plugin\\Twig\\TranslatorTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Service\\UtilDateTime\\Plugin\\Twig\\DateTimeFormatterTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\ZedUi\\Communication\\Plugin\\ZedUiNavigationTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\Scheduler\\Communication\\Plugin\\Twig\\SchedulerTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\Barcode\\Plugin\\Twig\\BarcodeTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\CmsBlock\\Communication\\Plugin\\Twig\\CmsBlockTwigExtensionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\NumberFormatterTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\AssetsPathTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\TabsTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\UrlTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\UrlDecodeTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\Buttons\\ButtonGroupTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\Buttons\\Action\\BackActionButtonTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\Buttons\\Action\\CreateActionButtonTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\Buttons\\Action\\ViewActionButtonTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\Buttons\\Action\\EditActionButtonTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\Buttons\\Action\\RemoveActionButtonTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\Buttons\\Table\\EditTableButtonTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\Buttons\\Table\\BackTableButtonTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\Buttons\\Table\\CreateTableButtonTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\Buttons\\Table\\ViewTableButtonTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\Buttons\\Table\\RemoveTableButtonTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\Buttons\\Form\\SubmitButtonTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\GuiFilterTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\ZedUi\\Communication\\Plugin\\Twig\\BooleanToStringTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\GuiTable\\Communication\\Plugin\\Twig\\GuiTableConfigurationTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\MerchantUser\\Communication\\Plugin\\Twig\\MerchantUserTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigGatewayPlugins",
+            "source": "\\Spryker\\Zed\\MerchantPortalApplication\\Communication\\Plugin\\Twig\\MerchantNavigationTypeTwigPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Application\\ApplicationDependencyProvider::getBackendGatewayApplicationPlugins",
+            "source": "\\Spryker\\Zed\\Twig\\Communication\\Plugin\\Application\\TwigApplicationPlugin"
+        }
+    ]
+}
