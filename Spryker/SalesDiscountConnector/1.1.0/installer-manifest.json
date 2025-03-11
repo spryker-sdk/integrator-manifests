@@ -1,0 +1,14 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\MerchantSalesOrder\\MerchantSalesOrderDependencyProvider::getMerchantOrderTotalsPreRecalculatePlugins",
+            "source": "\\Spryker\\Zed\\SalesDiscountConnector\\Communication\\Plugin\\MerchantSalesOrder\\CopyOrderContextMerchantOrderTotalsPreRecalculatePlugin"
+        }
+    ],
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\SalesDiscountConnector\\SalesDiscountConnectorConfig::isCurrentOrderExcludedFromCount",
+            "value": true
+        }
+    ]
+}
