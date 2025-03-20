@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesConfig::useUniqueRandomIdOrderReferenceGenerator",
+            "value": true
+        }
+    ]
+}
