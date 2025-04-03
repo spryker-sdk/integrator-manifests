@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\SprykerShop\\Yves\\CartPage\\CartPageConfig::IS_QUOTE_VALIDATION_ENABLED_FOR_AJAX_CART_ITEMS",
+            "value": false
+        }
+    ]
+}
