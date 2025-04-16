@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\MerchantSwitcher\\Communication\\Plugin\\Cart\\SingleMerchantCartPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getPreReloadPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\MerchantSwitcher\\Communication\\Plugin\\Cart\\SingleMerchantPreReloadItemsPlugin"
+        }
+    ]
+}

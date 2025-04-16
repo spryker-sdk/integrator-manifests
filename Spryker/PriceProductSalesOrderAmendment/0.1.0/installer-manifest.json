@@ -1,0 +1,37 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\PriceProduct\\PriceProductDependencyProvider::getPriceProductPostResolvePlugins",
+            "source": "\\Spryker\\Client\\PriceProductSalesOrderAmendment\\Plugin\\PriceProduct\\OriginalSalesOrderItemPriceProductPostResolvePlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\PriceProductStorage\\PriceProductStorageDependencyProvider::getPriceProductFilterExpanderPlugins",
+            "source": "\\Spryker\\Client\\PriceProductSalesOrderAmendment\\Plugin\\PriceProductStorage\\OrderItemPriceProductResolveConditionsPriceProductFilterExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\PriceProductSalesOrderAmendment\\Communication\\Plugin\\Cart\\OriginalSalesOrderItemPriceItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getPreReloadPlugins",
+            "source": "\\Spryker\\Zed\\PriceProductSalesOrderAmendment\\Communication\\Plugin\\Cart\\ResetOriginalSalesOrderItemUnitPricesPreReloadItemsPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CartReorder\\CartReorderDependencyProvider::getCartPreReorderPlugins",
+            "source": "\\Spryker\\Zed\\PriceProductSalesOrderAmendment\\Communication\\Plugin\\CartReorder\\OriginalSalesOrderItemPriceCartPreReorderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Quote\\QuoteDependencyProvider::getQuoteUpdateBeforePlugins",
+            "source": "\\Spryker\\Zed\\PriceProductSalesOrderAmendment\\Communication\\Plugin\\Quote\\ResetOriginalSalesOrderItemUnitPricesBeforeQuoteSavePlugin"
+        }
+    ],
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Service\\PriceProductSalesOrderAmendment\\PriceProductSalesOrderAmendmentConfig::useBestPriceBetweenOriginalAndSalesOrderItemPrice",
+            "value": {
+                "value": "if ($quoteTransfer && $quoteTransfer->getStore()?->getName() === 'AT') {  }",
+                "is_literal": true
+            }
+        }
+    ]
+}

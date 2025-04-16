@@ -1,0 +1,236 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductCartConnector\\Communication\\Plugin\\ProductCartPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\SalesQuantity\\Communication\\Plugin\\Cart\\IsQuantitySplittableItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductOptionCartConnector\\Communication\\Plugin\\CartItemProductOptionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductBundle\\Communication\\Plugin\\Cart\\ExpandBundleItemsPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductBundle\\Communication\\Plugin\\Cart\\ExpandBundleItemsWithImagesPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\Cart\\Communication\\Plugin\\SkuGroupKeyPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductMeasurementUnit\\Communication\\Plugin\\Cart\\DefaultQuantitySalesUnitItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductMeasurementUnit\\Communication\\Plugin\\Cart\\QuantitySalesUnitGroupKeyItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductOptionCartConnector\\Communication\\Plugin\\CartItemGroupKeyOptionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductBundle\\Communication\\Plugin\\Cart\\CartItemWithBundleGroupKeyExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductImageCartConnector\\Communication\\Plugin\\Cart\\ProductImageItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\DiscountPromotion\\Communication\\Plugin\\Cart\\CartGroupPromotionItems"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductMeasurementUnit\\Communication\\Plugin\\Cart\\QuantitySalesUnitItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductPackagingUnit\\Communication\\Plugin\\Cart\\ProductPackagingUnitItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductPackagingUnit\\Communication\\Plugin\\Cart\\AmountGroupKeyItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductPackagingUnit\\Communication\\Plugin\\Cart\\AmountSalesUnitItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductPackagingUnit\\Communication\\Plugin\\Cart\\CustomAmountPriceItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\GiftCard\\Communication\\Plugin\\GiftCardMetadataExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ConfigurableBundleCart\\Communication\\Plugin\\Cart\\ConfiguredBundleQuantityPerSlotItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ConfigurableBundleCart\\Communication\\Plugin\\Cart\\ConfiguredBundleGroupKeyItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductCartConnector\\Communication\\Plugin\\ProductUrlItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ShipmentCartConnector\\Communication\\Plugin\\Cart\\SanitizeCartShipmentItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductConfigurationCart\\Communication\\Plugin\\Cart\\ProductConfigurationGroupKeyItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\MerchantShipment\\Communication\\Plugin\\Cart\\MerchantShipmentItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\Cart\\Communication\\Plugin\\Cart\\GroupKeyWithCartIdentifierItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\SprykerFeature\\Zed\\SspServiceManagement\\Communication\\Plugin\\Cart\\SspShipmentTypeItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\SprykerFeature\\Zed\\SspServiceManagement\\Communication\\Plugin\\Cart\\ProductAbstactTypeItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\SprykerFeature\\Zed\\SspServiceManagement\\Communication\\Plugin\\Cart\\ServicePointItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\PaymentCartConnector\\Communication\\Plugin\\Cart\\RemoveQuotePaymentCartItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductCartConnector\\Communication\\Plugin\\ProductExistsCartPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\AvailabilityCartConnector\\Communication\\Plugin\\Cart\\CheckAvailabilityPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductBundle\\Communication\\Plugin\\Cart\\CartBundlePricesPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductOptionCartConnector\\Communication\\Plugin\\Cart\\CartItemOptionPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductOptionCartConnector\\Communication\\Plugin\\ProductOptionValuePriceExistsCartPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductBundle\\Communication\\Plugin\\Cart\\CartBundleAvailabilityPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductBundle\\Communication\\Plugin\\Cart\\CartBundleActivePreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ShipmentCartConnector\\Communication\\Plugin\\Cart\\CartShipmentPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductQuantity\\Communication\\Plugin\\Cart\\ProductQuantityRestrictionCartPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductList\\Communication\\Plugin\\CartExtension\\ProductListRestrictedItemsPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductDiscontinued\\Communication\\Plugin\\Cart\\ProductDiscontinuedCartPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductPackagingUnit\\Communication\\Plugin\\Cart\\ProductPackagingUnitCartPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductPackagingUnit\\Communication\\Plugin\\Cart\\AmountAvailabilityCartPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductPackagingUnit\\Communication\\Plugin\\Cart\\AmountRestrictionCartPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ConfigurableBundleCart\\Communication\\Plugin\\Cart\\ConfiguredBundleTemplateSlotCombinationPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\Merchant\\Communication\\Plugin\\Cart\\MerchantCartPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductMeasurementUnit\\Communication\\Plugin\\Cart\\ProductMeasurementSalesUnitCartPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\DiscountPromotion\\Communication\\Plugin\\Cart\\DiscountPromotionCartPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\MerchantProduct\\Communication\\Plugin\\Cart\\MerchantProductCartPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\MerchantProductOption\\Communication\\Plugin\\Cart\\MerchantProductOptionCartPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductApproval\\Communication\\Plugin\\Cart\\ProductApprovalCartPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getPreReloadPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ConfigurableBundle\\Communication\\Plugin\\Cart\\CartConfigurableBundlePreReloadPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getPreReloadPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductBundle\\Communication\\Plugin\\Cart\\CartBundleItemsPreReloadPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getPreReloadPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductCartConnector\\Communication\\Plugin\\RemoveInactiveItemsPreReloadPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getPreReloadPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductList\\Communication\\Plugin\\CartExtension\\RemoveRestrictedItemsPreReloadPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getPreReloadPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\Cart\\Communication\\Plugin\\CleanUpItemsPreReloadPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getPreReloadPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ConfigurableBundleCart\\Communication\\Plugin\\Cart\\ConfiguredBundleQuantityPerSlotPreReloadItemsPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getPreReloadPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductApproval\\Communication\\Plugin\\Cart\\ProductApprovalPreReloadItemsPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getPreReloadPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\SalesMerchantCommission\\Communication\\Plugin\\Cart\\SanitizeMerchantCommissionPreReloadPlugin"
+        }
+    ]
+}

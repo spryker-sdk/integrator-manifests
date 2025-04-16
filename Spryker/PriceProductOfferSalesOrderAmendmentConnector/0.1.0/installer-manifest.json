@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Service\\PriceProductSalesOrderAmendment\\PriceProductSalesOrderAmendmentDependencyProvider::getOriginalSalesOrderItemPriceGroupKeyExpanderPlugins",
+            "source": "\\Spryker\\Service\\PriceProductOfferSalesOrderAmendmentConnector\\Plugin\\PriceProductSalesOrderAmendment\\ProductOfferOriginalSalesOrderItemPriceGroupKeyExpanderPlugin"
+        }
+    ]
+}
