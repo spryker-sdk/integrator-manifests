@@ -1,0 +1,40 @@
+{
+    "glossary-key": {
+        "new": {
+            "sales_order_amendment.validation.cart.cart_cant_be_amended": {
+                "en_US": "Current cart cannot be amended.",
+                "de_DE": "Der aktuelle Warenkorb kann nicht geändert werden."
+            },
+            "sales_order_amendment.pre_check.cannot_change_currency": {
+                "en_US": "Currency cannot be changed during order edit.",
+                "de_DE": "Währung kann während der Bearbeitung einer Bestellung nicht geändert werden."
+            },
+            "sales_order_amendment.pre_check.cannot_change_price_mode": {
+                "en_US": "Price mode cannot be changed during order edit.",
+                "de_DE": "Preismodus kann während der Bearbeitung einer Bestellung nicht geändert werden."
+            }
+        }
+    },
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Currency\\CurrencyDependencyProvider::getCurrentCurrencyIsoCodePreCheckPlugins",
+            "source": "\\Spryker\\Client\\SalesOrderAmendment\\Plugin\\Currency\\SalesOrderAmendmentCurrentCurrencyIsoCodePreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\Price\\PriceDependencyProvider::getCurrentPriceModePreCheckPlugins",
+            "source": "\\Spryker\\Client\\SalesOrderAmendment\\Plugin\\Price\\SalesOrderAmendmentCurrentPriceModePreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\SalesOrderAmendment\\Communication\\Plugin\\Cart\\OrderAmendmentCartPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getPreReloadPlugins",
+            "source": "\\Spryker\\Zed\\SalesOrderAmendment\\Communication\\Plugin\\Cart\\ResetAmendmentOrderReferencePreReloadItemsPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\PersistentCart\\PersistentCartDependencyProvider::getQuotePostMergePlugins",
+            "source": "\\Spryker\\Zed\\SalesOrderAmendment\\Communication\\Plugin\\PersistentCart\\ResetAmendmentQuoteProcessFlowQuotePostMergePlugin"
+        }
+    ]
+}

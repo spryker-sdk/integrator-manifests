@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getExpanderPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductOffer\\Communication\\Plugin\\Cart\\ProductOfferGroupKeyItemExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductOffer\\Communication\\Plugin\\Cart\\ProductOfferCartPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getPreReloadPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductOffer\\Communication\\Plugin\\Cart\\FilterInactiveProductOfferPreReloadItemsPlugin"
+        }
+    ]
+}
