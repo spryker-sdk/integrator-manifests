@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Store\\StoreDependencyProvider::getStoreExpanderPlugins",
+            "source": "\\Spryker\\Client\\StoreContextStorage\\Plugin\\Store\\TimezoneStoreStorageStoreExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getStoreStoragePlugins",
+            "source": "\\Spryker\\Zed\\StoreContextStorage\\Communication\\Plugin\\Publisher\\ContextStoreWritePublisherPlugin"
+        }
+    ]
+}
