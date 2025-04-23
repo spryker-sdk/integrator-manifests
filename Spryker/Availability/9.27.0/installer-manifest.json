@@ -1,0 +1,8 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::getReservationHandlerPlugins",
+            "source": "\\Spryker\\Zed\\Availability\\Communication\\Plugin\\AvailabilityHandlerPlugin"
+        }
+    ]
+}
