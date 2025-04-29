@@ -1,0 +1,11 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\Redis\\RedisConstants::REDIS_COMPRESSION_ENABLED",
+            "value": {
+                "value": "getenv('SPRYKER_KEY_VALUE_COMPRESSING_ENABLED') ?: false",
+                "is_literal": true
+            }
+        }
+    ]
+}
