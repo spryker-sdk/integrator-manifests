@@ -1,0 +1,20 @@
+{
+    "glossary-key": {
+        "new": {
+            "store.cart_reorder.error.store_mismatch": {
+                "en_US": "This order was placed in a different store. This action cannot be performed.",
+                "de_DE": "Diese Bestellung wurde in einem anderen Store getätigt. Aktion kann nicht ausgeführt werden."
+            }
+        }
+    },
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CartReorder\\CartReorderDependencyProvider::getCartReorderValidatorPlugins",
+            "source": "\\Spryker\\Zed\\Store\\Communication\\Plugin\\CartReorder\\CurrentStoreCartReorderValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CartReorder\\CartReorderDependencyProvider::getCartReorderValidatorPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\Store\\Communication\\Plugin\\CartReorder\\CurrentStoreCartReorderValidatorPlugin"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "glossary-key": {
+        "new": {
+            "sales_order_amendment.quote_request.validation.error.forbidden": {
+                "en_US": "Quote requests are unavailable during order amendment.",
+                "de_DE": "Angebotsanfragen sind während der Bestelländerung nicht verfügbar."
+            },
+            "sales_order_amendment.order_amendment_after_rfq.validation.error.forbidden": {
+                "en_US": "Amendments are not allowed for orders created from a quote.",
+                "de_DE": "Für Bestellungen, die aus einem Angebot erstellt wurden, sind keine Änderungen zulässig."
+            }
+        }
+    },
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\QuoteRequest\\QuoteRequestDependencyProvider::getQuoteRequestQuoteCheckPlugins",
+            "source": "\\Spryker\\Client\\SalesOrderAmendment\\Plugin\\QuoteRequest\\OrderAmendmentQuoteRequestQuoteCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CartReorder\\CartReorderDependencyProvider::getCartReorderValidatorPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\SalesOrderAmendment\\Communication\\Plugin\\CartReorder\\QuoteRequestVersionCartReorderValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\QuoteRequest\\QuoteRequestDependencyProvider::getQuoteRequestValidatorPlugins",
+            "source": "\\Spryker\\Zed\\SalesOrderAmendment\\Communication\\Plugin\\QuoteRequest\\OrderAmendmentQuoteRequestValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\QuoteRequest\\QuoteRequestDependencyProvider::getQuoteRequestUserValidatorPlugins",
+            "source": "\\Spryker\\Zed\\SalesOrderAmendment\\Communication\\Plugin\\QuoteRequest\\OrderAmendmentQuoteRequestUserValidatorPlugin"
+        }
+    ]
+}
