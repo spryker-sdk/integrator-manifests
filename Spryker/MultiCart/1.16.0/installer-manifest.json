@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CartReorder\\CartReorderDependencyProvider::getCartReorderQuoteProviderStrategyPlugins",
+            "source": "\\Spryker\\Zed\\MultiCart\\Communication\\Plugin\\CartReorder\\NewPersistentCartReorderQuoteProviderStrategyPlugin"
+        }
+    ]
+}

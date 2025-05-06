@@ -1,0 +1,41 @@
+{
+    "glossary-key": {
+        "new": {
+            "sales_order_amendment_widget.edit_order.confirm": {
+                "en_US": "Clear Cart & Continue",
+                "de_DE": "Leeren Warenkorb & Fortfahren"
+            },
+            "sales_order_amendment_widget.edit_order.cancel": {
+                "en_US": "Cancel",
+                "de_DE": "Abbrechen"
+            },
+            "sales_order_amendment_widget.edit_order.warning_message": {
+                "en_US": "Editing this order will replace the items in your current cart with those from the order?",
+                "de_DE": "Durch die Bearbeitung dieser Bestellung werden die Artikel in Ihrem aktuellen Warenkorb durch die Artikel der Bestellung ersetzt?"
+            },
+            "sales_order_amendment_widget.cancel_order_amendment": {
+                "en_US": "Cancel Edit",
+                "de_DE": "Bearbeiten abbrechen"
+            },
+            "sales_order_amendment_widget.amendment_cant_be_canceled": {
+                "en_US": "This order amendment cannot be canceled.",
+                "de_DE": "Diese Bestelländerung kann nicht storniert werden. "
+            },
+            "sales_order_amendment_widget.amendment_canceled": {
+                "en_US": "The order amendment has been successfully canceled.",
+                "de_DE": "Die Bestelländerung wurde erfolgreich storniert."
+            }
+        }
+    },
+    "configure-module": [
+        {
+            "target": "\\SprykerShop\\Yves\\SalesOrderAmendmentWidget\\SalesOrderAmendmentWidgetConfig::ORDER_AMENDMENT_CART_REORDER_STRATEGY",
+            "value": "new"
+        }
+    ],
+    "wire-widget": [
+        {
+            "source": "\\SprykerShop\\Yves\\SalesOrderAmendmentWidget\\Widget\\CancelOrderAmendmentWidget"
+        }
+    ]
+}

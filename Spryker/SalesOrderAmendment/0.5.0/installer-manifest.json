@@ -1,0 +1,12 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Quote\\QuoteDependencyProvider::getQuoteUpdateBeforePlugins",
+            "source": "\\Spryker\\Zed\\SalesOrderAmendment\\Communication\\Plugin\\Quote\\ResetQuoteNameQuoteBeforeSavePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Quote\\QuoteDependencyProvider::getQuoteUpdateBeforePlugins",
+            "source": "\\Spryker\\Zed\\SalesOrderAmendment\\Communication\\Plugin\\Quote\\ResetAmendmentOrderReferenceBeforeQuoteSavePlugin"
+        }
+    ]
+}
