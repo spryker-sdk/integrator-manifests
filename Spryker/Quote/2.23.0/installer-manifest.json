@@ -1,0 +1,14 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\CartReorder\\CartReorderDependencyProvider::getCartReorderQuoteProviderStrategyPlugins",
+            "source": "\\Spryker\\Client\\Quote\\Plugin\\CartReorder\\ResetItemsSessionCartReorderQuoteProviderStrategyPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\CartReorder\\CartReorderDependencyProvider::getCartReorderQuoteProviderStrategyPlugins",
+            "source": "\\Spryker\\Client\\Quote\\Plugin\\CartReorder\\SessionCartReorderQuoteProviderStrategyPlugin"
+        }
+    ]
+}

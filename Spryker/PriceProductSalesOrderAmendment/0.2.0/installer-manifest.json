@@ -1,0 +1,8 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Quote\\QuoteDependencyProvider::getQuoteUpdateBeforePlugins",
+            "source": "\\Spryker\\Zed\\PriceProductSalesOrderAmendment\\Communication\\Plugin\\Quote\\ResetOriginalSalesOrderItemUnitPricesBeforeQuoteSavePlugin"
+        }
+    ]
+}
