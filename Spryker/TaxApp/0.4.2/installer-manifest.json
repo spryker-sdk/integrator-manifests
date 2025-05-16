@@ -1,0 +1,74 @@
+{
+    "glossary-key": {
+        "new": {
+            "tax_app.vertex.tax-number-country-blocked": {
+                "de_DE": "Dieses Land ist in den Einstellungen blockiert.",
+                "en_US": "This county is blocked in the settings."
+            },
+            "tax_app.vertex.tax-number-validation-not-available": {
+                "de_DE": "Die Steuernummer konnte nicht durch den Dienst überprüft werden.",
+                "en_US": "The service was not able to validate this number."
+            },
+            "tax_app.vertex.tax-number-ignored": {
+                "de_DE": "Die Steuernummer wurde ignoriert, da Nummern für diese Region, dieses Land oder diesen Verkäufer blockiert wurden.",
+                "en_US": "The number is ignored because the settings have been changed to block numbers for this region, country or seller."
+            },
+            "tax_app.vertex.tax-number-syntax-valid": {
+                "de_DE": "Das Format der Steuernummer ist korrekt. Es wurden jedoch keine weiteren Prüfungen durchgeführt.",
+                "en_US": "The syntax of the ID is valid. However, no further validations were done. In cases where a checksum is required, like for India, the ID is considered valid if the syntax is valid and the checksum is not configured."
+            },
+            "tax_app.vertex.tax-number-syntax-invalid": {
+                "de_DE": "Das Format der Steuernummer ist ungültig.",
+                "en_US": "The syntax of the ID is invalid."
+            },
+            "tax_app.vertex.tax-number-considered-valid-in-domestic-country": {
+                "de_DE": "Die Steuernummer ist im Heimatland des Verkäufers gültig.",
+                "en_US": "The Tax ID is valid in the domestic country of the supplier."
+            },
+            "tax_app.vertex.tax-number-valid-according-to-external-service": {
+                "de_DE": "Die Steuernummer wurde erfolgreich bei der Steuerbehörde validiert.",
+                "en_US": "The Tax ID has been validated against the Tax Authority's database of Tax IDs and is valid."
+            },
+            "tax_app.vertex.tax-number-invalid-according-to-external-service": {
+                "de_DE": "Die Steuernummer wurde bei der Steuerbehörde überprüft und ist ungültig.",
+                "en_US": "The Tax ID has been validated against the Tax Authority's database of Tax IDs and is invalid."
+            },
+            "tax_app.vertex.tax-number-validation-requested-additional-interactions": {
+                "de_DE": "Die Steuerbehörde verlangt zusätzliche Informationen (z. B. CAPTCHA), um die Nummer zu validieren.",
+                "en_US": "The Tax Authority has requested additional parameters. For example, a country might require CAPTCHA validation and needs more information before they can validate the ID."
+            },
+            "tax_app.vertex.tax-number-service-temporarily-unavailable": {
+                "de_DE": "Der Validierungsdienst ist vorübergehend nicht erreichbar.",
+                "en_US": "Could not connect to validation service due to temporary unavailability of the service."
+            },
+            "tax_app.vertex.tax-number-syntax-considered-valid-but-not-verified": {
+                "de_DE": "Das Format der Steuernummer ist korrekt, aber der Status konnte nicht bestätigt werden, da der externe Dienst nicht reagierte.",
+                "en_US": "The Tax ID syntax is valid but the ID's status could not be verified by the external service. This occurs when the on-error settings is set to syntax-check and external service does not respond."
+            },
+            "tax_app.vertex.invalid-request-data": {
+                "en_US": "Invalid request data.",
+                "de_DE": "Ungültige Anfragedaten."
+            },
+            "tax_app.vertex.tax-app-disabled": {
+                "en_US": "Tax service is disabled.",
+                "de_DE": "Die Steueranwendung ist deaktiviert."
+            },
+            "tax_app.vertex.tax-validator-unavailable": {
+                "en_US": "Tax Validator API is unavailable.",
+                "de_DE": "Die Steuerprüfungs-API ist nicht verfügbar."
+            },
+            "tax_app.vertex.validator-api-inactive": {
+                "en_US": "Unable to connect to Vertex Validator API: vertex app or tax id validation is inactive.",
+                "de_DE": "Verbindung zur Vertex Validator API fehlgeschlagen: Die Vertex-Anwendung oder der Steuernummern-Prüfdienst ist nicht aktiv."
+            },
+            "tax_app.vertex.request-failed": {
+                "en_US": "Request to Vertex API failed.",
+                "de_DE": "Anfrage an die Vertex-API fehlgeschlagen."
+            },
+            "tax_app.vertex.invalid-credentials": {
+                "en_US": "Invalid credentials.",
+                "de_DE": "Ungültige Anmeldeinformationen."
+            }
+        }
+    }
+}
