@@ -1,0 +1,69 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\Session\\SessionConstants::YVES_SESSION_SAVE_HANDLER",
+            "value": "\\Spryker\\Shared\\SessionRedis\\SessionRedisConfig::SESSION_HANDLER_CONFIGURABLE_REDIS_LOCKING"
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\Session\\SessionDependencyProvider::getSessionHandlerPlugins",
+            "source": "\\Spryker\\Yves\\SessionRedis\\Plugin\\Session\\SessionHandlerConfigurableRedisLockingProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\SessionRedis\\SessionRedisDependencyProvider::getSessionRedisLockingExclusionConditionPlugins",
+            "source": "\\Spryker\\Yves\\SessionRedis\\Plugin\\SessionRedisLockingExclusion\\UrlSessionRedisLockingExclusionConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\SessionRedis\\SessionRedisDependencyProvider::getSessionRedisLockingExclusionConditionPlugins",
+            "source": "\\Spryker\\Yves\\SessionRedis\\Plugin\\SessionRedisLockingExclusion\\BotSessionRedisLockingExclusionConditionPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\Session\\SessionDependencyProvider::getSessionHandlerPlugins",
+            "source": "\\Spryker\\Yves\\SessionRedis\\Plugin\\Session\\SessionHandlerRedisLockingProviderPlugin"
+        }
+    ],
+    "configure-module": [
+        {
+            "previousValue": [],
+            "target": "\\Spryker\\Yves\\SessionRedis\\SessionRedisConfig::getSessionRedisLockingExcludedUrlPatterns",
+            "value": [
+                "/^.*\\/error-page\\/*.*$/",
+                "/^.*\\/health-check$/"
+            ]
+        },
+        {
+            "previousValue": [],
+            "target": "\\Spryker\\Yves\\SessionRedis\\SessionRedisConfig::getSessionRedisLockingExcludedBotUserAgents",
+            "value": [
+                "Googlebot",
+                "bingbot",
+                "Baiduspider",
+                "YandexBot",
+                "DuckDuckBot",
+                "Sogou",
+                "ia_archiver",
+                "facebookexternalhit",
+                "Twitterbot",
+                "LinkedInBot",
+                "Slackbot",
+                "WhatsApp",
+                "Discordbot",
+                "AhrefsBot",
+                "Applebot",
+                "msnbot",
+                "MJ12bot",
+                "SEMrushBot",
+                "PetalBot",
+                "SeznamBot",
+                "AdsBot-Google",
+                "crawler",
+                "spider",
+                "robot",
+                "bot/"
+            ]
+        }
+    ]
+}
