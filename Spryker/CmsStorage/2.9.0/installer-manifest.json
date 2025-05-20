@@ -1,0 +1,14 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Sitemap\\SitemapDependencyProvider::getSitemapGeneratorDataProviderPlugins",
+            "source": "\\Spryker\\Zed\\CmsStorage\\Communication\\Plugin\\Sitemap\\CmsPageSitemapGeneratorDataProviderPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Sitemap\\SitemapDependencyProvider::getSitemapDataProviderPlugins",
+            "source": "\\Spryker\\Zed\\CmsStorage\\Communication\\Plugin\\Sitemap\\CmsPageSitemapDataProviderPlugin"
+        }
+    ]
+}
