@@ -1,0 +1,14 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Sitemap\\SitemapDependencyProvider::getSitemapGeneratorDataProviderPlugins",
+            "source": "\\Spryker\\Zed\\ProductStorage\\Communication\\Plugin\\Sitemap\\ProductAbstractSitemapGeneratorDataProviderPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Sitemap\\SitemapDependencyProvider::getSitemapDataProviderPlugins",
+            "source": "\\Spryker\\Zed\\ProductStorage\\Communication\\Plugin\\Sitemap\\ProductAbstractSitemapDataProviderPlugin"
+        }
+    ]
+}
