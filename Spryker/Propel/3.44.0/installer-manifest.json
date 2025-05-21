@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\Propel\\PropelConfig::isSharedLoggerEnabled",
+            "value": true
+        }
+    ]
+}
