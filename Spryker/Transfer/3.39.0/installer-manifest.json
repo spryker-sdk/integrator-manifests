@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\Transfer\\TransferConfig::isArrayRequireValidationEnabled",
+            "value": true
+        }
+    ]
+}
