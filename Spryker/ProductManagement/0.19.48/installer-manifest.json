@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementConfig::isConcreteSkuSearchInProductTableEnabled",
+            "value": true
+        }
+    ]
+}
