@@ -1,0 +1,9 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Event\\Communication\\Plugin\\Queue\\EventRetryQueueMessageProcessorPlugin",
+            "index": "\\Spryker\\Shared\\UrlStorage\\UrlStorageConfig::PUBLISH_URL_RETRY"
+        }
+    ]
+}
