@@ -1,0 +1,10 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\ProductOfferGui\\ProductOfferGuiConfig::PRODUCT_OFFER_TABLE_FILTER_FORM_EXTERNAL_FIELD_NAMES",
+            "value": [
+                "id-merchant"
+            ]
+        }
+    ]
+}
