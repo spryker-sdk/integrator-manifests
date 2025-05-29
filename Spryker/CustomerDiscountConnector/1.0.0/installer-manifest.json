@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutOrderSavers",
+            "source": "\\Spryker\\Zed\\CustomerDiscountConnector\\Communication\\Plugin\\Checkout\\CustomerDiscountOrderSavePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getDecisionRulePlugins",
+            "source": "\\Spryker\\Zed\\CustomerDiscountConnector\\Communication\\Plugin\\Discount\\CustomerReferenceDecisionRulePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getDecisionRulePlugins",
+            "source": "\\Spryker\\Zed\\CustomerDiscountConnector\\Communication\\Plugin\\Discount\\CustomerOrderAmountDecisionRulePlugin"
+        }
+    ]
+}
