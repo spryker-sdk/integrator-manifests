@@ -1,0 +1,22 @@
+{
+    "glossary-key": {
+        "new": {
+            "sales_order_amendment_widget.summary_step.update.order": {
+                "en_US": "Update order",
+                "de_DE": "Bestellung aktualisieren"
+            },
+            "sales_order_amendment_widget.success_step.update.success.title": {
+                "en_US": "Your order has been updated successfully!",
+                "de_DE": "Ihre Bestellung wurde erfolgreich aktualisiert!"
+            }
+        }
+    },
+    "wire-widget": [
+        {
+            "source": "\\SprykerShop\\Yves\\SalesOrderAmendmentWidget\\Widget\\UpdateOrderCheckoutSubmitButtonTextWidget"
+        },
+        {
+            "source": "\\SprykerShop\\Yves\\SalesOrderAmendmentWidget\\Widget\\UpdateOrderCheckoutSuccessTitleWidget"
+        }
+    ]
+}
