@@ -1,0 +1,14 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Event\\EventDependencyProvider::getEventSubscriberCollection",
+            "source": "\\Spryker\\Zed\\Stock\\Communication\\Plugin\\Event\\Subscriber\\PostUpdateStockRelationsEventSubscriber"
+        }
+    ],
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\Stock\\StockConfig::getEventQueueName",
+            "value": "\\Spryker\\Shared\\Publisher\\PublisherConfig::PUBLISH_QUEUE"
+        }
+    ]
+}
