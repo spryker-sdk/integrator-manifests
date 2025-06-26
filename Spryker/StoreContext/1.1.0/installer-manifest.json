@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Store\\StoreDependencyProvider::getStoreCollectionExpanderPlugins",
+            "source": "\\Spryker\\Zed\\StoreContext\\Communication\\Plugin\\Store\\TimezoneStoreCollectionExpanderPlugin"
+        }
+    ]
+}
