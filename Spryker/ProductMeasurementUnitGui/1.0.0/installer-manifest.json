@@ -1,0 +1,20 @@
+{
+    "wire-navigation": [
+        {
+            "navigations": {
+                "administration": {
+                    "pages": {
+                        "product-measurement-units": {
+                            "label": "Measurement Units",
+                            "title": "Measurement Units",
+                            "bundle": "product-measurement-unit-gui",
+                            "controller": "index",
+                            "action": "index"
+                        }
+                    }
+                }
+            },
+            "after": "dynamic-entities-gui"
+        }
+    ]
+}
