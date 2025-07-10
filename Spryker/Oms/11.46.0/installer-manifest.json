@@ -1,0 +1,14 @@
+{
+    "glossary-key": {
+        "new": {
+            "oms.state.order-amendment-draft-pending": {
+                "en_US": "Editing in Progress",
+                "de_DE": "Bestelländerung in Bearbeitung"
+            },
+            "oms.state.order-amendment-draft-applied": {
+                "en_US": "Editing in Progress",
+                "de_DE": "Bestelländerung in Bearbeitung"
+            }
+        }
+    }
+}

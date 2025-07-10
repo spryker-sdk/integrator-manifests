@@ -1,0 +1,19 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreSaveHooksForOrderAmendment",
+            "source": "\\Spryker\\Zed\\OrderAmendmentExample\\Communication\\Plugin\\Checkout\\InvoicePaymentToAsyncOrderAmendmentFlowCheckoutPreSavePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::extendCommandPlugins",
+            "source": "\\Spryker\\Zed\\OrderAmendmentExample\\Communication\\Plugin\\Oms\\ApplyOrderAmendmentDraftCommandByOrderPlugin",
+            "arguments": {
+                "append-arguments": [
+                    {
+                        "value": "OrderAmendmentAsync/ApplyOrderAmendmentDraft"
+                    }
+                ]
+            }
+        }
+    ]
+}

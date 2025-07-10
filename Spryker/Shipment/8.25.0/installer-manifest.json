@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\SalesOrderAmendment\\SalesOrderAmendmentDependencyProvider::getSalesOrderAmendmentQuoteExpanderPlugins",
+            "source": "\\Spryker\\Zed\\Shipment\\Communication\\Plugin\\SalesOrderAmendment\\ShipmentGroupsSalesOrderAmendmentQuoteExpanderPlugin"
+        }
+    ]
+}
