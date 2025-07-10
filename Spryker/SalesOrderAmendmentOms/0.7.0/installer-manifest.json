@@ -1,0 +1,113 @@
+{
+    "glossary-key": {
+        "new": {
+            "sales_order_amendment_oms.mail.order_amendment_applied.subject": {
+                "en_US": "Your order has been successfully updated",
+                "de_DE": "Ihre Bestellung wurde erfolgreich aktualisiert"
+            },
+            "sales_order_amendment_oms.mail.order_amendment_applied.salutation": {
+                "en_US": "Hello",
+                "de_DE": "Hallo"
+            },
+            "sales_order_amendment_oms.mail.order_amendment_applied.title": {
+                "en_US": "Your order has been successfully updated",
+                "de_DE": "Ihre Bestellung wurde erfolgreich aktualisiert"
+            },
+            "sales_order_amendment_oms.mail.order_amendment_applied.text.line_1": {
+                "en_US": "Thank you for shopping at Spryker Shop!",
+                "de_DE": "Danke für deine Bestellung beim Spryker Shop!"
+            },
+            "sales_order_amendment_oms.mail.order_amendment_applied.text.line_2": {
+                "en_US": "We are writing to let you know that your order has been successfully updated as requested. You will receive a shipping confirmation by e-mail as soon as your updated order has been sent.",
+                "de_DE": "Wir möchten Sie darüber informieren, dass Ihre Bestellung wie gewünscht erfolgreich aktualisiert wurde. Sobald Ihre aktualisierte Bestellung versendet wurde, erhalten Sie eine Versandbestätigung per E-Mail."
+            },
+            "sales_order_amendment_oms.mail.order_amendment_applied.text.line_3": {
+                "en_US": "If you change your mind, you can return the items within 14 days after delivery. We hope you enjoy your purchase!",
+                "de_DE": "Falls Sie es sich anders überlegen, können Sie die Artikel innerhalb von 14 Tagen nach Lieferung zurücksenden. Wir wünschen Ihnen viel Freude mit Ihrem Einkauf!"
+            },
+            "sales_order_amendment_oms.mail.order_amendment_failed.subject": {
+                "en_US": "Order edit could not be saved",
+                "de_DE": "Bestelländerung konnte nicht gespeichert werden"
+            },
+            "sales_order_amendment_oms.mail.order_amendment_failed.salutation": {
+                "en_US": "Hello",
+                "de_DE": "Hallo"
+            },
+            "sales_order_amendment_oms.mail.order_amendment_failed.title": {
+                "en_US": "Order edit could not be saved",
+                "de_DE": "Bestelländerung konnte nicht gespeichert werden"
+            },
+            "sales_order_amendment_oms.mail.order_amendment_failed.text.line_1": {
+                "en_US": "Thank you for shopping at Spryker Shop!",
+                "de_DE": "Danke für deine Bestellung beim Spryker Shop!"
+            },
+            "sales_order_amendment_oms.mail.order_amendment_failed.text.line_2": {
+                "en_US": "We are writing to let you know that we tried to update your order as requested. Unfortunately, the changes could not be saved due to the following error:",
+                "de_DE": "Wir möchten Sie darüber informieren, dass wir versucht haben, Ihre Bestellung wie gewünscht zu aktualisieren. Leider konnten die Änderungen aufgrund des folgenden Fehlers nicht gespeichert werden:"
+            },
+            "sales_order_amendment_oms.mail.order_amendment_failed.text.line_3": {
+                "en_US": "Your original order remains unchanged. If you need help or would like to try again, please contact our customer service team. We’re happy to assist you.",
+                "de_DE": "Ihre ursprüngliche Bestellung bleibt unverändert. Wenn Sie Hilfe benötigen oder es erneut versuchen möchten, wenden Sie sich bitte an unser Kundenservice — wir helfen Ihnen gerne weiter."
+            },
+            "sales_order_amendment_oms.mail.footer.text.line_1": {
+                "de_DE": "Viele Grüße",
+                "en_US": "Have a great day!"
+            },
+            "sales_order_amendment_oms.mail.footer.text.line_2": {
+                "de_DE": "Dein Spryker Shop",
+                "en_US": "Your Spryker Shop"
+            },
+            "sales_order_amendment_oms.error.apply_order_amendment_draft_failed": {
+                "en_US": "We could not process your order edit.",
+                "de_DE": "Ihre Bestelländerung konnte nicht bearbeitet werden."
+            }
+        }
+    },
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPostHooksForOrderAmendmentAsync",
+            "source": "\\Spryker\\Zed\\SalesOrderAmendmentOms\\Communication\\Plugin\\Checkout\\StartOrderAmendmentDraftCheckoutPostSavePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Mail\\MailDependencyProvider::getMailTypeBuilderPlugins",
+            "source": "\\Spryker\\Zed\\SalesOrderAmendmentOms\\Communication\\Plugin\\Mail\\NotifyOrderAmendmentAppliedMailTypeBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Mail\\MailDependencyProvider::getMailTypeBuilderPlugins",
+            "source": "\\Spryker\\Zed\\SalesOrderAmendmentOms\\Communication\\Plugin\\Mail\\NotifyOrderAmendmentFailedMailTypeBuilderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::extendCommandPlugins",
+            "source": "\\Spryker\\Zed\\SalesOrderAmendmentOms\\Communication\\Plugin\\Oms\\NotifyOrderAmendmentAppliedCommandPlugin",
+            "arguments": {
+                "append-arguments": [
+                    {
+                        "value": "OrderAmendmentAsync/NotifyOrderAmendmentApplied"
+                    }
+                ]
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::extendCommandPlugins",
+            "source": "\\Spryker\\Zed\\SalesOrderAmendmentOms\\Communication\\Plugin\\Oms\\NotifyOrderAmendmentFailedCommandPlugin",
+            "arguments": {
+                "append-arguments": [
+                    {
+                        "value": "OrderAmendmentAsync/NotifyOrderAmendmentFailed"
+                    }
+                ]
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::extendConditionPlugins",
+            "source": "\\Spryker\\Zed\\SalesOrderAmendmentOms\\Communication\\Plugin\\Oms\\IsOrderAmendmentDraftSuccessfullyAppliedConditionPlugin",
+            "arguments": {
+                "append-arguments": [
+                    {
+                        "value": "DummyOrderAmendmentAsync/IsSuccessfullyApplied"
+                    }
+                ]
+            }
+        }
+    ]
+}
