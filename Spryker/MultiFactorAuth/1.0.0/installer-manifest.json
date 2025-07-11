@@ -1,0 +1,32 @@
+{
+    "glossary-key": {
+        "new": {
+            "multi_factor_auth.error.corrupted_code": {
+                "en_US": "The provided code is empty or invalid. Please try again.",
+                "de_DE": "Der angegebene Code ist leer oder ungültig. Bitte versuchen Sie es erneut."
+            }
+        }
+    },
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\AclMerchantPortal\\AclMerchantPortalDependencyProvider::getAclEntityConfigurationExpanderPlugins",
+            "source": "\\Spryker\\Zed\\MultiFactorAuth\\Communication\\Plugin\\AclMerchantPortal\\UserMultiFactorAuthAclEntityConfigurationExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\AgentSecurityMerchantPortalGui\\AgentSecurityMerchantPortalGuiDependencyProvider::getMerchantAgentUserAuthenticationHandlerPlugins",
+            "source": "\\Spryker\\Zed\\MultiFactorAuth\\Communication\\Plugin\\AuthenticationHandler\\MerchantAgentUser\\MerchantAgentUserMultiFactorAuthenticationHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\SecurityMerchantPortalGui\\SecurityMerchantPortalGuiDependencyProvider::getMerchantUserAuthenticationHandlerPlugins",
+            "source": "\\Spryker\\Zed\\MultiFactorAuth\\Communication\\Plugin\\AuthenticationHandler\\MerchantUser\\MerchantUserMultiFactorAuthenticationHandlerPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ZedNavigation\\ZedNavigationDependencyProvider::getNavigationItemCollectionFilterPlugins",
+            "source": "\\Spryker\\Zed\\MultiFactorAuth\\Communication\\Plugin\\Navigation\\MerchantPortalNavigationItemCollectionFilterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ZedNavigation\\ZedNavigationDependencyProvider::getNavigationItemCollectionFilterPlugins",
+            "source": "\\Spryker\\Zed\\MultiFactorAuth\\Communication\\Plugin\\Navigation\\AgentMerchantPortalNavigationItemCollectionFilterPlugin"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\AgentSecurityMerchantPortalGui\\AgentSecurityMerchantPortalGuiConfig::getRoutePatternAgentMerchantPortal",
+            "value": "^/(agent(.+)-merchant-portal-gui|multi-factor-auth/(agent-merchant-user|user-management-agent-merchant-portal))(?!agent-security-merchant-portal-gui\\/login$)/"
+        },
+        {
+            "target": "\\Spryker\\Zed\\AgentSecurityMerchantPortalGui\\AgentSecurityMerchantPortalGuiConfig::getRoutePatternAgentMerchantPortalLogin",
+            "value": "^/(agent-security-merchant-portal-gui/login|multi-factor-auth/agent-merchant-user($|/))"
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\MultiFactorAuth\\MultiFactorAuthDependencyProvider::getPostLoginMultiFactorAuthenticationPlugins",
+            "source": "\\Spryker\\Zed\\AgentSecurityMerchantPortalGui\\Communication\\Plugin\\MultiFactorAuth\\PostAgentMerchantUserLoginMultiFactorAuthenticationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Security\\SecurityDependencyProvider::getSecurityPlugins",
+            "source": "\\Spryker\\Zed\\AgentSecurityMerchantPortalGui\\Communication\\Plugin\\MultiFactorAuth\\MultiFactorAuthenticationAgentMerchantUserSecurityPlugin"
+        }
+    ]
+}
