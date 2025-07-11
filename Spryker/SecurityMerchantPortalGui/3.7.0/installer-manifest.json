@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\MultiFactorAuth\\MultiFactorAuthDependencyProvider::getPostLoginMultiFactorAuthenticationPlugins",
+            "source": "\\Spryker\\Zed\\SecurityMerchantPortalGui\\Communication\\Plugin\\MultiFactorAuth\\PostMerchantUserLoginMultiFactorAuthenticationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Security\\SecurityDependencyProvider::getSecurityPlugins",
+            "source": "\\Spryker\\Zed\\SecurityMerchantPortalGui\\Communication\\Plugin\\MultiFactorAuth\\MultiFactorAuthenticationMerchantUserSecurityPlugin"
+        }
+    ]
+}
