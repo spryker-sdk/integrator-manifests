@@ -1,0 +1,18 @@
+{
+    "glossary-key": {
+        "new": {
+            "multi_factor_auth.enter_your_code_input": {
+                "en_US": "Enter your code here",
+                "de_DE": "Geben Sie Ihren Code hier ein"
+            },
+            "multi_factor_auth.activate": {
+                "en_US": "Activate",
+                "de_DE": "Aktivieren"
+            },
+            "multi_factor_auth.deactivate": {
+                "en_US": "Deactivate",
+                "de_DE": "Deaktivieren"
+            }
+        }
+    }
+}
