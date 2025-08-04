@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getProductStoragePlugins",
+            "source": "\\Spryker\\Zed\\ProductStorage\\Communication\\Plugin\\Publisher\\ProductAbstract\\ProductLocalizedAttributesProductAbstractWritePublisherPlugin",
+            "call": {
+                "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getPublisherPlugins",
+                "after": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getTaxAppPlugins"
+            }
+        }
+    ]
+}
