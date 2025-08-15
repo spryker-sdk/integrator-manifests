@@ -1,0 +1,19 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Shared\\ProductImage\\ProductImageConfig::isProductImageAlternativeTextEnabled",
+            "value": true
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductPageSearch\\ProductPageSearchDependencyProvider::getDataExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductImage\\Communication\\Plugin\\ProductPageSearch\\ProductImageAlternativeTextProductPageDataExpanderPlugin",
+            "index": "\\Spryker\\Shared\\ProductImage\\ProductImageConfig::PLUGIN_PRODUCT_IMAGE_ALTERNATIVE_TEXT_DATA"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductPageSearch\\ProductPageSearchDependencyProvider::getProductConcretePageDataExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductImage\\Communication\\Plugin\\ProductPageSearch\\ProductImageAlternativeTextProductConcretePageDataExpanderPlugin"
+        }
+    ]
+}
