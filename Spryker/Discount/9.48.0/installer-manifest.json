@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getDiscountPostUpdatePlugins",
+            "source": "\\Spryker\\Zed\\Discount\\Communication\\Plugin\\Discount\\DeleteDiscountVoucherPoolDiscountPostUpdatePlugin"
+        }
+    ]
+}
