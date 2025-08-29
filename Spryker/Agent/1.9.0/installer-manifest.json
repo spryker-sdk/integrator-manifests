@@ -1,0 +1,18 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Quote\\QuoteDependencyProvider::getQuoteTransferExpanderPlugins",
+            "source": "\\Spryker\\Client\\Agent\\Plugin\\Quote\\AgentQuoteTransferExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderExpanderPreSavePlugins",
+            "source": "\\Spryker\\Zed\\Agent\\Communication\\Plugin\\Sales\\AgentOrderExpanderPreSavePlugin"
+        }
+    ],
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Shared\\Agent\\AgentConfig::isSalesOrderAgentEnabled",
+            "value": true
+        }
+    ]
+}
