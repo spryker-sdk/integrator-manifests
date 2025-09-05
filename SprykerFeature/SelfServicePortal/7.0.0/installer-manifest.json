@@ -1,0 +1,22 @@
+{
+    "glossary-key": {
+        "new": {
+            "self_service_portal.asset.selector.button": {
+                "en_US": "Select asset",
+                "de_DE": "Asset auswählen"
+            },
+            "self_service_portal.asset.modal.header": {
+                "en_US": "Assign asset",
+                "de_DE": "Vermögenswert zuweisen"
+            },
+            "self_service_portal.asset.item.button": {
+                "en_US": "Assign",
+                "de_DE": "Zuweisen"
+            },
+            "self_service_portal.asset.item.serial": {
+                "en_US": "Serial",
+                "de_DE": "Seriennummer"
+            }
+        }
+    }
+}
