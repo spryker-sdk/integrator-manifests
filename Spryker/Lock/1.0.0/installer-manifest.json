@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::getLockPlugin",
+            "source": "\\Spryker\\Zed\\Lock\\Communication\\Plugin\\Oms\\StorageRedisOmsLockPlugin"
+        }
+    ]
+}
