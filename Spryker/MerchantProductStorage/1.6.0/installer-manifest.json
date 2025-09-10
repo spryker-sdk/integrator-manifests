@@ -1,0 +1,8 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getMerchantProductPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductStorage\\Communication\\Plugin\\Publisher\\Merchant\\MerchantUpdatePublisherPlugin"
+        }
+    ]
+}
