@@ -1,0 +1,14 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Event\\EventDependencyProvider::getEventSubscriberCollection",
+            "source": "\\Spryker\\Zed\\MerchantProductOfferSearch\\Communication\\Plugin\\Event\\Subscriber\\MerchantSearchEventSubscriber"
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getMerchantProductOfferSearchPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductOfferSearch\\Communication\\Plugin\\Publisher\\Product\\MerchantSearchPublisherPlugin"
+        }
+    ]
+}
