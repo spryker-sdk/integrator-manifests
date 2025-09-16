@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Publisher\\PublisherDependencyProvider::getSspAssetStoragePlugins",
+            "source": "\\SprykerFeature\\Zed\\SelfServicePortal\\Communication\\Plugin\\Publisher\\SspAsset\\Search\\SspModelAssetWritePublisherPlugin"
+        }
+    ]
+}
