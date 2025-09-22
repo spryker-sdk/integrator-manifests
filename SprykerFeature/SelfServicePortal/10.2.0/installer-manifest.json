@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductListGui\\ProductListGuiDependencyProvider::getProductListUsedByTableExpanderPlugins",
+            "source": "\\SprykerFeature\\Zed\\SelfServicePortal\\Communication\\Plugin\\ProductListGui\\SspModelProductListUsedByTableExpanderPlugin"
+        }
+    ]
+}
