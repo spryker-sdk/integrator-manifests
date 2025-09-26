@@ -1,0 +1,23 @@
+{
+    "glossary-key": {
+        "new": {
+            "self_service_portal.asset.validation.business_unit.not_set": {
+                "en_US": "Business unit must be provided",
+                "de_DE": "Die Geschäftseinheit muss angegeben werden"
+            },
+            "self_service_portal.asset.error.attach_to_cart_item": {
+                "en_US": "Asset cannot be added to cart.",
+                "de_DE": "Der Asset kann nicht zum Warenkorb hinzugefügt werden."
+            },
+            "self_service_portal.ssp_asset.success.attached_to_cart": {
+                "en_US": "Asset has been successfully updated for item %sku%.",
+                "de_DE": "Der Asset wurde erfolgreich für Artikel %sku% aktualisiert."
+            }
+        }
+    },
+    "wire-widget": [
+        {
+            "source": "\\SprykerFeature\\Yves\\SelfServicePortal\\Widget\\SspCartItemAssetSelectorWidget"
+        }
+    ]
+}
