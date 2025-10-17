@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\SprykerShop\\Yves\\CartPage\\CartPageConfig::getCartValidationCacheTTL",
+            "value": 60
+        }
+    ]
+}

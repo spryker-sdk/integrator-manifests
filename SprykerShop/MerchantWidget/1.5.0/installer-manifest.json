@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\ShopApplication\\ShopApplicationDependencyProvider::getWidgetCacheKeyGeneratorStrategyPlugins",
+            "source": "\\SprykerShop\\Yves\\MerchantWidget\\Plugin\\ShopApplication\\SoldByMerchantWidgetCacheKeyGeneratorStrategyPlugin"
+        }
+    ]
+}
