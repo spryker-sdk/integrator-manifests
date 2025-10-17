@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Client\\Redis\\RedisConfig::usePhpredis",
+            "value": true
+        }
+    ]
+}
