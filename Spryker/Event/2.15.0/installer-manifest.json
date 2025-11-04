@@ -1,0 +1,27 @@
+{
+    "wire-transfer": [
+        {
+            "target": "Shared/Event/Transfer/event.transfer.xml",
+            "data": {
+                "name": "transfers",
+                "sub-nodes": [
+                    {
+                        "name": "transfer",
+                        "attributes": {
+                            "name": "QueueReceiveMessage"
+                        },
+                        "sub-nodes": [
+                            {
+                                "name": "property",
+                                "attributes": {
+                                    "name": "isRetryExist",
+                                    "type": "bool"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
