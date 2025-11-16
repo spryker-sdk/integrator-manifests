@@ -1,0 +1,19 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\Queue\\QueueConstants::QUEUE_MESSAGE_CHUNK_SIZE_MAP",
+            "value": {
+                "value": "json_decode(getenv('QUEUE_MESSAGE_CHUNK_SIZE_MAP') ?: '[]', true)",
+                "is_literal": true
+            }
+        }
+    ],
+    "glossary-key": {
+        "new": {
+            "multi_factor_auth.send_code.error": {
+                "en_US": "Something went wrong while sending your code. Please try again later or contact the system administrator.",
+                "de_DE": "Etwas ist schiefgelaufen beim Senden Ihres Codes. Bitte versuchen Sie es später erneut oder wenden Sie sich an den Systemadministrator."
+            }
+        }
+    }
+}
