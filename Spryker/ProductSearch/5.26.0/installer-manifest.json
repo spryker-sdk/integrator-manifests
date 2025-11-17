@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementDependencyProvider::getProductAbstractReadinessProviderPlugins",
+            "source": "\\Spryker\\Zed\\ProductSearch\\Communication\\Plugin\\ProductManagement\\IsSearchableForLocaleAbstractProductReadinessProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementDependencyProvider::getProductConcreteReadinessProviderPlugins",
+            "source": "\\Spryker\\Zed\\ProductSearch\\Communication\\Plugin\\ProductManagement\\IsSearchableForLocaleConcreteProductReadinessProviderPlugin"
+        }
+    ]
+}
