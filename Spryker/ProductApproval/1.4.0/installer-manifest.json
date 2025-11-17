@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementDependencyProvider::getProductAbstractReadinessProviderPlugins",
+            "source": "\\Spryker\\Zed\\ProductApproval\\Communication\\Plugin\\ProductManagement\\ApprovalStatusAbstractProductReadinessProviderPlugin"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementDependencyProvider::getProductAbstractReadinessProviderPlugins",
+            "source": "\\Spryker\\Zed\\Product\\Communication\\Plugin\\ProductManagement\\IsActiveAbstractProductReadinessProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementDependencyProvider::getProductAbstractReadinessProviderPlugins",
+            "source": "\\Spryker\\Zed\\Product\\Communication\\Plugin\\ProductManagement\\StoreRelationAbstractProductReadinessProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementDependencyProvider::getProductConcreteReadinessProviderPlugins",
+            "source": "\\Spryker\\Zed\\Product\\Communication\\Plugin\\ProductManagement\\IsActiveConcreteProductReadinessProviderPlugin"
+        }
+    ]
+}
