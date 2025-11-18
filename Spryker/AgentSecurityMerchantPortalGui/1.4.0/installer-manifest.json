@@ -1,0 +1,18 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Security\\SecurityDependencyProvider::getSecurityPlugins",
+            "source": "\\Spryker\\Zed\\AgentSecurityMerchantPortalGui\\Communication\\Plugin\\Security\\ZedAgentSecurityPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Security\\SecurityDependencyProvider::getSecurityPlugins",
+            "source": "\\Spryker\\Zed\\AgentSecurityMerchantPortalGui\\Communication\\Plugin\\Security\\ZedMerchantUserSecurityPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Security\\SecurityDependencyProvider::getSecurityPlugins",
+            "source": "\\Spryker\\Zed\\AgentSecurityMerchantPortalGui\\Communication\\Plugin\\Security\\ZedAgentMerchantUserSecurityPlugin"
+        }
+    ]
+}
