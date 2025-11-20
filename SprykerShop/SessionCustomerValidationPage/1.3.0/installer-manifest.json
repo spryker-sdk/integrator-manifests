@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\SessionCustomerValidationPage\\SessionCustomerValidationPageDependencyProvider::getCustomerSessionValidatorPlugins",
+            "source": "\\Spryker\\Yves\\SessionRedis\\Plugin\\SessionCustomerValidationPage\\RedisCustomerSessionValidatorPlugin"
+        }
+    ]
+}

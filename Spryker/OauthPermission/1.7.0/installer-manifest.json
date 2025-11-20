@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CompanyRole\\CompanyRoleDependencyProvider::getCompanyRolePostSavePlugins",
+            "source": "\\Spryker\\Zed\\OauthPermission\\Communication\\Plugin\\CompanyRole\\OauthPermissionUpdateCompanyRolePostSavePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CompanyUser\\CompanyUserDependencyProvider::getCompanyUserPostUpdatePlugins",
+            "source": "\\Spryker\\Zed\\OauthPermission\\Communication\\Plugin\\CompanyUser\\OauthPermissionCompanyUserPostUpdatePlugin"
+        }
+    ]
+}
