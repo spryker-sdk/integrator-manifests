@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\StoreGui\\StoreGuiDependencyProvider::getStoreFormExpanderPlugins",
+            "source": "\\Spryker\\Zed\\StoreContextGui\\Communication\\Plugin\\StoreGui\\ContextStoreFormExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\StoreGui\\StoreGuiDependencyProvider::getStoreFormTabsExpanderPlugins",
+            "source": "\\Spryker\\Zed\\StoreContextGui\\Communication\\Plugin\\StoreGui\\ContextStoreFormTabExpanderPlugin"
+        }
+    ]
+}
