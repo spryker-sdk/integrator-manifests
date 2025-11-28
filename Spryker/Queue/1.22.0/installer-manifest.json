@@ -1,0 +1,41 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\Queue\\QueueConstants::RESOURCE_AWARE_QUEUE_WORKER_ENABLED",
+            "value": {
+                "value": "(bool) \\getenv('RESOURCE_AWARE_QUEUE_WORKER_ENABLED') ?? \\false",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\Queue\\QueueConstants::QUEUE_WORKER_FREE_MEMORY_BUFFER",
+            "value": {
+                "value": "(int)getenv('QUEUE_WORKER_FREE_MEMORY_BUFFER') ?: 750",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\Queue\\QueueConstants::QUEUE_WORKER_MEMORY_READ_PROCESS_TIMEOUT",
+            "value": {
+                "value": "(int)getenv('QUEUE_WORKER_MEMORY_READ_PROCESS_TIMEOUT') ?: 5",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\Queue\\QueueConstants::QUEUE_WORKER_INTERVAL_MILLISECONDS",
+            "value": 100
+        },
+        {
+            "target": "\\Spryker\\Shared\\Queue\\QueueConstants::QUEUE_WORKER_MAX_PROCESSES",
+            "value": 10
+        },
+        {
+            "target": "\\Spryker\\Shared\\Queue\\QueueConstants::QUEUE_WORKER_MAX_THRESHOLD_SECONDS",
+            "value": 60
+        },
+        {
+            "target": "\\Spryker\\Shared\\Queue\\QueueConstants::QUEUE_WORKER_PROCESSES_COMPLETE_TIMEOUT",
+            "value": 600
+        }
+    ]
+}
