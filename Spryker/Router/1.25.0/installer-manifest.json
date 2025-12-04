@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\Router\\RouterDependencyProvider::getRouterPlugins",
+            "source": "\\Spryker\\Glue\\Router\\Plugin\\Router\\SymfonyFrameworkRouterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Router\\RouterDependencyProvider::getBackofficeRouterPlugins",
+            "source": "\\Spryker\\Zed\\Router\\Communication\\Plugin\\Router\\SymfonyFrameworkRouterPlugin"
+        }
+    ]
+}
