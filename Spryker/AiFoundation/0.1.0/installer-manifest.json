@@ -1,0 +1,23 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\AiFoundation\\AiFoundationConstants::AI_CONFIGURATIONS",
+            "value": {
+                "\\Spryker\\Shared\\AiFoundation\\AiFoundationConstants::AI_CONFIGURATION_DEFAULT": {
+                    "provider_name": "\\Spryker\\Shared\\AiFoundation\\AiFoundationConstants::PROVIDER_OLLAMA",
+                    "provider_config": {
+                        "url": "http://host.docker.internal:11434/api",
+                        "model": "qwen3:8b",
+                        "parameters": [],
+                        "httpOptions": {
+                            "timeout": 60,
+                            "connectTimeout": 5,
+                            "headers": []
+                        }
+                    },
+                    "system_prompt": "You are a helpful assistant."
+                }
+            }
+        }
+    ]
+}
