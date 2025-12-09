@@ -1,0 +1,62 @@
+{
+    "glossary-key": {
+        "new": {
+            "self_service_portal.asset.validation.status.not_valid": {
+                "en_US": "Status is not valid.",
+                "de_DE": "Status ist nicht gültig."
+            },
+            "self_service_portal.asset.business_unit.not_found": {
+                "en_US": "Business unit not found.",
+                "de_DE": "Geschäftseinheit nicht gefunden."
+            },
+            "self_service_portal.inquiry.validation.ssp_asset_reference_required": {
+                "en_US": "Asset reference is required.",
+                "de_DE": "Asset-Referenz ist erforderlich."
+            },
+            "self_service_portal.inquiry.validation.ssp_asset_reference_not_allowed": {
+                "en_US": "Asset reference is not allowed.",
+                "de_DE": "Asset-Referenz ist nicht erlaubt."
+            },
+            "self_service_portal.inquiry.validation.order_reference_required": {
+                "en_US": "Order reference is required.",
+                "de_DE": "Bestellreferenz ist erforderlich."
+            },
+            "self_service_portal.inquiry.validation.order_reference_not_allowed": {
+                "en_US": "Order reference is not allowed.",
+                "de_DE": "Bestellreferenz ist nicht erlaubt."
+            },
+            "self_service_portal.inquiry.validation.type_required": {
+                "en_US": "Type is required.",
+                "de_DE": "Typ ist erforderlich."
+            },
+            "self_service_portal.inquiry.validation.subject_required": {
+                "en_US": "Subject is required.",
+                "de_DE": "Betreff ist erforderlich."
+            },
+            "self_service_portal.inquiry.validation.description_required": {
+                "en_US": "Description is required.",
+                "de_DE": "Beschreibung ist erforderlich."
+            }
+        }
+    },
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderHydrationPlugins",
+            "source": "\\SprykerFeature\\Zed\\SelfServicePortal\\Communication\\Plugin\\Sales\\SspServiceReschedulableOrderExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\SprykerFeature\\Zed\\SelfServicePortal\\Communication\\Plugin\\Twig\\SelfServicePortalTwigPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\SprykerFeature\\Zed\\SelfServicePortal\\Communication\\Plugin\\Twig\\FileSizeFormatterTwigPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\SprykerFeature\\Zed\\SelfServicePortal\\Communication\\Plugin\\Twig\\ProductServiceClassNameTwigPlugin"
+        }
+    ]
+}
