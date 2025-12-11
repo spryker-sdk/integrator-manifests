@@ -1,0 +1,14 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\ProductOfferStorage\\ProductOfferStorageDependencyProvider::getProductOfferStorageFilterPlugins",
+            "source": "\\SprykerFeature\\Client\\SelfServicePortal\\Plugin\\ProductOfferStorage\\ShipmentTypeServicePointProductOfferStorageFilterPlugin"
+        }
+    ],
+    "configure-module": [
+        {
+            "target": "\\SprykerFeature\\Yves\\SelfServicePortal\\SelfServicePortalConfig::getDefaultSelectedShipmentTypeKey",
+            "value": "static::SHIPMENT_TYPE_DELIVERY"
+        }
+    ]
+}
