@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Shared\\PersistentCart\\PersistentCartConfig::IS_QUOTE_UPDATE_PLUGINS_INSIDE_CART_ENABLED",
+            "value": true
+        }
+    ]
+}
