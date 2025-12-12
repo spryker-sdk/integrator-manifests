@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\ShopApplication\\ShopApplicationDependencyProvider::getWidgetCacheKeyGeneratorStrategyPlugins",
+            "source": "\\SprykerFeature\\Yves\\SelfServicePortal\\Plugin\\ShopApplication\\SspServiceCancelWidgetCacheKeyGeneratorStrategyPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\ShopApplication\\ShopApplicationDependencyProvider::getWidgetCacheKeyGeneratorStrategyPlugins",
+            "source": "\\SprykerFeature\\Yves\\SelfServicePortal\\Plugin\\ShopApplication\\SspServiceChangeScheduledTimeLinkWidgetCacheKeyGeneratorStrategyPlugin"
+        }
+    ]
+}
