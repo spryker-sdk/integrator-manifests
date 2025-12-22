@@ -1,0 +1,14 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CompanyUserGui\\CompanyUserGuiDependencyProvider::getCompanyUserTableBulkDataExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CompanyRoleGui\\Communication\\Plugin\\CompanyUserGui\\CompanyRoleCompanyUserTableBulkDataExpanderPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CompanyUserGui\\CompanyUserGuiDependencyProvider::getCompanyUserTablePrepareDataExpanderPlugins",
+            "source": "\\Spryker\\Zed\\CompanyRoleGui\\Communication\\Plugin\\CompanyUserGui\\CompanyRoleCompanyUserTablePrepareDataExpanderPlugin"
+        }
+    ]
+}
