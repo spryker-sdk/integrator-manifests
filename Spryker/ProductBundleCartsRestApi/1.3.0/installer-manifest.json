@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CartsRestApi\\CartsRestApiDependencyProvider::getQuoteMergePersistentCartChangeExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductBundleCartsRestApi\\Communication\\Plugin\\CartsRestApi\\BundleItemQuoteMergePersistentCartChangeExpanderPlugin"
+        }
+    ]
+}
