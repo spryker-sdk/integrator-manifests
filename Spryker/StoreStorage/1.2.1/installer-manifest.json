@@ -1,0 +1,11 @@
+{
+    "add-config-array-element": [
+        {
+            "target": "\\Spryker\\Client\\SymfonyMessenger\\SymfonyMessengerConfig::getSynchronizationQueueConfiguration",
+            "value": "\\Spryker\\Shared\\StoreStorage\\StoreStorageConfig::STORE_SYNC_STORAGE_QUEUE",
+            "call": {
+                "target": "\\Spryker\\Client\\SymfonyMessenger\\SymfonyMessengerConfig::getQueueConfiguration"
+            }
+        }
+    ]
+}
