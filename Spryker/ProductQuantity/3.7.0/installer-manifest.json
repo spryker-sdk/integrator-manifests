@@ -1,0 +1,38 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPlugins",
+            "source": "\\Spryker\\Zed\\ProductQuantity\\Communication\\Plugin\\Cart\\ProductQuantityBySkuRestrictionCartPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductQuantity\\Communication\\Plugin\\Cart\\ProductQuantityBySkuRestrictionCartPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditions",
+            "source": "\\Spryker\\Zed\\ProductQuantity\\Communication\\Plugin\\Checkout\\ProductQuantityBySkuRestrictionCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductQuantity\\Communication\\Plugin\\Checkout\\ProductQuantityBySkuRestrictionCheckoutPreConditionPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPlugins",
+            "source": "\\Spryker\\Zed\\ProductQuantity\\Communication\\Plugin\\Cart\\ProductQuantityRestrictionCartPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Cart\\CartDependencyProvider::getCartPreCheckPluginsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductQuantity\\Communication\\Plugin\\Cart\\ProductQuantityRestrictionCartPreCheckPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditions",
+            "source": "\\Spryker\\Zed\\ProductQuantity\\Communication\\Plugin\\Checkout\\ProductQuantityRestrictionCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductQuantity\\Communication\\Plugin\\Checkout\\ProductQuantityRestrictionCheckoutPreConditionPlugin"
+        }
+    ]
+}
