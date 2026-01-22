@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\EventDispatcher\\EventDispatcherDependencyProvider::getBackendEventDispatcherPlugins",
+            "source": "\\Spryker\\Glue\\GlueBackendApiApplication\\Plugin\\EventDispatcher\\CorsEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getResponseFormatterPlugins",
+            "source": "\\Spryker\\Glue\\GlueBackendApiApplication\\Plugin\\GlueApplication\\CorsResponseFormatterPlugin"
+        }
+    ]
+}

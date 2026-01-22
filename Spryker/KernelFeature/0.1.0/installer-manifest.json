@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Console\\ConsoleDependencyProvider::getConsoleCommands",
+            "source": "\\Spryker\\Zed\\KernelFeature\\Communication\\Console\\FeatureDumpConsole"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Console\\ConsoleDependencyProvider::getConsoleCommands",
+            "source": "\\Spryker\\Zed\\KernelFeature\\Communication\\Console\\FeatureValidateConsole"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Router\\RouterDependencyProvider::getBackofficeRouterPlugins",
+            "source": "\\Spryker\\Zed\\KernelFeature\\Communication\\Plugin\\Router\\SprykerFeatureRouterPlugin"
+        }
+    ]
+}

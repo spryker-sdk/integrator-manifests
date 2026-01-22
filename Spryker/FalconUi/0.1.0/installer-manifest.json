@@ -1,0 +1,17 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\FalconUi\\FalconUiConstants::GLUE_BACKEND_API_DOMAIN",
+            "value": {
+                "value": "'http://' . $sprykerGlueBackendHost",
+                "is_literal": true
+            }
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Zed\\FalconUi\\Communication\\Plugin\\Twig\\FalconUiConfigTwigPlugin"
+        }
+    ]
+}

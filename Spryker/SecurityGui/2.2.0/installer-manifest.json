@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\SecurityGui\\SecurityGuiConfig::IS_ACCESS_TOKEN_GENERATION_ON_LOGIN_ENABLED",
+            "value": true
+        }
+    ]
+}
