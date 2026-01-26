@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CategoryPageSearch\\CategoryPageSearchDependencyProvider::getCategoryNodePageSearchDataExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductListSearch\\Communication\\Plugin\\CategoryPageSearch\\CategoryNodeProductListPageDataExpanderPlugin"
+        }
+    ]
+}
