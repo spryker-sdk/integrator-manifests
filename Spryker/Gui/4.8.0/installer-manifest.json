@@ -1,0 +1,14 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\Gui\\GuiConfig::NAVIGATION_ICONS_TYPE_DEFAULT",
+            "value": "google-material"
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigPlugins",
+            "source": "\\Spryker\\Zed\\Gui\\Communication\\Plugin\\Twig\\NavigationIconsTypeTwigPlugin"
+        }
+    ]
+}
