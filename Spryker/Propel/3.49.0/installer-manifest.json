@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\WebProfiler\\WebProfilerDependencyProvider::getDataCollectorPlugins",
+            "source": "\\Spryker\\Glue\\Propel\\Plugin\\WebProfiler\\WebProfilerPropelDataCollectorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\WebProfiler\\WebProfilerDependencyProvider::getDataCollectorPlugins",
+            "source": "\\Spryker\\Zed\\Propel\\Communication\\Plugin\\WebProfiler\\WebProfilerPropelDataCollectorPlugin"
+        }
+    ]
+}
