@@ -1,0 +1,8 @@
+{
+    "add-config-array-element": [
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutConfig::getRetryableExceptions",
+            "value": "\\Spryker\\Zed\\Sales\\Business\\Exception\\DuplicateOrderReferenceException::class"
+        }
+    ]
+}
