@@ -1,0 +1,12 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\PriceProductScheduleGui\\PriceProductScheduleGuiConfig::IS_GZIP_CSV_EXPORT_ENABLED",
+            "value": true
+        },
+        {
+            "target": "\\Spryker\\Zed\\PriceProductScheduleGui\\PriceProductScheduleGuiConfig::CSV_EXPORT_MAX_PRICE_COUNT",
+            "value": 500000
+        }
+    ]
+}
