@@ -1,0 +1,14 @@
+{
+    "configure-env": [
+        {
+            "target": "\\SprykerShop\\Shared\\ContentNavigationWidget\\ContentNavigationWidgetConstants::NAVIGATION_REVALIDATION_TIME_IN_SECONDS",
+            "value": 3600
+        }
+    ],
+    "configure-module": [
+        {
+            "target": "\\SprykerShop\\Yves\\ContentNavigationWidget\\ContentNavigationWidgetConfig::isNavigationCacheEnabled",
+            "value": true
+        }
+    ]
+}
