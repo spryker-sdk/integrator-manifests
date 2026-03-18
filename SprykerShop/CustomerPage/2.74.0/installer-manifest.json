@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\CustomerPage\\CustomerPageDependencyProvider::getAfterLoginCustomerRedirectPlugins",
+            "source": "\\SprykerShop\\Yves\\CustomerPage\\Plugin\\CustomerPage\\LastVisitedPageCustomerRedirectStrategyPlugin"
+        },
+        {
+            "target": "\\Spryker\\Yves\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
+            "source": "\\SprykerShop\\Yves\\CustomerPage\\Plugin\\EventDispatcher\\LastVisitedPageEventDispatcherPlugin"
+        }
+    ]
+}
