@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getMerchantPortalEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\SecurityMerchantPortalGui\\Communication\\Plugin\\EventDispatcher\\LastVisitedPageEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\SecurityMerchantPortalGui\\SecurityMerchantPortalGuiDependencyProvider::getMerchantPortalUserRedirectStrategyPlugins",
+            "source": "\\Spryker\\Zed\\SecurityMerchantPortalGui\\Communication\\Plugin\\Security\\Handler\\LastVisitedPageMerchantPortalUserRedirectStrategyPlugin"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\EventDispatcher\\EventDispatcherDependencyProvider::getBackofficeEventDispatcherPlugins",
+            "source": "\\Spryker\\Zed\\SecurityGui\\Communication\\Plugin\\EventDispatcher\\LastVisitedPageEventDispatcherPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\SecurityGui\\SecurityGuiDependencyProvider::getBackOfficeUserRedirectStrategyPlugins",
+            "source": "\\Spryker\\Zed\\SecurityGui\\Communication\\Plugin\\Security\\Handler\\LastVisitedPageBackOfficeUserRedirectStrategyPlugin"
+        }
+    ]
+}
