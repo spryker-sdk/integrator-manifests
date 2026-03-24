@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getSalesOrderDetailDataExpanderPlugins",
+            "source": "\\Spryker\\Zed\\SalesProductConfigurationGui\\Communication\\Plugin\\Sales\\ProductConfigurationSalesOrderDetailDataExpanderPlugin"
+        }
+    ]
+}

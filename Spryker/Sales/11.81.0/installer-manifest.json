@@ -1,0 +1,29 @@
+{
+    "configure-module": [
+        {
+            "previousValue": [],
+            "target": "\\Spryker\\Zed\\Sales\\SalesConfig::getOrderDetailBlockUrlToTemplateMap",
+            "value": {
+                "/cart-note/sales/list": "@CartNote/Sales/list.twig",
+                "/comment-sales-connector/sales/list": "@CommentSalesConnector/Sales/list.twig",
+                "/cart-note-product-bundle-connector/sales/list": "@CartNoteProductBundleConnector/Sales/list.twig",
+                "/sales-payment-gui/sales/list": "@SalesPaymentGui/Sales/list.twig",
+                "/discount/sales/list": "@Discount/Sales/list.twig"
+            }
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getSalesOrderDetailDataExpanderPlugins",
+            "source": "\\Spryker\\Zed\\Sales\\Communication\\Plugin\\Sales\\CommentsSalesOrderDetailDataExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getSalesDetailBlockRendererPlugins",
+            "source": "\\Spryker\\Zed\\Sales\\Communication\\Plugin\\Sales\\OrderTransferBlockRendererPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getSalesDetailBlockRendererPlugins",
+            "source": "\\Spryker\\Zed\\Sales\\Communication\\Plugin\\Sales\\SalesCommentBlockRendererPlugin"
+        }
+    ]
+}
