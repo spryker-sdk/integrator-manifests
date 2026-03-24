@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getSalesDetailBlockRendererPlugins",
+            "source": "\\Spryker\\Zed\\SalesReturnGui\\Communication\\Plugin\\Sales\\SalesReturnListBlockRendererPlugin"
+        }
+    ]
+}
