@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductAbstractExpanderPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProduct\\Communication\\Plugin\\Product\\MerchantProductProductAbstractExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductAbstractAfterUpdatePlugins",
+            "source": "\\Spryker\\Zed\\MerchantProduct\\Communication\\Plugin\\Product\\MerchantProductProductAbstractAfterUpdatePlugin"
+        }
+    ]
+}
