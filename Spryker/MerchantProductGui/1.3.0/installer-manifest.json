@@ -1,0 +1,24 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementDependencyProvider::getProductAbstractFormExpanderPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductGui\\Communication\\Plugin\\ProductManagement\\MerchantProductAbstractFormExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementDependencyProvider::getProductAbstractFormDataProviderExpanderPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductGui\\Communication\\Plugin\\ProductManagement\\MerchantProductAbstractFormDataProviderExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementDependencyProvider::getProductAbstractFormOptionsExpanderPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductGui\\Communication\\Plugin\\ProductManagement\\MerchantProductAbstractFormOptionsExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementDependencyProvider::getProductAbstractFormOptionsResolverExpanderPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductGui\\Communication\\Plugin\\ProductManagement\\MerchantProductAbstractFormOptionsResolverExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementDependencyProvider::getProductAbstractFormTabContentProviderWithPriorityPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductGui\\Communication\\Plugin\\ProductManagement\\MerchantProductAbstractGeneralTabContentProviderPlugin"
+        }
+    ]
+}

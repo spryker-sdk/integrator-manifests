@@ -1,0 +1,14 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementDependencyProvider::getProductAbstractFormTabContentProviderWithPriorityPlugins",
+            "source": "\\Spryker\\Zed\\ProductAttachment\\Communication\\Plugin\\ProductManagement\\ProductAttachmentImageTabContentProviderWithPriorityPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementDependencyProvider::getProductAbstractFormTabContentProviderPlugins",
+            "source": "\\Spryker\\Zed\\ProductAttachment\\Communication\\Plugin\\ProductManagement\\ProductAttachmentImageTabContentProviderPlugin"
+        }
+    ]
+}
