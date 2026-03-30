@@ -1,0 +1,64 @@
+{
+    "glossary-key": {
+        "new": {
+            "ai-commerce.quick-order-image-to-cart.image-upload.title": {
+                "en_US": "Quick order with AI",
+                "de_DE": "Schnellbestellung mit KI"
+            },
+            "ai-commerce.quick-order-image-to-cart.image-upload.description": {
+                "en_US": "Upload purchase order, invoices or product lists. Supports %formats% formats and Screenshots.",
+                "de_DE": "Titelliste, Rechnungen oder Produktlisten hochladen. Unterstützt %formats% Formate und Screenshots."
+            },
+            "ai-commerce.quick-order-image-to-cart.image-upload.button.upload": {
+                "en_US": "Upload",
+                "de_DE": "Uploaden"
+            },
+            "ai-commerce.quick-order-image-to-cart.image-upload.browse-file": {
+                "en_US": "No file selected. Browse file",
+                "de_DE": "Keine Datei ausgewählt. Datei durchsuchen"
+            },
+            "ai-commerce.quick-order-image-to-cart.image-order.errors.invalid-format": {
+                "en_US": "Invalid image format. Please upload a image file.",
+                "de_DE": "Ungültiges Bildformat. Bitte laden Sie eine Bilddatei hoch."
+            },
+            "ai-commerce.quick-order-image-to-cart.image-order.errors.invalid-mime-type": {
+                "en_US": "Invalid image mime type.",
+                "de_DE": "Ungültiger Bild-MIME-Typ."
+            },
+            "ai-commerce.quick-order-image-to-cart.image-order.errors.no-image": {
+                "en_US": "No image uploaded.",
+                "de_DE": "Kein Bild hochgeladen."
+            },
+            "ai-commerce.quick-order-image-to-cart.image-order.errors.product-limit-exceeded": {
+                "en_US": "The number of recognized products exceeds the limit. Please upload an image with no more than %maxProducts% products.",
+                "de_DE": "Die Anzahl der erkannten Produkte überschreitet das Limit. Bitte laden Sie ein Bild mit nicht mehr als %maxProducts% Produkten hoch."
+            },
+            "ai-commerce.quick-order-image-to-cart.image-order.errors.no-products-recognized": {
+                "en_US": "No products were recognized in the uploaded image.",
+                "de_DE": "Es wurden keine Produkte im hochgeladenen Bild erkannt."
+            },
+            "ai-commerce.quick-order-image-to-cart.image-order.errors.product-not-found": {
+                "en_US": "Product '%product%' was not found in the catalog.",
+                "de_DE": "Produkt '%product%' wurde im Katalog nicht gefunden."
+            },
+            "ai-commerce.quick-order-image-to-cart.image-order.errors.ai-request-failed": {
+                "en_US": "The AI request failed. The image could not be recognized.",
+                "de_DE": "Die KI-Anfrage ist fehlgeschlagen. Das Bild konnte nicht erkannt werden."
+            },
+            "ai-commerce.quick-order-image-to-cart.image-order.errors.ai-response-invalid": {
+                "en_US": "The AI returned an unexpected response. The image could not be recognized.",
+                "de_DE": "Die KI hat eine unerwartete Antwort zurückgegeben. Das Bild konnte nicht erkannt werden."
+            },
+            "ai-commerce.quick-order-image-to-cart.image-order.errors.file-too-large": {
+                "en_US": "The uploaded image exceeds the maximum allowed file size.",
+                "de_DE": "Das hochgeladene Bild überschreitet die maximal zulässige Dateigröße."
+            }
+        }
+    },
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\QuickOrderPage\\QuickOrderPageDependencyProvider::getQuickOrderFormPlugins",
+            "source": "\\SprykerFeature\\Yves\\AiCommerce\\QuickOrderImageToCart\\Plugin\\QuickOrderPage\\AiCommerceQuickOrderImageToCartFormPlugin"
+        }
+    ]
+}
