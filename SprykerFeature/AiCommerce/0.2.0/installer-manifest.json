@@ -1,0 +1,67 @@
+{
+    "glossary-key": {
+        "new": {
+            "ai_commerce.search_by_image.form.image.label": {
+                "en_US": "Search by image",
+                "de_DE": "Bildersuche"
+            },
+            "ai_commerce.search_by_image.form.image.error.mime_type": {
+                "en_US": "This image type is not supported. Please upload a JPEG, PNG, WebP, or GIF.",
+                "de_DE": "Dieses Bildformat wird nicht unterstützt. Bitte laden Sie ein JPEG, PNG, WebP oder GIF hoch."
+            },
+            "ai_commerce.search_by_image.error.no_image_provided": {
+                "en_US": "Please select an image to search.",
+                "de_DE": "Bitte wählen Sie ein Bild für die Suche aus."
+            },
+            "ai_commerce.search_by_image.error.search_failed": {
+                "en_US": "Search by Image failed. Please try again.",
+                "de_DE": "Bildsuche fehlgeschlagen. Bitte versuchen Sie es erneut."
+            },
+            "ai_commerce.search_by_image.error.unavailable": {
+                "en_US": "Search by Image is currently unavailable. Please try again later.",
+                "de_DE": "Bildsuche ist derzeit nicht verfügbar. Bitte versuchen Sie es später erneut."
+            },
+            "ai_commerce.search_by_image.error.disabled": {
+                "en_US": "Search by Image is currently disabled.",
+                "de_DE": "Bildsuche ist derzeit deaktiviert."
+            },
+            "ai_commerce.search_by_image.search": {
+                "en_US": "Search",
+                "de_DE": "Suchen"
+            },
+            "ai_commerce.search_by_image.upload_image": {
+                "en_US": "Upload image",
+                "de_DE": "Bild hochladen"
+            },
+            "ai_commerce.search_by_image.upload_image_to_find_products": {
+                "en_US": "Upload an image to find similar products.",
+                "de_DE": "Laden Sie ein Bild hoch, um ähnliche Produkte zu finden."
+            },
+            "ai_commerce.error.file.size.invalid": {
+                "en_US": "File size is too big.",
+                "de_DE": "Ungültige Gesamtdateigröße."
+            },
+            "ai_commerce.search_by_image.image.description": {
+                "en_US": "Max up to %size% MB. Allowed file formats %format%",
+                "de_DE": "Maximal bis zu %size%. Erlaubte Dateiformate: %format%"
+            }
+        }
+    },
+    "configure-module": [
+        {
+            "target": "\\SprykerFeature\\Client\\AiCommerce\\AiCommerceConfig::getSearchByImageAiConfigurationName",
+            "value": "\\SprykerFeature\\Shared\\AiCommerce\\AiCommerceConstants::AI_CONFIGURATION_SEARCH_BY_IMAGE"
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\Router\\RouterDependencyProvider::getRouteProvider",
+            "source": "\\SprykerFeature\\Yves\\AiCommerce\\SearchByImage\\Plugin\\Router\\SearchByImageRouteProviderPlugin"
+        }
+    ],
+    "wire-widget": [
+        {
+            "source": "\\SprykerFeature\\Yves\\AiCommerce\\SearchByImage\\Widget\\ImageSearchAiWidget"
+        }
+    ]
+}
