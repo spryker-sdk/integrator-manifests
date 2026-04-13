@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerFeature\\Zed\\AiCommerce\\AiCommerceDependencyProvider::getBackofficeAssistantAgentPlugins",
+            "source": "\\SprykerFeature\\Zed\\AiCommerce\\Communication\\Plugin\\Agent\\FormFillAgentPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\AiFoundation\\AiFoundationDependencyProvider::getAiToolSetPlugins",
+            "source": "\\SprykerFeature\\Zed\\AiCommerce\\Communication\\Plugin\\AiFoundation\\FormFillToolSetPlugin"
+        }
+    ]
+}
