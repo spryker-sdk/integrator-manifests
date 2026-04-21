@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementDependencyProvider::getProductAbstractFormTabContentProviderWithPriorityPlugins",
+            "source": "\\SprykerFeature\\Zed\\AiCommerce\\Communication\\Plugin\\ProductManagement\\ProductManagementAiProductAbstractFormTabContentProviderWithPriorityPlugin"
+        }
+    ]
+}
