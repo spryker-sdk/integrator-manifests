@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductAbstractPostCreatePlugins",
+            "source": "\\Spryker\\Zed\\ProductCategory\\Communication\\Plugin\\Product\\ProductCategoryProductAbstractPostCreatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductAbstractAfterUpdatePlugins",
+            "source": "\\Spryker\\Zed\\ProductCategory\\Communication\\Plugin\\Product\\ProductCategoryProductAbstractAfterUpdatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementDependencyProvider::getProductAbstractFormExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductCategory\\Communication\\Plugin\\ProductManagement\\ProductCategoryAbstractFormExpanderPlugin"
+        }
+    ]
+}
