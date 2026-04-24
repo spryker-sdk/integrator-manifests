@@ -1,0 +1,8 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\ProductOfferAvailabilitiesRestApi\\Plugin\\GlueApplication\\ProductOfferAvailabilitiesResourceRoutePlugin"
+        }
+    ]
+}
