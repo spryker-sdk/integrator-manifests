@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductAttribute\\ProductAttributeDependencyProvider::getSuggestKeysQueryExpanderPlugins",
+            "source": "\\SprykerFeature\\Zed\\ProductExperienceManagement\\Communication\\Plugin\\ProductAttribute\\VisibilitySuggestKeysQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductAttribute\\ProductAttributeDependencyProvider::getSuggestKeysExpanderPlugins",
+            "source": "\\SprykerFeature\\Zed\\ProductExperienceManagement\\Communication\\Plugin\\ProductAttribute\\VisibilitySuggestKeysExpanderPlugin"
+        }
+    ]
+}
