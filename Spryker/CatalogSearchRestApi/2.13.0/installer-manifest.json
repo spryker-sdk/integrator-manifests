@@ -1,0 +1,30 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\CatalogSearchRestApi\\Plugin\\CatalogSearchResourceRoutePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\CatalogSearchRestApi\\Plugin\\CatalogSearchSuggestionsResourceRoutePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getRestRequestValidatorPlugins",
+            "source": "\\Spryker\\Glue\\CatalogSearchRestApi\\Plugin\\CatalogSearchRequestParametersIntegerRestRequestValidatorPlugin"
+        }
+    ],
+    "unwire-glue-relationship": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\CatalogSearchRestApi\\CatalogSearchRestApiConfig::RESOURCE_CATALOG_SEARCH": "\\Spryker\\Glue\\CatalogSearchProductsResourceRelationship\\Plugin\\CatalogSearchAbstractProductsResourceRelationshipPlugin"
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\CatalogSearchRestApi\\CatalogSearchRestApiConfig::RESOURCE_CATALOG_SEARCH_SUGGESTIONS": "\\Spryker\\Glue\\CatalogSearchProductsResourceRelationship\\Plugin\\CatalogSearchSuggestionsAbstractProductsResourceRelationshipPlugin"
+            }
+        }
+    ]
+}
