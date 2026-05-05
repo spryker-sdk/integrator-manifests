@@ -1,0 +1,16 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\PaymentsRestApi\\Plugin\\GlueApplication\\PaymentsResourceRoutePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\PaymentsRestApi\\Plugin\\GlueApplication\\PaymentCancellationsResourceRoutePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\PaymentsRestApi\\Plugin\\GlueApplication\\PaymentCustomersResourceRoutePlugin"
+        }
+    ]
+}
