@@ -1,0 +1,32 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\Event\\EventConstants::MAX_RETRY_ON_FAIL",
+            "value": 2
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Event\\Communication\\Plugin\\Queue\\EventQueueMessageProcessorPlugin",
+            "index": "\\Spryker\\Shared\\Event\\EventConstants::EVENT_QUEUE_RETRY"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Event\\Communication\\Plugin\\Queue\\EventQueueMessageProcessorPlugin",
+            "index": "\\Spryker\\Shared\\Publisher\\PublisherConfig::PUBLISH_RETRY_QUEUE"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Event\\Communication\\Plugin\\Queue\\EventRetryQueueMessageProcessorPlugin",
+            "index": "\\Spryker\\Shared\\Event\\EventConstants::EVENT_QUEUE_RETRY"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Queue\\QueueDependencyProvider::getProcessorMessagePlugins",
+            "source": "\\Spryker\\Zed\\Event\\Communication\\Plugin\\Queue\\EventRetryQueueMessageProcessorPlugin",
+            "index": "\\Spryker\\Shared\\Publisher\\PublisherConfig::PUBLISH_RETRY_QUEUE"
+        }
+    ]
+}
