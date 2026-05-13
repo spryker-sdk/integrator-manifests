@@ -1,0 +1,103 @@
+{
+    "configure-module": [
+        {
+            "target": "\\SprykerFeature\\Client\\AiCommerce\\AiCommerceConfig::getSearchByImageAiConfigurationName",
+            "value": {
+                "value": "return $this->getModuleConfig(\\Pyz\\Shared\\AiCommerce\\AiCommerceConstants::CONFIGURATION_KEY_SEARCH_BY_IMAGE_AI_CONFIGURATION, \\Pyz\\Shared\\AiCommerce\\AiCommerceConstants::AI_CONFIGURATION_SEARCH_BY_IMAGE_OPENAI)",
+                "is_literal": true
+            },
+            "previousValue": "\\SprykerFeature\\Shared\\AiCommerce\\AiCommerceConstants::AI_CONFIGURATION_SEARCH_BY_IMAGE"
+        },
+        {
+            "target": "\\SprykerFeature\\Yves\\AiCommerce\\AiCommerceConfig::getQuickOrderImageToCartAiConfigurationName",
+            "value": {
+                "value": "return $this->getModuleConfig(\\Pyz\\Shared\\AiCommerce\\AiCommerceConstants::CONFIGURATION_KEY_QUICK_ORDER_IMAGE_TO_CART_AI_CONFIGURATION, \\Pyz\\Shared\\AiCommerce\\AiCommerceConstants::AI_CONFIGURATION_QUICK_ORDER_IMAGE_TO_CART_OPENAI)",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\SprykerFeature\\Zed\\AiCommerce\\AiCommerceConfig::getCategorySuggestionAiConfigurationName",
+            "value": {
+                "value": "return $this->getSmartPimAiConfigurationName()",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\SprykerFeature\\Zed\\AiCommerce\\AiCommerceConfig::getTranslationAiConfigurationName",
+            "value": {
+                "value": "return $this->getSmartPimAiConfigurationName()",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\SprykerFeature\\Zed\\AiCommerce\\AiCommerceConfig::getImageAltTextAiConfigurationName",
+            "value": {
+                "value": "return $this->getSmartPimAiConfigurationName()",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\SprykerFeature\\Zed\\AiCommerce\\AiCommerceConfig::getContentImproverAiConfigurationName",
+            "value": {
+                "value": "return $this->getSmartPimAiConfigurationName()",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\SprykerFeature\\Zed\\AiCommerce\\AiCommerceConfig::getBackofficeAssistantAiConfigurationName",
+            "value": {
+                "value": "return (string)$this->getModuleConfig(\\Pyz\\Shared\\AiCommerce\\AiCommerceConstants::CONFIGURATION_KEY_BACKOFFICE_ASSISTANT_AI_CONFIGURATION, \\Pyz\\Shared\\AiCommerce\\AiCommerceConstants::AI_CONFIGURATION_BACKOFFICE_ASSISTANT_OPENAI)",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\SprykerFeature\\Zed\\AiCommerce\\AiCommerceConfig::getIntentRouterAiConfigurationName",
+            "value": {
+                "value": "return $this->resolveBackofficeAssistantAgentAiConfigurationName(\\Pyz\\Shared\\AiCommerce\\AiCommerceConstants::AI_CONFIGURATION_INTENT_ROUTER_OPENAI, \\Pyz\\Shared\\AiCommerce\\AiCommerceConstants::AI_CONFIGURATION_INTENT_ROUTER_AWS, \\Pyz\\Shared\\AiCommerce\\AiCommerceConstants::AI_CONFIGURATION_INTENT_ROUTER_ANTHROPIC)",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\SprykerFeature\\Zed\\AiCommerce\\AiCommerceConfig::getGeneralAgentAiConfigurationName",
+            "value": {
+                "value": "return $this->resolveBackofficeAssistantAgentAiConfigurationName(\\Pyz\\Shared\\AiCommerce\\AiCommerceConstants::AI_CONFIGURATION_GENERAL_AGENT_OPENAI, \\Pyz\\Shared\\AiCommerce\\AiCommerceConstants::AI_CONFIGURATION_GENERAL_AGENT_AWS, \\Pyz\\Shared\\AiCommerce\\AiCommerceConstants::AI_CONFIGURATION_GENERAL_AGENT_ANTHROPIC)",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\SprykerFeature\\Zed\\AiCommerce\\AiCommerceConfig::getOrderManagementAgentAiConfigurationName",
+            "value": {
+                "value": "return $this->resolveBackofficeAssistantAgentAiConfigurationName(\\Pyz\\Shared\\AiCommerce\\AiCommerceConstants::AI_CONFIGURATION_ORDER_MANAGEMENT_OPENAI, \\Pyz\\Shared\\AiCommerce\\AiCommerceConstants::AI_CONFIGURATION_ORDER_MANAGEMENT_AWS, \\Pyz\\Shared\\AiCommerce\\AiCommerceConstants::AI_CONFIGURATION_ORDER_MANAGEMENT_ANTHROPIC)",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\SprykerFeature\\Zed\\AiCommerce\\AiCommerceConfig::getDiscountManagementAgentAiConfigurationName",
+            "value": {
+                "value": "return $this->resolveBackofficeAssistantAgentAiConfigurationName(\\Pyz\\Shared\\AiCommerce\\AiCommerceConstants::AI_CONFIGURATION_DISCOUNT_MANAGEMENT_OPENAI, \\Pyz\\Shared\\AiCommerce\\AiCommerceConstants::AI_CONFIGURATION_DISCOUNT_MANAGEMENT_AWS, \\Pyz\\Shared\\AiCommerce\\AiCommerceConstants::AI_CONFIGURATION_DISCOUNT_MANAGEMENT_ANTHROPIC)",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\SprykerFeature\\Zed\\AiCommerce\\AiCommerceConfig::getFormFillAgentAiConfigurationName",
+            "value": {
+                "value": "return $this->resolveBackofficeAssistantAgentAiConfigurationName(\\Pyz\\Shared\\AiCommerce\\AiCommerceConstants::AI_CONFIGURATION_FORM_FILL_OPENAI, \\Pyz\\Shared\\AiCommerce\\AiCommerceConstants::AI_CONFIGURATION_FORM_FILL_AWS, \\Pyz\\Shared\\AiCommerce\\AiCommerceConstants::AI_CONFIGURATION_FORM_FILL_ANTHROPIC)",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\SprykerFeature\\Zed\\AiCommerce\\AiCommerceConfig::resolveBackofficeAssistantAgentAiConfigurationName",
+            "value": {
+                "value": "return match ($this->getBackofficeAssistantAiConfigurationName()) {\n    \\Pyz\\Shared\\AiCommerce\\AiCommerceConstants::AI_CONFIGURATION_BACKOFFICE_ASSISTANT_AWS => $awsName,\n    \\Pyz\\Shared\\AiCommerce\\AiCommerceConstants::AI_CONFIGURATION_BACKOFFICE_ASSISTANT_ANTHROPIC => $anthropicName,\n    default => $openAiName,\n}",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\SprykerFeature\\Zed\\AiCommerce\\AiCommerceConfig::getSmartPimAiConfigurationName",
+            "value": {
+                "value": "return $this->getModuleConfig(\\Pyz\\Shared\\AiCommerce\\AiCommerceConstants::CONFIGURATION_KEY_SMART_PIM_AI_CONFIGURATION, \\Pyz\\Shared\\AiCommerce\\AiCommerceConstants::AI_CONFIGURATION_SMART_PIM_OPENAI)",
+                "is_literal": true
+            }
+        }
+    ]
+}
