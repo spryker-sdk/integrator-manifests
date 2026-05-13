@@ -1,0 +1,24 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\QuoteRequestsRestApi\\Plugin\\GlueApplication\\QuoteRequestsResourceRoutePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\QuoteRequestsRestApi\\Plugin\\GlueApplication\\QuoteRequestCancelResourceRoutePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\QuoteRequestsRestApi\\Plugin\\GlueApplication\\QuoteRequestReviseResourceRoutePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\QuoteRequestsRestApi\\Plugin\\GlueApplication\\QuoteRequestSendResourceRoutePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\QuoteRequestsRestApi\\Plugin\\GlueApplication\\QuoteRequestConvertResourceRoutePlugin"
+        }
+    ]
+}
