@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Shared\\UrlStorage\\UrlStorageConfig::isUrlLocaleMapStorageEnabled",
+            "value": true
+        }
+    ]
+}
