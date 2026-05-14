@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Shared\\ProductStorage\\ProductStorageConfig::isProductAbstractStorageUnifiedEnabled",
+            "value": true
+        }
+    ]
+}
