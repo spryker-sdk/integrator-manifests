@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementDependencyProvider::getProductConcreteEditFormExpanderPlugins",
+            "source": "\\SprykerFeature\\Zed\\SelfServicePortal\\Communication\\Plugin\\ProductManagement\\ShipmentTypeProductConcreteEditFormExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductOfferShipmentTypeDataImport\\ProductOfferShipmentTypeDataImportDependencyProvider::getProductOfferShipmentTypeValidatorStepPlugins",
+            "source": "\\SprykerFeature\\Zed\\SelfServicePortal\\Communication\\Plugin\\ProductOfferShipmentTypeDataImport\\ProductOfferConcreteShipmentTypeValidatorStepPlugin"
+        }
+    ]
+}
