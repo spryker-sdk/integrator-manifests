@@ -1,0 +1,32 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\ProductMeasurementUnitsRestApi\\Plugin\\GlueApplication\\ProductMeasurementUnitsResourceRoutePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\ProductMeasurementUnitsRestApi\\Plugin\\GlueApplication\\SalesUnitsResourceRoutePlugin"
+        }
+    ],
+    "unwire-glue-relationship": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\ProductsRestApi\\ProductsRestApiConfig::RESOURCE_CONCRETE_PRODUCTS": "\\Spryker\\Glue\\ProductMeasurementUnitsRestApi\\Plugin\\GlueApplication\\ProductMeasurementUnitsByProductConcreteResourceRelationshipPlugin"
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\ProductsRestApi\\ProductsRestApiConfig::RESOURCE_CONCRETE_PRODUCTS": "\\Spryker\\Glue\\ProductMeasurementUnitsRestApi\\Plugin\\GlueApplication\\SalesUnitsByProductConcreteResourceRelationshipPlugin"
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\ProductMeasurementUnitsRestApi\\ProductMeasurementUnitsRestApiConfig::RESOURCE_SALES_UNITS": "\\Spryker\\Glue\\ProductMeasurementUnitsRestApi\\Plugin\\GlueApplication\\ProductMeasurementUnitsBySalesUnitResourceRelationshipPlugin"
+            }
+        }
+    ]
+}
