@@ -1,0 +1,16 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\CompanyBusinessUnitAddressesRestApi\\Plugin\\GlueApplication\\CompanyBusinessUnitAddressesResourcePlugin"
+        }
+    ],
+    "unwire-glue-relationship": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\CompanyBusinessUnitsRestApi\\CompanyBusinessUnitsRestApiConfig::RESOURCE_COMPANY_BUSINESS_UNITS": "\\Spryker\\Glue\\CompanyBusinessUnitAddressesRestApi\\Plugin\\GlueApplication\\CompanyBusinessUnitAddressesByCompanyBusinessUnitResourceRelationshipPlugin"
+            }
+        }
+    ]
+}

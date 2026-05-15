@@ -1,0 +1,22 @@
+{
+    "unwire-glue-relationship": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\CompanyUsersRestApi\\CompanyUsersRestApiConfig::RESOURCE_COMPANY_USERS": "\\Spryker\\Glue\\CompaniesRestApi\\Plugin\\GlueApplication\\CompanyByCompanyUserResourceRelationshipPlugin"
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\CompanyRolesRestApi\\CompanyRolesRestApiConfig::RESOURCE_COMPANY_ROLES": "\\Spryker\\Glue\\CompaniesRestApi\\Plugin\\GlueApplication\\CompanyByCompanyRoleResourceRelationshipPlugin"
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\CompanyBusinessUnitsRestApi\\CompanyBusinessUnitsRestApiConfig::RESOURCE_COMPANY_BUSINESS_UNITS": "\\Spryker\\Glue\\CompaniesRestApi\\Plugin\\GlueApplication\\CompanyByCompanyBusinessUnitResourceRelationshipPlugin"
+            }
+        }
+    ]
+}
