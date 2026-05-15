@@ -1,0 +1,10 @@
+{
+    "unwire-glue-relationship": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\CompanyUsersRestApi\\CompanyUsersRestApiConfig::RESOURCE_COMPANY_USERS": "\\Spryker\\Glue\\CustomersRestApi\\Plugin\\GlueApplication\\CustomerByCompanyUserResourceRelationshipPlugin"
+            }
+        }
+    ]
+}
