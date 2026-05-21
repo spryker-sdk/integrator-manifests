@@ -1,0 +1,16 @@
+{
+    "glossary-key": {
+        "new": {
+            "cart_code_widget.error.too_many_requests": {
+                "en_US": "Too many voucher code attempts. Please try again later.",
+                "de_DE": "Zu viele Versuche mit Gutscheincodes. Bitte versuchen Sie es später erneut."
+            }
+        }
+    },
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\EventDispatcher\\EventDispatcherDependencyProvider::getEventDispatcherPlugins",
+            "source": "\\SprykerShop\\Yves\\CartCodeWidget\\Plugin\\EventDispatcher\\SecurityBlockerCartCodeEventDispatcherPlugin"
+        }
+    ]
+}
