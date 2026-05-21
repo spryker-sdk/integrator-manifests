@@ -1,0 +1,22 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\CmsPagesRestApi\\Plugin\\GlueApplication\\CmsPagesResourceRoutePlugin"
+        }
+    ],
+    "unwire-glue-relationship": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\CmsPagesRestApi\\CmsPagesRestApiConfig::RESOURCE_CMS_PAGES": "\\Spryker\\Glue\\CmsPagesContentBannersResourceRelationship\\Plugin\\GlueApplication\\ContentBannerByCmsPageResourceRelationshipPlugin"
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\CmsPagesRestApi\\CmsPagesRestApiConfig::RESOURCE_CMS_PAGES": "\\Spryker\\Glue\\CmsPagesContentProductAbstractListsResourceRelationship\\Plugin\\GlueApplication\\ContentProductAbstractListByCmsPageResourceRelationshipPlugin"
+            }
+        }
+    ]
+}
