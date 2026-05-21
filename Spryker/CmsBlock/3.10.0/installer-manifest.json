@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\CmsBlock\\CmsBlockConfig::CMS_BLOCK_ABSOLUTE_PATH_PATTERN",
+            "value": "%s/%s/CmsBlock/src/%s/%s/CmsBlock/Theme/%s%s"
+        }
+    ]
+}
