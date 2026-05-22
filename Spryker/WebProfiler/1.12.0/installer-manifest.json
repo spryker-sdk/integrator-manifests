@@ -1,0 +1,9 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Console\\ConsoleDependencyProvider::getApplicationPlugins",
+            "source": "\\Spryker\\Zed\\WebProfiler\\Communication\\Plugin\\Application\\WebProfilerConsoleTwigCompilationApplicationPlugin",
+            "condition": "class_exists(\\Spryker\\Zed\\WebProfiler\\Communication\\Plugin\\Application\\WebProfilerConsoleTwigCompilationApplicationPlugin::class)"
+        }
+    ]
+}
