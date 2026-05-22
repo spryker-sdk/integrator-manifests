@@ -1,0 +1,20 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\WishlistsRestApi\\Plugin\\WishlistsResourceRoutePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\WishlistsRestApi\\Plugin\\WishlistItemsResourceRoutePlugin"
+        }
+    ],
+    "unwire-glue-relationship": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\CustomersRestApi\\CustomersRestApiConfig::RESOURCE_CUSTOMERS": "\\Spryker\\Glue\\WishlistsRestApi\\Plugin\\WishlistRelationshipByResourceIdPlugin"
+            }
+        }
+    ]
+}
