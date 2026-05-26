@@ -1,0 +1,22 @@
+{
+    "unwire-glue-relationship": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\CheckoutRestApi\\CheckoutRestApiConfig::RESOURCE_CHECKOUT_DATA": "\\Spryker\\Glue\\ShipmentsRestApi\\Plugin\\GlueApplication\\ShipmentsByCheckoutDataResourceRelationshipPlugin"
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\ShipmentsRestApi\\ShipmentsRestApiConfig::RESOURCE_SHIPMENTS": "\\Spryker\\Glue\\ShipmentsRestApi\\Plugin\\GlueApplication\\ShipmentMethodsByShipmentResourceRelationshipPlugin"
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\OrdersRestApi\\OrdersRestApiConfig::RESOURCE_ORDERS": "\\Spryker\\Glue\\ShipmentsRestApi\\Plugin\\GlueApplication\\OrderShipmentByOrderResourceRelationshipPlugin"
+            }
+        }
+    ]
+}
