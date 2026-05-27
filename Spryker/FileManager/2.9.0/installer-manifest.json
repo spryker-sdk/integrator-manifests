@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\FileManager\\FileManagerConfig::isUuidEnabled",
+            "value": true
+        }
+    ]
+}
