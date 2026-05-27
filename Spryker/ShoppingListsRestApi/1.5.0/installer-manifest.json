@@ -1,0 +1,38 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\ShoppingListsRestApi\\Plugin\\GlueApplication\\ShoppingListsResourcePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\ShoppingListsRestApi\\Plugin\\GlueApplication\\ShoppingListItemsResourcePlugin"
+        }
+    ],
+    "unwire-glue-relationship": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\ShoppingListsRestApi\\ShoppingListsRestApiConfig::RESOURCE_SHOPPING_LIST_ITEMS": "\\Spryker\\Glue\\ProductOfferAvailabilitiesRestApi\\Plugin\\GlueApplication\\ProductOfferAvailabilitiesByProductOfferReferenceResourceRelationshipPlugin"
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\ShoppingListsRestApi\\ShoppingListsRestApiConfig::RESOURCE_SHOPPING_LIST_ITEMS": "\\Spryker\\Glue\\ProductOffersRestApi\\Plugin\\GlueApplication\\ProductOffersByProductOfferReferenceResourceRelationshipPlugin"
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\ShoppingListsRestApi\\ShoppingListsRestApiConfig::RESOURCE_SHOPPING_LIST_ITEMS": "\\Spryker\\Glue\\ProductOfferPricesRestApi\\Plugin\\GlueApplication\\ProductOfferPriceByProductOfferReferenceResourceRelationshipPlugin"
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\ShoppingListsRestApi\\ShoppingListsRestApiConfig::RESOURCE_SHOPPING_LISTS": "\\Spryker\\Glue\\ShoppingListsRestApi\\Plugin\\GlueApplication\\ShoppingListItemByShoppingListResourceRelationshipPlugin"
+            }
+        }
+    ]
+}
