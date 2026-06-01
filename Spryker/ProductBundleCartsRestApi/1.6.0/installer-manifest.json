@@ -1,0 +1,22 @@
+{
+    "unwire-glue-relationship": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\ProductBundleCartsRestApi\\ProductBundleCartsRestApiConfig::RESOURCE_BUNDLE_ITEMS": "\\Spryker\\Glue\\ProductBundleCartsRestApi\\Plugin\\GlueApplication\\BundledItemByQuoteResourceRelationshipPlugin"
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\ProductBundleCartsRestApi\\ProductBundleCartsRestApiConfig::RESOURCE_BUNDLE_ITEMS": "\\Spryker\\Glue\\ProductsRestApi\\Plugin\\GlueApplication\\ConcreteProductBySkuResourceRelationshipPlugin"
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\ProductBundleCartsRestApi\\ProductBundleCartsRestApiConfig::RESOURCE_BUNDLED_ITEMS": "\\Spryker\\Glue\\ProductsRestApi\\Plugin\\GlueApplication\\ConcreteProductBySkuResourceRelationshipPlugin"
+            }
+        }
+    ]
+}

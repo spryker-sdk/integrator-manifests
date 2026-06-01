@@ -1,0 +1,16 @@
+{
+    "unwire-glue-relationship": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\ProductsRestApi\\ProductsRestApiConfig::RESOURCE_ABSTRACT_PRODUCTS": "\\Spryker\\Glue\\ProductOptionsRestApi\\Plugin\\GlueApplication\\ProductOptionsByProductAbstractSkuResourceRelationshipPlugin"
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\ProductsRestApi\\ProductsRestApiConfig::RESOURCE_CONCRETE_PRODUCTS": "\\Spryker\\Glue\\ProductOptionsRestApi\\Plugin\\GlueApplication\\ProductOptionsByProductConcreteSkuResourceRelationshipPlugin"
+            }
+        }
+    ]
+}
