@@ -1,0 +1,8 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ProductManagement\\ProductManagementDependencyProvider::getProductAbstractReadinessProviderPlugins",
+            "source": "\\Spryker\\Zed\\ProductStorage\\Communication\\Plugin\\ProductManagement\\StorageProductAbstractReadinessProviderPlugin"
+        }
+    ]
+}
