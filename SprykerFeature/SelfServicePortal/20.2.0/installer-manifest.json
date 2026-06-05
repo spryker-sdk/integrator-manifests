@@ -1,0 +1,16 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\SprykerFeature\\Glue\\SelfServicePortal\\Plugin\\GlueApplication\\SspAssetsResourceRoutePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\SprykerFeature\\Glue\\SelfServicePortal\\Plugin\\GlueApplication\\SspInquiriesResourceRoutePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\SprykerFeature\\Glue\\SelfServicePortal\\Plugin\\GlueApplication\\SspServicesResourceRoutePlugin"
+        }
+    ]
+}
