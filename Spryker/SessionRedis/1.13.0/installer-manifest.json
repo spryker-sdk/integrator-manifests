@@ -1,0 +1,33 @@
+{
+    "configure-module": [
+        {
+            "previousValue": [],
+            "target": "\\Spryker\\Yves\\SessionRedis\\SessionRedisConfig::getSessionRedisLockingIncludedUrlPatterns",
+            "value": [
+                "/^.*\\/cart(\\/|$)/",
+                "/^.*\\/cart-code\\/code(|-async)\\/(add|remove|clear)/",
+                "/^.*\\/cart-note\\//",
+                "/^.*\\/order-custom-reference\\//",
+                "/^.*\\/multi-cart\\/(create|update|delete|clear|duplicate|set-default)/",
+                "/^.*\\/multi-cart-async\\/clear\\//",
+                "/^.*\\/cart-reorder\\//",
+                "/^.*\\/shared-cart\\/(share|dismiss)/",
+                "/^.*\\/checkout/",
+                "/^.*\\/(login|logout|register)($|\\/)/",
+                "/^.*\\/customer\\/(profile|address|newsletter|delete)/"
+            ]
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\SessionRedis\\SessionRedisDependencyProvider::getSessionRedisLockingExclusionConditionPlugins",
+            "source": "\\Spryker\\Yves\\SessionRedis\\Plugin\\SessionRedisLockingExclusion\\UrlSessionRedisLockingInclusionConditionPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\SessionRedis\\SessionRedisDependencyProvider::getSessionRedisLockingExclusionConditionPlugins",
+            "source": "\\Spryker\\Yves\\SessionRedis\\Plugin\\SessionRedisLockingExclusion\\UrlSessionRedisLockingExclusionConditionPlugin"
+        }
+    ]
+}
