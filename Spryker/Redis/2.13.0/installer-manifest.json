@@ -1,0 +1,25 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\Redis\\RedisConstants::REDIS_SCHEME",
+            "value": {
+                "value": "getenv('SPRYKER_KEY_VALUE_STORE_PROTOCOL') ?: 'tcp'",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\Redis\\RedisConstants::REDIS_SSL_CA_FILE_PATH",
+            "value": {
+                "value": "getenv('SPRYKER_REDIS_SSL_CA_FILE') ?: ''",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\Redis\\RedisConstants::REDIS_KEY_PREFIX",
+            "value": {
+                "value": "getenv('SPRYKER_KEY_VALUE_PREFIX') ?: ''",
+                "is_literal": true
+            }
+        }
+    ]
+}
