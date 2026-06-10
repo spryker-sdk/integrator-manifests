@@ -1,0 +1,37 @@
+{
+    "configure-module": [
+        {
+            "target": "\\SprykerFeature\\Zed\\AiCommerce\\AiCommerceConfig::getSmartCmsAiConfigurationName",
+            "value": {
+                "value": "return (string)$this->getModuleConfig(\\Pyz\\Shared\\AiCommerce\\AiCommerceConstants::CONFIGURATION_KEY_SMART_CMS_AI_CONFIGURATION, \\Pyz\\Shared\\AiCommerce\\AiCommerceConstants::AI_CONFIGURATION_SMART_CMS_OPENAI)",
+                "is_literal": true
+            }
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\SprykerFeature\\Zed\\AiCommerce\\AiCommerceDependencyProvider::getContentGuiEditorPlugins",
+            "source": "\\Spryker\\Zed\\ContentBannerGui\\Communication\\Plugin\\ContentGui\\ContentBannerContentGuiEditorPlugin"
+        },
+        {
+            "target": "\\SprykerFeature\\Zed\\AiCommerce\\AiCommerceDependencyProvider::getContentGuiEditorPlugins",
+            "source": "\\Spryker\\Zed\\ContentProductGui\\Communication\\Plugin\\ContentGui\\ContentProductContentGuiEditorPlugin"
+        },
+        {
+            "target": "\\SprykerFeature\\Zed\\AiCommerce\\AiCommerceDependencyProvider::getContentGuiEditorPlugins",
+            "source": "\\Spryker\\Zed\\ContentProductSetGui\\Communication\\Plugin\\ContentGui\\ContentProductSetGuiEditorPlugin"
+        },
+        {
+            "target": "\\SprykerFeature\\Zed\\AiCommerce\\AiCommerceDependencyProvider::getContentGuiEditorPlugins",
+            "source": "\\Spryker\\Zed\\ContentFileGui\\Communication\\Plugin\\ContentGui\\ContentFileListContentGuiEditorPlugin"
+        },
+        {
+            "target": "\\SprykerFeature\\Zed\\AiCommerce\\AiCommerceDependencyProvider::getContentGuiEditorPlugins",
+            "source": "\\Spryker\\Zed\\ContentNavigationGui\\Communication\\Plugin\\ContentGui\\ContentNavigationContentGuiEditorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\AiFoundation\\AiFoundationDependencyProvider::getAiToolSetPlugins",
+            "source": "\\SprykerFeature\\Zed\\AiCommerce\\Communication\\Plugin\\AiFoundation\\SmartCmsContentToolSetPlugin"
+        }
+    ]
+}
