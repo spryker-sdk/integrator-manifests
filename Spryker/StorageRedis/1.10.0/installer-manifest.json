@@ -1,0 +1,18 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\StorageRedis\\StorageRedisConstants::STORAGE_REDIS_USER",
+            "value": {
+                "value": "getenv('SPRYKER_KEY_VALUE_USERNAME')",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\Spryker\\Shared\\StorageRedis\\StorageRedisConstants::STORAGE_REDIS_PASSWORD",
+            "value": {
+                "value": "getenv('SPRYKER_KEY_VALUE_PASSWORD')",
+                "is_literal": true
+            }
+        }
+    ]
+}
