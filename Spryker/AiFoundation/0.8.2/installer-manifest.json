@@ -1,0 +1,20 @@
+{
+    "wire-navigation": [
+        {
+            "navigations": {
+                "ai-foundation": {
+                    "pages": {
+                        "ai-interaction-log": {
+                            "label": "Audit Logs",
+                            "title": "Audit Logs",
+                            "bundle": "ai-foundation",
+                            "controller": "ai-interaction-log",
+                            "action": "index"
+                        }
+                    }
+                }
+            },
+            "after": "analytics"
+        }
+    ]
+}
