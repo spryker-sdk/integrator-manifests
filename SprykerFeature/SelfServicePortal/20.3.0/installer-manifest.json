@@ -1,0 +1,10 @@
+{
+    "glossary-key": {
+        "new": {
+            "self_service_portal.asset.form.name.validation.min": {
+                "en_US": "Name must be at least 3 characters long.",
+                "de_DE": "Der Name muss mindestens 3 Zeichen lang sein."
+            }
+        }
+    }
+}
