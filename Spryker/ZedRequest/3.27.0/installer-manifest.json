@@ -1,0 +1,8 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\ZedRequest\\ZedRequestConstants::TRANSFER_BASE64_ENCODING_ENABLED",
+            "value": true
+        }
+    ]
+}
