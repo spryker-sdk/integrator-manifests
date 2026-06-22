@@ -1,0 +1,12 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\SessionRedis\\SessionRedisConstants::YVES_SESSION_PERSISTENT_CONNECTION",
+            "value": true
+        },
+        {
+            "target": "\\Spryker\\Shared\\SessionRedis\\SessionRedisConstants::ZED_SESSION_PERSISTENT_CONNECTION",
+            "value": true
+        }
+    ]
+}
