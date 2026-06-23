@@ -1,0 +1,10 @@
+{
+    "glossary-key": {
+        "new": {
+            "self_service_portal.search_filter_form.field.reset_all.label": {
+                "en_US": "Reset All",
+                "de_DE": "Alle zurücksetzen"
+            }
+        }
+    }
+}
