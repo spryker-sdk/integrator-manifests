@@ -1,0 +1,14 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::getOmsReservationAggregationQueryCriteriaExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductPackagingUnit\\Communication\\Plugin\\Oms\\ProductPackagingUnitReservationAggregationQueryCriteriaExpanderPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::getOmsReservationAggregationPlugins",
+            "source": "\\Spryker\\Zed\\ProductPackagingUnit\\Communication\\Plugin\\Oms\\ProductPackagingUnitOmsReservationAggregationPlugin"
+        }
+    ]
+}

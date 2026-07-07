@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::getReservationRequestExpanderPlugins",
+            "source": "\\Spryker\\Zed\\Stock\\Communication\\Plugin\\Oms\\ProductStockReservationRequestExpanderPlugin"
+        }
+    ]
+}
