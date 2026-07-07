@@ -1,0 +1,14 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::getStoreAwareReservationPostSaveTerminationAwareStrategyPlugins",
+            "source": "\\Spryker\\Zed\\Oms\\Communication\\Plugin\\Oms\\ReservationHandler\\ReservationVersionPostSaveTerminationAwareStrategyPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::getReservationPostSaveTerminationAwareStrategyPlugins",
+            "source": "\\Spryker\\Zed\\Oms\\Communication\\Plugin\\Oms\\ReservationHandler\\ReservationVersionPostSaveTerminationAwareStrategyPlugin"
+        }
+    ]
+}

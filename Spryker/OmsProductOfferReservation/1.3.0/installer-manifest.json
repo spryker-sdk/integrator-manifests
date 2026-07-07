@@ -1,0 +1,22 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::getOmsReservationAggregationQueryCriteriaExpanderPlugins",
+            "source": "\\Spryker\\Zed\\OmsProductOfferReservation\\Communication\\Plugin\\Oms\\ProductOfferReservationAggregationQueryCriteriaExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::getStoreAwareReservationPostSaveTerminationAwareStrategyPlugins",
+            "source": "\\Spryker\\Zed\\OmsProductOfferReservation\\Communication\\Plugin\\Oms\\ProductOfferReservationPostSaveTerminationAwareStrategyPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::getOmsReservationAggregationPlugins",
+            "source": "\\Spryker\\Zed\\OmsProductOfferReservation\\Communication\\Plugin\\Oms\\ProductOfferOmsReservationAggregationPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::getReservationPostSaveTerminationAwareStrategyPlugins",
+            "source": "\\Spryker\\Zed\\OmsProductOfferReservation\\Communication\\Plugin\\Oms\\ProductOfferReservationPostSaveTerminationAwareStrategyPlugin"
+        }
+    ]
+}
