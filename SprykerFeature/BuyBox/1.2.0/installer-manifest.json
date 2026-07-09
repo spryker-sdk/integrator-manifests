@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\SprykerFeature\\Yves\\BuyBox\\BuyBoxDependencyProvider::getBuyBoxRenderConditionPlugins",
+            "source": "\\SprykerFeature\\Yves\\BuyBox\\Plugin\\BuyBox\\ConfigurableProductBuyBoxRenderConditionPlugin"
+        }
+    ]
+}
