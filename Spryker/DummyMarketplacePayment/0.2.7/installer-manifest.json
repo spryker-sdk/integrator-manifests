@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Yves\\DummyMarketplacePayment\\DummyMarketplacePaymentConfig::isDateOfBirthEnabled",
+            "value": false
+        }
+    ]
+}
