@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\AgentSecurityMerchantPortalGui\\AgentSecurityMerchantPortalGuiDependencyProvider::getMerchantUserLoginRestrictionPlugins",
+            "source": "\\Spryker\\Zed\\AclMerchantPortal\\Communication\\Plugin\\SecurityMerchantPortalGui\\AclGroupMerchantUserLoginRestrictionPlugin"
+        }
+    ]
+}
