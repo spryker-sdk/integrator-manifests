@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CartReorder\\CartReorderDependencyProvider::getCartReorderItemHydratorPlugins",
+            "source": "\\Spryker\\Zed\\SalesShipmentType\\Communication\\Plugin\\CartReorder\\ShipmentTypeReorderItemHydratorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getOrderItemExpanderPlugins",
+            "source": "\\Spryker\\Zed\\SalesShipmentType\\Communication\\Plugin\\Sales\\ShipmentTypeOrderItemExpanderPlugin"
+        }
+    ]
+}
