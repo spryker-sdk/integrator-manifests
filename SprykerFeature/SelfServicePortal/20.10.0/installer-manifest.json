@@ -1,0 +1,43 @@
+{
+    "configure-module": [
+        {
+            "previousValue": [
+                "self::SHIPMENT_TYPE_IN_CENTER_SERVICE"
+            ],
+            "target": "\\SprykerFeature\\Client\\SelfServicePortal\\SelfServicePortalConfig::getProductOfferServiceAvailabilityShipmentTypeKeys",
+            "value": [
+                "self::SHIPMENT_TYPE_PICKUP"
+            ]
+        },
+        {
+            "target": "\\SprykerFeature\\Client\\SelfServicePortal\\SelfServicePortalConfig::SHIPMENT_TYPE_PICKUP",
+            "value": "pickup"
+        },
+        {
+            "previousValue": [],
+            "target": "\\SprykerFeature\\Yves\\SelfServicePortal\\SelfServicePortalConfig::getShipmentTypeKeysRequiringServicePoint",
+            "value": [
+                "static::SHIPMENT_TYPE_IN_CENTER_SERVICE",
+                "self::SHIPMENT_TYPE_PICKUP"
+            ]
+        },
+        {
+            "target": "\\SprykerFeature\\Yves\\SelfServicePortal\\SelfServicePortalConfig::SHIPMENT_TYPE_PICKUP",
+            "value": "pickup"
+        }
+    ],
+    "add-config-array-element": [
+        {
+            "target": "\\SprykerFeature\\Client\\SelfServicePortal\\SelfServicePortalConfig::getProductOfferServiceAvailabilityShipmentTypeKeys",
+            "value": "\\self::SHIPMENT_TYPE_PICKUP"
+        },
+        {
+            "target": "\\SprykerFeature\\Yves\\SelfServicePortal\\SelfServicePortalConfig::getShipmentTypeKeysRequiringServicePoint",
+            "value": "\\static::SHIPMENT_TYPE_IN_CENTER_SERVICE"
+        },
+        {
+            "target": "\\SprykerFeature\\Yves\\SelfServicePortal\\SelfServicePortalConfig::getShipmentTypeKeysRequiringServicePoint",
+            "value": "\\self::SHIPMENT_TYPE_PICKUP"
+        }
+    ]
+}
