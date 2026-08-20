@@ -1,0 +1,18 @@
+{
+    "glossary-key": {
+        "new": {
+            "recurring_orders.review.add_product.error.product_required": {
+                "en_US": "Please choose a product.",
+                "de_DE": "Bitte wählen Sie ein Produkt aus."
+            },
+            "recurring_orders.review.add_product.error.shipping_address_required": {
+                "en_US": "Please choose a shipping address.",
+                "de_DE": "Bitte wählen Sie eine Lieferadresse aus."
+            },
+            "recurring_orders.review.add_product.error.shipment_method_required": {
+                "en_US": "Please choose a shipment method.",
+                "de_DE": "Bitte wählen Sie eine Versandart aus."
+            }
+        }
+    }
+}
