@@ -1,0 +1,10 @@
+{
+    "glossary-key": {
+        "new": {
+            "mail.error.send_failed": {
+                "en_US": "The email failed to send. Error code: %errorCode%.",
+                "de_DE": "Die E-Mail konnte nicht gesendet werden. Fehlercode: %errorCode%."
+            }
+        }
+    }
+}
