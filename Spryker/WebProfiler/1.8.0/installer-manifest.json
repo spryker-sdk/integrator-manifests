@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\WebProfiler\\WebProfilerDependencyProvider::getDataCollectorPlugins",
+            "source": "\\Spryker\\Glue\\WebProfiler\\Plugin\\WebProfiler\\WebProfilerEventsDataCollectorPlugin"
+        }
+    ]
+}
