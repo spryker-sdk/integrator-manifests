@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\WebProfiler\\WebProfilerDependencyProvider::getDataCollectorPlugins",
+            "source": "\\Spryker\\Glue\\Log\\Plugin\\WebProfiler\\WebProfilerAuditLogDataCollectorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\WebProfiler\\WebProfilerDependencyProvider::getDataCollectorPlugins",
+            "source": "\\Spryker\\Zed\\Log\\Communication\\Plugin\\WebProfiler\\WebProfilerAuditLogDataCollectorPlugin"
+        },
+        {
+            "target": "\\SprykerShop\\Yves\\WebProfilerWidget\\WebProfilerWidgetDependencyProvider::getDataCollectorPlugins",
+            "source": "\\Spryker\\Yves\\Log\\Plugin\\WebProfiler\\WebProfilerAuditLogDataCollectorPlugin"
+        }
+    ]
+}
