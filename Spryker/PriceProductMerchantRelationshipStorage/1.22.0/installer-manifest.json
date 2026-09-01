@@ -1,0 +1,61 @@
+{
+    "wire-schema": [
+        {
+            "target": "Zed/PriceProductMerchantRelationshipStorage/Persistence/Propel/Schema/spy_price_product_merchant_relationship_storage.schema.xml",
+            "data": {
+                "name": "database",
+                "attributes": {
+                    "name": "zed",
+                    "namespace": "Orm\\Zed\\PriceProductMerchantRelationshipStorage\\Persistence",
+                    "package": "src.Orm.Zed.PriceProductMerchantRelationshipStorage.Persistence"
+                },
+                "sub-nodes": [
+                    {
+                        "name": "table",
+                        "attributes": {
+                            "name": "spy_price_product_abstract_merchant_relationship_storage"
+                        },
+                        "sub-nodes": [
+                            {
+                                "name": "index",
+                                "attributes": {
+                                    "name": "spy_price_product_ab_m_r_storage-fk_company_business_unit"
+                                },
+                                "sub-nodes": [
+                                    {
+                                        "name": "index-column",
+                                        "attributes": {
+                                            "name": "fk_company_business_unit"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "table",
+                        "attributes": {
+                            "name": "spy_price_product_concrete_merchant_relationship_storage"
+                        },
+                        "sub-nodes": [
+                            {
+                                "name": "index",
+                                "attributes": {
+                                    "name": "spy_price_product_con_m_r_storage-fk_company_business_unit"
+                                },
+                                "sub-nodes": [
+                                    {
+                                        "name": "index-column",
+                                        "attributes": {
+                                            "name": "fk_company_business_unit"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
