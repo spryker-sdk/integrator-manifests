@@ -1,0 +1,20 @@
+{
+    "wire-navigation": [
+        {
+            "navigations": {
+                "ssp": {
+                    "pages": {
+                        "service-points": {
+                            "label": "Service Points",
+                            "title": "Service Points",
+                            "bundle": "service-point",
+                            "controller": "list",
+                            "action": "index"
+                        }
+                    }
+                }
+            },
+            "after": "sales"
+        }
+    ]
+}

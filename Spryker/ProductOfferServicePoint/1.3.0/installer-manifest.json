@@ -1,0 +1,34 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\ProductOfferServicePoint\\ProductOfferServicePointConfig::findProductOfferEditUrl",
+            "value": "static::URL_PRODUCT_OFFER_EDIT"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductOfferServicePoint\\ProductOfferServicePointConfig::findProductOfferViewUrl",
+            "value": "static::URL_PRODUCT_OFFER_VIEW"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductOfferServicePoint\\ProductOfferServicePointConfig::URL_PRODUCT_OFFER_EDIT",
+            "value": "/self-service-portal/edit-offer"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductOfferServicePoint\\ProductOfferServicePointConfig::PARAM_ID_PRODUCT_OFFER_EDIT_URL",
+            "value": "id_product_offer"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductOfferServicePoint\\ProductOfferServicePointConfig::URL_PRODUCT_OFFER_VIEW",
+            "value": "/product-offer-gui/view"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductOfferServicePoint\\ProductOfferServicePointConfig::PARAM_ID_PRODUCT_OFFER_VIEW_URL",
+            "value": "id-product-offer"
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ServicePoint\\ServicePointDependencyProvider::getServicePointViewSectionPlugins",
+            "source": "\\Spryker\\Zed\\ProductOfferServicePoint\\Communication\\Plugin\\ServicePoint\\ProductOfferServicePointViewSectionPlugin"
+        }
+    ]
+}
