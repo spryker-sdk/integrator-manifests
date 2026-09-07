@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Customer\\CustomerDependencyProvider::getCustomerValidatorPlugins",
+            "source": "\\Spryker\\Zed\\Locale\\Communication\\Plugin\\Customer\\LocaleCustomerValidatorPlugin"
+        }
+    ]
+}

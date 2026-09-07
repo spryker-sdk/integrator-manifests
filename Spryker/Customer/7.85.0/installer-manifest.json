@@ -1,0 +1,26 @@
+{
+    "glossary-key": {
+        "new": {
+            "customer.address.validation.first_name_missing": {
+                "en_US": "First name is required",
+                "de_DE": "Vorname ist erforderlich"
+            },
+            "customer.address.validation.last_name_missing": {
+                "en_US": "Last name is required",
+                "de_DE": "Nachname ist erforderlich"
+            },
+            "customer.address.validation.name_pattern": {
+                "en_US": "Name contains characters that are not allowed",
+                "de_DE": "Name enthält unzulässige Zeichen"
+            },
+            "customer.address.validation.salutation_invalid": {
+                "en_US": "Salutation is invalid",
+                "de_DE": "Anrede ist ungültig"
+            },
+            "customer.address.validation.field_too_long": {
+                "en_US": "Value exceeds the maximum length of %limit% characters",
+                "de_DE": "Wert überschreitet die maximale Länge von %limit% Zeichen"
+            }
+        }
+    }
+}
