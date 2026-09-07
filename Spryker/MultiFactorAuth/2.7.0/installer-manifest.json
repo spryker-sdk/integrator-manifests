@@ -1,0 +1,16 @@
+{
+    "glossary-key": {
+        "new": {
+            "multi_factor_auth.error.no_method_available": {
+                "en_US": "Multi-Factor Authentication is required for your account, but no verification method is currently available. Please contact site support.",
+                "de_DE": "Für Ihr Konto ist eine Multi-Faktor-Authentifizierung erforderlich, es ist jedoch derzeit keine Verifizierungsmethode verfügbar. Bitte wenden Sie sich an den Support."
+            }
+        }
+    },
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\SecurityOauthUser\\SecurityOauthUserDependencyProvider::getUserAuthenticationHandlerPlugins",
+            "source": "\\Spryker\\Zed\\MultiFactorAuth\\Communication\\Plugin\\AuthenticationHandler\\User\\UserMultiFactorAuthenticationHandlerPlugin"
+        }
+    ]
+}
