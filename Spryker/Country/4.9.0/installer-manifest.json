@@ -1,0 +1,24 @@
+{
+    "glossary-key": {
+        "new": {
+            "country.validation.unknown_country": {
+                "en_US": "The country %value% is not available in this shop",
+                "de_DE": "Das Land %value% ist in diesem Shop nicht verfügbar"
+            },
+            "country.validation.unknown_region": {
+                "en_US": "The region %value% is not known",
+                "de_DE": "Die Region %value% ist unbekannt"
+            },
+            "country.validation.region_not_in_country": {
+                "en_US": "The region %value% does not belong to the given country",
+                "de_DE": "Die Region %value% gehört nicht zum angegebenen Land"
+            }
+        }
+    },
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Customer\\CustomerDependencyProvider::getAddressValidatorPlugins",
+            "source": "\\Spryker\\Zed\\Country\\Communication\\Plugin\\Customer\\CountryAddressValidatorPlugin"
+        }
+    ]
+}
