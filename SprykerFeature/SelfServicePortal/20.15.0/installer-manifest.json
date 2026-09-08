@@ -1,0 +1,20 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductConcreteAfterUpdateCollectionPlugins",
+            "source": "\\SprykerFeature\\Zed\\SelfServicePortal\\Communication\\Plugin\\Product\\ProductClassProductConcreteAfterUpdatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductConcreteAfterUpdateCollectionPlugins",
+            "source": "\\SprykerFeature\\Zed\\SelfServicePortal\\Communication\\Plugin\\Product\\ShipmentTypeProductConcretePostUpdatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductConcreteCollectionCreateValidatorPlugins",
+            "source": "\\SprykerFeature\\Zed\\SelfServicePortal\\Communication\\Plugin\\Product\\ProductClassExistsProductConcreteCollectionCreateValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductConcreteCollectionUpdateValidatorPlugins",
+            "source": "\\SprykerFeature\\Zed\\SelfServicePortal\\Communication\\Plugin\\Product\\ProductClassExistsProductConcreteCollectionUpdateValidatorPlugin"
+        }
+    ]
+}

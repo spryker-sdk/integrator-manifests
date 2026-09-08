@@ -1,0 +1,20 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductConcreteAfterUpdateCollectionPlugins",
+            "source": "\\Spryker\\Zed\\ProductBundle\\Communication\\Plugin\\Product\\ProductBundleProductConcreteAfterUpdatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductConcreteAfterUpdateCollectionPlugins",
+            "source": "\\Spryker\\Zed\\ProductBundle\\Communication\\Plugin\\Product\\ProductBundleDeactivatorProductConcreteAfterUpdatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductConcreteCollectionCreateValidatorPlugins",
+            "source": "\\Spryker\\Zed\\ProductBundle\\Communication\\Plugin\\Product\\ProductBundleProductConcreteCollectionCreateValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductConcreteCollectionUpdateValidatorPlugins",
+            "source": "\\Spryker\\Zed\\ProductBundle\\Communication\\Plugin\\Product\\ProductBundleProductConcreteCollectionUpdateValidatorPlugin"
+        }
+    ]
+}

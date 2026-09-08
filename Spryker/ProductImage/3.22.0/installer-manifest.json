@@ -1,0 +1,26 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductAbstractCollectionExpanderPlugins",
+            "source": "\\Spryker\\Zed\\ProductImage\\Communication\\Plugin\\Product\\ProductImageAbstractCollectionExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductConcreteAfterUpdateCollectionPlugins",
+            "source": "\\Spryker\\Zed\\ProductImage\\Communication\\Plugin\\ProductConcreteAfterUpdatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductConcreteCollectionCreateValidatorPlugins",
+            "source": "\\Spryker\\Zed\\ProductImage\\Communication\\Plugin\\Product\\ProductImageSetExistsProductConcreteCollectionCreateValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductConcreteCollectionUpdateValidatorPlugins",
+            "source": "\\Spryker\\Zed\\ProductImage\\Communication\\Plugin\\Product\\ProductImageSetExistsProductConcreteCollectionUpdateValidatorPlugin"
+        }
+    ],
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\ProductImage\\ProductImageConfig::isProductImageSetUuidEnabled",
+            "value": true
+        }
+    ]
+}

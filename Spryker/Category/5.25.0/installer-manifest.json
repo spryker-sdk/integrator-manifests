@@ -1,0 +1,18 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\Category\\CategoryConfig::isCategoryUuidEnabled",
+            "value": true
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductAbstractCollectionCreateValidatorPlugins",
+            "source": "\\Spryker\\Zed\\Category\\Communication\\Plugin\\Product\\CategoryExistsProductAbstractCollectionCreateValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductAbstractCollectionUpdateValidatorPlugins",
+            "source": "\\Spryker\\Zed\\Category\\Communication\\Plugin\\Product\\CategoryExistsProductAbstractCollectionUpdateValidatorPlugin"
+        }
+    ]
+}

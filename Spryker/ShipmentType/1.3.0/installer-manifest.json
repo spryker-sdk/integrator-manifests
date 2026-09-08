@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductConcreteCollectionCreateValidatorPlugins",
+            "source": "\\Spryker\\Zed\\ShipmentType\\Communication\\Plugin\\Product\\ShipmentTypeExistsProductConcreteCollectionCreateValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductConcreteCollectionUpdateValidatorPlugins",
+            "source": "\\Spryker\\Zed\\ShipmentType\\Communication\\Plugin\\Product\\ShipmentTypeExistsProductConcreteCollectionUpdateValidatorPlugin"
+        }
+    ]
+}

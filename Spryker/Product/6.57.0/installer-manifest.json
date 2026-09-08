@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductConcreteAfterUpdateCollectionPlugins",
+            "source": "\\Spryker\\Zed\\ProductSearch\\Communication\\Plugin\\ProductConcrete\\ProductSearchProductConcreteAfterUpdatePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductConcreteAfterUpdateCollectionPlugins",
+            "source": "\\Spryker\\Zed\\ProductValidity\\Communication\\Plugin\\ProductValidityUpdatePlugin"
+        }
+    ]
+}

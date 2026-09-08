@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\Tax\\TaxConfig::isTaxSetUuidEnabled",
+            "value": true
+        }
+    ]
+}
