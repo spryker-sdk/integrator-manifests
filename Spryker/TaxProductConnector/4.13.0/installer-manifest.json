@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductAbstractCollectionCreateValidatorPlugins",
+            "source": "\\Spryker\\Zed\\TaxProductConnector\\Communication\\Plugin\\Product\\TaxSetExistsProductAbstractCollectionCreateValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Product\\ProductDependencyProvider::getProductAbstractCollectionUpdateValidatorPlugins",
+            "source": "\\Spryker\\Zed\\TaxProductConnector\\Communication\\Plugin\\Product\\TaxSetExistsProductAbstractCollectionUpdateValidatorPlugin"
+        }
+    ]
+}
