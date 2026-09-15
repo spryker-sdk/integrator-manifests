@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditions",
+            "source": "\\Spryker\\Zed\\ProductBundle\\Communication\\Plugin\\Checkout\\ProductBundleStoreCheckoutPreConditionPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutDependencyProvider::getCheckoutPreConditionsForOrderAmendment",
+            "source": "\\Spryker\\Zed\\ProductBundle\\Communication\\Plugin\\Checkout\\OrderAmendmentProductBundleStoreCheckoutPreConditionPlugin"
+        }
+    ]
+}
