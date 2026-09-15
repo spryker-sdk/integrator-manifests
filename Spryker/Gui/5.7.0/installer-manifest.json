@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\Gui\\GuiConfig::getLargeTableRowCountThreshold",
+            "value": 1000000
+        }
+    ]
+}
