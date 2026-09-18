@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\MerchantProfile\\MerchantProfileDependencyProvider::getMerchantProfileValidatorPlugins",
+            "source": "\\Spryker\\Glue\\MerchantProfile\\Plugin\\MerchantProfile\\StoreLocaleMerchantProfileValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\MerchantProfile\\MerchantProfileDependencyProvider::getMerchantProfileValidatorPlugins",
+            "source": "\\Spryker\\Glue\\MerchantProfile\\Plugin\\MerchantProfile\\HtmlTagWhitelistMerchantProfileValidatorPlugin"
+        }
+    ]
+}
