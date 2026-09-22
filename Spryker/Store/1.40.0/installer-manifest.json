@@ -1,0 +1,18 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\Store\\StoreConfig::isVisibleToCustomerEnabled",
+            "value": true
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\StoreGui\\StoreGuiDependencyProvider::getStoreFormExpanderPlugins",
+            "source": "\\Spryker\\Zed\\Store\\Communication\\Plugin\\StoreGui\\StoreVisibilityFormExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\StoreGui\\StoreGuiDependencyProvider::getStoreTableExpanderPlugins",
+            "source": "\\Spryker\\Zed\\Store\\Communication\\Plugin\\StoreGui\\StoreVisibilityTableExpanderPlugin"
+        }
+    ]
+}
