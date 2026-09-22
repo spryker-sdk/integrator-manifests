@@ -1,0 +1,12 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\Merchant\\MerchantDependencyProvider::getMerchantBackendResourceExpanderPlugins",
+            "source": "\\Spryker\\Glue\\MerchantRelationRequest\\Api\\Backend\\Plugin\\MerchantRelationRequestResourceExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\Merchant\\MerchantDependencyProvider::getMerchantBackendTransferExpanderPlugins",
+            "source": "\\Spryker\\Glue\\MerchantRelationRequest\\Api\\Backend\\Plugin\\MerchantRelationRequestTransferExpanderPlugin"
+        }
+    ]
+}
