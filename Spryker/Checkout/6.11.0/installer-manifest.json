@@ -1,0 +1,10 @@
+{
+    "glossary-key": {
+        "new": {
+            "checkout.error.quote_locked": {
+                "en_US": "This cart is currently being checked out. Please try again.",
+                "de_DE": "Dieser Warenkorb wird gerade bestellt. Bitte versuchen Sie es erneut."
+            }
+        }
+    }
+}
