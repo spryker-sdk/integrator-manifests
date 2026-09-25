@@ -1,0 +1,24 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\MultiFactorAuth\\Plugin\\GlueApplication\\RestApi\\MultiFactorAuthTypesResourcePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\MultiFactorAuth\\Plugin\\GlueApplication\\RestApi\\MultiFactorAuthTriggerResourcePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\MultiFactorAuth\\Plugin\\GlueApplication\\RestApi\\MultiFactorAuthActivateResourcePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\MultiFactorAuth\\Plugin\\GlueApplication\\RestApi\\MultiFactorAuthTypeVerifyResourcePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\MultiFactorAuth\\Plugin\\GlueApplication\\RestApi\\MultiFactorAuthTypeDeactivateResourcePlugin"
+        }
+    ]
+}
