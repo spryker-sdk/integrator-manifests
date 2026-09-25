@@ -1,0 +1,20 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Merchant\\MerchantDependencyProvider::getMerchantValidatorPlugins",
+            "source": "\\Spryker\\Zed\\Merchant\\Communication\\Plugin\\Merchant\\UniqueEmailMerchantValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Merchant\\MerchantDependencyProvider::getMerchantValidatorPlugins",
+            "source": "\\Spryker\\Zed\\Merchant\\Communication\\Plugin\\Merchant\\UniqueMerchantReferenceMerchantValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Merchant\\MerchantDependencyProvider::getMerchantValidatorPlugins",
+            "source": "\\Spryker\\Zed\\Merchant\\Communication\\Plugin\\Merchant\\UniqueNameMerchantValidatorPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Merchant\\MerchantDependencyProvider::getMerchantValidatorPlugins",
+            "source": "\\Spryker\\Zed\\Merchant\\Communication\\Plugin\\Merchant\\UrlMerchantValidatorPlugin"
+        }
+    ]
+}
