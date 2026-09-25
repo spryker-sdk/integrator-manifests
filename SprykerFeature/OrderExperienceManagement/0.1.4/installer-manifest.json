@@ -1,0 +1,30 @@
+{
+    "glossary-key": {
+        "new": {
+            "recurring_orders.mail.notify_buyer_upcoming_order.body.cta": {
+                "en_US": "View Order",
+                "de_DE": "Bestellung ansehen"
+            },
+            "recurring_orders.mail.notify_buyer_upcoming_order.body.intro": {
+                "en_US": "Your recurring order \"%schedule_name%\" is scheduled for %execution_date%. We will process it automatically on that date.",
+                "de_DE": "Ihre wiederkehrende Bestellung \"%schedule_name%\" ist für %execution_date% geplant. Wir werden sie automatisch an diesem Datum verarbeiten."
+            },
+            "recurring_orders.mail.notify_buyer_upcoming_order.body.review": {
+                "en_US": "If you need to make changes, please review and update your order before %expiry_date%.",
+                "de_DE": "Wenn Sie Änderungen vornehmen möchten, überprüfen und aktualisieren Sie bitte Ihre Bestellung vor dem %expiry_date%."
+            },
+            "recurring_orders.mail.notify_buyer_upcoming_order.salutation": {
+                "en_US": "Hello",
+                "de_DE": "Hallo"
+            },
+            "recurring_orders.mail.notify_buyer_upcoming_order.subject": {
+                "en_US": "Upcoming recurring order: \"%schedule_name%\" on %execution_date%",
+                "de_DE": "Bevorstehende Folgebestellung: \"%schedule_name%\" am %execution_date%"
+            },
+            "recurring_orders.scheduled.order.errors.title": {
+                "en_US": "The following issues were found with your recurring order and it could not be placed:",
+                "de_DE": "Die folgenden Probleme wurden bei Ihrer wiederkehrenden Bestellung festgestellt und sie konnte nicht aufgegeben werden:"
+            }
+        }
+    }
+}
