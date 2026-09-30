@@ -1,0 +1,24 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getResourcePlugins",
+            "source": "\\Spryker\\Glue\\MultiFactorAuth\\Plugin\\GlueBackendApiApplication\\MultiFactorAuthBackendResourcePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getResourcePlugins",
+            "source": "\\Spryker\\Glue\\MultiFactorAuth\\Plugin\\GlueBackendApiApplication\\MultiFactorAuthTriggerBackendResourcePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getResourcePlugins",
+            "source": "\\Spryker\\Glue\\MultiFactorAuth\\Plugin\\GlueBackendApiApplication\\MultiFactorAuthTypeActivateBackendResourcePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getResourcePlugins",
+            "source": "\\Spryker\\Glue\\MultiFactorAuth\\Plugin\\GlueBackendApiApplication\\MultiFactorAuthTypeDeactivateBackendResourcePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueBackendApiApplication\\GlueBackendApiApplicationDependencyProvider::getResourcePlugins",
+            "source": "\\Spryker\\Glue\\MultiFactorAuth\\Plugin\\GlueBackendApiApplication\\MultiFactorAuthTypeVerifyBackendResourcePlugin"
+        }
+    ]
+}
