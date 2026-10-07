@@ -1,0 +1,26 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\MerchantsRestApi\\Plugin\\GlueApplication\\MerchantsResourceRoutePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\MerchantsRestApi\\Plugin\\GlueApplication\\MerchantAddressesResourceRoutePlugin"
+        }
+    ],
+    "unwire-glue-relationship": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\MerchantsRestApi\\MerchantsRestApiConfig::RESOURCE_MERCHANTS": "\\Spryker\\Glue\\MerchantOpeningHoursRestApi\\Plugin\\GlueApplication\\MerchantOpeningHoursByMerchantReferenceResourceRelationshipPlugin"
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\MerchantsRestApi\\MerchantsRestApiConfig::RESOURCE_MERCHANTS": "\\Spryker\\Glue\\MerchantsRestApi\\Plugin\\GlueApplication\\MerchantAddressByMerchantReferenceResourceRelationshipPlugin"
+            }
+        }
+    ]
+}
