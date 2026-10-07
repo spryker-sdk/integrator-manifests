@@ -1,0 +1,8 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\Queue\\QueueConstants::QUEUE_WORKER_WAIT_LIMIT_ENABLED",
+            "value": true
+        }
+    ]
+}
