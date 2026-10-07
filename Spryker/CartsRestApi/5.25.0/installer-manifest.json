@@ -1,0 +1,50 @@
+{
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\CartsRestApi\\Plugin\\ResourceRoute\\CartsResourceRoutePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\CartsRestApi\\Plugin\\ResourceRoute\\CartItemsResourceRoutePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\CartsRestApi\\Plugin\\ResourceRoute\\GuestCartsResourceRoutePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\CartsRestApi\\Plugin\\ResourceRoute\\GuestCartItemsResourceRoutePlugin"
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider::getResourceRoutePlugins",
+            "source": "\\Spryker\\Glue\\CartsRestApi\\Plugin\\ResourceRoute\\CustomerCartsResourceRoutePlugin"
+        }
+    ],
+    "unwire-glue-relationship": [
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiConfig::RESOURCE_CART_ITEMS": "\\Spryker\\Glue\\ProductMeasurementUnitsRestApi\\Plugin\\GlueApplication\\SalesUnitsByCartItemResourceRelationshipPlugin"
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiConfig::RESOURCE_CART_ITEMS": "\\Spryker\\Glue\\MerchantsRestApi\\Plugin\\GlueApplication\\MerchantByMerchantReferenceResourceRelationshipPlugin"
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiConfig::RESOURCE_GUEST_CARTS_ITEMS": "\\Spryker\\Glue\\ProductMeasurementUnitsRestApi\\Plugin\\GlueApplication\\SalesUnitsByCartItemResourceRelationshipPlugin"
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\GlueApplication\\GlueApplicationDependencyProvider",
+            "source": {
+                "\\Spryker\\Glue\\CartsRestApi\\CartsRestApiConfig::RESOURCE_GUEST_CARTS_ITEMS": "\\Spryker\\Glue\\MerchantsRestApi\\Plugin\\GlueApplication\\MerchantByMerchantReferenceResourceRelationshipPlugin"
+            }
+        }
+    ]
+}
