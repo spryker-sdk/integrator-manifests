@@ -1,0 +1,9 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Queue\\QueueDependencyProvider::createQueueAdapters",
+            "source": "\\Spryker\\Client\\Queue\\Model\\Adapter\\InMemoryQueueAdapter",
+            "condition": "getenv('SPRYKER_DB_ENGINE') === static::DB_ENGINE_SQLITE"
+        }
+    ]
+}

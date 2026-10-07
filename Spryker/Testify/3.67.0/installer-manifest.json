@@ -1,0 +1,9 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Console\\ConsoleDependencyProvider::getConsoleCommands",
+            "source": "\\Spryker\\Zed\\Testify\\Communication\\Console\\BuildSqliteTemplateConsole",
+            "condition": "$this->getConfig()->isDevelopmentConsoleCommandsEnabled()"
+        }
+    ]
+}
