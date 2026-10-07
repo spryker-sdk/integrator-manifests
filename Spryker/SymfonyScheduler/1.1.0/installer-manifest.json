@@ -1,0 +1,20 @@
+{
+    "wire-navigation": [
+        {
+            "navigations": {
+                "maintenance": {
+                    "pages": {
+                        "symfony-scheduler": {
+                            "label": "Scheduler",
+                            "title": "Scheduler",
+                            "bundle": "symfony-scheduler",
+                            "controller": "index",
+                            "action": "index"
+                        }
+                    }
+                }
+            },
+            "after": "administration"
+        }
+    ]
+}
