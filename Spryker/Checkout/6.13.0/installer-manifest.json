@@ -1,0 +1,21 @@
+{
+    "configure-module": [
+        {
+            "previousValue": [],
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutConfig::getRetryableDriverErrorCodes",
+            "value": [
+                "static::DRIVER_CODE_SNAPSHOT_CONFLICT"
+            ]
+        },
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutConfig::DRIVER_CODE_SNAPSHOT_CONFLICT",
+            "value": 1020
+        }
+    ],
+    "add-config-array-element": [
+        {
+            "target": "\\Spryker\\Zed\\Checkout\\CheckoutConfig::getRetryableDriverErrorCodes",
+            "value": "\\static::DRIVER_CODE_SNAPSHOT_CONFLICT"
+        }
+    ]
+}
