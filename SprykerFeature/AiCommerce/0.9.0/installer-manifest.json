@@ -1,0 +1,138 @@
+{
+    "configure-module": [
+        {
+            "target": "\\SprykerFeature\\Client\\AiCommerce\\AiCommerceConfig::getStorefrontAssistantAiConfigurationName",
+            "value": {
+                "value": "return (string)$this->getModuleConfig(\\Pyz\\Shared\\AiCommerce\\AiCommerceConstants::CONFIGURATION_KEY_STOREFRONT_ASSISTANT_AI_CONFIGURATION)",
+                "is_literal": true
+            }
+        },
+        {
+            "previousValue": [],
+            "target": "\\SprykerFeature\\Client\\AiCommerce\\AiCommerceConfig::getProductDiscoveryAgentToolNames",
+            "value": [
+                "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\CatalogSearchToolPlugin::TOOL_NAME",
+                "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\CatalogSuggestToolPlugin::TOOL_NAME",
+                "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\CategoryTreeToolPlugin::TOOL_NAME",
+                "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\DisplayProductsToolPlugin::TOOL_NAME",
+                "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\ProductDetailsToolPlugin::TOOL_NAME",
+                "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\ProductRelationsToolPlugin::TOOL_NAME",
+                "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\ReadShopPageToolPlugin::TOOL_NAME",
+                "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\CompareProductsToolPlugin::TOOL_NAME",
+                "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\ProductSetsToolPlugin::TOOL_NAME",
+                "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\OfferChoicesToolPlugin::TOOL_NAME",
+                "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\DisplaySetupToolPlugin::TOOL_NAME"
+            ]
+        },
+        {
+            "previousValue": [],
+            "target": "\\SprykerFeature\\Client\\AiCommerce\\AiCommerceConfig::getStorefrontAssistantCustomerFacingToolNames",
+            "value": [
+                "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\DisplayProductsToolPlugin::TOOL_NAME",
+                "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\CompareProductsToolPlugin::TOOL_NAME",
+                "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\OfferChoicesToolPlugin::TOOL_NAME",
+                "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\DisplaySetupToolPlugin::TOOL_NAME"
+            ]
+        }
+    ],
+    "add-config-array-element": [
+        {
+            "target": "\\SprykerFeature\\Client\\AiCommerce\\AiCommerceConfig::getProductDiscoveryAgentToolNames",
+            "value": "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\CatalogSearchToolPlugin::TOOL_NAME"
+        },
+        {
+            "target": "\\SprykerFeature\\Client\\AiCommerce\\AiCommerceConfig::getProductDiscoveryAgentToolNames",
+            "value": "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\CatalogSuggestToolPlugin::TOOL_NAME"
+        },
+        {
+            "target": "\\SprykerFeature\\Client\\AiCommerce\\AiCommerceConfig::getProductDiscoveryAgentToolNames",
+            "value": "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\CategoryTreeToolPlugin::TOOL_NAME"
+        },
+        {
+            "target": "\\SprykerFeature\\Client\\AiCommerce\\AiCommerceConfig::getProductDiscoveryAgentToolNames",
+            "value": "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\DisplayProductsToolPlugin::TOOL_NAME"
+        },
+        {
+            "target": "\\SprykerFeature\\Client\\AiCommerce\\AiCommerceConfig::getProductDiscoveryAgentToolNames",
+            "value": "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\ProductDetailsToolPlugin::TOOL_NAME"
+        },
+        {
+            "target": "\\SprykerFeature\\Client\\AiCommerce\\AiCommerceConfig::getProductDiscoveryAgentToolNames",
+            "value": "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\ProductRelationsToolPlugin::TOOL_NAME"
+        },
+        {
+            "target": "\\SprykerFeature\\Client\\AiCommerce\\AiCommerceConfig::getProductDiscoveryAgentToolNames",
+            "value": "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\ReadShopPageToolPlugin::TOOL_NAME"
+        },
+        {
+            "target": "\\SprykerFeature\\Client\\AiCommerce\\AiCommerceConfig::getProductDiscoveryAgentToolNames",
+            "value": "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\CompareProductsToolPlugin::TOOL_NAME"
+        },
+        {
+            "target": "\\SprykerFeature\\Client\\AiCommerce\\AiCommerceConfig::getProductDiscoveryAgentToolNames",
+            "value": "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\ProductSetsToolPlugin::TOOL_NAME"
+        },
+        {
+            "target": "\\SprykerFeature\\Client\\AiCommerce\\AiCommerceConfig::getProductDiscoveryAgentToolNames",
+            "value": "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\OfferChoicesToolPlugin::TOOL_NAME"
+        },
+        {
+            "target": "\\SprykerFeature\\Client\\AiCommerce\\AiCommerceConfig::getProductDiscoveryAgentToolNames",
+            "value": "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\DisplaySetupToolPlugin::TOOL_NAME"
+        },
+        {
+            "target": "\\SprykerFeature\\Client\\AiCommerce\\AiCommerceConfig::getStorefrontAssistantCustomerFacingToolNames",
+            "value": "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\DisplayProductsToolPlugin::TOOL_NAME"
+        },
+        {
+            "target": "\\SprykerFeature\\Client\\AiCommerce\\AiCommerceConfig::getStorefrontAssistantCustomerFacingToolNames",
+            "value": "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\CompareProductsToolPlugin::TOOL_NAME"
+        },
+        {
+            "target": "\\SprykerFeature\\Client\\AiCommerce\\AiCommerceConfig::getStorefrontAssistantCustomerFacingToolNames",
+            "value": "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\OfferChoicesToolPlugin::TOOL_NAME"
+        },
+        {
+            "target": "\\SprykerFeature\\Client\\AiCommerce\\AiCommerceConfig::getStorefrontAssistantCustomerFacingToolNames",
+            "value": "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\DisplaySetupToolPlugin::TOOL_NAME"
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\SprykerFeature\\Client\\AiCommerce\\AiCommerceDependencyProvider::getSearchConfigExpanderPlugins",
+            "source": "\\Spryker\\Client\\ProductSearchConfigStorage\\Plugin\\Config\\ProductSearchConfigExpanderPlugin"
+        },
+        {
+            "target": "\\SprykerFeature\\Client\\AiCommerce\\AiCommerceDependencyProvider::getSearchConfigExpanderPlugins",
+            "source": "\\Spryker\\Client\\MerchantProductOfferSearch\\Plugin\\Search\\MerchantNameSearchConfigExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\AiFoundation\\AiFoundationDependencyProvider::getAiToolPlugins",
+            "source": "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\ProductDetailsToolPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\AiFoundation\\AiFoundationDependencyProvider::getAiToolPlugins",
+            "source": "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\ProductRelationsToolPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\AiFoundation\\AiFoundationDependencyProvider::getAiToolPlugins",
+            "source": "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\ReadShopPageToolPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\AiFoundation\\AiFoundationDependencyProvider::getAiToolPlugins",
+            "source": "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\CompareProductsToolPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\AiFoundation\\AiFoundationDependencyProvider::getAiToolPlugins",
+            "source": "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\ProductSetsToolPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\AiFoundation\\AiFoundationDependencyProvider::getAiToolPlugins",
+            "source": "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\OfferChoicesToolPlugin"
+        },
+        {
+            "target": "\\Spryker\\Client\\AiFoundation\\AiFoundationDependencyProvider::getAiToolPlugins",
+            "source": "\\SprykerFeature\\Client\\AiCommerce\\Plugin\\StorefrontAssistant\\Tool\\DisplaySetupToolPlugin"
+        }
+    ]
+}
