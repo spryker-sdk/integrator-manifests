@@ -1,0 +1,16 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getDiscountConfiguratorCollectionExpanderPlugins",
+            "source": "\\Spryker\\Zed\\DiscountPromotion\\Communication\\Plugin\\Discount\\DiscountPromotionDiscountConfiguratorCollectionExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getDiscountConfigurationOptionsExpanderPlugins",
+            "source": "\\Spryker\\Zed\\DiscountPromotion\\Communication\\Plugin\\Discount\\DiscountPromotionConfigurationOptionsExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountDependencyProvider::getDiscountConfiguratorValidatorRulePlugins",
+            "source": "\\Spryker\\Zed\\DiscountPromotion\\Communication\\Plugin\\Discount\\DiscountPromotionDiscountConfiguratorValidatorRulePlugin"
+        }
+    ]
+}
