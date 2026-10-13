@@ -1,0 +1,53 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Glue\\Discount\\DiscountConfig::getTransferPathByAttribute",
+            "value": {
+                "value": "return parent::getTransferPathByAttribute() + [static::ATTRIBUTE_PROMOTION => static::TRANSFER_PATH_DISCOUNT_PROMOTION]",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\Discount\\DiscountConfig::getAttributeByEntityIdentifier",
+            "value": {
+                "value": "return parent::getAttributeByEntityIdentifier() + [static::ENTITY_IDENTIFIER_PROMOTION_ABSTRACT_SKUS => static::ATTRIBUTE_PROMOTION_ABSTRACT_SKUS, static::ENTITY_IDENTIFIER_PROMOTION_QUANTITY => static::ATTRIBUTE_PROMOTION_QUANTITY]",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\Discount\\DiscountConfig::getResponseCodeByErrorMessage",
+            "value": {
+                "value": "return parent::getResponseCodeByErrorMessage() + [\\Spryker\\Shared\\DiscountPromotion\\DiscountPromotionConfig::TRANSLATION_KEY_ABSTRACT_SKUS_REQUIRED => static::RESPONSE_CODE_PROMOTION_INVALID, \\Spryker\\Shared\\DiscountPromotion\\DiscountPromotionConfig::TRANSLATION_KEY_QUANTITY_INVALID => static::RESPONSE_CODE_PROMOTION_INVALID, \\Spryker\\Shared\\DiscountPromotion\\DiscountPromotionConfig::TRANSLATION_KEY_ABSTRACT_SKUS_UNKNOWN => static::RESPONSE_CODE_PROMOTION_INVALID]",
+                "is_literal": true
+            }
+        },
+        {
+            "target": "\\Spryker\\Glue\\Discount\\DiscountConfig::ATTRIBUTE_PROMOTION",
+            "value": "promotion"
+        },
+        {
+            "target": "\\Spryker\\Glue\\Discount\\DiscountConfig::TRANSFER_PATH_DISCOUNT_PROMOTION",
+            "value": "discountCalculator.discountPromotion"
+        },
+        {
+            "target": "\\Spryker\\Glue\\Discount\\DiscountConfig::ATTRIBUTE_PROMOTION_ABSTRACT_SKUS",
+            "value": "promotion.abstractSkus"
+        },
+        {
+            "target": "\\Spryker\\Glue\\Discount\\DiscountConfig::ATTRIBUTE_PROMOTION_QUANTITY",
+            "value": "promotion.quantity"
+        },
+        {
+            "target": "\\Spryker\\Glue\\Discount\\DiscountConfig::ENTITY_IDENTIFIER_PROMOTION_ABSTRACT_SKUS",
+            "value": "discountCalculator.discountPromotion.abstractSkus"
+        },
+        {
+            "target": "\\Spryker\\Glue\\Discount\\DiscountConfig::ENTITY_IDENTIFIER_PROMOTION_QUANTITY",
+            "value": "discountCalculator.discountPromotion.quantity"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Discount\\DiscountConfig::isDiscountUuidEnabled",
+            "value": true
+        }
+    ]
+}
