@@ -1,0 +1,28 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\CustomerGroup\\CustomerGroupConfig::isRedirectToEditPageAfterUpdateEnabled",
+            "value": true
+        },
+        {
+            "previousValue": [],
+            "target": "\\Spryker\\Zed\\CustomerGroup\\CustomerGroupConfig::getFormTabOrder",
+            "value": [
+                "static::FORM_TAB_NAME_GENERAL",
+                "\\SprykerFeature\\Zed\\CustomerExperienceManagement\\Communication\\Plugin\\CustomerGroup\\CompanyCustomerGroupFormTabExpanderPlugin::TAB_NAME",
+                "\\SprykerFeature\\Zed\\CustomerExperienceManagement\\Communication\\Plugin\\CustomerGroup\\CompanyBusinessUnitCustomerGroupFormTabExpanderPlugin::TAB_NAME",
+                "static::FORM_TAB_NAME_CUSTOMER_ASSIGNMENT"
+            ]
+        }
+    ],
+    "add-config-array-element": [
+        {
+            "target": "\\Spryker\\Zed\\CustomerGroup\\CustomerGroupConfig::getFormTabOrder",
+            "value": "\\static::FORM_TAB_NAME_GENERAL"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CustomerGroup\\CustomerGroupConfig::getFormTabOrder",
+            "value": "\\static::FORM_TAB_NAME_CUSTOMER_ASSIGNMENT"
+        }
+    ]
+}

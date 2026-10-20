@@ -1,0 +1,62 @@
+{
+    "add-config-array-element": [
+        {
+            "target": "\\Spryker\\Zed\\CustomerGroup\\CustomerGroupConfig::getFormTabOrder",
+            "value": "\\SprykerFeature\\Zed\\CustomerExperienceManagement\\Communication\\Plugin\\CustomerGroup\\CompanyCustomerGroupFormTabExpanderPlugin::TAB_NAME"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CustomerGroup\\CustomerGroupConfig::getFormTabOrder",
+            "value": "\\SprykerFeature\\Zed\\CustomerExperienceManagement\\Communication\\Plugin\\CustomerGroup\\CompanyBusinessUnitCustomerGroupFormTabExpanderPlugin::TAB_NAME"
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CustomerGroup\\CustomerGroupDependencyProvider::getCustomerGroupPostSavePlugins",
+            "source": "\\SprykerFeature\\Zed\\CustomerExperienceManagement\\Communication\\Plugin\\CustomerGroup\\CompanyCustomerGroupPostSavePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CustomerGroup\\CustomerGroupDependencyProvider::getCustomerGroupPostSavePlugins",
+            "source": "\\SprykerFeature\\Zed\\CustomerExperienceManagement\\Communication\\Plugin\\CustomerGroup\\CompanyBusinessUnitCustomerGroupPostSavePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CustomerGroup\\CustomerGroupDependencyProvider::getCustomerGroupFormTabExpanderPlugins",
+            "source": "\\SprykerFeature\\Zed\\CustomerExperienceManagement\\Communication\\Plugin\\CustomerGroup\\CompanyCustomerGroupFormTabExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CustomerGroup\\CustomerGroupDependencyProvider::getCustomerGroupFormTabExpanderPlugins",
+            "source": "\\SprykerFeature\\Zed\\CustomerExperienceManagement\\Communication\\Plugin\\CustomerGroup\\CompanyBusinessUnitCustomerGroupFormTabExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CustomerGroup\\CustomerGroupDependencyProvider::getCustomerGroupFormExpanderPlugins",
+            "source": "\\SprykerFeature\\Zed\\CustomerExperienceManagement\\Communication\\Plugin\\CustomerGroup\\CompanyCustomerGroupFormExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CustomerGroup\\CustomerGroupDependencyProvider::getCustomerGroupFormExpanderPlugins",
+            "source": "\\SprykerFeature\\Zed\\CustomerExperienceManagement\\Communication\\Plugin\\CustomerGroup\\CompanyBusinessUnitCustomerGroupFormExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CustomerGroup\\CustomerGroupDependencyProvider::getCustomerGroupViewExpanderPlugins",
+            "source": "\\SprykerFeature\\Zed\\CustomerExperienceManagement\\Communication\\Plugin\\CustomerGroup\\CompanyCustomerGroupViewExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CustomerGroup\\CustomerGroupDependencyProvider::getCustomerGroupViewExpanderPlugins",
+            "source": "\\SprykerFeature\\Zed\\CustomerExperienceManagement\\Communication\\Plugin\\CustomerGroup\\CompanyBusinessUnitCustomerGroupViewExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
+            "source": "\\SprykerFeature\\Zed\\CustomerExperienceManagement\\Communication\\Plugin\\DataImport\\CustomerGroupDataImportPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
+            "source": "\\SprykerFeature\\Zed\\CustomerExperienceManagement\\Communication\\Plugin\\DataImport\\CustomerGroupCompanyDataImportPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
+            "source": "\\SprykerFeature\\Zed\\CustomerExperienceManagement\\Communication\\Plugin\\DataImport\\CustomerGroupCompanyBusinessUnitDataImportPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
+            "source": "\\SprykerFeature\\Zed\\CustomerExperienceManagement\\Communication\\Plugin\\DataImport\\CustomerGroupCustomerDataImportPlugin"
+        }
+    ]
+}
