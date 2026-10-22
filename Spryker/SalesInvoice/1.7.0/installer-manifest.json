@@ -1,0 +1,16 @@
+{
+    "glossary-key": {
+        "new": {
+            "order_invoice.invoice_template.merchant.registration_number": {
+                "en_US": "Registration number:",
+                "de_DE": "Registernummer:"
+            }
+        }
+    },
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getSalesDetailBlockRendererPlugins",
+            "source": "\\Spryker\\Zed\\SalesInvoice\\Communication\\Plugin\\Sales\\OrderInvoiceSalesListBlockRendererPlugin"
+        }
+    ]
+}

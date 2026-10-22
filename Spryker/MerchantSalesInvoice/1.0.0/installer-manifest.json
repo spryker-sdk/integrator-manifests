@@ -1,0 +1,43 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\AclMerchantPortal\\AclMerchantPortalDependencyProvider::getMerchantAclRuleExpanderPlugins",
+            "source": "\\Spryker\\Zed\\MerchantSalesInvoice\\Communication\\Plugin\\AclMerchantPortal\\MerchantSalesInvoiceMerchantAclRuleExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\MerchantSalesOrder\\MerchantSalesOrderDependencyProvider::getMerchantOrderExpanderPlugins",
+            "source": "\\Spryker\\Zed\\MerchantSalesInvoice\\Communication\\Plugin\\MerchantSalesOrder\\OrderInvoicesMerchantOrderExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Oms\\OmsDependencyProvider::extendCommandPlugins",
+            "source": "\\Spryker\\Zed\\MerchantSalesInvoice\\Communication\\Plugin\\Oms\\GenerateMerchantOrderInvoicesCommandPlugin",
+            "arguments": {
+                "append-arguments": [
+                    {
+                        "value": "MerchantInvoice/Generate"
+                    }
+                ]
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\Sales\\SalesDependencyProvider::getSalesDetailBlockRendererPlugins",
+            "source": "\\Spryker\\Zed\\MerchantSalesInvoice\\Communication\\Plugin\\Sales\\MerchantOrderInvoiceSalesListBlockRendererPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\SalesInvoice\\SalesInvoiceDependencyProvider::getOrderInvoiceBeforeSavePlugins",
+            "source": "\\Spryker\\Zed\\MerchantSalesInvoice\\Communication\\Plugin\\SalesInvoice\\MerchantReferenceOrderInvoiceBeforeSavePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\SalesInvoice\\SalesInvoiceDependencyProvider::getOrderInvoicesExpanderPlugins",
+            "source": "\\Spryker\\Zed\\MerchantSalesInvoice\\Communication\\Plugin\\SalesInvoice\\MerchantOrderInvoicesExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\SalesInvoice\\SalesInvoiceDependencyProvider::getOrderInvoiceExistenceCheckStrategyPlugins",
+            "source": "\\Spryker\\Zed\\MerchantSalesInvoice\\Communication\\Plugin\\SalesInvoice\\MerchantOrderInvoiceExistenceCheckStrategyPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\SalesInvoice\\SalesInvoiceDependencyProvider::getOrderInvoiceRenderOrderExpanderPlugins",
+            "source": "\\Spryker\\Zed\\MerchantSalesInvoice\\Communication\\Plugin\\SalesInvoice\\MerchantOrderInvoiceRenderOrderExpanderPlugin"
+        }
+    ]
+}
