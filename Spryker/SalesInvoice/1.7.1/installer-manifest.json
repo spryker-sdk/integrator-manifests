@@ -1,0 +1,10 @@
+{
+    "glossary-key": {
+        "new": {
+            "order_invoice.invoice_template.table.shipment": {
+                "en_US": "Shipment: %name%",
+                "de_DE": "Versand: %name%"
+            }
+        }
+    }
+}
