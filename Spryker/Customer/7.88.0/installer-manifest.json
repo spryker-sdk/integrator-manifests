@@ -1,0 +1,10 @@
+{
+    "glossary-key": {
+        "new": {
+            "customer.change_customer_email_limit_exceeded": {
+                "en_US": "You reached the limit of email change requests. Please try again later.",
+                "de_DE": "Sie haben das Limit für Anfragen zur Änderung der E-Mail-Adresse erreicht. Bitte versuchen Sie es später erneut."
+            }
+        }
+    }
+}
