@@ -1,0 +1,8 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\WishlistsRestApi\\WishlistsRestApiDependencyProvider::getRestWishlistItemsAttributesUpdateStrategyPlugins",
+            "source": "\\Spryker\\Zed\\MerchantProductOfferWishlistRestApi\\Communication\\Plugin\\ProductOfferRestWishlistItemsAttributesUpdateStrategyPlugin"
+        }
+    ]
+}
