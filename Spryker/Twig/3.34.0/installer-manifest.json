@@ -1,0 +1,21 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Shared\\Twig\\TwigConfig::getNestedSharedThemeTemplatePathPattern",
+            "value": {
+                "value": "return rtrim(APPLICATION_SOURCE_DIR, DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR . $namespace . '/%1$s/src/' . $namespace . '/Shared/%1$s/Theme/' . $themeName",
+                "is_literal": true
+            }
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\Twig\\TwigDependencyProvider::getTwigLoaderPlugins",
+            "source": "\\Spryker\\Yves\\Twig\\Plugin\\SharedThemeTwigLoaderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Twig\\TwigDependencyProvider::getTwigLoaderPlugins",
+            "source": "\\Spryker\\Zed\\Twig\\Communication\\Plugin\\SharedThemeTwigLoaderPlugin"
+        }
+    ]
+}

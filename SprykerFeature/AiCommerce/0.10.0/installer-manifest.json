@@ -1,0 +1,271 @@
+{
+    "glossary-key": {
+        "new": {
+            "ai_commerce.storefront_assistant.action.scroll_latest": {
+                "en_US": "Scroll to latest messages",
+                "de_DE": "Zu den neuesten Nachrichten scrollen"
+            },
+            "ai_commerce.storefront_assistant.reasoning.title": {
+                "en_US": "Reasoning",
+                "de_DE": "Überlegungen"
+            },
+            "ai_commerce.storefront_assistant.action.copied": {
+                "en_US": "Copied",
+                "de_DE": "Kopiert"
+            },
+            "ai_commerce.storefront_assistant.activity.answering": {
+                "en_US": "The assistant is answering…",
+                "de_DE": "Der Assistent antwortet …"
+            },
+            "ai_commerce.storefront_assistant.page_context.attach": {
+                "en_US": "Use this page in the next message",
+                "de_DE": "Diese Seite in der nächsten Nachricht verwenden"
+            },
+            "ai_commerce.storefront_assistant.attachment.read_failed": {
+                "en_US": "The file %name% could not be read.",
+                "de_DE": "Die Datei %name% konnte nicht gelesen werden."
+            },
+            "ai_commerce.storefront_assistant.tool.product_details": {
+                "en_US": "Reading product details",
+                "de_DE": "Produktdetails werden gelesen"
+            },
+            "ai_commerce.storefront_assistant.tool.product_relations": {
+                "en_US": "Finding related products",
+                "de_DE": "Passende Produkte werden gesucht"
+            },
+            "ai_commerce.storefront_assistant.tool.read_shop_page": {
+                "en_US": "Reading shop information",
+                "de_DE": "Shop-Informationen werden gelesen"
+            },
+            "ai_commerce.storefront_assistant.tool.compare_products": {
+                "en_US": "Comparing products",
+                "de_DE": "Produkte werden verglichen"
+            },
+            "ai_commerce.storefront_assistant.tool.product_sets": {
+                "en_US": "Looking up product sets",
+                "de_DE": "Produktsets werden gesucht"
+            },
+            "ai_commerce.storefront_assistant.tool.offer_choices": {
+                "en_US": "Preparing choices",
+                "de_DE": "Auswahl wird vorbereitet"
+            },
+            "ai_commerce.storefront_assistant.tool.display_setup": {
+                "en_US": "Putting your setup together",
+                "de_DE": "Ihr Set wird zusammengestellt"
+            },
+            "ai_commerce.storefront_assistant.comparison.title": {
+                "en_US": "Product comparison",
+                "de_DE": "Produktvergleich"
+            },
+            "ai_commerce.storefront_assistant.comparison.rating": {
+                "en_US": "Rating",
+                "de_DE": "Bewertung"
+            },
+            "ai_commerce.storefront_assistant.comparison.availability": {
+                "en_US": "Availability",
+                "de_DE": "Verfügbarkeit"
+            },
+            "ai_commerce.storefront_assistant.comparison.available": {
+                "en_US": "In stock",
+                "de_DE": "Auf Lager"
+            },
+            "ai_commerce.storefront_assistant.comparison.unavailable": {
+                "en_US": "Out of stock",
+                "de_DE": "Nicht auf Lager"
+            },
+            "ai_commerce.storefront_assistant.comparison.full_comparison": {
+                "en_US": "Full comparison",
+                "de_DE": "Vollständiger Vergleich"
+            },
+            "ai_commerce.storefront_assistant.refinement.select": {
+                "en_US": "Show only %label%",
+                "de_DE": "Nur %label% anzeigen"
+            },
+            "ai_commerce.storefront_assistant.refinement.remove": {
+                "en_US": "Remove the %label% filter",
+                "de_DE": "Filter %label% entfernen"
+            },
+            "ai_commerce.storefront_assistant.refinement.active_filters": {
+                "en_US": "Active filters",
+                "de_DE": "Aktive Filter"
+            },
+            "ai_commerce.storefront_assistant.refinement.chips": {
+                "en_US": "Narrow the results",
+                "de_DE": "Ergebnisse eingrenzen"
+            },
+            "ai_commerce.storefront_assistant.see_all": {
+                "en_US": "See all %count% results",
+                "de_DE": "Alle %count% Ergebnisse anzeigen"
+            },
+            "ai_commerce.storefront_assistant.product.price_outlier": {
+                "en_US": "Price looks unusual",
+                "de_DE": "Preis wirkt ungewöhnlich"
+            },
+            "ai_commerce.storefront_assistant.setup.total": {
+                "en_US": "Total %total% of your %budget% budget",
+                "de_DE": "Gesamt %total% von Ihrem Budget %budget%"
+            },
+            "ai_commerce.storefront_assistant.setup.total_without_budget": {
+                "en_US": "Total %total%",
+                "de_DE": "Gesamt %total%"
+            },
+            "ai_commerce.storefront_assistant.action.more_options": {
+                "en_US": "More options",
+                "de_DE": "Weitere Optionen"
+            },
+            "ai_commerce.storefront_assistant.action.expand": {
+                "en_US": "Expand assistant",
+                "de_DE": "Assistent maximieren"
+            },
+            "ai_commerce.storefront_assistant.action.collapse": {
+                "en_US": "Collapse assistant",
+                "de_DE": "Assistent verkleinern"
+            },
+            "ai_commerce.storefront_assistant.action.copy": {
+                "en_US": "Copy response",
+                "de_DE": "Antwort kopieren"
+            },
+            "ai_commerce.storefront_assistant.action.regenerate": {
+                "en_US": "Regenerate response",
+                "de_DE": "Antwort neu erstellen"
+            },
+            "ai_commerce.storefront_assistant.action.back": {
+                "en_US": "Back to chat",
+                "de_DE": "Zurück zum Chat"
+            },
+            "ai_commerce.storefront_assistant.histories.start_new": {
+                "en_US": "Start a new chat",
+                "de_DE": "Neuen Chat starten"
+            },
+            "ai_commerce.storefront_assistant.histories.select": {
+                "en_US": "Select",
+                "de_DE": "Auswählen"
+            },
+            "ai_commerce.storefront_assistant.histories.cancel": {
+                "en_US": "Cancel",
+                "de_DE": "Abbrechen"
+            },
+            "ai_commerce.storefront_assistant.histories.select_all": {
+                "en_US": "Select all",
+                "de_DE": "Alle auswählen"
+            },
+            "ai_commerce.storefront_assistant.histories.delete": {
+                "en_US": "Delete",
+                "de_DE": "Löschen"
+            },
+            "ai_commerce.storefront_assistant.histories.delete_selected_confirm": {
+                "en_US": "Delete the selected conversations?",
+                "de_DE": "Die ausgewählten Unterhaltungen löschen?"
+            },
+            "ai_commerce.storefront_assistant.histories.current": {
+                "en_US": "Current",
+                "de_DE": "Aktuell"
+            },
+            "ai_commerce.storefront_assistant.histories.close": {
+                "en_US": "Close chat history",
+                "de_DE": "Chatverlauf schließen"
+            },
+            "ai_commerce.storefront_assistant.histories.select_item": {
+                "en_US": "Select conversation %name%",
+                "de_DE": "Unterhaltung %name% auswählen"
+            },
+            "ai_commerce.storefront_assistant.histories.delete_item": {
+                "en_US": "Delete conversation %name%",
+                "de_DE": "Unterhaltung %name% löschen"
+            },
+            "ai_commerce.storefront_assistant.product.sku": {
+                "en_US": "SKU",
+                "de_DE": "SKU"
+            },
+            "ai_commerce.storefront_assistant.product.view": {
+                "en_US": "View product",
+                "de_DE": "Produkt ansehen"
+            },
+            "ai_commerce.storefront_assistant.product.compare": {
+                "en_US": "Compare",
+                "de_DE": "Vergleichen"
+            },
+            "ai_commerce.storefront_assistant.product.previous": {
+                "en_US": "Previous product",
+                "de_DE": "Vorheriges Produkt"
+            },
+            "ai_commerce.storefront_assistant.product.next": {
+                "en_US": "Next product",
+                "de_DE": "Nächstes Produkt"
+            },
+            "ai_commerce.storefront_assistant.compare.selected_one": {
+                "en_US": "1 product selected",
+                "de_DE": "1 Produkt ausgewählt"
+            },
+            "ai_commerce.storefront_assistant.compare.selected_many": {
+                "en_US": "%count% products selected",
+                "de_DE": "%count% Produkte ausgewählt"
+            },
+            "ai_commerce.storefront_assistant.compare.clear": {
+                "en_US": "Clear",
+                "de_DE": "Leeren"
+            },
+            "ai_commerce.storefront_assistant.compare.submit": {
+                "en_US": "Compare selected",
+                "de_DE": "Auswahl vergleichen"
+            },
+            "ai_commerce.storefront_assistant.compare.remove": {
+                "en_US": "Remove %name% from comparison",
+                "de_DE": "%name% aus dem Vergleich entfernen"
+            },
+            "ai_commerce.storefront_assistant.compare.message": {
+                "en_US": "Compare these products: %products%",
+                "de_DE": "Vergleiche diese Produkte: %products%"
+            },
+            "ai_commerce.storefront_assistant.comparison.open": {
+                "en_US": "Open comparison",
+                "de_DE": "Vergleich öffnen"
+            },
+            "ai_commerce.storefront_assistant.comparison.view_title": {
+                "en_US": "Compare products",
+                "de_DE": "Produkte vergleichen"
+            },
+            "ai_commerce.storefront_assistant.comparison.products_count": {
+                "en_US": "%count% products",
+                "de_DE": "%count% Produkte"
+            },
+            "ai_commerce.storefront_assistant.comparison.differences_only": {
+                "en_US": "Show only differences",
+                "de_DE": "Nur Unterschiede anzeigen"
+            },
+            "ai_commerce.storefront_assistant.comparison.attribute": {
+                "en_US": "Attribute",
+                "de_DE": "Merkmal"
+            },
+            "ai_commerce.storefront_assistant.comparison.overview": {
+                "en_US": "Overview",
+                "de_DE": "Übersicht"
+            },
+            "ai_commerce.storefront_assistant.comparison.specifications": {
+                "en_US": "Key specifications",
+                "de_DE": "Wichtige Merkmale"
+            },
+            "ai_commerce.storefront_assistant.comparison.not_provided": {
+                "en_US": "Not provided",
+                "de_DE": "Nicht angegeben"
+            },
+            "ai_commerce.storefront_assistant.composer.hint": {
+                "en_US": "Enter to send · Shift + Enter for a new line",
+                "de_DE": "Enter zum Senden · Umschalt + Enter für eine neue Zeile"
+            },
+            "ai_commerce.storefront_assistant.composer.ai_disclosure": {
+                "en_US": "AI-generated responses. Review before acting.",
+                "de_DE": "KI-generierte Antworten. Vor dem Handeln prüfen."
+            },
+            "ai_commerce.storefront_assistant.attachment.remove": {
+                "en_US": "Remove attachment",
+                "de_DE": "Anhang entfernen"
+            }
+        }
+    },
+    "wire-widget": [
+        {
+            "source": "\\SprykerFeature\\Yves\\AiCommerce\\StorefrontAssistant\\Widget\\StorefrontAssistantWidget"
+        }
+    ]
+}
