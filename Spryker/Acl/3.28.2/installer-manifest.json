@@ -1,0 +1,39 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\Acl\\AclConfig::getRules",
+            "value": {
+                "value": "$rules = [['bundle' => 'security-merchant-portal-gui', 'controller' => \\Spryker\\Shared\\Acl\\AclConstants::VALIDATOR_WILDCARD, 'action' => \\Spryker\\Shared\\Acl\\AclConstants::VALIDATOR_WILDCARD, 'type' => \\Spryker\\Shared\\Acl\\AclConstants::ALLOW], ['bundle' => 'security-gui', 'controller' => \\Spryker\\Shared\\Acl\\AclConstants::VALIDATOR_WILDCARD, 'action' => \\Spryker\\Shared\\Acl\\AclConstants::VALIDATOR_WILDCARD, 'type' => \\Spryker\\Shared\\Acl\\AclConstants::ALLOW], ['bundle' => 'multi-factor-auth', 'controller' => \\Spryker\\Shared\\Acl\\AclConstants::VALIDATOR_WILDCARD, 'action' => \\Spryker\\Shared\\Acl\\AclConstants::VALIDATOR_WILDCARD, 'type' => \\Spryker\\Shared\\Acl\\AclConstants::ALLOW], ['bundle' => 'multi-factor-auth-merchant-portal', 'controller' => \\Spryker\\Shared\\Acl\\AclConstants::VALIDATOR_WILDCARD, 'action' => \\Spryker\\Shared\\Acl\\AclConstants::VALIDATOR_WILDCARD, 'type' => \\Spryker\\Shared\\Acl\\AclConstants::ALLOW], ['bundle' => 'acl', 'controller' => 'index', 'action' => 'denied', 'type' => \\Spryker\\Shared\\Acl\\AclConstants::ALLOW], ['bundle' => 'health-check', 'controller' => 'index', 'action' => 'index', 'type' => \\Spryker\\Shared\\Acl\\AclConstants::ALLOW], ['bundle' => '_profiler', 'controller' => \\Spryker\\Shared\\Acl\\AclConstants::VALIDATOR_WILDCARD, 'action' => \\Spryker\\Shared\\Acl\\AclConstants::VALIDATOR_WILDCARD, 'type' => \\Spryker\\Shared\\Acl\\AclConstants::ALLOW], ['bundle' => 'api', 'controller' => 'rest', 'action' => \\Spryker\\Shared\\Acl\\AclConstants::VALIDATOR_WILDCARD, 'type' => \\Spryker\\Shared\\Acl\\AclConstants::ALLOW], ['bundle' => 'agent-security-merchant-portal-gui', 'controller' => \\Spryker\\Shared\\Acl\\AclConstants::VALIDATOR_WILDCARD, 'action' => \\Spryker\\Shared\\Acl\\AclConstants::VALIDATOR_WILDCARD, 'type' => \\Spryker\\Shared\\Acl\\AclConstants::ALLOW], ['bundle' => 'security-oauth-knpu', 'controller' => \\Spryker\\Shared\\Acl\\AclConstants::VALIDATOR_WILDCARD, 'action' => \\Spryker\\Shared\\Acl\\AclConstants::VALIDATOR_WILDCARD, 'type' => \\Spryker\\Shared\\Acl\\AclConstants::ALLOW]]; return array_merge($rules, $this->rules)",
+                "is_literal": true
+            }
+        },
+        {
+            "previousValue": [],
+            "target": "\\Spryker\\Zed\\Acl\\AclConfig::getCredentials",
+            "value": {
+                "yves_system": {
+                    "rules": [
+                        {
+                            "bundle": "\\Spryker\\Shared\\Acl\\AclConstants::VALIDATOR_WILDCARD",
+                            "controller": "gateway",
+                            "action": "\\Spryker\\Shared\\Acl\\AclConstants::VALIDATOR_WILDCARD",
+                            "type": "\\Spryker\\Shared\\Acl\\AclConstants::ALLOW"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "previousValue": [],
+            "target": "\\Spryker\\Zed\\Acl\\AclConfig::getUserRuleWhitelist",
+            "value": [
+                {
+                    "bundle": "application",
+                    "controller": "\\Spryker\\Shared\\Acl\\AclConstants::VALIDATOR_WILDCARD",
+                    "action": "\\Spryker\\Shared\\Acl\\AclConstants::VALIDATOR_WILDCARD",
+                    "type": "\\Spryker\\Shared\\Acl\\AclConstants::ALLOW"
+                }
+            ]
+        }
+    ]
+}
