@@ -1,0 +1,16 @@
+{
+    "glossary-key": {
+        "new": {
+            "ai_commerce.storefront_assistant.attachment.too_large_size": {
+                "en_US": "File is too large. Maximum size is %maxSize%.",
+                "de_DE": "Datei ist zu groß. Maximale Größe: %maxSize%."
+            }
+        }
+    },
+    "configure-module": [
+        {
+            "target": "\\SprykerFeature\\Client\\AiCommerce\\AiCommerceConfig::IS_STOREFRONT_ASSISTANT_PRODUCT_COMPARISON_PAGE_ENABLED",
+            "value": true
+        }
+    ]
+}
