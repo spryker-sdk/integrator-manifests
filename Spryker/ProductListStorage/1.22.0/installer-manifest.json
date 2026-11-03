@@ -1,0 +1,14 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Client\\Catalog\\CatalogDependencyProvider::getProductConcreteStorageSearchResultFilterPlugins",
+            "source": "\\Spryker\\Client\\ProductListStorage\\Plugin\\Catalog\\ProductListProductConcreteStorageSearchResultFilterPlugin"
+        }
+    ],
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\ProductListStorage\\ProductListStorageConfig::isProductConcreteOwnProductListsPublishingEnabled",
+            "value": true
+        }
+    ]
+}
