@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Zed\\Synchronization\\SynchronizationConfig::isQueryContainerSyncExportKeysetPaginationEnabled",
+            "value": true
+        }
+    ]
+}
