@@ -1,0 +1,38 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ChartGui\\ChartGuiDependencyProvider::getChartPlugins",
+            "source": "\\Spryker\\Zed\\SalesStatistics\\Communication\\Plugin\\DailyOrderCountChartPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ChartGui\\ChartGuiDependencyProvider::getChartPlugins",
+            "source": "\\Spryker\\Zed\\SalesStatistics\\Communication\\Plugin\\OrderItemCountByStatusChartPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Dashboard\\DashboardDependencyProvider::getDashboardPlugins",
+            "source": "\\Spryker\\Zed\\SalesStatistics\\Communication\\Plugin\\DailyOrderCountChartPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Dashboard\\DashboardDependencyProvider::getDashboardPlugins",
+            "source": "\\Spryker\\Zed\\SalesStatistics\\Communication\\Plugin\\OrderItemCountByStatusChartPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\ChartGui\\ChartGuiDependencyProvider::getChartPlugins",
+            "source": "\\Spryker\\Zed\\SalesStatistics\\Communication\\Plugin\\CountOrderChartPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ChartGui\\ChartGuiDependencyProvider::getChartPlugins",
+            "source": "\\Spryker\\Zed\\SalesStatistics\\Communication\\Plugin\\StatusOrderChartPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Dashboard\\DashboardDependencyProvider::getDashboardPlugins",
+            "source": "\\Spryker\\Zed\\SalesStatistics\\Communication\\Plugin\\CountOrderChartPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\Dashboard\\DashboardDependencyProvider::getDashboardPlugins",
+            "source": "\\Spryker\\Zed\\SalesStatistics\\Communication\\Plugin\\StatusOrderChartPlugin"
+        }
+    ]
+}
