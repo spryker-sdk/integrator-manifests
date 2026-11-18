@@ -1,0 +1,8 @@
+{
+    "configure-module": [
+        {
+            "target": "\\Spryker\\Glue\\AvailabilityNotificationsRestApi\\AvailabilityNotificationsRestApiConfig::isSubscriptionResponseWithoutKeyEnabled",
+            "value": true
+        }
+    ]
+}
