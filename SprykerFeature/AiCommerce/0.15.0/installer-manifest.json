@@ -1,0 +1,32 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\Console\\ConsoleDependencyProvider::getConsoleCommands",
+            "source": "\\Spryker\\Zed\\DataImport\\Communication\\Console\\DataImportConsole",
+            "arguments": {
+                "constructor-arguments": [
+                    {
+                        "value": "\\Spryker\\Zed\\DataImport\\Communication\\Console\\DataImportConsole::DEFAULT_NAME . static::COMMAND_SEPARATOR . \\SprykerFeature\\Zed\\AiCommerce\\AiCommerceConfig::IMPORT_TYPE_PRODUCT_ATTACHMENT_KNOWLEDGE_SELECTION",
+                        "is_literal": true
+                    }
+                ]
+            }
+        },
+        {
+            "target": "\\Spryker\\Zed\\DataImport\\DataImportDependencyProvider::getDataImporterPlugins",
+            "source": "\\SprykerFeature\\Zed\\AiCommerce\\Communication\\Plugin\\DataImport\\ProductAttachmentKnowledgeSelectionDataImportPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductAttachment\\ProductAttachmentDependencyProvider::getProductAttachmentCollectionExpanderPlugins",
+            "source": "\\SprykerFeature\\Zed\\AiCommerce\\Communication\\Plugin\\ProductAttachment\\KnowledgeSelectionProductAttachmentCollectionExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductAttachment\\ProductAttachmentDependencyProvider::getProductAttachmentCollectionPostSavePlugins",
+            "source": "\\SprykerFeature\\Zed\\AiCommerce\\Communication\\Plugin\\ProductAttachment\\KnowledgeSelectionProductAttachmentCollectionPostSavePlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\ProductAttachment\\ProductAttachmentDependencyProvider::getProductAttachmentFormExpanderPlugins",
+            "source": "\\SprykerFeature\\Zed\\AiCommerce\\Communication\\Plugin\\ProductAttachment\\KnowledgeSelectionProductAttachmentFormExpanderPlugin"
+        }
+    ]
+}
