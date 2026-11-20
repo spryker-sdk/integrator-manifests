@@ -1,0 +1,28 @@
+{
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Zed\\CustomerGroup\\CustomerGroupDependencyProvider::getCustomerGroupProviderPlugins",
+            "source": "\\SprykerFeature\\Zed\\CustomerExperienceManagement\\Communication\\Plugin\\CustomerGroup\\CompanyUserCustomerGroupProviderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CustomerGroup\\CustomerGroupDependencyProvider::getCustomerGroupAssignmentFilterPlugins",
+            "source": "\\SprykerFeature\\Zed\\CustomerExperienceManagement\\Communication\\Plugin\\CustomerGroup\\CustomerCustomerGroupAssignmentFilterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CustomerGroup\\CustomerGroupDependencyProvider::getCustomerGroupAssignmentFilterPlugins",
+            "source": "\\SprykerFeature\\Zed\\CustomerExperienceManagement\\Communication\\Plugin\\CustomerGroup\\CompanyCustomerGroupAssignmentFilterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CustomerGroup\\CustomerGroupDependencyProvider::getCustomerGroupAssignmentFilterPlugins",
+            "source": "\\SprykerFeature\\Zed\\CustomerExperienceManagement\\Communication\\Plugin\\CustomerGroup\\CompanyBusinessUnitCustomerGroupAssignmentFilterPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CustomerGroup\\CustomerGroupDependencyProvider::getCustomerGroupQueryExpanderPlugins",
+            "source": "\\SprykerFeature\\Zed\\CustomerExperienceManagement\\Communication\\Plugin\\CustomerGroup\\CompanyCustomerGroupQueryExpanderPlugin"
+        },
+        {
+            "target": "\\Spryker\\Zed\\CustomerGroup\\CustomerGroupDependencyProvider::getCustomerGroupQueryExpanderPlugins",
+            "source": "\\SprykerFeature\\Zed\\CustomerExperienceManagement\\Communication\\Plugin\\CustomerGroup\\CompanyBusinessUnitCustomerGroupQueryExpanderPlugin"
+        }
+    ]
+}
