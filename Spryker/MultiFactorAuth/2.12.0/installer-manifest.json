@@ -1,0 +1,38 @@
+{
+    "glossary-key": {
+        "new": {
+            "multi_factor_auth.setup.title": {
+                "en_US": "Keep your account secure",
+                "de_DE": "Schützen Sie Ihr Konto"
+            },
+            "multi_factor_auth.setup.intro": {
+                "en_US": "Add an extra step when you sign in. After you enter your password, we ask for a one-time code. This way, only you can access your account, even if someone else knows your password.",
+                "de_DE": "Fügen Sie bei der Anmeldung einen zusätzlichen Schritt hinzu. Nachdem Sie Ihr Passwort eingegeben haben, fragen wir nach einem Einmalcode. So können nur Sie auf Ihr Konto zugreifen, selbst wenn jemand anderes Ihr Passwort kennt."
+            },
+            "multi_factor_auth.setup.step.activate": {
+                "en_US": "Click \"Activate\" next to the method you want to use.",
+                "de_DE": "Klicken Sie neben der gewünschten Methode auf „Aktivieren“."
+            },
+            "multi_factor_auth.setup.step.receive_code": {
+                "en_US": "We send you a one-time code. For Email, check the inbox of the email address you use for this account.",
+                "de_DE": "Wir senden Ihnen einen Einmalcode. Bei E-Mail finden Sie ihn im Posteingang der E-Mail-Adresse, die Sie für dieses Konto verwenden."
+            },
+            "multi_factor_auth.setup.step.confirm": {
+                "en_US": "Enter the code to confirm. From now on, you enter a new code after your password every time you sign in.",
+                "de_DE": "Geben Sie den Code zur Bestätigung ein. Ab jetzt geben Sie bei jeder Anmeldung nach Ihrem Passwort einen neuen Code ein."
+            },
+            "multi_factor_auth.setup.deactivation_note": {
+                "en_US": "You can turn this off at any time by clicking \"Deactivate\". To confirm, we ask you for a code.",
+                "de_DE": "Sie können dies jederzeit mit „Deaktivieren“ ausschalten. Zur Bestätigung fragen wir Sie nach einem Code."
+            },
+            "multi_factor_auth.status.active": {
+                "en_US": "Active",
+                "de_DE": "Aktiv"
+            },
+            "multi_factor_auth.status.inactive": {
+                "en_US": "Inactive",
+                "de_DE": "Inaktiv"
+            }
+        }
+    }
+}
