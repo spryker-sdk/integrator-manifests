@@ -1,0 +1,10 @@
+{
+    "glossary-key": {
+        "new": {
+            "cart_note.validation.error.message_invalid_length": {
+                "en_US": "Cart note length is invalid. Maximum length is %maxLength% characters.",
+                "de_DE": "Die Länge der Einkaufswagen-Notiz ist ungültig. Die maximale Länge beträgt %maxLength% Zeichen."
+            }
+        }
+    }
+}
