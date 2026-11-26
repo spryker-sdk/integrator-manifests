@@ -1,0 +1,83 @@
+{
+    "glossary-key": {
+        "new": {
+            "ai-commerce.quick-order-visual-add-to-cart.file-upload.title": {
+                "en_US": "Quick order with AI",
+                "de_DE": "Schnellbestellung mit KI"
+            },
+            "ai-commerce.quick-order-visual-add-to-cart.file-upload.description": {
+                "en_US": "Upload a purchase order, order form, invoice or product list as a file, photo or screenshot. Supported formats: %formats%.",
+                "de_DE": "Laden Sie eine Bestellung, ein Bestellformular, eine Rechnung oder eine Produktliste als Datei, Foto oder Screenshot hoch. Unterstützte Formate: %formats%."
+            },
+            "ai-commerce.quick-order-visual-add-to-cart.file-upload.button.upload": {
+                "en_US": "Upload",
+                "de_DE": "Uploaden"
+            },
+            "ai-commerce.quick-order-visual-add-to-cart.file-upload.browse-file": {
+                "en_US": "No file selected. Browse file",
+                "de_DE": "Keine Datei ausgewählt. Datei durchsuchen"
+            },
+            "ai-commerce.quick-order-visual-add-to-cart.order-file.errors.invalid-format": {
+                "en_US": "Invalid file format. Please upload a file in one of the supported formats.",
+                "de_DE": "Ungültiges Dateiformat. Bitte laden Sie eine Datei in einem der unterstützten Formate hoch."
+            },
+            "ai-commerce.quick-order-visual-add-to-cart.order-file.errors.invalid-mime-type": {
+                "en_US": "Invalid file type.",
+                "de_DE": "Ungültiger Dateityp."
+            },
+            "ai-commerce.quick-order-visual-add-to-cart.order-file.errors.no-file": {
+                "en_US": "No file uploaded.",
+                "de_DE": "Keine Datei hochgeladen."
+            },
+            "ai-commerce.quick-order-visual-add-to-cart.order-file.errors.product-limit-exceeded": {
+                "en_US": "The number of recognized products exceeds the limit. Please upload a file with no more than %maxProducts% products.",
+                "de_DE": "Die Anzahl der erkannten Produkte überschreitet das Limit. Bitte laden Sie eine Datei mit nicht mehr als %maxProducts% Produkten hoch."
+            },
+            "ai-commerce.quick-order-visual-add-to-cart.order-file.errors.no-products-recognized": {
+                "en_US": "No products were recognized in the uploaded file.",
+                "de_DE": "Es wurden keine Produkte in der hochgeladenen Datei erkannt."
+            },
+            "ai-commerce.quick-order-visual-add-to-cart.order-file.errors.product-not-found": {
+                "en_US": "Product '%product%' was not found in the catalog.",
+                "de_DE": "Produkt '%product%' wurde im Katalog nicht gefunden."
+            },
+            "ai-commerce.quick-order-visual-add-to-cart.order-file.errors.ai-request-failed": {
+                "en_US": "The AI request failed. The file could not be recognized.",
+                "de_DE": "Die KI-Anfrage ist fehlgeschlagen. Die Datei konnte nicht erkannt werden."
+            },
+            "ai-commerce.quick-order-visual-add-to-cart.order-file.errors.file-read-failed": {
+                "en_US": "The uploaded file could not be read. Please upload it again.",
+                "de_DE": "Die hochgeladene Datei konnte nicht gelesen werden. Bitte laden Sie sie erneut hoch."
+            },
+            "ai-commerce.quick-order-visual-add-to-cart.order-file.errors.ai-response-invalid": {
+                "en_US": "The AI returned an unexpected response. The file could not be recognized.",
+                "de_DE": "Die KI hat eine unerwartete Antwort zurückgegeben. Die Datei konnte nicht erkannt werden."
+            },
+            "ai-commerce.quick-order-visual-add-to-cart.order-file.errors.file-too-large": {
+                "en_US": "The uploaded file exceeds the maximum allowed file size.",
+                "de_DE": "Die hochgeladene Datei überschreitet die maximal zulässige Dateigröße."
+            }
+        }
+    },
+    "configure-module": [
+        {
+            "target": "\\SprykerFeature\\Yves\\AiCommerce\\AiCommerceConfig::getQuickOrderVisualAddToCartAiConfigurationName",
+            "value": {
+                "value": "return $this->getModuleConfig(\\Pyz\\Shared\\AiCommerce\\AiCommerceConstants::CONFIGURATION_KEY_QUICK_ORDER_VISUAL_ADD_TO_CART_AI_CONFIGURATION, \\Pyz\\Shared\\AiCommerce\\AiCommerceConstants::AI_CONFIGURATION_QUICK_ORDER_VISUAL_ADD_TO_CART_OPENAI)",
+                "is_literal": true
+            }
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\QuickOrderPage\\QuickOrderPageDependencyProvider::getQuickOrderFormPlugins",
+            "source": "\\SprykerFeature\\Yves\\AiCommerce\\QuickOrderVisualAddToCart\\Plugin\\QuickOrderPage\\AiCommerceQuickOrderVisualAddToCartFormPlugin"
+        }
+    ],
+    "unwire-plugin": [
+        {
+            "target": "\\SprykerShop\\Yves\\QuickOrderPage\\QuickOrderPageDependencyProvider::getQuickOrderFormPlugins",
+            "source": "\\SprykerFeature\\Yves\\AiCommerce\\QuickOrderImageToCart\\Plugin\\QuickOrderPage\\AiCommerceQuickOrderImageToCartFormPlugin"
+        }
+    ]
+}
